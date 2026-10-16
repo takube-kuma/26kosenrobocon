@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン2026 地区大会分析</title><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン2026大会分析</title><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -243,11 +243,16 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr table.hs .nat{color:var(--color-ok);font-weight:var(--cds-font-weight-medium)}
 .kr table.hs .aw{font-size:11px;color:var(--color-fg-muted);display:block}
 .kr .hscroll{overflow-x:auto}
+.kr .ysel{position:relative;display:inline-block;margin:0 .15em}
+.kr .ysel select{font:inherit;color:inherit;background:transparent;border:0;border-bottom:2px solid var(--c1);border-radius:0;padding:0 1.05em 0 .1em;-webkit-appearance:none;appearance:none;cursor:pointer}
+.kr .ysel::after{content:"▾";position:absolute;right:.1em;top:50%;transform:translateY(-50%);font-size:.6em;color:var(--color-fg-muted);pointer-events:none}
+.kr .ysel select option{color:var(--color-fg);background:var(--color-bg);font-size:16px}
 </style>
 
 <div class="kr">
   <header id="top">
-    <h1>高専ロボコン2026 地区大会分析</h1>
+    <h1>高専ロボコン<label class="ysel"><select id="year-sel" aria-label="年を選ぶ"><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option></select></label>大会分析</h1>
+    <p class="lede" id="lede-past" hidden></p>
     <p class="lede" id="lede">
       <span class="lx-scope">全地区</span>の最高得点は
       <span class="dash-skeleton lx-m" data-source="summary" data-field="top_team" data-where="district=all">—</span>（<span class="dash-skeleton lx-m" data-source="summary" data-field="top_district" data-where="district=all">—</span>）の
@@ -273,7 +278,6 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     <button class="tab" role="tab" data-tab="analysis" aria-selected="true">分析・まとめ</button>
     <button class="tab" role="tab" data-tab="matches" aria-selected="false">試合結果</button>
     <button class="tab" role="tab" data-tab="teams" aria-selected="false">チーム・ロボット</button>
-    <button class="tab" role="tab" data-tab="history" aria-selected="false">過去の大会</button>
   </nav>
 
 
@@ -335,9 +339,9 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 
   <section id="history" class="lx-page" style="display:none;flex-direction:column;gap:var(--cds-gap-md)">
     <div class="card">
-      <h2>過去の大会（東海北陸地区）</h2>
-      <p class="note">2022〜2025年の東海北陸地区大会の全試合を、NHKの配信（YouTubeのロボコン公式チャンネル）の実況から書き起こしました。賞と全国大会出場チームは配信の表彰式と公式の結果発表によります。実況で最終得点が言われなかった試合は「不明」、暫定値のまま確定値が言われなかった試合は暫定値を載せています。ほかの地区は順次追加予定です。</p>
-      <div class="hy-bar" id="hy-bar"></div>
+      <h2>東海北陸地区大会の結果</h2>
+      <p class="note">2022〜2025年の東海北陸地区大会の全試合を、NHKの配信（YouTubeのロボコン公式チャンネル）の実況から書き起こしました。賞と全国大会出場チームは配信の表彰式と公式の結果発表によります。実況で最終得点が言われなかった試合は「不明」、暫定値のまま確定値が言われなかった試合は暫定値を載せています。2022〜2025年はまだ東海北陸地区のみで、ほかの地区は順次追加予定です。年はタイトルの年から切り替えられます。</p>
+      <div class="hy-bar" id="hy-bar" hidden></div>
     </div>
     <div class="card" id="hy-top"></div>
     <div class="card"><h2>決勝トーナメント</h2><p class="note" id="hy-seeds"></p><div class="hscroll"><table class="hm" id="hy-ko"></table></div></div>
@@ -1130,20 +1134,49 @@ dash.calc('summary', {
     }
   };
 
+  let curYear = 2026;
+  const ysel = document.getElementById('year-sel');
+  const applyYear = () => {
+    const past = curYear !== 2026;
+    ysel.value = String(curYear);
+    document.title = `高専ロボコン${curYear}大会分析`;
+    const lp = document.getElementById('lede-past');
+    ['lede', 'region-filter', 'tiles'].forEach((id) => { const e = document.getElementById(id); if (e) e.style.display = past ? 'none' : ''; });
+    const nav = document.querySelector('.kr nav.tabs'); if (nav) nav.style.display = past ? 'none' : '';
+    lp.hidden = !past;
+    if (past) {
+      const Y = HIST.find((y) => y.year === curYear);
+      lp.innerHTML = `${curYear}年の競技は「${hEsc(Y.game)}」。いまは東海北陸地区大会（${hFmtDate(Y.date)}）の結果を載せています。優勝は<span>${hEsc(Y.champ[0])}</span>。`;
+      hYear = curYear;
+      document.querySelectorAll('.kr .lx-page').forEach((pg) => { pg.style.display = pg.id === 'history' ? 'flex' : 'none'; });
+    } else {
+      document.querySelectorAll('.kr .lx-page').forEach((pg) => { pg.style.display = pg.id === tab ? 'flex' : 'none'; });
+    }
+    return past;
+  };
+  ysel.addEventListener('change', () => {
+    curYear = +ysel.value;
+    try { history.replaceState(null, '', curYear === 2026 ? location.pathname + location.search : '#' + curYear); } catch (e) {}
+    draw();
+    window.scrollTo(0, 0);
+  });
+
   const draw = () => {
+    if (applyYear()) { drawHistory(); return; }
     const r = region();
     bar.querySelectorAll('.chip').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.r === r)));
     drawSummary();
     if (tab === 'teams') { drawCards(); drawDetail(); }
     if (tab === 'matches') drawTable('match-table');
     if (tab === 'analysis') { drawCharts(); drawAnalysis(); drawTrend(); drawUpcoming(); }
-    if (tab === 'history') drawHistory();
-    { const hide = tab === 'history'; const ti = document.getElementById('tiles'); if (ti) ti.style.display = hide ? 'none' : ''; const rf = document.getElementById('region-filter'); if (rf) rf.style.display = hide ? 'none' : ''; }
+
   };
 
   dash.onData(draw);
   const named = location.hash.slice(1);
-  if (['teams', 'matches', 'analysis', 'history'].includes(named)) showTab(named);
+  if (['teams', 'matches', 'analysis'].includes(named)) showTab(named);
+  else if (/^20(22|23|24|25)$/.test(named)) { curYear = +named; draw(); }
+  else if (named === 'history') { curYear = 2025; draw(); }
 })();
 </script>
 
