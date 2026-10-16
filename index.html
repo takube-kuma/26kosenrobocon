@@ -205,6 +205,11 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr .trend .tchart{position:relative;height:8.5rem}
 .kr .dates{display:flex;flex-wrap:wrap;gap:var(--cds-gap-xs) var(--cds-gap-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
 .kr .dates b{color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
+.kr .sgroup{display:flex;flex-direction:column;gap:var(--cds-gap-sm);color:var(--color-fg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-sm) var(--cds-pad-md);background:var(--color-bg)}
+.kr .sgroup>.ptop .pacc{font-size:var(--cds-font-size-body)}
+.kr a.pitem{display:flex;flex-direction:column;gap:2px;color:var(--color-fg);text-decoration:none;border-top:1px solid var(--color-border-line);padding-top:var(--cds-pad-sm)}
+.kr a.pitem:hover .psum{text-decoration:underline}
+.kr #upcoming-list{align-items:start}
 .kr .rules b{color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
 </style>
 
@@ -382,7 +387,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     </div>
     <div class="card" id="upcoming-card">
       <h2>これからの大会：東海北陸地区</h2>
-      <p class="note">出場チームと対戦表は大会直前に公式から発表される見込みです。発表後に、ほかの地区と同じようにチームと試合を追加します。下は各校の部や学校がXに上げた事前の投稿（におわせ）で、新しい投稿ほど上に並べています。</p>
+      <p class="note">出場チームと対戦表は大会直前に公式から発表される見込みです。発表後に、ほかの地区と同じようにチームと試合を追加します。下は各校の部や学校がXに上げた事前の投稿（におわせ）を学校ごとにまとめたもので、新しい投稿がある学校ほど上、学校の中も新しい順に並べています。</p>
       <div class="dposts" id="upcoming-list" data-source="upcoming"></div>
     </div>
     <div class="card" id="rules">
@@ -484,16 +489,33 @@ dash.calc('summary', {
     box.replaceChildren();
     if (g.status !== 'ok') return;
     const dnum = (p) => { const m = String(p.date || '').match(/(\d{4})\D(\d{1,2})\D(\d{1,2})/); return m ? Number(m[1]) * 10000 + Number(m[2]) * 100 + Number(m[3]) : 0; };
-    g.data.slice().sort((a, b) => (b.kind === '大会') - (a.kind === '大会') || dnum(b) - dnum(a)).forEach((p) => {
-      const w = 'id=' + enc(p.id);
-      const mk = (tag, cls, field, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (field) { e.dataset.source = 'upcoming'; e.dataset.field = field; e.dataset.where = w; } if (text != null) e.textContent = text; return e; };
-      const a = mk('a', 'post' + (p.kind === '大会' ? ' event' : '')); a.href = p.url; a.target = '_blank'; a.rel = 'noopener';
-      const top = mk('div', 'ptop');
-      top.append(mk('span', 'pkind', 'kind', p.kind), mk('span', 'pacc', 'school', p.school));
-      if (p.account) top.append(mk('span', null, 'account', p.account));
-      top.append(mk('span', 'pdate', 'date', p.date));
-      a.append(top, mk('div', 'psum', 'summary', p.summary), mk('div', 'plink', 'link_label', p.link_label));
+    const mkU = (p, tag, cls, field, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (field) { e.dataset.source = 'upcoming'; e.dataset.field = field; e.dataset.where = 'id=' + enc(p.id); } if (text != null) e.textContent = text; return e; };
+    const sorted = g.data.slice().sort((a, b) => dnum(b) - dnum(a));
+    sorted.filter((p) => p.kind === '大会').forEach((p) => {
+      const a = mkU(p, 'a', 'post event'); a.href = p.url; a.target = '_blank'; a.rel = 'noopener';
+      const top = mkU(p, 'div', 'ptop');
+      top.append(mkU(p, 'span', 'pkind', 'kind', p.kind), mkU(p, 'span', 'pacc', 'school', p.school), mkU(p, 'span', 'pdate', 'date', p.date));
+      a.append(top, mkU(p, 'div', 'psum', 'summary', p.summary), mkU(p, 'div', 'plink', 'link_label', p.link_label));
       box.append(a);
+    });
+    const schools = new Map();
+    sorted.filter((p) => p.kind !== '大会').forEach((p) => { const k = String(p.school || '').replace(/（.*?）/g, ''); if (!schools.has(k)) schools.set(k, []); schools.get(k).push(p); });
+    schools.forEach((ps, k) => {
+      const c = document.createElement('div'); c.className = 'post sgroup';
+      const h = document.createElement('div'); h.className = 'ptop';
+      const nm = document.createElement('span'); nm.className = 'pacc'; nm.textContent = k;
+      const ct = document.createElement('span'); ct.textContent = `投稿${ps.length}件・最新 ${ps[0].date}`;
+      h.append(nm, ct); c.append(h);
+      ps.forEach((p) => {
+        const a = mkU(p, 'a', 'pitem'); a.href = p.url; a.target = '_blank'; a.rel = 'noopener';
+        const t = document.createElement('div'); t.className = 'ptop';
+        t.append(mkU(p, 'span', 'pdate', 'date', p.date));
+        if (p.account) t.append(mkU(p, 'span', null, 'account', p.account));
+        if (p.school && p.school !== k) t.append(mkU(p, 'span', null, 'school', p.school));
+        a.append(t, mkU(p, 'div', 'psum', 'summary', p.summary), mkU(p, 'div', 'plink', 'link_label', p.link_label || 'Xで投稿を見る ↗'));
+        c.append(a);
+      });
+      box.append(c);
     });
   };
 
