@@ -131,6 +131,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr .tcard{cursor:pointer;transition:transform var(--cds-dur-slow)}
 .kr .tcard:hover{transform:translateY(-2px);box-shadow:var(--cds-shadow-popover)}
 .kr .tcard:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
+.kr .phist{margin:var(--cds-gap-xs) 0 0;padding-left:1.2em;display:flex;flex-direction:column;gap:2px}.kr .phist .td{color:var(--color-fg-muted)}
 .kr .tdetail h3{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:var(--cds-gap-md) 0 0}
 .kr .back{font:inherit;font-size:var(--cds-font-size-caption);align-self:flex-start;background:var(--color-bg);border:1px solid var(--color-border-line);border-radius:999px;padding:var(--cds-pad-xs) var(--cds-pad-md);color:var(--color-fg);cursor:pointer}
 .kr .dtop{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-lg);align-items:start}
@@ -406,9 +407,10 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
       </div>
     </section>
     <section class="p-page" data-ptab="teams" style="display:none">
-      <div class="card">
+      <div class="card tdetail" id="p-detail" hidden></div>
+      <div class="card" id="p-list">
         <h2>チーム・ロボット一覧</h2>
-        <p class="note">勝ち進んだ順に並べています。<span class="natkey"><i></i>緑の枠＝全国大会出場</span>ロボット（プロジェクト）名は公式の結果発表と配信の実況からわかったものを載せています。</p>
+        <p class="note">勝ち進んだ順に並べています。カードを押すとチームの詳細が開きます。<span class="natkey"><i></i>緑の枠＝全国大会出場</span>ロボット（プロジェクト）名は公式の結果発表と配信の実況からわかったものを載せています。</p>
         <div class="ctrl"><input class="search" id="p-tq" type="search" placeholder="チーム・ロボット名で検索" aria-label="チームを検索"></div>
         <div class="cards" id="p-cards"></div>
       </div>
@@ -1341,6 +1343,54 @@ dash.calc('summary', {
     }).join('') + (r === 'all' || r === '東海北陸' ? '<p class="note">東海北陸地区大会（10/18）は開催後に追加します。</p>' : '');
   };
 
+  // 過去の年のチーム詳細（2026年と同じ形。Xの投稿はなし）
+  const drawPastDetail = (Y) => {
+    const det = document.getElementById('p-detail'), list = document.getElementById('p-list');
+    const s = pState.sel && Y.districts[pState.sel.d] && Y.districts[pState.sel.d].teams.some((x) => x.team === pState.sel.team) ? pState.sel : null;
+    det.hidden = !s; list.hidden = !!s;
+    if (!s) { det.innerHTML = ''; return; }
+    const team = s.team; const natD = Y.districts[NAT];
+    const homeD = isNat(s.d) ? pTeamOf(Y, team) : s.d;
+    const tinfo = (Y.districts[homeD] && Y.districts[homeD].teams.find((x) => x.team === team)) || Y.districts[s.d].teams.find((x) => x.team === team) || {};
+    const robot = tinfo.robot || (natD && (natD.teams.find((x) => x.team === team) || {}).robot) || '';
+    const went = natD && natD.teams.some((x) => x.team === team);
+    const blocks = [homeD && Y.districts[homeD] ? homeD : null, went ? NAT : null].filter(Boolean);
+    const lines = blocks.map((d) => {
+      const D = Y.districts[d]; const rc = reachOf(D.matches, isNat(d)); const r = rc[team] || { label: isNat(d) ? '出場' : '—', w: 0, l: 0 };
+      const aws = pAwards(Y, D, team);
+      const ms = D.matches.filter((m) => m.red === team || m.blue === team);
+      const rows = ms.map((m) => {
+        const me = m.red === team; const opp = me ? m.blue : m.red;
+        const my = me ? m.red_label : m.blue_label, op = me ? m.blue_label : m.red_label;
+        const res = !m.winner ? '—' : m.winner === team ? '○' : '●';
+        return `<tr><td class="nw">${hEsc(String(m.round).replace('予選', '予選 '))}</td><td class="vs${res === '○' ? ' won' : ''}">${res} ${hEsc(opp)}</td><td class="n tot">${hEsc(my)}</td><td class="n">${hEsc(op)}</td><td class="nw">${m.decision && m.decision !== '得点' ? hEsc(m.decision.replace('ミッションコンプリート', 'コンプリート')) : ''}</td><td class="nw"><a class="yt" href="${pVid(D, m)}" target="_blank" rel="noopener">▶ 配信</a></td></tr>`;
+      }).join('');
+      return `<h3>${isNat(d) ? '全国大会' : hEsc(d) + '地区大会'}：${hEsc(r.label)}${isNat(d) || r.label.startsWith('予選') || r.label === '—' ? '' : `（予選 ${r.w}勝${r.l}敗）`}</h3>
+        ${aws.length ? `<p class="note">受賞：${aws.map(hEsc).join('・')}</p>` : ''}
+        ${rows ? `<div class="scroll"><table class="st dm"><thead><tr><th>回戦</th><th>対戦相手</th><th>自分</th><th>相手</th><th>決着</th><th>動画</th></tr></thead><tbody>${rows}</tbody></table></div>` : '<p class="note">この大会の試合は記録できていません。</p>'}`;
+    }).join('');
+    // ほかの年
+    const hist = HIST.map((Z) => {
+      if (Z.year === Y.year) return null;
+      const d = ORDER.find((x) => Z.districts[x] && Z.districts[x].teams.some((t) => t.team === team));
+      if (!d) return null;
+      const r = reachOf(Z.districts[d].matches, false)[team];
+      const N = Z.districts[NAT]; const nr = N && N.teams.some((t) => t.team === team) ? (reachOf(N.matches, true)[team] || { label: '出場' }).label : '';
+      const rob = (Z.districts[d].teams.find((t) => t.team === team) || {}).robot;
+      return `<li><b>${Z.year}年</b> ${hEsc(r ? r.label : '出場')}${nr ? `・全国大会 ${hEsc(nr)}` : ''}${rob ? `<span class="td">（${hEsc(rob)}）</span>` : ''}</li>`;
+    }).filter(Boolean);
+    const allAw = blocks.flatMap((d) => pAwards(Y, Y.districts[d], team));
+    det.innerHTML = `<button class="back" id="p-back">← 一覧に戻る</button>
+      <div class="dtop"><div class="dinfo" style="flex:1">
+        <div class="dh"><span class="dteam">${hEsc(team)}</span><span class="ddist">${hEsc(homeD || '')}</span>${went ? '<span class="badge">全国大会出場</span>' : ''}</div>
+        <div class="drobot">${robot ? hEsc(robot) : '<span class="ddist">ロボット名は未確認</span>'}</div>
+        <div class="dwl">${Y.year}年「${hEsc(Y.game)}」${allAw.length ? `　受賞：${allAw.map(hEsc).join('・')}` : ''}</div>
+      </div></div>
+      ${lines}
+      ${hist.length ? `<h3>ほかの年の成績</h3><ul class="phist">${hist.join('')}</ul>` : ''}`;
+    det.querySelector('#p-back').addEventListener('click', () => { pState.sel = null; drawPast(); });
+  };
+
   const drawPast = () => {
     const Y = pYear();
     const root = document.getElementById('past');
@@ -1356,7 +1406,7 @@ dash.calc('summary', {
       const ok = r === 'all' || Y.districts[r];
       return `<button class="chip${ok ? '' : ' off'}${isNat(r) ? ' natchip' : ''}" data-r="${r}" aria-pressed="${pState.region === r}" ${ok ? '' : 'disabled title="まだ調べていません"'}>${r === 'all' ? '全地区' : isNat(r) ? '全国大会' : r}${ok ? '' : '<small>未調査</small>'}</button>`;
     }).join('');
-    bar.querySelectorAll('.chip:not(.off)').forEach((b) => b.addEventListener('click', () => { pState.region = b.dataset.r; drawPast(); }));
+    bar.querySelectorAll('.chip:not(.off)').forEach((b) => b.addEventListener('click', () => { pState.region = b.dataset.r; pState.sel = null; drawPast(); }));
     // 数字のパネル
     const teams = new Set(allM.flatMap(({ m }) => [m.red, m.blue]));
     const nTeams = sel.reduce((a, d) => a + Y.districts[d].teams.length, 0);
@@ -1428,11 +1478,16 @@ dash.calc('summary', {
         const aws = pAwards(Y, D, t.team); const went = !nat && natTeams.has(t.team);
         const home = nat ? (t.home || pTeamOf(Y, t.team)) : D.district;
         const natLine = went ? `全国大会 ${hEsc((natR[t.team] || { label: '出場' }).label)}` : '';
-        return `<article class="tcard${went || nat ? ' nat' : ''}"><div class="tb"><div class="th"><span class="tn">${hEsc(t.team)}</span><span class="td">${hEsc(home)}</span></div>
+        return `<article class="tcard${went || nat ? ' nat' : ''}" tabindex="0" role="button" data-team="${hEsc(t.team)}" data-d="${hEsc(D.district)}"><div class="tb"><div class="th"><span class="tn">${hEsc(t.team)}</span><span class="td">${hEsc(home)}</span></div>
           <div>${t.robot ? hEsc(t.robot) : '<span class="td">ロボット名は未確認</span>'}</div>
           <div class="wl"><b>${hEsc(r.label)}</b>${nat || r.label.startsWith('予選') || r.label === '—' ? '' : `・予選 ${r.w}勝${r.l}敗`}${r.best != null ? `・最高 ${r.best}点` : ''}</div>
           ${aws.length || natLine ? `<div class="td">${[natLine, ...aws].filter(Boolean).join('・')}</div>` : ''}</div></article>`;
       }).join('');
+      root.querySelectorAll('#p-cards .tcard').forEach((c) => {
+        const open = () => { pState.sel = { team: c.dataset.team, d: c.dataset.d }; drawPast(); window.scrollTo(0, root.querySelector('#p-detail').getBoundingClientRect().top + window.scrollY - 16); };
+        c.addEventListener('click', open); c.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+      });
+      drawPastDetail(Y);
     }
   };
 
@@ -1483,12 +1538,12 @@ dash.calc('summary', {
     return mode;
   };
   ysel.addEventListener('change', () => {
-    curYear = ysel.value === 'all' ? 'all' : +ysel.value;
+    curYear = ysel.value === 'all' ? 'all' : +ysel.value; pState.sel = null;
     try { history.replaceState(null, '', curYear === 2026 ? location.pathname + location.search : '#' + curYear); } catch (e) {}
     draw();
     window.scrollTo(0, 0);
   });
-  document.querySelectorAll('#past .tab').forEach((b) => b.addEventListener('click', () => { pState.tab = b.dataset.ptab; drawPast(); }));
+  document.querySelectorAll('#past .tab').forEach((b) => b.addEventListener('click', () => { pState.tab = b.dataset.ptab; pState.sel = null; drawPast(); }));
   document.getElementById('p-q').addEventListener('input', (e) => { pState.q = e.target.value; drawPast(); });
   document.getElementById('p-tq').addEventListener('input', (e) => { pState.tq = e.target.value; drawPast(); });
 
