@@ -132,6 +132,22 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr .tcard:hover{transform:translateY(-2px);box-shadow:var(--cds-shadow-popover)}
 .kr .tcard:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
 .kr .phist{margin:var(--cds-gap-xs) 0 0;padding-left:1.2em;display:flex;flex-direction:column;gap:2px}.kr .phist .td{color:var(--color-fg-muted)}
+.kr .tk-sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--cds-gap-sm);margin:var(--cds-gap-sm) 0}
+.kr .tk-sum div{border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-sm) var(--cds-pad-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);background:var(--color-bg)}
+.kr .tk-sum b{display:block;color:var(--color-fg);font-size:var(--cds-font-size-body);margin-bottom:2px}
+.kr #tokai-path h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:var(--cds-gap-md) 0 0}
+.kr .tk-mx{border-collapse:collapse;font-size:var(--cds-font-size-caption);margin-top:var(--cds-gap-sm)}
+.kr .tk-mx th,.kr .tk-mx td{border:1px solid var(--color-border-line);padding:6px 10px;text-align:center}
+.kr .tk-mx td{font-size:var(--cds-font-size-heading);font-variant-numeric:tabular-nums}
+.kr .tk-mx td.hi{background:color-mix(in srgb,var(--lx-nat) 18%,transparent)}
+.kr .tk-mx small{display:block;font-size:11px;color:var(--color-fg-muted)}
+.kr .tk-math{margin-top:var(--cds-gap-sm);font-size:var(--cds-font-size-caption);display:flex;flex-direction:column;gap:3px}
+.kr .tk-math i{font-family:var(--font-anthropic-serif)}
+.kr .tk-tl{border-collapse:collapse;font-size:var(--cds-font-size-caption);width:100%;margin-top:var(--cds-gap-sm)}
+.kr .tk-tl th,.kr .tk-tl td{border-bottom:1px solid var(--color-border-line);padding:5px 8px;text-align:left;white-space:nowrap}
+.kr .tk-tl td.c1{background:color-mix(in srgb,#e3b341 45%,transparent)}.kr .tk-tl td.c2{background:color-mix(in srgb,#e3b341 22%,transparent)}.kr .tk-tl td.c3{background:color-mix(in srgb,#4a90d9 18%,transparent)}.kr .tk-tl td.c4{background:color-mix(in srgb,#4a90d9 8%,transparent)}
+.kr .tk-tl .nat{color:var(--lx-nat);margin-left:2px}
+.kr .tk-tl .bx{display:flex;align-items:center;gap:6px}.kr .tk-tl .bx i{display:block;height:10px;border-radius:3px;background:var(--cds-chart-muted)}
 .kr .tdetail h3{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:var(--cds-gap-md) 0 0}
 .kr .back{font:inherit;font-size:var(--cds-font-size-caption);align-self:flex-start;background:var(--color-bg);border:1px solid var(--color-border-line);border-radius:999px;padding:var(--cds-pad-xs) var(--cds-pad-md);color:var(--color-fg);cursor:pointer}
 .kr .dtop{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-lg);align-items:start}
@@ -514,6 +530,43 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
           <tbody></tbody>
         </table>
       </div>
+    </div>
+    <div class="card" id="tokai-path">
+      <h2>東海北陸から全国大会に行くには（2022〜2025年の統計から）</h2>
+      <p class="note">2022〜2025年の8地区・32大会（延べ640チーム）と、2026年に終わった7地区の結果から計算しました。東海北陸は4年とも全国大会の枠が4つ（優勝＋推薦3チーム）でした。数字は統計的な目安で、予想ではありません。</p>
+      <div class="tk-sum">
+        <div><b>ベスト4に入る</b>決勝トーナメントで旗（100点）を決められる力。東海北陸ではベスト4以上の約7割が全国へ</div>
+        <div><b>優勝を狙うなら200点以上</b>2026年の地区優勝チームの決勝は230〜705点（北海道の5点を除く）</div>
+        <div><b>勝てなくても3賞</b>予選敗退でもアイデア・技術・デザイン賞を取ったチームは42%が全国へ（賞なしは2%）</div>
+      </div>
+      <div class="grid">
+        <div>
+          <h3>地区大会の成績ごとの全国大会に行けた割合</h3>
+          <p class="note">8地区・4年分。棒は割合、細い線は95%信頼区間（Wilsonの方法）。チーム数が少ない区分ほど線が長く、不確かです。右の数字は「全国に行ったチーム／その成績のチーム」（カッコ内は東海北陸だけ）。</p>
+          <div class="chart" id="tk-rank"></div>
+        </div>
+        <div>
+          <h3>2026年：1試合の最高得点と全国大会出場</h3>
+          <p class="note">終わった7地区の104チームについて、「大会中の最高得点がx点以上だったチームのうち全国に行った割合」。100点（旗1回）を超えると半分以上、300点以上なら全員が全国に行っています。</p>
+          <div class="chart" id="tk-score"></div>
+        </div>
+      </div>
+      <h3>強さはどのくらい続くか（卒業による入れ替わり）</h3>
+      <p class="note">学校ごとに「ある年にベスト4以上だったか」と「翌年ベスト4以上だったか」を数え、2つの状態を行き来するマルコフ連鎖とみなしました。</p>
+      <div class="grid">
+        <div>
+          <table class="tk-mx" id="tk-mx"></table>
+          <div class="tk-math" id="tk-math"></div>
+        </div>
+        <div>
+          <div class="chart" id="tk-decay"></div>
+          <p class="note">n年後にベスト4以上である確率。今年強い学校（緑）も弱い学校（灰）も、2〜3年でほぼ同じ約39%に近づきます。差は1年ごとに約0.28倍に縮むので、強さの「貯金」は2年ほどで消える計算です。高専は中心メンバーが3〜5年生で、2〜3年で入れ替わることと合っています。</p>
+        </div>
+      </div>
+      <h3>東海北陸の学校ごとの4年間と、2026年の目安</h3>
+      <p class="note">◎は全国大会に出場した年。「2026年のベスト4以上の目安」は、上のマルコフ連鎖で2025年の成績だけから出した確率です（2025年ベスト4以上なら56%、それ以外なら28%）。チームの中身（代替わりの成否）は反映していないので、あくまで出発点の数字です。</p>
+      <div class="scroll"><table class="tk-tl" id="tk-tl"></table></div>
+      <p class="note" id="tk-tl-note"></p>
     </div>
     <div class="card" id="upcoming-card">
       <h2>これからの大会：東海北陸地区</h2>
@@ -1391,6 +1444,94 @@ dash.calc('summary', {
     det.querySelector('#p-back').addEventListener('click', () => { pState.sel = null; drawPast(); });
   };
 
+  // 東海北陸から全国大会に行くには（静的な集計値）
+  const TK = {
+    rank: [['優勝', 32, 32, 4, 4], ['準優勝', 13, 32, 3, 4], ['ベスト4', 21, 59, 4, 8], ['決勝T初戦敗退', 4, 13, 1, 4], ['予選敗退・3賞あり', 25, 59, 3, 7], ['予選敗退・3賞なし', 7, 301, 1, 53]],
+    score: [[0, 104, 21], [1, 62, 21], [20, 38, 19], [50, 28, 16], [100, 27, 15], [150, 18, 13], [200, 18, 13], [300, 8, 8], [400, 5, 5]],
+    mx: { tt: 41, tn: 32, nt: 32, nn: 81 },
+    tl: [['富山射水', ['予選', '予選', '優勝◎', '優勝◎']], ['鈴鹿', ['優勝◎', '優勝◎', '予選', '準優勝◎']], ['富山本郷', ['4強◎', '予選◎', '4強', '4強◎']], ['国際', ['4強◎', '予選', '予選', '4強◎']], ['石川', ['準優勝◎', '予選', '準優勝◎', '予選']], ['豊田', ['予選', '準優勝◎', '予選◎', '予選']], ['鳥羽商船', ['予選', '4強◎', '予選', '予選']], ['沼津', ['予選', '予選', '予選◎', '予選']], ['岐阜', ['予選', '予選', '決T', '予選']], ['福井', ['予選', '予選', '予選', '予選']]],
+  };
+  const wilson = (k, n) => { if (!n) return [0, 0]; const z = 1.96, p = k / n, d = 1 + z * z / n, c = (p + z * z / (2 * n)) / d, h = (z * Math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))) / d; return [Math.max(0, c - h), Math.min(1, c + h)]; };
+  const drawTokaiPath = () => {
+    const card = document.getElementById('tokai-path'); if (!card) return;
+    // 1) 成績別の全国出場率（信頼区間つき）
+    {
+      const box = document.getElementById('tk-rank'); box.querySelectorAll('svg').forEach((n) => n.remove());
+      const W = box.clientWidth || 420, rowH = 30, L = 118, R = W < 500 ? 118 : 150, H = TK.rank.length * rowH + 22;
+      const x = d3.scaleLinear([0, 1], [L, W - R]);
+      const svg = d3.select(box).append('svg').attr('width', W).attr('height', H).style('font-family', 'var(--font-anthropic-sans)').style('font-size', '12px');
+      [0, 0.5, 1].forEach((v) => { svg.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', 0).attr('y2', H - 18).style('stroke', 'var(--color-border-line)'); svg.append('text').attr('x', x(v)).attr('y', H - 4).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text(`${v * 100}%`); });
+      const t = tip(box);
+      TK.rank.forEach(([l, k, n, tk, tn], i) => {
+        const y = i * rowH, p = k / n, [lo, hi] = wilson(k, n);
+        const g = svg.append('g').attr('transform', `translate(0,${y})`);
+        g.append('text').attr('x', L - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg)').text(l);
+        g.append('rect').attr('x', L).attr('y', 6).attr('height', rowH - 12).attr('rx', 3).attr('width', Math.max(2, x(p) - L)).style('fill', i === 0 ? 'var(--lx-nat)' : dash.colors[0]);
+        g.append('line').attr('x1', x(lo)).attr('x2', x(hi)).attr('y1', rowH / 2).attr('y2', rowH / 2).style('stroke', 'var(--color-fg)').style('stroke-width', 1.5);
+        [lo, hi].forEach((v) => g.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', rowH / 2 - 5).attr('y2', rowH / 2 + 5).style('stroke', 'var(--color-fg)').style('stroke-width', 1.5));
+        g.append('text').attr('x', W - R + 6).attr('y', rowH / 2).attr('dy', '0.35em').style('fill', 'var(--color-fg-muted)').style('font-variant-numeric', 'tabular-nums').text(`${Math.round(p * 100)}%  ${k}/${n}（${tk}/${tn}）`);
+        g.append('rect').attr('width', W).attr('height', rowH).style('fill', 'transparent').on('mousemove', (ev) => showTip(box, t, ev, l, `全国 ${k}/${n}チーム＝${Math.round(p * 100)}%（95%区間 ${Math.round(lo * 100)}〜${Math.round(hi * 100)}%）・東海北陸 ${tk}/${tn}`)).on('mouseleave', () => { t.style.display = 'none'; });
+      });
+      box.style.minHeight = H + 'px';
+    }
+    // 2) 最高得点と全国出場率
+    {
+      const box = document.getElementById('tk-score'); box.querySelectorAll('svg').forEach((n) => n.remove());
+      const W = box.clientWidth || 420, H = 220, m = { t: 20, r: 16, b: 34, l: 40 };
+      const xs = TK.score.map((d) => d[0]);
+      const x = d3.scalePoint(xs.map(String), [m.l, W - m.r]).padding(0.4);
+      const y = d3.scaleLinear([0, 1], [H - m.b, m.t]);
+      const svg = d3.select(box).append('svg').attr('width', W).attr('height', H).style('font-family', 'var(--font-anthropic-sans)').style('font-size', '11px');
+      [0, 0.5, 1].forEach((v) => { svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(v)).attr('y2', y(v)).style('stroke', 'var(--color-border-line)'); svg.append('text').attr('x', m.l - 6).attr('y', y(v)).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg-muted)').text(`${v * 100}%`); });
+      const pts = TK.score.map(([s, n, k]) => ({ s, n, k, p: k / n }));
+      svg.append('path').datum(pts).attr('d', d3.line().x((d) => x(String(d.s))).y((d) => y(d.p))).style('fill', 'none').style('stroke', dash.colors[0]).style('stroke-width', 2);
+      const g = svg.selectAll('g.pt').data(pts).join('g').attr('transform', (d) => `translate(${x(String(d.s))},${y(d.p)})`);
+      g.append('circle').attr('r', 4).style('fill', (d) => (d.s >= 100 ? 'var(--lx-nat)' : dash.colors[0])).style('stroke', 'var(--color-bg)').style('stroke-width', 1.5);
+      g.append('text').attr('y', -9).attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').style('stroke', 'var(--color-bg)').style('stroke-width', 3).style('paint-order', 'stroke').text((d) => `${Math.round(d.p * 100)}%`);
+      svg.selectAll('text.xl').data(pts).join('text').attr('x', (d) => x(String(d.s))).attr('y', H - m.b + 16).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text((d) => `${d.s}+`);
+      svg.append('text').attr('x', (m.l + W - m.r) / 2).attr('y', H - 4).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text('大会中の1試合の最高得点（点以上）');
+      const t = tip(box);
+      svg.selectAll('rect.hit').data(pts).join('rect').attr('x', (d) => x(String(d.s)) - x.step() / 2).attr('width', x.step()).attr('y', 0).attr('height', H).style('fill', 'transparent')
+        .on('mousemove', (ev, d) => showTip(box, t, ev, `最高${d.s}点以上`, `${d.n}チーム中${d.k}チームが全国（${Math.round(d.p * 100)}%）`)).on('mouseleave', () => { t.style.display = 'none'; });
+    }
+    // 3) マルコフ連鎖
+    const { tt, tn, nt, nn } = TK.mx;
+    const a = tt / (tt + tn), b = nt / (nt + nn), lam = a - b, pi = b / (1 - lam);
+    document.getElementById('tk-mx').innerHTML = `<thead><tr><th>今年＼翌年</th><th>ベスト4以上</th><th>それ以外</th></tr></thead><tbody>
+      <tr><th>ベスト4以上</th><td class="hi">${Math.round(a * 100)}%<small>${tt}/${tt + tn}</small></td><td>${Math.round((1 - a) * 100)}%<small>${tn}/${tt + tn}</small></td></tr>
+      <tr><th>それ以外</th><td>${Math.round(b * 100)}%<small>${nt}/${nt + nn}</small></td><td>${Math.round((1 - b) * 100)}%<small>${nn}/${nt + nn}</small></td></tr></tbody>`;
+    document.getElementById('tk-math').innerHTML = `<div>翌年も強い確率 <i>a</i> = ${a.toFixed(2)}、弱い学校が強くなる確率 <i>b</i> = ${b.toFixed(2)}</div>
+      <div>差 <i>λ</i> = <i>a</i> − <i>b</i> = <b>${lam.toFixed(2)}</b>（1年ごとに差がこの倍率で縮む）</div>
+      <div>長い目で見た「ベスト4以上の学校」の割合 <i>π</i> = <i>b</i> /(1 − <i>λ</i>) = <b>${Math.round(pi * 100)}%</b></div>
+      <div>強い状態が続く年数の期待値 1/(1 − <i>a</i>) = <b>${(1 / (1 - a)).toFixed(1)}年</b></div>
+      <div>地区優勝した学校が翌年も優勝したのは<b>33%</b>（8/24）、2年続けて全国の学校が3年目も全国は<b>48%</b>（12/25）</div>`;
+    {
+      const box = document.getElementById('tk-decay'); box.querySelectorAll('svg').forEach((n) => n.remove());
+      const W = box.clientWidth || 420, H = 200, m = { t: 20, r: 20, b: 26, l: 40 };
+      const ns = [0, 1, 2, 3, 4];
+      const fT = (n) => pi + (1 - pi) * lam ** n, fN = (n) => pi - pi * lam ** n;
+      const x = d3.scaleLinear([0, 4], [m.l, W - m.r]), y = d3.scaleLinear([0, 1], [H - m.b, m.t]);
+      const svg = d3.select(box).append('svg').attr('width', W).attr('height', H).style('font-family', 'var(--font-anthropic-sans)').style('font-size', '11px');
+      [0, 0.5, 1].forEach((v) => { svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(v)).attr('y2', y(v)).style('stroke', 'var(--color-border-line)'); svg.append('text').attr('x', m.l - 6).attr('y', y(v)).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg-muted)').text(`${v * 100}%`); });
+      svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(pi)).attr('y2', y(pi)).style('stroke', 'var(--color-fg-muted)').style('stroke-dasharray', '4 3');
+      svg.append('text').attr('x', x(2.5)).attr('y', y(pi) + 26).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text(`π = ${Math.round(pi * 100)}%`);
+      [[fT, 'var(--lx-nat)', '今年ベスト4以上'], [fN, 'var(--cds-chart-muted)', '今年それ以外']].forEach(([f, c, l], j) => {
+        svg.append('path').datum(ns).attr('d', d3.line().x((n) => x(n)).y((n) => y(f(n)))).style('fill', 'none').style('stroke', c).style('stroke-width', 2);
+        ns.forEach((n) => { svg.append('circle').attr('cx', x(n)).attr('cy', y(f(n))).attr('r', 3.5).style('fill', c); if (n > 0) svg.append('text').attr('x', x(n)).attr('y', y(f(n)) + (j ? 14 : -8)).attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').style('stroke', 'var(--color-bg)').style('stroke-width', 3).style('paint-order', 'stroke').text(`${Math.round(f(n) * 100)}%`); });
+        svg.append('text').attr('x', x(0) + 10).attr('y', y(f(0)) + (j ? -10 : 18)).style('fill', c).style('stroke', 'var(--color-bg)').style('stroke-width', 3).style('paint-order', 'stroke').text(l);
+      });
+      ns.forEach((n) => svg.append('text').attr('x', x(n)).attr('y', H - 6).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text(n === 0 ? '今年' : `${n}年後`));
+    }
+    // 4) 学校ごとの4年間と2026年の目安
+    const cls = (v) => (v.startsWith('優勝') ? 'c1' : v.startsWith('準優勝') ? 'c2' : v.startsWith('4強') ? 'c3' : v.startsWith('決T') ? 'c4' : '');
+    const top = (v) => /^(優勝|準優勝|4強)/.test(v);
+    document.getElementById('tk-tl').innerHTML = `<thead><tr><th>学校</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th><th>全国</th><th>2026年のベスト4以上の目安</th></tr></thead><tbody>${TK.tl.map(([s, ys]) => {
+      const p = top(ys[3]) ? a : b; const nat = ys.filter((v) => v.includes('◎')).length;
+      return `<tr><td class="nw">${hEsc(s)}</td>${ys.map((v) => `<td class="${cls(v)}">${hEsc(v.replace('◎', ''))}${v.includes('◎') ? '<span class="nat">◎</span>' : ''}</td>`).join('')}<td class="n">${nat}回</td><td><div class="bx"><i style="width:${p * 9}rem"></i><span>${Math.round(p * 100)}%</span></div></td></tr>`;
+    }).join('')}</tbody>`;
+    document.getElementById('tk-tl-note').textContent = `10校の目安を足すと${(4 * a + 6 * b).toFixed(1)}校で、実際のベスト4の数（4校）とほぼ一致します。2025年の上位4校（富山射水・鈴鹿・富山本郷・国際）でも、統計上は半分近くがベスト4を逃す計算です。特に富山射水は2連覇中ですが、地区優勝した学校が翌年も優勝したのは過去24例中8例（33%）だけです。逆に過去4年で上位のない学校でも28%の確率でベスト4に入っており、旗を決められれば十分にチャンスがあります。`;
+  };
+
   const drawPast = () => {
     const Y = pYear();
     const root = document.getElementById('past');
@@ -1557,7 +1698,7 @@ dash.calc('summary', {
     drawSummary();
     if (tab === 'teams') { drawCards(); drawDetail(); }
     if (tab === 'matches') { drawDist26(); drawTable('match-table'); }
-    if (tab === 'analysis') { drawCharts(); drawAnalysis(); drawTrend(); drawUpcoming(); }
+    if (tab === 'analysis') { drawCharts(); drawAnalysis(); drawTrend(); drawUpcoming(); requestAnimationFrame(drawTokaiPath); }
 
   };
 
