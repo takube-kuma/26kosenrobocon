@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン2026大会分析</title><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -1529,7 +1529,7 @@ dash.calc('summary', {
     ysel.value = String(curYear);
     { const m = document.createElement('span'); const cs = getComputedStyle(ysel); m.style.cssText = `position:absolute;visibility:hidden;white-space:nowrap;font:${cs.font}`; m.textContent = ysel.options[ysel.selectedIndex].text; document.body.appendChild(m); ysel.style.width = (m.getBoundingClientRect().width + parseFloat(cs.fontSize) * 1.15) + 'px'; m.remove(); }
     document.getElementById('h1-tail').style.display = mode === 'sum' ? 'none' : '';
-    document.title = mode === 'sum' ? '高専ロボコン 5年間のチーム成績' : `高専ロボコン${curYear}大会分析`;
+    document.title = '高専ロボコン大会分析';
     ['lede', 'region-filter', 'tiles'].forEach((id) => { const e = document.getElementById(id); if (e) e.style.display = mode === 'now' ? '' : 'none'; });
     const nav = document.querySelector('.kr > nav.tabs'); if (nav) nav.style.display = mode === 'now' ? '' : 'none';
     document.getElementById('past').style.display = mode === 'past' ? 'flex' : 'none';
