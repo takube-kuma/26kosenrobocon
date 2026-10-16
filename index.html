@@ -355,11 +355,48 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
       <button class="tab" role="tab" data-ptab="teams" aria-selected="false">チーム・ロボット</button>
     </nav>
     <section class="p-page" data-ptab="analysis" style="display:flex;flex-direction:column;gap:var(--cds-gap-md)">
-      <div class="card" id="p-rule"></div>
-      <div id="p-dists" style="display:flex;flex-direction:column;gap:var(--cds-gap-md)"></div>
-      <p class="note">試合結果はNHKの配信（YouTubeのロボコン公式チャンネル）の実況から書き起こしたもの、賞・全国大会出場チーム・ロボット名は公式の結果発表（official-robocon.com）によります。実況で最終得点が言われなかった試合は「不明」、確定値が言われなかった試合は暫定値です。配信の聞き取りで勝敗や対戦相手が確かめられなかった試合は載せていないか、勝者を空欄にしています（一部の地区・全国大会は試合が欠けています）。</p>
+      <div class="card">
+        <h2 id="p-ins-h">数字で見る地区大会</h2>
+        <p class="note" id="p-ins-note">上の地区ボタンで選んだ地区の数字です（勝率は審査員判定なども含む）。</p>
+        <ul class="ins" id="p-ins"></ul>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h2>1試合の得点の分布</h2>
+          <p class="note">各試合でそれぞれのチームが取った点数（1試合で2チーム分）。得点が分からなかった試合は除く。</p>
+          <div class="chart" id="p-dist"></div>
+        </div>
+        <div class="card">
+          <h2>チーム別 1試合の最高得点（上位15）</h2>
+          <p class="note">選んだ大会の全試合のうち、そのチームが1試合で取った最高点。</p>
+          <div class="legend"><span><i style="background:var(--lx-nat)"></i>全国大会出場</span><span><i style="background:var(--cds-chart-muted)"></i>その他</span></div>
+          <div class="chart" id="p-best"></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>開催日が進むにつれてどう変わった？</h2>
+        <p class="note">地区大会は毎週末に順番に開かれたので、後の大会ほど準備期間が長く、先に開かれた大会の配信も参考にできます。開催日ごとに地区大会の全試合をまとめた数字です（地区ボタンでは変わりません）。地区ごとのレベルの差も混ざっているので、純粋な「上達」ではない点に注意。</p>
+        <div class="dates" id="p-trend-dates"></div>
+        <div class="trend" id="p-trend"></div>
+        <p class="note" id="p-trend-sum"></p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h2>地区ごとの1試合平均得点</h2>
+          <p class="note">各地区の全試合で、1チームが1試合に取った平均点。カッコ内は0点だった割合。</p>
+          <div class="chart" id="p-davg"></div>
+        </div>
+        <div class="card">
+          <h2>予選と決勝トーナメントの違い</h2>
+          <p class="note">1チーム1試合あたりの平均得点と、0点だった割合。</p>
+          <div class="chart" id="p-stage"></div>
+        </div>
+      </div>
+      <div class="card"><details class="rulesbox" id="p-rule"></details></div>
+      <p class="note">試合結果はNHKの配信（YouTubeのロボコン公式チャンネル）の実況と配信画面の得点表示から書き起こしたもの、賞・全国大会出場チーム・ロボット名は公式の結果発表（official-robocon.com）によります。得点が確かめられなかった試合は「不明」として集計から除いています。配信で勝敗や対戦相手が確かめられなかった試合は載せていないか、勝者を空欄にしています。</p>
     </section>
-    <section class="p-page" data-ptab="matches" style="display:none">
+    <section class="p-page" data-ptab="matches" style="display:none;flex-direction:column;gap:var(--cds-gap-md)">
+      <div id="p-dists" style="display:flex;flex-direction:column;gap:var(--cds-gap-md)"></div>
       <div class="card">
         <h2>試合結果</h2>
         <p class="note">「▶」を押すとYouTubeの配信がその試合の少し前から再生されます。黄色が勝ったチーム。得点の下の小さな字は、得点以外で勝敗が決まった理由（審査員判定など）。</p>
@@ -1151,6 +1188,110 @@ dash.calc('summary', {
   const pAwards = (Y, D, t) => [D.grand && D.grand[0] === t && 'ロボコン大賞', D.idea === t && 'アイデア賞', D.tech === t && '技術賞', D.design === t && 'デザイン賞', D.flop === t && 'アイデア倒れ賞', (D.special || []).includes(t) && '特別賞'].filter(Boolean);
   const pTeamOf = (Y, t) => ORDER.find((d) => Y.districts[d] && Y.districts[d].teams.some((x) => x.team === t)) || '';
 
+  // 過去の年の「分析・まとめ」（2026年と同じ形。勝つためには・機構・ゴール別は2026年のみ）
+  const pDateKey = (s) => { const m = String(s || '').match(/(?:\d{4}[-年/])?(\d{1,2})[-月/](\d{1,2})/); return m ? [+m[1], +m[2]] : null; };
+  const pTrendChart = (box, pts, metrics) => {
+    box.replaceChildren(...metrics.map(([title, cap, f, lab]) => {
+      const tp = document.createElement('div'); tp.className = 'tp';
+      const tl = document.createElement('div'); tl.className = 'tl'; tl.textContent = title;
+      const tc = document.createElement('div'); tc.className = 'tc'; tc.textContent = cap;
+      const ch = document.createElement('div'); ch.className = 'tchart';
+      tp.append(tl, tc, ch);
+      requestAnimationFrame(() => {
+        const W = ch.clientWidth || 200, H = ch.clientHeight || 150, m = { t: 18, r: 18, b: 22, l: 18 };
+        const x = d3.scalePoint(pts.map((p) => p.d), [m.l, W - m.r]).padding(0.3);
+        const max = d3.max(pts, f) || 1;
+        const y = d3.scaleLinear([0, max * 1.15], [H - m.b, m.t]);
+        const svg = d3.select(ch).append('svg').attr('width', W).attr('height', H).style('font-family', 'var(--font-anthropic-sans)').style('font-size', '11px');
+        svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', H - m.b).attr('y2', H - m.b).style('stroke', 'var(--color-border-line)');
+        svg.append('path').datum(pts).attr('d', d3.line().x((p) => x(p.d)).y((p) => y(f(p)))).style('fill', 'none').style('stroke', dash.colors[0]).style('stroke-width', 2);
+        const g = svg.selectAll('g.pt').data(pts).join('g').attr('class', 'pt').attr('transform', (p) => `translate(${x(p.d)},${y(f(p))})`);
+        g.append('circle').attr('r', 4).style('fill', dash.colors[0]).style('stroke', 'var(--color-bg)').style('stroke-width', 1.5);
+        g.append('text').attr('y', -9).attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').style('stroke', 'var(--color-bg)').style('stroke-width', 3).style('paint-order', 'stroke').style('font-variant-numeric', 'tabular-nums').text((p) => lab(f(p)));
+        svg.selectAll('text.xl').data(pts).join('text').attr('class', 'xl').attr('x', (p) => x(p.d)).attr('y', H - 6).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text((p) => p.d);
+        const t = tip(ch);
+        svg.selectAll('rect.hit').data(pts).join('rect').attr('class', 'hit').attr('x', (p) => x(p.d) - x.step() / 2).attr('width', x.step()).attr('y', 0).attr('height', H).style('fill', 'transparent')
+          .on('mousemove', (ev, p) => showTip(ch, t, ev, `${p.d}（${p.ds.join('・')}）`, `${title}：${lab(f(p))}・${p.n}試合`)).on('mouseleave', () => { t.style.display = 'none'; });
+      });
+      return tp;
+    }));
+  };
+  const drawPastAnalysis = (Y, sel, natMode) => {
+    const lab = pState.region === 'all' ? '全地区' : natMode ? '全国大会' : pState.region;
+    document.getElementById('p-ins-h').textContent = natMode ? '数字で見る全国大会' : '数字で見る地区大会';
+    document.getElementById('p-ins-note').textContent = natMode ? '全国大会の全試合の数字です。' : '上の地区ボタンで選んだ地区の数字です（全地区には全国大会を含みません）。';
+    const ms = sel.flatMap((d) => Y.districts[d].matches);
+    const known = ms.filter((m) => m.red_score != null && m.blue_score != null);
+    const scores = teamScores(ms);
+    const zero = scores.filter((v) => v === 0).length;
+    const isPre = (m) => String(m.round).startsWith('予選');
+    const pre = teamScores(ms.filter(isPre)), ko = teamScores(ms.filter((m) => !isPre(m)));
+    const other = ms.filter((m) => m.winner && m.decision && m.decision !== '得点').length;
+    const items = [];
+    const add = (l, big, sub) => items.push([l, big, sub]);
+    if (scores.length) add('1点も取れなかった試合', `${pct(zero, scores.length)}%`, `${fmt(scores.length)}回中${fmt(zero)}回が0点`);
+    add('得点以外で決まった試合', `${pct(other, ms.length)}%`, `${fmt(ms.length)}試合中${fmt(other)}試合（審査員判定・同点時の判定など）`);
+    if (pre.length && ko.length) add('決勝トーナメントの平均得点', `${fmt(Math.round(d3.mean(ko)))}点`, `予選は${fmt(Math.round(d3.mean(pre)))}点`);
+    else if (scores.length) add('1試合の平均得点', `${fmt(Math.round(d3.mean(scores)))}点`, '1チーム1試合あたり');
+    // 勝った側と負けた側の点差
+    const dec = known.filter((m) => m.winner && m.red_score !== m.blue_score);
+    if (dec.length) { const gap = dec.map((m) => Math.abs(m.red_score - m.blue_score)); add('勝敗の点差（中央値）', `${fmt(d3.median(gap))}点`, `得点で決まった${fmt(dec.length)}試合`); }
+    // 先に高い点を取ったチーム＝勝ったチームの平均
+    const winS = known.filter((m) => m.winner).map((m) => (m.winner === m.red ? m.red_score : m.blue_score));
+    const loseS = known.filter((m) => m.winner).map((m) => (m.winner === m.red ? m.blue_score : m.red_score));
+    if (winS.length) add('勝ったチームの平均得点', `${fmt(Math.round(d3.mean(winS)))}点`, `負けたチームは${fmt(Math.round(d3.mean(loseS)))}点`);
+    // 優勝チーム
+    const champs = sel.map((d) => Y.districts[d].champ[0]).filter(Boolean);
+    const cs = champs.flatMap((t) => ms.filter((m) => m.red === t || m.blue === t).map((m) => (m.red === t ? m.red_score : m.blue_score)).filter((v) => v != null));
+    if (cs.length && scores.length) add(champs.length > 1 ? '優勝チームの平均得点' : '優勝チームの平均得点', `${fmt(Math.round(d3.mean(cs)))}点`, `全体の平均は${fmt(Math.round(d3.mean(scores)))}点${champs.length === 1 ? `（${champs[0]}）` : ''}`);
+    // 全国出場チームの勝率
+    if (!natMode) {
+      const natT = new Set(sel.flatMap((d) => Y.districts[d].national || []));
+      let w = 0, l = 0; ms.forEach((m) => { if (!m.winner) return; [m.red, m.blue].forEach((t) => { if (natT.has(t)) { if (m.winner === t) w++; else l++; } }); });
+      if (natT.size) add('全国出場チームの勝率', `${pct(w, w + l)}%`, `${natT.size}チーム・${w}勝${l}敗`);
+    }
+    add('得点がわかった試合', `${pct(known.length, ms.length)}%`, `${fmt(ms.length)}試合中${fmt(known.length)}試合`);
+    document.getElementById('p-ins').innerHTML = items.map(([l, b, s]) => `<li><div class="lab">${hEsc(l)}</div><div class="big">${hEsc(b)}</div><div class="txt">${hEsc(s)}</div></li>`).join('');
+    // 得点分布
+    const mx = d3.max(scores) || 0;
+    const bins = mx <= 40 ? [['0点', 0, 0], ['1〜2点', 1, 2], ['3〜5点', 3, 5], ['6〜9点', 6, 9], ['10〜19点', 10, 19], ['20点以上', 20, 1e9]]
+      : [['0点', 0, 0], ['1〜9点', 1, 9], ['10〜49点', 10, 49], ['50〜99点', 50, 99], ['100〜199点', 100, 199], ['200〜299点', 200, 299], ['300〜399点', 300, 399], ['400点以上', 400, 1e9]];
+    const bd = bins.map(([l, a, b]) => ({ l, v: scores.filter((v) => v >= a && v <= b).length }));
+    while (bd.length > 2 && bd[bd.length - 1].v === 0) bd.pop();
+    hbar(document.getElementById('p-dist'), bd, (d) => d.l, (d) => d.v, (d) => d.l, (d) => `${fmt(d.v)}回（${pct(d.v, scores.length)}%）`, dash.colors[0], null, null, (d) => `${fmt(d.v)}回`);
+    // チーム別最高得点
+    const natAll = new Set(pDists(Y).flatMap((d) => Y.districts[d].national || []));
+    const best = {};
+    sel.forEach((d) => Y.districts[d].matches.forEach((m) => [['red', 'red_score'], ['blue', 'blue_score']].forEach(([k, s]) => { if (m[s] == null) return; const t = m[k]; if (!best[t] || m[s] > best[t].v) best[t] = { t, v: m[s], d: natMode ? (pTeamOf(Y, t) || '全国') : d }; })));
+    const br = Object.values(best).sort((a, b) => b.v - a.v).slice(0, 15);
+    hbar(document.getElementById('p-best'), br, (d) => d.t, (d) => d.v, (d) => `${d.t}（${d.d}）`, (d) => `最高 ${fmt(d.v)}点${natAll.has(d.t) ? '・全国出場' : ''}`, (d) => (natAll.has(d.t) ? 'var(--lx-nat)' : 'var(--cds-chart-muted)'));
+    // 地区別平均
+    const da = pDists(Y).map((d) => { const sc = teamScores(Y.districts[d].matches); return { l: d, v: Math.round(d3.mean(sc) || 0), z: pct(sc.filter((x) => x === 0).length, sc.length), n: sc.length }; }).filter((d) => d.n).sort((a, b) => b.v - a.v);
+    if (Y.districts[NAT]) { const sc = teamScores(Y.districts[NAT].matches); if (sc.length) da.push({ l: '全国大会', v: Math.round(d3.mean(sc)), z: pct(sc.filter((x) => x === 0).length, sc.length), n: sc.length }); }
+    hbar(document.getElementById('p-davg'), da, (d) => d.l, (d) => d.v, (d) => d.l, (d) => `平均${fmt(d.v)}点・0点の割合${d.z}%（${fmt(d.n)}回）`, (d) => (pState.region === 'all' ? (d.l === '全国大会' ? 'var(--cds-chart-muted)' : dash.colors[0]) : (d.l === pState.region || (natMode && d.l === '全国大会') ? dash.colors[0] : 'var(--cds-chart-muted)')), null, null, (d) => `${fmt(d.v)}点（0点${d.z}%）`);
+    // 予選 vs 決勝T
+    const st = [{ l: '予選', sc: pre }, { l: natMode ? 'トーナメント' : '決勝トーナメント', sc: ko }].filter((d) => d.sc.length).map((d) => ({ l: d.l, v: Math.round(d3.mean(d.sc)), z: pct(d.sc.filter((x) => x === 0).length, d.sc.length), n: d.sc.length }));
+    hbar(document.getElementById('p-stage'), st, (d) => d.l, (d) => d.v, (d) => `${d.l}（${lab}）`, (d) => `平均${fmt(d.v)}点・0点の割合${d.z}%（${fmt(d.n)}回）`, dash.colors[0], null, null, (d) => `${fmt(d.v)}点（0点${d.z}%）`);
+    // 開催日ごと
+    const byDate = new Map();
+    pDists(Y).forEach((d) => { const k = pDateKey(Y.districts[d].date); if (!k) return; const key = k[0] * 100 + k[1]; if (!byDate.has(key)) byDate.set(key, { d: `${k[0]}/${k[1]}`, ds: [] }); byDate.get(key).ds.push(d); });
+    const dates = [...byDate.entries()].sort((a, b) => a[0] - b[0]).map((x) => x[1]);
+    const pts = dates.map(({ d, ds }) => {
+      const mm = ds.flatMap((x) => Y.districts[x].matches);
+      const sc = teamScores(mm);
+      return { d, ds, n: mm.length, avg: d3.mean(sc) || 0, zero: pct(sc.filter((x) => x === 0).length, sc.length), other: pct(mm.filter((m) => m.winner && m.decision && m.decision !== '得点').length, mm.length), fin: (() => { const f = mm.filter((m) => m.round === '決勝').flatMap((m) => [m.red_score, m.blue_score]).filter((v) => v != null); return f.length ? d3.max(f) : 0; })() };
+    });
+    document.getElementById('p-trend-dates').innerHTML = dates.map(({ d, ds }) => `<span><b>${d}</b> ${ds.map(hEsc).join('・')}</span>`).join('');
+    pTrendChart(document.getElementById('p-trend'), pts, [
+      ['1試合の平均得点', '1チーム1試合あたり', (p) => p.avg, (v) => `${Math.round(v)}点`],
+      ['決勝の勝者の得点', 'その日の決勝で多い方', (p) => p.fin, (v) => `${Math.round(v)}点`],
+      ['0点だった割合', 'チームの1試合ごとの得点', (p) => p.zero, (v) => `${Math.round(v)}%`],
+      ['得点以外で決着', '全試合のうち', (p) => p.other, (v) => `${Math.round(v)}%`],
+    ]);
+    if (pts.length >= 2) { const a = pts[0], z = pts[pts.length - 1]; document.getElementById('p-trend-sum').textContent = `最初の${a.d}と最後の${z.d}を比べると、1試合の平均得点は${Math.round(a.avg)}点→${Math.round(z.avg)}点、0点だった割合は${a.zero}%→${z.zero}%、得点以外で決まった試合は${a.other}%→${z.other}%でした。`; }
+    else document.getElementById('p-trend-sum').textContent = '';
+  };
+
   const drawPast = () => {
     const Y = pYear();
     const root = document.getElementById('past');
@@ -1183,8 +1324,11 @@ dash.calc('summary', {
     root.querySelectorAll('.tab').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.ptab === pState.tab)));
     root.querySelectorAll('.p-page').forEach((pg) => { pg.style.display = pg.dataset.ptab === pState.tab ? 'flex' : 'none'; });
     if (pState.tab === 'analysis') {
+      root.querySelector('#p-rule').innerHTML = `<summary>${Y.year}年の競技「${hEsc(Y.game)}」のルール</summary><p class="hy-rule">${hEsc(Y.rules)}</p>`;
+      drawPastAnalysis(Y, sel, natMode);
+    }
+    if (pState.tab === 'matches') {
       const aw = (lab, big, sub, cls) => `<div class="hy-aw ${cls || ''}"><div class="lab">${lab}</div><div class="big">${big}</div>${sub ? `<div class="sub">${sub}</div>` : ''}</div>`;
-      root.querySelector('#p-rule').innerHTML = `<h2>${Y.year}年の競技「${hEsc(Y.game)}」</h2><p class="hy-rule">${hEsc(Y.rules)}</p>`;
       const list = sel.length > 1 && natD ? [NAT, ...sel] : sel;
       root.querySelector('#p-dists').innerHTML = list.map((d) => {
         const D = Y.districts[d]; const nat = isNat(d);
