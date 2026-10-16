@@ -135,6 +135,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr .tk-sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--cds-gap-sm);margin:var(--cds-gap-sm) 0}
 .kr .tk-sum div{border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-sm) var(--cds-pad-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);background:var(--color-bg)}
 .kr .tk-sum b{display:block;color:var(--color-fg);font-size:var(--cds-font-size-body);margin-bottom:2px}
+.kr .tkc h3,.kr #tokai h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:var(--cds-gap-md) 0 0}
 .kr #tokai-path h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:var(--cds-gap-md) 0 0}
 .kr .tk-mx{border-collapse:collapse;font-size:var(--cds-font-size-caption);margin-top:var(--cds-gap-sm)}
 .kr .tk-mx th,.kr .tk-mx td{border:1px solid var(--color-border-line);padding:6px 10px;text-align:center}
@@ -454,6 +455,22 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
       <div class="chart" id="tk-lvl"></div>
       <div class="scroll"><table class="tk-tl" id="tk-ratio"></table></div>
       <p class="note" id="tk-lvl-note"></p>
+    </div>
+    <div class="card tkc">
+      <h2>得点の「段」で見た予測（旗・机・バケツの入りやすさから）</h2>
+      <p class="note">点数は旗・移動バケツ100点、机20点、5点バケツ、1点バケツ（スーパー雑巾は2倍）の組み合わせでしか増えないので、0〜95点・100点台（旗1回＋α）・200点台（旗2回）…と段になります。そこで2026年に終わった7地区の104チームについて、1試合あたりに各ゴールへ入れた枚数を1チームずつ求め、東海北陸の20チームをその中からランダムに選んで大会を5000回シミュレーションしました（各試合の枚数はポアソン分布、予選2試合＋上位5チームは決勝トーナメントで1〜3試合）。入りやすさは東海北陸のレベルと開催日の効果を合わせて7地区の0.85倍にしています（得点のトリム平均が上の予測とほぼ同じ約21点になる倍率）。</p>
+      <div class="grid">
+        <div>
+          <h3>ゴール別の入りやすさ</h3>
+          <div class="scroll"><table class="tk-tl" id="tk-goal"></table></div>
+          <p class="note">「1試合あたり」は全チーム・全試合の平均枚数。「一度でも入れたチーム」は大会中に1枚以上入れたチームの割合。旗に掛けられるのは4〜5チームに1チームで、ほとんどのチームの点は5点バケツから来ています。</p>
+        </div>
+        <div>
+          <h3>東海北陸の上位チームの最高得点はどの段か</h3>
+          <div class="chart" id="tk-level"></div>
+          <p class="note" id="tk-level-note"></p>
+        </div>
+      </div>
     </div>
     <div class="grid">
       <div class="card">
@@ -1510,8 +1527,8 @@ dash.calc('summary', {
     const tile = (lab, num, sub) => `<div class="tile"><div class="lab">${lab}</div><div class="num">${num}</div><div class="sub">${sub}</div></div>`;
     const wk = Math.round((Math.exp(TK.slope[0]) - 1) * 100);
     document.getElementById('tk-tiles').innerHTML = tile('1チーム1試合の得点（予測）', `約${Math.round(pred[0].v)}点`, `上下10%を除いた平均。幅 ${Math.round(pred[0].lo)}〜${Math.round(pred[0].hi)}点（7地区の中央値は${Math.round(med[0])}点）`)
-      + tile('上位チームの最高得点（予測）', `約${r10(pred[1].v)}点`, `2番目のチームの最高得点。幅 ${r10(pred[1].lo)}〜${r10(pred[1].hi)}点`)
-      + tile('ベスト4に必要な力（予測）', `約${r10(pred[2].v)}点`, `4番目のチームの最高得点。幅 ${r10(pred[2].lo)}〜${r10(pred[2].hi)}点`)
+      + tile('上位チームの最高得点（予測）', '200点台以上', `2番目のチームが旗2回の段に入る確率77%（比での予測は約${r10(pred[1].v)}点）`)
+      + tile('ベスト4に必要な力（予測）', '旗1回', `4番目のチームが100点以上の確率61%（比での予測は約${r10(pred[2].v)}点）`)
       + tile('開催日の効果', `+${Math.round((Math.exp(TK.slope[0] * TK.lag) - 1) * 100)}%`, `1週遅いごとに得点が約${wk}%上がる。10/18は7地区の平均より約${TK.lag.toFixed(1)}週遅い`)
       + tile('全国大会での勝率', '43%', '東海北陸のチームの2022〜2025年の全国での成績（12勝16敗・8地区中6位）');
     // 1) 地区別のレベル（ドットプロット）
@@ -1541,6 +1558,31 @@ dash.calc('summary', {
     // 比の表
     const names = ['得点（トリム平均）', '2位の最高得点', '4位の最高得点'];
     document.getElementById('tk-ratio').innerHTML = `<thead><tr><th>東海北陸の比</th>${TK.years.map((y, j) => `<th>${y}<br><small style="font-weight:400;color:var(--color-fg-muted)">${TK.tkDate[j]}</small></th>`).join('')}<th>開催日を除いた比</th><th>2026年の予測（倍率）</th></tr></thead><tbody>${names.map((n, i) => `<tr><td>${n}</td>${TK.years.map((y) => `<td class="n">${TK.lvl[y]['東海北陸'][i].toFixed(2)}</td>`).join('')}<td class="n">${TK.net[i].toFixed(2)}</td><td class="n"><b>${pred[i].mult.toFixed(2)}</b></td></tr>`).join('')}</tbody>`;
+    // 得点の段（モンテカルロ）
+    {
+      const SIM = { 0.85: { top: [0.006, 0.043, 0.175, 0.777], second: [0.049, 0.181, 0.371, 0.399], fourth: [0.394, 0.375, 0.205, 0.025], n100: 4.0, n200: 2.5 }, 0.7: { fourth: [0.448, 0.406, 0.133, 0.013], second: [0.062, 0.251, 0.409, 0.279] }, 1.0: { fourth: [0.346, 0.328, 0.26, 0.066], second: [0.035, 0.126, 0.32, 0.519] } };
+      const G = [['旗（100点）', 0.244, 0.23, 'うちスーパー雑巾（200点）0.12枚'], ['5点バケツ', 0.949, 0.40, ''], ['机（20点）', 0.114, 0.08, ''], ['移動バケツ（100点）', 0.055, 0.05, ''], ['1点バケツ', 0.031, 0.08, '']];
+      document.getElementById('tk-goal').innerHTML = `<thead><tr><th>ゴール</th><th>7地区 1試合あたり</th><th>一度でも入れたチーム</th><th>東海北陸（予測）</th></tr></thead><tbody>${G.map(([l, a, b, n]) => `<tr><td>${l}${n ? `<br><small style="color:var(--color-fg-muted)">${n}</small>` : ''}</td><td class="n">${a.toFixed(2)}枚</td><td class="n">${Math.round(b * 100)}%</td><td class="n">${(a * 0.85).toFixed(2)}枚</td></tr>`).join('')}</tbody>`;
+      const lv = ['0〜95点', '100点台', '200点台', '300点以上'];
+      const cols = ['var(--cds-chart-muted)', '#7fa7d8', '#3f6fb4', 'var(--lx-nat)'];
+      const rows = [['1位のチーム', SIM[0.85].top], ['2番目のチーム', SIM[0.85].second], ['4番目のチーム（ベスト4の目安）', SIM[0.85].fourth]];
+      const box = document.getElementById('tk-level'); const rowH = 40, H = rows.length * rowH + 40; const [svg, W] = tkSvg(box, H);
+      const L = W < 500 ? 100 : 190, R = 10; const x = d3.scaleLinear([0, 1], [L, W - R]);
+      const t = tip(box);
+      rows.forEach(([l, ps], i) => {
+        const g = svg.append('g').attr('transform', `translate(0,${i * rowH})`);
+        g.append('text').attr('x', L - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg)').text(W < 500 ? l.replace('のチーム', '').replace('（ベスト4の目安）', '') : l);
+        let acc = 0;
+        ps.forEach((p, j) => {
+          const x0 = x(acc); acc += p;
+          g.append('rect').attr('x', x0).attr('y', 8).attr('height', rowH - 16).attr('width', Math.max(0, x(acc) - x0)).style('fill', cols[j]).on('mousemove', (ev) => showTip(box, t, ev, `${l}：${lv[j]}`, `${Math.round(p * 100)}%`)).on('mouseleave', () => { t.style.display = 'none'; });
+          if (p >= 0.08) tkTxt(g.append('text').attr('x', (x0 + x(acc)) / 2).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').style('pointer-events', 'none').text(`${Math.round(p * 100)}%`));
+        });
+      });
+      const lg = svg.append('g').attr('transform', `translate(${W < 500 ? 8 : L},${rows.length * rowH + 14})`); let lx = 0;
+      lv.forEach((l, j) => { const gg = lg.append('g').attr('transform', `translate(${lx},0)`); gg.append('rect').attr('width', 10).attr('height', 10).attr('y', -1).style('fill', cols[j]); gg.append('text').attr('x', 14).attr('y', 8).style('fill', 'var(--color-fg-muted)').text(l); lx += (W < 500 ? 76 : 78); });
+      document.getElementById('tk-level-note').textContent = `4番目のチーム（ベスト4の最後の枠）の最高得点は、旗なし（0〜95点）${Math.round(SIM[0.85].fourth[0] * 100)}%・旗1回＋α（100点台）${Math.round(SIM[0.85].fourth[1] * 100)}%・200点以上${Math.round((SIM[0.85].fourth[2] + SIM[0.85].fourth[3]) * 100)}%。つまり大会中に一度でも旗を決められれば、ベスト4に入れる可能性が高い大会になりそうです。2番目のチームは200点台以上が${Math.round((SIM[0.85].second[2] + SIM[0.85].second[3]) * 100)}%で、優勝争いは旗2回かスーパー雑巾の旗が必要。旗を一度でも決めるチームは平均${SIM[0.85].n100}チーム（10回中8回は2〜6チーム）。入りやすさを0.7〜1.0倍に変えても、4番目のチームが100点以上になる確率は${Math.round((1 - SIM[0.7].fourth[0]) * 100)}〜${Math.round((1 - SIM[1.0].fourth[0]) * 100)}%です。`;
+    }
     // 2) 全国大会での地区別勝率
     ciRows(document.getElementById('tk-natwin'), TK.natwin.map(([l, w, lo]) => ({ l, k: w, n: w + lo, hl: l === '東海北陸' })), 90, 92, (r) => (r.hl ? 'var(--lx-nat)' : dash.colors[0]), (r, p) => `${Math.round(p * 100)}%（${r.k}勝${r.n - r.k}敗）`, (r, p, lo, hi) => `${r.k}勝${r.n - r.k}敗＝${Math.round(p * 100)}%（95%区間 ${Math.round(lo * 100)}〜${Math.round(hi * 100)}%）`);
     // 3) 開催日と平均得点（2026年）
