@@ -317,7 +317,8 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     </div>
   </section>
 
-  <section id="matches" class="lx-page" style="display:none">
+  <section id="matches" class="lx-page" style="display:none;flex-direction:column;gap:var(--cds-gap-md)">
+    <div id="m-dists" style="display:flex;flex-direction:column;gap:var(--cds-gap-md)"></div>
     <div class="card" id="match-table-card">
       <h2>試合結果</h2>
       <p class="note">「▶」を押すとYouTubeの配信がその試合の直前（セッティング中）から再生されます。色付き（黄色）が勝ったチームと得点。0-0などは審査員判定で勝敗が決まった試合。内訳の★はスーパー雑巾（2倍）。「なし」は得点ゼロ。得点が実況で分からなかった試合は「不明」。</p>
@@ -1292,6 +1293,54 @@ dash.calc('summary', {
     else document.getElementById('p-trend-sum').textContent = '';
   };
 
+  // 2026年の試合結果：地区ごとのカード（過去の年と同じ形）
+  const drawDist26 = () => {
+    const box = document.getElementById('m-dists');
+    const gm = dash.data('matches'), gt = dash.data('teams'), gd = dash.data('districts');
+    if (gm.status !== 'ok' || gt.status !== 'ok' || gd.status !== 'ok') return;
+    const r = region();
+    const list = ORDER.filter((d) => (r === 'all' || d === r) && gd.data.some((x) => x.district === d));
+    const dateOf = (d) => { const x = DATES.find(([, ds]) => ds.includes(d)); return x ? `2026年${x[0].replace('/', '月')}日` : ''; };
+    const aw = (lab, big, sub, cls) => `<div class="hy-aw ${cls || ''}"><div class="lab">${lab}</div><div class="big">${big}</div>${sub ? `<div class="sub">${sub}</div>` : ''}</div>`;
+    box.innerHTML = list.map((d) => {
+      const info = gd.data.find((x) => x.district === d);
+      const ts = gt.data.filter((t) => t.district === d);
+      const rob = (t) => (ts.find((x) => x.team === t) || {}).robot || '';
+      const withAw = (k) => ts.filter((t) => String(t.award || '').split(/[／、]/).some((a) => a.trim().startsWith(k))).map((t) => t.team);
+      const special = ts.filter((t) => /特別賞/.test(t.award || '')).map((t) => t.team);
+      const ms = gm.data.filter((m) => m.district === d).sort((a, b) => a.seq - b.seq).map((m) => {
+        const u = String(m.video_url || ''); const vid = (u.match(/[?&]v=([^&]+)/) || [])[1] || ''; const tt = +((u.match(/[?&]t=(\d+)/) || [])[1] || 0);
+        const lab = (v) => (v === null || v === undefined || v === '' ? '不明' : String(v));
+        return { ...m, red_label: lab(m.red_score), blue_label: lab(m.blue_score), t: tt, _vid: vid };
+      });
+      const D = { video: (ms.find((m) => m._vid) || {})._vid || '' };
+      const fin = ms.find((m) => m.round === '決勝');
+      const ko = ms.filter((m) => !String(m.round).startsWith('予選'));
+      const groups = {};
+      ms.filter((m) => String(m.round).startsWith('予選')).forEach((m) => { const g = String(m.round).replace('予選', '')[0]; (groups[g] = groups[g] || []).push(m); });
+      const rc = reachOf(ms, false);
+      const nat = String(info.national || '').split('、').filter(Boolean);
+      const one = (k) => withAw(k).map(hEsc).join('・') || '—';
+      return `<div class="card">
+        <div class="hy-head"><h2>${hEsc(d)}地区大会</h2><span class="hy-meta">${dateOf(d)}${D.video ? `・<a href="https://www.youtube.com/watch?v=${D.video}" target="_blank" rel="noopener">配信を見る ↗</a>` : ''}</span></div>
+        <div class="hy-awards">
+          ${aw('優勝', hEsc(info.champion), hEsc(rob(info.champion)) + (fin ? `・決勝 ${pScore(fin)}${fin.decision !== '得点' ? '（' + hEsc(fin.decision) + '）' : ''}` : ''))}
+          ${aw('準優勝', hEsc(info.runner_up), hEsc(rob(info.runner_up)))}
+          ${aw('アイデア賞', one('アイデア賞'))}${aw('技術賞', one('技術賞'))}${aw('デザイン賞', one('デザイン賞'))}
+          ${nat.length ? aw('全国大会に出場', nat.map(hEsc).join('・'), '優勝チーム＋審査員の推薦', 'wide') : ''}
+          ${special.length ? aw('特別賞（協賛企業）', special.map(hEsc).join('・'), '', 'wide') : ''}
+        </div>
+        <h3>決勝トーナメント</h3>
+        <div class="hscroll"><table class="hm"><thead><tr><th>回戦</th><th class="r">赤ゾーン</th><th>得点</th><th>青ゾーン</th><th></th><th>メモ</th></tr></thead><tbody>${ko.map((m) => pRow(D, m, ['round', 'red', 'score', 'blue', 'video', 'note'])).join('')}</tbody></table></div>
+        ${Object.keys(groups).length ? `<details class="p-groups"><summary>予選ラウンド（${Object.keys(groups).length}グループ）を見る</summary><div class="hy-groups">${Object.keys(groups).sort().map((g) => {
+          const tg = [...new Set(groups[g].flatMap((m) => [m.red, m.blue]))];
+          const up = tg.filter((t) => rc[t] && rc[t].rank < 9);
+          return `<div><h3>${g}グループ <span class="hy-meta">${up.length ? '→ ' + up.map(hEsc).join('・') + ' が決勝トーナメントへ' : ''}</span></h3><table class="hm"><tbody>${groups[g].map((m) => pRow(D, m, ['round', 'red', 'score', 'blue', 'video'])).join('')}</tbody></table>${groups[g].filter((m) => m.note).map((m) => `<div class="mn">${hEsc(String(m.round).replace('予選', ''))}：${hEsc(m.note)}</div>`).join('')}</div>`;
+        }).join('')}</div></details>` : ''}
+      </div>`;
+    }).join('') + (r === 'all' || r === '東海北陸' ? '<p class="note">東海北陸地区大会（10/18）は開催後に追加します。</p>' : '');
+  };
+
   const drawPast = () => {
     const Y = pYear();
     const root = document.getElementById('past');
@@ -1452,7 +1501,7 @@ dash.calc('summary', {
     bar.querySelectorAll('.chip').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.r === r)));
     drawSummary();
     if (tab === 'teams') { drawCards(); drawDetail(); }
-    if (tab === 'matches') drawTable('match-table');
+    if (tab === 'matches') { drawDist26(); drawTable('match-table'); }
     if (tab === 'analysis') { drawCharts(); drawAnalysis(); drawTrend(); drawUpcoming(); }
 
   };
