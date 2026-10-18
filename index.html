@@ -287,7 +287,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 
 <div class="kr">
   <header id="top">
-    <h1>高専ロボコン<label class="ysel"><select id="year-sel" aria-label="年を選ぶ"><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="all">5年間のチーム成績</option><option value="nat">2026全国大会の分析</option></select></label><span id="h1-tail">大会分析</span></h1>
+    <h1>高専ロボコン<label class="ysel"><select id="year-sel" aria-label="年を選ぶ"><option value="nat">2026全国大会の分析</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="all">5年間のチーム成績</option></select></label><span id="h1-tail">大会分析</span></h1>
     <p class="lede" id="lede">
       <span class="lx-scope">全地区</span>の最高得点は
       <span class="dash-skeleton lx-m" data-source="summary" data-field="top_team" data-where="district=all">—</span>（<span class="dash-skeleton lx-m" data-source="summary" data-field="top_district" data-where="district=all">—</span>）の
@@ -475,10 +475,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     <div class="card" id="aim-card">
       <h2>出場チームの狙える得点源と成功率</h2>
       <p class="note">各チームの「狙える得点源」は、実況で紹介された狙いと、実際に1枚以上入ったゴールを合わせたもの。成功率は、その得点源を狙えるチームの試合のうち1枚以上入った試合の割合です（投げた回数は数えていないので1投ごとの命中率ではありません）。全国大会に出る25チームの数字です。各チームの内訳は「チーム・ロボット」タブのカードと、チームの詳細ページにあります。</p>
-      <div class="grid">
-        <div><div class="scroll"><table class="tk-tl" id="aim-table"></table></div></div>
-        <div><h3 style="font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:0">得点を取れた得点源の数と勝率</h3><div class="scroll"><table class="tk-tl" id="aim-multi"></table></div><p class="note" id="aim-note"></p></div>
-      </div>
+      <div class="scroll"><table class="tk-tl" id="aim-table"></table></div>
     </div>
     <div class="card">
       <h2>出場チームの地区大会での得点</h2>
@@ -1166,11 +1163,6 @@ dash.calc('summary', {
     }).filter((x) => x.teams);
     const pc = (a, b) => (b ? Math.round(100 * a / b) + '%' : '—');
     document.getElementById('aim-table').innerHTML = `<thead><tr><th>得点源</th><th>狙えるチーム</th><th>1回でも入れた</th><th>試合ごとの成功率</th><th>入った枚数</th></tr></thead><tbody>${rows.map((x) => `<tr><td>${x.l}</td><td class="n">${x.teams}</td><td class="n">${x.any}（${pc(x.any, x.teams)}）</td><td><div class="bx"><i style="width:${Math.round(60 * (x.n ? x.ok / x.n : 0))}px;background:${dash.colors[0]}"></i>${pc(x.ok, x.n)}（${x.ok}/${x.n}）</div></td><td class="n">${x.cnt}枚</td></tr>`).join('')}</tbody>`;
-    const grp = d3.rollups(ts, (v) => ({ n: v.length, w: d3.sum(v, (t) => +t.wins || 0), l: d3.sum(v, (t) => +t.losses || 0), names: v.map((t) => t.team) }), (t) => Math.min(3, aimsOf(t.team).filter((a) => a.ok > 0).length)).sort((a, b) => b[0] - a[0]);
-    const lab = (k) => (k === 0 ? '得点なし' : k === 3 ? '3つ以上' : `${k}つ`);
-    document.getElementById('aim-multi').innerHTML = `<thead><tr><th>得点を取れた得点源</th><th>チーム数</th><th>地区大会での勝率</th><th>チーム</th></tr></thead><tbody>${grp.map(([k, v]) => `<tr><td>${lab(k)}</td><td class="n">${v.n}</td><td class="n">${pc(v.w, v.w + v.l)}</td><td style="white-space:normal">${v.names.map(hEsc).join('・')}</td></tr>`).join('')}</tbody>`;
-    const multi = ts.filter((t) => aimsOf(t.team).filter((a) => a.ok > 0).length >= 2);
-    { const withS = multi.filter((t) => aimsOf(t.team).some((a) => a.k === 'sflag' && a.ok > 0)).length; document.getElementById('aim-note').textContent = multi.length ? `2つ以上の得点源で点を取ったのは${multi.length}チーム。そのうち${withS}チームは、そのひとつが2分以降のスーパー雑巾を旗に掛けたもの（スーパー旗）です。` : ''; }
   };
   const drawAnalysis = () => {
     const r = region();
@@ -1838,7 +1830,7 @@ dash.calc('summary', {
     }).join('')}</tr>`).join('')}</tbody>` : '';
   };
 
-  let curYear = 2026;
+  let curYear = 'nat';
   const ysel = document.getElementById('year-sel');
   const applyYear = () => {
     const mode = curYear === 'all' ? 'sum' : curYear === 'nat' ? 'nat' : curYear === 2026 ? 'now' : 'past';
@@ -1856,7 +1848,7 @@ dash.calc('summary', {
   };
   ysel.addEventListener('change', () => {
     curYear = ysel.value === 'all' || ysel.value === 'nat' ? ysel.value : +ysel.value; pState.sel = null;
-    try { history.replaceState(null, '', curYear === 2026 ? location.pathname + location.search : '#' + curYear); } catch (e) {}
+    try { history.replaceState(null, '', curYear === 'nat' ? location.pathname + location.search : '#' + curYear); } catch (e) {}
     draw();
     window.scrollTo(0, 0);
   });
@@ -1882,8 +1874,8 @@ dash.calc('summary', {
   { const ft = document.querySelector('.foot'); if (ft) ft.textContent = '高専ロボコン2026 地区大会（8地区）の配信の実況・得点表示と、高専ロボコン公式Xの投稿をもとに個人的にまとめたものです。ロボットの写真は配信映像から切り出したもの、Xの投稿はリンクのみ掲載しています。内訳の一部は得点の増え方から推定しています。'; }
   dash.onData(draw);
   const named = location.hash.slice(1);
-  if (['teams', 'matches', 'analysis'].includes(named)) showTab(named);
-  else if (/^20(22|23|24|25)$/.test(named)) { curYear = +named; draw(); }
+  if (['teams', 'matches', 'analysis'].includes(named)) { curYear = 2026; showTab(named); }
+  else if (/^20(22|23|24|25|26)$/.test(named)) { curYear = +named; draw(); }
   else if (named === 'all') { curYear = 'all'; draw(); }
   else if (named === 'nat' || named === 'national' || named === 'tokai') { curYear = 'nat'; draw(); }
 })();
