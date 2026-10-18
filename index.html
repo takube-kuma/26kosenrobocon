@@ -317,7 +317,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
   <section id="teams" class="lx-page" style="display:none;flex-direction:column;gap:var(--cds-gap-md)">
     <div class="card" id="team-cards-card">
       <h2>チーム・ロボット一覧</h2>
-      <p class="note">カードを押すとチームの詳細ページが開きます。タグを押すと、その機構のチームだけに絞り込めます（複数選ぶとすべてに当てはまるチーム）。タグは配信の実況・チーム紹介と、配信映像のセッティング場面の見返しから付けました。足回りはスカートやカバーで車輪が隠れているロボットが多く、その場合は「車輪カバーあり（種類は見えず）」、映像に車輪が映らなかった場合は「映像で確認できず」としています。自分の移動バケツも7地区104チームの予選映像を見返し、試合中にバケツを上げ下げしていたかで「動かす（上げて防御）」「動かさない」に分けました。写真は配信の映像から切り出したもの。<span class="natkey"><i></i>緑の枠＝全国大会出場</span>東海北陸（10/18）の19チームは、写真を配信の映像から切り出し、機構のタグは配信の実況で説明があったものだけ付けました（説明がなかったチームは「その他・不明」、足回り・移動バケツは未確認で「映像で確認できず」）。</p>
+      <p class="note">カードを押すとチームの詳細ページが開きます。タグを押すと、その機構のチームだけに絞り込めます（複数選ぶとすべてに当てはまるチーム）。タグは配信の実況・チーム紹介と、配信映像のセッティング場面の見返しから付けました。足回りはスカートやカバーで車輪が隠れているロボットが多く、その場合は「車輪カバーあり（種類は見えず）」、映像に車輪が映らなかった場合は「映像で確認できず」としています。自分の移動バケツも7地区104チームの予選映像を見返し、試合中にバケツを上げ下げしていたかで「動かす（上げて防御）」「動かさない」に分けました。写真は配信の映像から切り出したもの。<span class="natkey"><i></i>緑の枠＝全国大会出場</span>配信で機構の説明がなかったチームは「その他・不明」としています。</p>
       <div class="ctrl">
         <input class="search lx-team-q" type="search" placeholder="チーム・ロボット名・機構で検索" aria-label="チームを検索">
         <label class="sortl">並び替え <select class="lx-sort-team" aria-label="並び替え"></select></label>
@@ -528,7 +528,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     <section class="nt-page" data-ntab="teams" style="display:none;flex-direction:column;gap:var(--cds-gap-md)">
       <div class="card">
         <h2>全国大会に出るチーム・ロボット</h2>
-        <p class="note">カードを押すとチームの詳細ページ（地区大会の試合ごとの得点・Xの投稿）が開きます。地区の順に並べています。東海北陸のチームはまだ写真がありません。</p>
+        <p class="note">カードを押すとチームの詳細ページ（地区大会の試合ごとの得点・Xの投稿）が開きます。地区の順に並べています。</p>
         <div class="cards" id="nt-cards"></div>
       </div>
     </section>
@@ -620,42 +620,6 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
           <tbody></tbody>
         </table>
       </div>
-    </div>
-    <div class="card tkc" id="tk-result">
-      <h2>東海北陸地区大会（10/18）：予測の答え合わせと機構の分析</h2>
-      <p class="note">優勝は福井A（ウエストゲートダイナソー）、準優勝は福井B。全国大会には福井A・鈴鹿A・岐阜A・豊田Aが出場します。下の表は大会前（10/16）にこのサイトで出した予測と実際の結果です。</p>
-      <div class="scroll"><table class="tk-tl">
-        <thead><tr><th>項目</th><th>大会前の予測</th><th>実際</th><th></th></tr></thead>
-        <tbody>
-          <tr><td>1チーム1試合の得点（上下10%を除いた平均）</td><td>約20点（17〜23点）</td><td><b>16.7点</b></td><td>幅の下の端。0点だった割合は57%</td></tr>
-          <tr><td>2番目のチームの最高得点</td><td>200点台以上が77%（300点以上40%）</td><td><b>405点</b>（福井A）</td><td>300点以上の段で的中</td></tr>
-          <tr><td>4番目のチームの最高得点（ベスト4の目安）</td><td>旗1回＋α（100点台）38%・200点以上23%・旗なし39%</td><td><b>200点</b>（岐阜A）</td><td>200点台の段。予測より1段上</td></tr>
-          <tr><td>旗を一度でも決めたチーム</td><td>平均4チーム（2〜6）</td><td><b>4チーム</b></td><td>福井B・福井A・鈴鹿A・岐阜A</td></tr>
-          <tr><td>5番目のチームの最高得点</td><td>—</td><td><b>20点</b></td><td>4位（200点）との間に大きな崖。上位とそれ以外の差が大きいという見立てどおり</td></tr>
-        </tbody>
-      </table></div>
-      <h3>東海北陸の得点源と機構（ほかの7地区との比較）</h3>
-      <p class="note">1試合あたりにゴールへ入った枚数（全チーム平均）。東海北陸は5点バケツがほかの地区の約2倍で、机はほとんど決まりませんでした。</p>
-      <div class="tk-bars" id="tk-goalcmp"><div class="tkb"><span class="l">旗（100点）</span><span class="b"><i class="t" style="width:10.8%"></i><em>東海北陸 0.22枚</em></span><span class="b"><i class="o" style="width:12.2%"></i><em>7地区 0.24枚</em></span></div><div class="tkb"><span class="l">5点バケツ</span><span class="b"><i class="t" style="width:93.5%"></i><em>東海北陸 1.87枚</em></span><span class="b"><i class="o" style="width:47.4%"></i><em>7地区 0.95枚</em></span></div><div class="tkb"><span class="l">机（20点）</span><span class="b"><i class="t" style="width:1.1%"></i><em>東海北陸 0.02枚</em></span><span class="b"><i class="o" style="width:5.7%"></i><em>7地区 0.11枚</em></span></div><div class="tkb"><span class="l">移動バケツ（100点）</span><span class="b"><i class="t" style="width:1.1%"></i><em>東海北陸 0.02枚</em></span><span class="b"><i class="o" style="width:2.8%"></i><em>7地区 0.06枚</em></span></div><div class="tkb"><span class="l">1点バケツ</span><span class="b"><i class="t" style="width:5.5%"></i><em>東海北陸 0.11枚</em></span><span class="b"><i class="o" style="width:1.6%"></i><em>7地区 0.03枚</em></span></div></div>
-      <div class="tk-sum">
-        <div><b>得点のうち旗が74%</b>ほかの7地区と同じ割合。旗を決めた4チームが、そのまま上位4チームでした</div>
-        <div><b>5点バケツは2倍（1試合1.87枚）</b>優勝した福井Aは同じ5点バケツに雑巾を積み重ねて大会で53枚。旗が決まらない試合でも点を取り切りました</div>
-        <div><b>机はほぼゼロ（0.02枚）</b>机を狙う作戦・水平投げの機構が多かったものの、決まったのは大会で1枚（福井B）。机の狭い口は本番で難しかった</div>
-      </div>
-      <h3>上位チームの機構と作戦</h3>
-      <div class="scroll"><table class="tk-tl">
-        <thead><tr><th>チーム</th><th>成績</th><th>最高得点</th><th>機構・作戦（配信の実況から）</th></tr></thead>
-        <tbody>
-          <tr><td class="nw">福井A</td><td class="nw">優勝・全国</td><td class="n">405</td><td>同じ5点バケツに雑巾を積み重ね（大会53枚）。発射位置を少しずつずらして打つ。準決勝は残り10秒でスーパー雑巾2枚を旗に掛けて逆転</td></tr>
-          <tr><td class="nw">福井B</td><td class="nw">準優勝</td><td class="n">620</td><td>旗と移動バケツで大会最高の620点。前日のテストランで固定バケツ・机・旗・移動バケツまで全部入れていた</td></tr>
-          <tr><td class="nw">鈴鹿A</td><td class="nw">技術賞・全国</td><td class="n">300</td><td>机の上で雑巾を丸めてまとめて装填し、テンポよく旗を狙う。足回りに自信</td></tr>
-          <tr><td class="nw">岐阜A</td><td class="nw">特別賞・全国</td><td class="n">200</td><td>机にこだわりつつ、2分40秒すぎにスーパー雑巾を旗に掛けて200点</td></tr>
-          <tr><td class="nw">豊田A</td><td class="nw">ベスト4・全国</td><td class="n">20</td><td>机・遠い5点バケツに加え、動いている相手の移動バケツも狙う</td></tr>
-          <tr><td class="nw">国際A</td><td class="nw">アイデア賞</td><td class="n">0</td><td>2枚の円盤で雑巾を水平に振り投げる（3種類の投げ方）</td></tr>
-          <tr><td class="nw">豊田B</td><td class="nw">デザイン賞</td><td class="n">0</td><td>水分を含んだ竹を使った投石型のアーム。固定バケツをまたぐ車体</td></tr>
-        </tbody>
-      </table></div>
-      <p class="note">機構の種類（発射機構のタグ）を見ると、東海北陸はローラー4チーム・アーム3チーム・円盤1・直動1で、残り10チームは配信で機構の説明がなく「その他・不明」です。上位4チームのうち3チームも機構の詳しい説明がなく、機構の種類より「旗に掛けられるか」「バケツに積み上げられるか」という狙いの違いが結果を分けました。写真は配信の映像から切り出したものです。</p>
     </div>
     <div class="card" id="rules">
       <details class="rulesbox"><summary>得点ルール（公式ルールブックより）</summary>
@@ -1339,7 +1303,7 @@ dash.calc('summary', {
   const loadHist = () => { if (HIST.length) return true; const d = dash.data('history'); if (d && Array.isArray(d.data) && d.data.length) { HIST = d.data; return true; } return false; };
   const hEsc = (x) => String(x == null ? '' : x).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const hFmtDate = (d) => { const [y, m, dd] = d.split('-').map(Number); return `${y}年${m}月${dd}日`; };
-  const pState = { region: 'all', tab: 'analysis', q: '', tq: '', sumRegion: '東海北陸' };
+  const pState = { region: 'all', tab: 'analysis', q: '', tq: '', sumRegion: '全国' };
   // 試合の並びから各チームの到達段階を出す（2026年のデータにも使う）
   const NAT = '全国';
   const isNat = (d) => d === NAT;
@@ -1915,7 +1879,7 @@ dash.calc('summary', {
 
   };
 
-  { const ft = document.querySelector('.foot'); if (ft) ft.textContent = '高専ロボコン2026 地区大会（8地区）の配信の実況・得点表示と、高専ロボコン公式Xの投稿をもとに個人的にまとめたものです。ロボットの写真は配信映像から切り出したもの（東海北陸はまだなし）、Xの投稿はリンクのみ掲載しています。内訳の一部は得点の増え方から推定しています。'; }
+  { const ft = document.querySelector('.foot'); if (ft) ft.textContent = '高専ロボコン2026 地区大会（8地区）の配信の実況・得点表示と、高専ロボコン公式Xの投稿をもとに個人的にまとめたものです。ロボットの写真は配信映像から切り出したもの、Xの投稿はリンクのみ掲載しています。内訳の一部は得点の増え方から推定しています。'; }
   dash.onData(draw);
   const named = location.hash.slice(1);
   if (['teams', 'matches', 'analysis'].includes(named)) showTab(named);
