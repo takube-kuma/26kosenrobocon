@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/08 19:49"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/08 20:01"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -316,6 +316,18 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr .gf-card dt.df{color:var(--lx-nat);font-weight:var(--cds-font-weight-medium)}
 @media (max-width:720px){.kr .gf-tb td.nw{white-space:normal;min-width:5.5em}.kr .gf-tb td:last-child{min-width:0}.kr .gf-hero{grid-template-columns:1fr}.kr .gf-card{grid-template-columns:1fr}.kr .gf-card .gf-ph img{aspect-ratio:16/9}}
 .kr .dclips{margin-top:var(--cds-gap-md)}.kr .dclips .gf-clips{grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),560px))}.kr .dclips .gf-clips{margin-top:6px}
+.kr .st-groups{display:flex;flex-direction:column;gap:var(--cds-gap-lg);margin-top:var(--cds-gap-sm)}
+.kr .st-g h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:0}
+.kr .st-g h3 .k{display:inline-block;min-width:1.6em;text-align:center;border-radius:6px;background:var(--color-panel);border:1px solid var(--color-border-line);margin-right:6px;font-size:var(--cds-font-size-caption);padding:1px 4px}
+.kr .st-g p{margin:4px 0 6px;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);line-height:1.6}
+.kr .st-g table td:first-child{white-space:nowrap}
+.kr .st-tl{font:inherit;background:none;border:0;padding:0;color:var(--lx-nat);font-weight:var(--cds-font-weight-medium);cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.kr .st-legend{display:flex;gap:var(--cds-gap-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:6px 0}
+.kr .st-legend i{display:inline-block;width:.8rem;height:.8rem;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.kr #st-bars svg{max-width:100%;display:block}
+.kr #st-bars text{font-size:12px;fill:var(--color-fg)}
+.kr #st-bars text.m{fill:var(--color-fg-muted)}
+.kr .st-tag{display:inline-block;font-size:11px;border:1px solid var(--color-border-line);border-radius:5px;padding:0 4px;margin-left:4px;color:var(--color-fg-muted)}
 </style>
 
 <div class="kr">
@@ -500,6 +512,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
       <button class="tab" role="tab" data-ntab="analysis" aria-selected="true">分析・まとめ</button>
       <button class="tab" role="tab" data-ntab="matches" aria-selected="false">試合結果</button>
       <button class="tab" role="tab" data-ntab="teams" aria-selected="false">チーム・ロボット</button>
+      <button class="tab" role="tab" data-ntab="strat" aria-selected="false">戦略</button>
       <button class="tab" role="tab" data-ntab="gifu" aria-selected="false">岐阜の特徴</button>
     </nav>
     <section class="nt-page" data-ntab="analysis" style="display:flex;flex-direction:column;gap:var(--cds-gap-lg)">
@@ -633,6 +646,43 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
         <li><div><h3>課題は安定して動かすこと</h3><p>地区大会は2試合だけで、2試合目は机用のモーター不調で0点。目標の440点には、旗2枚（400点）に加えて机を決める必要があります。</p></div></li>
       </ol>
       <p class="note">出典：東海北陸地区大会のYouTube配信（予選A-1・A-4、エキシビション3回目、全国推薦の発表）の実況とインタビュー。他チームの機構は各地区大会の実況・インタビュー・チームのX投稿から要約したもので、全国大会までに変わっている可能性があります。</p>
+    </div>
+    </section>
+    <section class="nt-page" data-ntab="strat" style="display:none;flex-direction:column;gap:var(--cds-gap-lg)">
+    <div class="card">
+      <h2>スーパー雑巾と普通の雑巾の使い分け</h2>
+      <p>全国大会に出る25チームを、<b>普通の雑巾をどこに入れたか</b>と<b>スーパー雑巾（得点2倍）をどこに入れたか</b>の組み合わせで分けました。もとにしたのは地区大会で実際に入った枚数です。外れた雑巾や、実況で紹介された本来の狙いは数に入っていません。</p>
+      <p class="note">得点：1点バケツ＝1点、5点バケツ＝5点、机＝20点、旗・相手の移動バケツ＝100点。スーパー雑巾はそれぞれ2倍。表の「旗10」は旗に10枚入ったという意味です。</p>
+      <div class="tiles" id="st-tiles"></div>
+    </div>
+    <div class="card">
+      <h2>スーパー雑巾が入ったチーム</h2>
+      <div class="st-groups" id="st-g1"></div>
+    </div>
+    <div class="card">
+      <h2>スーパー雑巾が入った記録がないチーム</h2>
+      <p class="note">スーパー雑巾を投げてはいても、地区大会で入った記録がないチームです。</p>
+      <div class="st-groups" id="st-g2"></div>
+    </div>
+    <div class="card">
+      <h2>1試合の平均点の中身</h2>
+      <p class="note">各チームの地区大会での1試合あたりの平均点を、普通の雑巾で取った分とスーパー雑巾で取った分に分けたもの。青い部分が長いほど、スーパー雑巾が入らなくても点が取れるチームです。</p>
+      <div class="st-legend"><span><i style="background:var(--c0)"></i>普通の雑巾</span><span><i style="background:var(--c1)"></i>スーパー雑巾</span></div>
+      <div id="st-bars"></div>
+    </div>
+    <div class="card">
+      <h2>型ごとのまとめ</h2>
+      <div class="scroll"><table class="tk-tl" id="st-sum"></table></div>
+    </div>
+    <div class="card">
+      <h2>チームごとの数字</h2>
+      <p class="note">「スーパー抜き」は、各試合の得点からスーパー雑巾の分を引いた平均。「スーパーが入った試合」は、スーパー雑巾が1枚以上入った試合の数。チーム名を押すと詳細が開きます。</p>
+      <div class="scroll"><table class="tk-tl" id="st-tb"></table></div>
+    </div>
+    <div class="card tk-concl">
+      <h2>分析から見えること</h2>
+      <ol class="win-list" id="st-take"></ol>
+      <p class="note">2026年の地区大会（8地区・150試合）の記録にもとづく。全国大会では対戦相手もルールの運用も変わるので、あくまで地区大会での傾向です。</p>
     </div>
     </section>
   </div>
@@ -1716,7 +1766,103 @@ dash.calc('summary', {
     document.getElementById('gf-rivals').textContent = `地区大会で机とスーパー雑巾の旗の両方を決めた全国出場チームは${rv.map((t) => t.team).join('・')}の${rv.length}チーム。岐阜Aが目指す「机＋旗」の形を、すでに実現しているチームです。`;
     document.querySelectorAll('#natl [data-ntab="gifu"] [data-t]').forEach((b) => { b.onclick = () => goTeam(b.dataset.t); });
   };
+  // 全国：戦略（普通の雑巾とスーパー雑巾の使い分け）
+  const ST_GROUPS = [
+    { k: 'A', sec: 1, name: '普通の雑巾もスーパー雑巾も旗', desc: '普通の雑巾でも旗（100点）を狙い、スーパー雑巾でも旗（200点）。1枚あたりの点がいちばん大きい攻め方です。', teams: ['大分B', '香川高松A', '鈴鹿A', '奈良A', '明石A'] },
+    { k: 'B', sec: 1, name: '普通の雑巾は5点バケツ、スーパー雑巾は旗', desc: '普通の雑巾は入りやすい5点バケツで点を重ね、スーパー雑巾だけ旗を狙います。', teams: ['福井A', '香川詫間B', '都立荒川A', '茨城A'] },
+    { k: 'C', sec: 1, name: '普通の雑巾は机、スーパー雑巾は旗', desc: '普通の雑巾は机（20点）、スーパー雑巾は旗。岐阜Aの机はエキシビションで入った1枚です。', teams: ['鹿児島A', '広島商船A', '熊本八代A', '岐阜A'] },
+    { k: 'D', sec: 1, name: '普通の雑巾は相手の移動バケツ、スーパー雑巾は旗', desc: '相手ロボットの上の移動バケツ（100点）を普通の雑巾で狙い、スーパー雑巾は旗へ。', teams: ['米子A'] },
+    { k: 'E', sec: 1, name: '普通の雑巾もスーパー雑巾も相手の移動バケツ', desc: 'スーパー雑巾も相手の移動バケツに入れる（200点）、ただ1つのチームです。', teams: ['仙台広瀬B'] },
+    { k: 'F', sec: 2, name: '普通の雑巾で旗', desc: '普通の雑巾を旗に掛けて100点を取ります。', teams: ['大阪公大A', '釧路A', '秋田B'] },
+    { k: 'G', sec: 2, name: '普通の雑巾で5点バケツだけ', desc: '旗は狙わず、5点バケツに確実に入れていきます。', teams: ['仙台名取A', '沖縄A', '呉A', '豊田A', '小山A', '旭川A'] },
+    { k: 'H', sec: 2, name: '普通の雑巾で机だけ', desc: '机だけを狙う専門のロボットです。', teams: ['東京A'] },
+  ];
+  const ST_NORMAL_NOTE = { '岐阜A': '机（エキシビションで1）' };
+  const stLabel = { flag: '旗', desk: '机', bucket5: '5点バケツ', bucket1: '1点バケツ', moving: '相手の移動バケツ' };
+  const stFmt = (o) => { const p = Object.entries(o).filter(([, v]) => v > 0).sort((a, b) => b[1] - a[1]).map(([k, v]) => stLabel[k] + v); return p.length ? p.join('・') : '—'; };
+  const stStats = (t, sr) => {
+    const out = { ms: [] };
+    if (sr) for (let i = 1; i <= 6; i++) {
+      const vs = sr[`m${i}_vs`]; if (!vs) continue;
+      const tot = pnum(sr[`m${i}_total`]); if (tot == null) continue;
+      const sp = ['low', 'mid', 'move', 'desk', 'flag'].reduce((a, f) => a + (+sr[`m${i}_${f}_sp`] || 0), 0);
+      out.ms.push({ tot, sp, win: vs.startsWith('○') });
+    }
+    const n = out.ms.length, sum = (f) => out.ms.reduce((a, m) => a + f(m), 0);
+    out.n = n; out.avg = n ? sum((m) => m.tot) / n : null; out.ex = n ? sum((m) => m.tot - m.sp) / n : null;
+    out.min = n ? Math.min(...out.ms.map((m) => m.tot)) : null; out.spN = out.ms.filter((m) => m.sp > 0).length;
+    const all = sum((m) => m.tot); out.share = all ? Math.round(100 * sum((m) => m.sp) / all) : 0;
+    out.zero = out.ms.filter((m) => m.tot === 0).length;
+    out.exMs = out.ms.filter((m) => m.sp === 0).map((m) => m.tot);
+    return out;
+  };
+  const drawStrat = (teams, goTeam) => {
+    const gs = dash.data('scores'); const scores = gs.status === 'ok' ? gs.data : [];
+    const SR = {}; scores.forEach((r) => { SR[r.team] = r; });
+    const TM = {}; teams.forEach((t) => { TM[t.team] = t; });
+    const G = ['desk', 'bucket5', 'bucket1', 'flag', 'moving'];
+    const rows = [];
+    ST_GROUPS.forEach((g) => g.teams.forEach((name) => {
+      const t = TM[name]; if (!t) return;
+      const nor = {}, sup = {}; G.forEach((k) => { sup[k] = +t['super_' + k] || 0; nor[k] = Math.max(0, (+t[k] || 0) - sup[k]); });
+      rows.push({ g, t, name, nor: ST_NORMAL_NOTE[name] || stFmt(nor), sup: stFmt(sup), s: stStats(t, SR[name]) });
+    }));
+    const r1 = (v) => (v == null ? '—' : Math.round(v));
+    const tl = (n) => `<button class="st-tl" data-t="${hEsc(n)}">${hEsc(n)}</button>`;
+    const rec = (t) => `${t.wins}勝${t.losses}敗`;
+    const champ = (t) => /^優勝/.test(t.award || '');
+    // 型ごとの表
+    const grpHtml = (sec) => ST_GROUPS.filter((g) => g.sec === sec).map((g) => {
+      const rs = rows.filter((r) => r.g === g);
+      return `<div class="st-g"><h3><span class="k">${g.k}</span>${hEsc(g.name)}（${rs.length}チーム）</h3><p>${hEsc(g.desc)}</p><div class="scroll" style="max-height:none"><table class="tk-tl"><thead><tr><th>チーム</th><th>普通の雑巾</th>${sec === 1 ? '<th>スーパー雑巾</th>' : ''}<th class="n">最高点</th><th class="n">戦績</th></tr></thead><tbody>${rs.map((r) => `<tr><td>${tl(r.name)}<span class="st-tag">${hEsc(r.t.district)}</span></td><td>${hEsc(r.nor)}</td>${sec === 1 ? `<td>${hEsc(r.sup)}</td>` : ''}<td class="n">${r1(r.t.best_score)}</td><td class="n">${rec(r.t)}${champ(r.t) ? ' 優勝' : ''}</td></tr>`).join('')}</tbody></table></div></div>`;
+    }).join('');
+    document.getElementById('st-g1').innerHTML = grpHtml(1);
+    document.getElementById('st-g2').innerHTML = grpHtml(2);
+    // 全試合でのスーパー雑巾と勝敗
+    let spW = 0, spN = 0, noW = 0, noN = 0;
+    scores.forEach((sr) => stStats(null, sr).ms.forEach((m) => { if (m.sp > 0) { spN++; spW += m.win; } else { noN++; noW += m.win; } }));
+    const pct = (a, b) => (b ? Math.round(100 * a / b) : 0);
+    const supTeams = rows.filter((r) => r.g.sec === 1).length;
+    document.getElementById('st-tiles').innerHTML = [
+      ['スーパー雑巾が入ったチーム', `${supTeams}<small style="font-size:.5em">／${rows.length}</small>`, 'うち旗に入れたのは' + rows.filter((r) => r.g.sec === 1 && r.g.k !== 'E').length + 'チーム'],
+      ['スーパーが入った試合の勝率', pct(spW, spN) + '%', `${spW}勝／${spN}試合（全123チーム）`],
+      ['入らなかった試合の勝率', pct(noW, noN) + '%', `${noW}勝／${noN}試合`],
+    ].map(([l, n, s]) => `<div class="tile"><div class="lab">${l}</div><div class="num">${n}</div><div class="sub">${s}</div></div>`).join('');
+    // 平均点の積み上げ棒
+    { const bs = rows.filter((r) => r.s.n).slice().sort((a, b) => b.s.avg - a.s.avg);
+      const box = document.getElementById('st-bars'), W = Math.max(300, Math.min(900, box.clientWidth || 640)), L = 100, R = 36, H = 22, top = 18, max = Math.max(...bs.map((r) => r.s.avg)), x = (v) => (v / max) * (W - L - R);
+      const tick = [0, 100, 200, 300, 400, 500].filter((v) => v <= max);
+      let svg = `<svg width="${W}" height="${top + bs.length * H + 6}" viewBox="0 0 ${W} ${top + bs.length * H + 6}" role="img" aria-label="全国出場チームの1試合の平均点（普通の雑巾とスーパー雑巾の内訳）">`;
+      svg += tick.map((v) => `<line x1="${L + x(v)}" x2="${L + x(v)}" y1="${top - 4}" y2="${top + bs.length * H}" stroke="var(--color-border-line)"/><text class="m" x="${L + x(v)}" y="${top - 7}" text-anchor="middle">${v}</text>`).join('');
+      bs.forEach((r, i) => { const y = top + i * H, ex = r.s.ex, sp = r.s.avg - r.s.ex;
+        svg += `<g><title>${hEsc(r.name)}：平均${Math.round(r.s.avg)}点（普通の雑巾${Math.round(ex)}点＋スーパー雑巾${Math.round(sp)}点）</title><text x="${L - 6}" y="${y + 14}" text-anchor="end">${hEsc(r.name)}<tspan class="m"> ${r.g.k}</tspan></text><rect x="${L}" y="${y + 4}" width="${Math.max(0, x(ex))}" height="${H - 7}" rx="2" fill="var(--c0)"/><rect x="${L + x(ex)}" y="${y + 4}" width="${Math.max(0, x(sp))}" height="${H - 7}" rx="2" fill="var(--c1)"/><text class="m" x="${L + x(r.s.avg) + 4}" y="${y + 14}">${Math.round(r.s.avg)}</text></g>`; });
+      document.getElementById('st-bars').innerHTML = svg + '</svg>'; }
+    // 型ごとのまとめ
+    { const mean = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : null);
+      document.getElementById('st-sum').innerHTML = `<thead><tr><th>型</th><th class="n">チーム数</th><th class="n">戦績（合計）</th><th class="n">地区優勝</th><th class="n">最高点の平均</th><th class="n">1試合の平均点</th><th class="n">スーパー抜きの平均</th></tr></thead><tbody>${ST_GROUPS.map((g) => { const rs = rows.filter((r) => r.g === g), ms = rs.flatMap((r) => r.s.ms);
+        return `<tr><td><b>${g.k}</b> ${hEsc(g.name)}</td><td class="n">${rs.length}</td><td class="n">${rs.reduce((a, r) => a + (+r.t.wins || 0), 0)}勝${rs.reduce((a, r) => a + (+r.t.losses || 0), 0)}敗</td><td class="n">${rs.filter((r) => champ(r.t)).length}</td><td class="n">${r1(mean(rs.map((r) => +r.t.best_score || 0)))}</td><td class="n">${r1(mean(ms.map((m) => m.tot)))}</td><td class="n">${r1(mean(ms.map((m) => m.tot - m.sp)))}</td></tr>`; }).join('')}</tbody>`; }
+    // チームごとの数字
+    document.getElementById('st-tb').innerHTML = `<thead><tr><th>型</th><th>チーム</th><th>普通の雑巾</th><th>スーパー雑巾</th><th class="n">戦績</th><th class="n">最高点</th><th class="n">平均点</th><th class="n">スーパー抜き</th><th class="n">最低点</th><th class="n">スーパーが入った試合</th><th class="n">得点のうちスーパー</th></tr></thead><tbody>${rows.map((r) => `<tr><td>${r.g.k}</td><td class="nw">${tl(r.name)}</td><td>${hEsc(r.nor)}</td><td>${hEsc(r.sup)}</td><td class="n nw">${rec(r.t)}</td><td class="n">${r1(r.t.best_score)}</td><td class="n">${r1(r.s.avg)}</td><td class="n">${r1(r.s.ex)}</td><td class="n">${r1(r.s.min)}</td><td class="n">${r.s.spN}／${r.s.n}</td><td class="n">${r.s.share}%</td></tr>`).join('')}</tbody>`;
+    // 分析から見えること
+    { const li = (h, p) => `<li><div><h3>${h}</h3><p>${p}</p></div></li>`, names = (rs) => rs.map((r) => hEsc(r.name)).join('・');
+      const strong = rows.filter((r) => r.s.ex != null && r.s.ex >= 200);
+      const dep = rows.filter((r) => r.g.sec === 1 && r.s.share >= 80).sort((a, b) => b.s.share - a.s.share);
+      const depMax = dep.length ? Math.max(...dep.map((r) => Math.round(r.s.ex))) : 0;
+      const fk = rows.find((r) => r.name === '福井A'); const fkEx = fk ? fk.s.exMs : [];
+      const gG = rows.filter((r) => r.g.k === 'G'), gMax = gG.length ? Math.max(...gG.map((r) => +r.t.best_score || 0)) : 0;
+      const zeroSup = rows.filter((r) => r.g.sec === 1 && r.s.zero > 0);
+      document.getElementById('st-take').innerHTML = [
+        li('スーパー雑巾が入るかどうかで勝率が大きく変わる', `2026年の地区大会全体で、スーパー雑巾が1枚でも入った試合の勝率は<b>${pct(spW, spN)}%</b>、入らなかった試合は${pct(noW, noN)}%。全国出場25チームのうち${supTeams}チームが地区大会でスーパー雑巾を入れていて、使い道はほぼ旗です。`),
+        li('普通の雑巾だけでも勝てるのは2チーム', `スーパー雑巾の分を引いても1試合平均200点以上取れるのは<b>${names(strong)}</b>（${strong.map((r) => `${hEsc(r.name)} ${Math.round(r.s.ex)}点`).join('、')}）。${new Set(strong.map((r) => rec(r.t))).size === 1 ? `どちらも地区大会は${rec(strong[0].t)}で` : `地区大会は${strong.map((r) => rec(r.t)).join('・')}で`}、スーパー雑巾が外れても点が伸びる「2本立て」です。大分Bは普通の雑巾でも旗、米子Aは相手の移動バケツを狙います。`),
+        li('得点の8割以上がスーパー雑巾のチームも多い', `${names(dep)}は、地区大会の得点の${Math.min(...dep.map((r) => r.s.share))}〜${Math.max(...dep.map((r) => r.s.share))}%がスーパー雑巾。スーパー抜きの平均はどのチームも${depMax}点以下で、全国では「スーパー雑巾が旗に掛かるか」がそのまま勝敗に響きそうです。`),
+        li('Bの型は5点バケツが「保険」になる', `普通の雑巾を5点バケツに入れるBの型は、スーパー雑巾が外れても点が残ります。福井Aはスーパー雑巾なしの試合でも${fkEx.length ? Math.min(...fkEx) + '〜' + Math.max(...fkEx) + '点' : '点'}を取って勝っていて、準決勝ではスーパー雑巾2枚で405点まで伸ばしました。`),
+        li('5点バケツだけの型は最高点が低い', `Gの型（5点バケツだけ）の地区大会の最高点は${gMax}点。地区では確実に入れて勝ち上がりましたが、スーパー雑巾を旗に1枚掛けられると200点差がつくので、全国ではスーパー雑巾を入れるチームとの対戦が山場になりそうです。`),
+        li('0点の試合と判定への備え', `スーパー雑巾を入れたチームでも、${names(zeroSup)}は地区大会で0点の試合がありました。0対0や同点は審査員の判定で決まるので、点が入らなかったときの動きの安定さも勝敗に関わります。`),
+      ].join(''); }
+    document.querySelectorAll('#natl [data-ntab="strat"] .st-tl').forEach((b) => { b.onclick = () => goTeam(b.dataset.t); });
+  };
   let ntTab = 'analysis';
+  { let rt = 0; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (ntTab === 'strat' && document.getElementById('natl').style.display !== 'none') drawNational(); }, 200); }); }
   document.querySelectorAll('#natl .tab').forEach((b) => b.addEventListener('click', () => { ntTab = b.dataset.ntab; drawNational(); }));
   document.getElementById('nt-mq').addEventListener('input', () => drawNational());
   document.getElementById('nt-bsort').addEventListener('change', () => drawNational());
@@ -1731,6 +1877,7 @@ dash.calc('summary', {
     const goTeam = (t) => { natDetail = true; openTeam(t); };
     const natSet = new Set(rows.map((r) => r.t.team));
     if (ntTab === 'gifu') drawGifu(teams, goTeam);
+    if (ntTab === 'strat') drawStrat(teams, goTeam);
     if (ntTab === 'teams') {
       const box = document.getElementById('nt-cards');
       const list = rows.slice().sort((a, b) => ORDER.indexOf(a.t.district) - ORDER.indexOf(b.t.district));
