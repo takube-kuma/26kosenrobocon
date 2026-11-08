@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/08 19:42"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/08 19:49"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -315,7 +315,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr .gf-card .df{border-top:1px dashed var(--color-border-line);padding-top:4px;margin-top:2px}
 .kr .gf-card dt.df{color:var(--lx-nat);font-weight:var(--cds-font-weight-medium)}
 @media (max-width:720px){.kr .gf-tb td.nw{white-space:normal;min-width:5.5em}.kr .gf-tb td:last-child{min-width:0}.kr .gf-hero{grid-template-columns:1fr}.kr .gf-card{grid-template-columns:1fr}.kr .gf-card .gf-ph img{aspect-ratio:16/9}}
-.kr .dclips{margin-top:var(--cds-gap-md)}.kr .dclips .gf-clips{margin-top:6px}
+.kr .dclips{margin-top:var(--cds-gap-md)}.kr .dclips .gf-clips{grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),560px))}.kr .dclips .gf-clips{margin-top:6px}
 </style>
 
 <div class="kr">
@@ -492,6 +492,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     </div>
   </div>
 
+  <div id="nat-detail" style="display:none;flex-direction:column;gap:var(--cds-gap-md)"></div>
   <div id="natl" style="display:none;flex-direction:column;gap:var(--cds-gap-lg)">
     <p class="lede" id="nt-lede"></p>
     <section class="tiles" id="nt-tiles"></section>
@@ -891,11 +892,17 @@ dash.calc('summary', {
   const aimText = (team) => { const a = aimsOf(team); return a.length ? a.map((x) => `${x.label} ${x.ok}/${x.n}試合`).join('・') : ''; };
   // チーム詳細
   let selTeam = null;
+  let natDetail = false;
+  const placeDetail = (inNat) => {
+    const det = document.getElementById('team-detail');
+    const host = inNat ? document.getElementById('nat-detail') : document.getElementById('teams');
+    if (det.parentNode !== host) host.appendChild(det);
+  };
   let pushed = false;
   const showTeam = (t) => { selTeam = t; draw(); document.getElementById('team-detail').scrollIntoView({ block: 'start' }); };
   const closeTeam = () => {
     const back = selTeam; selTeam = null; draw();
-    const card = [...document.querySelectorAll('#team-cards .tcard')].find((c) => c.dataset.key === back);
+    const card = [...document.querySelectorAll('#team-cards .tcard')].find((c) => c.dataset.key === back && c.offsetParent) || [...document.querySelectorAll('#natl [data-t]')].find((c) => c.dataset.t === back && c.offsetParent);
     if (card) { card.scrollIntoView({ block: 'center' }); card.focus({ preventScroll: true }); }
   };
   const openTeam = (t) => {
@@ -1721,7 +1728,7 @@ dash.calc('summary', {
     const rows = teams.filter((t) => t.national).map((t) => ({ t }));
     document.querySelectorAll('#natl .tab').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.ntab === ntTab)));
     document.querySelectorAll('#natl .nt-page').forEach((pg) => { pg.style.display = pg.dataset.ntab === ntTab ? 'flex' : 'none'; });
-    const goTeam = (t) => { curYear = 2026; try { history.replaceState(null, '', '#teams'); } catch (er) {} showTab('teams'); openTeam(t); };
+    const goTeam = (t) => { natDetail = true; openTeam(t); };
     const natSet = new Set(rows.map((r) => r.t.team));
     if (ntTab === 'gifu') drawGifu(teams, goTeam);
     if (ntTab === 'teams') {
@@ -1803,7 +1810,7 @@ dash.calc('summary', {
     const tb = document.getElementById('nt-table');
     tb.innerHTML = `<thead><tr>${cols.map(([k, l]) => `<th><button class="nt-sort" data-k="${k}" style="font:inherit;background:none;border:0;padding:0;color:inherit;cursor:pointer">${l}${NT.sort.k === k ? (NT.sort.d < 0 ? ' ▾' : ' ▴') : ''}</button></th>`).join('')}</tr></thead><tbody>${sorted.map((r) => `<tr><td class="nw"><a href="#" class="nt-team" data-t="${hEsc(r.t.team)}">${hEsc(r.t.team)}</a><div style="color:var(--color-fg-muted);font-size:11px">${hEsc(r.t.robot || '')}</div></td><td><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${dCol(r.t.district)};margin-right:4px"></span>${hEsc(r.t.district)}</td><td>${r.route}${(() => { const aw = String(r.t.award || '').replace(/（.*?）/g, '').split(/[、,・／\/]/).map((x) => x.trim()).filter((x) => x && !/^(準?優勝)$/.test(x)).join('・'); return aw ? `<div style="color:var(--color-fg-muted);font-size:11px">${hEsc(aw)}</div>` : ''; })()}</td><td>${+r.t.wins || 0}勝${+r.t.losses || 0}敗</td><td class="n">${fmt(+r.t.best_score || 0)}</td><td class="n">${r.avg == null ? '—' : Math.round(r.avg)}</td><td class="n">${+r.t.flag || 0}</td><td style="white-space:normal;min-width:14rem">${hEsc(aimText(r.t.team) || '—')}</td></tr>`).join('')}</tbody>`;
     tb.querySelectorAll('.nt-sort').forEach((b) => b.addEventListener('click', () => { const k = b.dataset.k; NT.sort = { k, d: NT.sort.k === k ? -NT.sort.d : (k === 'team' || k === 'district' || k === 'route' ? 1 : -1) }; drawNational(); }));
-    tb.querySelectorAll('.nt-team').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); curYear = 2026; try { history.replaceState(null, '', '#teams'); } catch (er) {} showTab('teams'); openTeam(a.dataset.t); }));
+    tb.querySelectorAll('.nt-team').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); natDetail = true; openTeam(a.dataset.t); }));
 
     // 得点のドットプロット
     {
@@ -1991,6 +1998,7 @@ dash.calc('summary', {
   };
   ysel.addEventListener('change', () => {
     curYear = ysel.value === 'all' || ysel.value === 'nat' ? ysel.value : +ysel.value; pState.sel = null;
+    if (natDetail) { natDetail = false; selTeam = null; }
     try { history.replaceState(null, '', curYear === 'nat' ? location.pathname + location.search : '#' + curYear); } catch (e) {}
     draw();
     window.scrollTo(0, 0);
@@ -2001,6 +2009,8 @@ dash.calc('summary', {
 
   const draw = () => {
     const md = applyYear();
+    if (md === 'nat' && !selTeam) natDetail = false;
+    { const nd = md === 'nat' && natDetail && !!selTeam; placeDetail(nd); document.getElementById('nat-detail').style.display = nd ? 'flex' : 'none'; if (nd) { document.getElementById('natl').style.display = 'none'; drawDetail(); return; } }
     if (md === 'nat') { if (!loadHist()) { document.getElementById('nt-lede').textContent = '過去の大会のデータを読み込んでいます…'; return; } requestAnimationFrame(drawNational); return; }
     if (md !== 'now' && !loadHist()) { document.getElementById(md === 'past' ? 'p-lede' : 's-note').textContent = '過去の大会のデータを読み込んでいます…'; return; }
     if (md === 'past') { drawPast(); return; }
