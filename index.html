@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/13 22:36"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/13 22:38"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -299,6 +299,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr .gf-hero-tx h2{margin-top:0}
 .kr .gf-legend{margin:var(--cds-gap-sm) 0;padding-left:1.4em;font-size:var(--cds-font-size-caption);line-height:1.7}
 .kr .gf-legend li::marker{color:#d42828;font-weight:700}
+.kr .gf-nhk{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-md)}.kr .gf-nhk-g h3{margin:0 0 6px}
 .kr .gf-facts{display:flex;flex-wrap:wrap;gap:var(--cds-gap-sm);margin-top:var(--cds-gap-sm)}
 .kr .gf-facts div{border:1px solid var(--color-border-line);border-radius:8px;padding:6px 10px;display:flex;flex-direction:column;min-width:7.5rem}
 .kr .gf-facts span{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
@@ -540,7 +541,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     <div class="card tk-concl">
       <h2>結論</h2>
       <ol class="win-list" id="nt-concl"></ol>
-      <p class="note">地区大会の記録と、2022〜2025年の全国大会の結果からまとめました。全国大会までの約1か月でロボットは改良されるので、地区大会の数字がそのまま当てはまるとは限りません。</p>
+      <p class="note">地区大会の記録と、2022〜2025年の全国大会の結果、NHKの地区大会の番組（全8地区）からまとめました。全国大会までの約1か月でロボットは改良されるので、地区大会の数字がそのまま当てはまるとは限りません。</p>
     </div>
     <div class="card">
       <h2>全国大会に出る<span id="nt-n"></span>チーム</h2>
@@ -614,7 +615,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
       <div class="gf-hero-ph"><img class="gf-m" data-m="gifu_robot.webp" data-b="/_blob/7d868e9356519fb8c67ead816c2c1811" alt="岐阜A「前途羊々」のロボットの全体。番号は下の説明に対応" loading="lazy"></div>
       <div class="gf-hero-tx">
         <h2>岐阜A「前途羊々」の特徴</h2>
-        <p>東海北陸地区から推薦で7年ぶりの全国出場。いちばんの特徴は、<b>雑巾をロボット自身がおしぼりのように巻き</b>、ローラーで水平に連射して<b>机</b>を狙うこと。スーパー雑巾は別の投石機で旗に掛ける、2本立ての構成です。</p>
+        <p>東海北陸地区から推薦で7年ぶりの全国出場。学校のマスコット「ラムちゃん」が乗ったロボットです。いちばんの特徴は、<b>雑巾をロボット自身がおしぼりのように巻き</b>、時速約90kmで回るベルト（ローラー）に突っ込んで水平に連射し、<b>机</b>を狙うこと（1回の装填で約20発）。スーパー雑巾は別の投石機で旗に掛ける、2本立ての構成です。NHKの番組では「スーパー雑巾を旗に掛ける操縦技術と、高速で射出される雑巾による高得点」が推薦の理由として紹介されました。</p>
         <ol class="gf-legend">
           <li>椅子の下に重ねた雑巾（平置きの束）</li>
           <li>下部の巻き取り・ローラー部（黄色い光の帯のあたり）</li>
@@ -635,6 +636,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
         <tbody>
           <tr><td class="nw">雑巾の巻き機構</td><td>「丸めて折った雑巾は投げやすく入りやすい」と分かり、工場でおしぼりを巻く機械を参考に、雑巾を巻く機構を作った（エキシビション後の選手インタビュー）。実況も「ロボットの下で機械が丸めてくれている」。</td></tr>
           <tr><td class="nw">ローラー連射（机）</td><td>おしぼり状にした雑巾をローラーで水平に飛ばす。実況は「相当速いスピードでマシンガンのように打ち出す」。予選A-1では机の口に何度も当たり、エキシビションで入った。</td></tr>
+          <tr><td class="nw">NHKの番組で分かったこと</td><td>ベルトは時速約90kmで回り、そこに雑巾を突っ込んで机の引き出しを狙う。飛び方にはばらつきがあり、それを操縦者の腕で調整する（選手談）。1回の装填で約20発打てる連射の速さが売り。本番前日のテストランでは机も旗も成功していた。</td></tr>
           <tr><td class="nw">投石機（スーパー雑巾）</td><td>旗はオーバースロー。雑巾を入れる黒い受け部の形とサイズを試行錯誤し、雑巾を受け部から「すっと垂れるくらい」に置くのが研究の成果（実況）。予選A-1とエキシビションで旗に掛けた。</td></tr>
           <tr><td class="nw">移動バケツの塔</td><td>X字（パンタグラフ）リフトの塔の上に移動バケツ。予選A-4では実況が「この対策のために高く上げている」と解説。</td></tr>
           <tr><td class="nw">課題</td><td>予選A-4は机用の機構のモーターが動かず、0-5で敗戦（選手談）。選手は「本来は400点（スーパー雑巾2枚）を掛ける実力」と話し、全国の目標は過去最高の440点。</td></tr>
@@ -664,14 +666,21 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
       </div>
     </div>
 
+    <div class="card">
+      <h2>NHKの番組で分かった、岐阜Aと関係が深い他チームの作戦</h2>
+      <p class="note">全8地区のNHKの番組（地区大会のまとめ）で紹介された内容から、岐阜Aと当たったときに関係しそうな作戦を持つ全国出場チームを選びました。チーム名を押すと詳細が開きます。</p>
+      <div class="gf-nhk" id="gf-nhk"></div>
+    </div>
+
     <div class="card tk-concl">
       <h2>全国で岐阜Aを見るポイント</h2>
       <ol class="win-list">
         <li><div><h3>独自性は「おしぼり巻き機」発想 × 机用の水平連射</h3><p>全国出場チームでロボットが雑巾を巻くのは岐阜Aと呉Aだけ。呉Aは固定バケツ中心で、巻いた雑巾を机用の水平ローラー連射に使うのは岐阜Aだけです。</p></div></li>
         <li><div><h3>比べる相手は「机＋スーパー雑巾の旗」を両方取ったチーム</h3><p id="gf-rivals"></p></div></li>
+        <li><div><h3>装填中に移動バケツを狙われないこと</h3><p>NHKの番組では、米子A・仙台広瀬B・福井Bが相手の移動バケツを狙う作戦で勝ち上がった様子が紹介されました（福井Bは旗が得意な鈴鹿Aにこの作戦で勝利）。岐阜AはX字リフトで移動バケツを上げられますが、約20発の装填で止まる時間をどれだけ短くできるかが守りのカギです。</p></div></li>
         <li><div><h3>課題は安定して動かすこと</h3><p>地区大会は2試合だけで、2試合目は机用のモーター不調で0点。目標の440点には、旗2枚（400点）に加えて机を決める必要があります。</p></div></li>
       </ol>
-      <p class="note">出典：東海北陸地区大会のYouTube配信（予選A-1・A-4、エキシビション3回目、全国推薦の発表）の実況とインタビュー。他チームの機構は各地区大会の実況・インタビュー・チームのX投稿から要約したもので、全国大会までに変わっている可能性があります。</p>
+      <p class="note">出典：東海北陸地区大会のYouTube配信（予選A-1・A-4、エキシビション3回目、全国推薦の発表）の実況とインタビュー、NHKの番組「高専ロボコン2026 地区大会」（全8地区、ライブキャプションによる文字起こし）。他チームの機構は各地区大会の実況・インタビュー・チームのX投稿から要約したもので、全国大会までに変わっている可能性があります。</p>
     </div>
     </section>
     <section class="nt-page" data-ntab="strat" style="display:none;flex-direction:column;gap:var(--cds-gap-lg)">
@@ -1798,9 +1807,14 @@ dash.calc('summary', {
   // 岐阜Aの特徴（全国分析のタブ）
   const GF = {
     roll: [
-      ['呉A', 'ロボット内で雑巾をお絞り状に成形して射出', '自動運転で的の前に止まって射出（自動/手動の切り替え）', '固定バケツ中心', '全国出場で岐阜A以外に唯一「ロボットが巻く」チーム。巻きを自動化の流れに組み込み、位置決めまで自動化している。岐阜Aは巻き＋高速ローラーで、最も入りにくい机に振り切っている'],
+      ['呉A', 'ボタン一つでロボット内で雑巾をおしぼり状に丸めて射出（NHK）', '移動も自動制御。的の前までの経路を生成し、誤差なく同じ場所に止まって射出（NHK）', '固定バケツ中心（中国地区で7枚連続など、精度は大会随一と紹介）', '全国出場で岐阜A以外に唯一「ロボットが巻く」チーム。巻きを自動化の流れに組み込み、位置決めまで自動化している。岐阜Aは巻き＋高速ローラーで、最も入りにくい机に振り切っている'],
     ],
-    hand: [['仙台名取A', '人がお絞り状に丸めた雑巾が落ちてくる装填。エアシリンダーで5点バケツに特化'], ['小山A', '人がスプーンでお絞り型を装填。腹部のローラー（時速48km）が机用'], ['都立荒川A', '人がお絞り状にして装填。射出3基で机・バケツ・旗すべてを狙う'], ['鈴鹿A', '人が雑巾を丸めてまとめて装填、一度に2枚ほど（実況）'], ['香川詫間B', '平置きするだけでロボットが自動で折り畳んで送り出し、定荷重バネで射出（巻かずに折る）']],
+    nhk: [
+      ['移動バケツを狙ってくる', [['米子A', '中国地区優勝。相手が装填で止まっている隙を突き、約4m以内なら移動バケツを狙う。地区大会で移動バケツに9枚'], ['仙台広瀬B', '東北地区優勝。相手の移動バケツだけを狙うアーム型。決勝は相手の反則の投げ直しの間に決めた'], ['豊田A', 'ARグラスで的までの距離を見ながら操縦。動いている相手の移動バケツも狙う']], '岐阜AはX字リフトで移動バケツを上げられますが、装填で止まる時間が長いと狙われます。中国地区では米子Aが装填中の相手に移動バケツで100〜300点を取っていました。'],
+      ['装填や位置決めを自動化している', [['呉A', 'ボタン一つで雑巾を丸めて発射し、移動も経路を生成して自動'], ['鈴鹿A', '机に並べた雑巾をロボット自身が回収して自動装填。作戦は相手に合わせて50ほど'], ['豊田A', 'ARグラスでロボット目線の映像と旗・机のシルエットを見ながら操縦']], '岐阜Aも巻きを自動化していますが、装填の速さや位置決めの再現性はこれらのチームと比べるポイントです。'],
+      ['旗に振り切っている', [['秋田B', '旗だけを狙う連射機構。アームで雑巾をはじき、すぐ次をセット'], ['広島商船A', '固定バケツをまたいで最前列から投げ、スーパー雑巾の旗は成功率70%（チーム談）'], ['鈴鹿A', '半年間「旗に掛けることだけ」を考えてきた。練習の最高840点']], 'スーパー雑巾の旗は岐阜Aの得点源でもあり、旗で200〜400点を取ってくる相手には、机（20点）やバケツで差をつけておくことが大事になります。'],
+    ],
+    hand: [['仙台名取A', '人がお絞り状に丸めた雑巾が落ちてくる装填。エアシリンダーで5点バケツに特化'], ['小山A', '人がスプーンでお絞り型を装填。腹部のローラー（時速48km）が机用'], ['都立荒川A', '人がお絞り状にして装填。射出3基で机・バケツ・旗すべてを狙う'], ['鈴鹿A', '机の上で雑巾をロール状に丸めて並べ、ロボット自身が回収して中で自動装填。一気に取り込んで連射する（実況・NHK）'], ['香川詫間B', '平置きするだけでロボットが自動で折り畳んで送り出し、定荷重バネで射出（巻かずに折る）']],
     desk: [['鹿児島A', '左右のベルト直動で机を連続で狙う'], ['東京A', '高速ローラーで雑巾の片側を挟み、フリスビー状に回して水平に射出（最大時速100km超）'], ['熊本八代A', '机は横回転の「手裏剣投げ」で水平一直線'], ['広島商船A', '机用の水平の高速射出（バケツ・机・旗で機構を分ける）'], ['都立荒川A', 'モーターで速度を制御する射出3基の万能型'], ['小山A', '腹部のローラー（時速48km）が机用'], ['大阪公大A', 'エアシリンダーの「エアロケット砲」（時速74km）が机用'], ['岐阜A', '巻いた雑巾のローラー水平連射。公式戦は0枚、エキシビションで成功']],
     two: [['小山A', '右腕のクランクゴム機構で放物線、腹部のローラーで机。最も岐阜Aに近い分け方'], ['熊本八代A', 'バケツ＝ベルト、机＝手裏剣投げ、旗＝定荷重バネと、狙い別に3つ'], ['旭川A', '中央のローラー＋左右の回転アーム（スーパー雑巾用）'], ['釧路A', 'ローラー連射（5秒で12枚）＋精度の高いバネ式射出'], ['大阪公大A', 'ベルト直動の「コウダイ砲」（旗・バケツ）＋エアシリンダーの「エアロケット砲」（机）']],
   };
@@ -1823,6 +1837,7 @@ dash.calc('summary', {
     tb('gf-flag', ['チーム', '旗★', '試合', '機構（地区大会時点）'], fl.map((t) => `<tr${t.team === '岐阜A' ? ' class="gf-me"' : ''}><td class="nw">${tn(t.team)}</td><td class="n">${t.super_flag}</td><td class="n">${t.wins + t.losses}</td><td>${hEsc(t.team === '岐阜A' ? 'スーパー雑巾専用の投石機でオーバースロー' : short(t.mechanism))}</td></tr>`));
     const lf = teams.filter((t) => t.national && /動かす/.test(t.tag_bucket || ''));
     tb('gf-lift', ['チーム', '内容'], lf.map((t) => `<tr${t.team === '岐阜A' ? ' class="gf-me"' : ''}><td class="nw">${tn(t.team)}</td><td>${hEsc(t.team === '岐阜A' ? 'X字リフトの塔の上に移動バケツ' : (t.bucket_note || '移動バケツを上げて防御'))}</td></tr>`));
+    document.getElementById('gf-nhk').innerHTML = GF.nhk.map(([h, rs, note]) => `<section class="gf-nhk-g"><h3>${hEsc(h)}</h3><div class="scroll"><table class="tk-tl gf-tb"><tbody>${rs.map(([t, x]) => `<tr><td class="nw">${tn(t)}</td><td>${hEsc(x)}</td></tr>`).join('')}</tbody></table></div><p class="note">${hEsc(note)}</p></section>`).join('');
     const rv = teams.filter((t) => t.national && +t.desk > 0 && +t.super_flag > 0);
     document.getElementById('gf-rivals').textContent = `地区大会で机とスーパー雑巾の旗の両方を決めた全国出場チームは${rv.map((t) => t.team).join('・')}の${rv.length}チーム。岐阜Aが目指す「机＋旗」の形を、すでに実現しているチームです。`;
     document.querySelectorAll('#natl [data-ntab="gifu"] [data-t]').forEach((b) => { b.onclick = () => goTeam(b.dataset.t); });
@@ -1957,6 +1972,7 @@ dash.calc('summary', {
         li('5点バケツだけの型は最高点が低い', `Gの型（5点バケツだけ）の地区大会の最高点は${gMax}点。地区では確実に入れて勝ち上がりましたが、スーパー雑巾を旗に1枚掛けられると200点差がつくので、全国ではスーパー雑巾を入れるチームとの対戦が山場になりそうです。`),
         li('スーパー雑巾は最後の30秒に集中', window.__stTime ? `全国出場チームのスーパー雑巾${window.__stTime.nSup}枚のうち${window.__stTime.last30}枚が残り30秒以内、${window.__stTime.atEnd}枚は試合終了時の判定で加点でした。ほとんどのチームが「普通の雑巾で点を取り、最後にスーパー雑巾」という順番で、終盤の30秒で200〜400点動きます。リードしていても最後まで逆転があり得ます。` : ''),
         li('全国出場チームどうしでは、スーパー雑巾が入る型が全勝', window.__stH2H ? `地区大会で全国出場チームどうしが当たった${window.__stH2H.n}試合のうち、スーパー雑巾が入った型（A〜E）と入っていない型（F〜H）の対戦はA〜Eの${window.__stH2H.s1}勝${window.__stH2H.s2}敗でした。` : ''),
+        li('相手の移動バケツを狙う作戦が、旗のチームに勝った', 'NHKの番組で紹介された地区大会では、旗の得意なチームが移動バケツ狙いに敗れる場面が目立ちました。中国の米子Aは装填で止まった相手の移動バケツに入れ続けて優勝（決勝300-0）、東北の仙台広瀬Bは移動バケツだけを狙って決勝100-15、東海北陸の福井Bは上級生の助言で移動バケツ狙いに切り替えて鈴鹿A（旗）に勝ちました。装填の速さと、移動バケツを上げる・止まらないといった守りも全国の勝敗に関わりそうです。'),
         li('0点の試合と判定への備え', `スーパー雑巾を入れたチームでも、${names(zeroSup)}は地区大会で0点の試合がありました。0対0や同点は審査員の判定で決まるので、点が入らなかったときの動きの安定さも勝敗に関わります。`),
       ].join(''); }
     document.querySelectorAll('#natl [data-ntab="strat"] .st-tl').forEach((b) => { b.onclick = () => goTeam(b.dataset.t); });
@@ -2060,6 +2076,7 @@ dash.calc('summary', {
     c.push(['地区大会の勝ち方は全国でも効く', `過去4年、地区優勝で来たチームの${pct(r1.k / r1.n)}（${r1.k}/${r1.n}）が全国ベスト8に入った一方、推薦で来たチームは${pct(r3.k / r3.n)}（${r3.k}/${r3.n}）。地区で一番点を取ったチームは${pct(k1.k / k1.n)}がベスト8でした。`]);
     c.push(['地区ごとの全国での成績', `過去4年の全国大会では${nw1.l}のチームが勝率${pct(nw1.k / nw1.n)}で最も勝っています。今年は${doneD.length}地区から${N}チームが出場します。`]);
     c.push(['推薦からの上位進出もある', recBest.length ? `推薦で全国に出たチームからも、過去4年で${recBest.map((p) => `${p.year}年の${hEsc(p.team)}（${hEsc(p.nlabel)}）`).join('・')}が上位に入っています。地区大会からの1か月でロボットが大きく伸びることもあります。` : '推薦で全国に出たチームは、過去4年では上位に入っていません。']);
+    c.push(['NHKの番組で分かった作戦の傾向', '全8地区のNHKの番組では、全国出場チームの作戦が大きく3つに分かれていました。①旗に振り切る（秋田B・広島商船A・鈴鹿Aなど）、②相手の移動バケツを狙う（米子A・仙台広瀬B）、③固定バケツや机を確実に積み上げる（福井A・呉A・仙台名取Aなど）。また呉A（自動で丸めて自動移動）、鈴鹿A（雑巾を自分で回収して自動装填）、豊田A（ARグラスで操縦）のように、装填や位置決めを自動化・ハイテク化するチームが増えています。']);
     drawAims();
     document.getElementById('nt-concl').innerHTML = c.map(([h, p]) => `<li><div><h3>${h}</h3><p>${p}</p></div></li>`).join('');
 
