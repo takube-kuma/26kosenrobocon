@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/13 21:55"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/13 21:58"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -172,6 +172,15 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr .dinfo dd{margin:0;line-height:1.6}
 .kr table.dm{width:auto;min-width:min(100%,36rem)}
 .kr table.dm th{position:static;padding:var(--cds-pad-xs) var(--cds-pad-sm);color:var(--color-fg-muted)}
+.kr .dmedia{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+.kr .dm-row{display:flex;flex-direction:column;gap:4px;padding:10px 12px;border:1px solid var(--color-border-line);border-left:4px solid var(--dm-c,var(--color-border-line));border-radius:var(--cds-radius);background:var(--color-panel);color:inherit;text-decoration:none;min-width:0}
+.kr .dm-row:hover{border-color:var(--dm-c,var(--color-fg-muted))}
+.kr .dm-row:has(.k-nhk),.kr .dm-row:has(.k-tv){--dm-c:var(--c0)}.kr .dm-row:has(.k-paper){--dm-c:var(--c1)}.kr .dm-row:has(.k-school){--dm-c:var(--color-ok)}
+.kr .dm-head{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font-size:var(--cds-font-size-caption)}
+.kr .dm-badge{display:inline-block;padding:1px 8px;border-radius:999px;font-weight:var(--cds-font-weight-medium);color:var(--color-bg);background:var(--dm-c,var(--color-fg-muted))}
+.kr .dm-acc{font-weight:var(--cds-font-weight-medium)}.kr .dm-date{color:var(--color-fg-muted);margin-left:auto}
+.kr .dm-sum{line-height:1.65;overflow-wrap:anywhere}.kr .dm-link{font-size:var(--cds-font-size-caption);color:var(--c0)}
+.kr .dm-count{font-size:var(--cds-font-size-caption);font-weight:normal;color:var(--color-fg-muted);margin-left:6px}
 .kr .dnhk-pts{margin:6px 0 8px;padding-left:1.3em;line-height:1.7}.kr .dnhk-pts li{margin:3px 0}.kr .dnhk-sc{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:6px}.kr .dnhk-sc a.yt{white-space:normal}.kr .dmatches{overflow-x:auto;max-width:100%}
 .kr .dposts{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,18rem),1fr));gap:var(--cds-gap-sm)}
 .kr a.post{display:flex;flex-direction:column;gap:var(--cds-gap-xs);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-sm) var(--cds-pad-md);color:var(--color-fg);text-decoration:none;background:var(--color-bg)}
@@ -391,17 +400,17 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
         <ul class="dnhk-pts" id="d-nhk-pts"></ul>
         <div class="dnhk-sc" id="d-nhk-sc"></div>
       </div>
+      <div class="dmedia-wrap" id="d-media-wrap" hidden>
+        <h3>ニュース・テレビ・学校の記事 <span class="dm-count" id="d-media-count"></span></h3>
+        <p class="note">新聞・テレビ・学校のサイトなど、X以外でこのチームを取り上げたもの（新しい順）。要約は記事や告知の内容を短くまとめたものです（有料記事は見出しと冒頭だけ）。</p>
+        <div class="dmedia" id="d-media" data-source="upcoming"></div>
+      </div>
       <h3>試合ごとの得点</h3>
       <p class="note"><span class="sp">赤字</span>はスーパー雑巾（2倍）で取った分。バケツは低＝1点、中・高＝5点。</p>
       <div class="dmatches" id="d-matches" data-source="scores"></div>
       <h3>Xの投稿</h3>
       <p class="note">チームや学校、関係者がXに上げた投稿へのリンクです。ロボットの写真や動画はリンク先で見られます（写真はチームのものなので、ここには転載していません）。要約は投稿の内容を短くまとめたものです。</p>
       <div class="dposts" id="d-posts" data-source="xposts"></div>
-      <div id="d-media-wrap" hidden>
-        <h3>ニュース・テレビ・学校の記事</h3>
-        <p class="note">新聞・テレビ・学校のサイトなど、X以外でこのチームを取り上げたもの。要約は記事や告知の内容を短くまとめたものです（有料記事は見出しと冒頭だけ）。</p>
-        <div class="dposts" id="d-media" data-source="upcoming"></div>
-      </div>
       <a class="xsearch" id="d-xsearch" target="_blank" rel="noopener">Xで「#高専ロボコン」のこのロボットの投稿をさらに探す ↗</a>
     </div>
   </section>
@@ -1100,12 +1109,16 @@ dash.calc('summary', {
       document.getElementById('d-media-wrap').hidden = !ms.length;
       ms.forEach((p) => {
         const pw = 'id=' + enc(p.id);
-        const a = mk('a', 'post'); a.href = p.url; a.target = '_blank'; a.rel = 'noopener';
-        const top = mk('div', 'ptop');
-        top.append(mk('span', 'pacc', 'upcoming', 'account', pw, p.account), mk('span', 'pdate', 'upcoming', 'date', pw, p.date));
-        a.append(top, mk('div', 'psum', 'upcoming', 'summary', pw, p.summary), mk('div', 'plink', 'upcoming', 'link_label', pw, p.link_label || 'リンク先を見る ↗'));
+        const acc = String(p.account || ''), url = String(p.url || '');
+        const kind = /news\.web\.nhk/.test(url) ? ['NHKニュース', 'k-nhk'] : (/NHK|放送|テレビ|TV/i.test(acc) ? ['テレビ', 'k-tv'] : (/新聞|新報|プレス|press/i.test(acc + url) ? ['新聞', 'k-paper'] : (/高専|学校/.test(acc) ? ['学校', 'k-school'] : ['その他', 'k-other'])));
+        const a = mk('a', 'dm-row'); a.href = url; a.target = '_blank'; a.rel = 'noopener';
+        const head = mk('div', 'dm-head');
+        const bd = document.createElement('span'); bd.className = 'dm-badge ' + kind[1]; bd.textContent = kind[0];
+        head.append(bd, mk('span', 'dm-acc', 'upcoming', 'account', pw, acc), mk('span', 'dm-date', 'upcoming', 'date', pw, p.date));
+        a.append(head, mk('div', 'dm-sum', 'upcoming', 'summary', pw, p.summary), mk('div', 'dm-link', 'upcoming', 'link_label', pw, p.link_label || 'リンク先を見る ↗'));
         mbx.append(a);
-      }); }
+      });
+      document.getElementById('d-media-count').textContent = ms.length ? `${ms.length}件` : ''; }
     const xs = document.getElementById('d-xsearch');
     xs.href = d.x_search || ('https://x.com/search?q=' + encodeURIComponent(d.robot + ' #高専ロボコン'));
   };
