@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:11"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:15"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -748,6 +748,18 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
   </div>
 
   <section id="analysis" class="lx-page" style="display:flex;flex-direction:column;gap:var(--cds-gap-md)">
+    <div class="card tk-concl" id="combo-card">
+      <h2>地区大会と全国大会を合わせた分析</h2>
+      <ol class="win-list" id="combo-concl"></ol>
+      <p class="note">2026年の地区大会（8地区・150試合）と全国大会（25試合）の記録から。全国大会の得点は配信の得点表示から。下のグラフで、チームごとの地区大会と全国大会の得点を並べています。</p>
+    </div>
+    <div class="card" id="both-chart-card">
+      <h2 id="both-h">地区大会と全国大会を合わせた得点</h2>
+      <p class="note" id="both-note"></p>
+      <div class="ctrl"><label class="sortl">並び順 <select id="both-sort" aria-label="並び順"><option value="best">1試合の最高得点の順</option><option value="avg">1試合の平均得点の順</option></select></label> <label class="sortl">表示 <select id="both-n" aria-label="表示するチーム数"><option value="nat">全国大会に出た25チーム</option><option value="15">上位15チーム</option><option value="all">全チーム</option></select></label></div>
+      <div class="legend" id="both-legend"></div>
+      <div class="chart" id="both-chart"></div>
+    </div>
     <div class="card" id="insight-card">
       <h2>数字で見る地区大会</h2>
       <p class="note">上の地区ボタンで選んだ地区の数字です（勝率は審査員判定も含む）。</p>
@@ -810,13 +822,6 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
         <div class="legend"><span><i style="background:var(--lx-c0)"></i>普通の雑巾</span><span><i style="background:var(--lx-c1)"></i>スーパー雑巾</span></div>
         <div class="chart dash-skeleton" id="goal-chart" data-source="summary"></div>
       </div>
-    <div class="card" id="both-chart-card" style="grid-column:1/-1">
-      <h2 id="both-h">地区大会と全国大会を合わせた得点</h2>
-      <p class="note" id="both-note"></p>
-      <div class="ctrl"><label class="sortl">並び順 <select id="both-sort" aria-label="並び順"><option value="best">1試合の最高得点の順</option><option value="avg">1試合の平均得点の順</option></select></label> <label class="sortl">表示 <select id="both-n" aria-label="表示するチーム数"><option value="15">上位15チーム</option><option value="all">全チーム</option></select></label></div>
-      <div class="legend" id="both-legend"></div>
-      <div class="chart" id="both-chart"></div>
-    </div>
     </div>
     <div class="grid">
       <div class="card" id="district-avg-card">
@@ -892,7 +897,7 @@ dash.calc('summary', {
   let natSel = false;
   ['all', ...ORDER].forEach((r) => {
     const b = document.createElement('button');
-    b.className = 'chip'; b.dataset.r = r; b.textContent = r === 'all' ? '全地区' : r;
+    b.className = 'chip'; b.dataset.r = r; b.textContent = r === 'all' ? '全大会' : r;
     b.addEventListener('click', () => { const was = natSel; natSel = false; natDetail = false; dash.setParams({ region: r }); if (was) { draw(); window.scrollTo(0, 0); } });
     bar.appendChild(b);
   });
@@ -1380,6 +1385,28 @@ dash.calc('summary', {
       hbar(bc, rows, (d) => d.team, (d) => Number(d.best_score), (d) => `${d.team}（${d.district}）`, (d) => `最高 ${fmt(Number(d.best_score))}点・${d.wins}勝${d.losses}敗${d.national ? '・全国出場' : ''}`, (d) => (d.national ? 'var(--lx-nat)' : 'var(--cds-chart-muted)'));
     } else if (gt.status === 'error' || gt.status === 'connect') { bc.classList.remove('dash-skeleton'); failIn(bc); }
 
+    { const cc = document.getElementById('combo-card'); cc.hidden = r !== 'all';
+      if (r === 'all' && gt.status === 'ok') {
+        const nt = gt.data.filter((d) => natResult(d.team)).map((d) => { const n = natResult(d.team); const ns = n.ms.map((m) => (m.red === d.team ? m.red_score : m.blue_score)); const dn = (+d.wins || 0) + (+d.losses || 0) - (+d.unknown_scores || 0); return { d, n, ns, db: +d.best_score || 0, dAvg: dn > 0 ? (+d.total_score || 0) / dn : null, dn, dt: +d.total_score || 0, nAvg: ns.reduce((a, v) => a + v, 0) / ns.length }; });
+        const dSum = nt.reduce((a, x) => a + x.dt, 0), dCnt = nt.reduce((a, x) => a + x.dn, 0), nSc = nt.flatMap((x) => x.ns);
+        const up = nt.filter((x) => x.n.best > x.db).sort((a, b) => (b.n.best - b.db) - (a.n.best - a.db)), dw = nt.filter((x) => x.n.best < x.db).sort((a, b) => (a.n.best - a.db) - (b.n.best - b.db));
+        const allM = (dash.data('matches').data || []); const dScores = allM.flatMap((m) => [m.red_score, m.blue_score]).filter((v) => v != null);
+        const zero = (xs) => Math.round(100 * xs.filter((v) => v === 0).length / xs.length), hi = (xs) => Math.round(100 * xs.filter((v) => v >= 200).length / xs.length);
+        const top5 = nt.slice().sort((a, b) => b.db - a.db).slice(0, 5);
+        const champ = nt.find((x) => x.n.label === '優勝'), chRank = 1 + nt.filter((x) => x.db > champ.db).length;
+        const gf = nt.find((x) => x.d.team === '岐阜A');
+        const allRows = gt.data.map((d) => { const n = natResult(d.team); const ns = n ? n.ms.map((m) => (m.red === d.team ? m.red_score : m.blue_score)) : []; const c = (+d.wins || 0) + (+d.losses || 0) - (+d.unknown_scores || 0) + ns.length; return { t: d.team, avg: c ? ((+d.total_score || 0) + ns.reduce((a, v) => a + v, 0)) / c : 0, best: Math.max(+d.best_score || 0, n ? n.best : 0) }; });
+        const gAll = allRows.find((y) => y.t === '岐阜A');
+        const gfAvgRank = 1 + allRows.filter((x) => x.avg > gAll.avg).length, gfBestRank = 1 + allRows.filter((x) => x.best > gAll.best).length;
+        const L = (h, p) => `<li><div><h3>${h}</h3><p>${p}</p></div></li>`;
+        document.getElementById('combo-concl').innerHTML = [
+          L('全国大会の方が点が高く、0点が少ない', `全国に出た25チームの1試合の平均得点は、地区大会が<b>${Math.round(dSum / dCnt)}点</b>（${dCnt}試合）、全国大会が<b>${Math.round(nSc.reduce((a, v) => a + v, 0) / nSc.length)}点</b>（25試合・のべ${nSc.length}チーム分）。1試合ごとの得点で見ると、0点だった割合は地区大会全体の${zero(dScores)}%に対して全国大会は${zero(nSc)}%、200点以上は地区大会${hi(dScores)}%・全国大会${hi(nSc)}%でした。地区大会からの約1か月の改良で、旗とスーパー雑巾を決められるチームが増えています。`),
+          L('全国で最高点を大きく伸ばしたチーム', `地区大会の最高点を全国大会で上回ったのは${up.length}チーム。伸びが大きいのは${up.slice(0, 6).map((x) => `${hEsc(x.d.team)}（${x.db}→${x.n.best}点・${x.n.label}）`).join('、')}。`),
+          L('地区の最高点に届かなかったチーム', `逆に、地区大会の最高点を全国で下回ったのは${dw.length}チーム。差が大きいのは${dw.slice(0, 5).map((x) => `${hEsc(x.d.team)}（${x.db}→${x.n.best}点・${x.n.label}）`).join('、')}。地区で400点以上を取ったチームでも、全国では相手の守り（シールド・ガード・移動バケツを上げる）や一発勝負のトーナメントで点が伸びない試合がありました。`),
+          L('地区大会の最高点の順位と全国の結果は一致しなかった', `全国出場チームのうち地区大会の最高点が上位5だったのは${top5.map((x) => `${hEsc(x.d.team)} ${x.db}点（→${x.n.label}）`).join('、')}。優勝した大阪公大Aの地区大会の最高点は${champ.db}点で、25チーム中${chRank}位でした。地区大会の点の高さより、全国での伸びと相手に合わせた守りが結果を分けています。`),
+          L(`岐阜Aは合わせた平均点で全123チーム中${gfAvgRank}位`, gf ? `岐阜Aは地区大会2試合（最高${gf.db}点・平均${Math.round(gf.dAvg)}点）から、全国大会3試合で最高${gf.n.best}点・平均${Math.round(gf.nAvg)}点に伸ばしました。地区と全国を合わせると、1試合の最高点は全123チーム中${gfBestRank}位、平均点は${gfAvgRank}位です。` : ''),
+        ].join('');
+      } }
     { const box = document.getElementById('both-chart');
       if (gt.status === 'ok') {
         const mode = document.getElementById('both-sort').value, lim = document.getElementById('both-n').value;
@@ -1391,8 +1418,8 @@ dash.calc('summary', {
           return { d, n, db, nb, best: Math.max(db, nb), avg, cnt, nCnt: ns.length, dAvg: dn > 0 ? dt / dn : null, nAvg: ns.length ? ns.reduce((a, v) => a + v, 0) / ns.length : null, nat: nb > db, round: n ? (n.ms.find((m) => (m.red === d.team ? m.red_score : m.blue_score) === nb) || {}).round : '' }; });
         const key = (x) => (mode === 'avg' ? x.avg : x.best);
         rows.sort((a, b) => key(b) - key(a) || b.best - a.best);
-        const shown = lim === 'all' ? rows : rows.slice(0, 15);
-        document.getElementById('both-h').textContent = `地区大会と全国大会を合わせた1試合の${mode === 'avg' ? '平均' : '最高'}得点（${lim === 'all' ? '全' + rows.length + 'チーム' : '上位15'}）`;
+        const shown = lim === 'all' ? rows : lim === 'nat' ? rows.filter((x) => x.n) : rows.slice(0, 15);
+        document.getElementById('both-h').textContent = `地区大会と全国大会を合わせた1試合の${mode === 'avg' ? '平均' : '最高'}得点（${lim === 'all' ? '全' + rows.length + 'チーム' : lim === 'nat' ? '全国大会に出たチーム' : '上位15'}）`;
         document.getElementById('both-note').textContent = (mode === 'avg' ? '地区大会と全国大会の全試合を合わせた1試合の平均得点の順（太い│、得点が分からなかった試合を除く）。' : '地区大会と全国大会を合わせた1試合の最高得点の順。') + '●は地区大会、◆は全国大会での最高得点、細い│は地区大会、◇は全国大会の平均得点。●の色は地区、緑字は全国大会に出たチーム。横軸は平方根の目盛りで、狭い画面では右の数字が「全国/地区」。地区を選ぶと、その地区のチームだけを表示します。';
         document.getElementById('both-legend').innerHTML = '';
         box.replaceChildren();
@@ -1403,7 +1430,7 @@ dash.calc('summary', {
         svg.append('text').attr('x', (m.l + W - m.r) / 2).attr('y', H - 2).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text('1試合の得点（点）');
         const tp = tip(box);
         const dia = (g, cx, cy, sz, fill, stroke) => g.append('path').attr('d', `M${cx},${cy - sz}L${cx + sz},${cy}L${cx},${cy + sz}L${cx - sz},${cy}Z`).style('fill', fill).style('stroke', stroke || 'none').style('stroke-width', 1.5);
-        const rk = shown.map((x) => 1 + rows.filter((o) => Math.round(key(o)) > Math.round(key(x))).length);
+        const rk = shown.map((x) => 1 + shown.filter((o) => Math.round(key(o)) > Math.round(key(x))).length);
         shown.forEach((x, i) => {
           const g = svg.append('g').attr('transform', `translate(0,${m.t + i * rowH})`); const cy = rowH / 2;
           g.append('text').attr('x', narrow ? 24 : 30).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg-muted)').style('font-variant-numeric', 'tabular-nums').text(`${rk[i]}位`);
