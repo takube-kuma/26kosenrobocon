@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:02"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:05"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -345,7 +345,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 
 <div class="kr">
   <header id="top">
-    <h1>高専ロボコン<label class="ysel"><select id="year-sel" aria-label="年を選ぶ"><option value="nat">2026全国大会の分析</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="all">5年間のチーム成績</option></select></label><span id="h1-tail">大会分析</span></h1>
+    <h1>高専ロボコン<label class="ysel"><select id="year-sel" aria-label="年を選ぶ"><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="all">5年間のチーム成績</option></select></label><span id="h1-tail">大会分析</span></h1>
     <p class="upd" id="upd" hidden>更新 <time id="upd-t"></time></p>
     <p class="lede" id="lede">
       <span class="lx-scope">全地区</span>の最高得点は
@@ -558,7 +558,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     <div class="card">
       <h2>出場チームの得点（地区大会と全国大会）</h2>
       <p class="note">●は地区大会、◆は全国大会での1試合の最高得点（狭い画面では右の数字が「全国/地区」）。│は地区大会の1試合の平均得点、◇は全国大会の平均得点。横軸は得点の段が見やすいよう平方根の目盛り。●の色は地区。左の数字は並び順での順位（同じ点なら同じ順位）。</p>
-      <div class="ctrl"><label class="sortl">並び順 <select id="nt-bsort" aria-label="並び順"><option value="nbest">全国大会の最高得点の順</option><option value="navg">全国大会の平均得点の順</option><option value="nres">全国大会の成績の順</option><option value="best">地区大会の最高得点の順</option><option value="avg">地区大会の平均得点の順</option></select></label></div>
+      <div class="ctrl"><label class="sortl">並び順 <select id="nt-bsort" aria-label="並び順"><option value="both">全国・地区を合わせた最高得点の順</option><option value="nbest">全国大会の最高得点の順</option><option value="navg">全国大会の平均得点の順</option><option value="nres">全国大会の成績の順</option><option value="best">地区大会の最高得点の順</option><option value="avg">地区大会の平均得点の順</option></select></label></div>
       <div class="chart" id="nt-best"></div>
     </div>
     <div class="card">
@@ -810,6 +810,12 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
         <div class="legend"><span><i style="background:var(--lx-c0)"></i>普通の雑巾</span><span><i style="background:var(--lx-c1)"></i>スーパー雑巾</span></div>
         <div class="chart dash-skeleton" id="goal-chart" data-source="summary"></div>
       </div>
+    <div class="card" id="both-chart-card">
+      <h2>地区大会と全国大会を合わせた1試合の最高得点（上位15）</h2>
+      <p class="note">2026年の地区大会・全国大会の全試合のうち、そのチームが1試合で取った最高点。色はその点を取った大会。地区を選ぶと、その地区のチームだけを表示します。</p>
+      <div class="legend"><span><i style="background:var(--lx-c1)"></i>全国大会で記録</span><span><i style="background:var(--lx-nat)"></i>地区大会で記録（全国出場）</span><span><i style="background:var(--cds-chart-muted)"></i>地区大会で記録（その他）</span></div>
+      <div class="chart" id="both-chart"></div>
+    </div>
     </div>
     <div class="grid">
       <div class="card" id="district-avg-card">
@@ -882,12 +888,15 @@ dash.calc('summary', {
 
   // region chips
   const bar = document.getElementById('region-filter');
+  let natSel = false;
   ['all', ...ORDER].forEach((r) => {
     const b = document.createElement('button');
     b.className = 'chip'; b.dataset.r = r; b.textContent = r === 'all' ? '全地区' : r;
-    b.addEventListener('click', () => dash.setParams({ region: r }));
+    b.addEventListener('click', () => { const was = natSel; natSel = false; natDetail = false; dash.setParams({ region: r }); if (was) { draw(); window.scrollTo(0, 0); } });
     bar.appendChild(b);
   });
+  { const b = document.createElement('button'); b.className = 'chip natchip'; b.dataset.r = '__nat'; b.textContent = '全国大会';
+    b.addEventListener('click', () => { natSel = true; natDetail = false; selTeam = null; draw(); window.scrollTo(0, 0); }); bar.appendChild(b); }
 
   // tabs
   let tab = 'analysis';
@@ -1370,6 +1379,12 @@ dash.calc('summary', {
       hbar(bc, rows, (d) => d.team, (d) => Number(d.best_score), (d) => `${d.team}（${d.district}）`, (d) => `最高 ${fmt(Number(d.best_score))}点・${d.wins}勝${d.losses}敗${d.national ? '・全国出場' : ''}`, (d) => (d.national ? 'var(--lx-nat)' : 'var(--cds-chart-muted)'));
     } else if (gt.status === 'error' || gt.status === 'connect') { bc.classList.remove('dash-skeleton'); failIn(bc); }
 
+    { const box = document.getElementById('both-chart');
+      if (gt.status === 'ok') {
+        const rows = gt.data.filter((d) => (r === 'all' || d.district === r) && d.best_score != null).map((d) => { const n = natResult(d.team); const db = Number(d.best_score) || 0, nb = n ? n.best : -1; return { d, n, db, nb, v: Math.max(db, nb), nat: nb > db, round: n ? (n.ms.find((m) => (m.red === d.team ? m.red_score : m.blue_score) === nb) || {}).round : '' }; })
+          .sort((a, b) => b.v - a.v || (b.nat - a.nat)).slice(0, 15);
+        hbar(box, rows, (x) => x.d.team, (x) => x.v, (x) => `${x.d.team}（${x.d.district}）`, (x) => `最高 ${fmt(x.v)}点（${x.nat ? '全国大会 ' + x.round : '地区大会'}）・地区 ${fmt(x.db)}点${x.n ? '・全国 ' + x.nb + '点（' + x.n.label + '）' : ''}`, (x) => (x.nat ? 'var(--lx-c1)' : x.d.national ? 'var(--lx-nat)' : 'var(--cds-chart-muted)'));
+      } }
     const gc = document.getElementById('goal-chart');
     const gs = dash.data('summary');
     gc.querySelectorAll('.fail').forEach((n) => n.remove());
@@ -2147,7 +2162,7 @@ dash.calc('summary', {
       const box = document.getElementById('nt-best');
       const mode = document.getElementById('nt-bsort').value;
       rows.forEach((r) => { const n = natResult(r.t.team); r.nb = n ? n.best : null; r.navg = n ? n.ms.reduce((a, m) => a + (m.red === r.t.team ? m.red_score : m.blue_score), 0) / n.ms.length : null; r.nlab = n ? n.label : ''; r.nrank = n ? n.rank * 10 - n.wins : 99; });
-      const val = (r) => (mode === 'nbest' ? (r.nb ?? -1) : mode === 'navg' ? (r.navg ?? -1) : mode === 'nres' ? -r.nrank : mode === 'avg' ? (r.avg == null ? -1 : r.avg) : +r.t.best_score || 0);
+      const val = (r) => (mode === 'both' ? Math.max(r.nb ?? -1, +r.t.best_score || 0) : mode === 'nbest' ? (r.nb ?? -1) : mode === 'navg' ? (r.navg ?? -1) : mode === 'nres' ? -r.nrank : mode === 'avg' ? (r.avg == null ? -1 : r.avg) : +r.t.best_score || 0);
       const list = rows.slice().sort((a, b) => val(b) - val(a) || (b.nb ?? -1) - (a.nb ?? -1) || (+b.t.best_score || 0) - (+a.t.best_score || 0));
       const rk = list.map((r) => 1 + list.filter((o) => Math.round(val(o)) > Math.round(val(r))).length);
       const rowH = 24, m = { t: 8, r: 150, b: 30, l: 130 }, H = list.length * rowH + m.t + m.b; const [svg, W] = tkSvg(box, H); const narrow = W < 560; if (narrow) { m.l = 96; m.r = 62; }
@@ -2315,15 +2330,16 @@ dash.calc('summary', {
     }).join('')}</tr>`).join('')}</tbody>` : '';
   };
 
-  let curYear = 'nat';
+  let curYear = 2026;
   const ysel = document.getElementById('year-sel');
   const applyYear = () => {
-    const mode = curYear === 'all' ? 'sum' : curYear === 'nat' ? 'nat' : curYear === 2026 ? 'now' : 'past';
+    const mode = curYear === 'all' ? 'sum' : curYear === 2026 ? (natSel ? 'nat' : 'now') : 'past';
     ysel.value = String(curYear);
     { const m = document.createElement('span'); const cs = getComputedStyle(ysel); m.style.cssText = `position:absolute;visibility:hidden;white-space:nowrap;font:${cs.font}`; m.textContent = ysel.options[ysel.selectedIndex].text; document.body.appendChild(m); ysel.style.width = (m.getBoundingClientRect().width + parseFloat(cs.fontSize) * 1.15) + 'px'; m.remove(); }
-    document.getElementById('h1-tail').style.display = mode === 'sum' || mode === 'nat' ? 'none' : '';
+    document.getElementById('h1-tail').style.display = mode === 'sum' ? 'none' : '';
     document.title = '高専ロボコン大会分析';
-    ['lede', 'region-filter', 'tiles'].forEach((id) => { const e = document.getElementById(id); if (e) e.style.display = mode === 'now' ? '' : 'none'; });
+    ['lede', 'tiles'].forEach((id) => { const e = document.getElementById(id); if (e) e.style.display = mode === 'now' ? '' : 'none'; }); document.getElementById('region-filter').style.display = mode === 'now' || mode === 'nat' ? '' : 'none';
+    bar.querySelectorAll('.chip').forEach((b) => b.setAttribute('aria-pressed', String(mode === 'nat' ? b.dataset.r === '__nat' : b.dataset.r === region())));
     const nav = document.querySelector('.kr > nav.tabs'); if (nav) nav.style.display = mode === 'now' ? '' : 'none';
     document.getElementById('past').style.display = mode === 'past' ? 'flex' : 'none';
     document.getElementById('sum5').style.display = mode === 'sum' ? 'flex' : 'none';
@@ -2332,9 +2348,9 @@ dash.calc('summary', {
     return mode;
   };
   ysel.addEventListener('change', () => {
-    curYear = ysel.value === 'all' || ysel.value === 'nat' ? ysel.value : +ysel.value; pState.sel = null;
+    curYear = ysel.value === 'all' ? 'all' : +ysel.value; natSel = false; pState.sel = null;
     if (natDetail) { natDetail = false; selTeam = null; }
-    try { history.replaceState(null, '', curYear === 'nat' ? location.pathname + location.search : '#' + curYear); } catch (e) {}
+    try { history.replaceState(null, '', curYear === 2026 ? location.pathname + location.search : '#' + curYear); } catch (e) {}
     draw();
     window.scrollTo(0, 0);
   });
@@ -2366,7 +2382,8 @@ dash.calc('summary', {
   if (['teams', 'matches', 'analysis'].includes(named)) { curYear = 2026; showTab(named); }
   else if (/^20(22|23|24|25|26)$/.test(named)) { curYear = +named; draw(); }
   else if (named === 'all') { curYear = 'all'; draw(); }
-  else if (named === 'nat' || named === 'national' || named === 'tokai') { curYear = 'nat'; draw(); }
+  else if (named === 'nat' || named === 'national' || named === 'tokai' || named === 'gifu') { curYear = 2026; natSel = true; if (named === 'gifu') ntTab = 'gifu'; draw(); }
+  else draw();
 })();
 </script>
 
