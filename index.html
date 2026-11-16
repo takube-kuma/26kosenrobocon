@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:00"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:02"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -555,15 +555,10 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
       <p class="note">地区大会での成績と全国大会の結果。列の見出しを押すと並び替えられます。チーム名を押すと詳細ページが開きます。</p>
       <div class="scroll"><table class="tk-tl" id="nt-table"></table></div>
     </div>
-    <div class="card" id="aim-card">
-      <h2>出場チームの狙える得点源と成功率</h2>
-      <p class="note">各チームの「狙える得点源」は、実況で紹介された狙いと、実際に1枚以上入ったゴールを合わせたもの。成功率は、その得点源を狙えるチームの試合のうち1枚以上入った試合の割合です（投げた回数は記録がないので、1投ごとの命中率ではありません）。「1試合あたり」は、狙えるチームの1試合で入った平均枚数です。全国大会に出る25チームの数字です。各チームの内訳は「チーム・ロボット」タブのカードと、チームの詳細ページにあります。</p>
-      <div class="scroll"><table class="tk-tl" id="aim-table"></table></div>
-    </div>
     <div class="card">
-      <h2>出場チームの地区大会での得点</h2>
-      <p class="note">●は大会中の1試合の最高得点、│は1試合の平均得点（得点が分からなかった試合を除く）。横軸は得点の段が見やすいよう平方根の目盛り。色は地区。左の数字は並び順での順位（同じ点なら同じ順位）。</p>
-      <div class="ctrl"><label class="sortl">並び順 <select id="nt-bsort" aria-label="並び順"><option value="best">最高得点の順</option><option value="avg">平均得点の順</option></select></label></div>
+      <h2>出場チームの得点（地区大会と全国大会）</h2>
+      <p class="note">●は地区大会、◆は全国大会での1試合の最高得点（狭い画面では右の数字が「全国/地区」）。│は地区大会の1試合の平均得点、◇は全国大会の平均得点。横軸は得点の段が見やすいよう平方根の目盛り。●の色は地区。左の数字は並び順での順位（同じ点なら同じ順位）。</p>
+      <div class="ctrl"><label class="sortl">並び順 <select id="nt-bsort" aria-label="並び順"><option value="nbest">全国大会の最高得点の順</option><option value="navg">全国大会の平均得点の順</option><option value="nres">全国大会の成績の順</option><option value="best">地区大会の最高得点の順</option><option value="avg">地区大会の平均得点の順</option></select></label></div>
       <div class="chart" id="nt-best"></div>
     </div>
     <div class="card">
@@ -2135,16 +2130,15 @@ dash.calc('summary', {
       c.push(['地区優勝より、準優勝・推薦のチームが勝ち上がった', `地区優勝で来た${dw.length}チームのうちベスト8は<b>${b8(dw)}チーム</b>（${dw.filter((x) => x.n.rank <= 3).map((x) => hEsc(x.r.t.team)).join('・')}）で、過去4年の割合（${pct(r1.k / r1.n)}）を大きく下回りました。地区準優勝・推薦で来た${rec.length}チームからは${b8(rec)}チームがベスト8に入り、優勝・準優勝・ベスト4の4チームのうち3チーム（大阪公大A＝近畿準優勝、鈴鹿A・鹿児島A＝推薦）が地区優勝ではありませんでした。地区大会で最高得点が上位5だったチーム（${topD.map((x) => `${hEsc(x.r.t.team)}→${x.n.label}`).join('、')}）も明暗が分かれ、地区大会からの1か月の改良と相手に合わせた作戦が大きく効きました。`]);
       c.push(['ルールの運用で決まった試合も', '1回戦11では福井Aが最後に旗へ掛けた雑巾が終了の合図の後の射出と判定されて無効になり、20対20の同点から「机の得点が多い方」で東京Aが勝ちました。机に当たる（広島商船A・大阪公大A）、2枚同時に発射する（東京A）と15秒止まる反則も、その間に移動バケツを狙われるなど点差に直結しました。']);
       c.push(['NHKの番組で分かった作戦は全国でどうだったか', '旗に振り切るチームは、秋田B・広島商船Aが1回戦で敗れた一方、鈴鹿Aは5点バケツや移動バケツも組み合わせて準優勝。移動バケツ狙いの米子A・仙台広瀬Bは2回戦まで。固定バケツを積み上げる福井A・呉A・仙台名取Aは1回戦で敗れました。自動化したチームでは大分B（全自動で旗）が技術賞とベスト4、鈴鹿A（自分で雑巾を回収・装填）が準優勝と結果を残しています。']); }
-    drawAims();
     document.getElementById('nt-concl').innerHTML = c.map(([h, p]) => `<li><div><h3>${h}</h3><p>${p}</p></div></li>`).join('');
 
     // 出場チーム一覧（並び替え可）
-    const cols = [['team', 'チーム', (r) => r.t.team], ['nat', '全国の結果', (r) => { const n = natResult(r.t.team); return n ? n.rank * 10 - n.wins : 99; }], ['district', '地区', (r) => ORDER.indexOf(r.t.district)], ['route', '出場の決め方', (r) => ['地区優勝', '地区準優勝', '推薦'].indexOf(r.route)], ['rec', '地区での勝敗', (r) => (+r.t.wins || 0) - (+r.t.losses || 0)], ['best', '最高得点', (r) => +r.t.best_score || 0], ['avg', '平均得点', (r) => r.avg ?? -1], ['flag', '旗の枚数', (r) => +r.t.flag || 0], ['aims', '狙える得点源（入った試合）', (r) => aimsOf(r.t.team).filter((a) => a.ok > 0).length]];
+    const cols = [['team', 'チーム', (r) => r.t.team], ['nat', '全国の結果', (r) => { const n = natResult(r.t.team); return n ? n.rank * 10 - n.wins : 99; }], ['district', '地区', (r) => ORDER.indexOf(r.t.district)], ['route', '出場の決め方', (r) => ['地区優勝', '地区準優勝', '推薦'].indexOf(r.route)], ['rec', '地区での勝敗', (r) => (+r.t.wins || 0) - (+r.t.losses || 0)], ['nbest', '全国の最高得点', (r) => { const n = natResult(r.t.team); return n ? n.best : -1; }], ['best', '地区の最高得点', (r) => +r.t.best_score || 0], ['avg', '地区の平均得点', (r) => r.avg ?? -1], ['flag', '旗の枚数', (r) => +r.t.flag || 0]];
     NT.sort = NT.sort || { k: 'district', d: 1 };
     const cdef = cols.find((x) => x[0] === NT.sort.k);
     const sorted = rows.slice().sort((a, b) => { const va = cdef[2](a), vb = cdef[2](b); return (va < vb ? -1 : va > vb ? 1 : 0) * NT.sort.d; });
     const tb = document.getElementById('nt-table');
-    tb.innerHTML = `<thead><tr>${cols.map(([k, l]) => `<th><button class="nt-sort" data-k="${k}" style="font:inherit;background:none;border:0;padding:0;color:inherit;cursor:pointer">${l}${NT.sort.k === k ? (NT.sort.d < 0 ? ' ▾' : ' ▴') : ''}</button></th>`).join('')}</tr></thead><tbody>${sorted.map((r) => `<tr><td class="nw"><a href="#" class="nt-team" data-t="${hEsc(r.t.team)}">${hEsc(r.t.team)}</a><div style="color:var(--color-fg-muted);font-size:11px">${hEsc(r.t.robot || '')}</div></td><td class="nw">${(() => { const n = natResult(r.t.team); return n ? `<b>${n.label}</b><div style="color:var(--color-fg-muted);font-size:11px">${n.wins}勝${n.losses}敗・最高${n.best}点${n.wc ? '・ワイルドカード' : ''}</div>` : '—'; })()}</td><td><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${dCol(r.t.district)};margin-right:4px"></span>${hEsc(r.t.district)}</td><td>${r.route}${(() => { const aw = String(r.t.award || '').replace(/（.*?）/g, '').split(/[、,・／\/]/).map((x) => x.trim()).filter((x) => x && !/^(準?優勝)$/.test(x)).join('・'); return aw ? `<div style="color:var(--color-fg-muted);font-size:11px">${hEsc(aw)}</div>` : ''; })()}</td><td>${+r.t.wins || 0}勝${+r.t.losses || 0}敗</td><td class="n">${fmt(+r.t.best_score || 0)}</td><td class="n">${r.avg == null ? '—' : Math.round(r.avg)}</td><td class="n">${+r.t.flag || 0}</td><td style="white-space:normal;min-width:14rem">${hEsc(aimText(r.t.team) || '—')}</td></tr>`).join('')}</tbody>`;
+    tb.innerHTML = `<thead><tr>${cols.map(([k, l]) => `<th><button class="nt-sort" data-k="${k}" style="font:inherit;background:none;border:0;padding:0;color:inherit;cursor:pointer">${l}${NT.sort.k === k ? (NT.sort.d < 0 ? ' ▾' : ' ▴') : ''}</button></th>`).join('')}</tr></thead><tbody>${sorted.map((r) => `<tr><td class="nw"><a href="#" class="nt-team" data-t="${hEsc(r.t.team)}">${hEsc(r.t.team)}</a><div style="color:var(--color-fg-muted);font-size:11px">${hEsc(r.t.robot || '')}</div></td><td class="nw">${(() => { const n = natResult(r.t.team); return n ? `<b>${n.label}</b><div style="color:var(--color-fg-muted);font-size:11px">${n.wins}勝${n.losses}敗・最高${n.best}点${n.wc ? '・ワイルドカード' : ''}</div>` : '—'; })()}</td><td><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${dCol(r.t.district)};margin-right:4px"></span>${hEsc(r.t.district)}</td><td>${r.route}${(() => { const aw = String(r.t.award || '').replace(/（.*?）/g, '').split(/[、,・／\/]/).map((x) => x.trim()).filter((x) => x && !/^(準?優勝)$/.test(x)).join('・'); return aw ? `<div style="color:var(--color-fg-muted);font-size:11px">${hEsc(aw)}</div>` : ''; })()}</td><td>${+r.t.wins || 0}勝${+r.t.losses || 0}敗</td><td class="n">${(() => { const n = natResult(r.t.team); return n ? fmt(n.best) : '—'; })()}</td><td class="n">${fmt(+r.t.best_score || 0)}</td><td class="n">${r.avg == null ? '—' : Math.round(r.avg)}</td><td class="n">${+r.t.flag || 0}</td></tr>`).join('')}</tbody>`;
     tb.querySelectorAll('.nt-sort').forEach((b) => b.addEventListener('click', () => { const k = b.dataset.k; NT.sort = { k, d: NT.sort.k === k ? -NT.sort.d : (k === 'team' || k === 'district' || k === 'route' || k === 'nat' ? 1 : -1) }; drawNational(); }));
     tb.querySelectorAll('.nt-team').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); natDetail = true; openTeam(a.dataset.t); }));
 
@@ -2152,24 +2146,29 @@ dash.calc('summary', {
     {
       const box = document.getElementById('nt-best');
       const mode = document.getElementById('nt-bsort').value;
-      const val = (r) => (mode === 'avg' ? (r.avg == null ? -1 : r.avg) : +r.t.best_score || 0);
-      const list = rows.slice().sort((a, b) => val(b) - val(a) || (+b.t.best_score || 0) - (+a.t.best_score || 0));
+      rows.forEach((r) => { const n = natResult(r.t.team); r.nb = n ? n.best : null; r.navg = n ? n.ms.reduce((a, m) => a + (m.red === r.t.team ? m.red_score : m.blue_score), 0) / n.ms.length : null; r.nlab = n ? n.label : ''; r.nrank = n ? n.rank * 10 - n.wins : 99; });
+      const val = (r) => (mode === 'nbest' ? (r.nb ?? -1) : mode === 'navg' ? (r.navg ?? -1) : mode === 'nres' ? -r.nrank : mode === 'avg' ? (r.avg == null ? -1 : r.avg) : +r.t.best_score || 0);
+      const list = rows.slice().sort((a, b) => val(b) - val(a) || (b.nb ?? -1) - (a.nb ?? -1) || (+b.t.best_score || 0) - (+a.t.best_score || 0));
       const rk = list.map((r) => 1 + list.filter((o) => Math.round(val(o)) > Math.round(val(r))).length);
-      const rowH = 22, m = { t: 8, r: 120, b: 30, l: 130 }, H = list.length * rowH + m.t + m.b; const [svg, W] = tkSvg(box, H);
-      const mx = d3.max(list, (r) => +r.t.best_score || 0) || 100;
+      const rowH = 24, m = { t: 8, r: 150, b: 30, l: 130 }, H = list.length * rowH + m.t + m.b; const [svg, W] = tkSvg(box, H); const narrow = W < 560; if (narrow) { m.l = 96; m.r = 62; }
+      const mx = d3.max(list, (r) => Math.max(+r.t.best_score || 0, r.nb || 0)) || 100;
       const x = d3.scaleSqrt([0, mx], [m.l, W - m.r]).nice();
-      x.ticks(6).forEach((v) => { svg.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--color-border-line)'); svg.append('text').attr('x', x(v)).attr('y', H - m.b + 14).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text(v); });
+      x.ticks(narrow ? 3 : 6).forEach((v) => { svg.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--color-border-line)'); svg.append('text').attr('x', x(v)).attr('y', H - m.b + 14).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text(v); });
       svg.append('text').attr('x', (m.l + W - m.r) / 2).attr('y', H - 2).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text('1試合の得点（点）');
       const t = tip(box);
+      const dia = (g, cx, cy, sz, fill, stroke) => g.append('path').attr('d', `M${cx},${cy - sz}L${cx + sz},${cy}L${cx},${cy + sz}L${cx - sz},${cy}Z`).style('fill', fill).style('stroke', stroke || 'none').style('stroke-width', 1.5);
       list.forEach((r, i) => {
-        const g = svg.append('g').attr('transform', `translate(0,${m.t + i * rowH})`);
-        g.append('text').attr('x', 30).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg-muted)').style('font-variant-numeric', 'tabular-nums').text(`${rk[i]}位`);
-        g.append('text').attr('x', m.l - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg)').text(r.t.team);
-        g.append('line').attr('x1', m.l).attr('x2', x(+r.t.best_score || 0)).attr('y1', rowH / 2).attr('y2', rowH / 2).style('stroke', 'var(--color-border-line)').style('stroke-width', 2);
-        if (r.avg != null) g.append('line').attr('x1', x(r.avg)).attr('x2', x(r.avg)).attr('y1', rowH / 2 - 6).attr('y2', rowH / 2 + 6).style('stroke', 'var(--color-fg)').style('stroke-width', 2);
-        g.append('circle').attr('cx', x(+r.t.best_score || 0)).attr('cy', rowH / 2).attr('r', 6).style('fill', dCol(r.t.district));
-        tkTxt(g.append('text').attr('x', x(+r.t.best_score || 0) + 9).attr('y', rowH / 2).attr('dy', '0.35em').style('fill', 'var(--color-fg-muted)').text(mode === 'avg' ? `平均${r.avg == null ? '不明' : Math.round(r.avg)}（最高${fmt(+r.t.best_score || 0)}）` : `${fmt(+r.t.best_score || 0)}（平均${r.avg == null ? '不明' : Math.round(r.avg)}）`));
-        g.append('rect').attr('width', W).attr('height', rowH).style('fill', 'transparent').on('mousemove', (ev) => showTip(box, t, ev, `${r.t.team}（${r.t.district}）`, `最高 ${fmt(+r.t.best_score || 0)}点・平均 ${r.avg == null ? '不明' : Math.round(r.avg) + '点'}・旗 ${+r.t.flag || 0}枚・${+r.t.wins || 0}勝${+r.t.losses || 0}敗`)).on('mouseleave', () => { t.style.display = 'none'; });
+        const g = svg.append('g').attr('transform', `translate(0,${m.t + i * rowH})`); const cy = rowH / 2;
+        const db = +r.t.best_score || 0, hi = Math.max(db, r.nb || 0);
+        g.append('text').attr('x', narrow ? 24 : 30).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg-muted)').style('font-variant-numeric', 'tabular-nums').text(`${rk[i]}位`);
+        g.append('text').attr('x', m.l - 8).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg)').style('font-weight', r.t.team === '岐阜A' ? 600 : 400).text(r.t.team);
+        g.append('line').attr('x1', m.l).attr('x2', x(hi)).attr('y1', cy).attr('y2', cy).style('stroke', 'var(--color-border-line)').style('stroke-width', 2);
+        if (r.avg != null) g.append('line').attr('x1', x(r.avg)).attr('x2', x(r.avg)).attr('y1', cy - 6).attr('y2', cy + 6).style('stroke', 'var(--color-fg-muted)').style('stroke-width', 2);
+        g.append('circle').attr('cx', x(db)).attr('cy', cy).attr('r', 5.5).style('fill', dCol(r.t.district));
+        if (r.navg != null) dia(g, x(r.navg), cy, 5, 'var(--color-bg)', 'var(--color-fg)');
+        if (r.nb != null) dia(g, x(r.nb), cy, 7, 'var(--color-fg)');
+        tkTxt(g.append('text').attr('x', x(hi) + 10).attr('y', cy).attr('dy', '0.35em').style('fill', 'var(--color-fg-muted)').text(narrow ? `${r.nb ?? '—'}/${fmt(db)}` : `全国${r.nb ?? '—'}・地区${fmt(db)}${r.nlab ? '（' + r.nlab + '）' : ''}`));
+        g.append('rect').attr('width', W).attr('height', rowH).style('fill', 'transparent').on('mousemove', (ev) => showTip(box, t, ev, `${r.t.team}（${r.t.district}）`, `全国大会：${r.nlab || '—'}・最高 ${r.nb ?? '—'}点・平均 ${r.navg == null ? '—' : Math.round(r.navg) + '点'}／地区大会：最高 ${fmt(db)}点・平均 ${r.avg == null ? '不明' : Math.round(r.avg) + '点'}・${+r.t.wins || 0}勝${+r.t.losses || 0}敗`)).on('mouseleave', () => { t.style.display = 'none'; });
       });
     }
     // 過去：勝ち上がり方・得点順位とベスト8
