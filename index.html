@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:21"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:24"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -757,7 +757,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     <div class="card" id="both-chart-card">
       <h2 id="both-h">地区大会と全国大会を合わせた得点</h2>
       <p class="note" id="both-note"></p>
-      <div class="ctrl"><div class="bsrc" id="both-src" role="group" aria-label="どの大会の得点か"><button class="chip" data-v="dist" aria-pressed="false">地区大会</button><button class="chip" data-v="nat" aria-pressed="false">全国大会</button><button class="chip" data-v="both" aria-pressed="true">両方（高い方）</button></div><label class="sortl">並び順 <select id="both-sort" aria-label="並び順"><option value="best">1試合の最高得点</option><option value="avg">1試合の平均得点</option></select></label> <label class="sortl">表示 <select id="both-n" aria-label="表示するチーム数"><option value="nat">全国大会に出た25チーム</option><option value="15">上位15チーム</option><option value="all">全チーム</option></select></label></div>
+      <div class="ctrl"><div class="bsrc" id="both-src" role="group" aria-label="どの大会の得点か"><button class="chip" data-v="dist" aria-pressed="false">地区大会</button><button class="chip" data-v="nat" aria-pressed="false">全国大会</button><button class="chip" data-v="both" aria-pressed="true">両方（高い方）</button></div><label class="sortl">並び順 <select id="both-sort" aria-label="並び順"><option value="best">最高得点の順</option><option value="avg">平均得点の順</option></select></label> <label class="sortl">表示 <select id="both-n" aria-label="表示するチーム数"><option value="nat">全国大会に出た25チーム</option><option value="all">全チーム</option></select></label></div>
       <div class="legend" id="both-legend"></div>
       <div class="chart" id="both-chart"></div>
     </div>
@@ -1418,19 +1418,20 @@ dash.calc('summary', {
           const cnt = dn + ns.length, avg = cnt > 0 ? (dt + ns.reduce((a, v) => a + v, 0)) / cnt : 0;
           return { d, n, db, nb, best: Math.max(db, nb), avg, cnt, nCnt: ns.length, dAvg: dn > 0 ? dt / dn : null, nAvg: ns.length ? ns.reduce((a, v) => a + v, 0) / ns.length : null, nat: nb > db, round: n ? (n.ms.find((m) => (m.red === d.team ? m.red_score : m.blue_score) === nb) || {}).round : '' }; });
         const src = BOTH_SRC.v;
-        const val = (x) => (src === 'nat' ? (mode === 'avg' ? x.nAvg : x.nb) : src === 'dist' ? (mode === 'avg' ? x.dAvg : x.db) : (mode === 'avg' ? x.avg : x.best));
-        const from = (x) => (src === 'nat' ? 'nat' : src === 'dist' ? 'dist' : mode === 'avg' ? 'mix' : (x.nat ? 'nat' : 'dist'));
+        const bestOf = (x) => (src === 'nat' ? x.nb : src === 'dist' ? x.db : x.best), avgOf = (x) => (src === 'nat' ? x.nAvg : src === 'dist' ? x.dAvg : x.avg);
+        const val = (x) => (mode === 'avg' ? avgOf(x) : bestOf(x));
+        const from = (x) => (src === 'nat' ? 'nat' : src === 'dist' ? 'dist' : (x.nat ? 'nat' : 'dist'));
         const key = (x) => { const v = val(x); return v == null || v < 0 ? -1 : v; };
         const base = src === 'nat' ? rows.filter((x) => x.n) : rows.filter((x) => key(x) >= 0);
         base.sort((a, b) => key(b) - key(a) || b.best - a.best);
-        const shown = lim === 'all' ? base : lim === 'nat' ? base.filter((x) => x.n) : base.slice(0, 15);
+        const shown = lim === 'all' ? base : base.filter((x) => x.n);
         const srcL = src === 'nat' ? '全国大会の' : src === 'dist' ? '地区大会の' : '地区大会と全国大会を合わせた';
-        document.getElementById('both-h').textContent = `${srcL}1試合の${mode === 'avg' ? '平均' : '最高'}得点（${lim === 'all' ? '全' + base.length + 'チーム' : lim === 'nat' ? '全国大会に出たチーム' : '上位15'}）`;
-        document.getElementById('both-note').textContent = (src === 'both' ? (mode === 'avg' ? '地区大会と全国大会の全試合を合わせた1試合の平均得点（得点が分からなかった試合を除く）。' : '地区大会と全国大会のうち、高い方の1試合の最高得点。●は地区大会、◆は全国大会で取った点。') : src === 'nat' ? `全国大会での1試合の${mode === 'avg' ? '平均' : '最高'}得点（◆）。` : `地区大会での1試合の${mode === 'avg' ? '平均' : '最高'}得点（●）。`) + '●の色は地区、緑字は全国大会に出たチーム。横軸は平方根の目盛り。地区を選ぶと、その地区のチームだけを表示します。';
+        document.getElementById('both-h').textContent = `${srcL}1試合の最高・平均得点（${lim === 'all' ? '全' + base.length + 'チーム' : '全国大会に出たチーム'}・${mode === 'avg' ? '平均' : '最高'}得点の順）`;
+        document.getElementById('both-note').textContent = (src === 'both' ? '最高得点は地区大会と全国大会のうち高い方（●は地区大会、◆は全国大会で取った点）、│は両大会の全試合を合わせた平均得点（得点が分からなかった試合を除く）。' : src === 'nat' ? '◆は全国大会での1試合の最高得点、│は全国大会の平均得点。' : '●は地区大会での1試合の最高得点、│は地区大会の平均得点（得点が分からなかった試合を除く）。') + '●の色は地区、緑字は全国大会に出たチーム。横軸は平方根の目盛りで、狭い画面では右の数字が「最高/平均」。地区を選ぶと、その地区のチームだけを表示します。';
         document.getElementById('both-legend').innerHTML = '';
         box.replaceChildren();
-        const rowH = 24, m = { t: 8, r: 150, b: 30, l: 130 }, H = shown.length * rowH + m.t + m.b; const [svg, W] = tkSvg(box, H); const narrow = W < 560; if (narrow) { m.l = 96; m.r = 70; }
-        const mx = d3.max(shown, key) || 100;
+        const rowH = 24, m = { t: 8, r: 150, b: 30, l: 130 }, H = shown.length * rowH + m.t + m.b; const [svg, W] = tkSvg(box, H); const narrow = W < 560; if (narrow) { m.l = 96; m.r = 84; }
+        const mx = d3.max(shown, (x) => bestOf(x) ?? 0) || 100;
         const xs = d3.scaleSqrt([0, Math.max(mx, 1)], [m.l, W - m.r]).nice();
         xs.ticks(narrow ? 3 : 6).forEach((v) => { svg.append('line').attr('x1', xs(v)).attr('x2', xs(v)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--color-border-line)'); svg.append('text').attr('x', xs(v)).attr('y', H - m.b + 14).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text(v); });
         svg.append('text').attr('x', (m.l + W - m.r) / 2).attr('y', H - 2).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text('1試合の得点（点）');
@@ -1438,16 +1439,16 @@ dash.calc('summary', {
         const dia = (g, cx, cy, sz, fill) => g.append('path').attr('d', `M${cx},${cy - sz}L${cx + sz},${cy}L${cx},${cy + sz}L${cx - sz},${cy}Z`).style('fill', fill);
         const rk = shown.map((x) => 1 + shown.filter((o) => Math.round(key(o)) > Math.round(key(x))).length);
         shown.forEach((x, i) => {
-          const g = svg.append('g').attr('transform', `translate(0,${m.t + i * rowH})`); const cy = rowH / 2; const v = key(x), f = from(x);
+          const g = svg.append('g').attr('transform', `translate(0,${m.t + i * rowH})`); const cy = rowH / 2; const v = Math.max(0, bestOf(x) ?? 0), av = avgOf(x), f = from(x);
           g.append('text').attr('x', narrow ? 24 : 30).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg-muted)').style('font-variant-numeric', 'tabular-nums').text(`${rk[i]}位`);
           g.append('text').attr('x', m.l - 8).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', x.d.national ? 'var(--lx-nat)' : 'var(--color-fg)').style('font-weight', x.d.team === '岐阜A' ? 600 : 400).text(x.d.team);
           g.append('line').attr('x1', m.l).attr('x2', xs(v)).attr('y1', cy).attr('y2', cy).style('stroke', 'var(--color-border-line)').style('stroke-width', 2);
+          if (av != null) g.append('line').attr('x1', xs(av)).attr('x2', xs(av)).attr('y1', cy - 7).attr('y2', cy + 7).style('stroke', 'var(--color-fg)').style('stroke-width', 2.5);
           if (f === 'nat') dia(g, xs(v), cy, 7, 'var(--color-fg)');
-          else if (f === 'dist') g.append('circle').attr('cx', xs(v)).attr('cy', cy).attr('r', 6).style('fill', dCol(x.d.district));
-          else g.append('rect').attr('x', xs(v) - 6).attr('y', cy - 6).attr('width', 12).attr('height', 12).attr('rx', 2).style('fill', dCol(x.d.district));
-          const tag = src === 'both' && mode !== 'avg' ? (f === 'nat' ? (narrow ? '全' : '（全国）') : (narrow ? '地' : '（地区）')) : '';
-          const sub = x.n && (src === 'nat' || (src === 'both' && !narrow)) ? `・${x.n.label}` : '';
-          tkTxt(g.append('text').attr('x', xs(v) + 10).attr('y', cy).attr('dy', '0.35em').style('fill', 'var(--color-fg-muted)').text(`${fmt(Math.round(v))}${tag}${narrow ? '' : sub}`));
+          else g.append('circle').attr('cx', xs(v)).attr('cy', cy).attr('r', 6).style('fill', dCol(x.d.district));
+          const tag = src === 'both' ? (f === 'nat' ? (narrow ? '全' : '（全国）') : (narrow ? '地' : '（地区）')) : '';
+          const sub = x.n && (src !== 'dist') ? `・${x.n.label}` : '';
+          tkTxt(g.append('text').attr('x', xs(v) + 10).attr('y', cy).attr('dy', '0.35em').style('fill', 'var(--color-fg-muted)').text(narrow ? `${fmt(Math.round(v))}${tag}/${av == null ? '—' : Math.round(av)}` : `最高${fmt(Math.round(v))}${tag}・平均${av == null ? '—' : Math.round(av)}${sub}`));
           g.append('rect').attr('width', W).attr('height', rowH).style('fill', 'transparent').on('mousemove', (ev) => showTip(box, tp, ev, `${x.d.team}（${x.d.district}）`, `地区：最高 ${fmt(x.db)}点・平均 ${x.dAvg == null ? '不明' : Math.round(x.dAvg) + '点'}${x.n ? `／全国：${x.n.label}・最高 ${x.nb}点・平均 ${Math.round(x.nAvg)}点` : ''}／合わせた平均 ${Math.round(x.avg)}点（${x.cnt}試合）`)).on('mouseleave', () => { tp.style.display = 'none'; });
         });
       } }
