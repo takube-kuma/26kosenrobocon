@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 15:58"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:00"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -2301,7 +2301,7 @@ dash.calc('summary', {
       const r = reachOf(D.matches, nat);
       if (nat) D.teams.forEach((t) => { if (!r[t.team]) r[t.team] = { rank: 8, label: '出場', w: 0, l: 0 }; });
       return { year: Y.year, r, aw: (t) => pAwards(Y, D, t), nat: (t) => !nat && (D.national || []).includes(t), natLabel: (t) => (!nat && nset.has(t) ? `全国 ${(nr[t] || { label: '出場' }).label}` : '') };
-    }), nat ? { year: 2026, state: '11月開催' } : m26.length ? { year: 2026, r: reachOf(m26), aw: (t) => { const x = t26.find((z) => z.team === t); return x && x.award ? x.award.split(/[、,・]/).map((s) => s.replace(/（.*?）/, '').trim()).filter((s) => s && !/^(準?優勝)$/.test(s)) : []; }, nat: (t) => { const x = t26.find((z) => z.team === t); return !!(x && x.national); }, natLabel: () => '' } : { year: 2026, state: d === '東海北陸' ? '10/18開催' : '未開催' }];
+    }), nat ? { year: 2026, r: reachOf(NR.matches, true), aw: (t) => { const n = natResult(t); return n ? n.awards.map((x) => x.replace(/（.*?）/, '')) : []; }, nat: () => false, natLabel: () => '' } : m26.length ? { year: 2026, r: reachOf(m26), aw: (t) => { const x = t26.find((z) => z.team === t); return x && x.award ? x.award.split(/[、,・]/).map((s) => s.replace(/（.*?）/, '').trim()).filter((s) => s && !/^(準?優勝)$/.test(s)) : []; }, nat: (t) => { const x = t26.find((z) => z.team === t); return !!(x && x.national); }, natLabel: (t) => { const n = natResult(t); return n ? `全国 ${n.label}` : ''; } } : { year: 2026, state: d === '東海北陸' ? '10/18開催' : '未開催' }];
     const teams = [...new Set(cols.flatMap((c) => (c.r ? Object.keys(c.r) : [])))];
     const pts = (t) => cols.reduce((a, c) => a + (c.r && c.r[t] ? 10 - c.r[t].rank : 0), 0);
     teams.sort((a, b) => pts(b) - pts(a) || a.localeCompare(b, 'ja'));
