@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:15"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン大会分析</title><meta name="build-time" content="2026/11/16 16:21"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -300,6 +300,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .kr .gf-hero-tx h2{margin-top:0}
 .kr .gf-legend{margin:var(--cds-gap-sm) 0;padding-left:1.4em;font-size:var(--cds-font-size-caption);line-height:1.7}
 .kr .gf-legend li::marker{color:#d42828;font-weight:700}
+.kr .bsrc{display:inline-flex;flex-wrap:wrap;gap:6px;margin-right:12px}
 .kr .gf-result{margin:6px 0 10px;padding:8px 12px;border-left:4px solid var(--c1);background:var(--color-panel);border-radius:var(--cds-radius);line-height:1.7}
 .kr .gf-nhk{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-md)}.kr .gf-nhk-g h3{margin:0 0 6px}
 .kr .gf-facts{display:flex;flex-wrap:wrap;gap:var(--cds-gap-sm);margin-top:var(--cds-gap-sm)}
@@ -756,7 +757,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
     <div class="card" id="both-chart-card">
       <h2 id="both-h">地区大会と全国大会を合わせた得点</h2>
       <p class="note" id="both-note"></p>
-      <div class="ctrl"><label class="sortl">並び順 <select id="both-sort" aria-label="並び順"><option value="best">1試合の最高得点の順</option><option value="avg">1試合の平均得点の順</option></select></label> <label class="sortl">表示 <select id="both-n" aria-label="表示するチーム数"><option value="nat">全国大会に出た25チーム</option><option value="15">上位15チーム</option><option value="all">全チーム</option></select></label></div>
+      <div class="ctrl"><div class="bsrc" id="both-src" role="group" aria-label="どの大会の得点か"><button class="chip" data-v="dist" aria-pressed="false">地区大会</button><button class="chip" data-v="nat" aria-pressed="false">全国大会</button><button class="chip" data-v="both" aria-pressed="true">両方（高い方）</button></div><label class="sortl">並び順 <select id="both-sort" aria-label="並び順"><option value="best">1試合の最高得点</option><option value="avg">1試合の平均得点</option></select></label> <label class="sortl">表示 <select id="both-n" aria-label="表示するチーム数"><option value="nat">全国大会に出た25チーム</option><option value="15">上位15チーム</option><option value="all">全チーム</option></select></label></div>
       <div class="legend" id="both-legend"></div>
       <div class="chart" id="both-chart"></div>
     </div>
@@ -1416,34 +1417,38 @@ dash.calc('summary', {
           const ns = n ? n.ms.map((m) => (m.red === d.team ? m.red_score : m.blue_score)) : [];
           const cnt = dn + ns.length, avg = cnt > 0 ? (dt + ns.reduce((a, v) => a + v, 0)) / cnt : 0;
           return { d, n, db, nb, best: Math.max(db, nb), avg, cnt, nCnt: ns.length, dAvg: dn > 0 ? dt / dn : null, nAvg: ns.length ? ns.reduce((a, v) => a + v, 0) / ns.length : null, nat: nb > db, round: n ? (n.ms.find((m) => (m.red === d.team ? m.red_score : m.blue_score) === nb) || {}).round : '' }; });
-        const key = (x) => (mode === 'avg' ? x.avg : x.best);
-        rows.sort((a, b) => key(b) - key(a) || b.best - a.best);
-        const shown = lim === 'all' ? rows : lim === 'nat' ? rows.filter((x) => x.n) : rows.slice(0, 15);
-        document.getElementById('both-h').textContent = `地区大会と全国大会を合わせた1試合の${mode === 'avg' ? '平均' : '最高'}得点（${lim === 'all' ? '全' + rows.length + 'チーム' : lim === 'nat' ? '全国大会に出たチーム' : '上位15'}）`;
-        document.getElementById('both-note').textContent = (mode === 'avg' ? '地区大会と全国大会の全試合を合わせた1試合の平均得点の順（太い│、得点が分からなかった試合を除く）。' : '地区大会と全国大会を合わせた1試合の最高得点の順。') + '●は地区大会、◆は全国大会での最高得点、細い│は地区大会、◇は全国大会の平均得点。●の色は地区、緑字は全国大会に出たチーム。横軸は平方根の目盛りで、狭い画面では右の数字が「全国/地区」。地区を選ぶと、その地区のチームだけを表示します。';
+        const src = BOTH_SRC.v;
+        const val = (x) => (src === 'nat' ? (mode === 'avg' ? x.nAvg : x.nb) : src === 'dist' ? (mode === 'avg' ? x.dAvg : x.db) : (mode === 'avg' ? x.avg : x.best));
+        const from = (x) => (src === 'nat' ? 'nat' : src === 'dist' ? 'dist' : mode === 'avg' ? 'mix' : (x.nat ? 'nat' : 'dist'));
+        const key = (x) => { const v = val(x); return v == null || v < 0 ? -1 : v; };
+        const base = src === 'nat' ? rows.filter((x) => x.n) : rows.filter((x) => key(x) >= 0);
+        base.sort((a, b) => key(b) - key(a) || b.best - a.best);
+        const shown = lim === 'all' ? base : lim === 'nat' ? base.filter((x) => x.n) : base.slice(0, 15);
+        const srcL = src === 'nat' ? '全国大会の' : src === 'dist' ? '地区大会の' : '地区大会と全国大会を合わせた';
+        document.getElementById('both-h').textContent = `${srcL}1試合の${mode === 'avg' ? '平均' : '最高'}得点（${lim === 'all' ? '全' + base.length + 'チーム' : lim === 'nat' ? '全国大会に出たチーム' : '上位15'}）`;
+        document.getElementById('both-note').textContent = (src === 'both' ? (mode === 'avg' ? '地区大会と全国大会の全試合を合わせた1試合の平均得点（得点が分からなかった試合を除く）。' : '地区大会と全国大会のうち、高い方の1試合の最高得点。●は地区大会、◆は全国大会で取った点。') : src === 'nat' ? `全国大会での1試合の${mode === 'avg' ? '平均' : '最高'}得点（◆）。` : `地区大会での1試合の${mode === 'avg' ? '平均' : '最高'}得点（●）。`) + '●の色は地区、緑字は全国大会に出たチーム。横軸は平方根の目盛り。地区を選ぶと、その地区のチームだけを表示します。';
         document.getElementById('both-legend').innerHTML = '';
         box.replaceChildren();
-        const rowH = 24, m = { t: 8, r: 150, b: 30, l: 130 }, H = shown.length * rowH + m.t + m.b; const [svg, W] = tkSvg(box, H); const narrow = W < 560; if (narrow) { m.l = 96; m.r = 62; }
-        const mx = d3.max(shown, (x) => x.best) || 100;
-        const xs = d3.scaleSqrt([0, mx], [m.l, W - m.r]).nice();
+        const rowH = 24, m = { t: 8, r: 150, b: 30, l: 130 }, H = shown.length * rowH + m.t + m.b; const [svg, W] = tkSvg(box, H); const narrow = W < 560; if (narrow) { m.l = 96; m.r = 70; }
+        const mx = d3.max(shown, key) || 100;
+        const xs = d3.scaleSqrt([0, Math.max(mx, 1)], [m.l, W - m.r]).nice();
         xs.ticks(narrow ? 3 : 6).forEach((v) => { svg.append('line').attr('x1', xs(v)).attr('x2', xs(v)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--color-border-line)'); svg.append('text').attr('x', xs(v)).attr('y', H - m.b + 14).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text(v); });
         svg.append('text').attr('x', (m.l + W - m.r) / 2).attr('y', H - 2).attr('text-anchor', 'middle').style('fill', 'var(--color-fg-muted)').text('1試合の得点（点）');
         const tp = tip(box);
-        const dia = (g, cx, cy, sz, fill, stroke) => g.append('path').attr('d', `M${cx},${cy - sz}L${cx + sz},${cy}L${cx},${cy + sz}L${cx - sz},${cy}Z`).style('fill', fill).style('stroke', stroke || 'none').style('stroke-width', 1.5);
+        const dia = (g, cx, cy, sz, fill) => g.append('path').attr('d', `M${cx},${cy - sz}L${cx + sz},${cy}L${cx},${cy + sz}L${cx - sz},${cy}Z`).style('fill', fill);
         const rk = shown.map((x) => 1 + shown.filter((o) => Math.round(key(o)) > Math.round(key(x))).length);
         shown.forEach((x, i) => {
-          const g = svg.append('g').attr('transform', `translate(0,${m.t + i * rowH})`); const cy = rowH / 2;
+          const g = svg.append('g').attr('transform', `translate(0,${m.t + i * rowH})`); const cy = rowH / 2; const v = key(x), f = from(x);
           g.append('text').attr('x', narrow ? 24 : 30).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', 'var(--color-fg-muted)').style('font-variant-numeric', 'tabular-nums').text(`${rk[i]}位`);
           g.append('text').attr('x', m.l - 8).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', x.d.national ? 'var(--lx-nat)' : 'var(--color-fg)').style('font-weight', x.d.team === '岐阜A' ? 600 : 400).text(x.d.team);
-          g.append('line').attr('x1', m.l).attr('x2', xs(x.best)).attr('y1', cy).attr('y2', cy).style('stroke', 'var(--color-border-line)').style('stroke-width', 2);
-          if (mode === 'avg') g.append('line').attr('x1', xs(x.avg)).attr('x2', xs(x.avg)).attr('y1', cy - 7).attr('y2', cy + 7).style('stroke', 'var(--color-fg)').style('stroke-width', 3);
-          if (x.dAvg != null) g.append('line').attr('x1', xs(x.dAvg)).attr('x2', xs(x.dAvg)).attr('y1', cy - 5).attr('y2', cy + 5).style('stroke', 'var(--color-fg-muted)').style('stroke-width', 2);
-          g.append('circle').attr('cx', xs(x.db)).attr('cy', cy).attr('r', 5.5).style('fill', dCol(x.d.district));
-          if (x.nAvg != null) dia(g, xs(x.nAvg), cy, 5, 'var(--color-bg)', 'var(--color-fg)');
-          if (x.n) dia(g, xs(x.nb), cy, 7, 'var(--color-fg)');
-          const lab = mode === 'avg' ? (narrow ? `${Math.round(x.avg)}` : `平均${Math.round(x.avg)}（${x.cnt}試合）・最高${fmt(x.best)}`) : (narrow ? (x.n ? `${x.nb}/${fmt(x.db)}` : fmt(x.db)) : (x.n ? `全国${x.nb}・地区${fmt(x.db)}（${x.n.label}）` : `地区${fmt(x.db)}`));
-          tkTxt(g.append('text').attr('x', xs(x.best) + 10).attr('y', cy).attr('dy', '0.35em').style('fill', 'var(--color-fg-muted)').text(lab));
-          g.append('rect').attr('width', W).attr('height', rowH).style('fill', 'transparent').on('mousemove', (ev) => showTip(box, tp, ev, `${x.d.team}（${x.d.district}）`, `合わせた平均 ${Math.round(x.avg)}点（${x.cnt}試合）・最高 ${fmt(x.best)}点／地区：最高 ${fmt(x.db)}点・平均 ${x.dAvg == null ? '不明' : Math.round(x.dAvg) + '点'}${x.n ? `／全国：${x.n.label}・最高 ${x.nb}点・平均 ${Math.round(x.nAvg)}点` : ''}`)).on('mouseleave', () => { tp.style.display = 'none'; });
+          g.append('line').attr('x1', m.l).attr('x2', xs(v)).attr('y1', cy).attr('y2', cy).style('stroke', 'var(--color-border-line)').style('stroke-width', 2);
+          if (f === 'nat') dia(g, xs(v), cy, 7, 'var(--color-fg)');
+          else if (f === 'dist') g.append('circle').attr('cx', xs(v)).attr('cy', cy).attr('r', 6).style('fill', dCol(x.d.district));
+          else g.append('rect').attr('x', xs(v) - 6).attr('y', cy - 6).attr('width', 12).attr('height', 12).attr('rx', 2).style('fill', dCol(x.d.district));
+          const tag = src === 'both' && mode !== 'avg' ? (f === 'nat' ? (narrow ? '全' : '（全国）') : (narrow ? '地' : '（地区）')) : '';
+          const sub = x.n && (src === 'nat' || (src === 'both' && !narrow)) ? `・${x.n.label}` : '';
+          tkTxt(g.append('text').attr('x', xs(v) + 10).attr('y', cy).attr('dy', '0.35em').style('fill', 'var(--color-fg-muted)').text(`${fmt(Math.round(v))}${tag}${narrow ? '' : sub}`));
+          g.append('rect').attr('width', W).attr('height', rowH).style('fill', 'transparent').on('mousemove', (ev) => showTip(box, tp, ev, `${x.d.team}（${x.d.district}）`, `地区：最高 ${fmt(x.db)}点・平均 ${x.dAvg == null ? '不明' : Math.round(x.dAvg) + '点'}${x.n ? `／全国：${x.n.label}・最高 ${x.nb}点・平均 ${Math.round(x.nAvg)}点` : ''}／合わせた平均 ${Math.round(x.avg)}点（${x.cnt}試合）`)).on('mouseleave', () => { tp.style.display = 'none'; });
         });
       } }
     const gc = document.getElementById('goal-chart');
@@ -1880,6 +1885,7 @@ dash.calc('summary', {
   // 2026年 全国大会の分析（地区大会の結果＋2022〜2025年の全国大会）
   const NT = { date: '2026年11月15日（日）', venue: '国技館' };
   const NR = {"date": "2026年11月15日（日）", "venue": "国技館", "video": "J0I6bx4I2IE", "champ": ["大阪公大A", "技巧神コウダイオー"], "runner": ["鈴鹿A", "魁"], "grand": ["都立荒川A", "荒技"], "idea": "沖縄A", "tech": "大分B", "design": "小山A", "flop": "鹿児島A", "wildcard": "沖縄A", "special": [["本田技研工業", "岐阜A"], ["マブチモーター", "呉A"], ["安川電機", "旭川A"], ["東京エレクトロン", "明石A"], ["田中貴金属グループ", "秋田B"], ["ローム", "福井A"], ["セメダイン", "茨城A"], ["デンソー", "香川高松A"]], "byes": ["奈良A", "釧路A", "明石A"], "matches": [{"round": "1回戦1", "red": "仙台広瀬B", "blue": "広島商船A", "red_score": 200, "blue_score": 11, "winner": "仙台広瀬B", "decision": "得点", "t": 7230, "note": "広島商船Aが机に当たって15秒止まっている間に、仙台広瀬Bが移動バケツに2枚（200点）。広島商船Aは5点・1点バケツと机を狙う全部入りの機構だったが、最後のスーパー雑巾は旗に掛からず。"}, {"round": "1回戦2", "red": "鈴鹿A", "blue": "香川詫間B", "red_score": 485, "blue_score": 65, "winner": "鈴鹿A", "decision": "得点", "t": 7675, "note": "鈴鹿Aは相手の装填中に移動バケツへ2枚（200点）、続けて9連射で5点バケツへ。机の前に陣取って相手の雑巾をガードする場面も。"}, {"round": "1回戦3", "red": "旭川A", "blue": "都立荒川A", "red_score": 220, "blue_score": 366, "winner": "都立荒川A", "decision": "得点", "t": 8205, "note": "旭川Aはシールドで妨害しつつ回転アームでスーパー雑巾を旗に（200点）。都立荒川Aは自動制御で机・バケツに積み上げ、残り数秒でスーパー雑巾を旗に掛けて全国大会で初めての「全固定ゴール達成」（ボーナス100点）。ブザービーターの逆転勝ち。"}, {"round": "1回戦4", "red": "小山A", "blue": "沖縄A", "red_score": 0, "blue_score": 51, "winner": "沖縄A", "decision": "得点", "t": 8695, "note": "沖縄Aは回転アームで机2つ・バケツ3つに入れ、全固定ゴールまで旗1枚に迫った（スーパー雑巾2枚は旗に掛からず）。小山Aは発射まではできたが得点ならず。"}, {"round": "1回戦5", "red": "大分B", "blue": "仙台名取A", "red_score": 505, "blue_score": 80, "winner": "大分B", "decision": "得点", "t": 9100, "note": "大分Bは装填以外を全自動で動かし、普通の雑巾とスーパー雑巾2枚を旗に掛けて終盤に一気に500点。仙台名取Aは7連射で5点バケツに入れ続けて80点。"}, {"round": "1回戦6", "red": "豊田A", "blue": "熊本八代A", "red_score": 0, "blue_score": 200, "winner": "熊本八代A", "decision": "得点", "t": 9550, "note": "豊田Aが机の前でガードし、熊本八代Aの移動バケツを狙う睨み合い。熊本八代Aは狙いを旗に変え、スーパー雑巾で200点。"}, {"round": "1回戦7", "red": "呉A", "blue": "大阪公大A", "red_score": 15, "blue_score": 110, "winner": "大阪公大A", "decision": "得点", "t": 10080, "note": "大阪公大Aは相手陣地ぎりぎりまで張り出す高い「広大シールド」で呉Aの射線をふさぎ、自分は5点バケツと旗で110点。"}, {"round": "1回戦8", "red": "岐阜A", "blue": "秋田B", "red_score": 220, "blue_score": 0, "winner": "岐阜A", "decision": "得点", "t": 10505, "note": "岐阜Aはロボットが自分で雑巾を巻いて机へ（20点）、残り約15秒でスーパー雑巾を旗に（200点）。旗だけを狙う秋田Bは惜しい投げが続いたが掛からず。"}, {"round": "1回戦9", "red": "米子A", "blue": "香川高松A", "red_score": 200, "blue_score": 200, "winner": "米子A", "decision": "同点（移動バケツの得点が多い方）", "t": 10925, "note": "200対200の同点。同点のときは得点の高いゴールの得点が多い方が勝つルールで、移動バケツに入れた米子Aが2回戦へ。米子Aは相手の装填中にすぐ移動バケツを狙い続けた。"}, {"round": "1回戦10", "red": "鹿児島A", "blue": "茨城A", "red_score": 141, "blue_score": 0, "winner": "鹿児島A", "decision": "得点", "t": 11370, "note": "鹿児島Aはたたんだ雑巾をロボットがつかんで発射装置まで運び、机に連打。茨城Aは地区大会から旗狙いに作戦を変えたが掛からず。"}, {"round": "1回戦11", "red": "東京A", "blue": "福井A", "red_score": 20, "blue_score": 20, "winner": "東京A", "decision": "同点（机の得点が多い方）", "t": 11810, "note": "福井Aが最後に旗へ掛けた雑巾は終了の合図の後の射出と判定されて無効。20対20の同点になり、机の得点が多い東京Aの勝ち。"}, {"round": "2回戦1", "red": "奈良A", "blue": "仙台広瀬B", "red_score": 100, "blue_score": 0, "winner": "奈良A", "decision": "得点", "t": 13310, "note": "奈良Aは旗に1枚掛けた後、旗の裏に隠れて仙台広瀬Bの移動バケツ狙いをかわし続け、100-0で守り切った。"}, {"round": "2回戦2", "red": "熊本八代A", "blue": "明石A", "red_score": 220, "blue_score": 100, "winner": "熊本八代A", "decision": "得点", "t": 13725, "note": "最後のスーパー雑巾の旗対決で熊本八代Aが決めた。明石Aは射出機構を多く積んでいた。"}, {"round": "2回戦3", "red": "釧路A", "blue": "大阪公大A", "red_score": 0, "blue_score": 235, "winner": "大阪公大A", "decision": "得点", "t": 14155, "note": "大阪公大Aが235-0。"}, {"round": "2回戦4", "red": "鈴鹿A", "blue": "都立荒川A", "red_score": 540, "blue_score": 31, "winner": "鈴鹿A", "decision": "得点", "t": 14605, "note": "鈴鹿Aは都立荒川Aの移動バケツに入れ続け、大会最高の540点。"}, {"round": "2回戦5", "red": "沖縄A", "blue": "大分B", "red_score": 236, "blue_score": 405, "winner": "大分B", "decision": "得点", "t": 15045, "note": "沖縄Aは机・バケツに入れて全固定ゴール目前まで行ったが、大分Bがスーパー雑巾を旗に掛けて逆転。"}, {"round": "2回戦6", "red": "岐阜A", "blue": "米子A", "red_score": 200, "blue_score": 100, "winner": "岐阜A", "decision": "得点", "t": 15490, "note": "米子Aに開始直後に移動バケツを決められ（100点）、岐阜Aは動き回ってかわしながら机を狙った。残り30秒でスーパー雑巾を旗に掛けて逆転し、旗の裏に隠れて守り切った。"}, {"round": "2回戦7", "red": "鹿児島A", "blue": "東京A", "red_score": 71, "blue_score": 20, "winner": "鹿児島A", "decision": "得点", "t": 15945, "note": "東京Aは2枚同時に発射して15秒の停止。その間に鹿児島Aが点を重ねた。"}, {"round": "準々決勝1", "red": "奈良A", "blue": "鈴鹿A", "red_score": 500, "blue_score": 505, "winner": "鈴鹿A", "decision": "得点", "t": 18195, "note": "奈良Aが相手の移動バケツとスーパー雑巾の旗で500点まで伸ばしたが、鈴鹿Aも旗に2枚掛け、最後に5点バケツ（「ラストバケツ」）を決めて5点差で逆転。"}, {"round": "準々決勝2", "red": "大分B", "blue": "熊本八代A", "red_score": 15, "blue_score": 0, "winner": "大分B", "decision": "得点", "t": 18795, "note": "地区大会の決勝と同じ顔合わせ。熊本八代Aが大きな車体で大分Bの旗の前をふさぎ、旗は両チームとも決まらず、5点バケツの差で大分B。"}, {"round": "準々決勝3", "red": "大阪公大A", "blue": "岐阜A", "red_score": 425, "blue_score": 420, "winner": "大阪公大A", "decision": "得点", "t": 19280, "note": "岐阜Aが先に机へ（20点）。大阪公大Aは広大シールドで岐阜Aの前をふさぎながら旗に2枚。最後に岐阜Aがスーパー雑巾を2枚とも旗に掛けて420点まで迫ったが、5点差で敗れた。"}, {"round": "準々決勝4", "red": "鹿児島A", "blue": "沖縄A", "red_score": 200, "blue_score": 0, "winner": "鹿児島A", "decision": "得点", "t": 19840, "note": "ワイルドカードで復活した沖縄Aはアームが回らないトラブル。鹿児島Aがスーパー雑巾を旗に掛けて200-0。"}, {"round": "準決勝1", "red": "鈴鹿A", "blue": "大分B", "red_score": 415, "blue_score": 405, "winner": "鈴鹿A", "decision": "得点", "t": 20610, "note": "500点級どうしの対戦。大分Bがスーパー雑巾の旗で405-400と逆転したが、鈴鹿Aが最後に5点バケツを決めて再逆転。"}, {"round": "準決勝2", "red": "大阪公大A", "blue": "鹿児島A", "red_score": 225, "blue_score": 21, "winner": "大阪公大A", "decision": "得点", "t": 21260, "note": "大阪公大Aが普通の雑巾を旗に2枚掛け、広大シールドで鹿児島Aのスーパー雑巾を封じた。"}, {"round": "決勝", "red": "鈴鹿A", "blue": "大阪公大A", "red_score": 15, "blue_score": 225, "winner": "大阪公大A", "decision": "得点", "t": 23930, "note": "大阪公大Aは序盤に机に当たって15秒止まったが、バケツを乗り越えて高い位置から旗に普通の雑巾を2連続（225点）。最後は広大シールドで鈴鹿Aのスーパー雑巾を封じて優勝。"}]};
+  const BOTH_SRC = { v: 'both' };
   const NR_ORDER = ['優勝', '準優勝', 'ベスト4', 'ベスト8', '2回戦敗退', '1回戦敗退'];
   const natResult = (team) => {
     const ms = NR.matches.filter((m) => m.red === team || m.blue === team);
@@ -2099,6 +2105,7 @@ dash.calc('summary', {
   document.getElementById('nt-mq').addEventListener('input', () => drawNational());
   document.getElementById('nt-bsort').addEventListener('change', () => drawNational());
   ['both-sort', 'both-n'].forEach((id) => document.getElementById(id).addEventListener('change', () => drawCharts()));
+  document.querySelectorAll('#both-src .chip').forEach((b) => b.addEventListener('click', () => { BOTH_SRC.v = b.dataset.v; document.querySelectorAll('#both-src .chip').forEach((c) => c.setAttribute('aria-pressed', String(c === b))); drawCharts(); }));
   const drawNational = () => {
     const gt = dash.data('teams'), gm = dash.data('matches');
     if (gt.status !== 'ok' || gm.status !== 'ok') return;
