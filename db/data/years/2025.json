@@ -36,35 +36,43 @@
    "teams": [
     {
      "team": "函館A",
-     "robot": "Great Hako Date"
+     "robot": "Great Hako Date",
+     "photo": "img/2025/函館A.jpg"
     },
     {
      "team": "函館B",
-     "robot": "函館高専ズ"
+     "robot": "函館高専ズ",
+     "photo": "img/2025/函館B.jpg"
     },
     {
      "team": "旭川A",
-     "robot": "天旋"
+     "robot": "天旋",
+     "photo": "img/2025/旭川A.jpg"
     },
     {
      "team": "旭川B",
-     "robot": "夏の日の思い出"
+     "robot": "夏の日の思い出",
+     "photo": "img/2025/旭川B.jpg"
     },
     {
      "team": "苫小牧A",
-     "robot": "ザリガニ越門"
+     "robot": "ザリガニ越門",
+     "photo": "img/2025/苫小牧A.jpg"
     },
     {
      "team": "苫小牧B",
-     "robot": "イマジナリーフレンド"
+     "robot": "イマジナリーフレンド",
+     "photo": "img/2025/苫小牧B.jpg"
     },
     {
      "team": "釧路A",
-     "robot": "パンダの門づくり"
+     "robot": "パンダの門づくり",
+     "photo": "img/2025/釧路A.jpg"
     },
     {
      "team": "釧路B",
-     "robot": "新韋駄天"
+     "robot": "新韋駄天",
+     "photo": "img/2025/釧路B.jpg"
     }
    ],
    "matches": [
@@ -194,59 +202,73 @@
    "teams": [
     {
      "team": "一関A",
-     "robot": "猩猩"
+     "robot": "猩猩",
+     "photo": "img/2025/一関A.jpg"
     },
     {
      "team": "一関B",
-     "robot": "つんだもん"
+     "robot": "つんだもん",
+     "photo": "img/2025/一関B.jpg"
     },
     {
      "team": "仙台名取A",
-     "robot": "タコじゃなイカ"
+     "robot": "タコじゃなイカ",
+     "photo": "img/2025/仙台名取A.jpg"
     },
     {
      "team": "仙台名取B",
-     "robot": "メ蟹（カルポーター）"
+     "robot": "メ蟹（カルポーター）",
+     "photo": "img/2025/仙台名取B.jpg"
     },
     {
      "team": "仙台広瀬A",
-     "robot": "OCT"
+     "robot": "OCT",
+     "photo": "img/2025/仙台広瀬A.jpg"
     },
     {
      "team": "仙台広瀬B",
-     "robot": "アーマード仙台藩"
+     "robot": "アーマード仙台藩",
+     "photo": "img/2025/仙台広瀬B.jpg"
     },
     {
      "team": "八戸A",
-     "robot": "海迅"
+     "robot": "海迅",
+     "photo": "img/2025/八戸A.jpg"
     },
     {
      "team": "八戸B",
-     "robot": "Portérien"
+     "robot": "Portérien",
+     "photo": "img/2025/八戸B.jpg"
     },
     {
      "team": "福島A",
-     "robot": "登竜"
+     "robot": "登竜",
+     "photo": "img/2025/福島A.jpg"
     },
     {
      "team": "福島B",
-     "robot": "鳴門"
+     "robot": "鳴門",
+     "photo": "img/2025/福島B.jpg"
     },
     {
      "team": "秋田A",
-     "robot": "通竜門"
+     "robot": "通竜門",
+     "photo": "img/2025/秋田A.jpg"
     },
     {
      "team": "秋田B",
-     "robot": "凱旋門"
+     "robot": "凱旋門",
+     "photo": "img/2025/秋田B.jpg"
     },
     {
      "team": "鶴岡A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/鶴岡A.jpg"
     },
     {
      "team": "鶴岡B",
-     "robot": "スーパースタッカー・レオ"
+     "robot": "スーパースタッカー・レオ",
+     "photo": "img/2025/鶴岡B.jpg"
     }
    ],
    "matches": [
@@ -458,83 +480,103 @@
    "teams": [
     {
      "team": "サレジオA",
-     "robot": "S.P.E.E.D."
+     "robot": "S.P.E.E.D.",
+     "photo": "img/2025/サレジオA.jpg"
     },
     {
      "team": "サレジオB",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/サレジオB.jpg"
     },
     {
      "team": "小山A",
-     "robot": "レッサー☆はぐ太郎"
+     "robot": "レッサー☆はぐ太郎",
+     "photo": "img/2025/小山A.jpg"
     },
     {
      "team": "小山B",
-     "robot": "オヤマシュランラン"
+     "robot": "オヤマシュランラン",
+     "photo": "img/2025/小山B.jpg"
     },
     {
      "team": "木更津A",
-     "robot": "それゆけキサンタクロース"
+     "robot": "それゆけキサンタクロース",
+     "photo": "img/2025/木更津A.jpg"
     },
     {
      "team": "木更津B",
-     "robot": "オクト"
+     "robot": "オクト",
+     "photo": "img/2025/木更津B.jpg"
     },
     {
      "team": "東京A",
-     "robot": "建蔵"
+     "robot": "建蔵",
+     "photo": "img/2025/東京A.jpg"
     },
     {
      "team": "東京B",
-     "robot": "明修羅"
+     "robot": "明修羅",
+     "photo": "img/2025/東京B.jpg"
     },
     {
      "team": "群馬A",
-     "robot": "赤鋏"
+     "robot": "赤鋏",
+     "photo": "img/2025/群馬A.jpg"
     },
     {
      "team": "群馬B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/群馬B.jpg"
     },
     {
      "team": "茨城A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/茨城A.jpg"
     },
     {
      "team": "茨城B",
-     "robot": "御開帳！水戸黄門"
+     "robot": "御開帳！水戸黄門",
+     "photo": "img/2025/茨城B.jpg"
     },
     {
      "team": "都立品川A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/都立品川A.jpg"
     },
     {
      "team": "都立品川B",
-     "robot": "凱旋"
+     "robot": "凱旋",
+     "photo": "img/2025/都立品川B.jpg"
     },
     {
      "team": "都立荒川A",
-     "robot": "あらごんくえすと"
+     "robot": "あらごんくえすと",
+     "photo": "img/2025/都立荒川A.jpg"
     },
     {
      "team": "都立荒川B",
-     "robot": "破天荒"
+     "robot": "破天荒",
+     "photo": "img/2025/都立荒川B.jpg"
     },
     {
      "team": "長岡A",
-     "robot": "かんのん.zip"
+     "robot": "かんのん.zip",
+     "photo": "img/2025/長岡A.jpg"
     },
     {
      "team": "長岡B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/長岡B.jpg"
     },
     {
      "team": "長野A",
-     "robot": "ぶっ飛ばシーソー"
+     "robot": "ぶっ飛ばシーソー",
+     "photo": "img/2025/長野A.jpg"
     },
     {
      "team": "長野B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/長野B.jpg"
     }
    ],
    "matches": [
@@ -784,83 +826,103 @@
    "teams": [
     {
      "team": "国際A",
-     "robot": "高箱クラブ"
+     "robot": "高箱クラブ",
+     "photo": "img/2025/国際A.jpg"
     },
     {
      "team": "国際B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/国際B.jpg"
     },
     {
      "team": "富山射水A",
-     "robot": "ゲートパス"
+     "robot": "ゲートパス",
+     "photo": "img/2025/富山射水A.jpg"
     },
     {
      "team": "富山射水B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/富山射水B.jpg"
     },
     {
      "team": "富山本郷A",
-     "robot": "本郷SL"
+     "robot": "本郷SL",
+     "photo": "img/2025/富山本郷A.jpg"
     },
     {
      "team": "富山本郷B",
-     "robot": "カニメイト"
+     "robot": "カニメイト",
+     "photo": "img/2025/富山本郷B.jpg"
     },
     {
      "team": "岐阜A",
-     "robot": "羊の手も借りたい"
+     "robot": "羊の手も借りたい",
+     "photo": "img/2025/岐阜A.jpg"
     },
     {
      "team": "岐阜B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/岐阜B.jpg"
     },
     {
      "team": "沼津A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/沼津A.jpg"
     },
     {
      "team": "沼津B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/沼津B.jpg"
     },
     {
      "team": "石川A",
-     "robot": "ゲートX"
+     "robot": "ゲートX",
+     "photo": "img/2025/石川A.jpg"
     },
     {
      "team": "石川B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/石川B.jpg"
     },
     {
      "team": "福井A",
-     "robot": "早すぎたサンタクロース"
+     "robot": "早すぎたサンタクロース",
+     "photo": "img/2025/福井A.jpg"
     },
     {
      "team": "福井B",
-     "robot": "オペレーションかぐや"
+     "robot": "オペレーションかぐや",
+     "photo": "img/2025/福井B.jpg"
     },
     {
      "team": "豊田A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/豊田A.jpg"
     },
     {
      "team": "豊田B",
-     "robot": "ビーコン"
+     "robot": "ビーコン",
+     "photo": "img/2025/豊田B.jpg"
     },
     {
      "team": "鈴鹿A",
-     "robot": "鈴観音"
+     "robot": "鈴観音",
+     "photo": "img/2025/鈴鹿A.jpg"
     },
     {
      "team": "鈴鹿B",
-     "robot": "モンタッカー"
+     "robot": "モンタッカー",
+     "photo": "img/2025/鈴鹿B.jpg"
     },
     {
      "team": "鳥羽商船A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/鳥羽商船A.jpg"
     },
     {
      "team": "鳥羽商船B",
-     "robot": "アーチファクト"
+     "robot": "アーチファクト",
+     "photo": "img/2025/鳥羽商船B.jpg"
     }
    ],
    "matches": [
@@ -1146,59 +1208,73 @@
    "teams": [
     {
      "team": "和歌山A",
-     "robot": "つむむ"
+     "robot": "つむむ",
+     "photo": "img/2025/和歌山A.jpg"
     },
     {
      "team": "和歌山B",
-     "robot": "積羽迅雷"
+     "robot": "積羽迅雷",
+     "photo": "img/2025/和歌山B.jpg"
     },
     {
      "team": "大阪公大A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/大阪公大A.jpg"
     },
     {
      "team": "大阪公大B",
-     "robot": "AlliGATEr"
+     "robot": "AlliGATEr",
+     "photo": "img/2025/大阪公大B.jpg"
     },
     {
      "team": "奈良A",
-     "robot": "金剛"
+     "robot": "金剛",
+     "photo": "img/2025/奈良A.jpg"
     },
     {
      "team": "奈良B",
-     "robot": "塔大事"
+     "robot": "塔大事",
+     "photo": "img/2025/奈良B.jpg"
     },
     {
      "team": "明石A",
-     "robot": "箱積明人"
+     "robot": "箱積明人",
+     "photo": "img/2025/明石A.jpg"
     },
     {
      "team": "明石B",
-     "robot": "明門"
+     "robot": "明門",
+     "photo": "img/2025/明石B.jpg"
     },
     {
      "team": "神戸A",
-     "robot": "凱船門"
+     "robot": "凱船門",
+     "photo": "img/2025/神戸A.jpg"
     },
     {
      "team": "神戸B",
-     "robot": "高架橋橋脚"
+     "robot": "高架橋橋脚",
+     "photo": "img/2025/神戸B.jpg"
     },
     {
      "team": "舞鶴A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/舞鶴A.jpg"
     },
     {
      "team": "舞鶴B",
-     "robot": "鶴技ノ舞"
+     "robot": "鶴技ノ舞",
+     "photo": "img/2025/舞鶴B.jpg"
     },
     {
      "team": "近大A",
-     "robot": "オキつも"
+     "robot": "オキつも",
+     "photo": "img/2025/近大A.jpg"
     },
     {
      "team": "近大B",
-     "robot": "ナーン、バリバリ"
+     "robot": "ナーン、バリバリ",
+     "photo": "img/2025/近大B.jpg"
     }
    ],
    "matches": [
@@ -1398,67 +1474,83 @@
    "teams": [
     {
      "team": "呉A",
-     "robot": "禁機"
+     "robot": "禁機",
+     "photo": "img/2025/呉A.jpg"
     },
     {
      "team": "呉B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/呉B.jpg"
     },
     {
      "team": "大島商船A",
-     "robot": "白狐の幻想"
+     "robot": "白狐の幻想",
+     "photo": "img/2025/大島商船A.jpg"
     },
     {
      "team": "大島商船B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/大島商船B.jpg"
     },
     {
      "team": "宇部A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/宇部A.jpg"
     },
     {
      "team": "宇部B",
-     "robot": "チンアナゴ"
+     "robot": "チンアナゴ",
+     "photo": "img/2025/宇部B.jpg"
     },
     {
      "team": "広島商船A",
-     "robot": "厳島"
+     "robot": "厳島",
+     "photo": "img/2025/広島商船A.jpg"
     },
     {
      "team": "広島商船B",
-     "robot": "つばめ"
+     "robot": "つばめ",
+     "photo": "img/2025/広島商船B.jpg"
     },
     {
      "team": "徳山A",
-     "robot": "不諦積奮"
+     "robot": "不諦積奮",
+     "photo": "img/2025/徳山A.jpg"
     },
     {
      "team": "徳山B",
-     "robot": "セキュリティホール"
+     "robot": "セキュリティホール",
+     "photo": "img/2025/徳山B.jpg"
     },
     {
      "team": "松江A",
-     "robot": "Rebeli0n"
+     "robot": "Rebeli0n",
+     "photo": "img/2025/松江A.jpg"
     },
     {
      "team": "松江B",
-     "robot": "Woker"
+     "robot": "Woker",
+     "photo": "img/2025/松江B.jpg"
     },
     {
      "team": "津山A",
-     "robot": "カブトガニ・ウォーズ"
+     "robot": "カブトガニ・ウォーズ",
+     "photo": "img/2025/津山A.jpg"
     },
     {
      "team": "津山B",
-     "robot": "龍門飛躍"
+     "robot": "龍門飛躍",
+     "photo": "img/2025/津山B.jpg"
     },
     {
      "team": "米子A",
-     "robot": "蜈蚣"
+     "robot": "蜈蚣",
+     "photo": "img/2025/米子A.jpg"
     },
     {
      "team": "米子B",
-     "robot": "エイっと運べ！"
+     "robot": "エイっと運べ！",
+     "photo": "img/2025/米子B.jpg"
     }
    ],
    "matches": [
@@ -1687,51 +1779,63 @@
    "teams": [
     {
      "team": "弓削A",
-     "robot": "弓削ファミリア"
+     "robot": "弓削ファミリア",
+     "photo": "img/2025/弓削A.jpg"
     },
     {
      "team": "弓削B",
-     "robot": "ダンボマスター"
+     "robot": "ダンボマスター",
+     "photo": "img/2025/弓削B.jpg"
     },
     {
      "team": "新居浜A",
-     "robot": "壱笑"
+     "robot": "壱笑",
+     "photo": "img/2025/新居浜A.jpg"
     },
     {
      "team": "新居浜B",
-     "robot": "技術凱旋"
+     "robot": "技術凱旋",
+     "photo": "img/2025/新居浜B.jpg"
     },
     {
      "team": "阿南A",
-     "robot": "VICTOR"
+     "robot": "VICTOR",
+     "photo": "img/2025/阿南A.jpg"
     },
     {
      "team": "阿南B",
-     "robot": "韋駄天"
+     "robot": "韋駄天",
+     "photo": "img/2025/阿南B.jpg"
     },
     {
      "team": "香川詫間A",
-     "robot": "Triumph"
+     "robot": "Triumph",
+     "photo": "img/2025/香川詫間A.jpg"
     },
     {
      "team": "香川詫間B",
-     "robot": "Updraft"
+     "robot": "Updraft",
+     "photo": "img/2025/香川詫間B.jpg"
     },
     {
      "team": "香川高松A",
-     "robot": "Triumph March"
+     "robot": "Triumph March",
+     "photo": "img/2025/香川高松A.jpg"
     },
     {
      "team": "香川高松B",
-     "robot": "鬼島"
+     "robot": "鬼島",
+     "photo": "img/2025/香川高松B.jpg"
     },
     {
      "team": "高知A",
-     "robot": "踊り子"
+     "robot": "踊り子",
+     "photo": "img/2025/高知A.jpg"
     },
     {
      "team": "高知B",
-     "robot": "above"
+     "robot": "above",
+     "photo": "img/2025/高知B.jpg"
     }
    ],
    "matches": [
@@ -1921,83 +2025,103 @@
    "teams": [
     {
      "team": "久留米A",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/久留米A.jpg"
     },
     {
      "team": "久留米B",
-     "robot": "勇往邁進"
+     "robot": "勇往邁進",
+     "photo": "img/2025/久留米B.jpg"
     },
     {
      "team": "佐世保A",
-     "robot": "シンクロニャイズ"
+     "robot": "シンクロニャイズ",
+     "photo": "img/2025/佐世保A.jpg"
     },
     {
      "team": "佐世保B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/佐世保B.jpg"
     },
     {
      "team": "北九州A",
-     "robot": "あばクラ"
+     "robot": "あばクラ",
+     "photo": "img/2025/北九州A.jpg"
     },
     {
      "team": "北九州B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/北九州B.jpg"
     },
     {
      "team": "大分A",
-     "robot": "峰楼天閣"
+     "robot": "峰楼天閣",
+     "photo": "img/2025/大分A.jpg"
     },
     {
      "team": "大分B",
-     "robot": "Buildog"
+     "robot": "Buildog",
+     "photo": "img/2025/大分B.jpg"
     },
     {
      "team": "有明A",
-     "robot": "と～る～門"
+     "robot": "と～る～門",
+     "photo": "img/2025/有明A.jpg"
     },
     {
      "team": "有明B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/有明B.jpg"
     },
     {
      "team": "沖縄A",
-     "robot": "Wander"
+     "robot": "Wander",
+     "photo": "img/2025/沖縄A.jpg"
     },
     {
      "team": "沖縄B",
-     "robot": "龍球ダイスター"
+     "robot": "龍球ダイスター",
+     "photo": "img/2025/沖縄B.jpg"
     },
     {
      "team": "熊本八代A",
-     "robot": "建築は旋門凱"
+     "robot": "建築は旋門凱",
+     "photo": "img/2025/熊本八代A.jpg"
     },
     {
      "team": "熊本八代B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/熊本八代B.jpg"
     },
     {
      "team": "熊本熊本A",
-     "robot": "強奪名星"
+     "robot": "強奪名星",
+     "photo": "img/2025/熊本熊本A.jpg"
     },
     {
      "team": "熊本熊本B",
-     "robot": "榜門"
+     "robot": "榜門",
+     "photo": "img/2025/熊本熊本B.jpg"
     },
     {
      "team": "都城A",
-     "robot": "御出座し!!かーにバル☆"
+     "robot": "御出座し!!かーにバル☆",
+     "photo": "img/2025/都城A.jpg"
     },
     {
      "team": "都城B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/都城B.jpg"
     },
     {
      "team": "鹿児島A",
-     "robot": "凱旋"
+     "robot": "凱旋",
+     "photo": "img/2025/鹿児島A.jpg"
     },
     {
      "team": "鹿児島B",
-     "robot": ""
+     "robot": "",
+     "photo": "img/2025/鹿児島B.jpg"
     }
    ],
    "matches": [
@@ -2269,127 +2393,152 @@
    {
     "team": "一関A",
     "robot": "猩猩",
-    "home": "東北"
+    "home": "東北",
+    "photo": "img/2025/一関A.jpg"
    },
    {
     "team": "仙台名取A",
     "robot": "タコじゃなイカ",
-    "home": "東北"
+    "home": "東北",
+    "photo": "img/2025/仙台名取A.jpg"
    },
    {
     "team": "仙台広瀬A",
     "robot": "OCT",
-    "home": "東北"
+    "home": "東北",
+    "photo": "img/2025/仙台広瀬A.jpg"
    },
    {
     "team": "函館A",
     "robot": "Great Hako Date",
-    "home": "北海道"
+    "home": "北海道",
+    "photo": "img/2025/函館A.jpg"
    },
    {
     "team": "呉A",
     "robot": "禁機",
-    "home": "中国"
+    "home": "中国",
+    "photo": "img/2025/呉A.jpg"
    },
    {
     "team": "国際A",
     "robot": "高箱クラブ",
-    "home": "東海北陸"
+    "home": "東海北陸",
+    "photo": "img/2025/国際A.jpg"
    },
    {
     "team": "奈良A",
     "robot": "金剛",
-    "home": "近畿"
+    "home": "近畿",
+    "photo": "img/2025/奈良A.jpg"
    },
    {
     "team": "富山射水A",
     "robot": "ゲートパス",
-    "home": "東海北陸"
+    "home": "東海北陸",
+    "photo": "img/2025/富山射水A.jpg"
    },
    {
     "team": "富山本郷B",
     "robot": "カニメイト",
-    "home": "東海北陸"
+    "home": "東海北陸",
+    "photo": "img/2025/富山本郷B.jpg"
    },
    {
     "team": "小山B",
     "robot": "オヤマシュランラン",
-    "home": "関東甲信越"
+    "home": "関東甲信越",
+    "photo": "img/2025/小山B.jpg"
    },
    {
     "team": "広島商船A",
     "robot": "厳島",
-    "home": "中国"
+    "home": "中国",
+    "photo": "img/2025/広島商船A.jpg"
    },
    {
     "team": "旭川A",
     "robot": "天旋",
-    "home": "北海道"
+    "home": "北海道",
+    "photo": "img/2025/旭川A.jpg"
    },
    {
     "team": "明石A",
     "robot": "箱積明人",
-    "home": "近畿"
+    "home": "近畿",
+    "photo": "img/2025/明石A.jpg"
    },
    {
     "team": "木更津A",
     "robot": "それゆけキサンタクロース",
-    "home": "関東甲信越"
+    "home": "関東甲信越",
+    "photo": "img/2025/木更津A.jpg"
    },
    {
     "team": "東京B",
     "robot": "明修羅",
-    "home": "関東甲信越"
+    "home": "関東甲信越",
+    "photo": "img/2025/東京B.jpg"
    },
    {
     "team": "熊本八代A",
     "robot": "建築は旋門凱",
-    "home": "九州沖縄"
+    "home": "九州沖縄",
+    "photo": "img/2025/熊本八代A.jpg"
    },
    {
     "team": "熊本熊本A",
     "robot": "強奪名星",
-    "home": "九州沖縄"
+    "home": "九州沖縄",
+    "photo": "img/2025/熊本熊本A.jpg"
    },
    {
     "team": "神戸A",
     "robot": "凱船門",
-    "home": "近畿"
+    "home": "近畿",
+    "photo": "img/2025/神戸A.jpg"
    },
    {
     "team": "米子A",
     "robot": "蜈蚣",
-    "home": "中国"
+    "home": "中国",
+    "photo": "img/2025/米子A.jpg"
    },
    {
     "team": "都城A",
     "robot": "御出座し!!かーにバル☆",
-    "home": "九州沖縄"
+    "home": "九州沖縄",
+    "photo": "img/2025/都城A.jpg"
    },
    {
     "team": "都立荒川B",
     "robot": "破天荒",
-    "home": "関東甲信越"
+    "home": "関東甲信越",
+    "photo": "img/2025/都立荒川B.jpg"
    },
    {
     "team": "鈴鹿A",
     "robot": "鈴観音",
-    "home": "東海北陸"
+    "home": "東海北陸",
+    "photo": "img/2025/鈴鹿A.jpg"
    },
    {
     "team": "香川高松A",
     "robot": "Triumph March",
-    "home": "四国"
+    "home": "四国",
+    "photo": "img/2025/香川高松A.jpg"
    },
    {
     "team": "高知A",
     "robot": "踊り子",
-    "home": "四国"
+    "home": "四国",
+    "photo": "img/2025/高知A.jpg"
    },
    {
     "team": "鹿児島A",
     "robot": "凱旋",
-    "home": "九州沖縄"
+    "home": "九州沖縄",
+    "photo": "img/2025/鹿児島A.jpg"
    }
   ],
   "matches": [

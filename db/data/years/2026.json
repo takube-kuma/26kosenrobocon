@@ -134,7 +134,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=6025s"
       }
-     ]
+     ],
+     "photo": "img/2026/函館A.jpg"
     },
     {
      "team": "函館B",
@@ -230,7 +231,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=10505s"
       }
-     ]
+     ],
+     "photo": "img/2026/函館B.jpg"
     },
     {
      "team": "旭川A",
@@ -300,6 +302,7 @@
      },
      "clips": [
       {
+       "file": "clip_asahi.webp",
        "title": "バケツに入れて得点",
        "note": "準決勝2（vs 函館B）。中央のローラーで飛ばした雑巾がバケツに入る場面。最後はバケツのアップ。ロボットのまわりを拡大しています。",
        "url": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=10691s",
@@ -359,7 +362,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=12990s"
       }
-     ]
+     ],
+     "photo": "img/2026/旭川A.jpg"
     },
     {
      "team": "旭川B",
@@ -446,7 +450,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=6755s"
       }
-     ]
+     ],
+     "photo": "img/2026/旭川B.jpg"
     },
     {
      "team": "苫小牧A",
@@ -529,7 +534,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=6025s"
       }
-     ]
+     ],
+     "photo": "img/2026/苫小牧A.jpg"
     },
     {
      "team": "苫小牧B",
@@ -608,7 +614,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=6755s"
       }
-     ]
+     ],
+     "photo": "img/2026/苫小牧B.jpg"
     },
     {
      "team": "釧路A",
@@ -683,6 +690,7 @@
      },
      "clips": [
       {
+       "file": "clip_kushiro.webp",
        "title": "旗に掛けて100点",
        "note": "予選B-1（vs 旭川B）。投げた雑巾が旗に掛かり、0→100点になる場面。",
        "url": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=3989s",
@@ -742,7 +750,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=12990s"
       }
-     ]
+     ],
+     "photo": "img/2026/釧路A.jpg"
     },
     {
      "team": "釧路B",
@@ -839,7 +848,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=D-t2HkAL5TU&t=9733s"
       }
-     ]
+     ],
+     "photo": "img/2026/釧路B.jpg"
     }
    ],
    "matches": [
@@ -1157,7 +1167,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=8203s"
       }
-     ]
+     ],
+     "photo": "img/2026/一関A.jpg"
     },
     {
      "team": "一関B",
@@ -1235,7 +1246,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=7665s"
       }
-     ]
+     ],
+     "photo": "img/2026/一関B.jpg"
     },
     {
      "team": "仙台名取A",
@@ -1307,6 +1319,7 @@
      },
      "clips": [
       {
+       "file": "clip_natori.webp",
        "title": "5点バケツに連続で入れる",
        "note": "予選B-4（vs 鶴岡A）。お絞り状に丸めた雑巾をバケツに入れ、0→5→10点と加点する場面。",
        "url": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=10853s",
@@ -1366,7 +1379,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=14967s"
       }
-     ]
+     ],
+     "photo": "img/2026/仙台名取A.jpg"
     },
     {
      "team": "仙台名取B",
@@ -1445,7 +1459,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=8849s"
       }
-     ]
+     ],
+     "photo": "img/2026/仙台名取B.jpg"
     },
     {
      "team": "仙台広瀬A",
@@ -1546,7 +1561,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=12829s"
       }
-     ]
+     ],
+     "photo": "img/2026/仙台広瀬A.jpg"
     },
     {
      "team": "仙台広瀬B",
@@ -1612,6 +1628,7 @@
      },
      "clips": [
       {
+       "file": "clip_hiroseB.webp",
        "title": "相手の移動バケツにスーパー雑巾（200点）",
        "note": "準決勝1（vs 秋田B）の終盤。スーパー雑巾を相手ロボットの移動バケツに入れ、5→205点にした場面。",
        "url": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=12638s",
@@ -1673,7 +1690,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=14967s"
       }
-     ]
+     ],
+     "photo": "img/2026/仙台広瀬B.jpg"
     },
     {
      "team": "八戸A",
@@ -1752,7 +1770,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=8203s"
       }
-     ]
+     ],
+     "photo": "img/2026/八戸A.jpg"
     },
     {
      "team": "八戸B",
@@ -1835,7 +1854,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=10080s"
       }
-     ]
+     ],
+     "photo": "img/2026/八戸B.jpg"
     },
     {
      "team": "福島A",
@@ -1918,7 +1938,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=7084s"
       }
-     ]
+     ],
+     "photo": "img/2026/福島A.jpg"
     },
     {
      "team": "福島B",
@@ -1996,7 +2017,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=8849s"
       }
-     ]
+     ],
+     "photo": "img/2026/福島B.jpg"
     },
     {
      "team": "秋田A",
@@ -2075,7 +2097,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=9500s"
       }
-     ]
+     ],
+     "photo": "img/2026/秋田A.jpg"
     },
     {
      "team": "秋田B",
@@ -2144,6 +2167,7 @@
      },
      "clips": [
       {
+       "file": "clip_akita.webp",
        "title": "ドラム式で旗へ（100点）",
        "note": "予選A-4（vs 八戸B）。ドラムから投げた雑巾が旗に掛かり、0→100点になる場面（遠景）。",
        "url": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=10239s",
@@ -2190,7 +2214,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=12384s"
       }
-     ]
+     ],
+     "photo": "img/2026/秋田B.jpg"
     },
     {
      "team": "鶴岡A",
@@ -2268,7 +2293,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=10625s"
       }
-     ]
+     ],
+     "photo": "img/2026/鶴岡A.jpg"
     },
     {
      "team": "鶴岡B",
@@ -2346,7 +2372,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aQPHXadUSg8&t=7665s"
       }
-     ]
+     ],
+     "photo": "img/2026/鶴岡B.jpg"
     }
    ],
    "matches": [
@@ -2748,7 +2775,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=9621s"
       }
-     ]
+     ],
+     "photo": "img/2026/サレジオA.jpg"
     },
     {
      "team": "サレジオB",
@@ -2828,7 +2856,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=9104s"
       }
-     ]
+     ],
+     "photo": "img/2026/サレジオB.jpg"
     },
     {
      "team": "小山A",
@@ -2895,6 +2924,7 @@
      },
      "clips": [
       {
+       "file": "clip_oyama.webp",
        "title": "アームで5点バケツへ",
        "note": "予選D-2（vs 長岡A）。ゴム式アームで投げた雑巾がバケツに入り、5→10点になる場面。ロボットのまわりを拡大しています。",
        "url": "https://www.youtube.com/watch?v=g053UJFHaFE&t=7204s",
@@ -2928,7 +2958,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=10147s"
       }
-     ]
+     ],
+     "photo": "img/2026/小山A.jpg"
     },
     {
      "team": "小山B",
@@ -3020,7 +3051,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=14999s"
       }
-     ]
+     ],
+     "photo": "img/2026/小山B.jpg"
     },
     {
      "team": "木更津A",
@@ -3103,7 +3135,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=8580s"
       }
-     ]
+     ],
+     "photo": "img/2026/木更津A.jpg"
     },
     {
      "team": "木更津B",
@@ -3183,7 +3216,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=13251s"
       }
-     ]
+     ],
+     "photo": "img/2026/木更津B.jpg"
     },
     {
      "team": "東京A",
@@ -3249,6 +3283,7 @@
      },
      "clips": [
       {
+       "file": "clip_tokyo.webp",
        "title": "机へ水平射出（20点）",
        "note": "予選A-2（vs 木更津A）。高速ローラーで打ち出した雑巾が机に入り、20→40点になる場面。最後は机のアップ。",
        "url": "https://www.youtube.com/watch?v=g053UJFHaFE&t=5768s",
@@ -3295,7 +3330,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=15568s"
       }
-     ]
+     ],
+     "photo": "img/2026/東京A.jpg"
     },
     {
      "team": "東京B",
@@ -3373,7 +3409,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=10147s"
       }
-     ]
+     ],
+     "photo": "img/2026/東京B.jpg"
     },
     {
      "team": "群馬A",
@@ -3438,7 +3475,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=9104s"
       }
-     ]
+     ],
+     "photo": "img/2026/群馬A.jpg"
     },
     {
      "team": "群馬B",
@@ -3516,7 +3554,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=10737s"
       }
-     ]
+     ],
+     "photo": "img/2026/群馬B.jpg"
     },
     {
      "team": "茨城A",
@@ -3588,6 +3627,7 @@
      },
      "clips": [
       {
+       "file": "clip_ibaraki.webp",
        "title": "決勝でスーパー雑巾を旗に（200点）",
        "note": "決勝（vs 都立荒川A）の終盤。スーパー雑巾が旗に掛かり、30→230点になる場面。",
        "url": "https://www.youtube.com/watch?v=g053UJFHaFE&t=18817s",
@@ -3651,7 +3691,8 @@
        },
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=18561s"
       }
-     ]
+     ],
+     "photo": "img/2026/茨城A.jpg"
     },
     {
      "team": "茨城B",
@@ -3715,7 +3756,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=10737s"
       }
-     ]
+     ],
+     "photo": "img/2026/茨城B.jpg"
     },
     {
      "team": "都立品川A",
@@ -3780,7 +3822,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=11783s"
       }
-     ]
+     ],
+     "photo": "img/2026/都立品川A.jpg"
     },
     {
      "team": "都立品川B",
@@ -3858,7 +3901,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=11327s"
       }
-     ]
+     ],
+     "photo": "img/2026/都立品川B.jpg"
     },
     {
      "team": "都立荒川A",
@@ -3930,6 +3974,7 @@
      },
      "clips": [
       {
+       "file": "clip_arakawa.webp",
        "title": "スーパー雑巾を旗に（200点）",
        "note": "予選C-2（vs サレジオA）。スーパー雑巾が旗に掛かり、20→220点になる場面。最後は旗のアップ。",
        "url": "https://www.youtube.com/watch?v=g053UJFHaFE&t=6782s",
@@ -3993,7 +4038,8 @@
        },
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=18561s"
       }
-     ]
+     ],
+     "photo": "img/2026/都立荒川A.jpg"
     },
     {
      "team": "都立荒川B",
@@ -4058,7 +4104,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=8580s"
       }
-     ]
+     ],
+     "photo": "img/2026/都立荒川B.jpg"
     },
     {
      "team": "長岡A",
@@ -4137,7 +4184,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=12735s"
       }
-     ]
+     ],
+     "photo": "img/2026/長岡A.jpg"
     },
     {
      "team": "長岡B",
@@ -4201,7 +4249,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=9621s"
       }
-     ]
+     ],
+     "photo": "img/2026/長岡B.jpg"
     },
     {
      "team": "長野A",
@@ -4310,7 +4359,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=16145s"
       }
-     ]
+     ],
+     "photo": "img/2026/長野A.jpg"
     },
     {
      "team": "長野B",
@@ -4375,7 +4425,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=g053UJFHaFE&t=12273s"
       }
-     ]
+     ],
+     "photo": "img/2026/長野B.jpg"
     }
    ],
    "matches": [
@@ -4873,7 +4924,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=9310s"
       }
-     ]
+     ],
+     "photo": "img/2026/鳥羽商船B.jpg"
     },
     {
      "team": "岐阜A",
@@ -4938,6 +4990,7 @@
      },
      "clips": [
       {
+       "file": "gifu_flag.webp",
        "title": "スーパー雑巾を投石機で旗に（200点）",
        "note": "予選A-1（vs 鳥羽商船B）の残り約20秒。オーバースローで投げたスーパー雑巾が旗に掛かり、0→200点で逆転した場面。",
        "url": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=3941s",
@@ -4973,7 +5026,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=12030s"
       }
-     ]
+     ],
+     "photo": "img/2026/岐阜A.jpg"
     },
     {
      "team": "富山本郷A",
@@ -5061,7 +5115,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=15060s"
       }
-     ]
+     ],
+     "photo": "img/2026/富山本郷A.jpg"
     },
     {
      "team": "豊田B",
@@ -5137,7 +5192,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=9310s"
       }
-     ]
+     ],
+     "photo": "img/2026/豊田B.jpg"
     },
     {
      "team": "鈴鹿B",
@@ -5211,7 +5267,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=9880s"
       }
-     ]
+     ],
+     "photo": "img/2026/鈴鹿B.jpg"
     },
     {
      "team": "富山射水A",
@@ -5288,7 +5345,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=12615s"
       }
-     ]
+     ],
+     "photo": "img/2026/富山射水A.jpg"
     },
     {
      "team": "沼津B",
@@ -5394,7 +5452,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=16185s"
       }
-     ]
+     ],
+     "photo": "img/2026/沼津B.jpg"
     },
     {
      "team": "鳥羽商船A",
@@ -5469,7 +5528,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=9880s"
       }
-     ]
+     ],
+     "photo": "img/2026/鳥羽商船A.jpg"
     },
     {
      "team": "国際A",
@@ -5544,7 +5604,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=13095s"
       }
-     ]
+     ],
+     "photo": "img/2026/国際A.jpg"
     },
     {
      "team": "富山本郷B",
@@ -5618,7 +5679,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=10420s"
       }
-     ]
+     ],
+     "photo": "img/2026/富山本郷B.jpg"
     },
     {
      "team": "福井B",
@@ -5735,7 +5797,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=18590s"
       }
-     ]
+     ],
+     "photo": "img/2026/福井B.jpg"
     },
     {
      "team": "鈴鹿A",
@@ -5798,6 +5861,7 @@
      },
      "clips": [
       {
+       "file": "clip_suzuka.webp",
        "title": "スーパー雑巾を旗に（200点）",
        "note": "予選C-2（vs 福井B）。旗にスーパー雑巾を掛けて100→300点、さらに一時500点まで伸ばした場面（終了時の得点表示は300点）。",
        "url": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=7458s",
@@ -5835,7 +5899,8 @@
        },
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=10420s"
       }
-     ]
+     ],
+     "photo": "img/2026/鈴鹿A.jpg"
     },
     {
      "team": "沼津A",
@@ -5910,7 +5975,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=13560s"
       }
-     ]
+     ],
+     "photo": "img/2026/沼津A.jpg"
     },
     {
      "team": "石川B",
@@ -5985,7 +6051,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=10945s"
       }
-     ]
+     ],
+     "photo": "img/2026/石川B.jpg"
     },
     {
      "team": "豊田A",
@@ -6047,6 +6114,7 @@
      },
      "clips": [
       {
+       "file": "clip_toyota.webp",
        "title": "5点バケツに入れる",
        "note": "予選D-2（vs 国際B）。投げた雑巾がバケツに入り、15→20点になる場面。最後はロボットのアップ。",
        "url": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=7894s",
@@ -6093,7 +6161,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=15675s"
       }
-     ]
+     ],
+     "photo": "img/2026/豊田A.jpg"
     },
     {
      "team": "国際B",
@@ -6170,7 +6239,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=10945s"
       }
-     ]
+     ],
+     "photo": "img/2026/国際B.jpg"
     },
     {
      "team": "岐阜B",
@@ -6244,7 +6314,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=11470s"
       }
-     ]
+     ],
+     "photo": "img/2026/岐阜B.jpg"
     },
     {
      "team": "福井A",
@@ -6315,6 +6386,7 @@
      },
      "clips": [
       {
+       "file": "clip_fukui.webp",
        "title": "スーパー雑巾を旗に連続（200点×2）",
        "note": "準決勝1（vs 豊田A）の終盤。旗にスーパー雑巾を続けて掛け、5→205→405点にした場面。",
        "url": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=15925s",
@@ -6376,7 +6448,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=18590s"
       }
-     ]
+     ],
+     "photo": "img/2026/福井A.jpg"
     },
     {
      "team": "石川A",
@@ -6450,7 +6523,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=0DRoMQAgPqU&t=11470s"
       }
-     ]
+     ],
+     "photo": "img/2026/石川A.jpg"
     }
    ],
    "matches": [
@@ -6936,7 +7010,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=10848s"
       }
-     ]
+     ],
+     "photo": "img/2026/和歌山A.jpg"
     },
     {
      "team": "和歌山B",
@@ -7016,7 +7091,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=7078s"
       }
-     ]
+     ],
+     "photo": "img/2026/和歌山B.jpg"
     },
     {
      "team": "大阪公大A",
@@ -7091,6 +7167,7 @@
      },
      "clips": [
       {
+       "file": "clip_kodai.webp",
        "title": "決勝で旗に掛ける（100点）",
        "note": "決勝（vs 奈良A）。旗に雑巾を掛けて100→200点にした場面。",
        "url": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=15540s",
@@ -7150,7 +7227,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=15341s"
       }
-     ]
+     ],
+     "photo": "img/2026/大阪公大A.jpg"
     },
     {
      "team": "大阪公大B",
@@ -7252,7 +7330,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=13168s"
       }
-     ]
+     ],
+     "photo": "img/2026/大阪公大B.jpg"
     },
     {
      "team": "奈良A",
@@ -7323,6 +7402,7 @@
      },
      "clips": [
       {
+       "file": "clip_nara.webp",
        "title": "旗に連続で掛ける",
        "note": "決勝（vs 大阪公大A）の終盤。旗に続けて掛けて100→200→300点と逆転していく場面。",
        "url": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=15570s",
@@ -7384,7 +7464,8 @@
        },
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=15341s"
       }
-     ]
+     ],
+     "photo": "img/2026/奈良A.jpg"
     },
     {
      "team": "奈良B",
@@ -7464,7 +7545,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=8639s"
       }
-     ]
+     ],
+     "photo": "img/2026/奈良B.jpg"
     },
     {
      "team": "明石A",
@@ -7531,6 +7613,7 @@
      },
      "clips": [
       {
+       "file": "clip_akashi.webp",
        "title": "相手の移動バケツへスーパー雑巾（200点）",
        "note": "予選D-2（vs 舞鶴A）。相手ロボットの移動バケツにスーパー雑巾を入れ、100→300点にした場面。",
        "url": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=7872s",
@@ -7566,7 +7649,8 @@
        },
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=7605s"
       }
-     ]
+     ],
+     "photo": "img/2026/明石A.jpg"
     },
     {
      "team": "明石B",
@@ -7646,7 +7730,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=10177s"
       }
-     ]
+     ],
+     "photo": "img/2026/明石B.jpg"
     },
     {
      "team": "神戸A",
@@ -7733,7 +7818,8 @@
        },
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=8185s"
       }
-     ]
+     ],
+     "photo": "img/2026/神戸A.jpg"
     },
     {
      "team": "神戸B",
@@ -7813,7 +7899,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=9090s"
       }
-     ]
+     ],
+     "photo": "img/2026/神戸B.jpg"
     },
     {
      "team": "舞鶴A",
@@ -7897,7 +7984,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=9672s"
       }
-     ]
+     ],
+     "photo": "img/2026/舞鶴A.jpg"
     },
     {
      "team": "舞鶴B",
@@ -7993,7 +8081,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=12482s"
       }
-     ]
+     ],
+     "photo": "img/2026/舞鶴B.jpg"
     },
     {
      "team": "近大A",
@@ -8077,7 +8166,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=8185s"
       }
-     ]
+     ],
+     "photo": "img/2026/近大A.jpg"
     },
     {
      "team": "近大B",
@@ -8161,7 +8251,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=tYbz7mS69Zc&t=8639s"
       }
-     ]
+     ],
+     "photo": "img/2026/近大B.jpg"
     }
    ],
    "matches": [
@@ -8553,6 +8644,7 @@
      },
      "clips": [
       {
+       "file": "clip_kure.webp",
        "title": "丸めた雑巾でバケツへ",
        "note": "予選C-4（vs 米子B）。ロボット内で丸めた雑巾をバケツに入れ、10→15→20点と加点する場面。",
        "url": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=11752s",
@@ -8599,7 +8691,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=14147s"
       }
-     ]
+     ],
+     "photo": "img/2026/呉A.jpg"
     },
     {
      "team": "呉B",
@@ -8682,7 +8775,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=10557s"
       }
-     ]
+     ],
+     "photo": "img/2026/呉B.jpg"
     },
     {
      "team": "大島商船A",
@@ -8760,7 +8854,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=8290s"
       }
-     ]
+     ],
+     "photo": "img/2026/大島商船A.jpg"
     },
     {
      "team": "大島商船B",
@@ -8837,7 +8932,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=9398s"
       }
-     ]
+     ],
+     "photo": "img/2026/大島商船B.jpg"
     },
     {
      "team": "宇部A",
@@ -8915,7 +9011,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=8290s"
       }
-     ]
+     ],
+     "photo": "img/2026/宇部A.jpg"
     },
     {
      "team": "宇部B",
@@ -8993,7 +9090,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=9996s"
       }
-     ]
+     ],
+     "photo": "img/2026/宇部B.jpg"
     },
     {
      "team": "広島商船A",
@@ -9066,6 +9164,7 @@
      },
      "clips": [
       {
+       "file": "clip_hiroshima.webp",
        "title": "スーパー雑巾を旗に（200点）",
        "note": "準決勝2（vs 呉A）の終盤。スーパー雑巾が旗に掛かり、40→240点になる場面。",
        "url": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=14405s",
@@ -9129,7 +9228,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=16407s"
       }
-     ]
+     ],
+     "photo": "img/2026/広島商船A.jpg"
     },
     {
      "team": "広島商船B",
@@ -9231,7 +9331,8 @@
        },
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=13569s"
       }
-     ]
+     ],
+     "photo": "img/2026/広島商船B.jpg"
     },
     {
      "team": "徳山A",
@@ -9309,7 +9410,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=8833s"
       }
-     ]
+     ],
+     "photo": "img/2026/徳山A.jpg"
     },
     {
      "team": "徳山B",
@@ -9388,7 +9490,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=9398s"
       }
-     ]
+     ],
+     "photo": "img/2026/徳山B.jpg"
     },
     {
      "team": "松江A",
@@ -9471,7 +9574,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=11091s"
       }
-     ]
+     ],
+     "photo": "img/2026/松江A.jpg"
     },
     {
      "team": "松江B",
@@ -9549,7 +9653,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=9996s"
       }
-     ]
+     ],
+     "photo": "img/2026/松江B.jpg"
     },
     {
      "team": "津山A",
@@ -9634,7 +9739,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=12129s"
       }
-     ]
+     ],
+     "photo": "img/2026/津山A.jpg"
     },
     {
      "team": "津山B",
@@ -9713,7 +9819,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=8833s"
       }
-     ]
+     ],
+     "photo": "img/2026/津山B.jpg"
     },
     {
      "team": "米子A",
@@ -9787,6 +9894,7 @@
      },
      "clips": [
       {
+       "file": "clip_yonago.webp",
        "title": "横手投げで相手の移動バケツへ（100点）",
        "note": "予選A-1（vs 大島商船A）。相手ロボットの上の移動バケツに入れて100→200点。最後はバケツのアップ。",
        "url": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=3957s",
@@ -9848,7 +9956,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=16407s"
       }
-     ]
+     ],
+     "photo": "img/2026/米子A.jpg"
     },
     {
      "team": "米子B",
@@ -9929,7 +10038,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=jN8FkEOA1ZE&t=11594s"
       }
-     ]
+     ],
+     "photo": "img/2026/米子B.jpg"
     }
    ],
    "matches": [
@@ -10356,7 +10466,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=8828s"
       }
-     ]
+     ],
+     "photo": "img/2026/弓削A.jpg"
     },
     {
      "team": "弓削B",
@@ -10421,7 +10532,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=9898s"
       }
-     ]
+     ],
+     "photo": "img/2026/弓削B.jpg"
     },
     {
      "team": "新居浜A",
@@ -10500,7 +10612,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=5816s"
       }
-     ]
+     ],
+     "photo": "img/2026/新居浜A.jpg"
     },
     {
      "team": "新居浜B",
@@ -10579,7 +10692,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=9344s"
       }
-     ]
+     ],
+     "photo": "img/2026/新居浜B.jpg"
     },
     {
      "team": "阿南A",
@@ -10660,7 +10774,8 @@
        },
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=8164s"
       }
-     ]
+     ],
+     "photo": "img/2026/阿南A.jpg"
     },
     {
      "team": "阿南B",
@@ -10757,7 +10872,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=11551s"
       }
-     ]
+     ],
+     "photo": "img/2026/阿南B.jpg"
     },
     {
      "team": "香川詫間A",
@@ -10841,7 +10957,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=9344s"
       }
-     ]
+     ],
+     "photo": "img/2026/香川詫間A.jpg"
     },
     {
      "team": "香川詫間B",
@@ -10915,6 +11032,7 @@
      },
      "clips": [
       {
+       "file": "clip_takuma.webp",
        "title": "スーパー雑巾を旗に（200点）",
        "note": "予選A-2（vs 新居浜A）。スーパー雑巾が旗に掛かり、15→215点になる場面。",
        "url": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=6057s",
@@ -10982,7 +11100,8 @@
        },
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=14420s"
       }
-     ]
+     ],
+     "photo": "img/2026/香川詫間B.jpg"
     },
     {
      "team": "香川高松A",
@@ -11053,6 +11172,7 @@
      },
      "clips": [
       {
+       "file": "clip_takamatsu.webp",
        "title": "スーパー雑巾を旗に（200点）",
        "note": "予選D-2（vs 弓削B）。スーパー雑巾が旗に掛かり、0→200点になる場面。最後は旗のアップ。",
        "url": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=7691s",
@@ -11118,7 +11238,8 @@
        },
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=14420s"
       }
-     ]
+     ],
+     "photo": "img/2026/香川高松A.jpg"
     },
     {
      "team": "香川高松B",
@@ -11198,7 +11319,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=8828s"
       }
-     ]
+     ],
+     "photo": "img/2026/香川高松B.jpg"
     },
     {
      "team": "高知A",
@@ -11277,7 +11399,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=9898s"
       }
-     ]
+     ],
+     "photo": "img/2026/高知A.jpg"
     },
     {
      "team": "高知B",
@@ -11377,7 +11500,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=aBn5piaXqJw&t=12150s"
       }
-     ]
+     ],
+     "photo": "img/2026/高知B.jpg"
     }
    ],
    "matches": [
@@ -11748,7 +11872,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=10405s"
       }
-     ]
+     ],
+     "photo": "img/2026/久留米A.jpg"
     },
     {
      "team": "久留米B",
@@ -11826,7 +11951,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=11377s"
       }
-     ]
+     ],
+     "photo": "img/2026/久留米B.jpg"
     },
     {
      "team": "佐世保A",
@@ -11904,7 +12030,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=12301s"
       }
-     ]
+     ],
+     "photo": "img/2026/佐世保A.jpg"
     },
     {
      "team": "佐世保B",
@@ -11985,7 +12112,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=13757s"
       }
-     ]
+     ],
+     "photo": "img/2026/佐世保B.jpg"
     },
     {
      "team": "北九州A",
@@ -12067,7 +12195,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=14213s"
       }
-     ]
+     ],
+     "photo": "img/2026/北九州A.jpg"
     },
     {
      "team": "北九州B",
@@ -12145,7 +12274,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=11377s"
       }
-     ]
+     ],
+     "photo": "img/2026/北九州B.jpg"
     },
     {
      "team": "大分A",
@@ -12244,7 +12374,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=17136s"
       }
-     ]
+     ],
+     "photo": "img/2026/大分A.jpg"
     },
     {
      "team": "大分B",
@@ -12313,6 +12444,7 @@
      },
      "clips": [
       {
+       "file": "clip_oitaB.webp",
        "title": "決勝で旗に連続ヒット",
        "note": "決勝（vs 熊本八代A）。砲台から打ち出した雑巾が旗に掛かり、100→200→300点と加点する場面。",
        "url": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=20777s",
@@ -12378,7 +12510,8 @@
        },
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=20566s"
       }
-     ]
+     ],
+     "photo": "img/2026/大分B.jpg"
     },
     {
      "team": "有明A",
@@ -12456,7 +12589,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=11829s"
       }
-     ]
+     ],
+     "photo": "img/2026/有明A.jpg"
     },
     {
      "team": "有明B",
@@ -12534,7 +12668,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=10913s"
       }
-     ]
+     ],
+     "photo": "img/2026/有明B.jpg"
     },
     {
      "team": "沖縄A",
@@ -12600,6 +12735,7 @@
      },
      "clips": [
       {
+       "file": "clip_okinawa.webp",
        "title": "「ぐるぐる回し」で5点バケツへ連続",
        "note": "予選A-1（vs 久留米A）。縦回転のアームで投げた雑巾がバケツに入り、0→5→10→15→20点と加点する場面。",
        "url": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=4686s",
@@ -12633,7 +12769,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=12762s"
       }
-     ]
+     ],
+     "photo": "img/2026/沖縄A.jpg"
     },
     {
      "team": "沖縄B",
@@ -12711,7 +12848,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=10913s"
       }
-     ]
+     ],
+     "photo": "img/2026/沖縄B.jpg"
     },
     {
      "team": "熊本八代A",
@@ -12785,6 +12923,7 @@
      },
      "clips": [
       {
+       "file": "clip_yatsushiro.webp",
        "title": "机に入れて20点",
        "note": "準決勝1（vs 大分A）。投げた雑巾が机に入り、0→20点になる場面。",
        "url": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=17368s",
@@ -12848,7 +12987,8 @@
        },
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=20566s"
       }
-     ]
+     ],
+     "photo": "img/2026/熊本八代A.jpg"
     },
     {
      "team": "熊本八代B",
@@ -12926,7 +13066,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=12301s"
       }
-     ]
+     ],
+     "photo": "img/2026/熊本八代B.jpg"
     },
     {
      "team": "熊本熊本A",
@@ -13038,7 +13179,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=17734s"
       }
-     ]
+     ],
+     "photo": "img/2026/熊本熊本A.jpg"
     },
     {
      "team": "熊本熊本B",
@@ -13134,7 +13276,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=16408s"
       }
-     ]
+     ],
+     "photo": "img/2026/熊本熊本B.jpg"
     },
     {
      "team": "都城A",
@@ -13213,7 +13356,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=10405s"
       }
-     ]
+     ],
+     "photo": "img/2026/都城A.jpg"
     },
     {
      "team": "都城B",
@@ -13291,7 +13435,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=11829s"
       }
-     ]
+     ],
+     "photo": "img/2026/都城B.jpg"
     },
     {
      "team": "鹿児島A",
@@ -13357,6 +13502,7 @@
      },
      "clips": [
       {
+       "file": "clip_kagoshima.webp",
        "title": "スーパー雑巾を旗に（200点）",
        "note": "予選E-1（vs 熊本八代B）。スーパー雑巾が旗に掛かり、120→320点になる場面。",
        "url": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=6785s",
@@ -13392,7 +13538,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=14725s"
       }
-     ]
+     ],
+     "photo": "img/2026/鹿児島A.jpg"
     },
     {
      "team": "鹿児島B",
@@ -13470,7 +13617,8 @@
        "super": {},
        "video": "https://www.youtube.com/watch?v=Ilwu5RCrJqQ&t=13231s"
       }
-     ]
+     ],
+     "photo": "img/2026/鹿児島B.jpg"
     }
    ],
    "matches": [
@@ -13897,127 +14045,152 @@
    {
     "team": "旭川A",
     "robot": "カルカルセ",
-    "home": "北海道"
+    "home": "北海道",
+    "photo": "img/2026/旭川A.jpg"
    },
    {
     "team": "釧路A",
     "robot": "鶴翔",
-    "home": "北海道"
+    "home": "北海道",
+    "photo": "img/2026/釧路A.jpg"
    },
    {
     "team": "仙台名取A",
     "robot": "鉄ノ輪熊",
-    "home": "東北"
+    "home": "東北",
+    "photo": "img/2026/仙台名取A.jpg"
    },
    {
     "team": "仙台広瀬B",
     "robot": "エナガインパルス",
-    "home": "東北"
+    "home": "東北",
+    "photo": "img/2026/仙台広瀬B.jpg"
    },
    {
     "team": "秋田B",
     "robot": "与一",
-    "home": "東北"
+    "home": "東北",
+    "photo": "img/2026/秋田B.jpg"
    },
    {
     "team": "小山A",
     "robot": "モー烈！レモンちゃん！",
-    "home": "関東甲信越"
+    "home": "関東甲信越",
+    "photo": "img/2026/小山A.jpg"
    },
    {
     "team": "東京A",
     "robot": "正剋",
-    "home": "関東甲信越"
+    "home": "関東甲信越",
+    "photo": "img/2026/東京A.jpg"
    },
    {
     "team": "茨城A",
     "robot": "流利機",
-    "home": "関東甲信越"
+    "home": "関東甲信越",
+    "photo": "img/2026/茨城A.jpg"
    },
    {
     "team": "都立荒川A",
     "robot": "荒技",
-    "home": "関東甲信越"
+    "home": "関東甲信越",
+    "photo": "img/2026/都立荒川A.jpg"
    },
    {
     "team": "大阪公大A",
     "robot": "技巧神コウダイオー",
-    "home": "近畿"
+    "home": "近畿",
+    "photo": "img/2026/大阪公大A.jpg"
    },
    {
     "team": "奈良A",
     "robot": "龍田",
-    "home": "近畿"
+    "home": "近畿",
+    "photo": "img/2026/奈良A.jpg"
    },
    {
     "team": "明石A",
     "robot": "拭風",
-    "home": "近畿"
+    "home": "近畿",
+    "photo": "img/2026/明石A.jpg"
    },
    {
     "team": "呉A",
     "robot": "GUN☆KAN",
-    "home": "中国"
+    "home": "中国",
+    "photo": "img/2026/呉A.jpg"
    },
    {
     "team": "広島商船A",
     "robot": "蒼海檸檬スカッシュ",
-    "home": "中国"
+    "home": "中国",
+    "photo": "img/2026/広島商船A.jpg"
    },
    {
     "team": "米子A",
     "robot": "白兎跳躍",
-    "home": "中国"
+    "home": "中国",
+    "photo": "img/2026/米子A.jpg"
    },
    {
     "team": "香川詫間B",
     "robot": "竜宮機巧",
-    "home": "四国"
+    "home": "四国",
+    "photo": "img/2026/香川詫間B.jpg"
    },
    {
     "team": "香川高松A",
     "robot": "wipeout",
-    "home": "四国"
+    "home": "四国",
+    "photo": "img/2026/香川高松A.jpg"
    },
    {
     "team": "大分B",
     "robot": "掃臨",
-    "home": "九州沖縄"
+    "home": "九州沖縄",
+    "photo": "img/2026/大分B.jpg"
    },
    {
     "team": "沖縄A",
     "robot": "雑巾ぐるぐる大作戦",
-    "home": "九州沖縄"
+    "home": "九州沖縄",
+    "photo": "img/2026/沖縄A.jpg"
    },
    {
     "team": "熊本八代A",
     "robot": "投げ飛ばしのスパゲッティ",
-    "home": "九州沖縄"
+    "home": "九州沖縄",
+    "photo": "img/2026/熊本八代A.jpg"
    },
    {
     "team": "鹿児島A",
     "robot": "天翔",
-    "home": "九州沖縄"
+    "home": "九州沖縄",
+    "photo": "img/2026/鹿児島A.jpg"
    },
    {
     "team": "岐阜A",
     "robot": "前途羊々",
-    "home": "東海北陸"
+    "home": "東海北陸",
+    "photo": "img/2026/岐阜A.jpg"
    },
    {
     "team": "鈴鹿A",
     "robot": "魁",
-    "home": "東海北陸"
+    "home": "東海北陸",
+    "photo": "img/2026/鈴鹿A.jpg"
    },
    {
     "team": "豊田A",
     "robot": "翔旗",
-    "home": "東海北陸"
+    "home": "東海北陸",
+    "photo": "img/2026/豊田A.jpg"
    },
    {
     "team": "福井A",
     "robot": "ウエストゲートダイナソー",
-    "home": "東海北陸"
+    "home": "東海北陸",
+    "photo": "img/2026/福井A.jpg"
    }
   ],
   "matches": [
