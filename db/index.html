@@ -341,7 +341,14 @@ function aboutView(){
     el('div',{class:'card'},el('ul',null,el('li',null,'1988〜2021年: 全国大会の競技・会場・受賞校とロボット名（公式サイトより）'),el('li',null,'2022〜2026年: 地区大会8つと全国大会の全試合（得点・勝者・決着の仕方・配信の時刻）、各賞、出場チームとロボット'),el('li',null,'2026年: ロボットのしくみ、Xの投稿のまとめ'),el('li',null,'学校名は今の名前にそろえています。統合前の名前は全国大会の受賞欄にカッコ書きで残しています'))));
 }
 function aiBtn(topic){
-  return el('span',{class:'rowflex'},el('a',{class:'btn',href:'https://claude.ai/new?q='+encodeURIComponent(aiPrompt(topic)),target:'_blank',rel:'noopener'},'Claudeに聞く'),el('a',{class:'btn',href:'https://chatgpt.com/?q='+encodeURIComponent(aiPrompt(topic)),target:'_blank',rel:'noopener'},'ChatGPTに聞く'));
+  return el('span',{class:'rowflex'},el('a',{class:'btn',href:'https://claude.ai/new?q='+encodeURIComponent(aiPrompt(topic)),target:'_blank',rel:'noopener'},'Claudeに聞く'),el('a',{class:'btn',href:'https://chatgpt.com/?q='+encodeURIComponent(aiPrompt(topic)),target:'_blank',rel:'noopener'},'ChatGPTに聞く'),geminiBtn(aiPrompt(topic)));
+}
+function geminiBtn(q){
+  const b=el('a',{class:'btn',href:'https://gemini.google.com/app',target:'_blank',rel:'noopener',title:'質問文をコピーしてGeminiを開きます'},'Geminiに聞く');
+  b.addEventListener('click',()=>{try{navigator.clipboard.writeText(q)}catch(e){}
+    const t=el('div',{style:'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:13px;z-index:20;max-width:90vw'},'質問文をコピーしました。開いたGeminiの入力欄に貼り付けて送ってください。');
+    document.body.append(t);setTimeout(()=>t.remove(),5000)});
+  return b;
 }
 const aiPrompt=t=>'次の高専ロボコンのデータベースを読んで、'+t+'教えてください。データにないことは「データにない」と答えてください。\n'+PUB+'data/all.txt\n（説明: '+PUB+'llms.txt）';
 
