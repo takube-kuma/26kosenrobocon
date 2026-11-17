@@ -88,7 +88,7 @@ async function year(y){if(!S.years[y])S.years[y]=J('data/years/'+y+'.json');retu
 function postUrl(o={}){const u=new URL('https://github.com/'+REPO+'/issues/new');u.searchParams.set('template','db-contrib.yml');for(const[k,v]of Object.entries(o))if(v!=null&&v!=='')u.searchParams.set(k,v);return u.href}
 
 // 投稿：Issue をそのまま読む（すぐ反映）＋ contrib.json（控え）
-const KEYS={'種類':'kind','年度':'year','大会':'district','学校・チーム':'team','試合':'round','内容':'content','出典':'source'};
+const KEYS={'種類':'kind','年度':'year','大会':'district','学校・チーム':'team','試合':'round','内容':'content','出典':'source','出典・どこで見たか':'source'};
 function parseIssue(b){const o={};for(const part of(b||'').split(/^### /m).slice(1)){const i=part.indexOf('\n');const k=KEYS[part.slice(0,i).trim()];let v=part.slice(i+1).trim();if(v==='_No response_')v='';if(k)o[k]=v}return o}
 async function loadContrib(){
   let list=[];try{list=await J('data/contrib.json')}catch(e){}
@@ -203,6 +203,20 @@ async function yearView(y){
   const want=new URLSearchParams(location.hash.slice(1)).get('d');
   show(keys.includes(want)?want:keys[0]);
 }
+function writeBox(y,name,dist){
+  const cs=S.contrib.filter(c=>(!c.year||c.year===y)&&(c.team||'').split(/[,、，\s]+/).includes(name));
+  const kind=el('select',{style:'padding:7px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit'},...['機構・しくみ','作戦・動き','試合のこと','チーム・ロボットの情報','その他'].map(k=>el('option',null,k)));
+  const ta=el('textarea',{rows:4,placeholder:'例: 射出は上下2本のローラー。装填は横から1枚ずつ押し出している。移動バケツは試合の後半に上げていた。',style:'width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;box-sizing:border-box'});
+  const src=el('input',{placeholder:'どこで見たか（例: 配信 1:05:30、会場で見た、URL）',style:'flex:1;min-width:200px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit'});
+  const go=el('button',{class:'btn p',onclick:()=>{const t=ta.value.trim();if(!t){ta.focus();return}
+    const u=new URL(postUrl({kind:kind.value,year:y,district:dist,team:name,content:t,source:src.value.trim()}));u.searchParams.set('title','[DB] '+y+' '+name+' '+kind.value);window.open(u.href,'_blank','noopener')}},'送信する');
+  return el('section',{class:'card',style:'border-color:var(--acc)'},
+    el('h2',{style:'margin-top:0'},'みんなが見た情報（'+cs.length+'）'),
+    cs.length?el('div',null,...cs.map(contribBox)):el('p',{class:'note'},'まだ書き込みはありません。配信や会場で見た機構・作戦などを書いてください。'),
+    el('h3',null,'このチームについて書き込む'),
+    el('div',{class:'rowflex',style:'margin-bottom:8px'},kind),ta,el('div',{class:'rowflex',style:'margin-top:8px'},src,go),
+    el('p',{class:'note'},'「送信する」を押すとGitHubの投稿画面が開き、内容が入った状態になっています。そこで「Create」を押すと、このページにすぐ表示されます（GitHubのアカウントが必要です）。'));
+}
 function newsItem(x){return el('li',null,el('span',{class:'sub'},x.date+' '),x.team?el('span',null,tl(x.team,x.year),' '):null,x.school&&!x.team?x.school+' ':'',x.account?el('span',{class:'sub'},x.account+' '):null,el('a',{href:x.url,target:'_blank',rel:'noopener'},x.link_label||'リンク'),el('div',{class:'note'},x.summary))}
 function artLink(id){const a=S.arts.find(x=>x.id===id);return a?el('p',null,el('a',{class:'btn',href:'#a='+encodeURIComponent(id)},'📊 '+a.title+'を読む')):null}
 async function artView(id){
@@ -228,6 +242,7 @@ async function teamView(y,name){
   const info=[['狙い',T.target],['装填',T.load],['しくみ',T.mechanism],['足回り',T.drive_note],['移動バケツ',T.bucket_note]].filter(r=>r[1]);
   if(info.length||T.tags){const d=el('dl',{class:'aw'});info.forEach(([k,v])=>ap(d,el('dt',null,k),el('dd',null,v)));
     ap(m,el('h2',null,'ロボット'),el('div',{class:'card'},d,T.tags?el('p',null,...Object.entries(T.tags).map(([k,v])=>el('span',{class:'chip'},({drive:'足回り',shoot:'射出',collect:'回収',bucket:'バケツ',load:'装填'}[k]||k)+': '+v))):null))}
+  ap(m,writeBox(y,name,ent[0][0]));
   if(T.stats){const s=T.stats;const tile=(l,v,sub)=>el('div',{class:'yr'},el('div',{class:'w'},l),el('b',null,v??'—'),sub?el('div',{class:'w'},sub):null);
     ap(m,el('h2',null,'地区大会の数字'),el('div',{class:'grid'},tile('成績',T.wins+'勝'+T.losses+'敗',s.judge_wins?'判定勝ち'+s.judge_wins:''),tile('1試合の最高得点',s.best_score),tile('合計得点',s.total_score,s.unknown_scores?'不明'+s.unknown_scores+'試合':''),tile('旗',s.flag+'枚','うちスーパー'+s.super_flag),tile('机',s.desk+'枚','うちスーパー'+s.super_desk),tile('5点バケツ',s.bucket5+'枚','1点バケツ '+s.bucket1+'枚'),tile('相手の移動バケツ',s.moving+'枚','うちスーパー'+s.super_moving),tile('スーパー雑巾',s.super_rags+'枚')))}
   if(T.scores&&T.scores.length){const tb=el('tbody');
@@ -240,7 +255,6 @@ async function teamView(y,name){
   if(!S.news)S.news=await J('data/news.json').catch(()=>[]);if(!S.links)S.links=await J('data/links.json').catch(()=>[]);
   const nw=S.news.filter(x=>x.year===y&&x.team===name);if(nw.length)ap(m,el('h2',null,'ニュース・テレビ・学校の記事'),el('ul',null,...nw.map(newsItem)));
   const ln=S.links.filter(x=>x.year===y&&x.team===name);if(ln.length)ap(m,el('h2',null,'Xの投稿（'+ln.length+'）'),el('ul',null,...ln.map(x=>el('li',null,el('span',{class:'sub'},x.date+' '+x.account+' '),el('a',{href:x.url,target:'_blank',rel:'noopener'},'投稿を見る'),el('div',{class:'note'},x.summary)))));
-  const cs=contribFor(c=>(c.team||'').split(/[,、，\s]+/).includes(name));if(cs.length)ap(m,el('h2',null,'みんなの投稿'),...cs);
   ap(m,el('div',{class:'rowflex'},el('a',{class:'btn',href:postUrl({year:y,team:name}),target:'_blank',rel:'noopener'},'このチームについて書き込む'),aiBtn(y+'年の高専ロボコンの「'+name+'」について')));
 }
 function teamTable(ts,y){

@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン 大会分析（2022〜2026）</title><meta name="build-time" content="2026/11/17 17:26"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン 大会分析（2022〜2026）</title><meta name="build-time" content="2026/11/17 17:36"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -24,6 +24,12 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .dbnav{max-width:1400px;margin:0 auto;padding:10px 16px 0;font-size:13px}.dbnav a{color:var(--color-ok)}#app-loading{padding:40px 0;color:var(--color-fg-muted)}</style>
 <script>(function(){if(!new URLSearchParams(location.search).has('embed'))return;document.documentElement.classList.add('embed');
 const st=window.scrollTo.bind(window);window.scrollTo=function(a,b){try{const f=window.frameElement;if(f){const y=(typeof a==='object'?(a&&a.top)||0:b||0);const top=f.getBoundingClientRect().top+parent.scrollY-70;if(parent.scrollY>top)parent.scrollTo({top:top+y});return}}catch(e){}st(a,b)};
+document.addEventListener('DOMContentLoaded',()=>{let names=null;const chk=()=>{const d=document.getElementById('team-detail');if(!d||d.hidden)return;const info=document.getElementById('d-info');if(!info)return;
+ if(!names){try{names=JSON.parse(document.getElementById('data-teams').textContent).map(t=>t.team).sort((a,b)=>b.length-a.length)}catch(e){return}}
+ const tx=info.textContent.trim();const n=names.find(x=>tx.startsWith(x));if(!n)return;let b=document.getElementById('db-write');
+ if(!b){b=document.createElement('a');b.id='db-write';b.style.cssText='display:inline-block;margin:0 0 12px 10px;padding:7px 12px;border-radius:8px;background:#c2410c;color:#fff;font-size:13px;text-decoration:none';b.target='_top';d.querySelector('.back').after(b)}
+ if(b.dataset.n!==n){b.dataset.n=n;b.textContent='✏️ '+n+'について書き込む・みんなが見た情報';b.href='../#t=2026&n='+encodeURIComponent(n)}};
+ new MutationObserver(chk).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['hidden']});});
 document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]');if(a&&/^https?:/.test(a.getAttribute('href'))&&!a.target)a.target='_blank'});})();</script>
 <style>.embed .dbnav,.embed #top h1,.embed #upd,.embed .foot{display:none}.embed #dash-root{padding:0 0 20px;max-width:none}.embed,.embed body{background:transparent}</style>
 <script src="d3.min.js"></script></head><body><div class="dbnav"><a href="../">← 高専ロボコン データベース</a></div><div id="dash-root"><p id="app-loading">読み込み中…（はじめは数秒かかります）</p>

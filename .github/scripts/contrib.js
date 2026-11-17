@@ -1,7 +1,7 @@
 // Issue（ラベル db-contrib）を db/data/contrib.json に反映する
 const fs = require('fs');
 const F = 'db/data/contrib.json';
-const KEYS = {'種類':'kind','年度':'year','大会':'district','学校・チーム':'team','試合':'round','内容':'content','出典':'source'};
+const KEYS = {'種類':'kind','年度':'year','大会':'district','学校・チーム':'team','試合':'round','内容':'content','出典':'source','出典・どこで見たか':'source'};
 function parse(body) {
   const o = {};
   for (const part of (body || '').split(/^### /m).slice(1)) {
