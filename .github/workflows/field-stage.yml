@@ -1,0 +1,33 @@
+name: ルールブックのフィールド図を画像にする（作業用）
+on:
+  push:
+    branches: [main]
+    paths: [db/tools/fields.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils jq >/dev/null
+      - name: render
+        run: |
+          mkdir -p /tmp/out
+          jq -c '.[]' db/tools/fields.json | while read -r r; do
+            y=$(echo "$r" | jq -r .year); n=$(echo "$r" | jq -r .name); u=$(echo "$r" | jq -r .url); p=$(echo "$r" | jq -r '.pages // 4')
+            curl -sSL -A "Mozilla/5.0" -o /tmp/f.pdf "$u" || { echo "fail $y $n"; continue; }
+            pdftoppm -png -r 60 -f 1 -l "$p" /tmp/f.pdf "/tmp/out/${y}_${n}" || echo "render fail $y $n"
+            pdftoppm -png -r 150 -f 1 -l "$p" /tmp/f.pdf "/tmp/out/hi_${y}_${n}" || true
+            pdftotext -layout -l "$p" /tmp/f.pdf "/tmp/out/${y}_${n}.txt" || true
+          done
+          ls -la /tmp/out | head -100
+      - name: push to stage branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan field-stage
+          git rm -rq --cached . && rm -rf ./*  ./.github ./.nojekyll || true
+          cp /tmp/out/* .
+          git add -A && git commit -qm "フィールド図の作業用画像" && git push -qf origin field-stage
