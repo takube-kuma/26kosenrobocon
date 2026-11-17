@@ -47,6 +47,8 @@ td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .rowflex{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 footer{max-width:1080px;margin:0 auto;padding:20px 16px 40px;color:var(--sub);font-size:12px;border-top:1px solid var(--line)}
 .hide{display:none}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}.seg button{border:0;background:none;color:var(--ink);padding:6px 14px;font:inherit;font-size:13px;cursor:pointer}.seg button.on{background:var(--ink);color:var(--bg)}
+.bars{display:grid;grid-template-columns:minmax(80px,auto) 1fr auto;gap:4px 10px;align-items:center;font-size:13px}.bars>div:nth-child(3n+2){display:flex;justify-content:flex-start;width:100%}.bars .bar{margin:0;height:14px;background:var(--acc2);border-radius:3px;min-width:2px}.bars .v{font-variant-numeric:tabular-nums;color:var(--sub)}
 .th{width:72px;height:48px;object-fit:cover;border-radius:6px;display:block;background:var(--chip)}
 .hero{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:16px;align-items:start}.hero img{width:100%;border-radius:12px;display:block}
 @media (max-width:700px){.hero{grid-template-columns:1fr}}
@@ -145,9 +147,9 @@ function home(){
   ap(m,el('h1',null,'高専ロボコン データベース'),
     el('p',{class:'sub'},'1988年の第1回から2026年の第39回までの全国大会と地区大会。2022〜2026年は全試合（約870試合）、それより前は見つかった出場チーム・ロボットの機構・試合（約1,000チーム）。だれでも書き込めて、AIからも使えます。'),
     el('div',{class:'rowflex'},el('a',{class:'btn p',href:postUrl(),target:'_blank',rel:'noopener'},'＋ 試合や情報を書き込む'),el('a',{class:'btn',href:'#schools'},'学校の一覧'),el('a',{class:'btn',href:'#about'},'使い方・AIから使う')));
+  ap(m,periodPicker());
   ap(m,el('h2',null,'年度'));
   const g=el('div',{class:'grid'});
-  g.append(el('a',{class:'yr',href:'#a=5years'},el('b',null,'2022〜2026年'),el('span',{class:'sub'},' 5年間'),el('div',{class:'g'},'5年間のチーム成績と地区のレベル'),el('div',{class:'w'},'地区ごとのレベルの推移・チーム別の勝ち上がり')));
   for(const n of[...S.nat].reverse()){
     const w=n.awards.find(a=>a.award==='優勝'),gp=n.awards.find(a=>a.award==='ロボコン大賞');
     g.append(el('a',{class:'yr',href:'#y='+n.year},el('b',null,n.year+'年'),el('span',{class:'sub'},' 第'+n.no+'回'+(n.detail?(n.year>=2022?' ・ 分析・全試合あり':' ・ チーム・機構あり'):'')),
@@ -307,6 +309,68 @@ async function schoolView(k){
   if(ln.length){ap(m,el('h2',null,'関連する投稿・資料（'+ln.length+'）'));const ul=el('ul');ln.forEach(x=>ul.append(el('li',null,x.date+' '+x.account+' ',el('a',{href:x.url,target:'_blank',rel:'noopener'},'リンク'),el('div',{class:'note'},x.summary))));ap(m,ul)}
   ap(m,el('div',{class:'rowflex'},el('a',{class:'btn',href:postUrl({team:k}),target:'_blank',rel:'noopener'},'この学校について書き込む'),aiBtn('高専ロボコンの「'+k+'」の歴代の成績とロボットについて')));
 }
+// ---- 年度ごとの分析（期間でまとめる） ----
+const SPANS=[[3,'3年ごと'],[5,'5年ごと'],[10,'10年ごと'],[0,'全期間']];
+let SPAN=(()=>{try{return +localStorage.getItem('span')||5}catch(e){return 5}})();
+function periods(n){const ys=S.nat.map(x=>x.year),lo=Math.min(...ys),hi=Math.max(...ys);if(!n)return[[lo,hi]];const out=[];for(let e=hi;e>=lo;e-=n)out.push([Math.max(lo,e-n+1),e]);return out}
+function periodPicker(){
+  const box=el('section',null);
+  const draw=()=>{box.replaceChildren();
+    const seg=el('div',{class:'seg'},...SPANS.map(([n,l])=>el('button',{class:n===SPAN?'on':'',onclick:()=>{SPAN=n;try{localStorage.setItem('span',n)}catch(e){};draw()}},l)));
+    const g=el('div',{class:'grid'});
+    for(const[a,b]of periods(SPAN)){
+      const ns=S.nat.filter(x=>x.year>=a&&x.year<=b);
+      const top=countBy(ns.flatMap(x=>x.awards.filter(w=>w.award==='優勝').map(w=>w.school)))[0];
+      const rich=a<=2022&&b>=2026&&b-a===4;
+      g.append(el('a',{class:'yr',href:'#p='+a+'-'+b},el('b',null,a===b?a+'年':a+'〜'+b+'年'),el('span',{class:'sub'},' '+ns.length+'大会'+(rich?' ・ 詳しい分析あり':'')),
+        el('div',{class:'g'},ns.map(x=>x.game).slice(0,3).join('／')+(ns.length>3?' ほか':'')),
+        el('div',{class:'w'},top?'優勝が多い: '+top[0]+'（'+top[1]+'回）':'')));
+    }
+    ap(box,el('div',{class:'rowflex',style:'justify-content:space-between'},el('h2',null,'年度ごとの分析'),seg),el('p',{class:'sub'},'何年ずつまとめるかを選ぶと、その期間の優勝校・受賞の多い学校や地区、ロボットの機構の傾向をまとめて見られます。'),g);
+  };
+  draw();return box;
+}
+function countBy(arr){const c=new Map();arr.forEach(k=>{if(k)c.set(k,(c.get(k)||0)+1)});return[...c].sort((x,y)=>y[1]-x[1]||String(x[0]).localeCompare(String(y[0]),'ja'))}
+function barList(rows,max){const d=el('div',{class:'bars'});const mx=max||Math.max(1,...rows.map(r=>r[1]));rows.forEach(([k,v,link])=>ap(d,el('div',null,link||k),el('div',null,el('div',{class:'bar',style:v?'width:'+(v/mx*100)+'%':'width:0;min-width:0'})),el('div',{class:'v'},v)));return d}
+const KW=[['ローラー',/ローラ/],['エアシリンダー・空気圧',/エア|空気|空圧|ペットボトル/],['カタパルト・バネ・ゴム',/カタパルト|バネ|ばね|ゴム|パチンコ/],['アーム',/アーム/],['伸縮・パンタグラフ',/伸縮|パンタグラフ|ロジャー/],['クローラー',/クローラ|クロウラ|キャタピラ/],['オムニ・メカナム',/オムニ|メカナム/],['歩行（脚）',/歩行|脚|足/],['子機・分離',/子機|分離|親機|2台|3台/],['橋・スロープ',/橋|スロープ/],['センサー・画像認識・自動',/センサ|カメラ|画像|認識|自動/],['吸盤',/吸盤/],['ベルト・コンベア',/ベルト|コンベア/]];
+async function periodView(p){
+  const[a,b]=p.split('-').map(Number);const m=$('#m');m.replaceChildren();
+  const ns=S.nat.filter(x=>x.year>=a&&x.year<=b);
+  const region=k=>(S.sch.find(s=>s.key===k)||{}).region||'';
+  ap(m,el('div',{class:'rowflex sub'},el('a',{href:'#'},'← トップ')),el('h1',null,(a===b?a:a+'〜'+b)+'年の分析'),el('p',{class:'sub'},ns.length+'大会（第'+ns[0].no+'回〜第'+ns[ns.length-1].no+'回）'));
+  if(a<=2022&&b>=2026&&S.arts.some(x=>x.id==='5years')){
+    const f=el('iframe',{src:'app/?embed=1#all',title:'5年間のチーム成績と地区のレベル',style:'width:100%;border:0;min-height:900px;display:block',scrolling:'no'});
+    f.onload=()=>{try{const d=f.contentDocument;const fit=()=>{f.style.height=d.documentElement.scrollHeight+'px'};fit();new ResizeObserver(fit).observe(d.body);setInterval(fit,1500)}catch(e){}};
+    ap(m,el('h2',null,'2022〜2026年 5年間のチーム成績と地区のレベル'),el('p',{class:'sub'},'全試合の記録から計算した、地区ごとのレベルの推移と各チームの勝ち上がりです。'),f,el('h2',null,'受賞・機構のまとめ'));
+  }
+  // 大会の一覧
+  const tb=el('tbody');
+  for(const n of[...ns].reverse()){const g=w=>{const x=n.awards.find(z=>z.award===w);return x?el('span',null,x.team?tl(x.team,n.detail?n.year:null):sl(x.school),x.robot?'「'+x.robot+'」':''):''};
+    tb.append(el('tr',null,el('td',null,yl(n.year)),el('td',null,n.game),el('td',null,g('優勝')),el('td',null,g('ロボコン大賞'))))}
+  ap(m,el('h2',null,'大会の一覧'),el('div',{class:'tw'},el('table',null,el('thead',null,el('tr',null,...['年','競技','優勝','ロボコン大賞'].map(h=>el('th',null,h)))),tb)));
+  // 学校
+  const aw=ns.flatMap(n=>n.awards.map(w=>({...w,year:n.year})));
+  const win=countBy(aw.filter(w=>w.award==='優勝').map(w=>w.school)),gp=countBy(aw.filter(w=>w.award==='ロボコン大賞').map(w=>w.school)),all=countBy(aw.map(w=>w.school));
+  const L=rows=>rows.slice(0,15).map(([k,v])=>[k,v,sl(k)]);
+  ap(m,el('h2',null,'学校'),el('div',{class:'grid',style:'grid-template-columns:repeat(auto-fill,minmax(300px,1fr))'},
+    el('div',{class:'card'},el('h3',{style:'margin-top:0'},'全国大会の受賞が多い学校'),el('p',{class:'note'},'優勝・準優勝・大賞・各賞・特別賞を合わせた数'),barList(L(all))),
+    el('div',{class:'card'},el('h3',{style:'margin-top:0'},'全国優勝'),win.length?barList(L(win)):el('p',{class:'note'},'なし'),el('h3',null,'ロボコン大賞'),gp.length?barList(L(gp)):el('p',{class:'note'},'なし'))));
+  // 地区
+  const DR=['北海道','東北','関東甲信越','東海北陸','近畿','中国','四国','九州沖縄'];
+  const byR=w=>DR.map(r=>[r,aw.filter(x=>x.award===w||(!w)).filter(x=>region(x.school)===r).length]);
+  ap(m,el('h2',null,'地区'),el('div',{class:'grid',style:'grid-template-columns:repeat(auto-fill,minmax(300px,1fr))'},
+    el('div',{class:'card'},el('h3',{style:'margin-top:0'},'地区ごとの全国大会の受賞数'),barList(byR(null))),
+    el('div',{class:'card'},el('h3',{style:'margin-top:0'},'地区ごとの全国優勝'),barList(byR('優勝')),el('p',{class:'note'},'学校の地区は今の地区割り（例: 長岡は関東甲信越）で数えています。'))));
+  // 機構の傾向
+  const ys=await Promise.all(ns.filter(n=>n.detail).map(n=>year(n.year)));
+  const teams=ys.flatMap(Y=>[...Object.values(Y.districts),Y.national].flatMap(R=>R.teams)).filter(t=>t.mechanism);
+  const seen=new Set();const uniq=teams.filter(t=>{const k=t.team+t.robot;if(seen.has(k))return false;seen.add(k);return true});
+  if(uniq.length){
+    const rows=KW.map(([l,re])=>[l,uniq.filter(t=>re.test(t.mechanism)).length]).filter(r=>r[1]).sort((x,y)=>y[1]-x[1]);
+    ap(m,el('h2',null,'ロボットの機構の傾向'),el('div',{class:'card'},el('p',{class:'note'},'機構の説明が分かっている'+uniq.length+'台のうち、それぞれの言葉が出てくる台数。競技が毎年違うので、その期間の競技の傾向も表しています。'),barList(rows.map(([k,v])=>[k,v,el('a',{href:'#q='+encodeURIComponent(k.split(/[・（]/)[0])},k)]))));
+  }
+  ap(m,el('div',{class:'rowflex',style:'margin-top:16px'},aiBtn((a===b?a:a+'〜'+b)+'年の高専ロボコンの傾向（強い学校・地区・ロボットの機構）について')));
+}
 function schoolsView(){
   const m=$('#m');m.replaceChildren();ap(m,el('h1',null,'学校の一覧'),el('p',{class:'sub'},'学校名は今の名前にそろえています（例: 仙台電波→仙台広瀬、詫間電波→香川詫間）。'));
   const cnt={};for(const n of S.nat)for(const a of n.awards)cnt[a.school]=(cnt[a.school]||0)+1;
@@ -366,6 +430,7 @@ async function route(){
     else if(h.has('s'))await schoolView(h.get('s'));
     else if(h.has('q')){$('#q').value=h.get('q');await searchView(h.get('q'))}
     else if(location.hash==='#schools')schoolsView();
+    else if(h.has('p'))await periodView(h.get('p'));
     else if(location.hash==='#about')aboutView();
     else home();
   }catch(e){$('#m').replaceChildren(el('p',null,'読み込めませんでした: '+e.message))}
