@@ -145,8 +145,6 @@ function home(){
   ap(m,el('h1',null,'高専ロボコン データベース'),
     el('p',{class:'sub'},'1988年の第1回から2026年の第39回までの全国大会と地区大会。2022〜2026年は全試合（約870試合）、それより前は見つかった出場チーム・ロボットの機構・試合（約1,000チーム）。だれでも書き込めて、AIからも使えます。'),
     el('div',{class:'rowflex'},el('a',{class:'btn p',href:postUrl(),target:'_blank',rel:'noopener'},'＋ 試合や情報を書き込む'),el('a',{class:'btn',href:'#schools'},'学校の一覧'),el('a',{class:'btn',href:'#about'},'使い方・AIから使う')));
-  const recent=S.contrib.slice(0,5);
-  if(recent.length){ap(m,el('h2',null,'みんなの最近の投稿'),...recent.map(contribBox))}
   ap(m,el('h2',null,'年度'));
   const g=el('div',{class:'grid'});
   g.append(el('a',{class:'yr',href:'#a=5years'},el('b',null,'2022〜2026年'),el('span',{class:'sub'},' 5年間'),el('div',{class:'g'},'5年間のチーム成績と地区のレベル'),el('div',{class:'w'},'地区ごとのレベルの推移・チーム別の勝ち上がり')));
@@ -157,6 +155,8 @@ function home(){
       el('div',{class:'w'},w?'優勝 '+(w.team||w.school)+'「'+w.robot+'」':'',gp?el('br'):null,gp?'大賞 '+(gp.team||gp.school):'')));
   }
   ap(m,g);
+  const recent=S.contrib.slice(0,5);
+  if(recent.length){ap(m,el('h2',null,'みんなの最近の投稿'),...recent.map(contribBox))}
 }
 async function yearView(y){
   const n=S.nat.find(x=>x.year===y);const m=$('#m');m.replaceChildren();
