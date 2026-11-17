@@ -1,0 +1,3232 @@
+[
+ {
+  "year": 2026,
+  "team": "一関A",
+  "school": "一関",
+  "kind": "X",
+  "account": "@Kosensei_k",
+  "date": "2026/10/7",
+  "summary": "一関Aのロボット紹介スレッド。コンセプトは「全てのゴールに得点してボーナスを取る」こと。",
+  "url": "https://x.com/Kosensei_k/status/2107672811422744900"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬A",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@sncthc_science",
+  "date": "2026/10/3",
+  "summary": "仙台高専広瀬の科学部（ロボコン）によるチーム紹介。広瀬A「星雑巾」と広瀬B「エナガインパルス」の2チーム。",
+  "url": "https://x.com/sncthc_science/status/2106276448269119757"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬A",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@hinomaru_ooo",
+  "date": "2026/10/4",
+  "summary": "チームリーダー兼操縦者の振り返り。ベルト直動の射出・装填、回収昇降、全体設計を担当。制御トラブルで本来の力を出せず、結果はアイデア賞。",
+  "url": "https://x.com/hinomaru_ooo/status/2106687231310381067"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬A",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@tatuta_umai",
+  "date": "2026/10/10",
+  "summary": "ローラー周りの設計、全体設計の修正、CNC加工を担当したメンバーの投稿。",
+  "url": "https://x.com/tatuta_umai/status/2108890548761395579"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬B",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@sncthc_science",
+  "date": "2026/10/3",
+  "summary": "仙台高専広瀬の科学部（ロボコン）によるチーム紹介。広瀬A「星雑巾」と広瀬B「エナガインパルス」の2チーム。",
+  "url": "https://x.com/sncthc_science/status/2106276448269119757"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@ZEUgaFALCON314",
+  "date": "2026/9/22",
+  "summary": "設計担当メンバーの投稿。地区大会までに実装が間に合わなかった機構があり、全国大会で見せたいとのこと。",
+  "url": "https://x.com/ZEUgaFALCON314/status/2102237634651443564"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@Lilac781_789",
+  "date": "2026/9/20",
+  "summary": "ピット・回路担当メンバーの投稿。地区大会では回路トラブルがほぼなかった。",
+  "url": "https://x.com/Lilac781_789/status/2101684286776918101"
+ },
+ {
+  "year": 2026,
+  "team": "茨城B",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@mutekiki105",
+  "date": "2026/9/20",
+  "summary": "チームリーダーの振り返り。「人の手を使わずロボットの動きだけで全動作を行う」コンセプトを最後まで貫いた。",
+  "url": "https://x.com/mutekiki105/status/2101628301572018424"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@arakawarobo",
+  "date": "2026/9/20",
+  "summary": "産技荒川ロボット研究同好会の投稿。準優勝の報告と、地区最高得点を取った「荒技」で全国に挑むという意気込み。",
+  "url": "https://x.com/arakawarobo/status/2101590300783460676"
+ },
+ {
+  "year": 2026,
+  "team": "和歌山A",
+  "school": "和歌山",
+  "kind": "X",
+  "account": "@wnct_rbcn_club",
+  "date": "2026/10/12",
+  "summary": "和歌山高専ロボコン部の投稿。Aチーム「じゃばらん」が安川電機賞、Bチーム「江楠プラナ」が東京エレクトロン賞。",
+  "url": "https://x.com/wnct_rbcn_club/status/2109456228011409445"
+ },
+ {
+  "year": 2026,
+  "team": "和歌山A",
+  "school": "和歌山",
+  "kind": "X",
+  "account": "@murasakiROBOCON",
+  "date": "2026/10/12",
+  "summary": "チームリーダー兼操縦者の振り返り。ロボットの力を出し切れず悔しく、来年に向けて反省を生かしたいとのこと。",
+  "url": "https://x.com/murasakiROBOCON/status/2109462339280064673"
+ },
+ {
+  "year": 2026,
+  "team": "和歌山B",
+  "school": "和歌山",
+  "kind": "X",
+  "account": "@wnct_rbcn_club",
+  "date": "2026/10/12",
+  "summary": "和歌山高専ロボコン部の投稿。Aチーム「じゃばらん」が安川電機賞、Bチーム「江楠プラナ」が東京エレクトロン賞。",
+  "url": "https://x.com/wnct_rbcn_club/status/2109456228011409445"
+ },
+ {
+  "year": 2026,
+  "team": "阿南A",
+  "school": "阿南",
+  "kind": "X",
+  "account": "@robo_ishi_study",
+  "date": "2026/10/12",
+  "summary": "チームリーダー兼設計者の振り返り。チームが最後まで諦めなかったことで旗にかけられたとのこと。",
+  "url": "https://x.com/robo_ishi_study/status/2109627032573534293"
+ },
+ {
+  "year": 2026,
+  "team": "大分A",
+  "school": "大分",
+  "kind": "X",
+  "account": "@Water_sun_light",
+  "date": "2026/10/4",
+  "summary": "全体設計とピットを担当したメンバーの振り返り。",
+  "url": "https://x.com/Water_sun_light/status/2106691574516347110"
+ },
+ {
+  "year": 2026,
+  "team": "大分B",
+  "school": "大分",
+  "kind": "X",
+  "account": "@kazuma11121125",
+  "date": "2026/10/3",
+  "summary": "メインの制御を担当したメンバーの投稿（大会前）。",
+  "url": "https://x.com/kazuma11121125/status/2106330483483349382"
+ },
+ {
+  "year": 2026,
+  "team": "熊本八代B",
+  "school": "熊本八代",
+  "kind": "X",
+  "account": "@hero_gear_",
+  "date": "2026/10/4",
+  "summary": "ロボット「創史当番」の紹介。大会後に詳細を書くとのこと。",
+  "url": "https://x.com/hero_gear_/status/2106630909525131757"
+ },
+ {
+  "year": 2026,
+  "team": "熊本八代B",
+  "school": "熊本八代",
+  "kind": "X",
+  "account": "@hero_gear_",
+  "date": "2026/10/5",
+  "summary": "「創史当番」の開発ログをリプライで公開。来年以降のチームリーダー向けのノウハウ。",
+  "url": "https://x.com/hero_gear_/status/2107108169780769176"
+ },
+ {
+  "year": 2026,
+  "team": "熊本熊本A",
+  "school": "熊本熊本",
+  "kind": "X",
+  "account": "@krobocon",
+  "date": "2026/10/4",
+  "summary": "熊本高専熊本キャンパスのロボコン部による初戦勝利の報告。",
+  "url": "https://x.com/krobocon/status/2106598317010612585"
+ },
+ {
+  "year": 2026,
+  "team": "熊本熊本A",
+  "school": "熊本熊本",
+  "kind": "X",
+  "account": "@mm_39tigu",
+  "date": "2026/10/4",
+  "summary": "ベルト直動の設計と全体の組み立てを担当したメンバーの振り返り。本番でスーパー雑巾をかけられずベスト4。",
+  "url": "https://x.com/mm_39tigu/status/2106746929325789522"
+ },
+ {
+  "year": 2026,
+  "team": "鹿児島A",
+  "school": "鹿児島",
+  "kind": "X",
+  "account": "@KNCTMechaken",
+  "date": "2026/10/5",
+  "summary": "鹿児島高専メカトロニクス研究部の投稿。Aチーム「天翔」がアイデア賞で2年連続の全国大会出場、Bチームは田中貴金属賞。",
+  "url": "https://x.com/KNCTMechaken/status/2106910485102956588"
+ },
+ {
+  "year": 2026,
+  "team": "鹿児島B",
+  "school": "鹿児島",
+  "kind": "X",
+  "account": "@KNCTMechaken",
+  "date": "2026/10/5",
+  "summary": "鹿児島高専メカトロニクス研究部の投稿。Aチーム「天翔」がアイデア賞で2年連続の全国大会出場、Bチームは田中貴金属賞。",
+  "url": "https://x.com/KNCTMechaken/status/2106910485102956588"
+ },
+ {
+  "year": 2026,
+  "team": "旭川A",
+  "school": "旭川",
+  "kind": "X",
+  "account": "@kitagitune_jp",
+  "date": "2026/9/27",
+  "summary": "メンバーによる優勝報告。全国大会への意気込み。",
+  "url": "https://x.com/kitagitune_jp/status/2104154441024704961"
+ },
+ {
+  "year": 2026,
+  "team": "高知A",
+  "school": "高知",
+  "kind": "X",
+  "account": "@inugasuki8211",
+  "date": "2026/10/12",
+  "summary": "チームリーダー兼操縦者の投稿。足回りとローラーなどを設計。本番は回路トラブルがあったが、試走場ではスーパー雑巾を6枚ほど連続でかけられたとのこと。",
+  "url": "https://x.com/inugasuki8211/status/2109504006074802378"
+ },
+ {
+  "year": 2026,
+  "team": "長岡A",
+  "school": "長岡",
+  "kind": "X",
+  "account": "@Kohaku_robo",
+  "date": "2026/9/25",
+  "summary": "設計メンバーによるロボット紹介。ロボット名は「トキAir」。マスコットのかわいさが目立つ大会で、あえて美しさとかっこよさに振った機体。ベルト直動の副砲以外の大部分を設計。",
+  "url": "https://x.com/Kohaku_robo/status/2103480838738563315"
+ },
+ {
+  "year": 2026,
+  "team": "明石A",
+  "school": "明石",
+  "kind": "X",
+  "account": "@Akosen_R_C",
+  "date": "2026/10/11",
+  "summary": "明石高専ロボコン部の投稿。Aチーム「拭風」は特別賞（ローム）で推薦により全国大会出場が決定、Bチーム「明石布」はアイデア賞。",
+  "url": "https://x.com/Akosen_R_C/status/2109215182459449643"
+ },
+ {
+  "year": 2026,
+  "team": "明石B",
+  "school": "明石",
+  "kind": "X",
+  "account": "@Akosen_R_C",
+  "date": "2026/10/11",
+  "summary": "明石高専ロボコン部の投稿。Aチーム「拭風」は特別賞（ローム）で推薦により全国大会出場が決定、Bチーム「明石布」はアイデア賞。",
+  "url": "https://x.com/Akosen_R_C/status/2109215182459449643"
+ },
+ {
+  "year": 2026,
+  "team": "舞鶴A",
+  "school": "舞鶴",
+  "kind": "X",
+  "account": "@mnct_sken",
+  "date": "2026/10/12",
+  "summary": "舞鶴高専の部の投稿。A「舞布達」がマブチモーター特別賞、B「ミラクレーンフライ」がベスト4と奨励賞。2年連続で決勝トーナメントに進出。",
+  "url": "https://x.com/mnct_sken/status/2109444634200232316"
+ },
+ {
+  "year": 2026,
+  "team": "舞鶴A",
+  "school": "舞鶴",
+  "kind": "X",
+  "account": "@dorasan_kosen",
+  "date": "2026/10/10",
+  "summary": "チームリーダーによる大会前日の投稿。予選で当たる奈良A・明石Aへのあいさつ。",
+  "url": "https://x.com/dorasan_kosen/status/2108869329358135721"
+ },
+ {
+  "year": 2026,
+  "team": "舞鶴B",
+  "school": "舞鶴",
+  "kind": "X",
+  "account": "@mnct_sken",
+  "date": "2026/10/12",
+  "summary": "舞鶴高専の部の投稿。A「舞布達」がマブチモーター特別賞、B「ミラクレーンフライ」がベスト4と奨励賞。2年連続で決勝トーナメントに進出。",
+  "url": "https://x.com/mnct_sken/status/2109444634200232316"
+ },
+ {
+  "year": 2026,
+  "team": "呉A",
+  "school": "呉",
+  "kind": "X",
+  "account": "@kurerobo",
+  "date": "2026/9/27",
+  "summary": "呉高専ロボコン部の投稿。Aチーム「GUN☆KAN」が技術賞で全国大会出場、Bチーム「天照」が本田技研工業特別賞。",
+  "url": "https://x.com/kurerobo/status/2104139713406013786"
+ },
+ {
+  "year": 2026,
+  "team": "呉B",
+  "school": "呉",
+  "kind": "X",
+  "account": "@kurerobo",
+  "date": "2026/9/27",
+  "summary": "呉高専ロボコン部の投稿。Aチーム「GUN☆KAN」が技術賞で全国大会出場、Bチーム「天照」が本田技研工業特別賞。",
+  "url": "https://x.com/kurerobo/status/2104139713406013786"
+ },
+ {
+  "year": 2026,
+  "team": "呉B",
+  "school": "呉",
+  "kind": "X",
+  "account": "@AltoPlusAlphaa",
+  "date": "2026/9/27",
+  "summary": "操縦と機構設計を担当したメンバーの振り返り。得点は伸びなかったが、機動力とチームの連携で米子Aの移動バケツ攻撃をかわし続けた。",
+  "url": "https://x.com/AltoPlusAlphaa/status/2104180763797454960"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/9/28",
+  "summary": "回路と無線を担当したメンバーの振り返り。前日からトラブル続きだったが、旗の100点と30連射を見せられた。",
+  "url": "https://x.com/Masu_Robo/status/2104421473284980935"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/9/25",
+  "summary": "大会前のチーム紹介。前年の「反逆」から成長したチームとしての意気込み。",
+  "url": "https://x.com/Masu_Robo/status/2103436539191824719"
+ },
+ {
+  "year": 2026,
+  "team": "津山A",
+  "school": "津山",
+  "kind": "X",
+  "account": "@tsuyamarobotech",
+  "date": "2026/9/29",
+  "summary": "津山高専の部の投稿。Aチーム「那須与一の復活」がセメダイン賞、Bチーム「投擲王 ヨコナゲイナー」がデザイン賞。",
+  "url": "https://x.com/tsuyamarobotech/status/2104913863926034623"
+ },
+ {
+  "year": 2026,
+  "team": "津山B",
+  "school": "津山",
+  "kind": "X",
+  "account": "@tsuyamarobotech",
+  "date": "2026/9/29",
+  "summary": "津山高専の部の投稿。Aチーム「那須与一の復活」がセメダイン賞、Bチーム「投擲王 ヨコナゲイナー」がデザイン賞。",
+  "url": "https://x.com/tsuyamarobotech/status/2104913863926034623"
+ },
+ {
+  "year": 2026,
+  "team": "都立品川A",
+  "school": "都立品川",
+  "kind": "X",
+  "account": "@Glasses_0327",
+  "date": "2026/9/22",
+  "summary": "安全管理と回路を担当したメンバーの投稿。電気二重層キャパシタ（EDLC）を使ったベルト直動用の回路、エア補充用コンプレッサーの搭載、ローム製部品を使ったモータードライバーの量産など。大きなトラブルはなかった。",
+  "url": "https://x.com/Glasses_0327/status/2102337420801065432"
+ },
+ {
+  "year": 2026,
+  "team": "徳山A",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/7",
+  "summary": "徳山高専の部によるAチームのメンバーコメント紹介。ロボット「投計改跡」のベルト直動は射出速度35m/sほどを目指して設計。",
+  "url": "https://x.com/TCTMechatro/status/2107735797638266957"
+ },
+ {
+  "year": 2026,
+  "team": "都城B",
+  "school": "都城",
+  "kind": "X",
+  "account": "@yudai_3122nitmc",
+  "date": "2026/10/6",
+  "summary": "チームリーダーの振り返り。足回り・配線・装飾などを担当。前年はデザイン賞で全国に出場し、今年は唯一無二のアイデアで全国を目指したが届かなかった。",
+  "url": "https://x.com/yudai_3122nitmc/status/2107340876020355167"
+ },
+ {
+  "year": 2026,
+  "team": "都城B",
+  "school": "都城",
+  "kind": "X",
+  "account": "@uririnriver",
+  "date": "2026/10/4",
+  "summary": "通信、ファンによるエア射出の設計、当日の操縦などを担当したメンバーの振り返り。トラブル続きだったが、エキシビションで旗にかけられた。",
+  "url": "https://x.com/uririnriver/status/2106739739881783471"
+ },
+ {
+  "year": 2026,
+  "team": "群馬A",
+  "school": "群馬",
+  "kind": "X",
+  "account": "@yugadao623",
+  "date": "2026/10/14",
+  "summary": "群馬Aのスーパー雑巾射出機構の紹介（動画）。自作のエアシリンダで雑巾を飛ばす仕組みで、圧力は約0.4MPa。出力は十分だったが安定性が課題だったとのこと。",
+  "url": "https://x.com/yugadao623/status/2110360096312324353"
+ },
+ {
+  "year": 2026,
+  "team": "徳山B",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/14",
+  "summary": "徳山高専の部によるBチームのメンバーコメント紹介。選手兼メイン設計者が、ロボット「万流 ZX-47G」を先生の指導のもと1か月でゼロから完成させたと紹介。",
+  "url": "https://x.com/TCTMechatro/status/2110298817740607585"
+ },
+ {
+  "year": 2026,
+  "team": "徳山B",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@ebisu_4649_ksn",
+  "date": "2026/10/14",
+  "summary": "大会当日の雨予報を受け、紙筒が湿気でふやけるのに備えて急いで予備シリンダを作ったという話。実際は湿気の影響はなく、最後まで動いてくれたとのこと。",
+  "url": "https://x.com/ebisu_4649_ksn/status/2110372871499583691"
+ },
+ {
+  "year": 2026,
+  "team": "大阪公大B",
+  "school": "大阪公大",
+  "kind": "X",
+  "account": "@VxFn16631",
+  "date": "2026/10/12",
+  "summary": "ローラーを担当したメンバーの振り返り。旗に掛けられず悔しかった。予備のローラーを10本用意したが一本も使わずに済んだとのこと。",
+  "url": "https://x.com/VxFn16631/status/2109572728852562041"
+ },
+ {
+  "year": 2026,
+  "team": "徳山B",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/14",
+  "summary": "徳山高専の部によるBチームの投稿の続き。選手兼メイン設計者が撮った、部屋に置かれたロボット「万流」の写真を紹介。",
+  "url": "https://x.com/TCTMechatro/status/2110306146561212743"
+ },
+ {
+  "year": 2026,
+  "team": "近大B",
+  "school": "近大",
+  "kind": "X",
+  "account": "@mochio_X2D",
+  "date": "2026/10/16",
+  "summary": "近畿地区大会の試合後に近大高専Bチームのロボットがうまく動いた様子を紹介し、本番の試合で見せたかったという投稿。",
+  "url": "https://x.com/mochio_X2D/status/2110885044105760983"
+ },
+ {
+  "year": 2026,
+  "team": "釧路A",
+  "school": "釧路",
+  "kind": "X",
+  "account": "@ROBOCON1988",
+  "date": "2026/10/15",
+  "summary": "釧路高専ロボット研究会の部員による投稿。全国大会へロボットを運ぶ木製コンテナを仮設計したが、ロボットの固定方法などに不安があると相談。",
+  "url": "https://x.com/ROBOCON1988/status/2110565806769860971"
+ },
+ {
+  "year": 2026,
+  "team": "熊本熊本A",
+  "school": "熊本熊本",
+  "kind": "X",
+  "account": "@osada1117",
+  "date": "2026/10/16",
+  "summary": "熊本高専熊本キャンパスロボコン部の選手（OB）の投稿。両チームとも決勝リーグで敗れ全国は逃したが、他大会に向けて活動中。大会1か月前に10本中9本の精度が出た射出の動画を紹介し、Giving Campaignへの投票を呼びかけ。",
+  "url": "https://x.com/osada1117/status/2111018539092214269"
+ },
+ {
+  "year": 2026,
+  "team": "熊本熊本B",
+  "school": "熊本熊本",
+  "kind": "X",
+  "account": "@osada1117",
+  "date": "2026/10/16",
+  "summary": "熊本高専熊本キャンパスロボコン部の選手（OB）の投稿。両チームとも決勝リーグで敗れ全国は逃したが、他大会に向けて活動中。大会1か月前に10本中9本の精度が出た射出の動画を紹介し、Giving Campaignへの投票を呼びかけ。",
+  "url": "https://x.com/osada1117/status/2111018539092214269"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@gifuroboken",
+  "date": "2026/10/19",
+  "summary": "岐阜高専ロボット研究会による地区大会の報告。Aチーム「前途羊々」は大きく成長して7年ぶりの全国出場を果たし、全国に向けて力を尽くして改良していくとのこと。続く投稿では、東海北陸地区からロボコン大賞を目指すと呼びかけ。",
+  "url": "https://x.com/gifuroboken/status/2111955495565316395"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@Harumakimakuzo",
+  "date": "2026/10/18",
+  "summary": "岐阜Aで設計と選手を担当するメンバーの投稿。最後の推薦で全国出場が決まった喜びと感謝を伝え、全国では自分たちのベストを出せるよう改良と練習に取り組むとのこと。",
+  "url": "https://x.com/Harumakimakuzo/status/2111809248007176549"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@Harumakimakuzo",
+  "date": "2026/10/18",
+  "summary": "同じメンバーによる安川電機賞へのお礼。ロボコンのワクワクをより多くの人に伝えられるよう全国大会も頑張るとの意気込み。",
+  "url": "https://x.com/Harumakimakuzo/status/2111810457598296430"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@GyunyuDev",
+  "date": "2026/10/18",
+  "summary": "岐阜Aのピットメンバーの投稿。制御まわりをいろいろ担当しており、全国に行けることを喜ぶ内容。",
+  "url": "https://x.com/GyunyuDev/status/2111793119868100893"
+ },
+ {
+  "year": 2026,
+  "team": "福井A",
+  "school": "福井",
+  "kind": "X",
+  "account": "@robot_fnct",
+  "date": "2026/10/18",
+  "summary": "福井高専ロボット部による、Aチーム「ウエストゲートダイナソー」の全国大会出場決定の報告。",
+  "url": "https://x.com/robot_fnct/status/2111736794744336434"
+ },
+ {
+  "year": 2026,
+  "team": "福井A",
+  "school": "福井",
+  "kind": "X",
+  "account": "@Syo_03N",
+  "date": "2026/10/18",
+  "summary": "福井Aの主設計メンバーの投稿。ロボットの機構の説明は後日するつもりとのこと。",
+  "url": "https://x.com/Syo_03N/status/2111781027194819063"
+ },
+ {
+  "year": 2026,
+  "team": "豊田A",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@tnct_RoboconA",
+  "date": "2026/10/18",
+  "summary": "豊田高専ロボコンAチームによる全国出場決定後の投稿。国技館ではさらに進化したロボット（「アイリス君」）を見せられるよう頑張るとの意気込み。",
+  "url": "https://x.com/tnct_RoboconA/status/2111744782745952262"
+ },
+ {
+  "year": 2026,
+  "team": "釧路A",
+  "school": "釧路",
+  "kind": "X",
+  "account": "@ROBOCON1988",
+  "date": "2026/10/15",
+  "summary": "釧路高専ロボット研究会の部員による、全国大会へロボットを運ぶコンテナの続報。ロボットを除いた概算重量が約140kgになったとのこと。",
+  "url": "https://x.com/ROBOCON1988/status/2110566180461457730"
+ },
+ {
+  "year": 2026,
+  "team": "鈴鹿A",
+  "school": "鈴鹿",
+  "kind": "X",
+  "account": "@suzuka_robocon",
+  "date": "2026/10/18",
+  "summary": "鈴鹿高専ロボコンの投稿。Aチーム「魁」が技術賞を受け、推薦で全国大会に出場決定。全国では4桁の得点を目指すとの意気込み。",
+  "url": "https://x.com/suzuka_robocon/status/2111766094839259298"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@sakuwatasandao",
+  "date": "2026/10/18",
+  "summary": "岐阜Aのロボットを運ぶ台車を作ったメンバーの投稿。直前の投稿では、性能に問題はないが見た目のために全国に向けて台車を作り直すか検討中とのこと。",
+  "url": "https://x.com/sakuwatasandao/status/2111791117373231402"
+ },
+ {
+  "year": 2026,
+  "team": "豊田A",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@rururu55519",
+  "date": "2026/10/18",
+  "summary": "豊田Aのメンバーの投稿。2024年に応援団として先輩を応援して以来、後輩と全国を目指してきたので出場決定がうれしいとのこと。全国に向けて設計をさらに磨き上げたいという意気込み。",
+  "url": "https://x.com/rururu55519/status/2111793646693659011"
+ },
+ {
+  "year": 2026,
+  "team": "豊田A",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@tnct_RoboconA",
+  "date": "2026/10/19",
+  "summary": "豊田高専ロボコンAチームによる、東海北陸地区大会での特別賞（ローム）受賞のお礼。国技館に向けてロボットの調整を進めるとのこと。",
+  "url": "https://x.com/tnct_RoboconA/status/2112078165082513669"
+ },
+ {
+  "year": 2026,
+  "team": "大分B",
+  "school": "大分",
+  "kind": "X",
+  "account": "@kazuma11121125",
+  "date": "2026/10/19",
+  "summary": "大分Bでメインの制御を担当するメンバーの投稿。今年のロボットは「Python禁止」というルールで作っているとのこと。",
+  "url": "https://x.com/kazuma11121125/status/2112198863096578454"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@axiz54853254",
+  "date": "2026/10/21",
+  "summary": "沼津Aで装填機構以外の設計と選手を担当したメンバーの引退にあたっての振り返りスレッド。前年の反省から「試作→試作機→本番機」のサイクルをきちんと回し、チームとして動けたが、本番では得点できず悔しいとのこと。",
+  "url": "https://x.com/axiz54853254/status/2112579456271634536"
+ },
+ {
+  "year": 2026,
+  "team": "豊田B",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@pepepepe501000",
+  "date": "2026/10/21",
+  "summary": "豊田Bのチームリーダー兼操縦者で、制御の上位レイヤーを担当したメンバーの振り返り。試合では思いどおりにロボットを動かせなかったが、コンセプトは最後まで貫けた。細かいロボット・技術の紹介は部の公式アカウントで行う予定とのこと。",
+  "url": "https://x.com/pepepepe501000/status/2112690033987846469"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@numazu_robocon",
+  "date": "2026/10/20",
+  "summary": "沼津高専ロボコン部の地区大会報告。全国出場はならなかったが両チームともロボットの機能を出し切り、Aが東京エレクトロン賞、Bがマブチモーター賞。両チームとも初戦に勝ち、Bは10年ぶりに準決勝へ進んだ。",
+  "url": "https://x.com/numazu_robocon/status/2112268644252307747"
+ },
+ {
+  "year": 2026,
+  "team": "沼津B",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@numazu_robocon",
+  "date": "2026/10/20",
+  "summary": "沼津高専ロボコン部の地区大会報告。全国出場はならなかったが両チームともロボットの機能を出し切り、Aが東京エレクトロン賞、Bがマブチモーター賞。両チームとも初戦に勝ち、Bは10年ぶりに準決勝へ進んだ。",
+  "url": "https://x.com/numazu_robocon/status/2112268644252307747"
+ },
+ {
+  "year": 2026,
+  "team": "熊本八代B",
+  "school": "熊本八代",
+  "kind": "X",
+  "account": "@denken1975",
+  "date": "2026/10/19",
+  "summary": "八代ロボコン部による、B「創史当番」のスーパー雑巾の旗掛けシーン。シートをばねで引っ張り、その張力で雑巾を飛ばすシンプルな射出機構。",
+  "url": "https://x.com/denken1975/status/2111988257366159510"
+ },
+ {
+  "year": 2026,
+  "team": "熊本八代B",
+  "school": "熊本八代",
+  "kind": "X",
+  "account": "@denken1975",
+  "date": "2026/10/19",
+  "summary": "同じくB「創史当番」の通常の雑巾での旗掛けシーン。定荷重ばねで人が投げる動きをまねた機構で、練習では1試合に1〜2枚を旗に掛けられた。",
+  "url": "https://x.com/denken1975/status/2112046083400712404"
+ },
+ {
+  "year": 2026,
+  "team": "熊本八代B",
+  "school": "熊本八代",
+  "kind": "X",
+  "account": "@hero_gear_",
+  "date": "2026/10/19",
+  "summary": "チームリーダーの投稿。部の公式が紹介したスーパー雑巾の射出機構（シートをばねで引っ張って飛ばす）は担当メンバーの自慢の機構で、近くイベントで披露するとのこと。",
+  "url": "https://x.com/hero_gear_/status/2111989379266986249"
+ },
+ {
+  "year": 2026,
+  "team": "富山本郷B",
+  "school": "富山本郷",
+  "kind": "X",
+  "account": "@tnctrobo",
+  "date": "2026/10/19",
+  "summary": "富山高専本郷メカテック部の投稿。B「若竹取物語」がデンソー賞。ロボットだけで競技の一連の動作を完結させる点と、雑巾をフリスビーのように回転させて飛ばす射出機構が評価された。",
+  "url": "https://x.com/tnctrobo/status/2111859057489576386"
+ },
+ {
+  "year": 2026,
+  "team": "富山本郷B",
+  "school": "富山本郷",
+  "kind": "X",
+  "account": "@tnctrobo",
+  "date": "2026/10/19",
+  "summary": "B「若竹取物語」の固定バケツに雑巾が入る様子の紹介。大会では得点できなかったが、さらに改良を重ねるとのこと。",
+  "url": "https://x.com/tnctrobo/status/2112000870829461858"
+ },
+ {
+  "year": 2026,
+  "team": "鳥羽商船A",
+  "school": "鳥羽商船",
+  "kind": "X",
+  "account": "@Tobarobocon",
+  "date": "2026/10/19",
+  "summary": "鳥羽商船ロボコン部の投稿。Aチームがセメダイン賞。大会当日も破損した部品の修理やマスコットの補修に、協賛の接着剤が何度も役立ったとのこと。",
+  "url": "https://x.com/Tobarobocon/status/2112084370647593093"
+ },
+ {
+  "year": 2026,
+  "team": "鳥羽商船A",
+  "school": "鳥羽商船",
+  "kind": "X",
+  "account": "@toba_kosen",
+  "date": "2026/10/20",
+  "summary": "鳥羽商船高専の公式アカウントが顧問から聞いた大会当日の裏話。部品が破損して歯車がうまくかみ合わず、まともに動かない状態になったが、学生が瞬間接着剤とテープで補修して本番に間に合わせた（続く投稿で説明）。",
+  "url": "https://x.com/toba_kosen/status/2112433186827591687"
+ },
+ {
+  "year": 2026,
+  "team": "鳥羽商船A",
+  "school": "鳥羽商船",
+  "kind": "X",
+  "account": "@Tobarobocon",
+  "date": "2026/10/18",
+  "summary": "鳥羽商船ロボコン部の投稿。A・Bとも予選リーグ1勝1敗で敗退したが、半年かけて作ったロボットを見せられたとのお礼。",
+  "url": "https://x.com/Tobarobocon/status/2111825385805791429"
+ },
+ {
+  "year": 2026,
+  "team": "鳥羽商船B",
+  "school": "鳥羽商船",
+  "kind": "X",
+  "account": "@Tobarobocon",
+  "date": "2026/10/18",
+  "summary": "鳥羽商船ロボコン部の投稿。A・Bとも予選リーグ1勝1敗で敗退したが、半年かけて作ったロボットを見せられたとのお礼。",
+  "url": "https://x.com/Tobarobocon/status/2111825385805791429"
+ },
+ {
+  "year": 2026,
+  "team": "豊田B",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@tnct_roboconb",
+  "date": "2026/10/18",
+  "summary": "豊田高専ロボコンBチームの投稿。東海北陸地区大会でデザイン賞を受けたとの報告。",
+  "url": "https://x.com/tnct_roboconb/status/2111775646296985921"
+ },
+ {
+  "year": 2026,
+  "team": "豊田B",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@purukogi_2",
+  "date": "2026/10/18",
+  "summary": "豊田Bのピットでメイン回路を担当したメンバーの投稿。会場で回路トラブルが一つも起きなかったとのこと。デザイン賞は1年生の装飾のおかげ。",
+  "url": "https://x.com/purukogi_2/status/2111780797678285077"
+ },
+ {
+  "year": 2026,
+  "team": "国際B",
+  "school": "国際",
+  "kind": "X",
+  "account": "@ICTKanazawa",
+  "date": "2026/10/18",
+  "summary": "国際高専の公式アカウントによるBチームの紹介。ロボットは犬鷲（イヌワシ）をイメージして製作した。",
+  "url": "https://x.com/ICTKanazawa/status/2111696670706831453"
+ },
+ {
+  "year": 2026,
+  "team": "国際B",
+  "school": "国際",
+  "kind": "X",
+  "account": "@catofudesu",
+  "date": "2026/10/18",
+  "summary": "国際Bの操縦者の投稿。相手に移動バケツへ1枚も入れさせず、確実に4点を取って勝ったとのこと。",
+  "url": "https://x.com/catofudesu/status/2111689848314859741"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜B",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@sora81dev",
+  "date": "2026/10/19",
+  "summary": "岐阜Bのメンバーの投稿。来年は地区大会で優勝して全国に行くとの意気込み。",
+  "url": "https://x.com/sora81dev/status/2112163552949887120"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@sakuwatasandao",
+  "date": "2026/10/18",
+  "summary": "岐阜Aのメンバーの投稿。来年も全国を目指し、オフシーズンに研究と整備がしやすい独立ステアリングの足回りを作りたいとのこと。",
+  "url": "https://x.com/sakuwatasandao/status/2111758989793112322"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@waravi16yu",
+  "date": "2026/10/18",
+  "summary": "岐阜Aのマスコット（ひつじ3匹）の紹介。3匹とも1年生が作った。",
+  "url": "https://x.com/waravi16yu/status/2111698008970772653"
+ },
+ {
+  "year": 2026,
+  "team": "明石A",
+  "school": "明石",
+  "kind": "X",
+  "account": "@akashikosen",
+  "date": "2026/10/20",
+  "summary": "明石高専の公式アカウント。Aチームが近畿地区大会で特別賞を受け、2年連続の全国大会出場を決めたとの報告。",
+  "url": "https://x.com/akashikosen/status/2112415029131976984"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬A",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@hinomaru_ooo",
+  "date": "2026/10/10",
+  "summary": "広瀬A「星雑巾」の機構紹介スレッド。足回りはM3508で100mmオムニ4輪。リボルバー装填はGM6020で10本の筒を回し（ギアで連動して向きを保つ）、M2006のラックピニオンでベルト直動へ押し出す。ベルト直動は5065でベルトを回し、アタッチメントでスライダーを押して射出（固定・移動バケツ、旗まで1機構で対応）。ほかにスポンジ付きウレタンベルトでの1枚ずつの給弾、上下の円錐ローラーで回転をかける机用射出、エアシリンダの爪5つで挟む観覧車射出、エアシリンダ開閉の回収アームと自作スライダーの昇降機構。",
+  "url": "https://x.com/hinomaru_ooo/status/2108880750015926428"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬A",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@hinomaru_ooo",
+  "date": "2026/10/11",
+  "summary": "広瀬Aのベルト直動射出機構は、細かい変更も含めて6バージョン作ったとのこと（これまでの部品の写真つき）。",
+  "url": "https://x.com/hinomaru_ooo/status/2109223522921054389"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬A",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@hinomaru_ooo",
+  "date": "2026/10/11",
+  "summary": "広瀬Aの観覧車射出機構の補足。電磁弁ごと観覧車を回しており、エアは鉄の軸の中を通している。",
+  "url": "https://x.com/hinomaru_ooo/status/2109250999252857049"
+ },
+ {
+  "year": 2026,
+  "team": "新居浜A",
+  "school": "新居浜",
+  "kind": "X",
+  "account": "@kAikvvf",
+  "date": "2026/10/11",
+  "summary": "新居浜Aの選手（ゲームパッドで操縦）の投稿。ベルト直動による射出、安定した装填機構、角度調整機構、マスコットを担当。結果は1勝1敗でマブチモーター賞。",
+  "url": "https://x.com/kAikvvf/status/2109252421654659174"
+ },
+ {
+  "year": 2026,
+  "team": "新居浜A",
+  "school": "新居浜",
+  "kind": "X",
+  "account": "@netetra07",
+  "date": "2026/10/13",
+  "summary": "新居浜Aのロボットで使われた無線の通信規格を作った人の投稿。仕様の詳しい説明へのリンクを公開し、他の高専からの意見を募っている。",
+  "url": "https://x.com/netetra07/status/2109885090046283936"
+ },
+ {
+  "year": 2026,
+  "team": "新居浜B",
+  "school": "新居浜",
+  "kind": "X",
+  "account": "@Yuta_red_train1",
+  "date": "2026/10/12",
+  "summary": "新居浜Bのチームリーダー（2年生）の振り返りスレッド。ルール発表の翌日に旗だけを狙うと決め、定荷重ばね・ゴム・ローラーの射出を試したがうまくいかず、ベルト直動1つだけを搭載。8月25日に初めてスーパー雑巾が旗に掛かり、夏休みに改良型を作った。足回りは4輪オムニで重さ27.40kg、オドメーターで自己位置を求めて旗へ移動する自動制御も用意。当日の試走ではスーパー雑巾4枚中3枚が掛かったが、本番はタブレットとPCの通信が切れて操縦できず0点だった。",
+  "url": "https://x.com/Yuta_red_train1/status/2109620954532061595"
+ },
+ {
+  "year": 2026,
+  "team": "新居浜B",
+  "school": "新居浜",
+  "kind": "X",
+  "account": "@3fuuuu___",
+  "date": "2026/10/11",
+  "summary": "新居浜Bでフロントエンドと無線を担当したメンバーの投稿。本番は通信エラーでほとんど動けなかったが、試走では旗掛けを3回続けて決められていたとして動画を公開。",
+  "url": "https://x.com/3fuuuu___/status/2109212251861532681"
+ },
+ {
+  "year": 2026,
+  "team": "高知A",
+  "school": "高知",
+  "kind": "X",
+  "account": "@Kochi_Kosen",
+  "date": "2026/10/19",
+  "summary": "高知高専の公式アカウント。四国地区大会で高知Aが技術賞、高知Bがアイデア賞を受けたとの報告。",
+  "url": "https://x.com/Kochi_Kosen/status/2112046552768532870"
+ },
+ {
+  "year": 2026,
+  "team": "高知B",
+  "school": "高知",
+  "kind": "X",
+  "account": "@Kochi_Kosen",
+  "date": "2026/10/19",
+  "summary": "高知高専の公式アカウント。四国地区大会で高知Aが技術賞、高知Bがアイデア賞を受けたとの報告。",
+  "url": "https://x.com/Kochi_Kosen/status/2112046552768532870"
+ },
+ {
+  "year": 2026,
+  "team": "八戸A",
+  "school": "八戸",
+  "kind": "X",
+  "account": "@Hachinohe_Kosen",
+  "date": "2026/10/4",
+  "summary": "八戸高専の公式アカウント。東北地区大会で八戸Aが田中貴金属グループ賞、八戸Bがデンソー賞を受けたとの報告。",
+  "url": "https://x.com/Hachinohe_Kosen/status/2106694510453657746"
+ },
+ {
+  "year": 2026,
+  "team": "八戸B",
+  "school": "八戸",
+  "kind": "X",
+  "account": "@Hachinohe_Kosen",
+  "date": "2026/10/4",
+  "summary": "八戸高専の公式アカウント。東北地区大会で八戸Aが田中貴金属グループ賞、八戸Bがデンソー賞を受けたとの報告。",
+  "url": "https://x.com/Hachinohe_Kosen/status/2106694510453657746"
+ },
+ {
+  "year": 2026,
+  "team": "福島A",
+  "school": "福島",
+  "kind": "X",
+  "account": "@Daisuke7190",
+  "date": "2026/10/4",
+  "summary": "福島Aのチームリーダーの投稿。初めてのチームリーダーとして本田技研工業賞を受けた。来年こそ優勝して全国に行きたいとのこと。",
+  "url": "https://x.com/Daisuke7190/status/2106666116013793789"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬A",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@sncthc_science",
+  "date": "2026/10/4",
+  "summary": "仙台高専広瀬の科学部（ロボコン）の投稿。広瀬Aがアイデア賞、広瀬Bが優勝して全国大会出場を決めたとの報告。",
+  "url": "https://x.com/sncthc_science/status/2106661157616623838"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬B",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@sncthc_science",
+  "date": "2026/10/4",
+  "summary": "仙台高専広瀬の科学部（ロボコン）の投稿。広瀬Aがアイデア賞、広瀬Bが優勝して全国大会出場を決めたとの報告。",
+  "url": "https://x.com/sncthc_science/status/2106661157616623838"
+ },
+ {
+  "year": 2026,
+  "team": "徳山B",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/14",
+  "summary": "徳山高専の部によるBチームのコメント紹介の続き（選手兼メイン設計）。「万流」は大きく長い筒10本をまとめて丸ごと回転させながら射出する機構が見どころ。サイズ制限のため筒を短くする案も出たが、設計者が譲らず長い筒のまま仕上げた。",
+  "url": "https://x.com/TCTMechatro/status/2110298944412827921"
+ },
+ {
+  "year": 2026,
+  "team": "徳山B",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/14",
+  "summary": "Bチームの選手兼制御担当のコメント。主砲の前方下部に距離も測れるカメラ（RealSense）を付け、旗の位置を画像認識して機体の位置合わせを補助した。映像と検出結果はコントローラに付けたスマートフォンに送って表示。自動制御までは実装しきれなかったのが心残りとのこと。",
+  "url": "https://x.com/TCTMechatro/status/2110299169655251326"
+ },
+ {
+  "year": 2026,
+  "team": "徳山B",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/14",
+  "summary": "Bチームの排出機構設計者のコメント。初めてメイン設計を任されたが発射機構はうまくいかず他のメンバーに任せ、その代わりに雑巾の排出機構を設計。本番ではこの機構が正しく動き、相手の戦術の幅を狭められた。発射機構で時間を使ってしまった反省から、相談と情報共有を増やしたいとのこと。",
+  "url": "https://x.com/TCTMechatro/status/2110299472127521135"
+ },
+ {
+  "year": 2026,
+  "team": "徳山B",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/14",
+  "summary": "Bチームの回路担当のコメント。WAGOのコネクタやXT60など新しい部品を取り入れ、プリント基板も使って電装を効率化し、以前よりかなり短い時間で配線を終えられた。本番で回路トラブルは起きなかった。",
+  "url": "https://x.com/TCTMechatro/status/2110300501418086824"
+ },
+ {
+  "year": 2026,
+  "team": "徳山B",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/14",
+  "summary": "Bチームのチームリーダー兼制御担当のコメント。今年からマイコンをSTM32に変えたが、手動操作で大きなトラブルはなかった。会場でリミットスイッチを調整することになったのが反省点。操縦者と話し合い、操縦しやすいコントローラを作れたとのこと。",
+  "url": "https://x.com/TCTMechatro/status/2110300673845899703"
+ },
+ {
+  "year": 2026,
+  "team": "徳山A",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/7",
+  "summary": "徳山高専の部によるAチームのコメント紹介（チームリーダー兼制御）。STM32とPCを使った新しい制御に挑戦。自作したRoboMasterモーター用ライブラリは設定ファイル1つでモーターの設定を変えられ、センサーやプロポ用モーターもCAN通信でまとめて管理している。本番では動きが少しぎこちなかった。",
+  "url": "https://x.com/TCTMechatro/status/2107736443686887837"
+ },
+ {
+  "year": 2026,
+  "team": "沼津B",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@Asuka_Robo",
+  "date": "2026/10/19",
+  "summary": "沼津B「KAGUYA」で設計と選手を担当したメンバーの振り返り。2年生のチームで初めて手がけたロボットで、準決勝まで勝ち進みマブチモーター賞を受けた。",
+  "url": "https://x.com/Asuka_Robo/status/2111985988730052734"
+ },
+ {
+  "year": 2026,
+  "team": "米子A",
+  "school": "米子",
+  "kind": "X",
+  "account": "@yonago_kosen",
+  "date": "2026/10/20",
+  "summary": "米子高専の公式アカウント。Aチームが中国地区大会で2年連続の優勝、3年連続の全国大会出場を決めたとの報告。全国大会は11月15日、両国国技館。",
+  "url": "https://x.com/yonago_kosen/status/2112471221703213485"
+ },
+ {
+  "year": 2026,
+  "team": "茨城B",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@sarusalike",
+  "date": "2026/9/26",
+  "summary": "茨城Bで雑巾を吸って回収するファンと全体の組み立てを担当したメンバーの解説スレッド（動画つき）。ファンは下から外壁・回転ファン・固定ファン・ヒートシンク兼モータ台・ブラシレスモータの5層。回転ファンの遠心力で空気を吸い、固定ファンで流れを整えてモータを冷やす。部品の継ぎ目からの空気漏れは凸部とパッキンでふさいだ。初めて作ったファンだが大会中一度も壊れなかった。",
+  "url": "https://x.com/sarusalike/status/2103791184758071733"
+ },
+ {
+  "year": 2026,
+  "team": "茨城B",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@sarusalike",
+  "date": "2026/9/26",
+  "summary": "同じスレッドの続き。6月までは上の部品だけで吸っていたため雑巾が吸い込みで変形した。先輩の助言で下にタッパーを足し、吸引穴を外側に分散させて雑巾を平らなまま吸い付けるようにした（穴の合計面積は元の1つ穴と同じ）。上の部品とタッパーの継ぎ目はグルーガンで封じた。羽根の角度はまだ計算しておらず、効率は改善の余地があるとのこと。",
+  "url": "https://x.com/sarusalike/status/2103791207847727380"
+ },
+ {
+  "year": 2026,
+  "team": "群馬A",
+  "school": "群馬",
+  "kind": "X",
+  "account": "@tsukkuntata",
+  "date": "2026/9/22",
+  "summary": "群馬Aで雑巾の装填機構を担当したメンバーの投稿。本番では装填機構が動かなかったが、よい経験になったとして、開発段階の装填機構の動画を紹介。",
+  "url": "https://x.com/tsukkuntata/status/2102287189044600948"
+ },
+ {
+  "year": 2026,
+  "team": "群馬B",
+  "school": "群馬",
+  "kind": "X",
+  "account": "@Ryu_roboken39",
+  "date": "2026/9/21",
+  "summary": "群馬Bで雑巾の装填機構を担当したメンバーの振り返りスレッド（全6投稿の1本目）。予選で敗退したが、1試合目で装填機構が動き、射出機構も想定どおりに動いて、大会までに機構を仕上げられたとのこと。",
+  "url": "https://x.com/Ryu_roboken39/status/2101953301503995967"
+ },
+ {
+  "year": 2026,
+  "team": "釧路B",
+  "school": "釧路",
+  "kind": "X",
+  "account": "@High7tama",
+  "date": "2026/9/27",
+  "summary": "釧路Bで加工と、人が雑巾を込める「人間装填」の機構を担当したメンバーの投稿。地区大会はベスト4で、マブチモーター賞と技術賞を受け、4年間で最高の成績だったとの振り返り。",
+  "url": "https://x.com/High7tama/status/2104164114771964000"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@kzs321",
+  "date": "2026/9/20",
+  "summary": "茨城Aの操縦者の投稿。地区大会優勝を喜び、全国大会が目標。制御系の解説は全国大会のあとに出すとのこと。",
+  "url": "https://x.com/kzs321/status/2101617073541767524"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@NITIC_RobotClub",
+  "date": "2026/9/20",
+  "summary": "茨城高専ロボット研究部の公式アカウント。Aチームが関東甲信越地区大会で優勝したとの報告。全国優勝に向けてさらに改良を続けるとのこと。",
+  "url": "https://x.com/NITIC_RobotClub/status/2101629319248486455"
+ },
+ {
+  "year": 2026,
+  "team": "旭川A",
+  "school": "旭川",
+  "kind": "X",
+  "account": "@Asahikawa_Robo",
+  "date": "2026/9/27",
+  "summary": "旭川高専ロボット・ラボラトリの公式アカウント。Aチームが北海道地区大会で優勝し、15年連続の全国出場を決めたとの報告。今後は「チーム旭川」として活動する。",
+  "url": "https://x.com/Asahikawa_Robo/status/2104152750770802996"
+ },
+ {
+  "year": 2026,
+  "team": "旭川B",
+  "school": "旭川",
+  "kind": "X",
+  "account": "@Asahikawa_Robo",
+  "date": "2026/10/17",
+  "summary": "旭川高専ロボット・ラボラトリの公式アカウント。高専祭で今年のBチームの機体と、2025年全国優勝の「天旋」などを展示するとの案内。",
+  "url": "https://x.com/Asahikawa_Robo/status/2111263490250068271"
+ },
+ {
+  "year": 2026,
+  "team": "長岡A",
+  "school": "長岡",
+  "kind": "X",
+  "account": "@Kohaku_robo",
+  "date": "2026/9/25",
+  "summary": "長岡A「トキをかける雑巾」の設計者の、最後のロボコンを終えての投稿。機体の見た目とデザインを最後まで美しく、目を引くものにこだわったことを誇りにしているとのこと。",
+  "url": "https://x.com/Kohaku_robo/status/2103486886555922898"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@nittc_robo",
+  "date": "2026/9/20",
+  "summary": "東京高専ロボコンゼミの公式アカウント。関東甲信越地区大会でAチームがアイデア賞と全国大会への推薦、Bチームが安川電機の特別賞を受けたとの報告。",
+  "url": "https://x.com/nittc_robo/status/2101608571654013369"
+ },
+ {
+  "year": 2026,
+  "team": "東京B",
+  "school": "東京",
+  "kind": "X",
+  "account": "@nittc_robo",
+  "date": "2026/9/20",
+  "summary": "東京高専ロボコンゼミの公式アカウント。関東甲信越地区大会でAチームがアイデア賞と全国大会への推薦、Bチームが安川電機の特別賞を受けたとの報告。",
+  "url": "https://x.com/nittc_robo/status/2101608571654013369"
+ },
+ {
+  "year": 2026,
+  "team": "都立品川A",
+  "school": "都立品川",
+  "kind": "X",
+  "account": "@SangikosenTmcit",
+  "date": "2026/10/21",
+  "summary": "東京都立産業技術高専の公式アカウント。関東甲信越地区大会で品川キャンパスのA「ももんが引越し大作戦」がローム特別賞、B「鮫sキッチン」がHonda特別賞を受けたとの報告。",
+  "url": "https://x.com/SangikosenTmcit/status/2112754978238709917"
+ },
+ {
+  "year": 2026,
+  "team": "都立品川B",
+  "school": "都立品川",
+  "kind": "X",
+  "account": "@SangikosenTmcit",
+  "date": "2026/10/21",
+  "summary": "東京都立産業技術高専の公式アカウント。関東甲信越地区大会で品川キャンパスのA「ももんが引越し大作戦」がローム特別賞、B「鮫sキッチン」がHonda特別賞を受けたとの報告。",
+  "url": "https://x.com/SangikosenTmcit/status/2112754978238709917"
+ },
+ {
+  "year": 2026,
+  "team": "福井A",
+  "school": "福井",
+  "kind": "X",
+  "account": "@Fukui_No_Hito",
+  "date": "2026/10/21",
+  "summary": "福井高専のメンバーの投稿。5月までに足回りと射出機構の根幹を作って後輩に引き継ぎ、そのチームが優勝したとのこと。自分は会計だけを担当し、機構の解説はほかのメンバーに任せる。",
+  "url": "https://x.com/Fukui_No_Hito/status/2112776803865735173"
+ },
+ {
+  "year": 2026,
+  "team": "国際A",
+  "school": "国際",
+  "kind": "X",
+  "account": "@ICTKanazawa",
+  "date": "2026/10/21",
+  "summary": "国際高専の公式アカウント。Aチームが全国大会のエキシビションに出場することになり、国技館で寸劇を披露したあと、独特な機構で雑巾を投げるとの告知。",
+  "url": "https://x.com/ICTKanazawa/status/2112857317897388107"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@tolegy50169",
+  "date": "2026/10/23",
+  "summary": "沼津Aの操縦・回路担当の投稿。昨年は基板の動作が不安定で機構の動きに大きな制約が出ていた。今年は基板を丁寧に実装し直し、マイコンのプログラムも直して安定して動くようになった。不安定の原因は発振子が正しく使えていなかったことだったと説明。",
+  "url": "https://x.com/tolegy50169/status/2113622419248410813"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@tolegy50169",
+  "date": "2026/10/23",
+  "summary": "沼津Aで操縦と回路を担当したメンバーの振り返り。旗に雑巾をかけることを狙っていたが、地区大会ではその様子を見せられず悔しかったとのこと。",
+  "url": "https://x.com/tolegy50169/status/2113622276067508602"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@NIT_NumazuKOSEN",
+  "date": "2026/10/21",
+  "summary": "沼津高専の公式アカウント。Aチーム「砲永」は人の手を使わずロボットだけで雑巾の装填から射出までを行う機構に挑戦したと紹介。Bチーム「KAGUYA」はベスト4で、両チームとも特別賞（写真あり）。",
+  "url": "https://x.com/NIT_NumazuKOSEN/status/2112755961161253052"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜B",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@sora81dev",
+  "date": "2026/10/18",
+  "summary": "岐阜B「きのどく牛舎」の制御担当の振り返り。メイン基板とコントローラーとの通信を作り、制御にFreeRTOSを採用。設計ではエンコーダの固定具、回路ではエアシリンダー用の臨時基板を担当した。トラブルが重なり、大会では動く姿を見せられなかったとのこと（写真あり）。",
+  "url": "https://x.com/sora81dev/status/2111775504764404028"
+ },
+ {
+  "year": 2026,
+  "team": "津山B",
+  "school": "津山",
+  "kind": "X",
+  "account": "@tsuyamarobotech",
+  "date": "2026/10/21",
+  "summary": "津山高専ロボコン部の投稿。「投擲王 ヨコナゲイナー」が全国大会のエキシビションに出ることが決まった。ロボットを「spec2」に進化させるとほのめかしている（写真あり）。",
+  "url": "https://x.com/tsuyamarobotech/status/2112849673300136286"
+ },
+ {
+  "year": 2026,
+  "team": "国際B",
+  "school": "国際",
+  "kind": "X",
+  "account": "@ICTKanazawa",
+  "date": "2026/10/24",
+  "summary": "国際高専の公式アカウント。1・2年生のBチームのロボットが白山麓キャンパスに戻ってきたとの報告。大きなイヌワシの装飾がついている（写真あり）。",
+  "url": "https://x.com/ICTKanazawa/status/2113832720006828535"
+ },
+ {
+  "year": 2026,
+  "team": "豊田B",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@ARO0203dayo",
+  "date": "2026/10/18",
+  "summary": "豊田Bで装飾を担当したメンバーの投稿。体調を崩してほとんど作業できなかったが、デザイン賞を受けられてうれしいとのこと。",
+  "url": "https://x.com/ARO0203dayo/status/2111834788244169163"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@axiz54853254",
+  "date": "2026/10/26",
+  "summary": "沼津Aの設計担当メンバーが、雑巾昇降機構のCAD画像を公開。角パイプのフレームの中に、ベルトとプーリーで雑巾を持ち上げる昇降機構が組み込まれた構成が分かる。本人は「完成度は設計者人生で一番」と評価している。",
+  "url": "https://x.com/axiz54853254/status/2114373468389257611"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@axiz54853254",
+  "date": "2026/10/25",
+  "summary": "沼津Aの設計担当メンバーが、足回りフレームのCAD画像（上から見た図）を公開。角パイプを格子状に組んだ四角いフレームで、四隅に車輪のユニットが付く。本人は「癖の出た」フレームと書いている。",
+  "url": "https://x.com/axiz54853254/status/2114370365187362932"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@axiz54853254",
+  "date": "2026/10/26",
+  "summary": "沼津Aの足回りフレームの製作途中の写真。機構の位置を決めてから角パイプを足し、アルミ板でつないで組む作り方で、四隅にモーター付きのオムニホイールが付いた状態が分かる。",
+  "url": "https://x.com/axiz54853254/status/2114400422043730385"
+ },
+ {
+  "year": 2026,
+  "team": "都城A",
+  "school": "都城",
+  "kind": "X",
+  "account": "@nangokumiyano",
+  "date": "2026/10/25",
+  "summary": "都城Aで足回りを担当したメンバーの投稿。チーム内で「風車型」と呼んでいたオムニホイールの足回りで、写真では四隅のモーターとホイールが車体に対して斜めに付き、上から見ると風車の羽根のように並ぶ配置になっている。アルミの角パイプを格子状に組んだフレーム。",
+  "url": "https://x.com/nangokumiyano/status/2114324853763567741"
+ },
+ {
+  "year": 2026,
+  "team": "サレジオB",
+  "school": "サレジオ",
+  "kind": "X",
+  "account": "@salerobo",
+  "date": "2026/10/23",
+  "summary": "サレジオ高専ロボコンプロジェクトの告知。地区大会で旗に雑巾を掛けて100点を取ったロボット（サレジオB）を、学園祭（育英祭）で展示する。",
+  "url": "https://x.com/salerobo/status/2113457919618642170"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@SangikosenTmcit",
+  "date": "2026/10/23",
+  "summary": "都立産技高専の結果報告。関東甲信越地区大会で荒川キャンパスAチーム「荒技」が準優勝して全国大会に出場し、Bチーム「雅武者荒」は特別賞（マブチモーター）を受賞した。",
+  "url": "https://x.com/SangikosenTmcit/status/2113477062803820931"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川B",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@SangikosenTmcit",
+  "date": "2026/10/23",
+  "summary": "都立産技高専の結果報告。関東甲信越地区大会で荒川キャンパスBチーム「雅武者荒」が特別賞（マブチモーター）を受賞。Aチーム「荒技」は準優勝で全国大会へ。",
+  "url": "https://x.com/SangikosenTmcit/status/2113477062803820931"
+ },
+ {
+  "year": 2026,
+  "team": "近大A",
+  "school": "近大",
+  "kind": "X",
+  "account": "@kutcPR",
+  "date": "2026/10/11",
+  "summary": "近大高専公式の地区大会前の紹介（動画付き）。Aチーム「CLOTH」は、1つの装填機構から2種類の射出機構に雑巾を振り分けて撃ち分ける構成。",
+  "url": "https://x.com/kutcPR/status/2109206425490858293"
+ },
+ {
+  "year": 2026,
+  "team": "近大B",
+  "school": "近大",
+  "kind": "X",
+  "account": "@kutcPR",
+  "date": "2026/10/11",
+  "summary": "近大高専公式の地区大会前の紹介（動画付き）。Bチーム「名張放物線機構」は、アームを回す遠心力で雑巾を放物線を描くように遠くへ投げる構成。",
+  "url": "https://x.com/kutcPR/status/2109206425490858293"
+ },
+ {
+  "year": 2026,
+  "team": "近大A",
+  "school": "近大",
+  "kind": "X",
+  "account": "@kutcPR",
+  "date": "2026/10/26",
+  "summary": "近大高専公式の近畿地区大会のお礼。Aチーム「CLOTH」は特別賞（田中貴金属）を受賞。全国大会には進めなかった。",
+  "url": "https://x.com/kutcPR/status/2114566437792776207"
+ },
+ {
+  "year": 2026,
+  "team": "近大B",
+  "school": "近大",
+  "kind": "X",
+  "account": "@kutcPR",
+  "date": "2026/10/26",
+  "summary": "近大高専公式の近畿地区大会のお礼。Bチーム「名張放物線機構」は特別賞（セメダイン）を受賞。全国大会には進めなかった。",
+  "url": "https://x.com/kutcPR/status/2114566437792776207"
+ },
+ {
+  "year": 2026,
+  "team": "近大A",
+  "school": "近大",
+  "kind": "X",
+  "account": "@Real_Nsan",
+  "date": "2026/10/11",
+  "summary": "近大Aで制御と操縦を担当したメンバーの振り返り。予選で得点できずに敗退し、来年に向けて学び直して強くなりたいとのこと。",
+  "url": "https://x.com/Real_Nsan/status/2109215745188204569"
+ },
+ {
+  "year": 2026,
+  "team": "新居浜B",
+  "school": "新居浜",
+  "kind": "X",
+  "account": "@kuromamekuroame",
+  "date": "2026/10/12",
+  "summary": "新居浜Bの1年生ピットメンバーの振り返り。タブレットからの通信まわりを支えたが、試走では動いたロボットが本番の試合では動かなかった。来年は制御と通信の改善を目指すとのこと。",
+  "url": "https://x.com/kuromamekuroame/status/2109565285946818855"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@mct_relations",
+  "date": "2026/10/8",
+  "summary": "松江高専広報の結果報告。中国地区大会に出た2チームはどちらも決勝トーナメントに進めなかったが、Aチーム「RA1GE」は特別賞（マブチモーター）を受賞。写真はInstagramで公開。",
+  "url": "https://x.com/mct_relations/status/2107970731296670067"
+ },
+ {
+  "year": 2026,
+  "team": "松江B",
+  "school": "松江",
+  "kind": "X",
+  "account": "@mct_relations",
+  "date": "2026/10/8",
+  "summary": "松江高専広報の結果報告。中国地区大会に出た2チームはどちらも決勝トーナメントに進めなかったが、Bチーム「縁舞」は特別賞（デンソー）を受賞。写真はInstagramで公開。",
+  "url": "https://x.com/mct_relations/status/2107970731296670067"
+ },
+ {
+  "year": 2026,
+  "team": "弓削A",
+  "school": "弓削",
+  "kind": "X",
+  "account": "@r3j3irjcoirj",
+  "date": "2026/10/11",
+  "summary": "弓削A（そうじ係かみりん）のメンバーによる機体解説スレッド。主砲「二六式連発砲『閃雷』」は、筒状に丸めた雑巾を上下2つのローラーで挟み、回転の勢いで撃ち出す方式。2022年の高知Aのロボットを参考にした。",
+  "url": "https://x.com/r3j3irjcoirj/status/2109235445355966808"
+ },
+ {
+  "year": 2026,
+  "team": "弓削A",
+  "school": "弓削",
+  "kind": "X",
+  "account": "@r3j3irjcoirj",
+  "date": "2026/10/11",
+  "summary": "弓削Aのローラー射出の発想の元は、紙飛行機を飛ばした過去の大会のロボット。3Dプリンタで作った試作機で雑巾が飛んだため、この構造を採用した。",
+  "url": "https://x.com/r3j3irjcoirj/status/2109236192902517033"
+ },
+ {
+  "year": 2026,
+  "team": "弓削A",
+  "school": "弓削",
+  "kind": "X",
+  "account": "@r3j3irjcoirj",
+  "date": "2026/10/11",
+  "summary": "弓削Aの仰角調整について。後輩が設計した昇降機構は重量バランスの問題で外し、代わりに上下ローラーの回転速度差（エアガンのホップアップのような仕組み）で弾道の高さを調整した。",
+  "url": "https://x.com/r3j3irjcoirj/status/2109236785192845793"
+ },
+ {
+  "year": 2026,
+  "team": "弓削A",
+  "school": "弓削",
+  "kind": "X",
+  "account": "@r3j3irjcoirj",
+  "date": "2026/10/11",
+  "summary": "弓削Aの射出機構の後ろ半分（装填部）は、九二式重機関銃の給弾方式を参考にした設計とのこと（写真あり）。",
+  "url": "https://x.com/r3j3irjcoirj/status/2109238803793842437"
+ },
+ {
+  "year": 2026,
+  "team": "弓削A",
+  "school": "弓削",
+  "kind": "X",
+  "account": "@r3j3irjcoirj",
+  "date": "2026/10/11",
+  "summary": "弓削Aの装填方式の検討過程。マガジンはルール上不可、クリップ類は判断が難しいか壊れやすく、ベルト給弾は一度に10枚ほどしか載らず効率が悪いため見送った。",
+  "url": "https://x.com/r3j3irjcoirj/status/2109246006051434588"
+ },
+ {
+  "year": 2026,
+  "team": "弓削A",
+  "school": "弓削",
+  "kind": "X",
+  "account": "@r3j3irjcoirj",
+  "date": "2026/10/11",
+  "summary": "弓削Aの装填の仕組み。保弾板に並べた雑巾を後ろから押して薬室に送り、ローラーに渡して撃つ構想だったが、製作の遅れで重力で落とす保弾板に変更。滑りを良くするため板にアルミホイルを巻いた。",
+  "url": "https://x.com/r3j3irjcoirj/status/2109250002807898551"
+ },
+ {
+  "year": 2026,
+  "team": "近大A",
+  "school": "近大",
+  "kind": "X",
+  "account": "@TomioBrandoRBCN",
+  "date": "2026/10/11",
+  "summary": "近大A（CLOTH）の副設計兼チームリーダーの振り返り。0点に終わり、2種類の射出機構の両方に雑巾を振り分ける自動装填機構を本番で見せられなかったことを悔やんでいる。",
+  "url": "https://x.com/TomioBrandoRBCN/status/2109270420709081479"
+ },
+ {
+  "year": 2026,
+  "team": "近大A",
+  "school": "近大",
+  "kind": "X",
+  "account": "@TomioBrandoRBCN",
+  "date": "2026/10/11",
+  "summary": "近大Aの副設計としての担当の説明。主設計の機構の修正を手伝ったほか、バケツ回収の機構と、ばねを使った直動射出の機構を設計した。",
+  "url": "https://x.com/TomioBrandoRBCN/status/2109270543170167060"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@axiz54853254",
+  "date": "2026/10/27",
+  "summary": "沼津Aの設計担当メンバーが、公開済みの雑巾昇降機構について質問に答えた投稿。ベルトで直接駆動する「ベル直」に見えるが実は違い、エアシリンダのストロークをベルトで増幅して雑巾を持ち上げる仕組みだと説明している。",
+  "url": "https://x.com/axiz54853254/status/2115085195728781602"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@axiz54853254",
+  "date": "2026/10/28",
+  "summary": "沼津Aの設計担当メンバーの補足。先に上げた雑巾昇降機構の画像はエアシリンダを付ける前のもので、本来はエアシリンダが付いた状態になると、取り付け後の画像を添えて説明している。",
+  "url": "https://x.com/axiz54853254/status/2115222153499185437"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@tolegy50169",
+  "date": "2026/10/23",
+  "summary": "沼津Aの操縦・回路担当の振り返り（続き）。基板の作り直しが7月までかかり機械班に負担をかけたが、その後は回路が一度も壊れず、エキシビションまで動き続けた。",
+  "url": "https://x.com/tolegy50169/status/2113622491902177756"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@tolegy50169",
+  "date": "2026/10/23",
+  "summary": "沼津Aの操縦・回路担当の振り返り（続き）。射出機構ごとに動作のシーケンスが組まれていて、2試合目に誤って別の射出機構のシーケンスを起動してしまい、雑巾1〜2枚分のチャンスを逃したのが一番の後悔だという。",
+  "url": "https://x.com/tolegy50169/status/2113623431895994709"
+ },
+ {
+  "year": 2026,
+  "team": "福島A",
+  "school": "福島",
+  "kind": "X",
+  "account": "@Fu_Machine_34",
+  "date": "2026/10/23",
+  "summary": "福島Aで設計と操縦を担当したメンバーの振り返り。ノーマル雑巾はローラーで射出する方式で、その射出部と雑巾の装填機構、全体設計を担当した。制御の調整期間を十分に取れず、大会では得点できなかったことを課題に挙げている。",
+  "url": "https://x.com/Fu_Machine_34/status/2113291905585021397"
+ },
+ {
+  "year": 2026,
+  "team": "福島A",
+  "school": "福島",
+  "kind": "X",
+  "account": "@Fu_Machine_34",
+  "date": "2026/10/23",
+  "summary": "福島Aで設計と操縦を担当したメンバーのお礼の投稿。東北地区大会（八戸高専）で福島Aは技術賞（ホンダ）を受賞した。",
+  "url": "https://x.com/Fu_Machine_34/status/2113287566925635998"
+ },
+ {
+  "year": 2026,
+  "team": "都城A",
+  "school": "都城",
+  "kind": "X",
+  "account": "@nangokumiyano",
+  "date": "2026/10/25",
+  "summary": "都城Aの足回り担当が「風車型」オムニを選んだ理由を説明。設計が簡単なこと、足のユニットを車体の端に寄せられること、上から見たときの占有面積が小さいことを挙げている。",
+  "url": "https://x.com/nangokumiyano/status/2114342355184787607"
+ },
+ {
+  "year": 2026,
+  "team": "都城A",
+  "school": "都城",
+  "kind": "X",
+  "account": "@nangokumiyano",
+  "date": "2026/10/26",
+  "summary": "都城Aの足回り担当の補足。「風車型」オムニでは、旋回は回りたい方向にモーターを回して行う。直進などではモーター2つしか効かないのが弱点だという。",
+  "url": "https://x.com/nangokumiyano/status/2114379355979989272"
+ },
+ {
+  "year": 2026,
+  "team": "石川A",
+  "school": "石川",
+  "kind": "X",
+  "account": "@Rye_himajanai",
+  "date": "2026/10/19",
+  "summary": "石川Aで雑巾の供給・昇降機構と全体設計、マネジメントを担当したメンバーの振り返り。全国大会には届かなかったが、エキシビションを含めて見せたかった動きは見せられたという。",
+  "url": "https://x.com/Rye_himajanai/status/2112024816580710523"
+ },
+ {
+  "year": 2026,
+  "team": "石川A",
+  "school": "石川",
+  "kind": "X",
+  "account": "@Rye_himajanai",
+  "date": "2026/10/26",
+  "summary": "石川Aの全体設計担当が、ロボットの足回り（車体の裏側）の写真を公開した投稿。沼津Aの設計担当による足回りフレーム公開の流れに乗ったもの。",
+  "url": "https://x.com/Rye_himajanai/status/2114377725200986189"
+ },
+ {
+  "year": 2026,
+  "team": "石川A",
+  "school": "石川",
+  "kind": "X",
+  "account": "@Rye_himajanai",
+  "date": "2026/10/26",
+  "summary": "石川Aの全体設計担当がフレームの材料を説明。メインフレームはほとんど20×20の部材で、細かい部分は10×15、ほかに10×10・15×15・10×20も使った。射出機構の衝撃が非常に大きく剛性が必要だったことと、部材の本数を減らしたかったことが理由。",
+  "url": "https://x.com/Rye_himajanai/status/2114388067289354373"
+ },
+ {
+  "year": 2026,
+  "team": "新居浜B",
+  "school": "新居浜",
+  "kind": "X",
+  "account": "@Yuta_red_train1",
+  "date": "2026/10/12",
+  "summary": "新居浜B「投げぞうくん」のメンバーの振り返り。エキシビションでは操作を担当し、旗にスーパー雑巾を掛けることができた。全国大会を逃した悔しさから、来年への意気込みを書いている。",
+  "url": "https://x.com/Yuta_red_train1/status/2109635845431144920"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@axiz54853254",
+  "date": "2026/10/26",
+  "summary": "沼津Aの設計担当メンバーが、先に公開したCADに続いて雑巾昇降機構の実物の写真を公開。角パイプのフレームに組み込まれた、ベルトとプーリーで雑巾を持ち上げる昇降部が実機でどう収まっているかが分かる。",
+  "url": "https://x.com/axiz54853254/status/2114373668981866794"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@axiz54853254",
+  "date": "2026/10/29",
+  "summary": "沼津Aの設計担当メンバーが、雑巾昇降機構の実物写真を引用し、ベルトの張りを調整するテンショナー部分の出来が特に良いと自己評価した投稿。",
+  "url": "https://x.com/axiz54853254/status/2115771013174899198"
+ },
+ {
+  "year": 2026,
+  "team": "阿南B",
+  "school": "阿南",
+  "kind": "X",
+  "account": "@anan_roboken",
+  "date": "2026/10/28",
+  "summary": "阿南高専ロボット研究部が、文部科学大臣の来校時に高専ロボコン2026のロボット「まけまけいっぱい」とCoRE用ロボット「雷閃」を実演して見てもらったと報告（写真あり）。機構の説明はない。",
+  "url": "https://x.com/anan_roboken/status/2115349996698832999"
+ },
+ {
+  "year": 2026,
+  "team": "香川詫間A",
+  "school": "香川詫間",
+  "kind": "X",
+  "account": "@roborobo315",
+  "date": "2026/10/11",
+  "summary": "香川高専詫間キャンパスのロボコン部による四国地区大会の結果報告。Aチームは本田技研工業の特別賞、Bチームは準優勝で全国大会に出場するとのこと（写真あり）。",
+  "url": "https://x.com/roborobo315/status/2109283143790538830"
+ },
+ {
+  "year": 2026,
+  "team": "香川詫間B",
+  "school": "香川詫間",
+  "kind": "X",
+  "account": "@roborobo315",
+  "date": "2026/10/11",
+  "summary": "香川高専詫間キャンパスのロボコン部による四国地区大会の結果報告。Bチームは準優勝で、詫間キャンパス代表として全国大会に出場し、全国優勝を目指すとのこと。Aチームは本田技研工業の特別賞（写真あり）。",
+  "url": "https://x.com/roborobo315/status/2109283143790538830"
+ },
+ {
+  "year": 2026,
+  "team": "長野B",
+  "school": "長野",
+  "kind": "X",
+  "account": "@Robo_NaganoNCT",
+  "date": "2026/11/1",
+  "summary": "長野B「一確千巾！まねき」の機構紹介スレッドの最初の投稿。1・2年生中心の下級生チーム。リンク機構の動きを招き猫の「招く」動作に重ね、1枚ずつ確実に投射することを目指したと説明。",
+  "url": "https://x.com/Robo_NaganoNCT/status/2116817615691845759"
+ },
+ {
+  "year": 2026,
+  "team": "長野B",
+  "school": "長野",
+  "kind": "X",
+  "account": "@Robo_NaganoNCT",
+  "date": "2026/11/1",
+  "summary": "左手のリンク投射機構。てこクランクの早戻り運動を使った4節リンクで、投射の瞬間に加速して雑巾を投げる。投射角度を変えられ、すべてのゴールに投げ分ける予定だったとのこと。開発時の実験動画つき。",
+  "url": "https://x.com/Robo_NaganoNCT/status/2116817632829866447"
+ },
+ {
+  "year": 2026,
+  "team": "長野B",
+  "school": "長野",
+  "kind": "X",
+  "account": "@Robo_NaganoNCT",
+  "date": "2026/11/1",
+  "summary": "リンク投射の装填機構。ブロワの吸気側をリンク先端までダクトでつなぎ、雑巾を吸い付けながらサーボで先端を回して巻き取って装填する。回転部から空気が漏れないようロータリージョイントを使っている。",
+  "url": "https://x.com/Robo_NaganoNCT/status/2116817651196649709"
+ },
+ {
+  "year": 2026,
+  "team": "長野B",
+  "school": "長野",
+  "kind": "X",
+  "account": "@Robo_NaganoNCT",
+  "date": "2026/11/1",
+  "summary": "雑巾台。10枚をセットでき、塩ビ管の中のバネで残り枚数に合わせて高さが変わるので、常に一番上の雑巾を同じ位置で取れる。リンクの装填角度に合わせて傾斜をつけている。",
+  "url": "https://x.com/Robo_NaganoNCT/status/2116817660793246023"
+ },
+ {
+  "year": 2026,
+  "team": "長野B",
+  "school": "長野",
+  "kind": "X",
+  "account": "@Robo_NaganoNCT",
+  "date": "2026/11/1",
+  "summary": "スーパー雑巾を旗にかけるための投射機構「ごっとオテテ」。伸ばした定荷重ばねが縮む力で投射部が回転し、決まった位置で紐に引かれてクリップが開き、遠心力で雑巾を放す。",
+  "url": "https://x.com/Robo_NaganoNCT/status/2116817674517069892"
+ },
+ {
+  "year": 2026,
+  "team": "長野B",
+  "school": "長野",
+  "kind": "X",
+  "account": "@Robo_NaganoNCT",
+  "date": "2026/11/1",
+  "summary": "バケツ昇降機構「鳥居」。フランジベアリングで滑るスライドを38.2Nの定荷重ばね2本で垂直に持ち上げる。展開にはスナッチロックを使って素早く広げる。装飾はプラダンで、面ファスナーで取り外せる。",
+  "url": "https://x.com/Robo_NaganoNCT/status/2116817689654255952"
+ },
+ {
+  "year": 2026,
+  "team": "長野B",
+  "school": "長野",
+  "kind": "X",
+  "account": "@Robo_NaganoNCT",
+  "date": "2026/11/1",
+  "summary": "バケツや床の雑巾を回収するクレーン。上下はラック＆ピニオン。ばね蝶番で、クレーンを下げるとストッパーが外れて展開する。バケツの縁に掛かった雑巾も拾えるよう、アームの外側に引っ掛け用の爪がある。",
+  "url": "https://x.com/Robo_NaganoNCT/status/2116817714253910441"
+ },
+ {
+  "year": 2026,
+  "team": "長野B",
+  "school": "長野",
+  "kind": "X",
+  "account": "@Robo_NaganoNCT",
+  "date": "2026/11/1",
+  "summary": "足回りはオムニホイール4輪。ホイールとモーターを一直線につなぐ構造（部内では「パルテノン神殿」と呼ぶ）で、モーターを外しやすく整備しやすい。",
+  "url": "https://x.com/Robo_NaganoNCT/status/2116817724861190507"
+ },
+ {
+  "year": 2026,
+  "team": "長野B",
+  "school": "長野",
+  "kind": "X",
+  "account": "@Robo_NaganoNCT",
+  "date": "2026/11/1",
+  "summary": "回路の紹介。マイコンはSTM中心。磁気エンコーダを載せた基板で足回りの速度制御をしており、軽く安く小さい基板にできたので狭い場所にも置けるようになった。",
+  "url": "https://x.com/Robo_NaganoNCT/status/2116817747749560723"
+ },
+ {
+  "year": 2026,
+  "team": "都立品川A",
+  "school": "都立品川",
+  "kind": "X",
+  "account": "@Glasses_0327",
+  "date": "2026/11/1",
+  "summary": "都立品川Aの回路担当メンバーの投稿。産技祭でロボットを動かしていたら足回りに雑巾が絡まってヒューズが飛び、巻き込み対策の大切さを改めて感じたとのこと。",
+  "url": "https://x.com/Glasses_0327/status/2116865561619824648"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@waravi16yu",
+  "date": "2026/11/3",
+  "summary": "岐阜Aのメンバーの投稿。地区大会前日のテストランで200点を取ったときの映像を紹介。福井や鈴鹿が高得点を出す中、前日で一番歓声が上がったと振り返っている。",
+  "url": "https://x.com/waravi16yu/status/2117578960293044358"
+ },
+ {
+  "year": 2026,
+  "team": "沖縄B",
+  "school": "沖縄",
+  "kind": "X",
+  "account": "@ryu_08l6",
+  "date": "2026/10/4",
+  "summary": "沖縄Bで足回りと昇降機構を設計したメンバーの投稿。会場ではトラブル続きで調整しきれなかったが、テストランではスーパー雑巾を2枚旗に掛けられたとのこと。",
+  "url": "https://x.com/ryu_08l6/status/2106774814707048494"
+ },
+ {
+  "year": 2026,
+  "team": "沖縄B",
+  "school": "沖縄",
+  "kind": "X",
+  "account": "@NegiTakuann",
+  "date": "2026/10/5",
+  "summary": "沖縄Bで足回りと、発射に使うベルト直動の制御を担当したメンバーの投稿。会場でトラブルが続き、ほとんど調整できないまま終わったと振り返っている。",
+  "url": "https://x.com/NegiTakuann/status/2107035065587056760"
+ },
+ {
+  "year": 2026,
+  "team": "久留米A",
+  "school": "久留米",
+  "kind": "X",
+  "account": "@TR_LtdExp",
+  "date": "2026/10/4",
+  "summary": "久留米Aで回路を担当したメンバーの投稿。自作のモータードライバに使ったMOSFETとゲートドライバはローム提供の製品とのこと。",
+  "url": "https://x.com/TR_LtdExp/status/2106692583628173413"
+ },
+ {
+  "year": 2026,
+  "team": "久留米A",
+  "school": "久留米",
+  "kind": "X",
+  "account": "@Neo032345",
+  "date": "2026/10/4",
+  "summary": "久留米Aのピットクルー（マスコット担当）の投稿。マスコットの顔は手刺繍、服も手作りで久留米絣のトップスとチームと同じ色のビブスを着せたとのこと。ローム賞のお礼。",
+  "url": "https://x.com/Neo032345/status/2106695053486043254"
+ },
+ {
+  "year": 2026,
+  "team": "群馬A",
+  "school": "群馬",
+  "kind": "X",
+  "account": "@wattya001",
+  "date": "2026/9/20",
+  "summary": "群馬Aでピット・設計・ロゴを担当したメンバーの投稿。機械は2年生4人だけで製作。担当した雑巾回収機構には人工筋肉とSpiRobs（渦巻き状に巻き取るつかみ機構）を使ったが、本番では見せられなかったとのこと。",
+  "url": "https://x.com/wattya001/status/2101660938655195509"
+ },
+ {
+  "year": 2026,
+  "team": "都城A",
+  "school": "都城",
+  "kind": "X",
+  "account": "@ZdZo87849",
+  "date": "2026/10/5",
+  "summary": "都城Aのチームリーダーの投稿。本番は発射がうまくいかず2試合とも0点だった。マスコットは都城市のPRキャラクター「ぼんちくん」。安川電機の特別賞を受けた。",
+  "url": "https://x.com/ZdZo87849/status/2107089424974786828"
+ },
+ {
+  "year": 2026,
+  "team": "大分A",
+  "school": "大分",
+  "kind": "X",
+  "account": "@lu_mp__0",
+  "date": "2026/10/4",
+  "summary": "大分Aで足回りの操縦をしたメンバーの投稿。本番で新しい動きを入れたら操縦が遅くなり、位置合わせを誤ったと振り返っている。",
+  "url": "https://x.com/lu_mp__0/status/2106704604520215034"
+ },
+ {
+  "year": 2026,
+  "team": "大分B",
+  "school": "大分",
+  "kind": "X",
+  "account": "@kazuma11121125",
+  "date": "2026/10/4",
+  "summary": "大分Bのメンバーの投稿。九州沖縄地区大会での優勝を報告し、初めての全国大会に向けた意気込み。",
+  "url": "https://x.com/kazuma11121125/status/2106684117870076297"
+ },
+ {
+  "year": 2026,
+  "team": "熊本八代B",
+  "school": "熊本八代",
+  "kind": "X",
+  "account": "@hero_gear_",
+  "date": "2026/10/19",
+  "summary": "八代Bのロボットが掃除で使った雑巾を回収したり床を掃除したりする様子を紹介した、応援キャンペーン（GivingCampaign）の投稿。",
+  "url": "https://x.com/hero_gear_/status/2111996853042675988"
+ },
+ {
+  "year": 2026,
+  "team": "釧路A",
+  "school": "釧路",
+  "kind": "X",
+  "account": "@lettuce0010",
+  "date": "2026/9/27",
+  "summary": "釧路Aのメンバーの投稿。初戦で旗に掛けて100点を取り勝利。会場の観客にWi-Fiを切るよう呼びかけている（ロボットの無線への影響のため）。",
+  "url": "https://x.com/lettuce0010/status/2104063170856014011"
+ },
+ {
+  "year": 2026,
+  "team": "釧路A",
+  "school": "釧路",
+  "kind": "X",
+  "account": "@roboken_kushiro",
+  "date": "2026/9/27",
+  "summary": "釧路高専ロボット研究部の投稿。釧路Aは北海道地区大会の決勝で敗れたが、応援へのお礼（準優勝で全国大会へ）。",
+  "url": "https://x.com/roboken_kushiro/status/2104094702396182732"
+ },
+ {
+  "year": 2026,
+  "team": "豊田B",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@yamamoto_soushi",
+  "date": "2026/10/18",
+  "summary": "豊田Bの操縦者の投稿。1年生が頑張ってくれたおかげでデザイン賞を受賞できたとのお礼。",
+  "url": "https://x.com/yamamoto_soushi/status/2111772877876036079"
+ },
+ {
+  "year": 2026,
+  "team": "豊田B",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@Chirol0225",
+  "date": "2026/10/18",
+  "summary": "豊田Bのピットメンバーの投稿。東海北陸地区大会への出場報告と応援へのお礼。",
+  "url": "https://x.com/Chirol0225/status/2111772935728062770"
+ },
+ {
+  "year": 2026,
+  "team": "明石B",
+  "school": "明石",
+  "kind": "X",
+  "account": "@Akosen_R_C",
+  "date": "2026/10/31",
+  "summary": "明石高専ロボ研の高専祭展示の告知。Bチーム「明石布」の操縦体験と、A・B両チームのマスコット、2025年のAチーム「箱積明人」を展示。",
+  "url": "https://x.com/Akosen_R_C/status/2116324659667026375"
+ },
+ {
+  "year": 2026,
+  "team": "呉A",
+  "school": "呉",
+  "kind": "X",
+  "account": "@kurerobo",
+  "date": "2026/10/30",
+  "summary": "呉高専ロボコン部の高専祭告知。全国に出る呉A「GUN☆KAN」を第2体育館の実物フィールドで実演する。",
+  "url": "https://x.com/kurerobo/status/2116168345024446842"
+ },
+ {
+  "year": 2026,
+  "team": "呉B",
+  "school": "呉",
+  "kind": "X",
+  "account": "@kurerobo",
+  "date": "2026/10/30",
+  "summary": "呉高専ロボコン部の高専祭告知。呉B「天照」の操縦体験で、走らせたり雑巾を飛ばしたりできる。",
+  "url": "https://x.com/kurerobo/status/2116168246248230977"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜B",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@gifuroboken",
+  "date": "2026/10/30",
+  "summary": "岐阜高専ロボット研究会の高専祭告知。地区大会で悔しい結果だったBチームを1日2回動かす。全国に行くAチームのロボットも少し見られるかもしれないとのこと。",
+  "url": "https://x.com/gifuroboken/status/2116096520109871350"
+ },
+ {
+  "year": 2026,
+  "team": "沼津A",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@numazu_robocon",
+  "date": "2026/11/5",
+  "summary": "沼津高専ロボコンの高専祭（11/7・8）告知。今年の「砲永」と「KAGUYA」で模擬戦をし、2024年に全国に出た「駿河」も展示する。",
+  "url": "https://x.com/numazu_robocon/status/2118305561099878638"
+ },
+ {
+  "year": 2026,
+  "team": "沼津B",
+  "school": "沼津",
+  "kind": "X",
+  "account": "@numazu_robocon",
+  "date": "2026/11/5",
+  "summary": "沼津高専ロボコンの高専祭（11/7・8）告知。今年の「砲永」と「KAGUYA」で模擬戦をし、2024年に全国に出た「駿河」も展示する。",
+  "url": "https://x.com/numazu_robocon/status/2118305561099878638"
+ },
+ {
+  "year": 2026,
+  "team": "東京B",
+  "school": "東京",
+  "kind": "X",
+  "account": "@nittc_robo",
+  "date": "2026/10/31",
+  "summary": "東京高専ロボコンゼミの文化祭告知。地区大会に出たBチームの機体を1日2回実演する。",
+  "url": "https://x.com/nittc_robo/status/2116337125499236406"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@kzs321",
+  "date": "2026/11/4",
+  "summary": "茨城Aの操縦者の投稿。明後日ロボットを梱包し、試験のあとに全国大会へ発送するとのこと。",
+  "url": "https://x.com/kzs321/status/2117816828802314385"
+ },
+ {
+  "year": 2026,
+  "team": "徳山A",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/31",
+  "summary": "徳山高専の部の高専祭告知。周南ロボコンのブースで今年のロボットを展示し、終了後にデモを行う。",
+  "url": "https://x.com/TCTMechatro/status/2116307709452800171"
+ },
+ {
+  "year": 2026,
+  "team": "徳山B",
+  "school": "徳山",
+  "kind": "X",
+  "account": "@TCTMechatro",
+  "date": "2026/10/31",
+  "summary": "徳山高専の部の高専祭告知。周南ロボコンのブースで今年のロボットを展示し、終了後にデモを行う。",
+  "url": "https://x.com/TCTMechatro/status/2116307709452800171"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬B",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@sncthc_science",
+  "date": "2026/11/1",
+  "summary": "仙台高専広瀬の科学部の投稿。高専祭での展示を終え、OBの差し入れへのお礼と、全国大会に向けた意気込み。",
+  "url": "https://x.com/sncthc_science/status/2116788509067673618"
+ },
+ {
+  "year": 2026,
+  "team": "豊田A",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@tnct_RoboconA",
+  "date": "2026/11/1",
+  "summary": "豊田Aの投稿。こうよう祭が終わり、国技館まで残り2週間。ここからさらにレベルアップするとのこと。",
+  "url": "https://x.com/tnct_RoboconA/status/2116869567419195529"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@arakawarobo",
+  "date": "2026/10/30",
+  "summary": "産技荒川ロボット研究同好会の高専祭告知。体育館でロボットの展示と実演を行い、新入生による部内ロボコンも開く。",
+  "url": "https://x.com/arakawarobo/status/2116053254878740548"
+ },
+ {
+  "year": 2026,
+  "team": "長岡A",
+  "school": "長岡",
+  "kind": "X",
+  "account": "@nnct_robo",
+  "date": "2026/10/30",
+  "summary": "長岡高専ロボティクス部の結果報告。関東甲信越地区大会でAチームが技術賞を受けた。来年は全国を目指すとのこと。",
+  "url": "https://x.com/nnct_robo/status/2116039313142296811"
+ },
+ {
+  "year": 2026,
+  "team": "木更津A",
+  "school": "木更津",
+  "kind": "X",
+  "account": "@kisarazu_RBKN",
+  "date": "2026/10/30",
+  "summary": "木更津高専ロボ研の祇園祭告知。今年のロボットを実戦形式で見せ、過去に全国に出た「きさぺんと」「キサンタクロース」も展示する。",
+  "url": "https://x.com/kisarazu_RBKN/status/2116025159434014989"
+ },
+ {
+  "year": 2026,
+  "team": "木更津B",
+  "school": "木更津",
+  "kind": "X",
+  "account": "@kisarazu_RBKN",
+  "date": "2026/10/30",
+  "summary": "木更津高専ロボ研の祇園祭告知。今年のロボットを実戦形式で見せ、過去に全国に出た「きさぺんと」「キサンタクロース」も展示する。",
+  "url": "https://x.com/kisarazu_RBKN/status/2116025159434014989"
+ },
+ {
+  "year": 2026,
+  "team": "大阪公大B",
+  "school": "大阪公大",
+  "kind": "X",
+  "account": "@opuct_robotclub",
+  "date": "2026/11/5",
+  "summary": "大阪公大高専の高専祭（11/7・8）告知。近畿地区大会に出たBチームの機体を体育館で展示し、動作も見せる予定。",
+  "url": "https://x.com/opuct_robotclub/status/2118327479157047516"
+ },
+ {
+  "year": 2026,
+  "team": "久留米A",
+  "school": "久留米",
+  "kind": "X",
+  "account": "@KurumeRobocon",
+  "date": "2026/11/1",
+  "summary": "久留米高専ロボコン部の高専祭告知。今年のロボットの展示・実演とキーホルダーの販売。",
+  "url": "https://x.com/KurumeRobocon/status/2116821076819030336"
+ },
+ {
+  "year": 2026,
+  "team": "久留米B",
+  "school": "久留米",
+  "kind": "X",
+  "account": "@KurumeRobocon",
+  "date": "2026/11/1",
+  "summary": "久留米高専ロボコン部の高専祭告知。今年のロボットの展示・実演とキーホルダーの販売。",
+  "url": "https://x.com/KurumeRobocon/status/2116821076819030336"
+ },
+ {
+  "year": 2026,
+  "team": "秋田B",
+  "school": "秋田",
+  "kind": "X",
+  "account": "@sakigake",
+  "date": "2026/11/4",
+  "summary": "秋田魁新報の記事の紹介。全国大会に出る秋田高専のチームが、本番に向けて最終調整をしているという内容。",
+  "url": "https://x.com/sakigake/status/2117912092120437106"
+ },
+ {
+  "year": 2026,
+  "team": "釧路A",
+  "school": "釧路",
+  "kind": "X",
+  "account": "@kushiroshimbun",
+  "date": "2026/10/28",
+  "summary": "釧路新聞の記事の紹介。釧路高専の「鶴翔」が15年ぶりに全国大会へ出場し、高得点での優勝を狙うという内容。",
+  "url": "https://x.com/kushiroshimbun/status/2115248579245670532"
+ },
+ {
+  "year": 2026,
+  "team": "釧路A",
+  "school": "釧路",
+  "kind": "X",
+  "account": "@doshinweb",
+  "date": "2026/10/25",
+  "summary": "北海道新聞の記事の紹介。釧路高専「鶴翔」が15年ぶりに全国大会へ。チームは8人で、ロボット開発の中心は機械工学分野の3年生2人と電子工学分野の3年生1人。",
+  "url": "https://x.com/doshinweb/status/2114207452417724579"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@gifuroboken",
+  "date": "2026/11/6",
+  "summary": "岐阜高専ロボット研究部。全国大会出場の祝いとして、岐阜プラスチック工業からプラスチック製ハニカムボード「TECCELL」の提供を再び受けた。全国大会に向けたロボットの改良に使うとのこと。",
+  "url": "https://x.com/gifuroboken/status/2118656435466944939"
+ },
+ {
+  "year": 2026,
+  "team": "茨城B",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@daiciru_san",
+  "date": "2026/11/8",
+  "summary": "茨城高専のメンバー（同校の茨城Aとは別チーム）の投稿。関東甲信越地区大会のテレビ放送で、自分たちのロボットはオープニングに一瞬映っただけで本編では紹介されなかったと振り返り、地区優勝した茨城Aの活躍を見てほしいと呼びかけ。",
+  "url": "https://x.com/daiciru_san/status/2119298518129258660"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/11/8",
+  "summary": "松江Aで回路を担当したメンバーの解説スレッド（電源基板）。電源の入り切りはリレー式の基板で行い、大会を通して一度も壊れなかったとのこと。",
+  "url": "https://x.com/Masu_Robo/status/2119427658559996135"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/11/8",
+  "summary": "松江Aの回路解説の続き（DC-DCコンバータ基板）。バッテリーの24Vを5V・5Aか12V・3Aに変換する基板で、今年初めて使った市販のDC-DCモジュールの使い勝手が良かったという。",
+  "url": "https://x.com/Masu_Robo/status/2119429112335118581"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/11/8",
+  "summary": "松江Aの回路解説の続き（通信変換基板）。無線はラズパイで受け、ラズパイからのUSBシリアルをCAN通信に変換して各基板に送る構成。電源まわりの仕様を変えるため途中で2種類目の基板を作った。",
+  "url": "https://x.com/Masu_Robo/status/2119430978460672155"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/11/8",
+  "summary": "松江Aの回路解説の続き（自作モータードライバ）。CANで指令を受けて駆動し、マイコンを載せて単体で速度のPID制御ができるようにした。専用のハブに4枚ずつ挿して管理する構造で、2024年の奈良高専のドライバを参考にし、ROHMから提供された素子を使っている。",
+  "url": "https://x.com/Masu_Robo/status/2119433303782752421"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/11/8",
+  "summary": "松江Aの回路解説の続き（失敗談）。自作モータードライバは制御がうまくいかず本番では載せられず、既製品のドライバを使った。既製品は流せる電流が20Aまでで、練習中に雑巾を巻き込んでモーターが止まっただけで壊れることがあったという。",
+  "url": "https://x.com/Masu_Robo/status/2119436428593824114"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/11/8",
+  "summary": "松江Aの回路解説の続き（無線）。操縦の無線は6GHz帯のWi-Fiで、Raspberry Pi 5にIntel AX210を付けて通信モジュールとして使っている。",
+  "url": "https://x.com/Masu_Robo/status/2119440835729309879"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/11/8",
+  "summary": "松江Aの回路解説の続き（電飾）。32×32のLEDディスプレイを載せ、制御回路と通信してロボットの状態を表示できるようにしていたが、大会前日に重量制限のため外したという。",
+  "url": "https://x.com/Masu_Robo/status/2119442055034527785"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/11/9",
+  "summary": "松江Aメンバーによる「今年のロボットの推しポイント」。機体の細部写真で、フレームに沿わせたLEDテープの配線や、黒い3Dプリント部品で作った関節・ブラケット部分などを紹介している。",
+  "url": "https://x.com/Masu_Robo/status/2119624944296636768"
+ },
+ {
+  "year": 2026,
+  "team": "松江A",
+  "school": "松江",
+  "kind": "X",
+  "account": "@Masu_Robo",
+  "date": "2026/11/9",
+  "summary": "松江Aのエアタンクは消火器のタンクを使っており、以前のロボット「Rebeli0n」で使っていたものを流用（ステッカーもそのまま）。RA1GEの装飾や背景もRebeli0nを意識したという。",
+  "url": "https://x.com/Masu_Robo/status/2119641771382882810"
+ },
+ {
+  "year": 2026,
+  "team": "高知A",
+  "school": "高知",
+  "kind": "X",
+  "account": "@inugasuki8211",
+  "date": "2026/11/9",
+  "summary": "高知Aメンバーが、先輩が作った射出機構の製作過程を動画にまとめて紹介。アルミフレームを組んでいく様子が映り、フレームの中にセンサーを入れる作りを勧めている。",
+  "url": "https://x.com/inugasuki8211/status/2119659802200883438"
+ },
+ {
+  "year": 2026,
+  "team": "和歌山A",
+  "school": "和歌山",
+  "kind": "X",
+  "account": "@shuta_wakayama",
+  "date": "2026/11/9",
+  "summary": "和歌山高専OBの投稿者がロボコン部を訪れ、今年の安川電機賞を受けたロボット（じゃばらん）を操縦させてもらったという紹介。",
+  "url": "https://x.com/shuta_wakayama/status/2119731983261815068"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@NITIC_RobotClub",
+  "date": "2026/11/12",
+  "summary": "茨城高専ロボット研究会がロボットを全国大会へ発送。「ロボたちの帰還」以来2年ぶりの全国で、全国優勝を目指すとの意気込み。",
+  "url": "https://x.com/NITIC_RobotClub/status/2120858416872923327"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@nittc_robo",
+  "date": "2026/11/12",
+  "summary": "東京高専ロボコン部が全国大会へロボットを発送。選手・ピットメンバー・ゼミ生一同で本番まで頑張るとの投稿。",
+  "url": "https://x.com/nittc_robo/status/2120900399322603952"
+ },
+ {
+  "year": 2026,
+  "team": "豊田A",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@tnct_RoboconA",
+  "date": "2026/11/12",
+  "summary": "豊田高専Aチームが全国大会（国技館）へロボットを発送したとの報告。",
+  "url": "https://x.com/tnct_RoboconA/status/2120798469367689467"
+ },
+ {
+  "year": 2026,
+  "team": "大阪公大A",
+  "school": "大阪公大",
+  "kind": "X",
+  "account": "@opuct_robotclub",
+  "date": "2026/11/12",
+  "summary": "大阪公立大高専ロボット部が11/15の全国大会へロボットを発送。2年ぶりの全国で優勝を目指す（ロボットは「コウダイオー」）。",
+  "url": "https://x.com/opuct_robotclub/status/2120797594486202532"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@gifuroboken",
+  "date": "2026/11/11",
+  "summary": "岐阜高専ロボット研究部がロボットを発送。7年ぶりの全国大会で、マスコットの「ひつじたち」と協力してゴールを狙うとの意気込み。",
+  "url": "https://x.com/gifuroboken/status/2120481701512224769"
+ },
+ {
+  "year": 2026,
+  "team": "福井A",
+  "school": "福井",
+  "kind": "X",
+  "account": "@robot_fnct",
+  "date": "2026/11/12",
+  "summary": "福井高専がロボットを全国大会へ発送したとの報告。",
+  "url": "https://x.com/robot_fnct/status/2120719386030080263"
+ },
+ {
+  "year": 2026,
+  "team": "旭川A",
+  "school": "旭川",
+  "kind": "X",
+  "account": "@Asahikawa_Robo",
+  "date": "2026/11/11",
+  "summary": "旭川高専ロボコン部が国技館へロボットを発送したとの報告。",
+  "url": "https://x.com/Asahikawa_Robo/status/2120447880003719419"
+ },
+ {
+  "year": 2026,
+  "team": "鈴鹿A",
+  "school": "鈴鹿",
+  "kind": "X",
+  "account": "@Harumakimakuzo",
+  "date": "2026/11/7",
+  "summary": "岐阜Aの選手の投稿。今年の鈴鹿Aのロボットは雑巾の打ち出しに「ラクピニ射出」（ラック・アンド・ピニオンで押し出す方式）を使っているとして、ほかに同じ方式を使ったロボットを知らないかと呼びかけ。同じ選手は「テストランで見て興奮した」と鈴鹿Aの機体を評している。",
+  "url": "https://x.com/Harumakimakuzo/status/2119062345339326891"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@waravi16yu",
+  "date": "2026/11/2",
+  "summary": "岐阜Aのメンバーの投稿。チームリーダーが約2年かけて開発してきたオムニホイールの足回りモジュール（通称OMG2）があり、1年生がオフシーズンに「安くて軽くて強い」独立ステア（独ステ）を作ってそれを置き換えると意気込んでいる、という内容。",
+  "url": "https://x.com/waravi16yu/status/2117208568697168379"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@waravi16yu",
+  "date": "2026/11/3",
+  "summary": "岐阜Aのメンバーの投稿。練習で雑巾が旗に掛かった様子の写真に「次のトレンドはこのかかり方」と添えたもの。翌日にも「再現性」として同じような掛かり方の写真を投稿している（写真あり）。",
+  "url": "https://x.com/waravi16yu/status/2117520203005469029"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@waravi16yu",
+  "date": "2026/11/10",
+  "summary": "岐阜Aのメンバーの投稿。全国大会の梱包のルールでは地区大会より箱に入れる物が増え、置き場所に困る荷物が多くてパズルのようだったとのこと。3年生が研修旅行中にロボット（おひつじたち）が発送された（写真あり）。",
+  "url": "https://x.com/waravi16yu/status/2120259706308698601"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@gifuroboken",
+  "date": "2026/11/11",
+  "summary": "岐阜高専ロボット研究会。11月11日のNHK岐阜「まるっと！ぎふ」で、岐阜高専の練習の様子が取り上げられたとの報告。",
+  "url": "https://x.com/gifuroboken/status/2120481705207435333"
+ },
+ {
+  "year": 2026,
+  "team": "福井A",
+  "school": "福井",
+  "kind": "X",
+  "account": "@Fukui_No_Hito",
+  "date": "2026/11/8",
+  "summary": "福井Aのメンバーの投稿。練習用に普通の雑巾を160枚、スーパー雑巾の材料を80枚（20枚分）買っていたとのこと。",
+  "url": "https://x.com/Fukui_No_Hito/status/2119475784071123220"
+ },
+ {
+  "year": 2026,
+  "team": "福井A",
+  "school": "福井",
+  "kind": "X",
+  "account": "@robot_fnct",
+  "date": "2026/11/11",
+  "summary": "福井高専ロボット部。全国大会へ送るロボットの梱包が完了したとの報告（写真あり）。",
+  "url": "https://x.com/robot_fnct/status/2120482360957546666"
+ },
+ {
+  "year": 2026,
+  "team": "仙台広瀬B",
+  "school": "仙台広瀬",
+  "kind": "X",
+  "account": "@sncthc_science",
+  "date": "2026/11/11",
+  "summary": "仙台高専広瀬キャンパスの科学部（ロボコン）。国技館へロボットを発送したとの報告。4年生が研修旅行で不在になるため、11月9日に前倒しで梱包していた（写真あり）。",
+  "url": "https://x.com/sncthc_science/status/2120445375001530716"
+ },
+ {
+  "year": 2026,
+  "team": "鹿児島A",
+  "school": "鹿児島",
+  "kind": "X",
+  "account": "@KNCTMechaken",
+  "date": "2026/11/10",
+  "summary": "鹿児島高専メカトロニクス研究部。全国大会に向けてロボットを発送したとの報告（写真あり）。",
+  "url": "https://x.com/KNCTMechaken/status/2120070281230499899"
+ },
+ {
+  "year": 2026,
+  "team": "鹿児島A",
+  "school": "鹿児島",
+  "kind": "X",
+  "account": "@KNCTMechaken",
+  "date": "2026/11/11",
+  "summary": "鹿児島高専メカトロニクス研究部。全国大会用のステッカーを作り、当日ピットで選手・ピットメンバーに声をかけた人に配るとの告知（写真あり）。",
+  "url": "https://x.com/KNCTMechaken/status/2120485209112191354"
+ },
+ {
+  "year": 2026,
+  "team": "鹿児島A",
+  "school": "鹿児島",
+  "kind": "X",
+  "account": "@KNCTMechaken",
+  "date": "2026/11/13",
+  "summary": "鹿児島高専メカトロニクス研究部。選手団が東京へ出発したとの報告（写真あり）。",
+  "url": "https://x.com/KNCTMechaken/status/2121034562134594022"
+ },
+ {
+  "year": 2026,
+  "team": "鈴鹿A",
+  "school": "鈴鹿",
+  "kind": "X",
+  "account": "@suzuka_robocon",
+  "date": "2026/11/12",
+  "summary": "鈴鹿高専ロボコンプロジェクト。国技館に向けてロボットを発送したとの報告（写真あり）。",
+  "url": "https://x.com/suzuka_robocon/status/2120719770161177028"
+ },
+ {
+  "year": 2026,
+  "team": "呉A",
+  "school": "呉",
+  "kind": "X",
+  "account": "@kurerobo",
+  "date": "2026/11/12",
+  "summary": "呉高専ロボット制作部。全国大会に向けてロボットを発送したとの報告（写真あり）。",
+  "url": "https://x.com/kurerobo/status/2120845179502702641"
+ },
+ {
+  "year": 2026,
+  "team": "広島商船A",
+  "school": "広島商船",
+  "kind": "X",
+  "account": "@nitHC_rbcn",
+  "date": "2026/11/12",
+  "summary": "広島商船高専ロボコン部。国技館に向けてロボットを搬出し、全国大会でも優勝を目指すとの意気込み（写真あり）。",
+  "url": "https://x.com/nitHC_rbcn/status/2120822712440603067"
+ },
+ {
+  "year": 2026,
+  "team": "奈良A",
+  "school": "奈良",
+  "kind": "X",
+  "account": "@NaraRoboconTeam",
+  "date": "2026/11/12",
+  "summary": "奈良高専ロボコンチーム。国技館に向けてマシンを発送したとの報告（写真あり）。",
+  "url": "https://x.com/NaraRoboconTeam/status/2120842712023007377"
+ },
+ {
+  "year": 2026,
+  "team": "明石A",
+  "school": "明石",
+  "kind": "X",
+  "account": "@Akosen_R_C",
+  "date": "2026/11/11",
+  "summary": "明石高専ロボット研究会。国技館に向けてロボットを発送したとの報告（写真あり）。",
+  "url": "https://x.com/Akosen_R_C/status/2120430120964088052"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@kzs321",
+  "date": "2026/11/12",
+  "summary": "茨城Aのメンバーの投稿。ロボットを発送し、「ロボたちの帰還」（2024年）以来2年ぶりの全国大会で、念願の全国優勝を目指すとの意気込み（写真あり）。",
+  "url": "https://x.com/kzs321/status/2120858577015656653"
+ },
+ {
+  "year": 2026,
+  "team": "熊本八代A",
+  "school": "熊本八代",
+  "kind": "X",
+  "account": "@denken1975",
+  "date": "2026/11/11",
+  "summary": "熊本高専八代キャンパスのロボコン部。全国大会に向けてロボットを発送したとの報告（写真あり）。",
+  "url": "https://x.com/denken1975/status/2120452517591130454"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@nittc_robo",
+  "date": "2026/11/12",
+  "summary": "東京高専ロボコンゼミ。OBの先輩からコントローラーをはじめ機器を寄贈され、今後の開発に使うとの報告（写真あり）。",
+  "url": "https://x.com/nittc_robo/status/2120903296831586357"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@Owe_plusplus",
+  "date": "2026/11/16",
+  "summary": "東京Aのメンバーの振り返り。全国大会ではピットで、「正剋」の上部にあるローラー（発射部）と装填機構の制御を主に担当していたとのこと。",
+  "url": "https://x.com/Owe_plusplus/status/2122197520835314015"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@kumasama_mori",
+  "date": "2026/11/16",
+  "summary": "岐阜Aのメンバーの振り返り。「前途羊々」の発射はベルトで雑巾を送り出す方式で、その設計を担当。射出速度は時速90kmに達するとのこと。7年ぶりの全国大会でベスト8（写真あり）。",
+  "url": "https://x.com/kumasama_mori/status/2122162620287639690"
+ },
+ {
+  "year": 2026,
+  "team": "国際A",
+  "school": "国際",
+  "kind": "X",
+  "account": "@ICTKanazawa",
+  "date": "2026/11/16",
+  "summary": "国際高専の公式アカウント。全国大会のエキシビションに参加し、その寸劇の動画を公開。動画の中で、ロボットのモチーフであるコペルニクス役が機構を説明しているとのこと（写真あり）。",
+  "url": "https://x.com/ICTKanazawa/status/2122139085263548657"
+ },
+ {
+  "year": 2026,
+  "team": "大分B",
+  "school": "大分",
+  "kind": "X",
+  "account": "@kazuma11121125",
+  "date": "2026/11/15",
+  "summary": "大分Bのメイン制御担当の振り返り。全国大会版ではROS2を初めて導入し、ステアリング式の足回りの制御、LiDARとステアを組み合わせた自己位置推定、自作の経路生成と経路追従、4本のベルトの直接駆動の制御、全自動に対応したAndroidのコントローラーを開発。結果はベスト4と技術賞（写真あり）。",
+  "url": "https://x.com/kazuma11121125/status/2121979975851209125"
+ },
+ {
+  "year": 2026,
+  "team": "大阪公大A",
+  "school": "大阪公大",
+  "kind": "X",
+  "account": "@TAMAGO_KOPPEPAN",
+  "date": "2026/11/15",
+  "summary": "大阪公大Aのメンバーの投稿。操縦に使うスマホアプリの画面例を紹介。アプリの中でもROS2が動いていて、アプリ単体でロボットとのROS2通信ができる仕組み（画像あり）。",
+  "url": "https://x.com/TAMAGO_KOPPEPAN/status/2121956722831159501"
+ },
+ {
+  "year": 2026,
+  "team": "大阪公大A",
+  "school": "大阪公大",
+  "kind": "X",
+  "account": "@TAMAGO_KOPPEPAN",
+  "date": "2026/11/15",
+  "summary": "大阪公大Aのメンバーの投稿。ピットに自作の据え置き型Wi-Fiアナライザーを置き、スマホ版と連携して電波状況を監視。自分たちのアクセスポイントとの干渉を検出するとスマホに通知が来る仕組みにしていた（写真あり）。",
+  "url": "https://x.com/TAMAGO_KOPPEPAN/status/2121971134434525222"
+ },
+ {
+  "year": 2026,
+  "team": "呉A",
+  "school": "呉",
+  "kind": "X",
+  "account": "@Chihaya2008",
+  "date": "2026/11/15",
+  "summary": "呉Aのメンバーの振り返り。自動制御を担当。呉としては初めての試みで苦労したが、自動制御を実現して全国大会に臨んだとのこと。",
+  "url": "https://x.com/Chihaya2008/status/2122005281945288819"
+ },
+ {
+  "year": 2026,
+  "team": "呉A",
+  "school": "呉",
+  "kind": "X",
+  "account": "@CyuZu_04v_x39",
+  "date": "2026/11/15",
+  "summary": "呉Aの選手の振り返り。通信と計測輪（自己位置用）の開発、配線、PV編集を担当し、試合中は雑巾の整頓役。全国大会では全ての機構を見せられないまま初戦敗退だったとのこと。",
+  "url": "https://x.com/CyuZu_04v_x39/status/2122007986684281302"
+ },
+ {
+  "year": 2026,
+  "team": "大阪公大A",
+  "school": "大阪公大",
+  "kind": "X",
+  "account": "@Oka_Bacon",
+  "date": "2026/11/15",
+  "summary": "大阪公大Aのメンバーの投稿。全国大会で優勝（2024年に続き2度目）。攻めと守りを一体にした戦い方がうまくはまったとの振り返り（写真あり）。",
+  "url": "https://x.com/Oka_Bacon/status/2121944302343299317"
+ },
+ {
+  "year": 2026,
+  "team": "鈴鹿A",
+  "school": "鈴鹿",
+  "kind": "X",
+  "account": "@Dokoro_1220",
+  "date": "2026/11/15",
+  "summary": "鈴鹿Aのチームリーダー（雑巾の巻き担当）の振り返り。前年のベスト8を超えて優勝を目指したが、決勝で大阪公大に敗れ準優勝。来年は優勝するとの決意。",
+  "url": "https://x.com/Dokoro_1220/status/2121953225209524717"
+ },
+ {
+  "year": 2026,
+  "team": "奈良A",
+  "school": "奈良",
+  "kind": "X",
+  "account": "@NaraRoboconTeam",
+  "date": "2026/11/15",
+  "summary": "奈良高専ロボコンチーム。全国大会で「龍田」は前年と同じ準々決勝敗退。来年は「圧倒的優勝」を目指すとの報告（写真あり）。",
+  "url": "https://x.com/NaraRoboconTeam/status/2122114738918473776"
+ },
+ {
+  "year": 2026,
+  "team": "豊田A",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@tnct_RoboconA",
+  "date": "2026/11/16",
+  "summary": "豊田高専ロボコンチームの報告。全国大会は初戦敗退で、来年度こそ全国で良い結果を残したいとのこと。",
+  "url": "https://x.com/tnct_RoboconA/status/2122123262016774606"
+ },
+ {
+  "year": 2026,
+  "team": "呉A",
+  "school": "呉",
+  "kind": "X",
+  "account": "@kurerobo",
+  "date": "2026/11/16",
+  "summary": "呉高専ロボコンチーム（呉ロボ）。全国大会でマブチモーター特別賞を受賞したとの報告（写真あり）。",
+  "url": "https://x.com/kurerobo/status/2122161843255009313"
+ },
+ {
+  "year": 2026,
+  "team": "呉A",
+  "school": "呉",
+  "kind": "X",
+  "account": "@Bawa1227",
+  "date": "2026/11/15",
+  "summary": "呉Aのメンバーの投稿。半年間改良を重ねてきたロボットがマブチモーター特別賞に選ばれたことへのお礼（写真あり）。",
+  "url": "https://x.com/Bawa1227/status/2121967304527524137"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@Aoringo_rc_2025",
+  "date": "2026/11/15",
+  "summary": "茨城Aのチームリーダー。全国大会で選手宣誓を務めた。結果は1回戦敗退。担当した機構は後日投稿するとのこと（写真あり）。",
+  "url": "https://x.com/Aoringo_rc_2025/status/2121945453524849138"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@Red_rinrin_",
+  "date": "2026/11/16",
+  "summary": "都立荒川A「荒技」のピットメンバー。装填機構と、マスコット「あらごん」の製作を担当したという全国大会後の振り返り。",
+  "url": "https://x.com/Red_rinrin_/status/2122473002680135785"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@sushi_D7",
+  "date": "2026/11/16",
+  "summary": "東京A「正剋」でマスコット製作と機体の加工を担当したメンバー。マスコットは機体のカウンターウェイトを兼ねていて、重さは約4kgあると説明。",
+  "url": "https://x.com/sushi_D7/status/2122364588213870741"
+ },
+ {
+  "year": 2026,
+  "team": "福井A",
+  "school": "福井",
+  "kind": "X",
+  "account": "@Fukui_No_Hito",
+  "date": "2026/11/16",
+  "summary": "福井Aのメンバーの経歴まとめ。2026年は「ウエストゲートダイナソー」の足回りと射出機構の基礎設計・加工を担当し、地区優勝・全国でローム特別賞。",
+  "url": "https://x.com/Fukui_No_Hito/status/2122309426107527218"
+ },
+ {
+  "year": 2026,
+  "team": "旭川A",
+  "school": "旭川",
+  "kind": "X",
+  "account": "@Asahikawa_Robo",
+  "date": "2026/11/15",
+  "summary": "旭川高専ロボコン部。「カルカルセ」が全国で安川電機特別賞。地区大会からの改良で、全国本番ではスーパー雑巾を旗に掛けられたと報告。",
+  "url": "https://x.com/Asahikawa_Robo/status/2121904920253391008"
+ },
+ {
+  "year": 2026,
+  "team": "新居浜B",
+  "school": "新居浜",
+  "kind": "X",
+  "account": "@3fuuuu___",
+  "date": "2026/11/16",
+  "summary": "新居浜Bのメンバーが、2026年のロボットの制御系に関する投稿をスレッドにまとめたもの（ツリーの入口の投稿）。",
+  "url": "https://x.com/3fuuuu___/status/2122455602136060131"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@Lilac781_789",
+  "date": "2026/11/17",
+  "summary": "東京A「正剋」のピット・回路班のメンバー。全国大会では搭載した基板の不調に苦しんだが、15年ぶりの全国初戦突破を果たしたとの振り返り。来年は自分でチームを率いて優勝を目指す。",
+  "url": "https://x.com/Lilac781_789/status/2122530756551708721"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@coukoa6723",
+  "date": "2026/11/16",
+  "summary": "東京A「正剋」の選手（制御担当）。コントローラーを振り回すとジャイロセンサーで照準を合わせられるようにし、障害物の自動回避も入れていたとの解説。",
+  "url": "https://x.com/coukoa6723/status/2122341327912181778"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@taktakathome",
+  "date": "2026/11/16",
+  "summary": "東京A「正剋」のピットメンバー。スーパー雑巾を射出する機構の元になる機構を製作した。15年ぶりの全国初戦突破を喜びつつ、来年は自分の設計した機構を機体に載せたいとのこと。",
+  "url": "https://x.com/taktakathome/status/2122343845841269027"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ。解説者の事前取材で、東京高専はこのスタイルにした理由を「かっこいいから」と答えたとのこと。ローラーを横向き（フリスビー投げ）にも縦向きにも使えると紹介。",
+  "url": "https://x.com/hsatoko327/status/2121856822831391147"
+ },
+ {
+  "year": 2026,
+  "team": "東京A",
+  "school": "東京",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ（2回戦 鹿児島 71-20 東京）。東京は大小10個以上のローラーで雑巾を放つ機体で、解説者は機構が詰まった中への配線がとても大変だったと紹介。",
+  "url": "https://x.com/hsatoko327/status/2121854179048411486"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@kzs321",
+  "date": "2026/11/16",
+  "summary": "茨城A「流利機」の制御・操縦担当による詳しい解説。非線形最適化で時間最小の軌道を事前に計算（地区後にソルバーをIPOPTからFATROPに替えて高速化、50本を約3秒）、速度・加速度のフィードフォワードと旋回補正で平均位置誤差±1.2cm。自己位置はステアのオドメトリと3台のLiDARのMCL（点群を合成せず90Hz更新）。スマホのコントローラー（ROS2 for Unity）でマップをタップした所へ自動移動し、セッティングタイムの位置合わせも自動化（動画あり）。",
+  "url": "https://x.com/kzs321/status/2122329912396976334"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@lyco256",
+  "date": "2026/11/16",
+  "summary": "茨城Aの回路班。小型の分散基板を複数作って各機構のモジュールに組み込み、基板どうしはCAN FDで通信、パラメーターはUSB（CDC）から設定できるようにした。電源基板やEthernet-CAN変換基板も自作（写真あり）。",
+  "url": "https://x.com/lyco256/status/2122265697300668444"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@NITIC_RobotClub",
+  "date": "2026/11/16",
+  "summary": "茨城高専ロボット研究部。「流利機」が全国大会でセメダイン特別賞。実際に機体のいろいろな場所でセメダインの接着剤を使っていたとのこと（続く投稿に使った場所の写真）。",
+  "url": "https://x.com/NITIC_RobotClub/status/2122280960117092584"
+ },
+ {
+  "year": 2026,
+  "team": "茨城A",
+  "school": "茨城",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による受賞コメントのメモ。セメダイン賞の理由は「優れた射出機構と素早い動き、高い防御能力はまるで忍者」。解説者は「走って守って攻めてのバランスが良かった」と評価。",
+  "url": "https://x.com/hsatoko327/status/2121923515112931684"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@arakawarobo",
+  "date": "2026/11/15",
+  "summary": "産技荒川ロボット研究同好会。全国出場機体「荒技」の開発リポジトリをGitHubで公開。ROS2による3D自己位置推定・雑巾の追跡・自動移動、自作基板（KiCad・ファームウェア）、Isaac Sim／Unityのシミュレーション環境を含む。",
+  "url": "https://x.com/arakawarobo/status/2121896055935803705"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@arakawarobo",
+  "date": "2026/11/15",
+  "summary": "産技荒川ロボット研究同好会。GPUで高速化した3D LiDARによる自己位置推定と自律移動のデモ動画。点群を10秒分ためて表示している（照合に使うのは0.1秒分）。",
+  "url": "https://x.com/arakawarobo/status/2121896139666715043"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@arakawarobo",
+  "date": "2026/11/15",
+  "summary": "産技荒川ロボット研究同好会。「荒技」の自作基板群（メイン基板、電源管理・非常停止基板、モーター用CANハブなど）。回路設計からファームウェアまで内製しGitHubで公開（写真あり）。",
+  "url": "https://x.com/arakawarobo/status/2121896184713482711"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@XfWztvvXVq81305",
+  "date": "2026/11/17",
+  "summary": "都立荒川A「荒技」のピットメンバー。ハンドの機構とコントローラーの設計を担当し、選手の操作性の面で支えたとの振り返り。",
+  "url": "https://x.com/XfWztvvXVq81305/status/2122529452458684822"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ（2回戦 鈴鹿 540-31 荒川）。解説者によると、荒川は選手の右太ももにこすり付けて雑巾を巻くのが秘策。カメラでもフィールドを認識していたとのこと。",
+  "url": "https://x.com/hsatoko327/status/2121848317898551675"
+ },
+ {
+  "year": 2026,
+  "team": "都立荒川A",
+  "school": "都立荒川",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者によるロボコン大賞の受賞理由のメモ。多彩な打ち出し機構と正確な自動制御、1回戦でバケツ・机・旗すべてに入れた今大会唯一のボーナス達成（ブザービーターの逆転勝ち）が評価された。",
+  "url": "https://x.com/hsatoko327/status/2121935253518598546"
+ },
+ {
+  "year": 2026,
+  "team": "大阪公大A",
+  "school": "大阪公大",
+  "kind": "X",
+  "account": "@opuct_robotclub",
+  "date": "2026/11/15",
+  "summary": "大阪公大高専ろぼっと倶楽部。「技巧神コウダイオー」が2年ぶりの全国優勝を果たし、宣言どおりの王座奪還に成功したとの報告。",
+  "url": "https://x.com/opuct_robotclub/status/2121889883556126972"
+ },
+ {
+  "year": 2026,
+  "team": "大阪公大A",
+  "school": "大阪公大",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ（1回戦 呉 15-110 大阪公大）。大阪公大は「コウダイシールド」で呉の射線をふさいで勝利。",
+  "url": "https://x.com/hsatoko327/status/2121828960392900669"
+ },
+ {
+  "year": 2026,
+  "team": "大阪公大A",
+  "school": "大阪公大",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ（準決勝 大阪公大 225-21 鹿児島）。大阪公大の選手は「コウダイバリアウィングが決まって良かった」とコメント。防御用の張り出しが勝負どころで効いた。",
+  "url": "https://x.com/hsatoko327/status/2121877413651239174"
+ },
+ {
+  "year": 2026,
+  "team": "鈴鹿A",
+  "school": "鈴鹿",
+  "kind": "X",
+  "account": "@suzuka_robocon",
+  "date": "2026/11/15",
+  "summary": "鈴鹿高専ロボコンプロジェクト。準決勝の大分戦を415-405で制し、最後の5点バケツ（ラストバケツ）で決勝進出を決めたとの速報。",
+  "url": "https://x.com/suzuka_robocon/status/2121875759103115595"
+ },
+ {
+  "year": 2026,
+  "team": "鈴鹿A",
+  "school": "鈴鹿",
+  "kind": "X",
+  "account": "@suzuka_robocon",
+  "date": "2026/11/15",
+  "summary": "鈴鹿高専ロボコンプロジェクト。決勝で大阪公大に敗れ準優勝だったが、鈴鹿の歴代最高の成績だったとの報告。",
+  "url": "https://x.com/suzuka_robocon/status/2121895796979417200"
+ },
+ {
+  "year": 2026,
+  "team": "鈴鹿A",
+  "school": "鈴鹿",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による選手コメントのメモ（準決勝）。鈴鹿の選手は「作戦は50通りくらいあり、ギリギリでも勝てるようになっている」と話した。",
+  "url": "https://x.com/hsatoko327/status/2121874987883823199"
+ },
+ {
+  "year": 2026,
+  "team": "鈴鹿A",
+  "school": "鈴鹿",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者によるインタビューのメモ。鈴鹿は雑巾を巻く「巻き師」と机に並べる「置き師」の2人が装填を担当。巻き師は小学4年生からロボコンに憧れてきたとのこと。",
+  "url": "https://x.com/hsatoko327/status/2121892572914454813"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@gifuroboken",
+  "date": "2026/11/16",
+  "summary": "岐阜高専ロボット研究会の全国大会報告。ベスト8、雑巾を打った枚数は日本一、雑巾のスピードも「自称日本一」、HONDA特別賞を受賞（写真あり）。",
+  "url": "https://x.com/gifuroboken/status/2122298651552948231"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による選手コメントのメモ（準々決勝 大阪公大 425-420 岐阜）。岐阜は「32枚打ち切りの雑巾を30枚打てた」とコメント。",
+  "url": "https://x.com/hsatoko327/status/2121869066310930905"
+ },
+ {
+  "year": 2026,
+  "team": "岐阜A",
+  "school": "岐阜",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者によるHONDA特別賞の受賞理由のメモ。「雑巾32枚を打ち切る」というコンセプトのために自動おしぼり巻き機構に挑戦し、本番で実力を証明したことが評価された。",
+  "url": "https://x.com/hsatoko327/status/2121914365008068637"
+ },
+ {
+  "year": 2026,
+  "team": "大分B",
+  "school": "大分",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による技術賞の受賞理由のメモ。自動制御でなめらかに動き、選手は操作せずひたすら雑巾をセットするだけという斬新なロボット。",
+  "url": "https://x.com/hsatoko327/status/2121911153781800986"
+ },
+ {
+  "year": 2026,
+  "team": "大分B",
+  "school": "大分",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ（2回戦 沖縄 236-405 大分）。大分は全国に向けて砲台（射出機構）を4台に増やし、1回戦で505点を取っていた。",
+  "url": "https://x.com/hsatoko327/status/2121849940070801511"
+ },
+ {
+  "year": 2026,
+  "team": "呉A",
+  "school": "呉",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者によるマブチモーター特別賞の受賞理由のメモ。「射出する雑巾をとにかく固く巻いて安定させて飛ばす」コンセプトとそれを実現した機構が評価された。",
+  "url": "https://x.com/hsatoko327/status/2121915552323256505"
+ },
+ {
+  "year": 2026,
+  "team": "旭川A",
+  "school": "旭川",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による安川電機特別賞の受賞理由のメモ。治具を使った装填、机を狙う射出機構、柔らかい雑巾を扱う技術が評価された。",
+  "url": "https://x.com/hsatoko327/status/2121916821548957702"
+ },
+ {
+  "year": 2026,
+  "team": "明石A",
+  "school": "明石",
+  "kind": "X",
+  "account": "@akashikosen",
+  "date": "2026/11/15",
+  "summary": "明石高専ロボコン部。「拭風」が東京エレクトロン特別賞を受賞したとの報告。",
+  "url": "https://x.com/akashikosen/status/2121915993840906503"
+ },
+ {
+  "year": 2026,
+  "team": "明石A",
+  "school": "明石",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による東京エレクトロン特別賞の受賞理由のメモ。7つの射出機構を持ち連射もできるロボットで、きれいな放物線が評価された。",
+  "url": "https://x.com/hsatoko327/status/2121917950357610826"
+ },
+ {
+  "year": 2026,
+  "team": "秋田B",
+  "school": "秋田",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による田中貴金属特別賞の受賞理由のメモ。回転機構とばねの力で飛ばす工夫。解説者によると、雑巾を観覧車のように並べて装填し、棒で引っ掛けて少ない動力で旗の近くまで飛ばしていた。",
+  "url": "https://x.com/hsatoko327/status/2121920631172366826"
+ },
+ {
+  "year": 2026,
+  "team": "福井A",
+  "school": "福井",
+  "kind": "X",
+  "account": "@robot_fnct",
+  "date": "2026/11/15",
+  "summary": "福井高専ロボット部。全国大会でローム特別賞を受賞したとの報告。",
+  "url": "https://x.com/robot_fnct/status/2121921374977683555"
+ },
+ {
+  "year": 2026,
+  "team": "福井A",
+  "school": "福井",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者によるローム特別賞の受賞理由のメモ。3秒で6枚を装填する独創的な装填方法と、射出の正確なセンシングが評価された。",
+  "url": "https://x.com/hsatoko327/status/2121922425495662796"
+ },
+ {
+  "year": 2026,
+  "team": "香川高松A",
+  "school": "香川高松",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者によるデンソー特別賞の受賞理由のメモ。ベルトローラーとばねの2種類の射出機構を持つロボットを、2年生が中心になって形にしたことが評価された。",
+  "url": "https://x.com/hsatoko327/status/2121925015532679410"
+ },
+ {
+  "year": 2026,
+  "team": "香川高松A",
+  "school": "香川高松",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ（1回戦 米子 200-200 高松）。旗狙いの高松は終了直前にスーパー雑巾を決めて同点にしたが、移動バケツの得点が多い米子の勝ち。",
+  "url": "https://x.com/hsatoko327/status/2121832827797016716"
+ },
+ {
+  "year": 2026,
+  "team": "米子A",
+  "school": "米子",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ（1回戦 米子 200-200 高松）。米子は移動バケツに60枚入れるまで練習してきたチームで、同点を移動バケツの得点で制した。",
+  "url": "https://x.com/hsatoko327/status/2121832827797016716"
+ },
+ {
+  "year": 2026,
+  "team": "沖縄A",
+  "school": "沖縄",
+  "kind": "X",
+  "account": "@ballelshifter",
+  "date": "2026/11/16",
+  "summary": "観戦者による沖縄A「雑巾ぐるぐる大作戦」の紹介。中央の回転機構が特徴で、小型ながら雑巾6枚を同時に回し、1枚ずつ個別に離せるとのこと。",
+  "url": "https://x.com/ballelshifter/status/2122333636292943900"
+ },
+ {
+  "year": 2026,
+  "team": "沖縄A",
+  "school": "沖縄",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者によるアイデア賞の受賞理由のメモ。雑巾をぶんぶん振り回して投げ飛ばすアイデアを形にした。投げ方は豪快でコントロールは繊細、あと一歩でボーナス獲得の見せ場も作った。",
+  "url": "https://x.com/hsatoko327/status/2121909725310890439"
+ },
+ {
+  "year": 2026,
+  "team": "小山A",
+  "school": "小山",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者によるデザイン賞の受賞理由のメモ。白い雑巾を牛乳、スーパー雑巾をレモンに見立て、大きな牛がレモン味の牛乳を運ぶという世界観で、地元の名物を装飾に取り入れた。",
+  "url": "https://x.com/hsatoko327/status/2121912332209291525"
+ },
+ {
+  "year": 2026,
+  "team": "鹿児島A",
+  "school": "鹿児島",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者によるアイデア倒れ賞の受賞理由のメモ。ボーナスがあるわけでもないのに、走りながら時間を節約して高確率で1点を上乗せする技術に挑んだことが評価された。",
+  "url": "https://x.com/hsatoko327/status/2121927213234995348"
+ },
+ {
+  "year": 2026,
+  "team": "鹿児島A",
+  "school": "鹿児島",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による選手コメントのメモ（準決勝）。鹿児島は走りながら得点する「流鏑馬（やぶさめ）」が4試合連続で決まり、「忍者巻き」の雑巾も旗に掛かったとコメント。",
+  "url": "https://x.com/hsatoko327/status/2121877413651239174"
+ },
+ {
+  "year": 2026,
+  "team": "熊本八代A",
+  "school": "熊本八代",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ（1回戦 豊田 0-220 熊本八代）。熊本八代はウサギが窯から白い雑巾（ピザ）やスーパー雑巾（スパゲッティ）を打ち出すという世界観のロボット。",
+  "url": "https://x.com/hsatoko327/status/2121827159039787225"
+ },
+ {
+  "year": 2026,
+  "team": "熊本八代A",
+  "school": "熊本八代",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による選手コメントのメモ（準々決勝 大分 15-0 熊本八代）。地区大会の決勝と同じく大分に敗れたが、大変なことがあった中でのベスト8はうれしいとのこと。",
+  "url": "https://x.com/hsatoko327/status/2121866368194933054"
+ },
+ {
+  "year": 2026,
+  "team": "豊田A",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@toyotakosentime",
+  "date": "2026/11/16",
+  "summary": "豊田高専の学生新聞の速報。1回戦で熊本八代に敗れた。終了30秒前まで睨み合いが続いたが、スーパー雑巾を掛けられて0-220。",
+  "url": "https://x.com/toyotakosentime/status/2122117445846814995"
+ },
+ {
+  "year": 2026,
+  "team": "豊田A",
+  "school": "豊田",
+  "kind": "X",
+  "account": "@skra_0522_ws",
+  "date": "2026/11/15",
+  "summary": "豊田Aのメンバーの振り返り。今年で高専ロボコンを引退して学生ロボコンに進むが、後輩へ技術を継承し、来年こそ優勝を目指すとのこと。",
+  "url": "https://x.com/skra_0522_ws/status/2121975205245669391"
+ },
+ {
+  "year": 2026,
+  "team": "奈良A",
+  "school": "奈良",
+  "kind": "X",
+  "account": "@yuki373",
+  "date": "2026/11/15",
+  "summary": "観戦者による奈良A「龍田」の評価。自律移動、装填、旗への射出、移動バケツの自動追尾がすべて磨き抜かれていて、桁違いの完成度だったとの感想。",
+  "url": "https://x.com/yuki373/status/2122106323076882613"
+ },
+ {
+  "year": 2026,
+  "team": "奈良A",
+  "school": "奈良",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による選手コメントのメモ（準々決勝 奈良 500-505 鈴鹿）。奈良の選手は焦って戦略どおり動けずミスが出たと悔やんでいた。",
+  "url": "https://x.com/hsatoko327/status/2121864184153649235"
+ },
+ {
+  "year": 2026,
+  "team": "釧路A",
+  "school": "釧路",
+  "kind": "X",
+  "account": "@hsatoko327",
+  "date": "2026/11/15",
+  "summary": "配信の視聴者による実況メモ（2回戦 釧路 0-235 大阪公大）。釧路は最大16連射できる機体だったが、大阪公大のシールドに阻まれスーパー雑巾も打てなかった。解説者は設計者の思想が詰まった機構だと評価。",
+  "url": "https://x.com/hsatoko327/status/2121846810939658333"
+ },
+ {
+  "year": 2026,
+  "team": "広島商船A",
+  "school": "広島商船",
+  "kind": "X",
+  "account": "@nitHC_rbcn",
+  "date": "2026/11/16",
+  "summary": "広島商船高専ロボコン部。全国大会は1回戦敗退で悔いが残ったが、来年の第40回大会でより良い結果を残すとの報告。",
+  "url": "https://x.com/nitHC_rbcn/status/2122248507092246854"
+ }
+]

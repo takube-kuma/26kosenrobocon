@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>高専ロボコン データベース</title>
+<meta name="description" content="高専ロボコン1988〜2026年の全国大会と、2022〜2026年の地区大会・全国大会の全試合をまとめた、みんなで育てるデータベース。AIからも使えます。">
+<link rel="alternate" type="text/plain" href="llms.txt" title="AI向けの説明">
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1d1d1b;--sub:#6b6a64;--line:#e3e1da;--acc:#c2410c;--acc2:#0f766e;--red:#d43c3c;--blue:#2d63c8;--chip:#efede6;--win:#fff4e6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#151513;--card:#1f1f1c;--ink:#ecebe6;--sub:#a3a199;--line:#34332e;--acc:#fb923c;--acc2:#2dd4bf;--red:#f07070;--blue:#7aa2f0;--chip:#2a2a26;--win:#33261a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 "Hiragino Sans","Noto Sans JP",system-ui,sans-serif}
+a{color:var(--acc2);text-decoration:none}a:hover{text-decoration:underline}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.logo{font-weight:800;font-size:17px;color:var(--ink);white-space:nowrap}.logo span{color:var(--acc)}
+#q{flex:1;min-width:180px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit}
+.btn{display:inline-block;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;cursor:pointer;white-space:nowrap}
+.btn.p{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn:hover{text-decoration:none;filter:brightness(.97)}
+main{max-width:1080px;margin:0 auto;padding:16px 16px 60px}
+h1{font-size:24px;margin:8px 0 4px}h2{font-size:18px;margin:28px 0 10px}h3{font-size:15px;margin:18px 0 8px}
+.sub{color:var(--sub);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.yr{display:block;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.yr:hover{border-color:var(--acc);text-decoration:none}
+.yr b{font-size:16px}.yr .g{font-weight:700;margin:2px 0}.yr .w{font-size:13px;color:var(--sub)}
+.chip{display:inline-block;background:var(--chip);border-radius:999px;padding:1px 9px;font-size:12px;margin:2px 4px 2px 0;color:var(--ink)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
+.tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{color:var(--sub);font-weight:600;white-space:nowrap}
+td:first-child{white-space:nowrap}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.r{color:var(--red)}.b{color:var(--blue)}.won{font-weight:700;background:var(--win)}
+.aw{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:14px}.aw dt{color:var(--sub)}.aw dd{margin:0}
+.contrib{border-left:4px solid var(--acc);background:var(--card);padding:8px 12px;margin:8px 0;border-radius:0 8px 8px 0;font-size:13px}
+.contrib .h{color:var(--sub);font-size:12px}.contrib p{margin:4px 0;white-space:pre-wrap}
+.tag{font-size:11px;border-radius:4px;padding:0 5px;background:var(--acc);color:#fff;margin-right:6px}
+.tag.ok{background:var(--acc2)}
+.note{font-size:13px;color:var(--sub)}
+.rowflex{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+footer{max-width:1080px;margin:0 auto;padding:20px 16px 40px;color:var(--sub);font-size:12px;border-top:1px solid var(--line)}
+.hide{display:none}
+@media (max-width:600px){h1{font-size:20px}.aw{grid-template-columns:1fr}.aw dt{margin-top:6px}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="#">高専ロボコン<span>DB</span></a>
+<input id="q" type="search" placeholder="学校・チーム・ロボット・競技名で検索" autocomplete="off">
+<a class="btn p" id="post" target="_blank" rel="noopener">書き込む</a>
+<button class="btn" id="ai">AIに聞く</button>
+</div></header>
+<main id="m"><p class="sub">読み込み中…</p></main>
+<footer>
+データは公式サイト（official-robocon.com）・NHKの配信・各高専の発表などから集めたものです。間違いを見つけたら「書き込む」から教えてください。
+<br>データ（JSON）: <a href="data/nationals.json">nationals.json</a> ・ <a href="data/schools.json">schools.json</a> ・ years/<a href="data/years/2022.json">2022</a>〜<a href="data/years/2026.json">2026</a>.json ・ <a href="data/contrib.json">contrib.json</a> ・ <a href="data/links.json">links.json</a> ・ <a href="data/all.txt">all.txt（AI向けまとめ）</a> ・ <a href="llms.txt">llms.txt</a>
+<br><a href="../">2026年大会のページ</a>
+</footer>
+<script>
+const REPO='takube-kuma/26kosenrobocon';
+const BASE=new URL('./',location.href).href;
+const PUB='https://takube-kuma.github.io/26kosenrobocon/db/';
+const DIS=['北海道','東北','関東甲信越','東海北陸','近畿','中国','四国','九州沖縄'];
+const S={nat:null,sch:null,years:{},contrib:[],links:null};
+const $=s=>document.querySelector(s);
+const ap=(p,...k)=>p.append(...k.flat().filter(x=>x!=null&&x!==false));
+function el(tag,attrs,...kids){const e=document.createElement(tag);if(attrs)for(const[k,v]of Object.entries(attrs)){if(v==null)continue;if(k==='class')e.className=v;else if(k==='text')e.textContent=v;else if(k.startsWith('on'))e.addEventListener(k.slice(2),v);else e.setAttribute(k,v)}for(const k of kids.flat()){if(k==null||k===false)continue;e.append(k.nodeType?k:document.createTextNode(String(k)))}return e}
+const tk=t=>String(t||'').replace(/[A-Z]$/,'');
+const sl=k=>el('a',{href:'#s='+encodeURIComponent(k)},k);
+const tl=t=>el('a',{href:'#s='+encodeURIComponent(tk(t))},t);
+const yl=y=>el('a',{href:'#y='+y},y+'年');
+function yt(v,t){if(!v)return null;const u=/^http/.test(v)?v:'https://www.youtube.com/watch?v='+v;return t!=null?u.replace(/[?&]t=\d+/,'')+(u.includes('?')?'&':'?')+'t='+t+'s':u}
+async function J(p){const r=await fetch(p,{cache:'no-cache'});if(!r.ok)throw new Error(p+' '+r.status);return r.json()}
+async function year(y){if(!S.years[y])S.years[y]=J('data/years/'+y+'.json');return S.years[y]}
+function postUrl(o={}){const u=new URL('https://github.com/'+REPO+'/issues/new');u.searchParams.set('template','db-contrib.yml');for(const[k,v]of Object.entries(o))if(v!=null&&v!=='')u.searchParams.set(k,v);return u.href}
+
+// 投稿：Issue をそのまま読む（すぐ反映）＋ contrib.json（控え）
+const KEYS={'種類':'kind','年度':'year','大会':'district','学校・チーム':'team','試合':'round','内容':'content','出典':'source'};
+function parseIssue(b){const o={};for(const part of(b||'').split(/^### /m).slice(1)){const i=part.indexOf('\n');const k=KEYS[part.slice(0,i).trim()];let v=part.slice(i+1).trim();if(v==='_No response_')v='';if(k)o[k]=v}return o}
+async function loadContrib(){
+  let list=[];try{list=await J('data/contrib.json')}catch(e){}
+  const byId=new Map(list.map(c=>[c.id,c]));
+  try{
+    const r=await fetch('https://api.github.com/repos/'+REPO+'/issues?labels=db-contrib&state=all&per_page=100&sort=created&direction=desc');
+    if(r.ok){for(const is of await r.json()){
+      const lab=is.labels.map(l=>l.name);
+      if(lab.includes('rejected')||is.state_reason==='not_planned'){byId.delete(is.number);continue}
+      const p=parseIssue(is.body);
+      byId.set(is.number,{id:is.number,...p,year:parseInt(p.year)||null,author:is.user.login,url:is.html_url,created:is.created_at,status:lab.includes('confirmed')?'confirmed':(is.state==='closed'?'merged':'open')});
+    }}
+  }catch(e){}
+  S.contrib=[...byId.values()].sort((a,b)=>b.id-a.id);
+}
+function contribBox(c){
+  const st=c.status==='confirmed'?el('span',{class:'tag ok'},'確認済み'):c.status==='merged'?el('span',{class:'tag ok'},'反映済み'):el('span',{class:'tag'},'投稿');
+  const where=[c.year&&c.year+'年',c.district,c.team,c.round].filter(Boolean).join(' / ');
+  return el('div',{class:'contrib'},
+    el('div',{class:'h'},st,c.kind||'',where?' ・ '+where:'',' ・ ',el('a',{href:c.url,target:'_blank',rel:'noopener'},'#'+c.id),' by '+c.author),
+    el('p',{text:c.content||''}),
+    c.source?el('div',{class:'h'},'出典: ',/^https?:\/\//.test(c.source)?el('a',{href:c.source,target:'_blank',rel:'noopener nofollow'},c.source):c.source):null);
+}
+const contribFor=f=>S.contrib.filter(f).map(contribBox);
+
+function awardsList(rows){
+  const d=el('dl',{class:'aw'});
+  for(const a of rows){d.append(el('dt',null,a.award),el('dd',null,a.team?tl(a.team):sl(a.school),a.school_name&&a.school_name!==a.school?el('span',{class:'sub'},'（'+a.school_name+'）'):null,a.robot?'「'+a.robot+'」':''))}
+  return d;
+}
+function matchTable(ms,video,opt={}){
+  const tb=el('tbody');
+  for(const m of ms){
+    const rw=m.winner&&m.winner===m.red,bw=m.winner&&m.winner===m.blue;
+    const sc=s=>m[s+'_label']!=null?m[s+'_label']:(m[s+'_score']??'？');
+    const v=yt(video,m.t);
+    tb.append(el('tr',null,
+      el('td',null,m.round||''),
+      el('td',{class:rw?'won':''},el('span',{class:'r'},'● '),tl(m.red)),
+      el('td',{class:'n'+(rw?' won':'')},sc('red')),
+      el('td',{class:'n'+(bw?' won':'')},sc('blue')),
+      el('td',{class:bw?'won':''},el('span',{class:'b'},'● '),tl(m.blue)),
+      el('td',null,m.decision&&m.decision!=='得点'?m.decision:''),
+      el('td',null,v?el('a',{href:v,target:'_blank',rel:'noopener'},'▶'):''),
+      el('td',{class:'note'},m.note||'',m.src?el('span',null,' [出典: ',/^http/.test(m.src)?el('a',{href:m.src,target:'_blank',rel:'noopener'},'リンク'):m.src,']'):'')));
+  }
+  return el('div',{class:'tw'},el('table',null,el('thead',null,el('tr',null,...['試合','赤','','','青','決着','動画','メモ'].map(h=>el('th',null,h)))),tb));
+}
+
+// ---- 画面 ----
+function home(){
+  const m=$('#m');m.replaceChildren();
+  ap(m,el('h1',null,'高専ロボコン データベース'),
+    el('p',{class:'sub'},'1988年の第1回から2026年の第39回までの全国大会と、2022〜2026年の地区大会・全国大会の全試合（約870試合）。だれでも書き込めて、AIからも使えます。'),
+    el('div',{class:'rowflex'},el('a',{class:'btn p',href:postUrl(),target:'_blank',rel:'noopener'},'＋ 試合や情報を書き込む'),el('a',{class:'btn',href:'#schools'},'学校の一覧'),el('a',{class:'btn',href:'#about'},'使い方・AIから使う')));
+  const recent=S.contrib.slice(0,5);
+  if(recent.length){ap(m,el('h2',null,'みんなの最近の投稿'),...recent.map(contribBox))}
+  ap(m,el('h2',null,'年度'));
+  const g=el('div',{class:'grid'});
+  for(const n of[...S.nat].reverse()){
+    const w=n.awards.find(a=>a.award==='優勝'),gp=n.awards.find(a=>a.award==='ロボコン大賞');
+    g.append(el('a',{class:'yr',href:'#y='+n.year},el('b',null,n.year+'年'),el('span',{class:'sub'},' 第'+n.no+'回'+(n.detail?' ・ 全試合あり':'')),
+      el('div',{class:'g'},n.game),
+      el('div',{class:'w'},w?'優勝 '+(w.team||w.school)+'「'+w.robot+'」':'',gp?el('br'):null,gp?'大賞 '+(gp.team||gp.school):'')));
+  }
+  ap(m,g);
+}
+async function yearView(y){
+  const n=S.nat.find(x=>x.year===y);const m=$('#m');m.replaceChildren();
+  if(!n){ap(m,el('p',null,'その年度のデータはありません。'));return}
+  const i=S.nat.indexOf(n);
+  ap(m,el('div',{class:'rowflex sub'},i>0?el('a',{href:'#y='+S.nat[i-1].year},'← '+S.nat[i-1].year):null,el('a',{href:'#'},'年度一覧'),S.nat[i+1]?el('a',{href:'#y='+S.nat[i+1].year},S.nat[i+1].year+' →'):null),
+    el('h1',null,y+'年 第'+n.no+'回「'+n.game+'」'),
+    el('p',{class:'sub'},[n.date,n.venue].filter(Boolean).join(' ・ ')),
+    el('p',null,n.summary||''),
+    n.note?el('p',{class:'note'},'※ '+n.note):null,
+    el('h2',null,'全国大会の結果'),el('div',{class:'card'},awardsList(n.awards),el('p',{class:'note'},'出典: ',el('a',{href:n.source,target:'_blank',rel:'noopener'},'公式サイト'))),
+    ...contribFor(c=>c.year===y&&(!c.district||c.district==='全国大会'||c.district==='該当なし')),
+    el('div',{class:'rowflex'},el('a',{class:'btn',href:postUrl({year:y,district:'全国大会'}),target:'_blank',rel:'noopener'},'この年の情報を書き込む'),aiBtn(y+'年（第'+n.no+'回「'+n.game+'」）の高専ロボコンについて')));
+  if(!n.detail){ap(m,el('p',{class:'note'},'この年の地区大会・各試合のデータはまだありません。知っている人は書き込んでください。'));return}
+  const Y=await year(y);
+  const tabs=el('div',{class:'tabs'}),box=el('div');
+  const keys=['全国大会',...DIS.filter(d=>Y.districts[d])];
+  ap(m,el('h2',null,'大会ごとの試合'),tabs,box);
+  const show=k=>{
+    [...tabs.children].forEach(b=>b.classList.toggle('on',b.textContent===k));
+    const D=k==='全国大会'?Y.national:Y.districts[k];box.replaceChildren();
+    const meta=[D.date,D.venue].filter(Boolean).join(' ・ ');
+    const aw=[];
+    const add=(lab,v)=>{if(!v)return;const t=Array.isArray(v)?v[0]:v;aw.push({award:lab,team:t,robot:Array.isArray(v)?v[1]:''})};
+    add('ロボコン大賞',D.grand);add('優勝',D.champ);add('準優勝',D.runner);add('アイデア賞',D.idea);add('技術賞',D.tech);add('デザイン賞',D.design);add('アイデア倒れ賞',D.flop);
+    (D.awards||[]).forEach(a=>{if(!aw.some(x=>x.team===a.team&&x.award===a.award))aw.push({award:a.award,team:a.team})});
+    if(D.special_by)D.special_by.forEach(([c,t])=>aw.push({award:'特別賞（'+c+'）',team:t}));else if(D.special&&!D.awards)aw.push(...D.special.map(t=>({award:'特別賞',team:t})));
+    ap(box,el('p',{class:'sub'},meta,D.video?el('span',null,' ・ ',el('a',{href:yt(D.video),target:'_blank',rel:'noopener'},'配信を見る')):null),
+      aw.length?el('div',{class:'card'},awardsList(aw)):null,
+      D.national&&D.national.length&&k!=='全国大会'?el('p',null,'全国大会へ: ',...D.national.map(t=>el('span',{class:'chip'},tl(t)))):null,
+      ...contribFor(c=>c.year===y&&c.district===k),
+      el('h3',null,'試合（'+D.matches.length+'）'),matchTable(D.matches,D.video),
+      el('h3',null,'出場チーム（'+D.teams.length+'）'),teamTable(D.teams),
+      el('p',null,el('a',{class:'btn',href:postUrl({year:y,district:k}),target:'_blank',rel:'noopener'},'この大会に書き込む')));
+  };
+  keys.forEach(k=>tabs.append(el('button',{onclick:()=>{show(k);history.replaceState(null,'','#y='+y+'&d='+encodeURIComponent(k))}},k)));
+  const want=new URLSearchParams(location.hash.slice(1)).get('d');
+  show(keys.includes(want)?want:keys[0]);
+}
+function teamTable(ts){
+  const rich=ts.some(t=>t.mechanism);
+  const tb=el('tbody');
+  for(const t of ts)tb.append(el('tr',null,el('td',null,tl(t.team)),el('td',null,t.robot||''),
+    rich?el('td',{class:'n'},t.wins!=null?t.wins+'勝'+t.losses+'敗':''):null,
+    rich?el('td',null,t.mechanism||'',t.x_summary?el('div',{class:'note'},'Xより: '+t.x_summary):null):el('td',{class:'note'},t.home?'（'+t.home+'地区）':'')));
+  return el('div',{class:'tw'},el('table',null,el('thead',null,el('tr',null,el('th',null,'チーム'),el('th',null,'ロボット'),rich?el('th',null,'成績'):null,el('th',null,rich?'しくみ':''))),tb));
+}
+async function schoolView(k){
+  const m=$('#m');m.replaceChildren();
+  const s=S.sch.find(x=>x.key===k);
+  ap(m,el('div',{class:'sub'},el('a',{href:'#schools'},'学校の一覧')),el('h1',null,k),el('p',{class:'sub'},s&&s.region?s.region+'地区':''));
+  const aw=[];for(const n of S.nat)for(const a of n.awards)if(a.school===k)aw.push({...a,year:n.year,game:n.game});
+  ap(m,el('h2',null,'全国大会での受賞（'+aw.length+'）'));
+  if(aw.length){const tb=el('tbody');for(const a of aw)tb.append(el('tr',null,el('td',null,yl(a.year)),el('td',null,a.game),el('td',null,a.award),el('td',null,a.team||''),el('td',null,a.robot||'')));ap(m,el('div',{class:'tw'},el('table',null,el('thead',null,el('tr',null,...['年','競技','賞','チーム','ロボット'].map(h=>el('th',null,h)))),tb)))}
+  else ap(m,el('p',{class:'note'},'記録された受賞はありません（1988〜2021年は全国大会の受賞のみ収録）。'));
+  ap(m,el('h2',null,'2022〜2026年の成績'));
+  const yrs=S.nat.filter(n=>n.detail).map(n=>n.year);
+  const tb=el('tbody');let ws=0,ls=0;const allm=[];
+  for(const y of yrs){const Y=await year(y);
+    for(const[d,D]of[...Object.entries(Y.districts),['全国大会',Y.national]]){
+      const mine=D.teams.filter(t=>tk(t.team)===k);if(!mine.length)continue;
+      for(const t of mine){
+        const ms=D.matches.filter(x=>x.red===t.team||x.blue===t.team);
+        const w=ms.filter(x=>x.winner===t.team).length,l=ms.filter(x=>x.winner&&x.winner!==t.team).length;ws+=w;ls+=l;
+        const res=[];if(D.champ&&D.champ[0]===t.team)res.push('優勝');if(D.runner&&D.runner[0]===t.team)res.push('準優勝');
+        ['grand:ロボコン大賞','idea:アイデア賞','tech:技術賞','design:デザイン賞','flop:アイデア倒れ賞'].forEach(p=>{const[f,lab]=p.split(':');const v=D[f];if(v&&(Array.isArray(v)?v[0]:v)===t.team)res.push(lab)});
+        (D.awards||[]).forEach(a=>{if(a.team===t.team&&!res.includes(a.award))res.push(a.award)});
+        if(d!=='全国大会'&&D.national&&D.national.includes(t.team))res.push('全国へ');
+        tb.append(el('tr',null,el('td',null,el('a',{href:'#y='+y+'&d='+encodeURIComponent(d)},y+' '+d)),el('td',null,t.team),el('td',null,t.robot||''),el('td',{class:'n'},w+'勝'+l+'敗'),el('td',null,res.join('・'))));
+        ms.forEach(x=>allm.push({...x,_y:y,_d:d,_v:D.video}));
+      }
+    }
+  }
+  ap(m,el('p',{class:'sub'},'通算 '+ws+'勝'+ls+'敗'),el('div',{class:'tw'},el('table',null,el('thead',null,el('tr',null,...['大会','チーム','ロボット','成績','結果'].map(h=>el('th',null,h)))),tb)));
+  const cs=contribFor(c=>(c.team||'').split(/[,、，\s]+/).some(t=>tk(t)===k));
+  if(cs.length)ap(m,el('h2',null,'みんなの投稿'),...cs);
+  if(allm.length){ap(m,el('h2',null,'試合（'+allm.length+'）'));
+    for(const y of yrs){const g=allm.filter(x=>x._y===y);if(!g.length)continue;
+      const byD={};g.forEach(x=>(byD[x._d]=byD[x._d]||[]).push(x));
+      for(const[d,ms]of Object.entries(byD))ap(m,el('h3',null,y+' '+d),matchTable(ms.map(x=>({...x,round:x.round})),ms[0]._v));}}
+  if(!S.links)S.links=await J('data/links.json').catch(()=>[]);
+  const ln=S.links.filter(x=>x.school===k);
+  if(ln.length){ap(m,el('h2',null,'関連する投稿・資料（'+ln.length+'）'));const ul=el('ul');ln.forEach(x=>ul.append(el('li',null,x.date+' '+x.account+' ',el('a',{href:x.url,target:'_blank',rel:'noopener'},'リンク'),el('div',{class:'note'},x.summary))));ap(m,ul)}
+  ap(m,el('div',{class:'rowflex'},el('a',{class:'btn',href:postUrl({team:k}),target:'_blank',rel:'noopener'},'この学校について書き込む'),aiBtn('高専ロボコンの「'+k+'」の歴代の成績とロボットについて')));
+}
+function schoolsView(){
+  const m=$('#m');m.replaceChildren();ap(m,el('h1',null,'学校の一覧'),el('p',{class:'sub'},'学校名は今の名前にそろえています（例: 仙台電波→仙台広瀬、詫間電波→香川詫間）。'));
+  const cnt={};for(const n of S.nat)for(const a of n.awards)cnt[a.school]=(cnt[a.school]||0)+1;
+  for(const r of[...DIS,'']){const ss=S.sch.filter(s=>s.region===r||(!r&&!DIS.includes(s.region)));if(!ss.length)continue;
+    ap(m,el('h2',null,r?r+'地区':'その他'),el('div',null,...ss.map(s=>el('span',{class:'chip'},sl(s.key),cnt[s.key]?' 🏆'+cnt[s.key]:''))))}
+}
+async function searchView(q){
+  const m=$('#m');m.replaceChildren();ap(m,el('h1',null,'「'+q+'」の検索結果'));
+  const ql=q.toLowerCase(),hit=s=>String(s||'').toLowerCase().includes(ql);
+  const sch=S.sch.filter(s=>hit(s.key));
+  if(sch.length)ap(m,el('h2',null,'学校'),el('div',null,...sch.map(s=>el('span',{class:'chip'},sl(s.key)))));
+  const rows=[];
+  for(const n of S.nat){if(hit(n.game))rows.push([n.year,'競技',n.game,null]);for(const a of n.awards)if(hit(a.robot)||hit(a.school_name))rows.push([n.year,'全国 '+a.award,a.robot,a.team||a.school])}
+  for(const n of S.nat.filter(n=>n.detail)){const Y=await year(n.year);
+    for(const[d,D]of[...Object.entries(Y.districts),['全国大会',Y.national]])for(const t of D.teams)if(hit(t.robot)||hit(t.mechanism))rows.push([n.year,d,t.robot,t.team,d])}
+  const seen=new Set();const tb=el('tbody');
+  for(const[y,w,r,t,d]of rows){const key=y+w+r+t;if(seen.has(key))continue;seen.add(key);
+    tb.append(el('tr',null,el('td',null,el('a',{href:'#y='+y+(d?'&d='+encodeURIComponent(d):'')},y)),el('td',null,w),el('td',null,r||''),el('td',null,t?tl(t):'')))}
+  ap(m,el('h2',null,'ロボット・競技（'+seen.size+'）'),seen.size?el('div',{class:'tw'},el('table',null,tb)):el('p',{class:'note'},'見つかりませんでした。'));
+  const cs=S.contrib.filter(c=>hit(c.content)||hit(c.team));if(cs.length)ap(m,el('h2',null,'投稿'),...cs.map(contribBox));
+}
+function aboutView(){
+  const m=$('#m');m.replaceChildren();
+  const pre=t=>el('pre',{style:'white-space:pre-wrap;background:var(--chip);padding:10px;border-radius:8px;font-size:12px'},t);
+  ap(m,el('h1',null,'使い方'),
+    el('h2',null,'書き込む（みんなで作る）'),
+    el('div',{class:'card'},el('p',null,'「書き込む」ボタンから、試合の結果・ロボットのしくみ・動画や記事のリンク・間違いの訂正などを送れます。送るとすぐにこのページの該当する年度・大会・学校に「投稿」として表示されます。'),
+      el('p',{class:'note'},'投稿にはGitHubのアカウント（無料）が必要です。出典（URLなど）を必ず付けてください。間違い・不適切な投稿は管理者が「rejected」ラベルで非表示にし、確認できたものは「confirmed」で「確認済み」になります。投稿はIssueとして公開され、data/contrib.json にも自動で保存されます。')),
+    el('h2',null,'AIから使う'),
+    el('div',{class:'card'},el('p',null,'このデータベースは誰でも使えるJSON／テキストで公開しています。ChatGPTやClaudeなどウェブを読めるAIに、次のURLを渡して質問できます。'),
+      pre(PUB+'llms.txt\n'+PUB+'data/all.txt'),
+      el('p',null,'質問の例:'),pre('このURLの高専ロボコンのデータを読んで、旭川高専の2022〜2026年の成績をまとめて。\n'+PUB+'data/all.txt'),
+      el('p',{class:'note'},'プログラムから使うときは data/nationals.json（全国大会 1988〜2026）、data/years/2022〜2026.json（全試合）、data/schools.json、data/contrib.json（投稿）を読んでください。'),
+      el('div',{class:'rowflex'},aiBtn('高専ロボコンについて'))),
+    el('h2',null,'収録している範囲'),
+    el('div',{class:'card'},el('ul',null,el('li',null,'1988〜2021年: 全国大会の競技・会場・受賞校とロボット名（公式サイトより）'),el('li',null,'2022〜2026年: 地区大会8つと全国大会の全試合（得点・勝者・決着の仕方・配信の時刻）、各賞、出場チームとロボット'),el('li',null,'2026年: ロボットのしくみ、Xの投稿のまとめ'),el('li',null,'学校名は今の名前にそろえています。統合前の名前は全国大会の受賞欄にカッコ書きで残しています'))));
+}
+function aiBtn(topic){
+  return el('span',{class:'rowflex'},el('a',{class:'btn',href:'https://claude.ai/new?q='+encodeURIComponent(aiPrompt(topic)),target:'_blank',rel:'noopener'},'Claudeに聞く'),el('a',{class:'btn',href:'https://chatgpt.com/?q='+encodeURIComponent(aiPrompt(topic)),target:'_blank',rel:'noopener'},'ChatGPTに聞く'));
+}
+const aiPrompt=t=>'次の高専ロボコンのデータベースを読んで、'+t+'教えてください。データにないことは「データにない」と答えてください。\n'+PUB+'data/all.txt\n（説明: '+PUB+'llms.txt）';
+
+async function route(){
+  const h=new URLSearchParams(location.hash.slice(1));
+  window.scrollTo(0,0);
+  try{
+    if(h.has('y'))await yearView(+h.get('y'));
+    else if(h.has('s'))await schoolView(h.get('s'));
+    else if(h.has('q')){$('#q').value=h.get('q');await searchView(h.get('q'))}
+    else if(location.hash==='#schools')schoolsView();
+    else if(location.hash==='#about')aboutView();
+    else home();
+  }catch(e){$('#m').replaceChildren(el('p',null,'読み込めませんでした: '+e.message))}
+}
+$('#post').href=postUrl();
+$('#ai').onclick=()=>{location.hash='#about'};
+let qt;$('#q').addEventListener('input',e=>{clearTimeout(qt);qt=setTimeout(()=>{const v=e.target.value.trim();if(v.length>=1)history.replaceState(null,'','#q='+encodeURIComponent(v)),route();},350)});
+addEventListener('hashchange',route);
+(async()=>{
+  [S.nat,S.sch]=await Promise.all([J('data/nationals.json'),J('data/schools.json')]);
+  await loadContrib();
+  route();
+})();
+</script>
+</body>
+</html>

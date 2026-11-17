@@ -1,0 +1,16 @@
+# 高専ロボコン データベース
+
+> 高専ロボコン（アイデア対決・全国高等専門学校ロボットコンテスト）の1988〜2026年の全国大会の結果と、2022〜2026年の地区大会・全国大会の全試合のデータ。だれでも自由に読めます。
+
+- [全部まとめたテキスト（まずこれを読む）](https://takube-kuma.github.io/26kosenrobocon/db/data/all.txt): 全国大会の歴代受賞、2022〜2026年の全試合・各賞・ロボットのしくみ
+- [全国大会 1988〜2026（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/nationals.json)
+- [年度ごとの全試合（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/years/2026.json): 2022.json〜2026.json。districts[地区].matches と national.matches
+- [学校の一覧（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/schools.json)
+- [みんなの投稿（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/contrib.json): GitHubのIssueから自動で集めた追加・訂正。status が confirmed のものは確認済み、open は未確認
+- [関連するXの投稿のまとめ（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/links.json)
+
+## 注意
+- 学校名は今の名前（例: 仙台電波→仙台広瀬、詫間電波→香川詫間、大阪府立大学→大阪公大）。チーム名の末尾A/Bは同じ学校の2チーム。
+- 1988〜2021年は全国大会の受賞のみ。地区大会や試合ごとのデータはまだない。
+- 得点に「V」とあるのはVゴール（競技の達成）で勝負がついた試合。
+- 間違いの報告・追加: https://github.com/takube-kuma/26kosenrobocon/issues/new?template=db-contrib.yml

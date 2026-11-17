@@ -1,0 +1,2650 @@
+{
+ "year": 2025,
+ "no": 38,
+ "game": "Great High Gate",
+ "rules": "2分30秒。パイロンを作業エリアの外へ出すと1個5点（3個で15点）。箱を積んでゲートを作り、人が乗った台車と連結してくぐるとゲート得点（高さ1cm＝1点）と周回点。終了時にゲートが相手より高ければ＋50点。同点のときは運んだ箱の数やゲートの高さで勝敗を決める。",
+ "districts": {
+  "北海道": {
+   "date": "2025-09-28",
+   "venue": "函館高専",
+   "video": "vVv-LBV15gg",
+   "champ": [
+    "旭川A",
+    "天旋"
+   ],
+   "runner": [
+    "函館B",
+    "函館高専ズ"
+   ],
+   "idea": "函館A",
+   "tech": "苫小牧B",
+   "design": "苫小牧A",
+   "special": [
+    "函館A",
+    "苫小牧A",
+    "釧路A",
+    "苫小牧B",
+    "旭川B",
+    "旭川A",
+    "函館B",
+    "釧路B"
+   ],
+   "national": [
+    "旭川A",
+    "函館A"
+   ],
+   "teams": [
+    {
+     "team": "函館A",
+     "robot": "Great Hako Date"
+    },
+    {
+     "team": "函館B",
+     "robot": "函館高専ズ"
+    },
+    {
+     "team": "旭川A",
+     "robot": "天旋"
+    },
+    {
+     "team": "旭川B",
+     "robot": "夏の日の思い出"
+    },
+    {
+     "team": "苫小牧A",
+     "robot": "ザリガニ越門"
+    },
+    {
+     "team": "苫小牧B",
+     "robot": "イマジナリーフレンド"
+    },
+    {
+     "team": "釧路A",
+     "robot": "パンダの門づくり"
+    },
+    {
+     "team": "釧路B",
+     "robot": "新韋駄天"
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選A-1",
+     "red": "苫小牧A",
+     "blue": "釧路B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "苫小牧A",
+     "decision": "同点・審査員判定 3-0",
+     "t": 3697
+    },
+    {
+     "round": "予選B-1",
+     "red": "旭川A",
+     "blue": "苫小牧B",
+     "red_score": 15,
+     "blue_score": 5,
+     "winner": "旭川A",
+     "decision": "得点",
+     "t": 4269
+    },
+    {
+     "round": "予選A-2",
+     "red": "旭川B",
+     "blue": "函館B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "函館B",
+     "decision": "同点・ゲートの高さ",
+     "t": 4870
+    },
+    {
+     "round": "予選B-2",
+     "red": "函館A",
+     "blue": "釧路A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "函館A",
+     "decision": "同点・積んだ高さ",
+     "t": 5475
+    },
+    {
+     "round": "予選A-3",
+     "red": "釧路B",
+     "blue": "旭川B",
+     "red_score": 15,
+     "blue_score": 5,
+     "winner": "釧路B",
+     "decision": "得点",
+     "t": 5981
+    },
+    {
+     "round": "予選B-3",
+     "red": "苫小牧B",
+     "blue": "釧路A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "苫小牧B",
+     "decision": "同点・積んだ高さ",
+     "t": 6573
+    },
+    {
+     "round": "予選A-4",
+     "red": "苫小牧A",
+     "blue": "函館B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "函館B",
+     "decision": "同点・積んだ高さ",
+     "t": 7114
+    },
+    {
+     "round": "予選B-4",
+     "red": "旭川A",
+     "blue": "函館A",
+     "red_score": 305,
+     "blue_score": 15,
+     "winner": "旭川A",
+     "decision": "得点",
+     "t": 7683
+    },
+    {
+     "round": "決勝",
+     "red": "旭川A",
+     "blue": "函館B",
+     "red_score": 300,
+     "blue_score": 15,
+     "winner": "旭川A",
+     "decision": "得点",
+     "t": 12106,
+     "note": "決勝でゲートを完成させて通過"
+    }
+   ]
+  },
+  "東北": {
+   "date": "2025-10-12",
+   "venue": "いわき市総合体育館",
+   "video": "bCa83JkjjAU",
+   "champ": [
+    "仙台広瀬A",
+    "OCT"
+   ],
+   "runner": [
+    "福島B",
+    "鳴門"
+   ],
+   "idea": "一関A",
+   "tech": "仙台名取A",
+   "design": "仙台名取B",
+   "special": [
+    "鶴岡B",
+    "秋田B",
+    "八戸A",
+    "仙台広瀬B",
+    "一関B",
+    "八戸B",
+    "秋田A",
+    "福島A"
+   ],
+   "national": [
+    "仙台広瀬A",
+    "仙台名取A",
+    "一関A"
+   ],
+   "teams": [
+    {
+     "team": "一関A",
+     "robot": "猩猩"
+    },
+    {
+     "team": "一関B",
+     "robot": "つんだもん"
+    },
+    {
+     "team": "仙台名取A",
+     "robot": "タコじゃなイカ"
+    },
+    {
+     "team": "仙台名取B",
+     "robot": "メ蟹（カルポーター）"
+    },
+    {
+     "team": "仙台広瀬A",
+     "robot": "OCT"
+    },
+    {
+     "team": "仙台広瀬B",
+     "robot": "アーマード仙台藩"
+    },
+    {
+     "team": "八戸A",
+     "robot": "海迅"
+    },
+    {
+     "team": "八戸B",
+     "robot": "Portérien"
+    },
+    {
+     "team": "福島A",
+     "robot": "登竜"
+    },
+    {
+     "team": "福島B",
+     "robot": "鳴門"
+    },
+    {
+     "team": "秋田A",
+     "robot": "通竜門"
+    },
+    {
+     "team": "秋田B",
+     "robot": "凱旋門"
+    },
+    {
+     "team": "鶴岡A",
+     "robot": ""
+    },
+    {
+     "team": "鶴岡B",
+     "robot": "スーパースタッカー・レオ"
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選A-1",
+     "red": "八戸B",
+     "blue": "秋田B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "秋田B",
+     "decision": "同点・運んだ箱の数",
+     "t": 3620
+    },
+    {
+     "round": "予選B-1",
+     "red": "秋田A",
+     "blue": "鶴岡B",
+     "red_score": 15,
+     "blue_score": 10,
+     "winner": "秋田A",
+     "decision": "得点",
+     "t": 4124
+    },
+    {
+     "round": "予選C-1",
+     "red": "福島A",
+     "blue": "一関B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "一関B",
+     "decision": "審査員判定",
+     "t": 4633
+    },
+    {
+     "round": "予選D-1",
+     "red": "八戸A",
+     "blue": "仙台広瀬B",
+     "red_score": 15,
+     "blue_score": 10,
+     "winner": "八戸A",
+     "decision": "得点",
+     "t": 5139
+    },
+    {
+     "round": "予選A-2",
+     "red": "鶴岡A",
+     "blue": "仙台広瀬A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "仙台広瀬A",
+     "decision": "同点・運んだ箱の数",
+     "t": 5719
+    },
+    {
+     "round": "予選B-2",
+     "red": "一関A",
+     "blue": "福島B",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "福島B",
+     "decision": "得点",
+     "t": 6220
+    },
+    {
+     "round": "予選C-2",
+     "red": "一関B",
+     "blue": "仙台名取A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "仙台名取A",
+     "decision": "同点・ゲートの高さ",
+     "t": 6806
+    },
+    {
+     "round": "予選D-2",
+     "red": "仙台広瀬B",
+     "blue": "仙台名取B",
+     "red_score": 5,
+     "blue_score": 0,
+     "winner": "仙台広瀬B",
+     "decision": "得点",
+     "t": 7300
+    },
+    {
+     "round": "予選A-3",
+     "red": "八戸B",
+     "blue": "鶴岡A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "八戸B",
+     "decision": "審査員判定",
+     "t": 7840
+    },
+    {
+     "round": "予選B-3",
+     "red": "鶴岡B",
+     "blue": "一関A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "一関A",
+     "decision": "同点・運んだ箱の数",
+     "t": 8437
+    },
+    {
+     "round": "予選C-3",
+     "red": "仙台名取A",
+     "blue": "福島A",
+     "red_score": 5,
+     "blue_score": 15,
+     "winner": "福島A",
+     "decision": "得点",
+     "t": 9147
+    },
+    {
+     "round": "予選D-3",
+     "red": "仙台名取B",
+     "blue": "八戸A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "仙台名取B",
+     "decision": "同点・積んだ高さ",
+     "t": 9747
+    },
+    {
+     "round": "予選A-4",
+     "red": "秋田B",
+     "blue": "仙台広瀬A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "仙台広瀬A",
+     "decision": "同点・ゲートの高さ",
+     "t": 10252
+    },
+    {
+     "round": "予選B-4",
+     "red": "秋田A",
+     "blue": "福島B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "福島B",
+     "decision": "同点・積んだ高さ",
+     "t": 10900
+    },
+    {
+     "round": "準決勝1",
+     "red": "仙台広瀬A",
+     "blue": "一関B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "仙台広瀬A",
+     "decision": "同点・積んだ高さ",
+     "t": 12747
+    },
+    {
+     "round": "準決勝2",
+     "red": "八戸A",
+     "blue": "福島B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "福島B",
+     "decision": "同点・積んだ高さ",
+     "t": 13262,
+     "src": "配信 3:46:00 終了3:00で15-15（同点・積んだ高さ）"
+    },
+    {
+     "round": "決勝",
+     "red": "仙台広瀬A",
+     "blue": "福島B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "仙台広瀬A",
+     "decision": "ゲートの高さ",
+     "t": 15250,
+     "src": "配信 4:17:04 終了3:00で15-15（同点・ゲートの高さ）"
+    }
+   ]
+  },
+  "関東甲信越": {
+   "date": "2025-10-12",
+   "venue": "ALSOKぐんま武道館",
+   "video": "zb1r2g2hWk4",
+   "champ": [
+    "小山B",
+    "オヤマシュランラン"
+   ],
+   "runner": [
+    "都立荒川B",
+    "破天荒"
+   ],
+   "idea": "長野A",
+   "tech": "東京B",
+   "design": "小山A",
+   "special": [
+    "都立荒川A",
+    "サレジオA",
+    "木更津B",
+    "群馬A",
+    "東京A",
+    "長岡A",
+    "茨城B",
+    "都立品川B"
+   ],
+   "national": [
+    "小山B",
+    "木更津A",
+    "東京B",
+    "都立荒川B"
+   ],
+   "teams": [
+    {
+     "team": "サレジオA",
+     "robot": "S.P.E.E.D."
+    },
+    {
+     "team": "サレジオB",
+     "robot": ""
+    },
+    {
+     "team": "小山A",
+     "robot": "レッサー☆はぐ太郎"
+    },
+    {
+     "team": "小山B",
+     "robot": "オヤマシュランラン"
+    },
+    {
+     "team": "木更津A",
+     "robot": "それゆけキサンタクロース"
+    },
+    {
+     "team": "木更津B",
+     "robot": "オクト"
+    },
+    {
+     "team": "東京A",
+     "robot": "建蔵"
+    },
+    {
+     "team": "東京B",
+     "robot": "明修羅"
+    },
+    {
+     "team": "群馬A",
+     "robot": "赤鋏"
+    },
+    {
+     "team": "群馬B",
+     "robot": ""
+    },
+    {
+     "team": "茨城A",
+     "robot": ""
+    },
+    {
+     "team": "茨城B",
+     "robot": "御開帳！水戸黄門"
+    },
+    {
+     "team": "都立品川A",
+     "robot": ""
+    },
+    {
+     "team": "都立品川B",
+     "robot": "凱旋"
+    },
+    {
+     "team": "都立荒川A",
+     "robot": "あらごんくえすと"
+    },
+    {
+     "team": "都立荒川B",
+     "robot": "破天荒"
+    },
+    {
+     "team": "長岡A",
+     "robot": "かんのん.zip"
+    },
+    {
+     "team": "長岡B",
+     "robot": ""
+    },
+    {
+     "team": "長野A",
+     "robot": "ぶっ飛ばシーソー"
+    },
+    {
+     "team": "長野B",
+     "robot": ""
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選A-1",
+     "red": "東京B",
+     "blue": "小山A",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "小山A",
+     "decision": "得点",
+     "t": 3850
+    },
+    {
+     "round": "予選B-1",
+     "red": "群馬A",
+     "blue": "サレジオA",
+     "red_score": 10,
+     "blue_score": 5,
+     "winner": "群馬A",
+     "decision": "得点",
+     "t": 4339
+    },
+    {
+     "round": "予選C-1",
+     "red": "木更津B",
+     "blue": "茨城B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "木更津B",
+     "decision": "同点・審査員判定 2-1",
+     "t": 5329
+    },
+    {
+     "round": "予選D-1",
+     "red": "都立品川A",
+     "blue": "長野B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "都立品川A",
+     "decision": "同点",
+     "t": 5863
+    },
+    {
+     "round": "予選A-2",
+     "red": "都立品川B",
+     "blue": "茨城A",
+     "red_score": 5,
+     "blue_score": 15,
+     "winner": "茨城A",
+     "decision": "得点",
+     "t": 6306
+    },
+    {
+     "round": "予選B-2",
+     "red": "東京A",
+     "blue": "長野A",
+     "red_score": 15,
+     "blue_score": 10,
+     "winner": "長野A",
+     "decision": "得点",
+     "t": 6794
+    },
+    {
+     "round": "予選E-1",
+     "red": "群馬B",
+     "blue": "小山B",
+     "red_score": 15,
+     "blue_score": 215,
+     "winner": "小山B",
+     "decision": "得点",
+     "t": 7412
+    },
+    {
+     "round": "予選C-2",
+     "red": "都立荒川B",
+     "blue": "サレジオB",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "都立荒川B",
+     "decision": "同点・ゲートの高さ",
+     "t": 7850
+    },
+    {
+     "round": "予選D-2",
+     "red": "木更津A",
+     "blue": "長岡B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "木更津A",
+     "decision": "同点・柱の高さ",
+     "t": 8425
+    },
+    {
+     "round": "予選B-3",
+     "red": "サレジオA",
+     "blue": "東京A",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "東京A",
+     "decision": "得点",
+     "t": 9529
+    },
+    {
+     "round": "予選E-2",
+     "red": "都立荒川A",
+     "blue": "群馬B",
+     "red_score": 5,
+     "blue_score": 0,
+     "winner": "都立荒川A",
+     "decision": "得点",
+     "t": 10127
+    },
+    {
+     "round": "予選C-3",
+     "red": "茨城B",
+     "blue": "サレジオB",
+     "red_score": 5,
+     "blue_score": 10,
+     "winner": "サレジオB",
+     "decision": "得点",
+     "t": 10636
+    },
+    {
+     "round": "予選D-3",
+     "red": "長野B",
+     "blue": "長岡B",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "長岡B",
+     "decision": "得点",
+     "t": 11232
+    },
+    {
+     "round": "予選A-4",
+     "red": "小山A",
+     "blue": "茨城A",
+     "red_score": 15,
+     "blue_score": 5,
+     "winner": "小山A",
+     "decision": "得点",
+     "t": 11692
+    },
+    {
+     "round": "予選B-4",
+     "red": "群馬A",
+     "blue": "長野A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "長野A",
+     "decision": "同点・審査員判定",
+     "t": 12162
+    },
+    {
+     "round": "予選E-4",
+     "red": "長岡A",
+     "blue": "小山B",
+     "red_score": 5,
+     "blue_score": 210,
+     "winner": "小山B",
+     "decision": "得点",
+     "t": 12502
+    },
+    {
+     "round": "予選C-4",
+     "red": "木更津B",
+     "blue": "都立荒川B",
+     "red_score": 10,
+     "blue_score": 225,
+     "winner": "都立荒川B",
+     "decision": "得点",
+     "t": 13104
+    },
+    {
+     "round": "準々決勝",
+     "red": "木更津A",
+     "blue": "長野A",
+     "red_score": 235,
+     "blue_score": 15,
+     "winner": "木更津A",
+     "decision": "得点",
+     "t": 15421
+    },
+    {
+     "round": "準決勝1",
+     "red": "小山A",
+     "blue": "都立荒川B",
+     "red_score": 145,
+     "blue_score": 225,
+     "winner": "都立荒川B",
+     "decision": "ゲートの高さ",
+     "t": 15891
+    },
+    {
+     "round": "準決勝2",
+     "red": "小山B",
+     "blue": "木更津A",
+     "red_score": 225,
+     "blue_score": 10,
+     "winner": "小山B",
+     "decision": "得点",
+     "t": 16398
+    },
+    {
+     "round": "決勝",
+     "red": "小山B",
+     "blue": "都立荒川B",
+     "red_score": 215,
+     "blue_score": 10,
+     "winner": "小山B",
+     "decision": "得点",
+     "t": 19131
+    }
+   ]
+  },
+  "東海北陸": {
+   "date": "2025-10-05",
+   "venue": "富山市八尾スポーツアリーナ",
+   "video": "E3wieJ8P8YM",
+   "champ": [
+    "富山射水A",
+    "ゲートパス"
+   ],
+   "runner": [
+    "鈴鹿A",
+    "鈴観音"
+   ],
+   "idea": "富山本郷B",
+   "tech": "国際A",
+   "design": "福井A",
+   "special": [
+    "豊田B",
+    "岐阜B",
+    "石川B",
+    "富山射水B",
+    "鳥羽商船A",
+    "岐阜A",
+    "鈴鹿B",
+    "沼津A"
+   ],
+   "national": [
+    "富山射水A",
+    "鈴鹿A",
+    "国際A",
+    "富山本郷B"
+   ],
+   "teams": [
+    {
+     "team": "国際A",
+     "robot": "高箱クラブ"
+    },
+    {
+     "team": "国際B",
+     "robot": ""
+    },
+    {
+     "team": "富山射水A",
+     "robot": "ゲートパス"
+    },
+    {
+     "team": "富山射水B",
+     "robot": ""
+    },
+    {
+     "team": "富山本郷A",
+     "robot": "本郷SL"
+    },
+    {
+     "team": "富山本郷B",
+     "robot": "カニメイト"
+    },
+    {
+     "team": "岐阜A",
+     "robot": "羊の手も借りたい"
+    },
+    {
+     "team": "岐阜B",
+     "robot": ""
+    },
+    {
+     "team": "沼津A",
+     "robot": ""
+    },
+    {
+     "team": "沼津B",
+     "robot": ""
+    },
+    {
+     "team": "石川A",
+     "robot": "ゲートX"
+    },
+    {
+     "team": "石川B",
+     "robot": ""
+    },
+    {
+     "team": "福井A",
+     "robot": "早すぎたサンタクロース"
+    },
+    {
+     "team": "福井B",
+     "robot": "オペレーションかぐや"
+    },
+    {
+     "team": "豊田A",
+     "robot": ""
+    },
+    {
+     "team": "豊田B",
+     "robot": "ビーコン"
+    },
+    {
+     "team": "鈴鹿A",
+     "robot": "鈴観音"
+    },
+    {
+     "team": "鈴鹿B",
+     "robot": "モンタッカー"
+    },
+    {
+     "team": "鳥羽商船A",
+     "robot": ""
+    },
+    {
+     "team": "鳥羽商船B",
+     "robot": "アーチファクト"
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選A-1",
+     "red": "鈴鹿A",
+     "blue": "福井B",
+     "red_score": 225,
+     "blue_score": 10,
+     "winner": "鈴鹿A",
+     "decision": "得点",
+     "t": 3990
+    },
+    {
+     "round": "予選B-1",
+     "red": "鳥羽商船A",
+     "blue": "富山射水A",
+     "red_score": 15,
+     "blue_score": 295,
+     "winner": "富山射水A",
+     "decision": "得点",
+     "t": 4559
+    },
+    {
+     "round": "予選C-1",
+     "red": "岐阜A",
+     "blue": "豊田A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "豊田A",
+     "decision": "同点・運んだ箱の数",
+     "t": 5071
+    },
+    {
+     "round": "予選D-1",
+     "red": "石川A",
+     "blue": "富山射水B",
+     "red_score": 15,
+     "blue_score": 5,
+     "winner": "石川A",
+     "decision": "得点",
+     "t": 5712
+    },
+    {
+     "round": "予選E-1",
+     "red": "福井A",
+     "blue": "富山本郷B",
+     "red_score": 15,
+     "blue_score": 125,
+     "winner": "富山本郷B",
+     "decision": "得点",
+     "t": 6221,
+     "note": "ゲート通過",
+     "blue_label": "125+"
+    },
+    {
+     "round": "予選A-2",
+     "red": "豊田B",
+     "blue": "国際A",
+     "red_score": 15,
+     "blue_score": 285,
+     "winner": "国際A",
+     "decision": "得点",
+     "t": 6724,
+     "note": "ゲート高さ220cm"
+    },
+    {
+     "round": "予選B-2",
+     "red": "沼津B",
+     "blue": "鈴鹿B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "鈴鹿B",
+     "decision": "同点・運んだ箱の数",
+     "t": 7295
+    },
+    {
+     "round": "予選C-2",
+     "red": "富山本郷A",
+     "blue": "鳥羽商船B",
+     "red_score": 140,
+     "blue_score": 15,
+     "winner": "富山本郷A",
+     "decision": "得点",
+     "t": 7752
+    },
+    {
+     "round": "予選D-2",
+     "red": "国際B",
+     "blue": "岐阜B",
+     "red_score": 15,
+     "blue_score": 10,
+     "winner": "国際B",
+     "decision": "得点",
+     "t": 8211
+    },
+    {
+     "round": "予選E-2",
+     "red": "沼津A",
+     "blue": "石川B",
+     "red_score": 10,
+     "blue_score": 5,
+     "winner": "沼津A",
+     "decision": "得点",
+     "t": 8684
+    },
+    {
+     "round": "予選A-3",
+     "red": "福井B",
+     "blue": "豊田B",
+     "red_score": 15,
+     "blue_score": 5,
+     "winner": "福井B",
+     "decision": "得点",
+     "t": 9192
+    },
+    {
+     "round": "予選B-3",
+     "red": "鳥羽商船A",
+     "blue": "沼津B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "鳥羽商船A",
+     "decision": "同点・ゲートの高さ",
+     "t": 9706
+    },
+    {
+     "round": "予選C-3",
+     "red": "岐阜A",
+     "blue": "鳥羽商船B",
+     "red_score": 5,
+     "blue_score": 15,
+     "winner": "鳥羽商船B",
+     "decision": "得点",
+     "t": 10259
+    },
+    {
+     "round": "予選D-3",
+     "red": "富山射水B",
+     "blue": "岐阜B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "岐阜B",
+     "decision": "同点・積んだ高さ",
+     "t": 10770
+    },
+    {
+     "round": "予選E-3",
+     "red": "福井A",
+     "blue": "石川B",
+     "red_score": 175,
+     "blue_score": 15,
+     "winner": "福井A",
+     "decision": "得点",
+     "t": 11300,
+     "note": "残り3秒でゲート通過"
+    },
+    {
+     "round": "予選A-4",
+     "red": "鈴鹿A",
+     "blue": "国際A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "鈴鹿A",
+     "decision": "同点・ゲートの高さ",
+     "t": 11875
+    },
+    {
+     "round": "予選B-4",
+     "red": "富山射水A",
+     "blue": "鈴鹿B",
+     "red_score": 305,
+     "blue_score": 15,
+     "winner": "富山射水A",
+     "decision": "得点",
+     "t": 12444
+    },
+    {
+     "round": "予選C-4",
+     "red": "豊田A",
+     "blue": "富山本郷A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "富山本郷A",
+     "decision": "同点・積んだ高さ",
+     "t": 13000
+    },
+    {
+     "round": "予選D-4",
+     "red": "石川A",
+     "blue": "国際B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "国際B",
+     "decision": "同点・ゲートの高さ",
+     "t": 13479
+    },
+    {
+     "round": "予選E-4",
+     "red": "富山本郷B",
+     "blue": "沼津A",
+     "red_score": 5,
+     "blue_score": 5,
+     "winner": "富山本郷B",
+     "decision": "同点・ゲートの高さ",
+     "t": 14070,
+     "note": "通過しきれず判定"
+    },
+    {
+     "round": "準々決勝",
+     "red": "富山本郷A",
+     "blue": "国際B",
+     "red_score": 5,
+     "blue_score": 15,
+     "winner": "国際B",
+     "decision": "得点",
+     "t": 16063,
+     "note": "本郷Aはパイロン重なりで5点"
+    },
+    {
+     "round": "準決勝1",
+     "red": "富山本郷B",
+     "blue": "鈴鹿A",
+     "red_score": 5,
+     "blue_score": 15,
+     "winner": "鈴鹿A",
+     "decision": "得点",
+     "t": 16628
+    },
+    {
+     "round": "準決勝2",
+     "red": "富山射水A",
+     "blue": "国際B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "富山射水A",
+     "decision": "同点・ゲートの高さ",
+     "t": 17211
+    },
+    {
+     "round": "決勝",
+     "red": "富山射水A",
+     "blue": "鈴鹿A",
+     "red_score": 15,
+     "blue_score": 10,
+     "winner": "富山射水A",
+     "decision": "得点",
+     "t": 19594,
+     "note": "富山射水A 2連覇"
+    }
+   ]
+  },
+  "近畿": {
+   "date": "2025-09-21",
+   "venue": "ベルウイングアリーナ（名張市総合体育館）",
+   "video": "QcNr5Qof5AY",
+   "champ": [
+    "奈良A",
+    "金剛"
+   ],
+   "runner": [
+    "明石A",
+    "箱積明人"
+   ],
+   "idea": "神戸B",
+   "tech": "和歌山A",
+   "design": "近大A",
+   "special": [
+    "明石A",
+    "和歌山B",
+    "明石B",
+    "奈良B",
+    "大阪公大B",
+    "神戸A",
+    "近大B",
+    "舞鶴B"
+   ],
+   "national": [
+    "奈良A",
+    "明石A",
+    "神戸A"
+   ],
+   "teams": [
+    {
+     "team": "和歌山A",
+     "robot": "つむむ"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "積羽迅雷"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": ""
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "AlliGATEr"
+    },
+    {
+     "team": "奈良A",
+     "robot": "金剛"
+    },
+    {
+     "team": "奈良B",
+     "robot": "塔大事"
+    },
+    {
+     "team": "明石A",
+     "robot": "箱積明人"
+    },
+    {
+     "team": "明石B",
+     "robot": "明門"
+    },
+    {
+     "team": "神戸A",
+     "robot": "凱船門"
+    },
+    {
+     "team": "神戸B",
+     "robot": "高架橋橋脚"
+    },
+    {
+     "team": "舞鶴A",
+     "robot": ""
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "鶴技ノ舞"
+    },
+    {
+     "team": "近大A",
+     "robot": "オキつも"
+    },
+    {
+     "team": "近大B",
+     "robot": "ナーン、バリバリ"
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選A-1",
+     "red": "神戸A",
+     "blue": "和歌山B",
+     "red_score": 5,
+     "blue_score": 15,
+     "winner": "和歌山B",
+     "decision": "得点",
+     "t": 3750
+    },
+    {
+     "round": "予選B-1",
+     "red": "舞鶴A",
+     "blue": "大阪公大A",
+     "red_score": 10,
+     "blue_score": 0,
+     "winner": "舞鶴A",
+     "decision": "得点",
+     "t": 4341
+    },
+    {
+     "round": "予選C-1",
+     "red": "大阪公大B",
+     "blue": "舞鶴B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "舞鶴B",
+     "decision": "審査員判定 3-0",
+     "t": 4908
+    },
+    {
+     "round": "予選D-1",
+     "red": "近大B",
+     "blue": "神戸B",
+     "red_score": 5,
+     "blue_score": 15,
+     "winner": "神戸B",
+     "decision": "得点",
+     "t": 5618
+    },
+    {
+     "round": "予選A-2",
+     "red": "奈良A",
+     "blue": "明石B",
+     "red_score": 360,
+     "blue_score": 5,
+     "winner": "奈良A",
+     "decision": "得点",
+     "t": 6080
+    },
+    {
+     "round": "予選B-2",
+     "red": "和歌山A",
+     "blue": "明石A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "明石A",
+     "decision": "同点・柱の高さ",
+     "t": 6797
+    },
+    {
+     "round": "予選C-2",
+     "red": "舞鶴B",
+     "blue": "近大A",
+     "red_score": 10,
+     "blue_score": 5,
+     "winner": "舞鶴B",
+     "decision": "得点",
+     "t": 7320
+    },
+    {
+     "round": "予選D-2",
+     "red": "神戸B",
+     "blue": "奈良B",
+     "red_score": 295,
+     "blue_score": 180,
+     "winner": "神戸B",
+     "decision": "得点",
+     "t": 7833
+    },
+    {
+     "round": "予選A-3",
+     "red": "神戸A",
+     "blue": "明石B",
+     "red_score": 335,
+     "blue_score": 0,
+     "winner": "神戸A",
+     "decision": "得点",
+     "t": 8464,
+     "note": "明石Bは前の試合で失格"
+    },
+    {
+     "round": "予選B-3",
+     "red": "大阪公大A",
+     "blue": "和歌山A",
+     "red_score": 5,
+     "blue_score": 265,
+     "winner": "和歌山A",
+     "decision": "得点",
+     "t": 9113
+    },
+    {
+     "round": "予選C-3",
+     "red": "近大A",
+     "blue": "大阪公大B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "近大A",
+     "decision": "同点・柱の高さ",
+     "t": 9626
+    },
+    {
+     "round": "予選D-3",
+     "red": "奈良B",
+     "blue": "近大B",
+     "red_score": 15,
+     "blue_score": 10,
+     "winner": "奈良B",
+     "decision": "得点",
+     "t": 10226
+    },
+    {
+     "round": "予選A-4",
+     "red": "和歌山B",
+     "blue": "奈良A",
+     "red_score": 10,
+     "blue_score": 350,
+     "winner": "奈良A",
+     "decision": "得点",
+     "t": 10676
+    },
+    {
+     "round": "予選B-4",
+     "red": "舞鶴A",
+     "blue": "明石A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "明石A",
+     "decision": "同点・ゲートの高さ",
+     "t": 11320
+    },
+    {
+     "round": "準決勝1",
+     "red": "奈良A",
+     "blue": "舞鶴B",
+     "red_score": 350,
+     "blue_score": 15,
+     "winner": "奈良A",
+     "decision": "得点",
+     "t": 12911
+    },
+    {
+     "round": "決勝",
+     "red": "奈良A",
+     "blue": "明石A",
+     "red_score": 360,
+     "blue_score": 5,
+     "winner": "奈良A",
+     "decision": "得点",
+     "t": 16097
+    }
+   ]
+  },
+  "中国": {
+   "date": "2025-10-05",
+   "venue": "防府市スポーツセンター体育館",
+   "video": "028P7eEYD-Q",
+   "champ": [
+    "米子A",
+    "蜈蚣"
+   ],
+   "runner": [
+    "松江A",
+    "Rebeli0n"
+   ],
+   "idea": "呉A",
+   "tech": "津山B",
+   "design": "広島商船A",
+   "special": [
+    "徳山A",
+    "大島商船A",
+    "米子B",
+    "津山A",
+    "徳山B",
+    "広島商船B",
+    "松江B",
+    "宇部B"
+   ],
+   "national": [
+    "米子A",
+    "呉A",
+    "広島商船A"
+   ],
+   "teams": [
+    {
+     "team": "呉A",
+     "robot": "禁機"
+    },
+    {
+     "team": "呉B",
+     "robot": ""
+    },
+    {
+     "team": "大島商船A",
+     "robot": "白狐の幻想"
+    },
+    {
+     "team": "大島商船B",
+     "robot": ""
+    },
+    {
+     "team": "宇部A",
+     "robot": ""
+    },
+    {
+     "team": "宇部B",
+     "robot": "チンアナゴ"
+    },
+    {
+     "team": "広島商船A",
+     "robot": "厳島"
+    },
+    {
+     "team": "広島商船B",
+     "robot": "つばめ"
+    },
+    {
+     "team": "徳山A",
+     "robot": "不諦積奮"
+    },
+    {
+     "team": "徳山B",
+     "robot": "セキュリティホール"
+    },
+    {
+     "team": "松江A",
+     "robot": "Rebeli0n"
+    },
+    {
+     "team": "松江B",
+     "robot": "Woker"
+    },
+    {
+     "team": "津山A",
+     "robot": "カブトガニ・ウォーズ"
+    },
+    {
+     "team": "津山B",
+     "robot": "龍門飛躍"
+    },
+    {
+     "team": "米子A",
+     "robot": "蜈蚣"
+    },
+    {
+     "team": "米子B",
+     "robot": "エイっと運べ！"
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選A-1",
+     "red": "呉A",
+     "blue": "徳山B",
+     "red_score": 305,
+     "blue_score": 15,
+     "winner": "呉A",
+     "decision": "得点",
+     "t": 3874
+    },
+    {
+     "round": "予選B-1",
+     "red": "大島商船B",
+     "blue": "宇部B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "大島商船B",
+     "decision": "同点・ゲートの高さ",
+     "t": 4454
+    },
+    {
+     "round": "予選C-1",
+     "red": "松江B",
+     "blue": "津山B",
+     "red_score": 0,
+     "blue_score": 15,
+     "winner": "津山B",
+     "decision": "得点",
+     "t": 4981
+    },
+    {
+     "round": "予選D-1",
+     "red": "呉B",
+     "blue": "広島商船A",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "広島商船A",
+     "decision": "得点",
+     "t": 5494
+    },
+    {
+     "round": "予選A-2",
+     "red": "米子A",
+     "blue": "広島商船B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "米子A",
+     "decision": "同点・ゲートの高さ",
+     "t": 6004
+    },
+    {
+     "round": "予選B-2",
+     "red": "松江A",
+     "blue": "津山A",
+     "red_score": 15,
+     "blue_score": 10,
+     "winner": "松江A",
+     "decision": "得点",
+     "t": 6524
+    },
+    {
+     "round": "予選C-2",
+     "red": "大島商船A",
+     "blue": "徳山A",
+     "red_score": 15,
+     "blue_score": 195,
+     "winner": "徳山A",
+     "decision": "得点",
+     "t": 7037
+    },
+    {
+     "round": "予選D-2",
+     "red": "米子B",
+     "blue": "宇部A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "米子B",
+     "decision": "審査員判定 3-0",
+     "t": 7515
+    },
+    {
+     "round": "予選A-3",
+     "red": "徳山B",
+     "blue": "広島商船B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "広島商船B",
+     "decision": "同点・運んだ箱の数",
+     "t": 8058
+    },
+    {
+     "round": "予選B-3",
+     "red": "宇部B",
+     "blue": "津山A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "津山A",
+     "decision": "同点・ゲートの高さ",
+     "t": 8650
+    },
+    {
+     "round": "予選C-3",
+     "red": "松江B",
+     "blue": "大島商船A",
+     "red_score": 0,
+     "blue_score": 15,
+     "winner": "大島商船A",
+     "decision": "得点",
+     "t": 9327
+    },
+    {
+     "round": "予選D-3",
+     "red": "呉B",
+     "blue": "宇部A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "宇部A",
+     "decision": "審査員判定 3-1",
+     "t": 9963
+    },
+    {
+     "round": "予選A-4",
+     "red": "呉A",
+     "blue": "米子A",
+     "red_score": 290,
+     "blue_score": 295,
+     "winner": "米子A",
+     "decision": "得点",
+     "t": 10672
+    },
+    {
+     "round": "予選B-4",
+     "red": "大島商船B",
+     "blue": "松江A",
+     "red_score": 15,
+     "blue_score": 255,
+     "winner": "松江A",
+     "decision": "得点",
+     "t": 11362
+    },
+    {
+     "round": "予選C-4",
+     "red": "津山B",
+     "blue": "徳山A",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "徳山A",
+     "decision": "得点",
+     "t": 11898
+    },
+    {
+     "round": "予選D-4",
+     "red": "広島商船A",
+     "blue": "米子B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "広島商船A",
+     "decision": "同点・ゲートの高さ",
+     "t": 12519
+    },
+    {
+     "round": "準決勝1",
+     "red": "米子A",
+     "blue": "広島商船A",
+     "red_score": 345,
+     "blue_score": 150,
+     "winner": "米子A",
+     "decision": "審査",
+     "t": 14024
+    },
+    {
+     "round": "準決勝2",
+     "red": "徳山A",
+     "blue": "松江A",
+     "red_score": 15,
+     "blue_score": 285,
+     "winner": "松江A",
+     "decision": "得点",
+     "t": 14651
+    },
+    {
+     "round": "決勝",
+     "red": "米子A",
+     "blue": "松江A",
+     "red_score": 295,
+     "blue_score": 10,
+     "winner": "米子A",
+     "decision": "得点",
+     "t": 17700,
+     "src": "配信 4:59:12 終了3:00後の確定表示（米子A 295・松江A 10）"
+    }
+   ]
+  },
+  "四国": {
+   "date": "2025-10-19",
+   "venue": "阿南高専第一体育館",
+   "video": "WbTiWXbc4a8",
+   "champ": [
+    "香川高松A",
+    "Triumph March"
+   ],
+   "runner": [
+    "香川詫間A",
+    "Triumph"
+   ],
+   "idea": "高知A",
+   "tech": "高知B",
+   "design": "弓削B",
+   "special": [
+    "香川高松B",
+    "香川詫間B",
+    "高知B",
+    "弓削A",
+    "新居浜A",
+    "阿南A",
+    "新居浜B",
+    "阿南B"
+   ],
+   "national": [
+    "香川高松A",
+    "高知A"
+   ],
+   "teams": [
+    {
+     "team": "弓削A",
+     "robot": "弓削ファミリア"
+    },
+    {
+     "team": "弓削B",
+     "robot": "ダンボマスター"
+    },
+    {
+     "team": "新居浜A",
+     "robot": "壱笑"
+    },
+    {
+     "team": "新居浜B",
+     "robot": "技術凱旋"
+    },
+    {
+     "team": "阿南A",
+     "robot": "VICTOR"
+    },
+    {
+     "team": "阿南B",
+     "robot": "韋駄天"
+    },
+    {
+     "team": "香川詫間A",
+     "robot": "Triumph"
+    },
+    {
+     "team": "香川詫間B",
+     "robot": "Updraft"
+    },
+    {
+     "team": "香川高松A",
+     "robot": "Triumph March"
+    },
+    {
+     "team": "香川高松B",
+     "robot": "鬼島"
+    },
+    {
+     "team": "高知A",
+     "robot": "踊り子"
+    },
+    {
+     "team": "高知B",
+     "robot": "above"
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選A-1",
+     "red": "香川詫間B",
+     "blue": "高知A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "高知A",
+     "decision": "同点・判定",
+     "t": 3221
+    },
+    {
+     "round": "予選B-1",
+     "red": "香川高松B",
+     "blue": "阿南A",
+     "red_score": 15,
+     "blue_score": 10,
+     "winner": "香川高松B",
+     "decision": "得点",
+     "t": 3777
+    },
+    {
+     "round": "予選C-1",
+     "red": "香川高松A",
+     "blue": "阿南B",
+     "red_score": 345,
+     "blue_score": 15,
+     "winner": "香川高松A",
+     "decision": "得点",
+     "t": 4378
+    },
+    {
+     "round": "予選D-1",
+     "red": "新居浜B",
+     "blue": "香川詫間A",
+     "red_score": 15,
+     "blue_score": 335,
+     "winner": "香川詫間A",
+     "decision": "得点",
+     "t": 4969
+    },
+    {
+     "round": "予選A-2",
+     "red": "高知A",
+     "blue": "弓削B",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "高知A",
+     "decision": "ゲートの高さ",
+     "t": 5554
+    },
+    {
+     "round": "予選B-2",
+     "red": "阿南A",
+     "blue": "新居浜A",
+     "red_score": 15,
+     "blue_score": 10,
+     "winner": "阿南A",
+     "decision": "得点",
+     "t": 6135
+    },
+    {
+     "round": "予選C-2",
+     "red": "阿南B",
+     "blue": "高知B",
+     "red_score": 15,
+     "blue_score": 265,
+     "winner": "高知B",
+     "decision": "得点",
+     "t": 6749
+    },
+    {
+     "round": "予選D-2",
+     "red": "香川詫間A",
+     "blue": "弓削A",
+     "red_score": 320,
+     "blue_score": 15,
+     "winner": "香川詫間A",
+     "decision": "得点",
+     "t": 7414
+    },
+    {
+     "round": "予選A-3",
+     "red": "弓削B",
+     "blue": "香川詫間B",
+     "red_score": 15,
+     "blue_score": 305,
+     "winner": "香川詫間B",
+     "decision": "得点",
+     "t": 8023
+    },
+    {
+     "round": "予選B-3",
+     "red": "新居浜A",
+     "blue": "香川高松B",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "香川高松B",
+     "decision": "得点",
+     "t": 8563
+    },
+    {
+     "round": "予選C-3",
+     "red": "高知B",
+     "blue": "香川高松A",
+     "red_score": 15,
+     "blue_score": 335,
+     "winner": "香川高松A",
+     "decision": "得点",
+     "t": 9139
+    },
+    {
+     "round": "予選D-3",
+     "red": "弓削A",
+     "blue": "新居浜B",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "新居浜B",
+     "decision": "得点",
+     "t": 9670
+    },
+    {
+     "round": "準決勝1",
+     "red": "香川高松A",
+     "blue": "香川高松B",
+     "red_score": 185,
+     "blue_score": 5,
+     "winner": "香川高松A",
+     "decision": "得点",
+     "t": 11587
+    },
+    {
+     "round": "準決勝2",
+     "red": "高知A",
+     "blue": "香川詫間A",
+     "red_score": 175,
+     "blue_score": 325,
+     "winner": "香川詫間A",
+     "decision": "得点",
+     "t": 12220
+    },
+    {
+     "round": "決勝",
+     "red": "香川高松A",
+     "blue": "香川詫間A",
+     "red_score": 375,
+     "blue_score": 15,
+     "winner": "香川高松A",
+     "decision": "得点",
+     "t": 15344
+    }
+   ]
+  },
+  "九州沖縄": {
+   "date": "2025-09-28",
+   "venue": "大牟田市総合体育館",
+   "video": "zTTmQTB5zuE",
+   "champ": [
+    "熊本熊本A",
+    "強奪名星"
+   ],
+   "runner": [
+    "熊本熊本B",
+    "榜門"
+   ],
+   "idea": "熊本八代A",
+   "tech": "鹿児島A",
+   "design": "都城A",
+   "special": [
+    "大分A",
+    "佐世保A",
+    "有明A",
+    "沖縄B",
+    "久留米B",
+    "大分B",
+    "北九州A",
+    "沖縄A"
+   ],
+   "national": [
+    "熊本熊本A",
+    "鹿児島A",
+    "熊本八代A",
+    "都城A"
+   ],
+   "teams": [
+    {
+     "team": "久留米A",
+     "robot": ""
+    },
+    {
+     "team": "久留米B",
+     "robot": "勇往邁進"
+    },
+    {
+     "team": "佐世保A",
+     "robot": "シンクロニャイズ"
+    },
+    {
+     "team": "佐世保B",
+     "robot": ""
+    },
+    {
+     "team": "北九州A",
+     "robot": "あばクラ"
+    },
+    {
+     "team": "北九州B",
+     "robot": ""
+    },
+    {
+     "team": "大分A",
+     "robot": "峰楼天閣"
+    },
+    {
+     "team": "大分B",
+     "robot": "Buildog"
+    },
+    {
+     "team": "有明A",
+     "robot": "と～る～門"
+    },
+    {
+     "team": "有明B",
+     "robot": ""
+    },
+    {
+     "team": "沖縄A",
+     "robot": "Wander"
+    },
+    {
+     "team": "沖縄B",
+     "robot": "龍球ダイスター"
+    },
+    {
+     "team": "熊本八代A",
+     "robot": "建築は旋門凱"
+    },
+    {
+     "team": "熊本八代B",
+     "robot": ""
+    },
+    {
+     "team": "熊本熊本A",
+     "robot": "強奪名星"
+    },
+    {
+     "team": "熊本熊本B",
+     "robot": "榜門"
+    },
+    {
+     "team": "都城A",
+     "robot": "御出座し!!かーにバル☆"
+    },
+    {
+     "team": "都城B",
+     "robot": ""
+    },
+    {
+     "team": "鹿児島A",
+     "robot": "凱旋"
+    },
+    {
+     "team": "鹿児島B",
+     "robot": ""
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選A-1",
+     "red": "大分B",
+     "blue": "有明B",
+     "red_score": 195,
+     "blue_score": 5,
+     "winner": "大分B",
+     "decision": "得点",
+     "t": 3537
+    },
+    {
+     "round": "予選B-1",
+     "red": "久留米B",
+     "blue": "鹿児島B",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "鹿児島B",
+     "decision": "得点",
+     "t": 4060
+    },
+    {
+     "round": "予選C-1",
+     "red": "沖縄A",
+     "blue": "都城A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "沖縄A",
+     "decision": "同点・ゲートの高さ",
+     "t": 4529
+    },
+    {
+     "round": "予選D-1",
+     "red": "北九州B",
+     "blue": "熊本熊本A",
+     "red_score": 5,
+     "blue_score": 425,
+     "winner": "熊本熊本A",
+     "decision": "得点",
+     "t": 5064,
+     "note": "大会最高得点"
+    },
+    {
+     "round": "予選E-1",
+     "red": "佐世保B",
+     "blue": "熊本八代B",
+     "red_score": 10,
+     "blue_score": 255,
+     "winner": "熊本八代B",
+     "decision": "得点",
+     "t": 5514
+    },
+    {
+     "round": "予選A-2",
+     "red": "佐世保A",
+     "blue": "熊本熊本B",
+     "red_score": 5,
+     "blue_score": 395,
+     "winner": "熊本熊本B",
+     "decision": "得点",
+     "t": 6034
+    },
+    {
+     "round": "予選B-2",
+     "red": "大分A",
+     "blue": "熊本八代A",
+     "red_score": 10,
+     "blue_score": 395,
+     "winner": "熊本八代A",
+     "decision": "得点",
+     "t": 6548
+    },
+    {
+     "round": "予選C-2",
+     "red": "久留米A",
+     "blue": "有明A",
+     "red_score": 10,
+     "blue_score": 15,
+     "winner": "有明A",
+     "decision": "得点",
+     "t": 7016
+    },
+    {
+     "round": "予選D-2",
+     "red": "沖縄B",
+     "blue": "鹿児島A",
+     "red_score": 15,
+     "blue_score": 5,
+     "winner": "沖縄B",
+     "decision": "得点",
+     "t": 7523
+    },
+    {
+     "round": "予選E-2",
+     "red": "北九州A",
+     "blue": "都城B",
+     "red_score": 15,
+     "blue_score": 0,
+     "winner": "北九州A",
+     "decision": "得点",
+     "t": 8054
+    },
+    {
+     "round": "予選A-3",
+     "red": "有明B",
+     "blue": "佐世保A",
+     "red_score": 15,
+     "blue_score": 5,
+     "winner": "有明B",
+     "decision": "得点",
+     "t": 8537
+    },
+    {
+     "round": "予選B-3",
+     "red": "久留米B",
+     "blue": "大分A",
+     "red_score": 15,
+     "blue_score": 15,
+     "winner": "大分A",
+     "decision": "同点・運んだ箱の数",
+     "t": 9106
+    },
+    {
+     "round": "予選C-3",
+     "red": "都城A",
+     "blue": "久留米A",
+     "red_score": 185,
+     "blue_score": 15,
+     "winner": "都城A",
+     "decision": "得点",
+     "t": 9685
+    },
+    {
+     "round": "予選D-3",
+     "red": "北九州B",
+     "blue": "鹿児島A",
+     "red_score": 5,
+     "blue_score": 355,
+     "winner": "鹿児島A",
+     "decision": "得点",
+     "t": 10184
+    },
+    {
+     "round": "予選E-3",
+     "red": "佐世保B",
+     "blue": "都城B",
+     "red_score": 5,
+     "blue_score": 0,
+     "winner": "佐世保B",
+     "decision": "得点",
+     "t": 10779
+    },
+    {
+     "round": "予選A-4",
+     "red": "大分B",
+     "blue": "熊本熊本B",
+     "red_score": 130,
+     "blue_score": 345,
+     "winner": "熊本熊本B",
+     "decision": "得点",
+     "t": 11286
+    },
+    {
+     "round": "予選B-4",
+     "red": "鹿児島B",
+     "blue": "熊本八代A",
+     "red_score": 5,
+     "blue_score": 400,
+     "winner": "熊本八代A",
+     "decision": "得点",
+     "t": 11866
+    },
+    {
+     "round": "予選C-4",
+     "red": "沖縄A",
+     "blue": "有明A",
+     "red_score": 15,
+     "blue_score": 5,
+     "winner": "沖縄A",
+     "decision": "得点",
+     "t": 12328
+    },
+    {
+     "round": "予選D-4",
+     "red": "熊本熊本A",
+     "blue": "沖縄B",
+     "red_score": 410,
+     "blue_score": 15,
+     "winner": "熊本熊本A",
+     "decision": "得点",
+     "t": 12856
+    },
+    {
+     "round": "予選E-4",
+     "red": "熊本八代B",
+     "blue": "北九州A",
+     "red_score": 345,
+     "blue_score": 5,
+     "winner": "熊本八代B",
+     "decision": "得点",
+     "t": 13359
+    },
+    {
+     "round": "準々決勝",
+     "red": "熊本八代B",
+     "blue": "沖縄A",
+     "red_score": 345,
+     "blue_score": 10,
+     "winner": "熊本八代B",
+     "decision": "得点",
+     "t": 15174
+    },
+    {
+     "round": "準決勝2",
+     "red": "熊本熊本A",
+     "blue": "熊本八代B",
+     "red_score": 345,
+     "blue_score": 5,
+     "winner": "熊本熊本A",
+     "decision": "得点",
+     "t": 16400
+    },
+    {
+     "round": "決勝",
+     "red": "熊本熊本A",
+     "blue": "熊本熊本B",
+     "red_score": 415,
+     "blue_score": 345,
+     "winner": "熊本熊本A",
+     "decision": "得点",
+     "t": 19123
+    }
+   ]
+  }
+ },
+ "national": {
+  "date": "2025-11-16",
+  "venue": "国技館",
+  "video": "Rww-ndFlu7c",
+  "champ": [
+   "旭川A",
+   "天旋"
+  ],
+  "runner": [
+   "熊本熊本A",
+   "強奪名星"
+  ],
+  "grand": [
+   "熊本熊本A",
+   "強奪名星"
+  ],
+  "idea": "明石A",
+  "tech": "奈良A",
+  "design": "国際A",
+  "flop": "鈴鹿A",
+  "special": [
+   "富山本郷B",
+   "米子A",
+   "鹿児島A",
+   "熊本八代A",
+   "一関A",
+   "東京B",
+   "神戸A",
+   "小山B"
+  ],
+  "teams": [
+   {
+    "team": "一関A",
+    "robot": "猩猩",
+    "home": "東北"
+   },
+   {
+    "team": "仙台名取A",
+    "robot": "タコじゃなイカ",
+    "home": "東北"
+   },
+   {
+    "team": "仙台広瀬A",
+    "robot": "OCT",
+    "home": "東北"
+   },
+   {
+    "team": "函館A",
+    "robot": "Great Hako Date",
+    "home": "北海道"
+   },
+   {
+    "team": "呉A",
+    "robot": "禁機",
+    "home": "中国"
+   },
+   {
+    "team": "国際A",
+    "robot": "高箱クラブ",
+    "home": "東海北陸"
+   },
+   {
+    "team": "奈良A",
+    "robot": "金剛",
+    "home": "近畿"
+   },
+   {
+    "team": "富山射水A",
+    "robot": "ゲートパス",
+    "home": "東海北陸"
+   },
+   {
+    "team": "富山本郷B",
+    "robot": "カニメイト",
+    "home": "東海北陸"
+   },
+   {
+    "team": "小山B",
+    "robot": "オヤマシュランラン",
+    "home": "関東甲信越"
+   },
+   {
+    "team": "広島商船A",
+    "robot": "厳島",
+    "home": "中国"
+   },
+   {
+    "team": "旭川A",
+    "robot": "天旋",
+    "home": "北海道"
+   },
+   {
+    "team": "明石A",
+    "robot": "箱積明人",
+    "home": "近畿"
+   },
+   {
+    "team": "木更津A",
+    "robot": "それゆけキサンタクロース",
+    "home": "関東甲信越"
+   },
+   {
+    "team": "東京B",
+    "robot": "明修羅",
+    "home": "関東甲信越"
+   },
+   {
+    "team": "熊本八代A",
+    "robot": "建築は旋門凱",
+    "home": "九州沖縄"
+   },
+   {
+    "team": "熊本熊本A",
+    "robot": "強奪名星",
+    "home": "九州沖縄"
+   },
+   {
+    "team": "神戸A",
+    "robot": "凱船門",
+    "home": "近畿"
+   },
+   {
+    "team": "米子A",
+    "robot": "蜈蚣",
+    "home": "中国"
+   },
+   {
+    "team": "都城A",
+    "robot": "御出座し!!かーにバル☆",
+    "home": "九州沖縄"
+   },
+   {
+    "team": "都立荒川B",
+    "robot": "破天荒",
+    "home": "関東甲信越"
+   },
+   {
+    "team": "鈴鹿A",
+    "robot": "鈴観音",
+    "home": "東海北陸"
+   },
+   {
+    "team": "香川高松A",
+    "robot": "Triumph March",
+    "home": "四国"
+   },
+   {
+    "team": "高知A",
+    "robot": "踊り子",
+    "home": "四国"
+   },
+   {
+    "team": "鹿児島A",
+    "robot": "凱旋",
+    "home": "九州沖縄"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦1",
+    "red": "神戸A",
+    "blue": "都城A",
+    "red_score": 295,
+    "blue_score": 10,
+    "winner": "神戸A",
+    "decision": "得点",
+    "t": 5120
+   },
+   {
+    "round": "1回戦2",
+    "red": "国際A",
+    "blue": "広島商船A",
+    "red_score": 290,
+    "blue_score": 10,
+    "winner": "国際A",
+    "decision": "得点",
+    "t": 5594
+   },
+   {
+    "round": "1回戦3",
+    "red": "米子A",
+    "blue": "明石A",
+    "red_score": 305,
+    "blue_score": 425,
+    "winner": "明石A",
+    "decision": "得点",
+    "t": 6057
+   },
+   {
+    "round": "1回戦4",
+    "red": "奈良A",
+    "blue": "香川高松A",
+    "red_score": 435,
+    "blue_score": 0,
+    "winner": "奈良A",
+    "decision": "得点",
+    "t": 6464
+   },
+   {
+    "round": "1回戦5",
+    "red": "小山B",
+    "blue": "仙台名取A",
+    "red_score": 170,
+    "blue_score": 5,
+    "winner": "小山B",
+    "decision": "得点",
+    "t": 6987
+   },
+   {
+    "round": "1回戦6",
+    "red": "熊本八代A",
+    "blue": "旭川A",
+    "red_score": 5,
+    "blue_score": 530,
+    "winner": "旭川A",
+    "decision": "得点",
+    "t": 7428
+   },
+   {
+    "round": "1回戦7",
+    "red": "東京B",
+    "blue": "鈴鹿A",
+    "red_score": 10,
+    "blue_score": 15,
+    "winner": "鈴鹿A",
+    "decision": "得点",
+    "t": 7926
+   },
+   {
+    "round": "1回戦8",
+    "red": "一関A",
+    "blue": "木更津A",
+    "red_score": 15,
+    "blue_score": 15,
+    "winner": "一関A",
+    "decision": "ゲートの判定",
+    "t": 8389
+   },
+   {
+    "round": "1回戦9",
+    "red": "都立荒川B",
+    "blue": "高知A",
+    "red_score": 305,
+    "blue_score": 10,
+    "winner": "都立荒川B",
+    "decision": "得点",
+    "t": 8866
+   },
+   {
+    "round": "1回戦10",
+    "red": "仙台広瀬A",
+    "blue": "呉A",
+    "red_score": 15,
+    "blue_score": 15,
+    "winner": "呉A",
+    "decision": "同点・運んだ箱の数",
+    "t": 9284
+   },
+   {
+    "round": "1回戦11",
+    "red": "富山本郷B",
+    "blue": "富山射水A",
+    "red_score": 5,
+    "blue_score": 345,
+    "winner": "富山射水A",
+    "decision": "得点",
+    "t": 9772
+   },
+   {
+    "round": "2回戦1",
+    "red": "鹿児島A",
+    "blue": "神戸A",
+    "red_score": 5,
+    "blue_score": 335,
+    "winner": "神戸A",
+    "decision": "得点",
+    "t": 11080
+   },
+   {
+    "round": "2回戦2",
+    "red": "旭川A",
+    "blue": "熊本熊本A",
+    "red_score": 560,
+    "blue_score": 10,
+    "winner": "旭川A",
+    "decision": "得点",
+    "t": 11883,
+    "note": "熊本熊本Aはワイルドカードで準々決勝へ"
+   },
+   {
+    "round": "2回戦3",
+    "red": "函館A",
+    "blue": "鈴鹿A",
+    "red_score": 15,
+    "blue_score": 15,
+    "winner": "鈴鹿A",
+    "decision": "得点",
+    "t": 12424
+   },
+   {
+    "round": "2回戦4",
+    "red": "国際A",
+    "blue": "明石A",
+    "red_score": 250,
+    "blue_score": 375,
+    "winner": "明石A",
+    "decision": "得点",
+    "t": 12957
+   },
+   {
+    "round": "2回戦5",
+    "red": "奈良A",
+    "blue": "小山B",
+    "red_score": 360,
+    "blue_score": 5,
+    "winner": "奈良A",
+    "decision": "得点",
+    "t": 13358
+   },
+   {
+    "round": "2回戦6",
+    "red": "一関A",
+    "blue": "都立荒川B",
+    "red_score": 15,
+    "blue_score": 355,
+    "winner": "都立荒川B",
+    "decision": "得点",
+    "t": 13825
+   },
+   {
+    "round": "2回戦7",
+    "red": "呉A",
+    "blue": "富山射水A",
+    "red_score": 5,
+    "blue_score": 15,
+    "winner": "富山射水A",
+    "decision": "得点",
+    "t": 14298
+   },
+   {
+    "round": "準々決勝1",
+    "red": "神戸A",
+    "blue": "明石A",
+    "red_score": 195,
+    "blue_score": 435,
+    "winner": "明石A",
+    "decision": "得点",
+    "t": 15999
+   },
+   {
+    "round": "準々決勝2",
+    "red": "奈良A",
+    "blue": "旭川A",
+    "red_score": 445,
+    "blue_score": 485,
+    "winner": "旭川A",
+    "decision": "得点",
+    "t": 16602
+   },
+   {
+    "round": "準々決勝3",
+    "red": "鈴鹿A",
+    "blue": "都立荒川B",
+    "red_score": 15,
+    "blue_score": 355,
+    "winner": "都立荒川B",
+    "decision": "得点",
+    "t": 17322
+   },
+   {
+    "round": "準々決勝4",
+    "red": "富山射水A",
+    "blue": "熊本熊本A",
+    "red_score": 15,
+    "blue_score": 390,
+    "winner": "熊本熊本A",
+    "decision": "得点",
+    "t": 17806
+   },
+   {
+    "round": "準決勝1",
+    "red": "明石A",
+    "blue": "旭川A",
+    "red_score": 0,
+    "blue_score": 525,
+    "winner": "旭川A",
+    "decision": "得点",
+    "t": 18465
+   },
+   {
+    "round": "準決勝2",
+    "red": "都立荒川B",
+    "blue": "熊本熊本A",
+    "red_score": 310,
+    "blue_score": 370,
+    "winner": "熊本熊本A",
+    "decision": "得点",
+    "t": 18993
+   },
+   {
+    "round": "決勝",
+    "red": "旭川A",
+    "blue": "熊本熊本A",
+    "red_score": 490,
+    "blue_score": 475,
+    "winner": "旭川A",
+    "decision": "得点",
+    "t": 21348,
+    "note": "旭川Aは高さ4m20cmのゲートを通過"
+   }
+  ]
+ }
+}

@@ -1,0 +1,2984 @@
+[
+ {
+  "year": 1988,
+  "no": 1,
+  "game": "乾電池カー・スピードレース",
+  "date": "1988-08-11",
+  "venue": "NHK CT-101スタジオ",
+  "summary": "乾電池2個で動くマシンに体重60kg以上の人を乗せ、35mのコースのタイムを競う。",
+  "source": "https://official-robocon.com/history/kosen/history/first/",
+  "awards": [
+   {
+    "award": "優勝",
+    "school": "沼津",
+    "school_name": "沼津工業高等専門学校",
+    "robot": "トミ－88"
+   },
+   {
+    "award": "準優勝",
+    "school": "久留米",
+    "school_name": "久留米工業高等専門学校",
+    "robot": "パッチンコロコロ"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "ダッシュレーサー35"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "松江",
+    "school_name": "松江工業高等専門学校",
+    "robot": "GO号"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "東京",
+    "school_name": "東京工業高等専門学校",
+    "robot": "シャクトリマシーンラクンダ－"
+   },
+   {
+    "award": "完全燃賞",
+    "school": "長岡",
+    "school_name": "長岡工業高等専門学校",
+    "robot": "ダム号"
+   }
+  ]
+ },
+ {
+  "year": 1989,
+  "no": 2,
+  "game": "オクトパス・フットボール",
+  "date": "1989-08-12",
+  "venue": "新都市ホール（横浜そごう9F）",
+  "summary": "タコ型の競技場の足先からスタートし、ラグビーボールをゴールに入れる。",
+  "source": "https://official-robocon.com/history/kosen/history/second/",
+  "awards": [
+   {
+    "award": "優勝",
+    "school": "久留米",
+    "school_name": "久留米工業高等専門学校",
+    "robot": "コロコロスットン号"
+   },
+   {
+    "award": "準優勝",
+    "school": "香川詫間",
+    "school_name": "詫間電波工業高等専門学校",
+    "robot": "C.K.1号"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "鈴鹿",
+    "school_name": "鈴鹿工業高等専門学校",
+    "robot": "エスカル号"
+   },
+   {
+    "award": "技術賞",
+    "school": "有明",
+    "school_name": "有明工業高等専門学校",
+    "robot": "先手必勝アーム付破れバケツ号"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "長岡",
+    "school_name": "長岡工業高等専門学校",
+    "robot": "だいろ号"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "たこのデビット君"
+   }
+  ]
+ },
+ {
+  "year": 1990,
+  "no": 3,
+  "game": "ニュートロンスター",
+  "date": "1990-08-22",
+  "venue": "国立代々木競技場第2体育館",
+  "summary": "直径6mのリングの外側から、中心の直径2mのリング内へバスケットボールを投げ入れる。",
+  "source": "https://official-robocon.com/history/kosen/history/third/",
+  "awards": [
+   {
+    "award": "優勝",
+    "school": "仙台広瀬",
+    "school_name": "仙台電波工業高等専門学校",
+    "robot": "テト坊"
+   },
+   {
+    "award": "準優勝",
+    "school": "久留米",
+    "school_name": "久留米工業高等専門学校",
+    "robot": "スットンノビノビ号"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "サレジオ",
+    "school_name": "育英工業高等専門学校",
+    "robot": "ピカボー"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "松江",
+    "school_name": "松江工業高等専門学校",
+    "robot": "くにびき君"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "茨城",
+    "school_name": "茨城工業高等専門学校",
+    "robot": "2M1号"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "ニュートロンスターに賭ける橋"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "熊本八代",
+    "school_name": "八代工業高等専門学校",
+    "robot": "ビッグモッコス"
+   }
+  ]
+ },
+ {
+  "year": 1991,
+  "no": 4,
+  "game": "ホットタワー",
+  "date": "1991-11-03",
+  "venue": "両国国技館",
+  "summary": "2か所の台座に段ボール箱を多く、高く積み上げる。",
+  "source": "https://official-robocon.com/history/kosen/history/fourth/",
+  "awards": [
+   {
+    "award": "優勝",
+    "school": "東京",
+    "school_name": "東京工業高等専門学校",
+    "robot": "寮さん"
+   },
+   {
+    "award": "準優勝",
+    "school": "徳山",
+    "school_name": "徳山工業高等専門学校",
+    "robot": "白猫号"
+   },
+   {
+    "award": "技術賞",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "どっこいしょ君"
+   },
+   {
+    "award": "技術賞",
+    "school": "鳥羽商船",
+    "school_name": "鳥羽商船高等専門学校",
+    "robot": "DANKU"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "スラバヤ電子工学",
+    "school_name": "スラバヤ電子工学",
+    "robot": "BIMA-X1"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "八戸",
+    "school_name": "八戸工業高等専門学校",
+    "robot": "ニコニコウマウマパクパクポットン２号"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "佐世保",
+    "school_name": "佐世保工業高等専門学校",
+    "robot": "うっちゃり君"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "沼津",
+    "school_name": "沼津工業高等専門学校",
+    "robot": "Λ-'91"
+   }
+  ],
+  "note": "アイデア賞のスラバヤ電子工学はインドネシアからの招待チーム。"
+ },
+ {
+  "year": 1992,
+  "no": 5,
+  "game": "ミステリーサークル",
+  "date": "1992-11-15",
+  "venue": "両国国技館",
+  "summary": "中央の筒状のCリングと外側のBリングへバレーボールを投げ入れる。",
+  "source": "https://official-robocon.com/history/kosen/history/fifth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "ロジャーアーム号"
+   },
+   {
+    "award": "優勝",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "ころころ君"
+   },
+   {
+    "award": "準優勝",
+    "school": "岐阜",
+    "school_name": "岐阜工業高等専門学校",
+    "robot": "帰ってきたウカイコッコピヨピヨ丸２号"
+   },
+   {
+    "award": "技術賞",
+    "school": "八戸",
+    "school_name": "八戸工業高等専門学校",
+    "robot": "あみはるくん"
+   },
+   {
+    "award": "技術賞",
+    "school": "佐世保",
+    "school_name": "佐世保工業高等専門学校",
+    "robot": "Ten Point Shooter"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "有明",
+    "school_name": "有明工業高等専門学校",
+    "robot": "ビッグシューター"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "徳山",
+    "school_name": "徳山工業高等専門学校",
+    "robot": "ジャイアントアーム"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "鳥羽商船",
+    "school_name": "鳥羽商船高等専門学校",
+    "robot": "だっくすきりんさん"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "鶴岡",
+    "school_name": "鶴岡工業高等専門学校",
+    "robot": "社長の愛犬"
+   }
+  ],
+  "note": "公式ページでは佐世保・徳山・鶴岡の行に賞名が無く、並び順から技術賞・アイデア賞・アイデア倒れ賞と判断。"
+ },
+ {
+  "year": 1993,
+  "no": 6,
+  "game": "ステップダンス",
+  "date": "1993-11-21",
+  "venue": "両国国技館",
+  "summary": "60cmの階段を越えながら、15個のラグビーボールを相手側のフィールドへ送り込む。",
+  "source": "https://official-robocon.com/history/kosen/history/sixth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "福井",
+    "school_name": "福井工業高等専門学校",
+    "robot": "ルーキーデルタ"
+   },
+   {
+    "award": "優勝",
+    "school": "旭川",
+    "school_name": "旭川工業高等専門学校",
+    "robot": "大雪山ジムカデ号"
+   },
+   {
+    "award": "準優勝",
+    "school": "熊本八代",
+    "school_name": "八代工業高等専門学校",
+    "robot": "DASH"
+   },
+   {
+    "award": "技術賞",
+    "school": "国際",
+    "school_name": "金沢工業高等専門学校",
+    "robot": "百万石ファイター"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "見かけ倒し"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "のぼりマシーン"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "鶴岡",
+    "school_name": "鶴岡工業高等専門学校",
+    "robot": "折鶴"
+   }
+  ],
+  "note": "鶴岡の行は賞名が無く、並び順からアイデア倒れ賞と判断。"
+ },
+ {
+  "year": 1994,
+  "no": 7,
+  "game": "スペースフライヤー",
+  "date": "1994-11-20",
+  "venue": "両国国技館",
+  "summary": "フライングディスクをホールに入れて陣地を争う。",
+  "source": "https://official-robocon.com/history/kosen/history/seventh/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "Star King"
+   },
+   {
+    "award": "優勝",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "SUCCESS"
+   },
+   {
+    "award": "準優勝",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "Star King"
+   },
+   {
+    "award": "技術賞",
+    "school": "秋田",
+    "school_name": "秋田工業高等専門学校",
+    "robot": "なげわっぱ"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "P・P"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "福井",
+    "school_name": "福井工業高等専門学校",
+    "robot": "またまたちかっぺ福井"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "鶴岡",
+    "school_name": "鶴岡工業高等専門学校",
+    "robot": "Speedy ESCARGOT"
+   }
+  ],
+  "note": "鶴岡の行は賞名が無く、並び順からアイデア倒れ賞と判断。"
+ },
+ {
+  "year": 1995,
+  "no": 8,
+  "game": "ドリームタワー",
+  "date": "1995-11-19",
+  "venue": "両国国技館",
+  "summary": "ボールを運び、高さ3m・3段階のゴールに計20個のボールをシュートする。",
+  "source": "https://official-robocon.com/history/kosen/history/eighth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "新居浜",
+    "school_name": "新居浜工業高等専門学校",
+    "robot": "燧のジョ－ダン"
+   },
+   {
+    "award": "優勝",
+    "school": "都立荒川",
+    "school_name": "都立航空工業高等専門学校",
+    "robot": "緊急発進！！Tokyoタワー"
+   },
+   {
+    "award": "準優勝",
+    "school": "米子",
+    "school_name": "米子工業高等専門学校",
+    "robot": "超恐竜II"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "熊本八代",
+    "school_name": "八代工業高等専門学校",
+    "robot": "ガガンボ"
+   },
+   {
+    "award": "技術賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "子連れ狼"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "釧路",
+    "school_name": "釧路工業高等専門学校",
+    "robot": "クシロボーグ"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "富山射水",
+    "school_name": "富山商船高等専門学校",
+    "robot": "鉄砲魚"
+   }
+  ],
+  "note": "「ドリームタワー大賞」をロボコン大賞、「ベストデザイン賞」をデザイン賞として扱う。"
+ },
+ {
+  "year": 1996,
+  "no": 9,
+  "game": "テクノカウボーイ",
+  "date": "1996-11-17",
+  "venue": "両国国技館",
+  "summary": "自作の輪を飛ばし、9個の「パイロン」を奪い合う輪投げ形式の陣取り合戦。",
+  "source": "https://official-robocon.com/history/kosen/history/ninth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "大島商船",
+    "school_name": "大島商船高等専門学校",
+    "robot": "やぶさめくん"
+   },
+   {
+    "award": "優勝",
+    "school": "徳山",
+    "school_name": "徳山工業高等専門学校",
+    "robot": "午前１０時"
+   },
+   {
+    "award": "準優勝",
+    "school": "明石",
+    "school_name": "明石工業高等専門学校",
+    "robot": "Hunter"
+   },
+   {
+    "award": "技術賞",
+    "school": "舞鶴",
+    "school_name": "舞鶴工業高等専門学校",
+    "robot": "トレジャーハンター"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "群馬",
+    "school_name": "群馬工業高等専門学校",
+    "robot": "鯣弐号"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "久留米",
+    "school_name": "久留米工業高等専門学校",
+    "robot": "Turbulenz"
+   },
+   {
+    "award": "優秀賞",
+    "school": "釧路",
+    "school_name": "釧路工業高等専門学校",
+    "robot": "サロルーン・チカップ"
+   }
+  ],
+  "note": "「テクノカウボーイ大賞」をロボコン大賞として扱う。"
+ },
+ {
+  "year": 1997,
+  "no": 10,
+  "game": "花開蝶来",
+  "date": "1997-11-23",
+  "venue": "両国国技館",
+  "summary": "プランターに花を咲かせ、蝶を飛ばして相手の花を自チームのものにする陣取り合戦。",
+  "source": "https://official-robocon.com/history/kosen/history/tenth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "福井",
+    "school_name": "福井工業高等専門学校",
+    "robot": "G.G.ウオーカー"
+   },
+   {
+    "award": "優勝",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "Mの国"
+   },
+   {
+    "award": "準優勝",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "高飛車"
+   },
+   {
+    "award": "技術賞",
+    "school": "富山射水",
+    "school_name": "富山商船高等専門学校",
+    "robot": "花さかG3"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "芋虫大紀行号"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "都立荒川",
+    "school_name": "都立航空工業高等専門学校",
+    "robot": "花咲かEgg★"
+   },
+   {
+    "award": "優秀賞",
+    "school": "久留米",
+    "school_name": "久留米工業高等専門学校",
+    "robot": "eden"
+   }
+  ],
+  "note": "「花開蝶来大賞」をロボコン大賞として扱う。ほかに応援団賞（弓削商船）。"
+ },
+ {
+  "year": 1998,
+  "no": 11,
+  "game": "生命上陸",
+  "date": "1998-11-22",
+  "venue": "両国国技館",
+  "summary": "種子や卵を10の島へ投げたり転がしたりして、島にとどまった生命の数で得点を競う。",
+  "source": "https://official-robocon.com/history/kosen/history/eleventh/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "旭川",
+    "school_name": "旭川工業高等専門学校",
+    "robot": "ＭＡＣＨ－ＣＨＡＮ１号"
+   },
+   {
+    "award": "優勝",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "生命侵略"
+   },
+   {
+    "award": "準優勝",
+    "school": "長岡",
+    "school_name": "長岡工業高等専門学校",
+    "robot": "越号ＮＡＧＡＯＫＡ"
+   },
+   {
+    "award": "技術賞",
+    "school": "八戸",
+    "school_name": "八戸工業高等専門学校",
+    "robot": "イカロス"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "いろとりドリ"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "松江",
+    "school_name": "松江工業高等専門学校",
+    "robot": "小さな栗の木"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "広島商船",
+    "school_name": "広島商船高等専門学校",
+    "robot": "新竹取物語"
+   }
+  ],
+  "note": "公式ページの「芸術賞」をデザイン賞、「生命上陸大賞」をロボコン大賞として扱う。"
+ },
+ {
+  "year": 1999,
+  "no": 12,
+  "game": "ジャンプ・トゥー・ザ・フューチャー",
+  "date": "1999-11-28",
+  "venue": "両国国技館",
+  "summary": "障害物を越えて15個の箱をポイントゾーンへ運ぶ。高台のVスポットに置けば即勝利。",
+  "source": "https://official-robocon.com/history/kosen/history/twelfth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "徳山",
+    "school_name": "徳山工業高等専門学校",
+    "robot": "Fly Do ポテットS"
+   },
+   {
+    "award": "優勝",
+    "school": "仙台名取",
+    "school_name": "宮城工業高等専門学校",
+    "robot": "Quarter"
+   },
+   {
+    "award": "準優勝",
+    "school": "石川",
+    "school_name": "石川工業高等専門学校",
+    "robot": "TURBO"
+   },
+   {
+    "award": "技術賞",
+    "school": "熊本熊本",
+    "school_name": "熊本電波工業高等専門学校",
+    "robot": "飛躍的・樽樽"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "札幌市立",
+    "school_name": "札幌市立高等専門学校",
+    "robot": "SPOILER"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "広島商船",
+    "school_name": "広島商船高等専門学校",
+    "robot": "シーソーでJUMP"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "長岡",
+    "school_name": "長岡工業高等専門学校",
+    "robot": "忠犬レッツ！"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "八戸",
+    "school_name": "八戸工業高等専門学校",
+    "robot": "Dolphin"
+   },
+   {
+    "award": "特別賞（省エネルギーセンター）",
+    "school": "仙台名取",
+    "school_name": "宮城工業高等専門学校",
+    "robot": "Quarter"
+   }
+  ],
+  "note": "公式ページの「芸術賞」をデザイン賞として扱う。"
+ },
+ {
+  "year": 2000,
+  "no": 13,
+  "game": "ミレニアムメッセージ",
+  "date": "2000-12-03",
+  "venue": "両国国技館",
+  "summary": "高さの異なる4つの目標に造形物を載せ、21世紀へのメッセージを披露する。",
+  "source": "https://official-robocon.com/history/kosen/history/thirteenth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "長岡",
+    "school_name": "長岡工業高等専門学校",
+    "robot": "長岡猿軍団"
+   },
+   {
+    "award": "優勝",
+    "school": "香川詫間",
+    "school_name": "詫間電波工業高等専門学校",
+    "robot": "ミレニアム・リサイクラー"
+   },
+   {
+    "award": "準優勝",
+    "school": "岐阜",
+    "school_name": "岐阜工業高等専門学校",
+    "robot": "Crazy Climber"
+   },
+   {
+    "award": "技術賞",
+    "school": "米子",
+    "school_name": "米子工業高等専門学校",
+    "robot": "Tsushi-Max"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "釧路",
+    "school_name": "釧路工業高等専門学校",
+    "robot": "TODICS"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "テッペンジャック"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "福井",
+    "school_name": "福井工業高等専門学校",
+    "robot": "ディノ・クライマー"
+   }
+  ]
+ },
+ {
+  "year": 2001,
+  "no": 14,
+  "game": "Happy Birthday 39",
+  "date": "2001-11-25",
+  "venue": "両国国技館",
+  "summary": "フィールド上の27本の円筒（ろうそく）を自陣に多く立て、炎を灯す。",
+  "source": "https://official-robocon.com/history/kosen/history/fourteenth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "大島商船",
+    "school_name": "大島商船高等専門学校",
+    "robot": "オロチ３兄弟"
+   },
+   {
+    "award": "優勝",
+    "school": "香川詫間",
+    "school_name": "詫間電波工業高等専門学校",
+    "robot": "チャレンジャー"
+   },
+   {
+    "award": "準優勝",
+    "school": "仙台広瀬",
+    "school_name": "仙台電波工業高等専門学校",
+    "robot": "transfix"
+   },
+   {
+    "award": "技術賞",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "すごいぞぉ"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "広島商船",
+    "school_name": "広島商船高等専門学校",
+    "robot": "聞いてね！キリンさん"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "佐世保",
+    "school_name": "佐世保工業高等専門学校",
+    "robot": "Moon Walker"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "サレジオ",
+    "school_name": "育英工業高等専門学校",
+    "robot": "ド壇場turn"
+   },
+   {
+    "award": "特別賞",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "点火無敵"
+   }
+  ]
+ },
+ {
+  "year": 2002,
+  "no": 15,
+  "game": "プロジェクトBOX",
+  "date": "2002-11-24",
+  "venue": "両国国技館",
+  "summary": "箱の階段を降り、箱を3か所のスポットに積み上げ、最上段の色でスポットを獲得する。",
+  "source": "https://official-robocon.com/history/kosen/history/fifteenth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "富山射水",
+    "school_name": "富山商船高等専門学校",
+    "robot": "Fire Wall"
+   },
+   {
+    "award": "優勝",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "Flex"
+   },
+   {
+    "award": "準優勝",
+    "school": "米子",
+    "school_name": "米子工業高等専門学校",
+    "robot": "バランスメーカー"
+   },
+   {
+    "award": "技術賞",
+    "school": "鹿児島",
+    "school_name": "鹿児島工業高等専門学校",
+    "robot": "凱旋門"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "徳山",
+    "school_name": "徳山工業高等専門学校",
+    "robot": "Side Bird Phoenix"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "特急？天手線"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "サレジオ",
+    "school_name": "育英工業高等専門学校",
+    "robot": "歩くんです"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "福井",
+    "school_name": "福井工業高等専門学校",
+    "robot": "バランスボックス"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "サレジオ",
+    "school_name": "育英工業高等専門学校",
+    "robot": "歩くんです"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "特急？天手線"
+   },
+   {
+    "award": "特別賞（ソリッドワークスジャパン）",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "はこじゃらし"
+   }
+  ]
+ },
+ {
+  "year": 2003,
+  "no": 16,
+  "game": "鼎（KANAE）",
+  "date": "2003-11-23",
+  "venue": "両国国技館",
+  "summary": "回転盤にオブジェを付け、重みで回転盤を自チーム側に傾け、傾いた盤の数を競う。",
+  "source": "https://official-robocon.com/history/kosen/history/sixteenth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "都立荒川",
+    "school_name": "東京都立航空工業高等専門学校",
+    "robot": "大食鉄鋼人"
+   },
+   {
+    "award": "優勝",
+    "school": "旭川",
+    "school_name": "旭川工業高等専門学校",
+    "robot": "Untyred"
+   },
+   {
+    "award": "準優勝",
+    "school": "都立荒川",
+    "school_name": "東京都立航空工業高等専門学校",
+    "robot": "大食鉄鋼人"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "デジかめだ～"
+   },
+   {
+    "award": "技術賞",
+    "school": "米子",
+    "school_name": "米子工業高等専門学校",
+    "robot": "Disc-1"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "ましゅまろん"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "阿南",
+    "school_name": "阿南工業高等専門学校",
+    "robot": "Rise'n Roll"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "宇部",
+    "school_name": "宇部工業高等専門学校",
+    "robot": "ぜんぶとっちゃうゾウ！"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "夢KANAE"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "都立荒川",
+    "school_name": "東京都立航空工業高等専門学校",
+    "robot": "大食鉄鋼人"
+   },
+   {
+    "award": "特別賞（ソリッドワークスジャパン）",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "ハル"
+   }
+  ]
+ },
+ {
+  "year": 2004,
+  "no": 17,
+  "game": "マーズラッシュ",
+  "date": "2004-11-28",
+  "venue": "両国国技館",
+  "summary": "手動ロボットと自動ロボットで、進入禁止ゾーン内のボールを中央のスポットへ近づけて競う。",
+  "source": "https://official-robocon.com/history/kosen/history/seventeenth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "vELo-city"
+   },
+   {
+    "award": "優勝",
+    "school": "松江",
+    "school_name": "松江工業高等専門学校",
+    "robot": "それいけアルゴン"
+   },
+   {
+    "award": "準優勝",
+    "school": "香川詫間",
+    "school_name": "詫間電波工業高等専門学校",
+    "robot": "Fever"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "閃光華火"
+   },
+   {
+    "award": "技術賞",
+    "school": "宇部",
+    "school_name": "宇部工業高等専門学校",
+    "robot": "GENESIS"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "広島商船",
+    "school_name": "広島商船高等専門学校",
+    "robot": "エアーマジック"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "鈴鹿",
+    "school_name": "鈴鹿工業高等専門学校",
+    "robot": "Albatross"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "和歌山",
+    "school_name": "和歌山工業高等専門学校",
+    "robot": "エスカルゴン"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "vELo-city"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "ぼくらはにわたんけんたい"
+   },
+   {
+    "award": "特別賞（ソリッドワークスジャパン）",
+    "school": "長岡",
+    "school_name": "長岡工業高等専門学校",
+    "robot": "そいがあ"
+   }
+  ]
+ },
+ {
+  "year": 2005,
+  "no": 18,
+  "game": "大運動会",
+  "date": "2005-12-04",
+  "venue": "両国国技館",
+  "summary": "はしごくぐり、平均台、ハードル、壁登りを越えてバトンをゴールへ運ぶ。",
+  "source": "https://official-robocon.com/history/kosen/history/eighteenth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "東京",
+    "school_name": "東京工業高等専門学校",
+    "robot": "縦高無尽"
+   },
+   {
+    "award": "優勝",
+    "school": "津山",
+    "school_name": "津山工業高等専門学校",
+    "robot": "単構造"
+   },
+   {
+    "award": "準優勝",
+    "school": "東京",
+    "school_name": "東京工業高等専門学校",
+    "robot": "縦高無尽"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "でんぐり君"
+   },
+   {
+    "award": "技術賞",
+    "school": "鹿児島",
+    "school_name": "鹿児島工業高等専門学校",
+    "robot": "夢限"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "富山射水",
+    "school_name": "富山商船高等専門学校",
+    "robot": "NEO-Gravity"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "Win Roll"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "広島商船",
+    "school_name": "広島商船高等専門学校",
+    "robot": "ピエロの大冒険"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "福井",
+    "school_name": "福井工業高等専門学校",
+    "robot": "下司MAX"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "八戸",
+    "school_name": "八戸工業高等専門学校",
+    "robot": "keeper"
+   },
+   {
+    "award": "特別賞（ソリッドワークス・ジャパン）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "Parallel"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "高床式ぱっちん号"
+   }
+  ]
+ },
+ {
+  "year": 2006,
+  "no": 19,
+  "game": "ふるさと自慢特急便",
+  "date": "2006-11-26",
+  "venue": "両国国技館",
+  "summary": "地元の特産品を模した「ふるさとオブジェ」を、堀や障害物を越えてゴールへ運ぶタイムレース。",
+  "source": "https://official-robocon.com/history/kosen/history/nineteenth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "香川詫間",
+    "school_name": "詫間電波工業高等専門学校",
+    "robot": "ARK"
+   },
+   {
+    "award": "優勝",
+    "school": "香川詫間",
+    "school_name": "詫間電波工業高等専門学校",
+    "robot": "ARK"
+   },
+   {
+    "award": "準優勝",
+    "school": "和歌山",
+    "school_name": "和歌山工業高等専門学校",
+    "robot": "ウメタロウ"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "沖縄",
+    "school_name": "沖縄工業高等専門学校",
+    "robot": "行進中"
+   },
+   {
+    "award": "技術賞",
+    "school": "徳山",
+    "school_name": "徳山工業高等専門学校",
+    "robot": "パンダ倶楽部"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "近大",
+    "school_name": "近畿大学工業高等専門学校",
+    "robot": "Libra"
+   },
+   {
+    "award": "ふるさと自慢賞",
+    "school": "釧路",
+    "school_name": "釧路工業高等専門学校",
+    "robot": "韋駄天"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "RainBow"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "特急かんぴょう号"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "TOTOYA"
+   },
+   {
+    "award": "特別賞（ソリッドワークス・ジャパン）",
+    "school": "徳山",
+    "school_name": "徳山工業高等専門学校",
+    "robot": "パンダ倶楽部"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "沖縄",
+    "school_name": "沖縄工業高等専門学校",
+    "robot": "行進中"
+   }
+  ]
+ },
+ {
+  "year": 2007,
+  "no": 20,
+  "game": "風林火山 ロボット騎馬戦",
+  "date": "2007-11-25",
+  "venue": "両国国技館",
+  "summary": "騎馬ロボット2台のチームが、相手の旗を奪い合う。",
+  "source": "https://official-robocon.com/history/kosen/history/twentieth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "サレジオ",
+    "school_name": "サレジオ工業高等専門学校",
+    "robot": "二戦錬馬"
+   },
+   {
+    "award": "優勝",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "クルポン"
+   },
+   {
+    "award": "準優勝",
+    "school": "和歌山",
+    "school_name": "和歌山工業高等専門学校",
+    "robot": "紀州軍団"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "ローリングぱっちんＧＯ！"
+   },
+   {
+    "award": "技術賞",
+    "school": "香川詫間",
+    "school_name": "詫間電波工業高等専門学校",
+    "robot": "Galaxy"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "富山本郷",
+    "school_name": "富山工業高等専門学校",
+    "robot": "TRA"
+   },
+   {
+    "award": "風林火山賞",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "金色堂"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "サレジオ",
+    "school_name": "サレジオ工業高等専門学校",
+    "robot": "二戦錬馬"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "旭川",
+    "school_name": "旭川工業高等専門学校",
+    "robot": "NOTEC"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "都立荒川",
+    "school_name": "都立産業技術高等専門学校（荒川）",
+    "robot": "八歩兎尾迅"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "クルポン"
+   },
+   {
+    "award": "特別賞（東京エレクトロンFE）",
+    "school": "沖縄",
+    "school_name": "沖縄工業高等専門学校",
+    "robot": "メーヴェ"
+   }
+  ]
+ },
+ {
+  "year": 2008,
+  "no": 21,
+  "game": "ROBO-EVOLUTION 生命大進化",
+  "date": "2008-11-23",
+  "venue": "両国国技館",
+  "summary": "多足歩行の障害物レース、変身パフォーマンス、2足歩行のタイムレースの3つの課題でタイムを競う。",
+  "source": "https://official-robocon.com/history/kosen/history/twenty-first/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "津山",
+    "school_name": "津山工業高等専門学校",
+    "robot": "キカイタイソウ"
+   },
+   {
+    "award": "優勝",
+    "school": "沖縄",
+    "school_name": "沖縄工業高等専門学校",
+    "robot": "Movement"
+   },
+   {
+    "award": "準優勝",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "Iroha Liner"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "鹿児島",
+    "school_name": "鹿児島工業高等専門学校",
+    "robot": "篤姫と機械な仲間たち"
+   },
+   {
+    "award": "技術賞",
+    "school": "岐阜",
+    "school_name": "岐阜工業高等専門学校",
+    "robot": "ZiN"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "祭だぱっちん号"
+   },
+   {
+    "award": "生命大進化賞",
+    "school": "阿南",
+    "school_name": "阿南工業高等専門学校",
+    "robot": "ACE"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "阿南",
+    "school_name": "阿南工業高等専門学校",
+    "robot": "ACE"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "仙台名取",
+    "school_name": "宮城工業高等専門学校",
+    "robot": "Powell"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "岐阜",
+    "school_name": "岐阜工業高等専門学校",
+    "robot": "ZiN"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "鹿児島",
+    "school_name": "鹿児島工業高等専門学校",
+    "robot": "篤姫と機械な仲間たち"
+   },
+   {
+    "award": "特別賞（東京エレクトロンFE）",
+    "school": "津山",
+    "school_name": "津山工業高等専門学校",
+    "robot": "キカイタイソウ"
+   }
+  ]
+ },
+ {
+  "year": 2009,
+  "no": 22,
+  "game": "DANCIN' COUPLE",
+  "date": "2009-11-22",
+  "venue": "両国国技館",
+  "summary": "手動の2足歩行ロボットと自動ロボットがペアになり、ダンスの出来栄えを競う。",
+  "source": "https://official-robocon.com/history/kosen/history/twenty-second/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "広島商船",
+    "school_name": "広島商船高等専門学校",
+    "robot": "新!!シンデレラの巻"
+   },
+   {
+    "award": "優勝",
+    "school": "香川詫間",
+    "school_name": "香川高等専門学校（詫間）",
+    "robot": "SKY"
+   },
+   {
+    "award": "準優勝",
+    "school": "呉",
+    "school_name": "呉工業高等専門学校",
+    "robot": "7πRADIAN"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "岐阜",
+    "school_name": "岐阜工業高等専門学校",
+    "robot": "Spica"
+   },
+   {
+    "award": "技術賞",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "叢雲"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "若さま"
+   },
+   {
+    "award": "ベストカップル賞",
+    "school": "舞鶴",
+    "school_name": "舞鶴工業高等専門学校",
+    "robot": "鶴恋慕"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "岐阜",
+    "school_name": "岐阜工業高等専門学校",
+    "robot": "Spica"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "松江",
+    "school_name": "松江工業高等専門学校",
+    "robot": "跳兎"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "桜風舞姫"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "沖縄",
+    "school_name": "沖縄工業高等専門学校",
+    "robot": "クラッチャーズ"
+   },
+   {
+    "award": "特別賞（東京エレクトロンFE）",
+    "school": "舞鶴",
+    "school_name": "舞鶴工業高等専門学校",
+    "robot": "鶴恋慕"
+   }
+  ]
+ },
+ {
+  "year": 2010,
+  "no": 23,
+  "game": "激走！ロボ力車",
+  "date": "2010-11-21",
+  "venue": "両国国技館",
+  "summary": "2足歩行ロボットが乗り物に乗った高専生を、連結や鍵の挿し込みを経てゴールまで運ぶ速さを競う。",
+  "source": "https://official-robocon.com/history/kosen/history/twenty-third/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "仙台名取",
+    "school_name": "仙台高等専門学校（名取）",
+    "robot": "Aruyo=Aruyo"
+   },
+   {
+    "award": "優勝",
+    "school": "鹿児島",
+    "school_name": "鹿児島工業高等専門学校",
+    "robot": "Rose Road"
+   },
+   {
+    "award": "準優勝",
+    "school": "和歌山",
+    "school_name": "和歌山工業高等専門学校",
+    "robot": "ウメンライダーW"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "隼"
+   },
+   {
+    "award": "技術賞",
+    "school": "岐阜",
+    "school_name": "岐阜工業高等専門学校",
+    "robot": "Accel"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "スチームランナー"
+   },
+   {
+    "award": "激走賞",
+    "school": "松江",
+    "school_name": "松江工業高等専門学校",
+    "robot": "Homing"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "岐阜",
+    "school_name": "岐阜工業高等専門学校",
+    "robot": "Accel"
+   },
+   {
+    "award": "特別賞（電気事業連合会）",
+    "school": "鶴岡",
+    "school_name": "鶴岡工業高等専門学校",
+    "robot": "ぷりん☆A！LAもーど?"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "長野",
+    "school_name": "長野工業高等専門学校",
+    "robot": "メタリオット"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "群馬",
+    "school_name": "群馬工業高等専門学校",
+    "robot": "Voiture"
+   },
+   {
+    "award": "特別賞（東京エレクトロンFE）",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "スチームランナー"
+   }
+  ]
+ },
+ {
+  "year": 2011,
+  "no": 24,
+  "game": "ロボ・ボウル",
+  "date": "2011-11-20",
+  "venue": "両国国技館",
+  "summary": "2足歩行のオフェンス・ロボットが、妨害をかわしてノーバウンドでタッチダウンパスするタイムを競う。",
+  "source": "https://official-robocon.com/history/kosen/history/twenty-fourth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "仙台名取",
+    "school_name": "仙台高等専門学校（名取）",
+    "robot": "OR"
+   },
+   {
+    "award": "優勝",
+    "school": "仙台名取",
+    "school_name": "仙台高等専門学校（名取）",
+    "robot": "OR"
+   },
+   {
+    "award": "準優勝",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "最強砲"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "速球ぱらボルト"
+   },
+   {
+    "award": "技術賞",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "ViGo"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "豊田",
+    "school_name": "豊田工業高等専門学校",
+    "robot": "飛・飛・飛"
+   },
+   {
+    "award": "ロボ・ボウル賞",
+    "school": "長野",
+    "school_name": "長野工業高等専門学校",
+    "robot": "Impulse"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "松江",
+    "school_name": "松江工業高等専門学校",
+    "robot": "撃蛙"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "空"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "有明",
+    "school_name": "有明工業高等専門学校",
+    "robot": "おおむたん"
+   },
+   {
+    "award": "特別賞（東京エレクトロンFE）",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "速球ぱらボルト"
+   }
+  ]
+ },
+ {
+  "year": 2012,
+  "no": 25,
+  "game": "ベスト・ペット",
+  "date": "2012-11-25",
+  "venue": "両国国技館",
+  "summary": "ペット・ロボットがコントローラーを使わず伴走者と協力し、ボールを9つのゴールに入れる玉入れ競技。",
+  "source": "https://official-robocon.com/history/kosen/history/twenty-fifth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "フレンドルフィン"
+   },
+   {
+    "award": "優勝",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "椀子兄弟"
+   },
+   {
+    "award": "準優勝",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "MOOSTAR"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "大阪公大",
+    "school_name": "大阪府立大学工業高等専門学校",
+    "robot": "すこ→ぴおんず"
+   },
+   {
+    "award": "技術賞",
+    "school": "津山",
+    "school_name": "津山工業高等専門学校",
+    "robot": "ソウペン１号"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "追跡！完璧リン"
+   },
+   {
+    "award": "ベスト・ペット賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "フレンドルフィン"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "鈴鹿",
+    "school_name": "鈴鹿工業高等専門学校",
+    "robot": "Emperor"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "津山",
+    "school_name": "津山工業高等専門学校",
+    "robot": "ソウペン１号"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "有明",
+    "school_name": "有明工業高等専門学校",
+    "robot": "キャロッ兎"
+   },
+   {
+    "award": "特別賞（東京エレクトロンFE）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "追跡！完璧リン"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "仙台名取",
+    "school_name": "仙台高等専門学校（名取）",
+    "robot": "ササリー"
+   }
+  ]
+ },
+ {
+  "year": 2013,
+  "no": 26,
+  "game": "Shall We Jump?",
+  "date": "2013-11-24",
+  "venue": "両国国技館",
+  "summary": "生き物を模したロボットと高専生が協力して縄跳びに挑む。",
+  "source": "https://official-robocon.com/history/kosen/history/twenty-sixth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "富山本郷",
+    "school_name": "富山高等専門学校",
+    "robot": "SuLuMe"
+   },
+   {
+    "award": "優勝",
+    "school": "徳山",
+    "school_name": "徳山工業高等専門学校",
+    "robot": "色とりドリィ"
+   },
+   {
+    "award": "準優勝",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "じゃんぺん"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "跳べ！最優ウッキー！"
+   },
+   {
+    "award": "技術賞",
+    "school": "鈴鹿",
+    "school_name": "鈴鹿工業高等専門学校",
+    "robot": "メルシー"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "跳べ！ライオン君！！"
+   },
+   {
+    "award": "シャル・ウィ・ジャンプ賞",
+    "school": "鈴鹿",
+    "school_name": "鈴鹿工業高等専門学校",
+    "robot": "メルシー"
+   },
+   {
+    "award": "ベスト・ビデオ賞",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "サルク・ドゥ・ソレイヌ"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "都立荒川",
+    "school_name": "都立産業技術高等専門学校（荒川）",
+    "robot": "To Be"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "跳べ！最優ウッキー！"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "跳べ！ライオン君！！"
+   },
+   {
+    "award": "特別賞（東京エレクトロンFE）",
+    "school": "熊本熊本",
+    "school_name": "熊本高等専門学校（熊本）",
+    "robot": "Come on jumper"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "小山サーカスの特訓"
+   }
+  ]
+ },
+ {
+  "year": 2014,
+  "no": 27,
+  "game": "出前迅速",
+  "date": "2014-11-23",
+  "venue": "両国国技館",
+  "summary": "蕎麦の蒸籠を3つの障害物の上を運び、3分間により多く届ける。",
+  "source": "https://official-robocon.com/history/kosen/history/twenty-seventh/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "本気の宅配便"
+   },
+   {
+    "award": "優勝",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "本気の宅配便"
+   },
+   {
+    "award": "準優勝",
+    "school": "旭川",
+    "school_name": "旭川工業高等専門学校",
+    "robot": "ベルーガ"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "鈴鹿",
+    "school_name": "鈴鹿工業高等専門学校",
+    "robot": "エール"
+   },
+   {
+    "award": "技術賞",
+    "school": "和歌山",
+    "school_name": "和歌山工業高等専門学校",
+    "robot": "鯨走軽迅"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "大島商船",
+    "school_name": "大島商船高等専門学校",
+    "robot": "大島具足蟲"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "仙台広瀬",
+    "school_name": "仙台高等専門学校（広瀬）",
+    "robot": "Uni☆Verse"
+   },
+   {
+    "award": "出前迅速賞",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "お食事処めじ亭"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "木更津",
+    "school_name": "木更津工業高等専門学校",
+    "robot": "出前スカルゴ"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "大島商船",
+    "school_name": "大島商船高等専門学校",
+    "robot": "大島具足蟲"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "高知",
+    "school_name": "高知工業高等専門学校",
+    "robot": "ポンポコ・コンコン's"
+   },
+   {
+    "award": "特別賞（東京エレクトロンFE）",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "本気の宅配便"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "仙台広瀬",
+    "school_name": "仙台高等専門学校（広瀬）",
+    "robot": "Uni☆Verse"
+   }
+  ]
+ },
+ {
+  "year": 2015,
+  "no": 28,
+  "game": "輪花繚乱",
+  "date": "2015-11-22",
+  "venue": "両国国技館",
+  "summary": "ロボットによる輪投げで対戦し、9本全てのポールに先に輪を入れるか得点の多いチームが勝つ。",
+  "source": "https://official-robocon.com/history/kosen/history/twenty-eighth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "大和"
+   },
+   {
+    "award": "優勝",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "大和"
+   },
+   {
+    "award": "準優勝",
+    "school": "香川高松",
+    "school_name": "香川高等専門学校（高松）",
+    "robot": "Beehive"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "輪Navi君"
+   },
+   {
+    "award": "技術賞",
+    "school": "都立荒川",
+    "school_name": "都立産業技術高等専門学校（荒川）",
+    "robot": "荒鯊"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "進め！みやこのゾウ"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "群馬",
+    "school_name": "群馬工業高等専門学校",
+    "robot": "上州カウボーイ"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "香川詫間",
+    "school_name": "香川高等専門学校（詫間）",
+    "robot": "Force"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "進め！みやこのゾウ"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "Wanna Be"
+   },
+   {
+    "award": "特別賞（東京エレクトロン）",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "Challenger"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "ぐる輪"
+   },
+   {
+    "award": "特別賞（ローム）",
+    "school": "徳山",
+    "school_name": "徳山工業高等専門学校",
+    "robot": "捲土重来"
+   }
+  ]
+ },
+ {
+  "year": 2016,
+  "no": 29,
+  "game": "ロボット・ニューフロンティア",
+  "date": "2016-11-20",
+  "venue": "両国国技館",
+  "summary": "ロボットと3人の高専生が障害を越え、ブロックを積み上げて「砦」を築く。",
+  "source": "https://official-robocon.com/history/kosen/history/twenty-ninth/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "Δ（デルタ）"
+   },
+   {
+    "award": "優勝",
+    "school": "香川高松",
+    "school_name": "香川高等専門学校（高松）",
+    "robot": "八機八構"
+   },
+   {
+    "award": "準優勝",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "烈覇"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "富山本郷",
+    "school_name": "富山高等専門学校（本郷）",
+    "robot": "プロジェクトΛ"
+   },
+   {
+    "award": "技術賞",
+    "school": "仙台名取",
+    "school_name": "仙台高等専門学校（名取）",
+    "robot": "Marduox"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "明石",
+    "school_name": "明石工業高等専門学校",
+    "robot": "あさごん"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "木更津",
+    "school_name": "木更津工業高等専門学校",
+    "robot": "伊能運搬隊"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "明石",
+    "school_name": "明石工業高等専門学校",
+    "robot": "あさごん"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "富山本郷",
+    "school_name": "富山高等専門学校（本郷）",
+    "robot": "プロジェクトΛ"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "佐世保",
+    "school_name": "佐世保工業高等専門学校",
+    "robot": "黄色い開拓者"
+   },
+   {
+    "award": "特別賞（東京エレクトロン）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "はにワッショイ！"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "苫小牧",
+    "school_name": "苫小牧工業高等専門学校",
+    "robot": "息吹丸"
+   },
+   {
+    "award": "特別賞（ローム）",
+    "school": "米子",
+    "school_name": "米子工業高等専門学校",
+    "robot": "ウミ★BOYS"
+   }
+  ]
+ },
+ {
+  "year": 2017,
+  "no": 30,
+  "game": "大江戸ロボット忍法帳",
+  "date": "2017-12-03",
+  "venue": "有明コロシアム",
+  "summary": "2台のロボットが風船を割り合い、相手の本陣またはロボット2台の風船をすべて割ると勝利。",
+  "source": "https://official-robocon.com/history/kosen/history/30th/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "マリンビート"
+   },
+   {
+    "award": "優勝",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "ReVictor"
+   },
+   {
+    "award": "準優勝",
+    "school": "石川",
+    "school_name": "石川工業高等専門学校",
+    "robot": "疾風蟹"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "熊本熊本",
+    "school_name": "熊本高等専門学校（熊本）",
+    "robot": "蜂部 蜂蔵"
+   },
+   {
+    "award": "技術賞",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "万里一空"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "海底忍魚隊"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "長岡",
+    "school_name": "長岡工業高等専門学校",
+    "robot": "ベアLINK\""
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "マリンビート"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "海底忍魚隊"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "割れ！風船PANだ！"
+   },
+   {
+    "award": "特別賞（東京エレクトロン）",
+    "school": "熊本熊本",
+    "school_name": "熊本高等専門学校（熊本）",
+    "robot": "蜂部 蜂蔵"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "神戸",
+    "school_name": "神戸市立工業高等専門学校",
+    "robot": "さるかにんぽう"
+   },
+   {
+    "award": "特別賞（ローム）",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "カエルの為に腕は鳴る"
+   }
+  ]
+ },
+ {
+  "year": 2018,
+  "no": 31,
+  "game": "Bottle-Flip Cafe",
+  "date": "2018-11-25",
+  "venue": "両国国技館",
+  "summary": "ロボットが8つのテーブルへペットボトルを投げて立たせた数を競う。",
+  "source": "https://official-robocon.com/history/kosen/history/31th/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "Barista"
+   },
+   {
+    "award": "優勝",
+    "school": "一関",
+    "school_name": "一関工業高等専門学校",
+    "robot": "一角"
+   },
+   {
+    "award": "準優勝",
+    "school": "函館",
+    "school_name": "函館工業高等専門学校",
+    "robot": "Café Rivage"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "広島商船",
+    "school_name": "広島商船高等専門学校",
+    "robot": "紫電☆一閃"
+   },
+   {
+    "award": "技術賞",
+    "school": "佐世保",
+    "school_name": "佐世保工業高等専門学校",
+    "robot": "火種"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "和歌山",
+    "school_name": "和歌山工業高等専門学校",
+    "robot": "江楠マキナさん"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "曲鯨師！ホエールくん！"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "広島商船",
+    "school_name": "広島商船高等専門学校",
+    "robot": "紫電☆一閃"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "香川詫間",
+    "school_name": "香川高等専門学校（詫間）",
+    "robot": "Arch"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "国際",
+    "school_name": "国際高等専門学校",
+    "robot": "森の革命"
+   },
+   {
+    "award": "特別賞（東京エレクトロン）",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "ベスト・ペット"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "呉",
+    "school_name": "呉工業高等専門学校",
+    "robot": "Vic鳥"
+   },
+   {
+    "award": "特別賞（ローム）",
+    "school": "神戸",
+    "school_name": "神戸市立工業高等専門学校",
+    "robot": "VICT(OO)N"
+   }
+  ]
+ },
+ {
+  "year": 2019,
+  "no": 32,
+  "game": "らん♪RUN Laundry",
+  "date": "2019-11-24",
+  "venue": "両国国技館",
+  "summary": "ロボットが本物の衣類を物干しざおに干す。同点の場合は干し上がりの美しさで勝敗を決める。",
+  "source": "https://official-robocon.com/history/kosen/history/32th/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "飛鳥"
+   },
+   {
+    "award": "優勝",
+    "school": "香川詫間",
+    "school_name": "香川高等専門学校（詫間）",
+    "robot": "again"
+   },
+   {
+    "award": "準優勝",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "ホシ鳥夫婦"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "ハッとトリック！ポッポちゃん！"
+   },
+   {
+    "award": "技術賞",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "洗匠"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "大阪公大",
+    "school_name": "大阪府立大学工業高等専門学校",
+    "robot": "OSAKA OBASAN"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "長野",
+    "school_name": "長野工業高等専門学校",
+    "robot": "森のイテェやつら"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "奈良",
+    "school_name": "奈良工業高等専門学校",
+    "robot": "飛鳥"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "呉",
+    "school_name": "呉工業高等専門学校",
+    "robot": "蝸牛"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "ハッとトリック！ポッポちゃん！"
+   },
+   {
+    "award": "特別賞（東京エレクトロン）",
+    "school": "長野",
+    "school_name": "長野工業高等専門学校",
+    "robot": "森のイテェやつら"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "岐阜",
+    "school_name": "岐阜工業高等専門学校",
+    "robot": "Lambdry"
+   },
+   {
+    "award": "特別賞（ローム）",
+    "school": "明石",
+    "school_name": "明石工業高等専門学校",
+    "robot": "明石『超』乾燥"
+   },
+   {
+    "award": "特別賞（セメダイン）",
+    "school": "鈴鹿",
+    "school_name": "鈴鹿工業高等専門学校",
+    "robot": "物ほっしー☆"
+   }
+  ]
+ },
+ {
+  "year": 2020,
+  "no": 33,
+  "game": "はぴ☆ロボ自慢",
+  "date": "2020-11-29",
+  "venue": "オンライン",
+  "summary": "自宅や学校からロボットのパフォーマンスを披露し、完成度・演技・テーマ・アイデアを評価する（対戦なし）。",
+  "source": "https://official-robocon.com/history/kosen/history/33th/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "沼津",
+    "school_name": "沼津工業高等専門学校",
+    "robot": "チャリモ"
+   },
+   {
+    "award": "超優秀賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "シンクロシスターズ♪"
+   },
+   {
+    "award": "超はぴ☆ロボ賞",
+    "school": "沼津",
+    "school_name": "沼津工業高等専門学校",
+    "robot": "チャリモ"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "チアロボ"
+   },
+   {
+    "award": "技術賞",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "foldmachine"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "福島",
+    "school_name": "福島工業高等専門学校",
+    "robot": "鈴音"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "長野",
+    "school_name": "長野工業高等専門学校",
+    "robot": "acroboX"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "長野",
+    "school_name": "長野工業高等専門学校",
+    "robot": "どんちゃか龍舞"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "長岡",
+    "school_name": "長岡工業高等専門学校",
+    "robot": "connection"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "北九州",
+    "school_name": "北九州工業高等専門学校",
+    "robot": "トイレスキュー"
+   },
+   {
+    "award": "特別賞（東京エレクトロン）",
+    "school": "明石",
+    "school_name": "明石工業高等専門学校",
+    "robot": "明石新快速"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "新居浜",
+    "school_name": "新居浜工業高等専門学校",
+    "robot": "別子ブラザーズ"
+   },
+   {
+    "award": "特別賞（ローム）",
+    "school": "秋田",
+    "school_name": "秋田工業高等専門学校",
+    "robot": "Run・Turn"
+   },
+   {
+    "award": "特別賞（セメダイン）",
+    "school": "都城",
+    "school_name": "都城工業高等専門学校",
+    "robot": "とどけ！ケーキゴーランド！"
+   }
+  ],
+  "note": "オンライン開催で対戦は無く、優勝・準優勝は無い（最優秀は「超優秀賞」）。"
+ },
+ {
+  "year": 2021,
+  "no": 34,
+  "game": "超絶機巧（すごロボ）",
+  "date": "2021-11-28",
+  "venue": "両国国技館",
+  "summary": "磨いてきた「すごい技」のロボットと小道具を使ったパフォーマンスで競う。",
+  "source": "https://official-robocon.com/history/kosen/history/34th/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "クアッドアクセラー"
+   },
+   {
+    "award": "優勝",
+    "school": "小山",
+    "school_name": "小山工業高等専門学校",
+    "robot": "クアッドアクセラー"
+   },
+   {
+    "award": "準優勝",
+    "school": "呉",
+    "school_name": "呉工業高等専門学校",
+    "robot": "鼯鼠物語"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "香川詫間",
+    "school_name": "香川高等専門学校（詫間）",
+    "robot": "DBZ"
+   },
+   {
+    "award": "技術賞",
+    "school": "香川高松",
+    "school_name": "香川高等専門学校（高松）",
+    "robot": "8236"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "大分",
+    "school_name": "大分工業高等専門学校",
+    "robot": "The Great Penguins Show"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "石川",
+    "school_name": "石川工業高等専門学校",
+    "robot": "箸割観音"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "鈴鹿",
+    "school_name": "鈴鹿工業高等専門学校",
+    "robot": "プロジェクトS"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "AquaMarine"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "沖縄",
+    "school_name": "沖縄工業高等専門学校",
+    "robot": "昇琉"
+   },
+   {
+    "award": "特別賞（東京エレクトロン）",
+    "school": "熊本熊本",
+    "school_name": "熊本高等専門学校（熊本）",
+    "robot": "ゴリラ³"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "長野",
+    "school_name": "長野工業高等専門学校",
+    "robot": "雨のミュージカル"
+   },
+   {
+    "award": "特別賞（ローム）",
+    "school": "熊本八代",
+    "school_name": "熊本高等専門学校（八代）",
+    "robot": "RUN ONE わん！"
+   },
+   {
+    "award": "特別賞（セメダイン）",
+    "school": "苫小牧",
+    "school_name": "苫小牧工業高等専門学校",
+    "robot": "ワンワンが来た！"
+   }
+  ]
+ },
+ {
+  "year": 2022,
+  "no": 35,
+  "game": "ミラクル☆フライ",
+  "date": "11月27日",
+  "venue": "国技館",
+  "summary": "2分30秒。紙飛行機などの「飛行物」を飛ばしてスポットに乗せる。丸テーブル5か所は各1点、滑走路は1機1点、筒は手前3点・奥5点。すべてのスポットを埋めると「Vゴール」で即勝利。",
+  "source": "https://official-robocon.com/history/kosen/history/35th/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "徳山",
+    "team": "徳山A",
+    "robot": "双宿双飛"
+   },
+   {
+    "award": "優勝",
+    "school": "奈良",
+    "team": "奈良A",
+    "robot": "三笠"
+   },
+   {
+    "award": "準優勝",
+    "school": "大分",
+    "team": "大分B",
+    "robot": "國崩し"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "長野",
+    "team": "長野A",
+    "robot": "信州ずくだせランド"
+   },
+   {
+    "award": "技術賞",
+    "school": "和歌山",
+    "team": "和歌山A",
+    "robot": "とば～す君"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "有明",
+    "team": "有明A",
+    "robot": "AppRoachIng"
+   },
+   {
+    "award": "特別賞",
+    "school": "富山本郷",
+    "team": "富山本郷A",
+    "robot": "スカイファミリー"
+   },
+   {
+    "award": "特別賞",
+    "school": "大阪公大",
+    "team": "大阪公大A",
+    "robot": "AIRsROCK"
+   },
+   {
+    "award": "特別賞",
+    "school": "熊本八代",
+    "team": "熊本八代A",
+    "robot": "fourtress"
+   },
+   {
+    "award": "特別賞",
+    "school": "旭川",
+    "team": "旭川A",
+    "robot": "吹雪"
+   },
+   {
+    "award": "特別賞",
+    "school": "香川詫間",
+    "team": "香川詫間B",
+    "robot": "prize"
+   },
+   {
+    "award": "特別賞",
+    "school": "国際",
+    "team": "国際A",
+    "robot": "ビギナーズ"
+   },
+   {
+    "award": "特別賞",
+    "school": "大島商船",
+    "team": "大島商船B",
+    "robot": "とうきくん"
+   },
+   {
+    "award": "特別賞",
+    "school": "都城",
+    "team": "都城A",
+    "robot": "華て！カババッ！"
+   }
+  ],
+  "detail": "years/2022.json"
+ },
+ {
+  "year": 2023,
+  "no": 36,
+  "game": "もぎもぎ！フルーツGOラウンド",
+  "date": "2023-11-26",
+  "venue": "国技館",
+  "summary": "2分30秒。コースを反時計回りに周回し、角材（7.5・9・6cm）とロープを越えながら吊るされたフルーツを収穫。収穫は1個1点、スタートゾーンのかごに戻すと10倍。2周目からはセンターゾーンの高い位置のフルーツ（かごに戻すとブルーベリー40点・ぶどう50点・ミックス70点）も狙える。",
+  "source": "https://official-robocon.com/history/kosen/history/36th/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "長岡",
+    "team": "長岡A",
+    "robot": "ダブルラリアット"
+   },
+   {
+    "award": "優勝",
+    "school": "大阪公大",
+    "team": "大阪公大A",
+    "robot": "鴉"
+   },
+   {
+    "award": "準優勝",
+    "school": "熊本八代",
+    "team": "熊本八代A",
+    "robot": "Highbrid"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "沖縄",
+    "team": "沖縄A",
+    "robot": "獅子舞プロジェクト"
+   },
+   {
+    "award": "技術賞",
+    "school": "鈴鹿",
+    "team": "鈴鹿A",
+    "robot": "鈴鹿夜行"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "小山",
+    "team": "小山B",
+    "robot": "ワンダフルケーキ君"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "佐世保",
+    "team": "佐世保B",
+    "robot": "響嵐"
+   },
+   {
+    "award": "特別賞",
+    "school": "都立荒川",
+    "team": "都立荒川A",
+    "robot": "Fruits full 2"
+   },
+   {
+    "award": "特別賞",
+    "school": "鶴岡",
+    "team": "鶴岡A",
+    "robot": "かっとび君"
+   },
+   {
+    "award": "特別賞",
+    "school": "北九州",
+    "team": "北九州B",
+    "robot": "ベストハーヴェスト"
+   },
+   {
+    "award": "特別賞",
+    "school": "阿南",
+    "team": "阿南A",
+    "robot": "果糖丸"
+   },
+   {
+    "award": "特別賞",
+    "school": "近大",
+    "team": "近大B",
+    "robot": "moggy"
+   },
+   {
+    "award": "特別賞",
+    "school": "苫小牧",
+    "team": "苫小牧B",
+    "robot": "キャサリン"
+   },
+   {
+    "award": "特別賞",
+    "school": "旭川",
+    "team": "旭川B",
+    "robot": "クグラン"
+   },
+   {
+    "award": "特別賞",
+    "school": "福島",
+    "team": "福島B",
+    "robot": "白虎"
+   }
+  ],
+  "detail": "years/2023.json"
+ },
+ {
+  "year": 2024,
+  "no": 37,
+  "game": "ロボたちの帰還",
+  "date": "2024-11-17",
+  "venue": "国技館",
+  "summary": "2分30秒。ロボット1がロボット2を投げ（射出）、エリアBに触れずにエリアCへ着地させる。最初の着地だけが得点で、外側から1点・10点・40点、中心の直径80cmなら100点。着地したロボットがボールをエリアAへ届けると1個10点、ボックスを持ち帰ると60点。",
+  "source": "https://official-robocon.com/history/kosen/history/37th/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "香川詫間",
+    "team": "香川詫間B",
+    "robot": "KKO"
+   },
+   {
+    "award": "優勝",
+    "school": "大阪公大",
+    "team": "大阪公大A",
+    "robot": "銀火"
+   },
+   {
+    "award": "準優勝",
+    "school": "熊本熊本",
+    "team": "熊本熊本B",
+    "robot": "星射必宙"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "呉",
+    "team": "呉A",
+    "robot": "天地無用"
+   },
+   {
+    "award": "技術賞",
+    "school": "熊本八代",
+    "team": "熊本八代B",
+    "robot": "MilkyHighway"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "木更津",
+    "team": "木更津A",
+    "robot": "きさぺん越冬隊"
+   },
+   {
+    "award": "特別賞",
+    "school": "大分",
+    "team": "大分A",
+    "robot": "翡翠"
+   },
+   {
+    "award": "特別賞",
+    "school": "函館",
+    "team": "函館A",
+    "robot": "HAKODAKE"
+   },
+   {
+    "award": "特別賞",
+    "school": "北九州",
+    "team": "北九州B",
+    "robot": "色彩創造クロマティッククリエイター"
+   },
+   {
+    "award": "特別賞",
+    "school": "都立荒川",
+    "team": "都立荒川A",
+    "robot": "飛行星X"
+   },
+   {
+    "award": "特別賞",
+    "school": "奈良",
+    "team": "奈良A",
+    "robot": "射駒"
+   },
+   {
+    "award": "特別賞",
+    "school": "旭川",
+    "team": "旭川A",
+    "robot": "LazuRite"
+   },
+   {
+    "award": "特別賞",
+    "school": "香川高松",
+    "team": "香川高松B",
+    "robot": "橋をかける少女"
+   },
+   {
+    "award": "特別賞",
+    "school": "石川",
+    "team": "石川B",
+    "robot": ""
+   }
+  ],
+  "detail": "years/2024.json"
+ },
+ {
+  "year": 2025,
+  "no": 38,
+  "game": "Great High Gate",
+  "date": "2025-11-16",
+  "venue": "国技館",
+  "summary": "2分30秒。パイロンを作業エリアの外へ出すと1個5点（3個で15点）。箱を積んでゲートを作り、人が乗った台車と連結してくぐるとゲート得点（高さ1cm＝1点）と周回点。終了時にゲートが相手より高ければ＋50点。同点のときは運んだ箱の数やゲートの高さで勝敗を決める。",
+  "source": "https://official-robocon.com/history/kosen/history/38th/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "熊本熊本",
+    "team": "熊本熊本A",
+    "robot": "強奪名星"
+   },
+   {
+    "award": "優勝",
+    "school": "旭川",
+    "team": "旭川A",
+    "robot": "天旋"
+   },
+   {
+    "award": "準優勝",
+    "school": "熊本熊本",
+    "team": "熊本熊本A",
+    "robot": "強奪名星"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "明石",
+    "team": "明石A",
+    "robot": "箱積明人"
+   },
+   {
+    "award": "技術賞",
+    "school": "奈良",
+    "team": "奈良A",
+    "robot": "金剛"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "国際",
+    "team": "国際A",
+    "robot": "高箱クラブ"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "鈴鹿",
+    "team": "鈴鹿A",
+    "robot": "鈴観音"
+   },
+   {
+    "award": "特別賞",
+    "school": "富山本郷",
+    "team": "富山本郷B",
+    "robot": "カニメイト"
+   },
+   {
+    "award": "特別賞",
+    "school": "米子",
+    "team": "米子A",
+    "robot": "蜈蚣"
+   },
+   {
+    "award": "特別賞",
+    "school": "鹿児島",
+    "team": "鹿児島A",
+    "robot": "凱旋"
+   },
+   {
+    "award": "特別賞",
+    "school": "熊本八代",
+    "team": "熊本八代A",
+    "robot": "建築は旋門凱"
+   },
+   {
+    "award": "特別賞",
+    "school": "一関",
+    "team": "一関A",
+    "robot": "猩猩"
+   },
+   {
+    "award": "特別賞",
+    "school": "東京",
+    "team": "東京B",
+    "robot": "明修羅"
+   },
+   {
+    "award": "特別賞",
+    "school": "神戸",
+    "team": "神戸A",
+    "robot": "凱船門"
+   },
+   {
+    "award": "特別賞",
+    "school": "小山",
+    "team": "小山B",
+    "robot": "オヤマシュランラン"
+   }
+  ],
+  "detail": "years/2025.json"
+ },
+ {
+  "year": 2026,
+  "no": 39,
+  "game": "高専杯 雑巾投擲選手権",
+  "date": "2026-11-15",
+  "venue": "国技館",
+  "summary": "2分30秒（全国は3分）。雑巾を投げて、机・固定バケツ（1点/5点）・相手の移動バケツ・旗に入れる。スーパー雑巾は2倍。",
+  "source": "https://official-robocon.com/kosen/",
+  "awards": [
+   {
+    "award": "ロボコン大賞",
+    "school": "都立荒川",
+    "team": "都立荒川A",
+    "robot": "荒技"
+   },
+   {
+    "award": "優勝",
+    "school": "大阪公大",
+    "team": "大阪公大A",
+    "robot": "技巧神コウダイオー"
+   },
+   {
+    "award": "準優勝",
+    "school": "鈴鹿",
+    "team": "鈴鹿A",
+    "robot": "魁"
+   },
+   {
+    "award": "アイデア賞",
+    "school": "沖縄",
+    "team": "沖縄A",
+    "robot": "雑巾ぐるぐる大作戦"
+   },
+   {
+    "award": "技術賞",
+    "school": "大分",
+    "team": "大分B",
+    "robot": "掃臨"
+   },
+   {
+    "award": "デザイン賞",
+    "school": "小山",
+    "team": "小山A",
+    "robot": "モー烈！レモンちゃん！"
+   },
+   {
+    "award": "アイデア倒れ賞",
+    "school": "鹿児島",
+    "team": "鹿児島A",
+    "robot": "天翔"
+   },
+   {
+    "award": "特別賞（本田技研工業）",
+    "school": "岐阜",
+    "team": "岐阜A",
+    "robot": "前途羊々"
+   },
+   {
+    "award": "特別賞（マブチモーター）",
+    "school": "呉",
+    "team": "呉A",
+    "robot": "GUN☆KAN"
+   },
+   {
+    "award": "特別賞（安川電機）",
+    "school": "旭川",
+    "team": "旭川A",
+    "robot": "カルカルセ"
+   },
+   {
+    "award": "特別賞（東京エレクトロン）",
+    "school": "明石",
+    "team": "明石A",
+    "robot": "拭風"
+   },
+   {
+    "award": "特別賞（田中貴金属グループ）",
+    "school": "秋田",
+    "team": "秋田B",
+    "robot": "与一"
+   },
+   {
+    "award": "特別賞（ローム）",
+    "school": "福井",
+    "team": "福井A",
+    "robot": "ウエストゲートダイナソー"
+   },
+   {
+    "award": "特別賞（セメダイン）",
+    "school": "茨城",
+    "team": "茨城A",
+    "robot": "流利機"
+   },
+   {
+    "award": "特別賞（デンソー）",
+    "school": "香川高松",
+    "team": "香川高松A",
+    "robot": "wipeout"
+   }
+  ],
+  "detail": "years/2026.json"
+ }
+]

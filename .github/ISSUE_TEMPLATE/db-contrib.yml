@@ -1,0 +1,40 @@
+name: データベースに書き込む
+description: 試合結果・ロボットの情報・資料のリンクなどを追加／訂正します（投稿するとすぐページに出ます）
+title: "[DB] "
+labels: ["db-contrib"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        高専ロボコン データベースへの書き込みです。送信するとすぐにページへ「投稿」として表示されます。
+        **出典（動画・公式・記事のURLなど）は必ず書いてください。** 間違いや不適切な投稿は管理者が非表示にします。
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 種類
+      options: [試合の結果, チーム・ロボットの情報, 大会・賞の情報, 資料・動画のリンク, その他の訂正]
+    validations: {required: true}
+  - type: input
+    id: year
+    attributes: {label: 年度, placeholder: "2026"}
+    validations: {required: true}
+  - type: dropdown
+    id: district
+    attributes:
+      label: 大会
+      options: [全国大会, 北海道, 東北, 関東甲信越, 東海北陸, 近畿, 中国, 四国, 九州沖縄, 該当なし]
+    validations: {required: true}
+  - type: input
+    id: team
+    attributes: {label: 学校・チーム, description: "例: 大阪公大A／旭川（複数ならカンマ区切り）"}
+  - type: input
+    id: round
+    attributes: {label: 試合, description: "試合の結果のとき。例: 予選A-1／決勝"}
+  - type: textarea
+    id: content
+    attributes: {label: 内容, description: "例: 赤 旭川A 120 − 青 函館B 30、旭川Aの勝ち"}
+    validations: {required: true}
+  - type: input
+    id: source
+    attributes: {label: 出典, description: "URL（YouTubeは時刻付きだと助かります）"}
+    validations: {required: true}
