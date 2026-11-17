@@ -172,11 +172,16 @@ async function yearView(y){
     el('div',{class:'rowflex'},el('a',{class:'btn',href:postUrl({year:y,district:'全国大会'}),target:'_blank',rel:'noopener'},'この年の情報を書き込む'),aiBtn(y+'年（第'+n.no+'回「'+n.game+'」）の高専ロボコンについて')));
   if(!n.detail){ap(m,el('p',{class:'note'},'この年の地区大会・各試合のデータはまだありません。知っている人は書き込んでください。'));return}
   const arts=S.arts.filter(a=>a.id.startsWith(y+'-'));
-  if(arts.length)ap(m,el('h2',null,'分析・まとめ'),el('a',{class:'big',href:'app/'+(y===2026?'':'#'+y)},el('b',null,'📊 '+y+'年の大会分析を開く'),el('div',null,'グラフの切り替え・チームの並び替え・写真つきのチーム詳細など、前のサイトと同じ画面で読めます。')),el('p',{class:'sub'},'下は同じ分析を1ページずつ読めるようにしたものです。'),el('div',{class:'grid'},...arts.map(a=>el('a',{class:'yr',href:'#a='+encodeURIComponent(a.id)},el('div',{class:'g'},a.title.replace(/^\d+年 /,'')),el('div',{class:'w'},'約'+Math.round(a.chars/100)/10+'千字・グラフあり')))));
+  if(n.detail){
+    const f=el('iframe',{src:'app/?embed=1#'+y,title:y+'年の大会分析',style:'width:100%;border:0;min-height:900px;display:block',scrolling:'no'});
+    f.onload=()=>{try{const d=f.contentDocument;const fit=()=>{f.style.height=d.documentElement.scrollHeight+'px'};fit();new ResizeObserver(fit).observe(d.body);setInterval(fit,1500)}catch(e){}};
+    ap(m,el('h2',null,y+'年の大会の分析・試合結果・チーム'),el('p',{class:'sub'},'地区を選ぶと、その大会の分析・試合・チームに切り替わります。チームのカードを押すと、写真や「動きで見る」つきの詳細が開きます。',el('a',{href:'app/#'+y},'全画面で開く')),f);
+    if(arts.length)ap(m,el('details',{class:'card'},el('summary',null,'分析を1ページずつ読む（'+arts.length+'本）'),el('ul',null,...arts.map(a=>el('li',null,el('a',{href:'#a='+encodeURIComponent(a.id)},a.title))))));
+  }
   const Y=await year(y);
   const tabs=el('div',{class:'tabs'}),box=el('div');
   const keys=['全国大会',...DIS.filter(d=>Y.districts[d])];
-  ap(m,el('h2',null,'大会ごとの試合'),tabs,box);
+  ap(m,el('h2',null,'大会ごとの記録とみんなの投稿'),el('p',{class:'sub'},'公開データ（JSON）と同じ内容の一覧です。間違いや追加はここから書き込めます。'),tabs,box);
   const show=k=>{
     [...tabs.children].forEach(b=>b.classList.toggle('on',b.textContent===k));
     const D=k==='全国大会'?Y.national:Y.districts[k];box.replaceChildren();

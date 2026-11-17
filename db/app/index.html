@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン 大会分析（2022〜2026）</title><meta name="build-time" content="2026/11/17 17:22"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高専ロボコン 大会分析（2022〜2026）</title><meta name="build-time" content="2026/11/17 17:26"><style>
 :root{
  --font-anthropic-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
  --font-anthropic-serif:"Hiragino Mincho ProN","Noto Serif JP","Yu Mincho",serif;
@@ -22,6 +22,10 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 .foot{font-size:12px;color:var(--color-fg-muted);margin-top:28px;line-height:1.7}
 
 .dbnav{max-width:1400px;margin:0 auto;padding:10px 16px 0;font-size:13px}.dbnav a{color:var(--color-ok)}#app-loading{padding:40px 0;color:var(--color-fg-muted)}</style>
+<script>(function(){if(!new URLSearchParams(location.search).has('embed'))return;document.documentElement.classList.add('embed');
+const st=window.scrollTo.bind(window);window.scrollTo=function(a,b){try{const f=window.frameElement;if(f){const y=(typeof a==='object'?(a&&a.top)||0:b||0);const top=f.getBoundingClientRect().top+parent.scrollY-70;if(parent.scrollY>top)parent.scrollTo({top:top+y});return}}catch(e){}st(a,b)};
+document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]');if(a&&/^https?:/.test(a.getAttribute('href'))&&!a.target)a.target='_blank'});})();</script>
+<style>.embed .dbnav,.embed #top h1,.embed #upd,.embed .foot{display:none}.embed #dash-root{padding:0 0 20px;max-width:none}.embed,.embed body{background:transparent}</style>
 <script src="d3.min.js"></script></head><body><div class="dbnav"><a href="../">← 高専ロボコン データベース</a></div><div id="dash-root"><p id="app-loading">読み込み中…（はじめは数秒かかります）</p>
 <script type="text/plain" id="shim">
 (function(){
