@@ -15,7 +15,7 @@ const ev = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
 const is = ev.issue; const labels = (is.labels || []).map(l => l.name);
 let list = []; try { list = JSON.parse(fs.readFileSync(F, 'utf8')); } catch (e) {}
 list = list.filter(c => c.id !== is.number);
-const hide = !labels.includes('db-contrib') || labels.includes('rejected') || (is.state === 'closed' && is.state_reason === 'not_planned');
+const hide = ev.action === 'deleted' || !labels.includes('db-contrib') || labels.includes('rejected') || (is.state === 'closed' && is.state_reason === 'not_planned');
 if (!hide) {
   const p = parse(is.body);
   list.push({id: is.number, ...p, year: parseInt(p.year) || null, author: is.user.login, url: is.html_url,

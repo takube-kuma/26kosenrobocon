@@ -1,14 +1,14 @@
 name: DBへの書き込みを反映
 on:
   issues:
-    types: [opened, edited, closed, reopened, labeled, unlabeled]
+    types: [opened, edited, closed, reopened, labeled, unlabeled, deleted]
 permissions:
   contents: write
   issues: write
 concurrency: {group: db-contrib, cancel-in-progress: false}
 jobs:
   apply:
-    if: contains(github.event.issue.labels.*.name, 'db-contrib') || github.event.action == 'unlabeled'
+    if: contains(github.event.issue.labels.*.name, 'db-contrib') || github.event.action == 'unlabeled' || github.event.action == 'deleted'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
