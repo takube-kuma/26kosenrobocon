@@ -45,7 +45,20 @@
     "robot": "ダム号"
    }
   ],
-  "detail": "years/1988.json"
+  "detail": "years/1988.json",
+  "rules_list": [
+   "単1乾電池2個を動力源とし、10分間の準備時間でエネルギーを蓄える",
+   "体重60kg以上の人を乗せ、35mのコースのタイムを競う",
+   "製作費は5万円以内",
+   "予選のタイム上位4校が決勝トーナメントへ進み、2校同時にスタートして対決"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/first/"
+   }
+  ]
  },
  {
   "year": 1989,
@@ -93,7 +106,18 @@
     "robot": "たこのデビット君"
    }
   ],
-  "detail": "years/1989.json"
+  "detail": "years/1989.json",
+  "rules_list": [
+   "ラグビーボールをドリブルしてコースを進み、筒状のゴールに入れるまでのタイムを競う",
+   "コースはチームごとに分かれ、最後に交差する"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/second/"
+   }
+  ]
  },
  {
   "year": 1990,
@@ -147,7 +171,18 @@
     "robot": "ビッグモッコス"
    }
   ],
-  "detail": "years/1990.json"
+  "detail": "years/1990.json",
+  "rules_list": [
+   "直径6mの接地禁止リングの中央にある得点リングに、ボールを入れた数を競う",
+   "ボールは各チーム18個"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/third/"
+   }
+  ]
  },
  {
   "year": 1991,
@@ -208,7 +243,18 @@
    }
   ],
   "note": "アイデア賞のスラバヤ電子工学はインドネシアからの招待チーム。",
-  "detail": "years/1991.json"
+  "detail": "years/1991.json",
+  "rules_list": [
+   "2つの台座に段ボール箱（ゆうパック）を積み上げ、積んだ数を競う",
+   "自チームの箱を台座に置くごとに1点"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/fourth/"
+   }
+  ]
  },
  {
   "year": 1992,
@@ -275,7 +321,19 @@
    }
   ],
   "note": "公式ページでは佐世保・徳山・鶴岡の行に賞名が無く、並び順から技術賞・アイデア賞・アイデア倒れ賞と判断。",
-  "detail": "years/1992.json"
+  "detail": "years/1992.json",
+  "rules_list": [
+   "リング状のゴールにバレーボールを入れて数を競う",
+   "中央の小さな円筒ゴールは10点、まわりのゴールは1点",
+   "マシンが接地禁止ゾーンに触れると失格"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/fifth/"
+   }
+  ]
  },
  {
   "year": 1993,
@@ -330,7 +388,20 @@
    }
   ],
   "note": "鶴岡の行は賞名が無く、並び順からアイデア倒れ賞と判断。",
-  "detail": "years/1993.json"
+  "detail": "years/1993.json",
+  "rules_list": [
+   "試合時間は2分。高さ60cmの階段を越えてフィールドに入り、ボールを相手陣地へ入れ合う",
+   "15個のラグビーボールのうち、相手陣地にある数が得点",
+   "同点は30秒の延長戦、それでも決まらなければジャンケン",
+   "有線で外部から電源をとる"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/sixth/"
+   }
+  ]
  },
  {
   "year": 1994,
@@ -385,7 +456,19 @@
    }
   ],
   "note": "鶴岡の行は賞名が無く、並び順からアイデア倒れ賞と判断。",
-  "detail": "years/1994.json"
+  "detail": "years/1994.json",
+  "rules_list": [
+   "ホールにフリスビー（ディスク）を投げ入れて得点を競う。試合時間は2分",
+   "ホールは距離に応じて1点、5点、10点",
+   "フリスビーと同じ大きさのVホールに入れるとその時点で勝ち"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/seventh/"
+   }
+  ]
  },
  {
   "year": 1995,
@@ -440,7 +523,20 @@
    }
   ],
   "note": "「ドリームタワー大賞」をロボコン大賞、「ベストデザイン賞」をデザイン賞として扱う。",
-  "detail": "years/1995.json"
+  "detail": "years/1995.json",
+  "rules_list": [
+   "タワーにあるゴールへバレーボールを入れて得点を競う",
+   "ゴールは1点、2点、Vゴール（20点）",
+   "自分と相手の両方のVゴールに入れるとダブルVで勝ち。ドリブルで運ぶと得点2倍",
+   "重さは10kg以下"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/eighth/"
+   }
+  ]
  },
  {
   "year": 1996,
@@ -495,7 +591,19 @@
    }
   ],
   "note": "「テクノカウボーイ大賞」をロボコン大賞として扱う。",
-  "detail": "years/1996.json"
+  "detail": "years/1996.json",
+  "rules_list": [
+   "3×3に並んだ9本のパイロンに自作の輪を入れて得点を競う",
+   "中央の大パイロンは5点、小パイロンは1点",
+   "大パイロンを含む縦・横・斜めの1列を取ると「ハットトリック」で勝ち"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/ninth/"
+   }
+  ]
  },
  {
   "year": 1997,
@@ -550,7 +658,20 @@
    }
   ],
   "note": "「花開蝶来大賞」をロボコン大賞として扱う。ほかに応援団賞（弓削商船）。",
-  "detail": "years/1997.json"
+  "detail": "years/1997.json",
+  "rules_list": [
+   "自作の花を支柱付きのプランターに咲かせて得点を競う",
+   "大プランターは各5点、小プランターは各1点",
+   "花は蕾で入れ、花びらが開いて台座からはみ出すと得点。蝶で相手のプランターを奪える",
+   "競技点と審査員の芸術点の合計で勝敗を決める"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/tenth/"
+   }
+  ]
  },
  {
   "year": 1998,
@@ -605,7 +726,19 @@
    }
   ],
   "note": "公式ページの「芸術賞」をデザイン賞、「生命上陸大賞」をロボコン大賞として扱う。",
-  "detail": "years/1998.json"
+  "detail": "years/1998.json",
+  "rules_list": [
+   "自作の「生命」を、島に見立てた円形のエリアに誕生させて得点を競う",
+   "島は1点が5つ、5点が3つ、10点が2つ",
+   "生命は「種子」の中から出てきて島に入り、ピンク色の「へそ」が島に入ると得点"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/eleventh/"
+   }
+  ]
  },
  {
   "year": 1999,
@@ -672,7 +805,20 @@
    }
   ],
   "note": "公式ページの「芸術賞」をデザイン賞として扱う。",
-  "detail": "years/1999.json"
+  "detail": "years/1999.json",
+  "rules_list": [
+   "台座の箱を取り込み、ジャンプゾーンを越えてフューチャーゾーンに置く",
+   "得点後にVスポットへ置くとVゴールで勝ち",
+   "Vゴールがなければ、使った電力量（バッテリー）の少ない方が勝ち",
+   "有線操縦で、重さは25kgまで"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twelfth/"
+   }
+  ]
  },
  {
   "year": 2000,
@@ -726,7 +872,19 @@
     "robot": "ディノ・クライマー"
    }
   ],
-  "detail": "years/2000.json"
+  "detail": "years/2000.json",
+  "rules_list": [
+   "高さの違う4本のポールの上に、2000年を象徴する自作の造形物を置いて得点を競う",
+   "置くときマシンは地上1m以上の高さにいる必要があり、ハシゴと鉄棒で高さを稼げる",
+   "4本すべてに置き第4ポールでメッセージを演じるとPP（パーフェクト・パフォーマンス）で勝ち"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/thirteenth/"
+   }
+  ]
  },
  {
   "year": 2001,
@@ -786,7 +944,19 @@
     "robot": "点火無敵"
    }
   ],
-  "detail": "years/2001.json"
+  "detail": "years/2001.json",
+  "rules_list": [
+   "試合時間は2分。フィールドに寝かせた円筒を立てて得点を競う",
+   "自陣のショートケーキゾーンに円筒を立て、どれかに炎を付けると得点",
+   "円筒を重ねると得点が大きく増える"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/fourteenth/"
+   }
+  ]
  },
  {
   "year": 2002,
@@ -864,7 +1034,19 @@
     "robot": "はこじゃらし"
    }
   ],
-  "detail": "years/2002.json"
+  "detail": "years/2002.json",
+  "rules_list": [
+   "高さ1mの高台からスタートし、3段の箱階段を下りる。試合時間は3分",
+   "箱をスポットに置き、獲得したスポットの数で競う。積んだ場合は最上段の箱のチームが獲得",
+   "箱を15個以上積むと「トルネード」で勝ち。マシンの分離は禁止"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/fifteenth/"
+   }
+  ]
  },
  {
   "year": 2003,
@@ -942,7 +1124,19 @@
     "robot": "ハル"
    }
   ],
-  "detail": "years/2003.json"
+  "detail": "years/2003.json",
+  "rules_list": [
+   "高さ1mの高台からスタート。試合時間は3分",
+   "立方体と球形のオブジェを円盤に貼り付け、重みで円盤を自陣側に傾ける",
+   "自陣側に傾けた円盤の数で勝敗を決める。マシンの分離は禁止"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/sixteenth/"
+   }
+  ]
  },
  {
   "year": 2004,
@@ -1020,7 +1214,19 @@
     "robot": "そいがあ"
    }
   ],
-  "detail": "years/2004.json"
+  "detail": "years/2004.json",
+  "rules_list": [
+   "不時着した自チームのローバーボールを、オリンポススポットへ近づける",
+   "ボールとスポットの距離が近い方の勝ち。試合時間は3分",
+   "自動機（メッセンジャーボール）は台数制限なし"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/seventeenth/"
+   }
+  ]
  },
  {
   "year": 2005,
@@ -1104,7 +1310,19 @@
     "robot": "高床式ぱっちん号"
    }
   ],
-  "detail": "years/2005.json"
+  "detail": "years/2005.json",
+  "rules_list": [
+   "障害物を越えて手動機から自動機へバトンを渡し、自動機が壁の横穴に差し込む。試合時間は3分",
+   "先にバトンゴールしたか、多く課題をクリアしたチームの勝ち",
+   "手動機と自動機は各1台で分離不可"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/eighteenth/"
+   }
+  ]
  },
  {
   "year": 2006,
@@ -1188,7 +1406,20 @@
     "robot": "行進中"
    }
   ],
-  "detail": "years/2006.json"
+  "detail": "years/2006.json",
+  "rules_list": [
+   "地域の特産品を模した「ふるさとオブジェ」を、障害物の先のゴールへ運ぶ",
+   "障害は深さ6cmの堀、長さ3mのシーソー、5本ポールのスラローム、縄跳び3回",
+   "先にオブジェを「ふるさとゴール」の台に置いたチームの勝ち",
+   "手動機と自動機各1台まで。試合時間は3分"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/nineteenth/"
+   }
+  ]
  },
  {
   "year": 2007,
@@ -1272,7 +1503,19 @@
     "robot": "メーヴェ"
    }
   ],
-  "detail": "years/2007.json"
+  "detail": "years/2007.json",
+  "rules_list": [
+   "各チーム2台のロボットに付けた5つの旗を取り合う。試合時間は3分",
+   "相手の旗を全部落とせば大勝利、時間内に多く落とせば優勢勝ち",
+   "2台が合体すると高さの制限がゆるくなる"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twentieth/"
+   }
+  ]
  },
  {
   "year": 2008,
@@ -1356,7 +1599,19 @@
     "robot": "キカイタイソウ"
    }
   ],
-  "detail": "years/2008.json"
+  "detail": "years/2008.json",
+  "rules_list": [
+   "4足以上の多足歩行ロボットで障害物レースを行い、ゴールまでの速さを競う。試合時間は3分",
+   "大回転、山越え、変身パフォーマンスを経て、二足歩行でゴールする",
+   "準決勝以降は二足歩行区間でパイロン2本の間をスラロームする"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twenty-first/"
+   }
+  ]
  },
  {
   "year": 2009,
@@ -1440,7 +1695,19 @@
     "robot": "鶴恋慕"
    }
   ],
-  "detail": "years/2009.json"
+  "detail": "years/2009.json",
+  "rules_list": [
+   "手動機と自動機の2台の歩行ロボットでダンスの課題に挑む。試合時間は3分",
+   "手動機が自動機にプレゼントを渡してカップルになり、協力して踊る",
+   "クリアした課題の合計点で勝敗を決める"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twenty-second/"
+   }
+  ]
  },
  {
   "year": 2010,
@@ -1524,7 +1791,20 @@
     "robot": "スチームランナー"
    }
   ],
-  "detail": "years/2010.json"
+  "detail": "years/2010.json",
+  "rules_list": [
+   "2台の手動歩行ロボットが、人を乗せた乗物をゴールまで運ぶ速さを競う。制限時間は3分",
+   "ロボットは連結ゾーンまで歩いて乗物と連結し、再び発進する",
+   "ゴール直前の輪状の鍵穴に自作の鍵を引っ掛けるとゴール",
+   "無線などによる遠隔操縦"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twenty-third/"
+   }
+  ]
  },
  {
   "year": 2011,
@@ -1602,7 +1882,20 @@
     "robot": "速球ぱらボルト"
    }
   ],
-  "detail": "years/2011.json"
+  "detail": "years/2011.json",
+  "rules_list": [
+   "1分30秒ごとに攻守を交代し、パスからキャッチ（タッチダウン）までのタイムを競う",
+   "守備側はロボットで相手のパスを止められ、ボールを取ると相手の時間が30秒減る",
+   "攻撃側のロボットは二足歩行",
+   "無線などによる遠隔操縦"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twenty-fourth/"
+   }
+  ]
  },
  {
   "year": 2012,
@@ -1686,7 +1979,19 @@
     "robot": "ササリー"
    }
   ],
-  "detail": "years/2012.json"
+  "detail": "years/2012.json",
+  "rules_list": [
+   "試合時間は3分。散らばったボールを伴走者がロボットにセットし、壁の9つのゴールに入れる",
+   "ゴールは1点、レインボーゴールへのレインボーボールは4点。全ゴールでパーフェクト勝利",
+   "ロボットは自作の歩くペット型。有線・無線のコントローラーによる操縦は禁止"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twenty-fifth/"
+   }
+  ]
  },
  {
   "year": 2013,
@@ -1776,7 +2081,20 @@
     "robot": "小山サーカスの特訓"
    }
   ],
-  "detail": "years/2013.json"
+  "detail": "years/2013.json",
+  "rules_list": [
+   "ロボット2台（ジャンパーと縄回し）で縄跳びの課題に挑む。縄の反対側はメンバーが回す",
+   "4つのゾーンを跳びながら進み、折り返した後に連続ジャンプ",
+   "連続ジャンプ5回で勝ち（全国の準々決勝は10回）。準決勝以降は連続回数の多い方が勝ち",
+   "試合時間は3分。コントローラーやロボット間の通信は禁止"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twenty-sixth/"
+   }
+  ]
  },
  {
   "year": 2014,
@@ -1866,7 +2184,20 @@
     "robot": "Uni☆Verse"
    }
   ],
-  "detail": "years/2014.json"
+  "detail": "years/2014.json",
+  "rules_list": [
+   "積み上げた蒸籠（せいろ）を運び、障害物を越えてゴールの机まで届ける",
+   "障害はスラローム、高さ9cmの角材ゾーン、15度の傾斜クランク",
+   "試合時間は3分。スタートに戻って再配達もできる",
+   "得点は机に置いた蒸籠の枚数で、多いチームの勝ち。運搬ロボットは1台（受取専用ロボットは可）"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twenty-seventh/"
+   }
+  ]
  },
  {
   "year": 2015,
@@ -1956,7 +2287,20 @@
     "robot": "捲土重来"
    }
   ],
-  "detail": "years/2015.json"
+  "detail": "years/2015.json",
+  "rules_list": [
+   "試合時間は3分。自作の輪を9本のポールに投げ入れて得点を競う",
+   "ポールは1本1点で、相手側のポールにも入れられる。中央の高いポールは複数まとめて入れると加点",
+   "9本すべてのポールに輪を入れると「Vゴール」で勝ち",
+   "ロボットは1台（分離不可）で無線操縦。輪は自作で合計9kg以下"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twenty-eighth/"
+   }
+  ]
  },
  {
   "year": 2016,
@@ -2046,7 +2390,14 @@
     "robot": "ウミ★BOYS"
    }
   ],
-  "detail": "years/2016.json"
+  "detail": "years/2016.json",
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/twenty-ninth/"
+   }
+  ]
  },
  {
   "year": 2017,
@@ -2136,7 +2487,20 @@
     "robot": "カエルの為に腕は鳴る"
    }
   ],
-  "detail": "years/2017.json"
+  "detail": "years/2017.json",
+  "rules_list": [
+   "X型の本陣に付けた風船10個を、ヤスリ付きのおもちゃの刀などで割り合う",
+   "マシンは各チーム2台で、それぞれにも風船5個を付ける",
+   "相手の本陣の風船か、相手マシンの風船を全部割ると勝ち",
+   "柔らかい素材の「飛道具」も1台1種類まで使える"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/30th/"
+   }
+  ]
  },
  {
   "year": 2018,
@@ -2226,7 +2590,46 @@
     "robot": "VICT(OO)N"
    }
   ],
-  "detail": "years/2018.json"
+  "detail": "years/2018.json",
+  "rules_list": [
+   "目的は、ペットボトルを投げてテーブルに立てること。自動化・自律化とアイデアを競う",
+   "試合時間は2分。両チーム同時スタートで、ボトルを使い切った時点でも終了",
+   "自立して立ったボトルだけが得点。固定テーブルは1点まで、移動テーブルと2段テーブル下段は1本1点、上段は1本5点",
+   "予選は得点の高いチームの勝ち。決勝トーナメントは8か所すべてに先に立てると即勝利（Vゴール）",
+   "ロボットは手動機1台と自動機1台まで。手動機は35kg以下・1200×1200×高さ1000mm以内、自動機は30kg以下・1000mm立方以内"
+  ],
+  "field": [
+   {
+    "src": "img/field/2018_plan.jpg",
+    "cap": "競技フィールド平面図"
+   },
+   {
+    "src": "img/field/2018_pers.jpg",
+    "cap": "フィールドのイメージ図"
+   }
+  ],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/31th/"
+   },
+   {
+    "label": "ルールブック",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/2018_kosen_rulebook.pdf"
+   },
+   {
+    "label": "競技フィールド平面図",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/2018_field_plan_0615.pdf"
+   },
+   {
+    "label": "フィールドイメージ図",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/2018_field_image.pdf"
+   },
+   {
+    "label": "FAQ",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/2018_faq.pdf"
+   }
+  ]
  },
  {
   "year": 2019,
@@ -2322,7 +2725,46 @@
     "robot": "物ほっしー☆"
    }
   ],
-  "detail": "years/2019.json"
+  "detail": "years/2019.json",
+  "rules_list": [
+   "目的は、Tシャツ・バスタオル・シーツを物干しざおにきれいに干すこと",
+   "試合時間は2分30秒。Vゴールはなく、終了時の合計得点で勝敗を決める",
+   "得点はTシャツ1点、バスタオル1エリア2点、シーツ1エリア3点。重なったものや床に付いたものは無効",
+   "同点のときは、審査員が干した洗濯物の全体的な美しさで判定する",
+   "ロボットは2台までで、うち1台は自動ロボット。手動機30kg以内、2台合計55kg以内"
+  ],
+  "field": [
+   {
+    "src": "img/field/2019_plan.jpg",
+    "cap": "競技フィールド平面図"
+   },
+   {
+    "src": "img/field/2019_pers.jpg",
+    "cap": "フィールドのイメージ図"
+   }
+  ],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/32th/"
+   },
+   {
+    "label": "ルールブック",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen_robocon_2019_rulebook_01.pdf"
+   },
+   {
+    "label": "フィールド平面図",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen_robocon_2019_field_plan_01.pdf"
+   },
+   {
+    "label": "フィールドイメージ図",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen_robocon_2019_field_pers_01.pdf"
+   },
+   {
+    "label": "FAQ",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/2019_faq.pdf"
+   }
+  ]
  },
  {
   "year": 2020,
@@ -2419,7 +2861,25 @@
    }
   ],
   "note": "オンライン開催で対戦は無く、優勝・準優勝は無い（最優秀は「超優秀賞」）。",
-  "detail": "years/2020.json"
+  "detail": "years/2020.json",
+  "rules_list": [
+   "新型コロナのため会場に集まらず、全国8地区でオンラインの大会を実施",
+   "予選は2分以内、決勝は3分以内のライブパフォーマンスを披露する",
+   "だれかをハッピーにするテーマ設定とアイデアを重視する「アイデア対決」",
+   "審査員が「テーマとアイデア」「環境内での工夫と技術力」「パフォーマンス」の3点を各10点で採点",
+   "ロボット1台は縦横0.5m・高さ0.8m以内、5kg以下。圧縮空気は禁止、製作費は1チーム30万円まで"
+  ],
+  "field": [],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/33th/"
+   },
+   {
+    "label": "ルールブック",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen2020rulebook_ver0918.pdf"
+   }
+  ]
  },
  {
   "year": 2021,
@@ -2515,7 +2975,34 @@
     "robot": "ワンワンが来た！"
    }
   ],
-  "detail": "years/2021.json"
+  "detail": "years/2021.json",
+  "rules_list": [
+   "テーマを自分たちで決め、「すごい！技のロボット」で観客を感動させるパフォーマンス競技",
+   "地区大会は各チーム2分以内のパフォーマンスを順番に行う",
+   "審査員5人が「技術の難易度と達成度」と「アイデアとパフォーマンス」の2つの観点で採点",
+   "得点1位・2位が優勝・準優勝。優勝チームなどが全国大会へ",
+   "ロボットは1チーム3台まで、1台は縦横1000mm・高さ1200mm以内、25kg以下"
+  ],
+  "field": [
+   {
+    "src": "img/field/2021_plan.jpg",
+    "cap": "地区大会のフィールドのイメージ（ルールブックより）"
+   }
+  ],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/34th/"
+   },
+   {
+    "label": "ルールブック",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen2021rulebook_0427.pdf"
+   },
+   {
+    "label": "FAQ",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen2021faq_0531.pdf"
+   }
+  ]
  },
  {
   "year": 2022,
@@ -2611,7 +3098,34 @@
     "robot": "華て！カババッ！"
    }
   ],
-  "detail": "years/2022.json"
+  "detail": "years/2022.json",
+  "rules_list": [
+   "目的は、自作の紙飛行機をロボットで飛ばし、各所に着地させて得点を競うこと",
+   "試合時間は2分30秒",
+   "得点はスポット1か所1点、滑走路1機1点、ベースAは1機3点、ベースBは1機5点",
+   "すべてのスポット・滑走路・ベースに自チームの紙飛行機が乗るとVゴールで勝利。なければ合計得点で勝敗",
+   "ロボットは1台、30kg以内、スタート時は800×800×高さ1200mm以内"
+  ],
+  "field": [
+   {
+    "src": "img/field/2022_plan.jpg",
+    "cap": "競技フィールド平面図"
+   }
+  ],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/35th/"
+   },
+   {
+    "label": "ルールブック",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen2022_rulebook_0728.pdf"
+   },
+   {
+    "label": "競技フィールド図",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen2022_field.pdf"
+   }
+  ]
  },
  {
   "year": 2023,
@@ -2713,7 +3227,34 @@
     "robot": "白虎"
    }
   ],
-  "detail": "years/2023.json"
+  "detail": "years/2023.json",
+  "rules_list": [
+   "試合時間は2分30秒。角材やロープの障害を越えてフルーツを収穫する",
+   "収穫したフルーツをフィールドを周回して自チームのカゴまで運ぶ",
+   "収穫だけで1点、カゴに運ぶと10〜70点。落とすと1点減る",
+   "合計得点が高いチームの勝ち。同点ならミックスフルーツをカゴに入れた方が勝ち",
+   "ロボットは1台（分離不可）、30kg以内、展開時800×800×高さ1600mm以内"
+  ],
+  "field": [
+   {
+    "src": "img/field/2023_plan.jpg",
+    "cap": "競技フィールド平面図"
+   }
+  ],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/36th/"
+   },
+   {
+    "label": "ルールブック",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen2023_rulebook_0710.pdf"
+   },
+   {
+    "label": "競技フィールド平面図",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen2023_field.pdf"
+   }
+  ]
  },
  {
   "year": 2024,
@@ -2809,7 +3350,34 @@
     "robot": ""
    }
   ],
-  "detail": "years/2024.json"
+  "detail": "years/2024.json",
+  "rules_list": [
+   "目的は、ロボット2を狙った場所に着地させ、ボールを回収してボックスを持ち帰ること",
+   "試合時間は2分30秒",
+   "着地はスポット①10点・②40点・③100点、それ以外は1点。ボールは1個10点、ボックスは1個60点",
+   "全ミッション完了（350点）で即勝利。時間切れなら得点の高いチームの勝ち",
+   "ロボット1は1台、ロボット2は1台以上。合計30kg以内"
+  ],
+  "field": [
+   {
+    "src": "img/field/2024_plan.jpg",
+    "cap": "競技フィールド平面図"
+   }
+  ],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/37th/"
+   },
+   {
+    "label": "ルールブック",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/rulebook_kosen2024_240709.pdf"
+   },
+   {
+    "label": "フィールド図面",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/kosen2024_field1.pdf"
+   }
+  ]
  },
  {
   "year": 2025,
@@ -2911,7 +3479,34 @@
     "robot": "オヤマシュランラン"
    }
   ],
-  "detail": "years/2025.json"
+  "detail": "years/2025.json",
+  "rules_list": [
+   "試合時間は3分。ロボットがボックスを積んでゲートを作り、人が乗った台車と連結して通過する",
+   "目的は、高く独創的なゲートを作って観る人を驚かせること",
+   "得点はパイロン1個5点、ゲートの高さ100mmごとに10点、2回目以降の通過は1回5点",
+   "終了時に相手より高いゲートなら50点加算。相手のゲートを崩すとその時点で相手の勝ち",
+   "ロボットは1台（分離不可）、30kg以内、スタート時1000×1000×高さ1200mm以内"
+  ],
+  "field": [
+   {
+    "src": "img/field/2025_plan.jpg",
+    "cap": "競技フィールド平面図"
+   }
+  ],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/history/kosen/history/38th/"
+   },
+   {
+    "label": "ルールブック",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/rulebook_kosen2025_0716.pdf"
+   },
+   {
+    "label": "競技フィールド平面図",
+    "url": "https://official-robocon.com/history/kosen/wp-content/uploads/robocot25_field.pdf"
+   }
+  ]
  },
  {
   "year": 2026,
@@ -3013,6 +3608,37 @@
     "robot": "wipeout"
    }
   ],
-  "detail": "years/2026.json"
+  "detail": "years/2026.json",
+  "rules_list": [
+   "雑巾を投げて、机・固定バケツ・相手の移動バケツ・旗に入れて得点を競う",
+   "試合時間は2分30秒（全国大会は3分）",
+   "移動バケツと旗は1枚100点、机は20点、固定バケツは5点と1点",
+   "2分を過ぎると使えるスーパー雑巾は得点が2倍。全固定ゴールに入れると100点のボーナス",
+   "得点の多いチームの勝ち。ロボットは1台（分離不可）、35kg以内、椅子とマスコットを載せる"
+  ],
+  "field": [
+   {
+    "src": "img/field/2026_plan.jpg",
+    "cap": "競技フィールド平面図"
+   },
+   {
+    "src": "img/field/2026_pers.jpg",
+    "cap": "フィールドのイメージ図"
+   }
+  ],
+  "links": [
+   {
+    "label": "公式サイトの大会ページ",
+    "url": "https://official-robocon.com/kosen/"
+   },
+   {
+    "label": "ルールブック",
+    "url": "https://official-robocon.com/robocon_wp/wordpress/wp-content/uploads/2026/04/%E9%AB%98%E5%B0%82%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B32026%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF0415.pdf"
+   },
+   {
+    "label": "競技フィールド図（平面図・側面図・パース図）",
+    "url": "https://official-robocon.com/robocon_wp/wordpress/wp-content/uploads/2026/04/robocot26_field421.pdf"
+   }
+  ]
  }
 ]
