@@ -143,16 +143,15 @@ function home(){
   const m=$('#m');m.replaceChildren();
   ap(m,el('h1',null,'高専ロボコン データベース'),
     el('p',{class:'sub'},'1988年の第1回から2026年の第39回までの全国大会と、2022〜2026年の地区大会・全国大会の全試合（約870試合）。だれでも書き込めて、AIからも使えます。'),
-    el('div',{class:'rowflex'},el('a',{class:'btn p',href:postUrl(),target:'_blank',rel:'noopener'},'＋ 試合や情報を書き込む'),el('a',{class:'btn',href:'#schools'},'学校の一覧'),el('a',{class:'btn',href:'#about'},'使い方・AIから使う')),
-    el('a',{class:'big',href:'app/'},el('b',null,'📊 大会分析（2022〜2026年）'),el('div',null,'前のサイトと同じ画面です。グラフを切り替えたり、チームを並び替え・絞り込んだり、写真と「動きで見る」映像つきのチーム詳細を開けます。'),el('div',{class:'sub'},'2026年の地区大会・全国大会の分析、戦略、岐阜Aの特徴、2022〜2025年の各大会、5年間のチーム成績と地区のレベルの推移')),
-    el('h2',null,'読みもの'),el('div',{class:'grid'},...['2026-all','2026-national','2026-strategy','2026-gifu','5years'].map(id=>S.arts.find(a=>a.id===id)).filter(Boolean).map(a=>el('a',{class:'yr',href:'#a='+encodeURIComponent(a.id)},el('div',{class:'g'},a.title),el('div',{class:'w'},'約'+Math.round(a.chars/100)/10+'千字・グラフあり')))));
+    el('div',{class:'rowflex'},el('a',{class:'btn p',href:postUrl(),target:'_blank',rel:'noopener'},'＋ 試合や情報を書き込む'),el('a',{class:'btn',href:'#schools'},'学校の一覧'),el('a',{class:'btn',href:'#about'},'使い方・AIから使う')));
   const recent=S.contrib.slice(0,5);
   if(recent.length){ap(m,el('h2',null,'みんなの最近の投稿'),...recent.map(contribBox))}
   ap(m,el('h2',null,'年度'));
   const g=el('div',{class:'grid'});
+  g.append(el('a',{class:'yr',href:'#a=5years'},el('b',null,'2022〜2026年'),el('span',{class:'sub'},' 5年間'),el('div',{class:'g'},'5年間のチーム成績と地区のレベル'),el('div',{class:'w'},'地区ごとのレベルの推移・チーム別の勝ち上がり')));
   for(const n of[...S.nat].reverse()){
     const w=n.awards.find(a=>a.award==='優勝'),gp=n.awards.find(a=>a.award==='ロボコン大賞');
-    g.append(el('a',{class:'yr',href:'#y='+n.year},el('b',null,n.year+'年'),el('span',{class:'sub'},' 第'+n.no+'回'+(n.detail?' ・ 全試合あり':'')),
+    g.append(el('a',{class:'yr',href:'#y='+n.year},el('b',null,n.year+'年'),el('span',{class:'sub'},' 第'+n.no+'回'+(n.detail?' ・ 分析・全試合あり':'')),
       el('div',{class:'g'},n.game),
       el('div',{class:'w'},w?'優勝 '+(w.team||w.school)+'「'+w.robot+'」':'',gp?el('br'):null,gp?'大賞 '+(gp.team||gp.school):'')));
   }
@@ -215,6 +214,7 @@ async function artView(id){
   const a=S.arts.find(x=>x.id===id);const m=$('#m');m.replaceChildren();
   if(!a){ap(m,el('p',null,'記事が見つかりません。'));return}
   const y=parseInt(id);
+  if(id==='5years'){const f=el('iframe',{src:'app/?embed=1#all',title:a.title,style:'width:100%;border:0;min-height:900px;display:block',scrolling:'no'});f.onload=()=>{try{const d=f.contentDocument;const fit=()=>{f.style.height=d.documentElement.scrollHeight+'px'};fit();new ResizeObserver(fit).observe(d.body);setInterval(fit,1500)}catch(e){}};ap(m,el('div',{class:'rowflex sub'},el('a',{href:'#'},'← トップ')),el('h1',null,a.title),f);return}
   const f=el('iframe',{src:'articles/'+encodeURIComponent(id)+'.html',title:a.title,style:'width:100%;border:0;min-height:600px;background:#fff;border-radius:12px',loading:'eager'});
   f.onload=()=>{try{const fit=()=>{f.style.height=f.contentDocument.documentElement.scrollHeight+'px'};fit();setTimeout(fit,500);new ResizeObserver(fit).observe(f.contentDocument.body)}catch(e){}};
   ap(m,el('div',{class:'rowflex sub'},y?el('a',{href:'#y='+y},'← '+y+'年'):el('a',{href:'#'},'← トップ')),el('h1',null,a.title),
