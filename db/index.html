@@ -202,11 +202,6 @@ async function yearView(y){
   keys.forEach(k=>tabs.append(el('button',{onclick:()=>{show(k);history.replaceState(null,'','#y='+y+'&d='+encodeURIComponent(k))}},k)));
   const want=new URLSearchParams(location.hash.slice(1)).get('d');
   show(keys.includes(want)?want:keys[0]);
-  if(!S.news)S.news=await J('data/news.json').catch(()=>[]);
-  const nw=S.news.filter(x=>x.year===y);
-  if(nw.length){ap(m,el('h2',null,'ニュース・お知らせ・報道（'+nw.length+'）'));
-    const kinds=[...new Set(nw.map(x=>x.kind))];
-    for(const k of kinds){const g=nw.filter(x=>x.kind===k);ap(m,el('details',{class:'card'},el('summary',null,el('b',null,k),' （'+g.length+'）'),el('ul',null,...g.map(newsItem))))}}
 }
 function newsItem(x){return el('li',null,el('span',{class:'sub'},x.date+' '),x.team?el('span',null,tl(x.team,x.year),' '):null,x.school&&!x.team?x.school+' ':'',x.account?el('span',{class:'sub'},x.account+' '):null,el('a',{href:x.url,target:'_blank',rel:'noopener'},x.link_label||'リンク'),el('div',{class:'note'},x.summary))}
 function artLink(id){const a=S.arts.find(x=>x.id===id);return a?el('p',null,el('a',{class:'btn',href:'#a='+encodeURIComponent(id)},'📊 '+a.title+'を読む')):null}
