@@ -1,0 +1,261 @@
+{
+ "year": 2005,
+ "no": 18,
+ "game": "大運動会",
+ "rules": "はしごくぐり、平均台、ハードル、壁登りを越えてバトンをゴールへ運ぶ。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "明石A",
+     "robot": "curvilinear",
+     "mechanism": "曲線アルミ角パイプの魚形フレーム。上を移動する車輪で重心と接地点を動かし課題を越える",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "舞鶴A",
+     "robot": "舞風",
+     "mechanism": "駆動輪付き4本脚の細長い機体。関節を閉じて三角形で移動し、梯子では前後に展開",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "鶴鶴鶴鶴鶴鶴鶴",
+     "mechanism": "直角三角形2つを頂点で結んだ形。梯子は開いてくぐり、平均台は内蔵タイヤ、ハードルは片側を跳ね上げて跨ぐ",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "revolve",
+     "mechanism": "4関節の蛇型で、バネ30個でトルクを補助。車高を縮めて梯子・平均台を越え、自動機は杭にツメで登る",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "Zero",
+     "mechanism": "横から見るとM字形の蛇型。長いアームを畳んだり縮めたりして障害を越える",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "Whirl Magic",
+     "mechanism": "前後二輪ステアの低重心機。ゴムの力で脚を開き平均台へ跳び乗る。自動機は杭に引っ掛けて昇る",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "バランシングオクト",
+     "mechanism": "前後に長い本体と回転する4本脚。後ろ脚と後部で立ち上がりハードルを越える",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "あんう゛ぁらんす",
+     "mechanism": "脚立状の長い4本脚と、360度回転する中央脚2本を持つ高足マシン",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "翔&昇",
+     "mechanism": "変形しないコンパクト機。大きな二輪で移動し、エアシリンダーで地面を叩いて跳び平均台・ハードルを越える",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "Lightning",
+     "mechanism": "神輿型。変形なしで梯子をくぐり、ペットボトルのエアーで脚を伸ばして平均台へ。自動機はコンベア2本で斜めに上昇",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "ビギナーズラック",
+     "mechanism": "低重心機。先端に駆動輪の付いた6本アームで車高を上げ、平均台は下部のクローラーで進む",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "Center of gravity",
+     "mechanism": "中央に太いフレームを通した戦車状。クローラー駆動",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "SAGITTARIUS",
+     "mechanism": "縦一列4本脚で、胴体は前後に分割して折れ曲がる。脚ごと倒して梯子をくぐる",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "Builder-H",
+     "mechanism": "3パーツが中央で折れ曲がる前後長型。自動機は2本のハンドで柱を掴み回転しながら壁を登る",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "明石B",
+     "blue": "舞鶴B",
+     "winner": "舞鶴B",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "神戸A",
+     "blue": "近大B",
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "明石A",
+     "blue": "神戸A",
+     "winner": "明石A",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "和歌山A",
+     "blue": "舞鶴B",
+     "winner": "舞鶴B",
+     "note": "和歌山Aはハードルを倒し時間切れ",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "明石A",
+     "blue": "舞鶴B",
+     "winner": "明石A",
+     "src": "https://koberobo.stars.ne.jp/library/lib05.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "明石A",
+     "award": "優勝"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "準優勝"
+    },
+    {
+     "team": "奈良B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "和歌山A",
+     "award": "技術賞"
+    },
+    {
+     "team": "近大A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "奈良B",
+     "award": "特別賞（関西電力）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "神戸B",
+     "award": "特別賞（ソリッドワークス）"
+    },
+    {
+     "team": "明石A",
+     "award": "特別賞（安川電機）"
+    }
+   ],
+   "champ": [
+    "明石A",
+    "curvilinear"
+   ],
+   "runner": [
+    "舞鶴B",
+    "鶴鶴鶴鶴鶴鶴鶴"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "でんぐり君",
+     "result": "ベスト4、全国3回戦・アイデア賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "きりんぼー",
+     "result": "2回戦・技術賞・特別賞（東京電力）",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "津山",
+    "robot": "単構造"
+   },
+   {
+    "team": "東京",
+    "robot": "縦高無尽"
+   },
+   {
+    "team": "鹿児島",
+    "robot": "夢限"
+   },
+   {
+    "team": "富山射水",
+    "robot": "NEO-Gravity"
+   },
+   {
+    "team": "小山",
+    "robot": "でんぐり君"
+   },
+   {
+    "team": "福島",
+    "robot": "Win Roll"
+   },
+   {
+    "team": "広島商船",
+    "robot": "ピエロの大冒険"
+   },
+   {
+    "team": "福井",
+    "robot": "下司MAX"
+   },
+   {
+    "team": "八戸",
+    "robot": "keeper"
+   },
+   {
+    "team": "都城",
+    "robot": "Parallel"
+   },
+   {
+    "team": "大分",
+    "robot": "高床式ぱっちん号"
+   }
+  ],
+  "matches": []
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib05.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会11チーム・地区大会16チーム（近畿・関東甲信越）・試合5件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

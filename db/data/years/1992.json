@@ -1,0 +1,279 @@
+{
+ "year": 1992,
+ "no": 5,
+ "game": "ミステリーサークル",
+ "rules": "中央の筒状のCリングと外側のBリングへバレーボールを投げ入れる。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "ダンシング・クレーン",
+     "mechanism": "ベルトコンベアでボールを取り込み、スライド式の橋で10点ゴールに入れる",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "ハイ！チャッタ号",
+     "mechanism": "長いアーム（未完成で動作せず）",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "はこ坊+タコ坊",
+     "mechanism": "はこ坊がボールを回収しベルトコンベアでたこ坊に渡し、たこ坊の橋で10点ゴールに入れる",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "しんいち",
+     "mechanism": "先端の2つの輪でボールを掴み10点ゴールに入れるアーム型",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "OB Maker",
+     "mechanism": "先端が重いアームでボールを打ち出し、1バウンドで10点ゴールに入れる",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "飛ばしマシーンDX",
+     "mechanism": "竹弓で打ち出す機構、ボールをすくって取り込み1バウンドで10点ゴールへ",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "和歌山オレンジブリッジ",
+     "mechanism": "16個のボールを取り込みリフトで持ち上げ、橋で10点ゴールに入れる",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "和歌山WINS",
+     "mechanism": "5又のフォークリフトでボール4個をすくい、橋で10点ゴールに転がす",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "吉丈号",
+     "mechanism": "オムニホイール搭載の橋形。ボールを囲んで移動し、スロープから橋を伸ばす",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "藍染5号",
+     "mechanism": "ビニールシートの橋を展開して10点ゴールを狙う。ボールはリフトで橋まで持ち上げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "名ストライカー神!!",
+     "mechanism": "振り子状のアームでボールをすくい、ゴール近くで落として1バウンドで入れる",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "命がけのスローインロボ",
+     "mechanism": "扇形フレームでボールを持ち上げ、倒れ込んで1点ゴールに転がし入れる",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "大阪公大B",
+     "blue": "舞鶴A",
+     "winner": "舞鶴A",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "和歌山B",
+     "blue": "奈良A",
+     "winner": "奈良A",
+     "note": "和歌山Bは接地禁止ゾーン侵入で失格",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "神戸A",
+     "blue": "奈良B",
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "奈良A",
+     "blue": "舞鶴A",
+     "winner": "舞鶴A",
+     "note": "奈良Aは接地禁止ゾーン侵入で失格",
+     "src": "https://koberobo.stars.ne.jp/library/lib92.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "舞鶴A",
+     "award": "優勝"
+    },
+    {
+     "team": "奈良A",
+     "award": "準優勝"
+    },
+    {
+     "team": "和歌山A",
+     "award": "アイデア賞"
+    }
+   ],
+   "champ": [
+    "舞鶴A",
+    "ダンシング・クレーン"
+   ],
+   "runner": [
+    "奈良A",
+    "OB Maker"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "木更津",
+     "robot": "Revolution Attacker"
+    },
+    {
+     "team": "東京",
+     "robot": "通生号"
+    },
+    {
+     "team": "小山",
+     "robot": "プルルン号",
+     "result": "2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "アインシュタイン(一石)",
+     "result": "1回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "香川詫間",
+    "robot": "MMMSUT II",
+    "mechanism": "橋形",
+    "src": "https://koberobo.stars.ne.jp/library/lib92.html"
+   },
+   {
+    "team": "一関",
+    "robot": "ころころ君"
+   },
+   {
+    "team": "岐阜",
+    "robot": "帰ってきたウカイコッコピヨピヨ丸２号"
+   },
+   {
+    "team": "徳山",
+    "robot": "ジャイアントアーム"
+   },
+   {
+    "team": "有明",
+    "robot": "ビッグシューター"
+   },
+   {
+    "team": "佐世保",
+    "robot": "Ten Point Shooter"
+   },
+   {
+    "team": "八戸",
+    "robot": "あみはるくん"
+   },
+   {
+    "team": "鶴岡",
+    "robot": "社長の愛犬"
+   },
+   {
+    "team": "鳥羽商船",
+    "robot": "だっくすきりんさん"
+   },
+   {
+    "team": "都城",
+    "robot": "ロジャーアーム号"
+   },
+   {
+    "team": "舞鶴"
+   },
+   {
+    "team": "苫小牧"
+   },
+   {
+    "team": "奈良"
+   },
+   {
+    "team": "新居浜"
+   },
+   {
+    "team": "和歌山"
+   },
+   {
+    "team": "石川"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "舞鶴",
+    "blue": "苫小牧",
+    "winner": "舞鶴",
+    "note": "苫小牧が接地禁止ゾーンに侵入し失格",
+    "src": "https://koberobo.stars.ne.jp/library/lib92.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "舞鶴",
+    "blue": "佐世保",
+    "red_score": 103,
+    "blue_score": 121,
+    "winner": "佐世保",
+    "src": "https://koberobo.stars.ne.jp/library/lib92.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "奈良",
+    "blue": "新居浜",
+    "red_score": 72,
+    "blue_score": 160,
+    "winner": "新居浜",
+    "src": "https://koberobo.stars.ne.jp/library/lib92.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "和歌山",
+    "blue": "石川",
+    "red_score": 130,
+    "blue_score": 131,
+    "winner": "石川",
+    "src": "https://koberobo.stars.ne.jp/library/lib92.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib92.html",
+  "https://koberobo.stars.ne.jp/library/other_robots.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会16チーム・地区大会16チーム（近畿・関東甲信越）・試合8件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

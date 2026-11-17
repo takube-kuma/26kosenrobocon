@@ -1,0 +1,361 @@
+{
+ "year": 2013,
+ "no": 26,
+ "game": "Shall We Jump?",
+ "rules": "生き物を模したロボットと高専生が協力して縄跳びに挑む。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "奈良A",
+     "robot": "じゃんぺん",
+     "mechanism": "強化プラ製の多足歩行で高速移動、オフセットスライダクランクで連続ジャンプ、縄位置センサでタイミング調整",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "Xboxer-One",
+     "mechanism": "ボクサー型上半身のジャンパー、頭と両腕が動きパンチを繰り出す、エアでジャンプ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "ウメンジャー",
+     "mechanism": "移動用と連続ジャンプ用の2種類の機構、エアシリンダーで斜め前に大きく跳ぶ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "シャバデュビジャンパー",
+     "mechanism": "近接センサで起動し決められた回数を跳ぶドラゴン、魔法使い風の縄回しロボット",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "舞鶴A",
+     "robot": "トブリン",
+     "mechanism": "6つのプロペラで揚力を補助し滞空時間を延ばす、シリンダーで跳躍、UFOモチーフ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "ポール&マッカーロニー",
+     "mechanism": "距離センサと手動の板でタイミング指示、独自の足回りで高速歩行、最大40cm跳躍",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "ACTopus",
+     "mechanism": "モーターでバネに蓄えた力を解放して跳ぶタコ、縄回し底面の光を受光してタイミング合わせ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "おクトば→ス",
+     "mechanism": "タコ焼き屋テーマのタコジャンパー、縄回しは縦方向に配置",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "GO舞WAY!",
+     "mechanism": "犬型4脚ジャンパー、ゴムにエネルギーを蓄えて跳ぶ、前足を上げてから跳ぶ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "すleap",
+     "mechanism": "ヒツジのジャンパー、大型スプリング4本で跳躍、近畿唯一のダブルタッチ縄回しに挑戦",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "大縄鳥",
+     "mechanism": "超小型6脚ジャンパー、音でタイミングを合わせ滑らかに歩行",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "にゅ～とん",
+     "mechanism": "豚のジャンパー、黄色い板を識別して跳ぶタイミングを計る、ラック・ピニオン式",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "親子丼",
+     "mechanism": "巨大なヒヨコのジャンパー、大型エアシリンダーで高く跳ぶ、ニワトリの縄回しロボット",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "P&W",
+     "mechanism": "オオカミのジャンパー、縄回しが角度ごとに出す2種のトーン音を聞いてジャンプ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "奈良A",
+     "blue": "明石A",
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "奈良A",
+     "blue": "近大A",
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "奈良B",
+     "blue": "和歌山A",
+     "red_score": 29,
+     "blue_score": 10,
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "奈良A",
+     "blue": "和歌山B",
+     "red_score": 107,
+     "blue_score": 12,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "奈良A",
+     "blue": "奈良B",
+     "red_score": 43,
+     "blue_score": 32,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "奈良A",
+     "award": "優勝"
+    },
+    {
+     "team": "奈良B",
+     "award": "準優勝"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "和歌山A",
+     "award": "技術賞"
+    },
+    {
+     "team": "明石A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "奈良B",
+     "award": "Shall We Jump賞"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "奈良B",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "明石B",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "特別賞（田中貴金属）"
+    }
+   ],
+   "champ": [
+    "奈良A",
+    "じゃんぺん"
+   ],
+   "runner": [
+    "奈良B",
+    "Xboxer-One"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "小山サーカスの特訓",
+     "result": "地区準優勝、全国2回戦・特別賞（田中貴金属）",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "開運☆小山遊園",
+     "result": "2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "オク跳ばす！！！",
+     "result": "デザイン賞、ベスト4",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "ケリュネイアの鹿",
+     "result": "初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "奈良A",
+    "robot": "じゃんぺん",
+    "mechanism": "全国仕様で高速化、1秒に2回ジャンプ可能",
+    "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+   },
+   {
+    "team": "徳山",
+    "robot": "色とりドリィ"
+   },
+   {
+    "team": "熊本熊本",
+    "robot": "Come on jumper"
+   },
+   {
+    "team": "米子",
+    "robot": "妖怪大奔走"
+   },
+   {
+    "team": "都城",
+    "robot": "跳べ！最優ウッキー！"
+   },
+   {
+    "team": "鈴鹿",
+    "robot": "メルシー"
+   },
+   {
+    "team": "大分",
+    "robot": "跳べ！ライオン君！！"
+   },
+   {
+    "team": "福島",
+    "robot": "サルク・ドゥ・ソレイヌ"
+   },
+   {
+    "team": "都立荒川",
+    "robot": "To Be"
+   },
+   {
+    "team": "小山",
+    "robot": "小山サーカスの特訓"
+   },
+   {
+    "team": "富山射水",
+    "robot": "SuLuMe"
+   },
+   {
+    "team": "和歌山A",
+    "robot": "ウメンジャー",
+    "mechanism": "移動用と連続ジャンプ用の2種類の機構、エアシリンダーで斜め前に大きく跳ぶ",
+    "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+   },
+   {
+    "team": "明石A",
+    "robot": "ポール&マッカーロニー",
+    "mechanism": "距離センサと手動の板でタイミング指示、独自の足回りで高速歩行、最大40cm跳躍",
+    "src": "https://koberobo.stars.ne.jp/library/lib2013.html"
+   },
+   {
+    "team": "富山本郷",
+    "robot": "SuLuMe"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "奈良A",
+    "blue": "福島",
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "奈良A",
+    "blue": "大分",
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準決勝",
+    "red": "奈良A",
+    "blue": "米子",
+    "red_score": 155,
+    "blue_score": 122,
+    "winner": "奈良A",
+    "note": "米子は122回で縄が引っかかりリトライ",
+    "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "決勝",
+    "red": "奈良A",
+    "blue": "徳山",
+    "red_score": 118,
+    "winner": "徳山",
+    "note": "奈良は118回で縄が引っかかる、徳山が残り4秒で逆転",
+    "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "和歌山A",
+    "blue": "小山",
+    "winner": "和歌山A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "和歌山A",
+    "blue": "熊本熊本",
+    "winner": "熊本熊本",
+    "src": "https://koberobo.stars.ne.jp/library/lib2013.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2013.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会14チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合11件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

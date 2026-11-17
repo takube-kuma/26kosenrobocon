@@ -1,0 +1,297 @@
+{
+ "year": 2020,
+ "no": 33,
+ "game": "はぴ☆ロボ自慢",
+ "rules": "自宅や学校からロボットのパフォーマンスを披露し、完成度・演技・テーマ・アイデアを評価する（対戦なし）。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "#鶴散希望",
+     "mechanism": "サーカス風の輪くぐり機と坂登り機。輪投げ機が輪を投げ、もう1台がくぐる",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "舞花",
+     "mechanism": "2台の走行ロボが花ロボの周りを動く。LEDで表情を出し、花開きと紙吹雪を備える",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "舞鶴C",
+     "robot": "emPeror",
+     "mechanism": "カスタネットとピアノロボ、大型二輪ロボによる演奏。カスタネットは3方向から叩く",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "明石新快速",
+     "mechanism": "吊り革を円形布巾で挟んで回転消毒する機構と、床掃除ロボ2台。ポール上を移動",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "日月体育大学",
+     "mechanism": "小型3台がマトリクスLEDで集団行動。ARマーカー制御は間に合わずPCから半手動操作",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "明石C",
+     "robot": "バンドロイド",
+     "mechanism": "ギター、電子ピアノ、電子ドラム、周波数制御モータで演奏し、メンバーも歌う",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "Tetra",
+     "mechanism": "3輪オムニ機がテーブルクロスを引き、上に積んだカップを崩さないよう引き下げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "薬支持",
+     "mechanism": "昇降メカナム駆動機が階段を上がり、物干し竿を渡って薬と水を患者に届ける",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "VIRUS・ばすたーず",
+     "mechanism": "免疫細胞の働きを再現。有線操作の3機がウイルス風船を割る",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "OGch.",
+     "mechanism": "上半身型のおじいちゃんロボが首と腕を動かし、筆ペンで文字を書く",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "和歌山C",
+     "robot": "白刃鳥",
+     "mechanism": "白刃取り機と刀を振る機構による一芸披露。手先の光センサで鹿威しを挟む",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "府大だんじり",
+     "mechanism": "だんじりを模した2台が土俵で相撲。片方はクローラー、もう片方はタイヤ駆動",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "painter",
+     "mechanism": "4台が色の散り紙を落として黒いフィールドに虹や鳥、文字を描く",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "大阪公大C",
+     "robot": "はうすわ～か～ず",
+     "mechanism": "おばちゃん型ロボが洗濯や料理などのコントを演じる。複数機が登場",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "洒落神戸",
+     "mechanism": "足回り2台と旗振り2台がARマーカーで制御され踊る",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "忍ばKnight",
+     "mechanism": "忍者ロボ2台が忍者屋敷セットで敵ロボと戦い、伝説の刀を奪還する忍者活劇",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "ショッピー",
+     "mechanism": "有線の上部ハンドで果物を掴み、遠隔で買い物を代行",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "マグロ教授",
+     "mechanism": "マグロ型ロボを腹話術で操作して漫才。手袋の曲げセンサで口と体を動かす",
+     "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+    }
+   ],
+   "matches": [],
+   "awards": [
+    {
+     "team": "大阪公大C",
+     "award": "最優秀賞"
+    },
+    {
+     "team": "明石A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "明石C",
+     "award": "技術賞"
+    },
+    {
+     "team": "神戸A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "近大B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "奈良B",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "和歌山B",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "神戸A",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "和歌山C",
+     "award": "特別賞（田中貴金属）"
+    },
+    {
+     "team": "明石A",
+     "award": "特別賞（ローム）"
+    },
+    {
+     "team": "舞鶴C",
+     "award": "特別賞（セメダイン）"
+    }
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "シンクロシスターズ♪",
+     "result": "地区最優秀賞、全国超優秀賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "あっぱれセグ郎くん",
+     "result": "地区技術賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "合体☆とちV",
+     "result": "地区アイデア賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "メッセンジャー9",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "イルミネーター",
+     "result": "特別賞（セメダイン）、予選ラウンド8位",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "チャリモ",
+     "result": "最優秀賞、予選ラウンド1位通過、全国ロボコン大賞・超はぴ☆ロボ賞",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "明石A",
+    "robot": "明石新快速",
+    "mechanism": "車内セットや実車の吊り革支持構造に対応する機構を追加。挟み機構は上下開きに改良",
+    "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+   },
+   {
+    "team": "明石C",
+    "robot": "バンドロイド",
+    "mechanism": "ベースギター、ステッピングモータ2台、サイリウム機を追加し、演奏機構を大幅改良",
+    "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+   },
+   {
+    "team": "大阪公大C",
+    "robot": "はうすわ～か～ず",
+    "mechanism": "近畿版の構成を継承。実況席のミニおばちゃんロボが動いて喋る演出を追加",
+    "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+   },
+   {
+    "team": "神戸A",
+    "robot": "洒落神戸",
+    "mechanism": "テーマを御洒落に変えた夜景ダンス。足回りのバッテリー不良で途中停止",
+    "src": "https://koberobo.stars.ne.jp/library/lib2020.html"
+   },
+   {
+    "team": "小山",
+    "robot": "シンクロシスターズ♪"
+   },
+   {
+    "team": "沼津B",
+    "robot": "チャリモ"
+   },
+   {
+    "team": "大分",
+    "robot": "チアロボ"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "foldmachine"
+   },
+   {
+    "team": "福島",
+    "robot": "鈴音"
+   },
+   {
+    "team": "長野B",
+    "robot": "acroboX"
+   },
+   {
+    "team": "長野D",
+    "robot": "どんちゃか龍舞"
+   },
+   {
+    "team": "長岡",
+    "robot": "connection"
+   },
+   {
+    "team": "北九州",
+    "robot": "トイレスキュー"
+   },
+   {
+    "team": "新居浜",
+    "robot": "別子ブラザーズ"
+   },
+   {
+    "team": "秋田",
+    "robot": "Run・Turn"
+   },
+   {
+    "team": "都城",
+    "robot": "とどけ！ケーキゴーランド！"
+   }
+  ],
+  "matches": []
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2020.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会16チーム・地区大会24チーム（近畿・関東甲信越・東海北陸）・試合0件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

@@ -1,0 +1,100 @@
+{
+ "year": 1989,
+ "no": 2,
+ "game": "オクトパス・フットボール",
+ "rules": "タコ型の競技場の足先からスタートし、ラグビーボールをゴールに入れる。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴",
+     "robot": "Dunk君",
+     "mechanism": "三角形フレーム上部を支点に回るバネ駆動アームでボールを拾い上げ、上から回してゴールへシュート",
+     "src": "https://koberobo.stars.ne.jp/library/lib89.html"
+    },
+    {
+     "team": "神戸",
+     "robot": "舞子号",
+     "mechanism": "機体全体がパンタグラフ式で、伸ばすとハンドがボールを掴んでゴールへ入れる",
+     "src": "https://koberobo.stars.ne.jp/library/lib89.html"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "久留米",
+    "robot": "コロコロスットン号"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "C.K.1号"
+   },
+   {
+    "team": "有明",
+    "robot": "先手必勝アーム付破れバケツ号"
+   },
+   {
+    "team": "豊田",
+    "robot": "とよたえくすぷろーら"
+   },
+   {
+    "team": "鈴鹿",
+    "robot": "エスカル号"
+   },
+   {
+    "team": "福島",
+    "robot": "たこのデビット君"
+   },
+   {
+    "team": "長岡",
+    "robot": "だいろ号"
+   },
+   {
+    "team": "東京",
+    "robot": "ペッタンロボ"
+   },
+   {
+    "team": "旭川",
+    "robot": "ビッグシューター"
+   },
+   {
+    "team": "舞鶴",
+    "robot": "Dunk君",
+    "mechanism": "三角形フレーム上部を支点に回るバネ駆動アームでボールを拾い上げ、上から回してゴールへシュート",
+    "src": "https://koberobo.stars.ne.jp/library/lib89.html"
+   },
+   {
+    "team": "神戸",
+    "robot": "舞子号",
+    "mechanism": "機体全体がパンタグラフ式で、伸ばすとハンドがボールを掴んでゴールへ入れる",
+    "src": "https://koberobo.stars.ne.jp/library/lib89.html"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "舞鶴",
+    "blue": "東京",
+    "note": "両者失格",
+    "src": "https://koberobo.stars.ne.jp/library/lib89.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "神戸",
+    "blue": "旭川",
+    "winner": "旭川",
+    "src": "https://koberobo.stars.ne.jp/library/lib89.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib89.html"
+ ],
+ "coverage": "全国大会11チーム・地区大会2チーム（近畿）・試合2件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

@@ -1,0 +1,336 @@
+{
+ "year": 2014,
+ "no": 27,
+ "game": "出前迅速",
+ "rules": "蕎麦の蒸籠を3つの障害物の上を運び、3分間により多く届ける。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "駕鶴",
+     "mechanism": "斜めに取り付けたクローラーで角材ゾーンを一気に走破。蒸籠の水平保持機構",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "蕎麦ッ渡鶴ッ翔",
+     "mechanism": "蕎麦屋台型。オムニ3輪が上下し傾斜ゾーンで水平を保つ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "そばりあん",
+     "mechanism": "UFO型。オムニ車輪の上下に連動してエイリアン人形が動く。発進・停止に応じてお盆を自動で傾ける",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "姫2",
+     "mechanism": "姫路城型。駆動輪を倒して持ち上げる機構とお盆の傾きを変える機構",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "キャリガメ",
+     "mechanism": "カメ型。4輪ステアと4輪個別昇降で傾斜を水平に越える。2段レールで蒸籠を保持",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "でりかん",
+     "mechanism": "ペリカン型。3輪オムニを斜めに持ち上げる機構と、蒸籠の2軸角度制御。専用の受取機あり",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "鯨走軽迅",
+     "mechanism": "低重心のクジラ型。大カムで車輪を手動上下させ角材を越える。2段レールと受取機",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "おっちー",
+     "mechanism": "戦車車体にクレーン車を載せた型。湾曲スライドレールで蒸籠を保持、大径の内部車輪でクローラー",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "力走配達 源さん",
+     "mechanism": "自転車型コントローラーでこぐと前進、ハンドルで旋回。操縦者の手の傾きに合わせてお盆も傾く",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "ゆらゆらっこ",
+     "mechanism": "ラッコ型。大型の2段湾曲レール。ベルト駆動のプーリーが角材に当たると90度回転して越える",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "甲速[m/s]",
+     "mechanism": "カニ型の大型マシン。クランク機構で車輪を上げ、振り子式のお盆で蒸籠を保持。21枚運搬",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "TURnTALE",
+     "mechanism": "カメ型の振り子式マシン。上下車輪とクローラー。試合前に故障しスタートできず",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "メカトド",
+     "mechanism": "マシンの傾きをセンサで検知し、お盆の角度を上下20度の範囲でフィードバック制御",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "あなたのそばにいつも蕎麦",
+     "mechanism": "木材を多用。昇降型のステア駆動輪6つで角材と傾斜ゾーンに挑む",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "神戸A",
+     "blue": "奈良A",
+     "winner": "神戸A",
+     "note": "審査員判定3-0",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "神戸A",
+     "blue": "大阪公大B",
+     "red_score": 21,
+     "blue_score": 0,
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "奈良B",
+     "blue": "舞鶴A",
+     "red_score": 11,
+     "winner": "奈良B",
+     "note": "舞鶴Aは角材ゾーンで2度崩れる",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "和歌山A",
+     "blue": "舞鶴B",
+     "red_score": 33,
+     "winner": "和歌山A",
+     "note": "2回配達（17+16）",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "神戸A",
+     "blue": "和歌山A",
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "奈良B",
+     "blue": "和歌山B",
+     "red_score": 7,
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "神戸A",
+     "blue": "奈良B",
+     "red_score": 21,
+     "blue_score": 11,
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2014.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "神戸A",
+     "award": "優勝"
+    },
+    {
+     "team": "奈良B",
+     "award": "準優勝"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "和歌山A",
+     "award": "技術賞"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "出前迅速賞"
+    },
+    {
+     "team": "奈良A",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "神戸A",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "明石A",
+     "award": "特別賞（田中貴金属）"
+    }
+   ],
+   "champ": [
+    "神戸A",
+    "甲速[m/s]"
+   ],
+   "runner": [
+    "奈良B",
+    "でりかん"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "小山小僧",
+     "result": "ベスト8",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "ROCK君スインガー",
+     "result": "地区優勝、全国3回戦（ベスト8）",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "金原さん",
+     "result": "初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "MECHARAKURI",
+     "result": "特別賞（東京エレクトロン）、初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "和歌山A",
+    "robot": "鯨走軽迅",
+    "mechanism": "全国仕様で1度に運ぶ枚数を22枚に増やし、2回配達を安定して実施",
+    "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+   },
+   {
+    "team": "神戸A",
+    "robot": "甲速[m/s]",
+    "mechanism": "全国仕様は1度に22枚運搬と2回配達（17枚ずつ）に対応",
+    "src": "https://koberobo.stars.ne.jp/library/lib2014.html"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "本気の宅配便"
+   },
+   {
+    "team": "旭川",
+    "robot": "ベルーガ"
+   },
+   {
+    "team": "大島商船",
+    "robot": "大島具足蟲"
+   },
+   {
+    "team": "福島",
+    "robot": "おトドけ・うけトリ"
+   },
+   {
+    "team": "鈴鹿",
+    "robot": "エール"
+   },
+   {
+    "team": "木更津",
+    "robot": "出前スカルゴ"
+   },
+   {
+    "team": "高知",
+    "robot": "ポンポコ・コンコン's"
+   },
+   {
+    "team": "仙台広瀬",
+    "robot": "Uni☆Verse"
+   },
+   {
+    "team": "大分",
+    "robot": "お食事処めじ亭"
+   }
+  ],
+  "matches": [
+   {
+    "round": "2回戦",
+    "red": "和歌山A",
+    "blue": "熊本八代",
+    "red_score": 44,
+    "blue_score": 48,
+    "winner": "熊本八代",
+    "note": "熊本八代が残り3秒で2回目を配達",
+    "src": "https://koberobo.stars.ne.jp/library/lib2014.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "神戸A",
+    "blue": "大島商船",
+    "red_score": 0,
+    "blue_score": 5,
+    "winner": "大島商船",
+    "note": "審査員判定0-5",
+    "src": "https://koberobo.stars.ne.jp/library/lib2014.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2014.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会11チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合9件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

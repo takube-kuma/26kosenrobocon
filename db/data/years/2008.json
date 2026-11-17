@@ -1,0 +1,271 @@
+{
+ "year": 2008,
+ "no": 21,
+ "game": "ROBO-EVOLUTION 生命大進化",
+ "rules": "多足歩行の障害物レース、変身パフォーマンス、2足歩行のタイムレースの3つの課題でタイムを競う。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "鶴歩",
+     "mechanism": "レール上の錘で重心を片足に移し、ターンテーブル状の足で前方へ回転して歩行",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "亀鶴GUY",
+     "mechanism": "多足のカメから二足の鶴へ変身。翼を左右に広げて歩行",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "三葉橋龍",
+     "mechanism": "二足は本体上を脚がスライドし体を傾けて歩行。多足は8脚ステア機構",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "KAMeDAS",
+     "mechanism": "多足は前後左右に移動できる8脚クランク。二足はクランク式、旋回は錘",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "革角鹿然",
+     "mechanism": "8脚の多足歩行から二足へ変身",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "ある味覚パイプ",
+     "mechanism": "多足は3脚1組の4脚ステア。二足はリンク脚、旋回はカムの錘",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "すっぱいダーマン",
+     "mechanism": "二足はクランク式。多足はテオヤンセン機構に近い8脚",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "吉宗の動く城",
+     "mechanism": "4脚の棒状歩行。ハードル超えに8本の定荷重バネカタパルト",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "緑の地球のアースマン",
+     "mechanism": "多足はテオヤンセン機構の16脚。二足は大きな脚をクランクで回転",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "こなえもん",
+     "mechanism": "多足は3脚1組のクランク式。二足はターンテーブル＋コの字型",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "Wake Frog",
+     "mechanism": "多足は弧状の足とクランク8脚。二足は中心の脚とコの字フレーム",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "SUWAちゃん",
+     "mechanism": "多足は巨大な回転状の機構",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "ゴリラーマン",
+     "mechanism": "ラックで伸縮・回転する4脚の多足歩行",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "egg",
+     "mechanism": "多足は4脚の斜対歩。二足は片足ごとに重心を完全に移して歩行",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "舞鶴B",
+     "blue": "奈良B",
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "大阪公大B",
+     "blue": "奈良B",
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴A",
+     "blue": "和歌山A",
+     "red_score": 1,
+     "blue_score": 2,
+     "winner": "和歌山A",
+     "note": "審査員判定",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "和歌山A",
+     "blue": "奈良B",
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib08.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "舞鶴A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "明石B",
+     "award": "技術賞"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "明石A",
+     "award": "生命大進化賞"
+    },
+    {
+     "team": "和歌山B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "特別賞（関西電力）"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "奈良A",
+     "award": "特別賞（東京エレクトロンFE）"
+    }
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "Iroha Liner",
+     "result": "地区優勝、全国準優勝",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "SUPERザウルス君",
+     "result": "3回戦・技術賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "サルカニワッショイ",
+     "result": "ベスト8",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "富士蝶",
+     "result": "生命大進化賞、ベスト8",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "沖縄",
+    "robot": "Movement"
+   },
+   {
+    "team": "小山",
+    "robot": "Iroha Liner"
+   },
+   {
+    "team": "徳山",
+    "robot": "ツヨシ猿回し"
+   },
+   {
+    "team": "長岡",
+    "robot": "一蝶一誕"
+   },
+   {
+    "team": "鹿児島",
+    "robot": "篤姫と機械な仲間たち"
+   },
+   {
+    "team": "岐阜",
+    "robot": "ZiN"
+   },
+   {
+    "team": "大分",
+    "robot": "祭だぱっちん号"
+   },
+   {
+    "team": "阿南",
+    "robot": "ACE"
+   },
+   {
+    "team": "仙台名取",
+    "robot": "Powell"
+   },
+   {
+    "team": "津山",
+    "robot": "キカイタイソウ"
+   },
+   {
+    "team": "和歌山"
+   }
+  ],
+  "matches": [
+   {
+    "round": "決勝トーナメント",
+    "red": "和歌山",
+    "blue": "沖縄",
+    "winner": "沖縄",
+    "note": "和歌山が接地禁止ゾーンに侵入",
+    "src": "https://koberobo.stars.ne.jp/library/lib08.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib08.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会11チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合5件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

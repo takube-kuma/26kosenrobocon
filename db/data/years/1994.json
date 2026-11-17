@@ -1,0 +1,416 @@
+{
+ "year": 1994,
+ "no": 7,
+ "game": "スペースフライヤー",
+ "rules": "フライングディスクをホールに入れて陣地を争う。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "Vスペック",
+     "mechanism": "ローラー撃ち出し型。ディスクを縦にアンダースロー状に放物線で撃ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "円盤ババンバン",
+     "mechanism": "水平の大型ローラーの外周でディスクに回転をかけて撃ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "営業三課",
+     "mechanism": "ローラー撃ち出し型。台に横付けしアームで3束のディスクを取り込む",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "帰ってきたタコ坊'94",
+     "mechanism": "1mのアームで取り込みと撃ち出しを行う。ベルト付きレールで送り出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "Star King",
+     "mechanism": "五角形の5つのターンテーブルを回転させ慣性力で撃ち出す。吸盤アームで装填",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "ティラノサウルスBROTHERS",
+     "mechanism": "取り込み用と撃ち出し用の2台構成。撃ち出しはバネ機構で叩いて発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "Kunitaro",
+     "mechanism": "3mのレールとベルトでディスクを加速させ撃ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "Disk Bow",
+     "mechanism": "トレイを引っ張りゴムの力で撃ち出す。上部のじょうごから装填",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "Non Stop",
+     "mechanism": "ローラー撃ち出し型。クローラーの足回りで段差を越える",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "TOP-C",
+     "mechanism": "アームを横に振ってディスクを撃ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "モリモンガァー",
+     "mechanism": "ローラー撃ち出し型。尻尾状のトレイをディスクの下に差し込み取り込む",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "乳母車",
+     "mechanism": "ベルト2本でディスクを挟んで撃ち出す。アームを下から差し込み取り込む",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "神戸A",
+     "blue": "和歌山A",
+     "winner": "和歌山A",
+     "note": "開始43秒でVホール",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "明石A",
+     "blue": "奈良A",
+     "red_score": 10,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "神戸B",
+     "blue": "大阪公大B",
+     "blue_score": 5,
+     "winner": "神戸B",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴A",
+     "blue": "奈良A",
+     "red_score": 5,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "大阪公大A",
+     "blue": "和歌山A",
+     "red_score": 0,
+     "blue_score": 10,
+     "winner": "和歌山A",
+     "note": "再試合",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "和歌山A",
+     "blue": "奈良A",
+     "red_score": 0,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "神戸B",
+     "blue": "奈良A",
+     "red_score": 20,
+     "blue_score": 15,
+     "winner": "神戸B",
+     "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "神戸B",
+     "award": "優勝"
+    },
+    {
+     "team": "奈良A",
+     "award": "準優勝"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "アイデア賞"
+    }
+   ],
+   "champ": [
+    "神戸B",
+    "乳母車"
+   ],
+   "runner": [
+    "奈良A",
+    "Star King"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "群馬",
+     "robot": "半回転なんとか"
+    },
+    {
+     "team": "サレジオ",
+     "robot": "HEISE"
+    },
+    {
+     "team": "都立品川",
+     "robot": "V・シューター"
+    },
+    {
+     "team": "小山",
+     "robot": "TANAザウルス",
+     "result": "ベスト4",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "茨城",
+     "robot": "アミ張らなくてよかっぺ号"
+    },
+    {
+     "team": "都立荒川",
+     "robot": "航空光線"
+    },
+    {
+     "team": "東京",
+     "robot": "寮馬くん"
+    },
+    {
+     "team": "茨城",
+     "robot": "SKY2with雷鳥弐號"
+    },
+    {
+     "team": "小山",
+     "robot": "つまはじき君&ココ一番",
+     "result": "1回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "群馬",
+     "robot": "くわくわ丸"
+    },
+    {
+     "team": "木更津",
+     "robot": "天才シュータ君"
+    },
+    {
+     "team": "木更津",
+     "robot": "重力振子曲射砲"
+    },
+    {
+     "team": "東京",
+     "robot": "秋桜"
+    },
+    {
+     "team": "長岡",
+     "robot": "JUNICHIRO"
+    },
+    {
+     "team": "長岡",
+     "robot": "SAGI"
+    },
+    {
+     "team": "長野",
+     "robot": "機械屋さん1号"
+    },
+    {
+     "team": "長野",
+     "robot": "バーチカルアクセレレーター Vol.2"
+    },
+    {
+     "team": "サレジオ",
+     "robot": "IN SIDER"
+    }
+   ],
+   "matches": [],
+   "awards": [
+    {
+     "team": "群馬",
+     "award": "優勝"
+    },
+    {
+     "team": "サレジオ",
+     "award": "準優勝"
+    },
+    {
+     "team": "茨城",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "都立荒川",
+     "award": "優秀賞"
+    },
+    {
+     "team": "東京",
+     "award": "優秀賞"
+    }
+   ],
+   "champ": [
+    "群馬",
+    "半回転なんとか"
+   ],
+   "runner": [
+    "サレジオ",
+    "HEISE"
+   ]
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "奈良A",
+    "robot": "Star King",
+    "mechanism": "五角形の5つのターンテーブルを回転させ慣性力で撃ち出す。吸盤アームで装填",
+    "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+   },
+   {
+    "team": "神戸B",
+    "robot": "乳母車",
+    "mechanism": "ベルト2本でディスクを挟んで撃ち出す。アームを下から差し込み取り込む",
+    "src": "https://koberobo.stars.ne.jp/library/lib94.html"
+   },
+   {
+    "team": "豊田",
+    "robot": "SUCCESS"
+   },
+   {
+    "team": "徳山",
+    "robot": "シューティングギアー"
+   },
+   {
+    "team": "都城",
+    "robot": "P・P"
+   },
+   {
+    "team": "秋田",
+    "robot": "なげわっぱ"
+   },
+   {
+    "team": "福井",
+    "robot": "またまたちかっぺ福井"
+   },
+   {
+    "team": "鶴岡",
+    "robot": "Speedy ESCARGOT"
+   },
+   {
+    "team": "呉",
+    "robot": "クレテック"
+   },
+   {
+    "team": "佐世保",
+    "robot": "ミラクルフォース"
+   },
+   {
+    "team": "茨城",
+    "robot": "アミ張らなくてよかっぺ号"
+   },
+   {
+    "team": "サレジオ",
+    "robot": "HEISE"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "奈良A",
+    "blue": "サレジオ",
+    "red_score": 31,
+    "blue_score": 5,
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "奈良A",
+    "blue": "呉",
+    "red_score": 20,
+    "blue_score": 0,
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "神戸B",
+    "blue": "佐世保",
+    "winner": "神戸B",
+    "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "神戸B",
+    "blue": "秋田",
+    "red_score": 25,
+    "blue_score": 0,
+    "winner": "神戸B",
+    "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "奈良A",
+    "blue": "茨城",
+    "winner": "奈良A",
+    "note": "Vホール",
+    "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準決勝",
+    "red": "奈良A",
+    "blue": "神戸B",
+    "red_score": 20,
+    "blue_score": 15,
+    "winner": "奈良A",
+    "note": "終了間際に逆転",
+    "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "決勝",
+    "red": "奈良A",
+    "blue": "豊田",
+    "winner": "豊田",
+    "note": "豊田がVホール",
+    "src": "https://koberobo.stars.ne.jp/library/lib94.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib94.html",
+  "https://koberobo.stars.ne.jp/library/other_robots.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会12チーム・地区大会30チーム（近畿・関東甲信越）・試合14件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

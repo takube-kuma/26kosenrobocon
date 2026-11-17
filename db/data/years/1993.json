@@ -1,0 +1,349 @@
+{
+ "year": 1993,
+ "no": 6,
+ "game": "ステップダンス",
+ "rules": "60cmの階段を越えながら、15個のラグビーボールを相手側のフィールドへ送り込む。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "舞っちゃった号",
+     "mechanism": "プロペラの風でボールを相手陣地へ押し込む遠隔攻撃型",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "パワー・スクラム号",
+     "mechanism": "長いアームを左右に展開して押す子機。底面を広げ低重心にして転倒を防ぐ",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "ナイスキック",
+     "mechanism": "壁を切り離し小型子機が押す。子機はボールを打ち出す機構を備える",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "コロコロコロコロ",
+     "mechanism": "切り欠き付きの大型二輪タイヤで階段を越え、最上段にフックを掛けて上る",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "Third Challenger",
+     "mechanism": "箱型フレームで大量のボールを取り込み、バネの力で相手陣地へ放り投げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "のぼりマシーン",
+     "mechanism": "アーチ状アームを階段に掛けてラックで上り、アームをボールの押し出しに使う",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "和歌山キングボンビー",
+     "mechanism": "外周に突起のある大型二輪タイヤで階段を越え、大型ショベルでボールを放り投げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "シーソー君",
+     "mechanism": "縦長の壁型マシンを階段に倒して侵入、フレームごと方向転換して横移動し押す",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "エースやすかず号",
+     "mechanism": "幅広の橋から子機を下ろして階段を越え、箱型フレームでボールを抱えて押す",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "はりぼてダンディズム",
+     "mechanism": "発泡スチロール製のスロープを階段に掛けて上り、橋なしで降りる",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "孔雀",
+     "mechanism": "木製板のスロープを階段に掛けてクローラーで駆け上がり、ネット付きの帆でボールを押す",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "CONTEC",
+     "mechanism": "スライド橋から小型子機を降ろして押す。フレームがしなり着地の衝撃を和らげる",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "舞鶴A",
+     "blue": "大阪公大A",
+     "winner": "舞鶴A",
+     "note": "両者動けずジャンケン",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "舞鶴B",
+     "blue": "神戸B",
+     "winner": "神戸B",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "和歌山A",
+     "blue": "明石A",
+     "winner": "明石A",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴A",
+     "blue": "神戸A",
+     "winner": "神戸A",
+     "note": "両者動かずジャンケン",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "奈良A",
+     "blue": "明石A",
+     "red_score": 7,
+     "blue_score": 7,
+     "winner": "明石A",
+     "note": "同点から延長戦",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "神戸B",
+     "blue": "和歌山B",
+     "winner": "和歌山B",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "奈良B",
+     "blue": "和歌山B",
+     "winner": "和歌山B",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "明石A",
+     "blue": "和歌山B",
+     "winner": "和歌山B",
+     "src": "https://koberobo.stars.ne.jp/library/lib93.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "和歌山B",
+     "award": "優勝"
+    },
+    {
+     "team": "明石A",
+     "award": "準優勝"
+    },
+    {
+     "team": "奈良B",
+     "award": "アイデア賞"
+    }
+   ],
+   "champ": [
+    "和歌山B",
+    "シーソー君"
+   ],
+   "runner": [
+    "明石A",
+    "ナイスキック"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "都立品川",
+     "robot": "韋駄天君"
+    },
+    {
+     "team": "都立荒川",
+     "robot": "ガンバレトニー"
+    },
+    {
+     "team": "長岡",
+     "robot": "そいがー"
+    },
+    {
+     "team": "茨城",
+     "robot": "アミはるお"
+    },
+    {
+     "team": "長野",
+     "robot": "階段なんて誰が超えるか!'93号"
+    },
+    {
+     "team": "サレジオ",
+     "robot": "スラスラアスタ"
+    },
+    {
+     "team": "茨城",
+     "robot": "OSSY2"
+    },
+    {
+     "team": "小山",
+     "robot": "TANACK",
+     "result": "2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "OYAMA PHOENIX",
+     "result": "2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "群馬",
+     "robot": "GCT-540"
+    },
+    {
+     "team": "群馬",
+     "robot": "τ-M・Four"
+    },
+    {
+     "team": "木更津",
+     "robot": "MORO-Q"
+    },
+    {
+     "team": "木更津",
+     "robot": "ステップ・ビートル"
+    },
+    {
+     "team": "東京",
+     "robot": "ぷるぷるぷーII"
+    },
+    {
+     "team": "東京",
+     "robot": "あ゜い゛"
+    },
+    {
+     "team": "長岡",
+     "robot": "THE 極み"
+    },
+    {
+     "team": "長野",
+     "robot": "TURNING ROBOT"
+    },
+    {
+     "team": "サレジオ",
+     "robot": "スクリプト"
+    }
+   ],
+   "matches": [],
+   "awards": [
+    {
+     "team": "都立品川",
+     "award": "優勝"
+    },
+    {
+     "team": "都立荒川",
+     "award": "準優勝"
+    },
+    {
+     "team": "長野",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "サレジオ",
+     "award": "優秀賞"
+    },
+    {
+     "team": "茨城",
+     "award": "審査員特別賞"
+    }
+   ],
+   "champ": [
+    "都立品川",
+    "韋駄天君"
+   ],
+   "runner": [
+    "都立荒川",
+    "ガンバレトニー"
+   ]
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "旭川",
+    "robot": "大雪山ジムカデ号"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "DASH"
+   },
+   {
+    "team": "熊本熊本",
+    "robot": "先生には関係ないけどマサゾウ"
+   },
+   {
+    "team": "都立品川",
+    "robot": "韋駄天君"
+   },
+   {
+    "team": "豊田",
+    "robot": "見かけ倒し"
+   },
+   {
+    "team": "国際",
+    "robot": "百万石ファイター"
+   },
+   {
+    "team": "奈良B",
+    "robot": "のぼりマシーン",
+    "mechanism": "アーチ状アームを階段に掛けてラックで上り、アームをボールの押し出しに使う",
+    "src": "https://koberobo.stars.ne.jp/library/lib93.html"
+   },
+   {
+    "team": "鶴岡",
+    "robot": "折鶴"
+   },
+   {
+    "team": "福井",
+    "robot": "ルーキーデルタ"
+   },
+   {
+    "team": "和歌山"
+   }
+  ],
+  "matches": [
+   {
+    "round": "2回戦",
+    "red": "和歌山",
+    "blue": "国際",
+    "winner": "国際",
+    "src": "https://koberobo.stars.ne.jp/library/lib93.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib93.html",
+  "https://koberobo.stars.ne.jp/library/other_robots.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会10チーム・地区大会30チーム（近畿・関東甲信越）・試合9件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

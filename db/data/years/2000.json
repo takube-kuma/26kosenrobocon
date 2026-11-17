@@ -1,0 +1,268 @@
+{
+ "year": 2000,
+ "no": 13,
+ "game": "ミレニアムメッセージ",
+ "rules": "高さの異なる4つの目標に造形物を載せ、21世紀へのメッセージを披露する。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "昇鶴",
+     "mechanism": "4つの子機がポールに螺旋状に取り付いて上昇し、造形物で太陽系を表現",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "carbonism",
+     "mechanism": "4つのプロペラ付き子機がポールに取り付き、上下に飛行して造形物を置く",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "“全”人未踏",
+     "mechanism": "クローラーでハシゴを昇り、伸縮アームで造形物を置く重機型",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "アーチにかけろ！！",
+     "mechanism": "ハシゴを登り、アーチ状の橋をスライド展開して子機を走らせる",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "家鴨軍曹",
+     "mechanism": "鉄棒をラックピニオンで懸垂のように持ち上げ、レールで子機を動かす",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "にら隆昇る!",
+     "mechanism": "伸縮アームで本体を持ち上げ、ボールネジで上昇",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "嗚呼 紀州梅",
+     "mechanism": "ペットボトルロケットでワイヤーをハシゴに掛け、巻き取って昇る",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "Heidebrücke",
+     "mechanism": "クローラーでハシゴを昇り、虹色の橋を展開して子機が渡る",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "Pole Position",
+     "mechanism": "化学反応で加圧したペットボトルロケットで子機を打ち上げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "とうじろう",
+     "mechanism": "第4ポールをローラーで昇り、放射状のポールを掴んで上昇",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "KOBE土居っちらんどβ",
+     "mechanism": "フォークリフト状のリフトで子機を持ち上げ、レールで第4ポールへ",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "零式KEN160",
+     "mechanism": "ハシゴを昇り、伸縮アームで造形物を置く",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "フュージョン21",
+     "mechanism": "パンタグラフで子機を持ち上げ、ビッグタイヤでポールを挟んで取り付く",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "Professor M"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "和歌山B",
+     "blue": "大阪公大B",
+     "winner": "大阪公大B",
+     "note": "両者無得点・審査員判定2-3",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "神戸B",
+     "blue": "和歌山A",
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準々決勝",
+     "red": "大阪公大A",
+     "blue": "和歌山A",
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "近大B",
+     "blue": "和歌山A",
+     "red_score": 4,
+     "blue_score": 4,
+     "winner": "和歌山A",
+     "note": "同点・審査員判定1-4",
+     "src": "https://koberobo.stars.ne.jp/library/lib00.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "和歌山A",
+     "award": "優勝"
+    },
+    {
+     "team": "近大B",
+     "award": "準優勝"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "神戸A",
+     "award": "技術賞"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "パフォーマンス賞"
+    },
+    {
+     "team": "明石A",
+     "award": "特別賞（関西電力）"
+    }
+   ],
+   "champ": [
+    "和歌山A",
+    "にら隆昇る!"
+   ],
+   "runner": [
+    "近大B",
+    "フュージョン21"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "Octaゴン",
+     "result": "ベスト4・パフォーマンス賞、全国2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "Spider",
+     "result": "1回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "舞鶴A",
+    "robot": "昇鶴",
+    "mechanism": "4つの子機がポールに螺旋状に取り付いて上昇し、造形物で太陽系を表現",
+    "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+   },
+   {
+    "team": "和歌山A",
+    "robot": "にら隆昇る!",
+    "mechanism": "伸縮アームで本体を持ち上げ、ボールネジで上昇",
+    "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+   },
+   {
+    "team": "大阪公大B",
+    "robot": "Pole Position",
+    "mechanism": "化学反応で加圧したペットボトルロケットで子機を打ち上げ、造形物を投入",
+    "src": "https://koberobo.stars.ne.jp/library/lib00.html"
+   },
+   {
+    "team": "岐阜",
+    "robot": "Crazy Climber"
+   },
+   {
+    "team": "米子",
+    "robot": "Tsushi-Max"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "ミレニアム・リサイクラー"
+   },
+   {
+    "team": "釧路",
+    "robot": "TODICS"
+   },
+   {
+    "team": "豊田",
+    "robot": "テッペンジャック"
+   },
+   {
+    "team": "福井",
+    "robot": "ディノ・クライマー"
+   },
+   {
+    "team": "長岡",
+    "robot": "長岡猿軍団"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "舞鶴A",
+    "blue": "岐阜",
+    "red_score": 0,
+    "blue_score": 4,
+    "winner": "岐阜",
+    "note": "舞鶴は造形物を落とす",
+    "src": "https://koberobo.stars.ne.jp/library/lib00.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "和歌山A",
+    "blue": "香川詫間",
+    "winner": "香川詫間",
+    "src": "https://koberobo.stars.ne.jp/library/lib00.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "大阪公大B",
+    "blue": "長岡",
+    "winner": "長岡",
+    "src": "https://koberobo.stars.ne.jp/library/lib00.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib00.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会10チーム・地区大会16チーム（近畿・関東甲信越）・試合7件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

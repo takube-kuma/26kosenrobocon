@@ -1,0 +1,153 @@
+{
+ "year": 1990,
+ "no": 3,
+ "game": "ニュートロンスター",
+ "rules": "直径6mのリングの外側から、中心の直径2mのリング内へバスケットボールを投げ入れる。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "和歌山",
+     "robot": "ええとこつれもていこら",
+     "mechanism": "4つのボールに乗る玉乗り式",
+     "src": "https://koberobo.stars.ne.jp/library/lib90.html"
+    },
+    {
+     "team": "大阪公大",
+     "robot": "ダイナマイトパンチロボ",
+     "mechanism": "展開時に橋状のフレームを垂直に立ててボール側へ倒す（展開中に崩壊）",
+     "src": "https://koberobo.stars.ne.jp/library/lib90.html"
+    },
+    {
+     "team": "舞鶴",
+     "robot": "つるつるバッファロー"
+    },
+    {
+     "team": "明石",
+     "robot": "一撃必中！マッハシューター"
+    },
+    {
+     "team": "奈良",
+     "robot": "ゴールドフィッシュ号"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "二投流球三郎号",
+     "result": "予選落ち",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "仙台広瀬",
+    "robot": "テト坊",
+    "mechanism": "駆動輪にステアリング機構",
+    "src": "https://koberobo.stars.ne.jp/library/lib90.html"
+   },
+   {
+    "team": "有明",
+    "robot": "たまころがし号",
+    "mechanism": "3つのボールに乗る玉乗り式",
+    "src": "https://koberobo.stars.ne.jp/library/lib90.html"
+   },
+   {
+    "team": "神戸",
+    "robot": "摩耶大橋",
+    "mechanism": "前後にアームを展開し、ワイヤーで持ち上げて相手のボールを押し出す",
+    "src": "https://koberobo.stars.ne.jp/library/lib90.html"
+   },
+   {
+    "team": "和歌山",
+    "robot": "ええとこつれもていこら",
+    "mechanism": "4つのボールに乗る玉乗り式",
+    "src": "https://koberobo.stars.ne.jp/library/lib90.html"
+   },
+   {
+    "team": "久留米",
+    "robot": "スットンノビノビ号"
+   },
+   {
+    "team": "サレジオ",
+    "robot": "ピカボー"
+   },
+   {
+    "team": "松江",
+    "robot": "くにびき君"
+   },
+   {
+    "team": "茨城",
+    "robot": "2M1号"
+   },
+   {
+    "team": "豊田",
+    "robot": "ニュートロンスターに賭ける橋"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "ビッグモッコス"
+   },
+   {
+    "team": "仙台名取",
+    "robot": "とぶぞう"
+   },
+   {
+    "team": "福井",
+    "robot": "こがね虫くん"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "和歌山",
+    "blue": "仙台名取",
+    "red_score": 4,
+    "blue_score": 1,
+    "winner": "和歌山",
+    "src": "https://koberobo.stars.ne.jp/library/lib90.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "和歌山",
+    "blue": "茨城",
+    "winner": "和歌山",
+    "note": "2M1号の橋の出口をマシンで塞ぐ",
+    "src": "https://koberobo.stars.ne.jp/library/lib90.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "3回戦",
+    "red": "和歌山",
+    "blue": "有明",
+    "winner": "有明",
+    "note": "和歌山はボール4つを集めるのに手間取る",
+    "src": "https://koberobo.stars.ne.jp/library/lib90.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "神戸",
+    "blue": "福井",
+    "winner": "福井",
+    "src": "https://koberobo.stars.ne.jp/library/lib90.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib90.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会12チーム・地区大会6チーム（近畿・関東甲信越）・試合4件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

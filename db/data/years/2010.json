@@ -1,0 +1,361 @@
+{
+ "year": 2010,
+ "no": 23,
+ "game": "激走！ロボ力車",
+ "rules": "2足歩行ロボットが乗り物に乗った高専生を、連結や鍵の挿し込みを経てゴールまで運ぶ速さを競う。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "和歌山A",
+     "robot": "ウメンライダーW",
+     "mechanism": "小型高速歩行マシン。乗物は必要最低限の構造。大型熊手状の鍵を高位置に掲げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "舞鶴A",
+     "robot": "鶴車",
+     "mechanism": "人形装飾の人型歩行マシンが人力車の持ち手に連結。釣竿機構で通行手形の鍵を引っ掛ける",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "鶴ったー",
+     "mechanism": "低重心・小歩幅で安定歩行。乗物の下に入り連結。圧縮空気で飛ばすタコ足状の鍵",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "Trident Tank",
+     "mechanism": "ペットボトル72本を積み、空気式エアシリンダーで前後に歩行",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "あにまる Clothes",
+     "mechanism": "円弧状の大きな脚の重心移動で前進。船形乗物の下に歩行マシンを収めて連結",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "隼",
+     "mechanism": "展開アームで熊手状の鍵を鍵穴横に配置し、歩行マシンが押して引っ掛ける",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "ロシクル・カウソイガー！",
+     "mechanism": "胴体型乗物に取り込まれ、頭部が伸びて変形。両腕からロケットパンチ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "濱口梧稜伝",
+     "mechanism": "大きな脚の二足歩行で二人乗り。鍵を飛ばして鍵穴に差し込む",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "銀の戦車",
+     "mechanism": "旋回用ターンテーブルが歯車形状",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "激走☆加ボ車",
+     "mechanism": "大きな脚で二足歩行し乗物を後ろから押す。斜め上のアームで鍵を操縦者の上へ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "威風萄々",
+     "mechanism": "大型歩行マシン。スタートゾーンで歩行機構のピンが外れ動けず",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "Greatress-Cue",
+     "mechanism": "UFO型乗物へ駆けつける歩行マシン",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "THE・引っ越し",
+     "mechanism": "大型歩行機構で速い。木製人力車が荷物と人形を運ぶ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "獅子岩の溜息",
+     "mechanism": "大きな脚で高重心ながら速い二足歩行、後退可能。連結後の旋回もスムーズ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "近大B",
+     "blue": "和歌山A",
+     "blue_score": 27,
+     "winner": "和歌山A",
+     "note": "数字はゴールまでの秒数",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴A",
+     "blue": "和歌山A",
+     "blue_score": 27,
+     "winner": "和歌山A",
+     "note": "数字はゴールまでの秒数",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "和歌山A",
+     "blue": "奈良B",
+     "red_score": 29,
+     "winner": "和歌山A",
+     "note": "数字はゴールまでの秒数",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "大阪公大B",
+     "blue": "奈良A",
+     "winner": "大阪公大B",
+     "note": "奈良Aは終盤にゴール侵入の反則",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "和歌山A",
+     "blue": "大阪公大B",
+     "red_score": 30,
+     "winner": "和歌山A",
+     "note": "数字はゴールまでの秒数",
+     "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "和歌山A",
+     "award": "優勝"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "準優勝"
+    },
+    {
+     "team": "奈良B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "奈良A",
+     "award": "技術賞"
+    },
+    {
+     "team": "近大A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "激走賞"
+    },
+    {
+     "team": "近大B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "明石B",
+     "award": "特別賞（関西電力）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "奈良B",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "特別賞（東京エレクトロンFE）"
+    }
+   ],
+   "champ": [
+    "和歌山A",
+    "ウメンライダーW"
+   ],
+   "runner": [
+    "大阪公大B",
+    "激走☆加ボ車"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "鳴機龍",
+     "result": "2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "のってけクルパカ君",
+     "result": "2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "木花",
+     "result": "初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "river runner",
+     "result": "ベスト8",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "鹿児島",
+    "robot": "Rose Road"
+   },
+   {
+    "team": "和歌山A",
+    "robot": "ウメンライダーW",
+    "mechanism": "小型高速歩行マシン。乗物は必要最低限の構造。大型熊手状の鍵を高位置に掲げる",
+    "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+   },
+   {
+    "team": "旭川",
+    "robot": "revlis"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "Cyclone"
+   },
+   {
+    "team": "奈良A",
+    "robot": "隼",
+    "mechanism": "展開アームで熊手状の鍵を鍵穴横に配置し、歩行マシンが押して引っ掛ける",
+    "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+   },
+   {
+    "team": "岐阜",
+    "robot": "Accel"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "スチームランナー"
+   },
+   {
+    "team": "松江",
+    "robot": "Homing"
+   },
+   {
+    "team": "鶴岡",
+    "robot": "ぷりん☆A！LAもーど?"
+   },
+   {
+    "team": "長野",
+    "robot": "メタリオット"
+   },
+   {
+    "team": "群馬",
+    "robot": "Voiture"
+   },
+   {
+    "team": "仙台名取",
+    "robot": "Aruyo=Aruyo"
+   },
+   {
+    "team": "舞鶴A",
+    "robot": "鶴車",
+    "mechanism": "人形装飾の人型歩行マシンが人力車の持ち手に連結。釣竿機構で通行手形の鍵を引っ掛ける",
+    "src": "https://koberobo.stars.ne.jp/library/lib2010.html"
+   },
+   {
+    "team": "米子"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "奈良A",
+    "blue": "松江",
+    "red_score": 22,
+    "winner": "奈良A",
+    "note": "数字はゴールまでの秒数",
+    "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "奈良A",
+    "blue": "鹿児島",
+    "winner": "鹿児島",
+    "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "和歌山A",
+    "blue": "仙台名取",
+    "red_score": 33,
+    "winner": "和歌山A",
+    "note": "数字はゴールまでの秒数",
+    "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "決勝",
+    "red": "和歌山A",
+    "blue": "鹿児島",
+    "winner": "鹿児島",
+    "note": "和歌山は鍵を落としリトライ中にゴールされる",
+    "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+    "sides": "unknown"
+   },
+   {
+    "red": "舞鶴A",
+    "blue": "鶴岡",
+    "winner": "舞鶴A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+    "sides": "unknown"
+   },
+   {
+    "red": "舞鶴A",
+    "blue": "米子",
+    "winner": "舞鶴A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2010.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2010.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会14チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合11件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

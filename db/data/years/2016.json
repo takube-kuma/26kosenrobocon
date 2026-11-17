@@ -1,0 +1,202 @@
+{
+ "year": 2016,
+ "no": 29,
+ "game": "ロボット・ニューフロンティア",
+ "rules": "ロボットと3人の高専生が障害を越え、ブロックを積み上げて「砦」を築く。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "奈良A",
+     "robot": "Δ"
+    },
+    {
+     "team": "舞鶴A",
+     "robot": "鶴 THE 塔"
+    },
+    {
+     "team": "奈良B",
+     "robot": "朱雀モン"
+    },
+    {
+     "team": "明石B",
+     "robot": "あさごん"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "鵜赫乃力"
+    },
+    {
+     "team": "明石A",
+     "robot": "天地開闢"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "大阪秋の陣"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "SANADaaaN"
+    },
+    {
+     "team": "神戸A",
+     "robot": "神戸式一夜城"
+    },
+    {
+     "team": "近大A",
+     "robot": "ベルベルトベルート"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "先鶴者"
+    }
+   ],
+   "matches": [],
+   "awards": [
+    {
+     "team": "奈良A",
+     "award": "優勝"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "準優勝"
+    },
+    {
+     "team": "和歌山A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "明石A",
+     "award": "技術賞"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "和歌山A",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "和歌山B",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "神戸A",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "特別賞（田中貴金属）"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "特別賞（ローム）"
+    }
+   ],
+   "champ": [
+    "奈良A",
+    "Δ"
+   ],
+   "runner": [
+    "舞鶴A",
+    "鶴 THE 塔"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "小山座Boon",
+     "result": "2回戦・特別賞（東京エレクトロン）",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "宇都宮キャッツ",
+     "result": "地区優勝・特別賞（ローム）、全国2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "くれてぃ～ぶ",
+     "result": "特別賞（安川電機）、準優勝",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "軽銀高速道",
+     "result": "ベスト8",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "奈良",
+    "robot": "Δ（デルタ）"
+   },
+   {
+    "team": "香川高松",
+    "robot": "八機八構"
+   },
+   {
+    "team": "大分",
+    "robot": "烈覇"
+   },
+   {
+    "team": "富山本郷",
+    "robot": "プロジェクトΛ"
+   },
+   {
+    "team": "仙台名取",
+    "robot": "Marduox"
+   },
+   {
+    "team": "明石B",
+    "robot": "あさごん"
+   },
+   {
+    "team": "木更津",
+    "robot": "伊能運搬隊"
+   },
+   {
+    "team": "佐世保",
+    "robot": "黄色い開拓者"
+   },
+   {
+    "team": "都城",
+    "robot": "はにワッショイ！"
+   },
+   {
+    "team": "苫小牧",
+    "robot": "息吹丸"
+   },
+   {
+    "team": "米子",
+    "robot": "ウミ★BOYS"
+   }
+  ],
+  "matches": []
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib05-.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会11チーム・地区大会15チーム（近畿・関東甲信越・東海北陸）・試合0件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

@@ -1,0 +1,395 @@
+{
+ "year": 2007,
+ "no": 20,
+ "game": "風林火山 ロボット騎馬戦",
+ "rules": "騎馬ロボット2台のチームが、相手の旗を奪い合う。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "和歌山A",
+     "robot": "紀州軍団",
+     "mechanism": "2m伸縮ローラーを持つ2台（ロジャーアーム式とパンタグラフ式）で攻撃",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "舞鶴A",
+     "robot": "ファイアウォール",
+     "mechanism": "合体後にレールを形成し、V字状ローラーの2mアームを上下させる",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "鶴命",
+     "mechanism": "3台を高さで使い分け、3mの4関節ロングアームと取り付きアーム",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "AT-67",
+     "mechanism": "クローラーとタイヤの2台。高さ3.5mまで伸びるロジャーアームの先にローラー",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "Gibral Taco",
+     "mechanism": "固定本体から伸びるパンタグラフと紐のアーム、吸盤で張り付く城塞型",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "E=DASH",
+     "mechanism": "移動攻撃用と旗保持用の2台を連結合体し、旗を上げてローラーで攻撃",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "風歯車",
+     "mechanism": "同型2台。T字型の攻撃アームで相手の旗を振り落とす機動重視型",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "戦国牙太郎",
+     "mechanism": "紐で動くアームと、幅いっぱいに展開する網の壁を持つ城塞型",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "鉄人クネクネ",
+     "mechanism": "2台が合体し、2つのローラーと旗受けで旗を2mまで持ち上げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "旋足軽快",
+     "mechanism": "4輪オムニと4輪ステアの機動型",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "御影",
+     "mechanism": "六角ドラムから繰り出す2m超のローラーアームを各機2本搭載",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "戦国大明神",
+     "mechanism": "オムニ駆動機と直角三角形フレーム2台。フォーク状とローラー状のアーム",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "柳嵐",
+     "mechanism": "2m超の2関節アーム先のローラーで攻撃する柳と、ゴム関節で不規則に動く嵐",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "熊野Sweepin軍",
+     "mechanism": "フォーク型アームと網の機体、相手を挟んで持ち上げ振り回す機体",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "大阪公大A",
+     "blue": "近大A",
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "神戸A",
+     "blue": "近大B",
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "大阪公大B",
+     "blue": "和歌山B",
+     "winner": "大阪公大B",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "明石B",
+     "blue": "奈良A",
+     "red_score": 3,
+     "blue_score": 0,
+     "winner": "明石B",
+     "note": "審査員判定",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "舞鶴B",
+     "blue": "奈良B",
+     "red_score": 5,
+     "blue_score": 1,
+     "winner": "舞鶴B",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "和歌山A",
+     "blue": "神戸B",
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴A",
+     "blue": "明石B",
+     "winner": "舞鶴A",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴B",
+     "blue": "大阪公大A",
+     "winner": "舞鶴B",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "大阪公大B",
+     "blue": "舞鶴A",
+     "winner": "大阪公大B",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "和歌山A",
+     "blue": "舞鶴B",
+     "winner": "和歌山A",
+     "note": "34秒で決着",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "和歌山A",
+     "blue": "大阪公大B",
+     "winner": "和歌山A",
+     "note": "24秒で決着",
+     "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "和歌山A",
+     "award": "優勝"
+    },
+    {
+     "team": "和歌山B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "技術賞"
+    },
+    {
+     "team": "明石A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "神戸A",
+     "award": "風林火山賞"
+    },
+    {
+     "team": "和歌山A",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（関西電力）"
+    },
+    {
+     "team": "奈良B",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "明石A",
+     "award": "特別賞（東京エレクトロンFE）"
+    }
+   ],
+   "champ": [
+    "和歌山A",
+    "紀州軍団"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "MKI",
+     "result": "ベスト4",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "いちご大将軍",
+     "result": "地区優勝、全国2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "ああムズまあ苦痛",
+     "result": "ベスト8",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "KNIGHTS-Fuji",
+     "result": "初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "和歌山A",
+    "robot": "紀州軍団",
+    "mechanism": "全国仕様で相手の車輪下に潜り込むスカートを追加",
+    "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+   },
+   {
+    "team": "北九州",
+    "robot": "クルポン"
+   },
+   {
+    "team": "佐世保",
+    "robot": "アルシコ オッチャカス"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "Galaxy"
+   },
+   {
+    "team": "大分",
+    "robot": "ローリングぱっちんＧＯ！"
+   },
+   {
+    "team": "富山本郷",
+    "robot": "TRA"
+   },
+   {
+    "team": "一関",
+    "robot": "金色堂"
+   },
+   {
+    "team": "サレジオ",
+    "robot": "二戦錬馬"
+   },
+   {
+    "team": "旭川",
+    "robot": "NOTEC"
+   },
+   {
+    "team": "都立荒川",
+    "robot": "八歩兎尾迅"
+   },
+   {
+    "team": "沖縄",
+    "robot": "メーヴェ"
+   },
+   {
+    "team": "福井",
+    "robot": "塔迅坊"
+   },
+   {
+    "team": "舞鶴B",
+    "robot": "鶴命",
+    "mechanism": "3台を高さで使い分け、3mの4関節ロングアームと取り付きアーム",
+    "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+   },
+   {
+    "team": "大阪公大B",
+    "robot": "旋足軽快",
+    "mechanism": "4輪オムニと4輪ステアの機動型",
+    "src": "https://koberobo.stars.ne.jp/library/lib07.html"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "旭川",
+    "blue": "舞鶴B",
+    "winner": "旭川",
+    "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "福井",
+    "blue": "大阪公大B",
+    "winner": "福井",
+    "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "和歌山A",
+    "blue": "福井",
+    "red_score": 3,
+    "blue_score": 1,
+    "winner": "和歌山A",
+    "note": "審査員判定",
+    "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準決勝",
+    "red": "和歌山A",
+    "blue": "香川詫間",
+    "winner": "和歌山A",
+    "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "決勝",
+    "red": "和歌山A",
+    "blue": "北九州",
+    "red_score": 2,
+    "blue_score": 2,
+    "winner": "北九州",
+    "note": "時間切れ2-2、延長戦で決着",
+    "src": "https://koberobo.stars.ne.jp/library/lib07.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib07.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会14チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合16件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

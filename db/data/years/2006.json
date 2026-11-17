@@ -1,0 +1,317 @@
+{
+ "year": 2006,
+ "no": 19,
+ "game": "ふるさと自慢特急便",
+ "rules": "地元の特産品を模した「ふるさとオブジェ」を、堀や障害物を越えてゴールへ運ぶタイムレース。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "閑雲野鶴",
+     "mechanism": "慣性ローターの反動トルクでオブジェトレイの傾きを制御、ラック移動の橋フレーム",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "舞夢",
+     "mechanism": "木製フレーム、自転車の車輪で駆動、エアシリンダー主体で堀はエアジャンプ",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "FINAL FANたこぉ",
+     "mechanism": "ラック移動で堀越え、前に倒れ込みシーソーへ。縄跳び自動機はラックジャンプと縄回転",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "祝御前",
+     "mechanism": "スキー板状フレームで堀越え、クローラーでシーソー、縄跳び専用自動機",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "シュレーディンガーの猫",
+     "mechanism": "木製レール上を移動して堀越え、手動機が縄を回し自動機を射出して縄跳び",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "金魚鉢",
+     "mechanism": "バネによるジャンプで堀越え、腕状アーム、ポイ型の縄跳び自動機",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "ウメタロウ",
+     "mechanism": "フレーム前後展開で堀越え、縄跳び自動機、伸縮アームでオブジェを受け渡し",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "清姫",
+     "mechanism": "マシン前方にフレームを展開して堀越え",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "TASMIC",
+     "mechanism": "前後展開フレーム、オムニホイール駆動、エアジャンプ式縄跳び自動機",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "あーむすとーんろ→んぐ",
+     "mechanism": "前後展開フレーム、六輪駆動、フックで旋回、2重跳びの縄跳び自動機",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "ホスト・モスクワ",
+     "mechanism": "自動機に伸縮機構、上方から落下させて縄跳び",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "猪vator",
+     "mechanism": "四段伸縮フレーム、六輪駆動、ジャンプ式自動機と手動機の棒による縄跳び",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "Libra",
+     "mechanism": "天秤式オブジェトレイ、前後展開フレーム、クローラー駆動、エアジャンプ縄跳び",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "builder Δ",
+     "mechanism": "大型の黄色駆動輪3個、吸盤付きロボットアーム、縄跳び自動機",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "2回戦",
+     "red": "奈良A",
+     "blue": "大阪公大B",
+     "winner": "大阪公大B",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "和歌山A",
+     "blue": "近大A",
+     "winner": "近大A",
+     "note": "和歌山Aは罰退3回で失格",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "大阪公大A",
+     "blue": "大阪公大B",
+     "winner": "大阪公大B",
+     "note": "大阪公大Aはシーソーでオブジェを落下",
+     "src": "https://koberobo.stars.ne.jp/library/lib06.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "大阪公大B",
+     "award": "優勝"
+    },
+    {
+     "team": "和歌山A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "近大A",
+     "award": "技術賞"
+    },
+    {
+     "team": "神戸B",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "奈良B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "和歌山A",
+     "award": "特別賞（関西電力）"
+    },
+    {
+     "team": "神戸A",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "特別賞（ソリッドワークス）"
+    },
+    {
+     "team": "明石B",
+     "award": "特別賞（安川電機）"
+    }
+   ],
+   "champ": [
+    "大阪公大B",
+    "あーむすとーんろ→んぐ"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "とび助",
+     "result": "1回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "特急かんぴょう号",
+     "result": "ベスト4・アイデア賞、全国2回戦・特別賞（電気事業連合会）",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "侘びサビ",
+     "result": "アイデア賞、ベスト8、全国初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "茶柱",
+     "result": "初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "香川詫間",
+    "robot": "ARK",
+    "mechanism": "弓なりのレール上を動く台車式",
+    "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+   },
+   {
+    "team": "和歌山A",
+    "robot": "ウメタロウ",
+    "mechanism": "前後展開フレームで堀超え、伸縮アームでオブジェを受け渡し",
+    "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+   },
+   {
+    "team": "近大A",
+    "robot": "Libra",
+    "mechanism": "天秤式オブジェトレイ、前後展開フレーム、クローラー駆動",
+    "src": "https://koberobo.stars.ne.jp/library/lib06.html"
+   },
+   {
+    "team": "福島",
+    "robot": "伸進機鋭"
+   },
+   {
+    "team": "福井",
+    "robot": "BRIX"
+   },
+   {
+    "team": "沖縄",
+    "robot": "行進中"
+   },
+   {
+    "team": "徳山",
+    "robot": "パンダ倶楽部"
+   },
+   {
+    "team": "釧路",
+    "robot": "韋駄天"
+   },
+   {
+    "team": "都城",
+    "robot": "RainBow"
+   },
+   {
+    "team": "小山",
+    "robot": "特急かんぴょう号"
+   },
+   {
+    "team": "豊田",
+    "robot": "TOTOYA"
+   },
+   {
+    "team": "大阪公大"
+   },
+   {
+    "team": "長岡"
+   },
+   {
+    "team": "秋田"
+   }
+  ],
+  "matches": [
+   {
+    "round": "2回戦",
+    "red": "大阪公大",
+    "blue": "福島",
+    "winner": "福島",
+    "note": "大阪は堀超えでトラブル、リトライ後に再スタートできず",
+    "src": "https://koberobo.stars.ne.jp/library/lib06.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準決勝",
+    "red": "和歌山A",
+    "blue": "福島",
+    "winner": "和歌山A",
+    "src": "https://koberobo.stars.ne.jp/library/lib06.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "決勝",
+    "red": "香川詫間",
+    "blue": "和歌山A",
+    "winner": "香川詫間",
+    "note": "和歌山が脱輪し後退してタイムロス",
+    "src": "https://koberobo.stars.ne.jp/library/lib06.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "予選",
+    "red": "近大A",
+    "blue": "長岡",
+    "winner": "近大A",
+    "note": "ふるさとゴール",
+    "src": "https://koberobo.stars.ne.jp/library/lib06.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "予選",
+    "red": "近大A",
+    "blue": "秋田",
+    "winner": "近大A",
+    "note": "ふるさとゴール",
+    "src": "https://koberobo.stars.ne.jp/library/lib06.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib06.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会14チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合8件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

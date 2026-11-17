@@ -1,0 +1,237 @@
+{
+ "year": 1991,
+ "no": 4,
+ "game": "ホットタワー",
+ "rules": "2か所の台座に段ボール箱を多く、高く積み上げる。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "大阪公大",
+     "robot": "ルパン25号",
+     "mechanism": "箱を1つずつ運び、点支持のハンドで挟んで縦に置く。後部に予備のハンドと昇降機構",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "大阪公大",
+     "robot": "M63XX",
+     "mechanism": "ベルトコンベア先端のハンドで箱を1つずつ取り込み、縦に立てて重ね置きする",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "奈良",
+     "robot": "Super Ladder I号",
+     "mechanism": "箱を1つ運ぶ。ハシゴ型の昇降機構と転倒防止アーム、小型軽量で機動力が高い",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "奈良",
+     "robot": "箱びます",
+     "mechanism": "箱を1つ掴んで運ぶ",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "和歌山",
+     "robot": "和歌の山",
+     "mechanism": "大量抱きかかえ型で、最大14個の箱を一度に運ぶ",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "和歌山",
+     "robot": "和歌の海",
+     "mechanism": "20個の箱を一気に運ぶ大量抱きかかえ型",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "舞鶴",
+     "robot": "ちーちゃん",
+     "mechanism": "全箱をちり取り状の部分で一度にすくい、90度回転させて台座に置く。布カーテンで崩落を防ぐ",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "舞鶴",
+     "robot": "まんじ丸",
+     "mechanism": "卍型のアーム先端に計4つのハンドを備え、4個の箱を保持する",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "明石",
+     "robot": "快速メロンちゃん",
+     "mechanism": "子機が尺取り虫のように展開して台座を覆う妨害機。ケーブルで親機と接続",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "明石",
+     "robot": "クラベンコックテイル",
+     "mechanism": "ハンドで箱を掴み、ハンド下の水平スライド板で本体内に保持する1個運搬型",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "神戸",
+     "robot": "門塔無用",
+     "mechanism": "2軸アームで箱を最大2個内部に取り込み、1つずつ押し出して重ね置きする",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    },
+    {
+     "team": "神戸",
+     "robot": "土木403",
+     "mechanism": "高さ3mの木製クレーン型。箱の自重を利用して掴むハンド",
+     "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+    }
+   ],
+   "matches": [],
+   "awards": [
+    {
+     "team": "大阪公大",
+     "award": "優勝"
+    },
+    {
+     "team": "奈良",
+     "award": "準優勝"
+    },
+    {
+     "team": "和歌山",
+     "award": "アイデア賞"
+    }
+   ],
+   "champ": [
+    "大阪公大",
+    "ルパン25号"
+   ],
+   "runner": [
+    "奈良",
+    "Super Ladder I号"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "積ません蔵",
+     "result": "2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "HERO2",
+     "result": "1回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "一関",
+    "robot": "どっこいしょ君",
+    "mechanism": "大量抱きかかえ型",
+    "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+   },
+   {
+    "team": "木更津",
+    "robot": "しゃくとり君",
+    "mechanism": "大量抱きかかえ型",
+    "src": "https://koberobo.stars.ne.jp/library/lib91.html"
+   },
+   {
+    "team": "東京",
+    "robot": "寮さん"
+   },
+   {
+    "team": "徳山",
+    "robot": "白猫号"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "ROMIMA-II"
+   },
+   {
+    "team": "久留米",
+    "robot": "ノビノビ久留久留号"
+   },
+   {
+    "team": "スラバヤ電子工学",
+    "robot": "BIMA-X1"
+   },
+   {
+    "team": "八戸",
+    "robot": "ニコニコウマウマパクパクポットン２号"
+   },
+   {
+    "team": "鳥羽商船",
+    "robot": "DANKU"
+   },
+   {
+    "team": "佐世保",
+    "robot": "うっちゃり君"
+   },
+   {
+    "team": "沼津",
+    "robot": "Λ-'91"
+   },
+   {
+    "team": "奈良"
+   },
+   {
+    "team": "大阪公大"
+   },
+   {
+    "team": "仙台広瀬"
+   },
+   {
+    "team": "和歌山"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "奈良",
+    "blue": "一関",
+    "red_score": 1,
+    "blue_score": 8,
+    "winner": "一関",
+    "src": "https://koberobo.stars.ne.jp/library/lib91.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "大阪公大",
+    "blue": "仙台広瀬",
+    "red_score": 3,
+    "blue_score": 0,
+    "winner": "大阪公大",
+    "note": "前大会優勝チームに勝利",
+    "src": "https://koberobo.stars.ne.jp/library/lib91.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "和歌山",
+    "blue": "木更津",
+    "red_score": 0,
+    "blue_score": 7,
+    "winner": "木更津",
+    "src": "https://koberobo.stars.ne.jp/library/lib91.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "大阪公大",
+    "blue": "木更津",
+    "red_score": 1,
+    "blue_score": 4,
+    "winner": "木更津",
+    "src": "https://koberobo.stars.ne.jp/library/lib91.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib91.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会15チーム・地区大会14チーム（近畿・関東甲信越）・試合4件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

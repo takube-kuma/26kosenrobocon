@@ -1,0 +1,214 @@
+{
+ "year": 2021,
+ "no": 34,
+ "game": "超絶機巧（すごロボ）",
+ "rules": "磨いてきた「すごい技」のロボットと小道具を使ったパフォーマンスで競う。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "奈良B",
+     "robot": "二ノ鹿跳"
+    },
+    {
+     "team": "明石A",
+     "robot": "明石止水"
+    },
+    {
+     "team": "神戸A",
+     "robot": "心技体"
+    },
+    {
+     "team": "奈良A",
+     "robot": "華籃球麗"
+    },
+    {
+     "team": "近大A",
+     "robot": "一実勝創"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "機功神コウダイオー"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "怪盗イズマスク"
+    },
+    {
+     "team": "舞鶴A",
+     "robot": "fighting鳥"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "紀伊ぼおど"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "ウサギとカメ"
+    },
+    {
+     "team": "明石B",
+     "robot": "NITANIC"
+    },
+    {
+     "team": "近大B",
+     "robot": "ロボダンス部A"
+    }
+   ],
+   "matches": [],
+   "awards": [
+    {
+     "team": "奈良B",
+     "award": "優勝"
+    },
+    {
+     "team": "明石A",
+     "award": "準優勝"
+    },
+    {
+     "team": "神戸A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "奈良A",
+     "award": "技術賞"
+    },
+    {
+     "team": "近大A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "和歌山B",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "和歌山A",
+     "award": "特別賞（田中貴金属）"
+    },
+    {
+     "team": "明石B",
+     "award": "特別賞（ローム）"
+    },
+    {
+     "team": "近大B",
+     "award": "特別賞（セメダイン）"
+    }
+   ],
+   "champ": [
+    "奈良B",
+    "二ノ鹿跳"
+   ],
+   "runner": [
+    "明石A",
+    "明石止水"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "クアッドアクセラー",
+     "result": "地区準優勝・競技委員会推薦、全国優勝・ロボコン大賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "アナゴちゃん家",
+     "result": "地区デザイン賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "aider",
+     "result": "特別賞（ローム）、3位タイ（37/40点）",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "バッテリー",
+     "result": "技術賞、10位タイ（31/40点）",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "小山",
+    "robot": "クアッドアクセラー"
+   },
+   {
+    "team": "呉",
+    "robot": "鼯鼠物語"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "DBZ"
+   },
+   {
+    "team": "香川高松",
+    "robot": "8236"
+   },
+   {
+    "team": "大分",
+    "robot": "The Great Penguins Show"
+   },
+   {
+    "team": "石川",
+    "robot": "箸割観音"
+   },
+   {
+    "team": "鈴鹿",
+    "robot": "プロジェクトS"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "RUN ONE わん！"
+   },
+   {
+    "team": "沖縄",
+    "robot": "昇琉"
+   },
+   {
+    "team": "熊本熊本",
+    "robot": "ゴリラ³"
+   },
+   {
+    "team": "長野",
+    "robot": "雨のミュージカル"
+   },
+   {
+    "team": "苫小牧",
+    "robot": "ワンワンが来た！"
+   }
+  ],
+  "matches": []
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2021.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会12チーム・地区大会16チーム（近畿・関東甲信越・東海北陸）・試合0件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

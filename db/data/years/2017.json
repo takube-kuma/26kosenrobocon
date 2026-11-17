@@ -1,0 +1,475 @@
+{
+ "year": 2017,
+ "no": 30,
+ "game": "大江戸ロボット忍法帳",
+ "rules": "2台のロボットが風船を割り合い、相手の本陣またはロボット2台の風船をすべて割ると勝利。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "鶴THE刀",
+     "mechanism": "同型2台。音叉状の2本刀を上下動させて風船を割る。メカナムで高速移動",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "不鶴定",
+     "mechanism": "刀3本のマシンと2本のマシンの計2台。リンクで刀を挟み、カタパルトで飛道具も発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "C:。ミ",
+     "mechanism": "攻撃2台と防御1台。防御は釣り竿型アーム、攻撃機からは本陣を登る小型子機が出る",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "とりおん",
+     "mechanism": "飛道具2台と接近戦1台の3台構成。三角形ベースの刀マシンは急発進でウィリー走行も可能",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "万里一空",
+     "mechanism": "ヤスリ付きストローの鞭で広範囲を攻撃。刺又型機は本陣をスライド攻撃。飛道具も搭載",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "驚天動地",
+     "mechanism": "刀を振る侍型、大量飛道具を射出する機体、画像認識で自動照準する飛道具機の3台",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "熊猫道",
+     "mechanism": "リンク機構で2本の刀を上下に振るマシンと振動刀のマシン。どちらも飛道具を持つ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "奇襲犬豪",
+     "mechanism": "大型駆動輪の防御機「ポチ」と、ヤスリ付き飛道具を放つ攻撃機「チビ」の2台",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "#にゃんぽ→ちょう",
+     "mechanism": "猫型パンタグラフアームの先に刀の髭を付けた機体と、歯車で二刀流を動かす機体",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "✝ザ★幼馴染の弟✝",
+     "mechanism": "秀吉と千利休のロボ。利休から子機が飛び出し、くす玉から飛道具を降らせる",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "さるかにんぽう",
+     "mechanism": "ハチ（壁攻撃）、クリ（刺し攻撃）、カニ（矢の大量発射）の3台構成",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "飛超孔",
+     "mechanism": "回転手裏剣の飛マシンと、U字パイプと刀を持つ超マシンの2台",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "Tortoise/Spider",
+     "mechanism": "亀型は釣り竿の刀で妨害と下段攻撃、蜘蛛型はリングをスライドさせるX攻撃",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "∀ko-friends",
+     "mechanism": "主機は刀の上下突きと5mの釣り竿、24発のロケット発射。副機はリングレールで攻撃",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "舞鶴A",
+     "blue": "近大A",
+     "red_score": 10,
+     "blue_score": 0,
+     "winner": "舞鶴A",
+     "note": "0:17",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "舞鶴B",
+     "blue": "奈良A",
+     "red_score": 0,
+     "blue_score": 7,
+     "winner": "奈良A",
+     "note": "1:03",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "明石B",
+     "blue": "奈良B",
+     "red_score": 2,
+     "blue_score": 0,
+     "winner": "明石B",
+     "note": "1:18",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "神戸A",
+     "blue": "大阪公大B",
+     "red_score": 10,
+     "blue_score": 0,
+     "winner": "神戸A",
+     "note": "0:17",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "神戸B",
+     "blue": "大阪公大A",
+     "red_score": 9,
+     "blue_score": 0,
+     "winner": "神戸B",
+     "note": "0:29",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "和歌山A",
+     "blue": "近大B",
+     "red_score": 10,
+     "blue_score": 0,
+     "winner": "和歌山A",
+     "note": "0:38",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴A",
+     "blue": "明石B",
+     "red_score": 5,
+     "blue_score": 0,
+     "winner": "舞鶴A",
+     "note": "0:33",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "明石A",
+     "blue": "奈良A",
+     "red_score": 0,
+     "blue_score": 1,
+     "winner": "奈良A",
+     "note": "1:15",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "神戸A",
+     "blue": "和歌山A",
+     "red_score": 9,
+     "blue_score": 0,
+     "winner": "神戸A",
+     "note": "0:38",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "神戸B",
+     "blue": "和歌山B",
+     "red_score": 8,
+     "blue_score": 0,
+     "winner": "神戸B",
+     "note": "0:50",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "舞鶴A",
+     "blue": "神戸B",
+     "red_score": 0,
+     "blue_score": 4,
+     "winner": "神戸B",
+     "note": "0:51",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "奈良A",
+     "blue": "神戸A",
+     "red_score": 1,
+     "blue_score": 0,
+     "winner": "奈良A",
+     "note": "0:39",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "奈良A",
+     "blue": "神戸B",
+     "red_score": 1,
+     "blue_score": 0,
+     "winner": "奈良A",
+     "note": "0:38",
+     "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "奈良A",
+     "award": "優勝"
+    },
+    {
+     "team": "神戸B",
+     "award": "準優勝"
+    },
+    {
+     "team": "明石A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "神戸A",
+     "award": "技術賞"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "奈良B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "近大B",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "和歌山B",
+     "award": "特別賞（田中貴金属）"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "特別賞（ローム）"
+    }
+   ],
+   "champ": [
+    "奈良A",
+    "万里一空"
+   ],
+   "runner": [
+    "神戸B",
+    "飛超孔"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "やわらかなんたいズ",
+     "result": "準決勝",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "海底忍魚隊",
+     "result": "2回戦・デザイン賞、全国1回戦・デザイン賞・特別賞（マブチモーター）",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "Eeagle",
+     "result": "初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "嗚呼夢津 彡",
+     "result": "特別賞（東京エレクトロン）、初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "鳥羽商船",
+    "robot": "鳥羽G3",
+    "mechanism": "風船を片側に集め、巨大なスダレ状マシンでまとめて防御する作戦",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+   },
+   {
+    "team": "旭川",
+    "robot": "ばすたーちゃん2",
+    "mechanism": "防御型。移動が速く、防御柵を展開して本陣に近づかせない",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+   },
+   {
+    "team": "奈良A",
+    "robot": "万里一空",
+    "mechanism": "鞭を2本にして本陣を挟み込み、飛道具は1門に。もう1台もX字化",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+   },
+   {
+    "team": "神戸A",
+    "robot": "さるかにんぽう",
+    "mechanism": "壁機は個別アームを外し壁に特化。カニロボは出口から発射するよう改良",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+   },
+   {
+    "team": "熊本熊本",
+    "robot": "蜂部 蜂蔵",
+    "mechanism": "飛道具540発を搭載し、一斉発射で本陣を攻める",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html"
+   },
+   {
+    "team": "舞鶴"
+   },
+   {
+    "team": "都城",
+    "robot": "割れ！風船PANだ！"
+   },
+   {
+    "team": "呉",
+    "robot": "猪鹿蝶"
+   },
+   {
+    "team": "石川",
+    "robot": "疾風蟹"
+   },
+   {
+    "team": "北九州",
+    "robot": "ReVictor"
+   },
+   {
+    "team": "長岡A",
+    "robot": "新鮮組"
+   },
+   {
+    "team": "一関",
+    "robot": "しの☆もん"
+   },
+   {
+    "team": "小山",
+    "robot": "海底忍魚隊"
+   },
+   {
+    "team": "長岡B",
+    "robot": "ベアLINK"
+   },
+   {
+    "team": "大分",
+    "robot": "マリンビート"
+   },
+   {
+    "team": "福島",
+    "robot": "カエルの為に腕は鳴る"
+   },
+   {
+    "team": "長岡",
+    "robot": "ベアLINK\""
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "舞鶴",
+    "blue": "鳥羽商船",
+    "red_score": 10,
+    "blue_score": 0,
+    "winner": "舞鶴",
+    "note": "0:18",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "神戸A",
+    "blue": "都城",
+    "red_score": 0,
+    "blue_score": 4,
+    "winner": "都城",
+    "note": "0:39",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "舞鶴",
+    "blue": "旭川",
+    "red_score": 0,
+    "blue_score": 2,
+    "winner": "旭川",
+    "note": "1:00",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "奈良A",
+    "blue": "呉",
+    "red_score": 8,
+    "blue_score": 0,
+    "winner": "奈良A",
+    "note": "0:14",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "奈良A",
+    "blue": "石川",
+    "red_score": 0,
+    "blue_score": 1,
+    "winner": "石川",
+    "note": "2:04",
+    "src": "https://koberobo.stars.ne.jp/library/lib2017.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2017.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会17チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合18件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

@@ -1,0 +1,323 @@
+{
+ "year": 2009,
+ "no": 22,
+ "game": "DANCIN' COUPLE",
+ "rules": "手動の2足歩行ロボットと自動ロボットがペアになり、ダンスの出来栄えを競う。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "足鶴",
+     "mechanism": "手動機は低重心の二足歩行で胸部に空洞があり、自動機がトラスの柱を差し込んで手動機をリフトアップしステージへ持ち上げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "鶴恋慕",
+     "mechanism": "人型の男女ペア。男性（手動機）は片腕4軸以上の多関節腕と上体の上下動で舞い、女性（自動機）は扇を持って舞い髪飾りを磁力で装着",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "明石原人",
+     "mechanism": "手動機ははしご車のようなアームとペアダンス用ターンテーブル、自動機はスロープとエアシリンダー式ジャンプ",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "たこめ",
+     "mechanism": "漁師役の手動機が親ダコ役の自動機の内側に入り、自動機が持ち上げてリフト",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "その時マシンが動いた",
+     "mechanism": "手動機は低重心で歩幅の大きい二足歩行。自動機は八重桜が精霊と分離",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "機械姫",
+     "mechanism": "手動機は大股の歩行脚と伸縮アーム。自動機は多関節の腕と脚で繊細に動き上体も上下",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "ウメボーイ",
+     "mechanism": "手動機は大股の脚で素早く歩行しパンタ機構で梅を取得。自動機は三角配置の多足で回転、全国用にバネ式ローリングジャンプを追加",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "Inspire",
+     "mechanism": "手動機は腕で横からかきこむ大きな二足歩行。自動機は左右2匹のモササウルス",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "太閤一過",
+     "mechanism": "手動機は釣り竿状アームで天守を吊り上げ城の上からドッキング。自動機は城内から茶々がスライドして出る",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "オバチャンバラ",
+     "mechanism": "2軸リンクでネギを8の字に振る。自動機は下駄をニクロム線で焼き切って分離しステージへ",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "Blue Wave",
+     "mechanism": "頭を左右にスライドさせて重心を移す二足歩行",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "みんなのはばタン",
+     "mechanism": "巨大エアシリンダーを自作し、15kgのマシンをローリングジャンプさせる",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "スーとワムの冒険",
+     "mechanism": "手動機は円盤状の脚で重心移動して歩行。自動機はシリンダー付きターンテーブルでローリングジャンプ",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "伊邪那岐と伊邪那美",
+     "mechanism": "大きな四角形の脚で上体を左右にスライドさせ重心を移して歩行",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "大阪公大B",
+     "blue": "和歌山A",
+     "red_score": 40,
+     "blue_score": 60,
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴A",
+     "blue": "和歌山A",
+     "red_score": 40,
+     "blue_score": 50,
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "大阪公大A",
+     "blue": "舞鶴B",
+     "red_score": 40,
+     "blue_score": 30,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "和歌山A",
+     "blue": "奈良B",
+     "red_score": 40,
+     "blue_score": 30,
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "大阪公大A",
+     "blue": "和歌山B",
+     "red_score": 30,
+     "blue_score": 20,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "和歌山A",
+     "blue": "大阪公大A",
+     "red_score": 60,
+     "blue_score": 40,
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib09.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "和歌山A",
+     "award": "優勝"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "準優勝"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "技術賞"
+    },
+    {
+     "team": "奈良A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "ベストカップル賞"
+    },
+    {
+     "team": "明石A",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "神戸B",
+     "award": "特別賞（関西電力）"
+    },
+    {
+     "team": "奈良B",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "特別賞（東京エレクトロンFE）"
+    }
+   ],
+   "champ": [
+    "和歌山A",
+    "ウメボーイ"
+   ],
+   "runner": [
+    "大阪公大A",
+    "太閤一過"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "おに虫とナスのおどり子",
+     "result": "1回戦・デザイン賞、全国推薦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "いなず丸と雷様",
+     "result": "1回戦・特別賞（東京エレクトロンFE）",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "羽衣 伝説",
+     "result": "ベスト16",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "プロジェクトP",
+     "result": "ベスト16",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "香川詫間",
+    "robot": "SKY"
+   },
+   {
+    "team": "呉",
+    "robot": "7πRADIAN"
+   },
+   {
+    "team": "広島商船",
+    "robot": "新!!シンデレラの巻"
+   },
+   {
+    "team": "北九州",
+    "robot": "シシマイティー"
+   },
+   {
+    "team": "岐阜",
+    "robot": "Spica"
+   },
+   {
+    "team": "豊田",
+    "robot": "叢雲"
+   },
+   {
+    "team": "一関",
+    "robot": "若さま"
+   },
+   {
+    "team": "舞鶴B",
+    "robot": "鶴恋慕",
+    "mechanism": "人型の男女ペア。男性（手動機）は片腕4軸以上の多関節腕と上体の上下動で舞い、女性（自動機）は扇を持って舞い髪飾りを磁力で装着",
+    "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+   },
+   {
+    "team": "松江",
+    "robot": "跳兎"
+   },
+   {
+    "team": "都城",
+    "robot": "桜風舞姫"
+   },
+   {
+    "team": "沖縄",
+    "robot": "クラッチャーズ"
+   },
+   {
+    "team": "和歌山A",
+    "robot": "ウメボーイ",
+    "mechanism": "手動機は大股の脚で素早く歩行しパンタ機構で梅を取得。自動機は三角配置の多足で回転、全国用にバネ式ローリングジャンプを追加",
+    "src": "https://koberobo.stars.ne.jp/library/lib09.html"
+   }
+  ],
+  "matches": [
+   {
+    "round": "決勝",
+    "red": "和歌山A",
+    "blue": "広島商船",
+    "red_score": 20,
+    "blue_score": 20,
+    "winner": "広島商船",
+    "note": "同点・審査員判定0-5",
+    "src": "https://koberobo.stars.ne.jp/library/lib09.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib09.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会12チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合7件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

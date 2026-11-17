@@ -1,0 +1,355 @@
+{
+ "year": 2002,
+ "no": 15,
+ "game": "プロジェクトBOX",
+ "rules": "箱の階段を降り、箱を3か所のスポットに積み上げ、最上段の色でスポットを獲得する。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "真・TSURUホーダイ",
+     "mechanism": "タイヤ付きの可動フレームで階段を1段ずつ降り、吸盤で箱を持ち上げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "異彩",
+     "mechanism": "4パーツのマシンが段ごとにスライドして水平を保って降り、伸縮アームで箱を運ぶ",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "その時でみやが3号",
+     "mechanism": "クローラーで段差を降り、ローラーで箱をかき出して垂直ローラーで運ぶ",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "エリザベス",
+     "mechanism": "展開式の水平橋の上を2台の子機が走り、箱をスポットへ運ぶ",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "MechaRAKURI",
+     "mechanism": "低重心の平たい機体で階段を駆け下り、箱積み機構を展開",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "FLAT scorpion",
+     "mechanism": "平らになって階段を降り、折りたたみのチリトリで箱をすくう",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "にら隆",
+     "mechanism": "4足歩行で階段を1段ずつ降り、マスタースレーブ式の3吸盤アームで箱を掴む",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "紀州トルネード",
+     "mechanism": "クローラーで階段を一気に駆け降りる",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "鯨",
+     "mechanism": "曲げパイプのレールで階段をまたぎ、風船で衝撃を吸収し吸盤で箱を積む",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "W.S.ALLIGATOR",
+     "mechanism": "フレームを展開して斜め下に橋を架け、その上を本体が走って降りる",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "栗太郎",
+     "mechanism": "蟹状の脚を展開して階段をまたぎ、ロジャーアームと吸盤で箱を積む",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "さいくろう",
+     "mechanism": "リンク脚の4足歩行で階段を降り、尻尾の取り込み機構で箱を運ぶ",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "鬼襲",
+     "mechanism": "カマボコ型の機体が回転しながら階段を降り、チリトリで箱を取り込み置く",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "builder-K",
+     "mechanism": "パンタグラフで昇降し、吸引機構で箱を取り込んでスポットに置く",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "舞鶴A",
+     "blue": "奈良B",
+     "winner": "舞鶴A",
+     "note": "奈良Bの重量オーバーで不戦勝",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "舞鶴B",
+     "blue": "奈良A",
+     "winner": "舞鶴B",
+     "note": "奈良Aの重量オーバーで不戦勝",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "神戸B",
+     "blue": "和歌山A",
+     "red_score": 0,
+     "blue_score": 0,
+     "winner": "神戸B",
+     "note": "審査員判定",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "神戸A",
+     "blue": "舞鶴A",
+     "winner": "神戸A",
+     "note": "舞鶴Aが転倒",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "近大A",
+     "blue": "和歌山B",
+     "red_score": 3,
+     "blue_score": 0,
+     "winner": "近大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "神戸A",
+     "blue": "近大A",
+     "red_score": 3,
+     "blue_score": 0,
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "神戸A",
+     "blue": "近大B",
+     "red_score": 2,
+     "blue_score": 0,
+     "winner": "神戸A",
+     "note": "近大Bは脱輪後に箱が挟まり停止",
+     "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "神戸A",
+     "award": "優勝"
+    },
+    {
+     "team": "近大B",
+     "award": "準優勝"
+    },
+    {
+     "team": "近大A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "技術賞"
+    },
+    {
+     "team": "神戸B",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "神戸B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "特別賞（関西電力）"
+    },
+    {
+     "team": "和歌山A",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（ソリッドワークス）"
+    }
+   ],
+   "champ": [
+    "神戸A",
+    "栗太郎"
+   ],
+   "runner": [
+    "近大B",
+    "builder-K"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "煎車",
+     "result": "1回戦・特別賞（本田技研工業）",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "はこじゃらし",
+     "result": "地区優勝、全国3回戦・特別賞（ソリッドワークス）",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "沼津",
+    "robot": "嗚呼難",
+    "mechanism": "網付きアームで妨害し、橋をかけた子機が階段を降りる",
+    "src": "https://koberobo.stars.ne.jp/library/lib02.html"
+   },
+   {
+    "team": "北九州",
+    "robot": "Flex"
+   },
+   {
+    "team": "米子",
+    "robot": "バランスメーカー"
+   },
+   {
+    "team": "釧路",
+    "robot": "ガーリック"
+   },
+   {
+    "team": "徳山",
+    "robot": "Side Bird Phoenix"
+   },
+   {
+    "team": "鹿児島",
+    "robot": "凱旋門"
+   },
+   {
+    "team": "サレジオ",
+    "robot": "歩くんです"
+   },
+   {
+    "team": "福島",
+    "robot": "特急？天手線"
+   },
+   {
+    "team": "福井",
+    "robot": "バランスボックス"
+   },
+   {
+    "team": "小山",
+    "robot": "はこじゃらし"
+   },
+   {
+    "team": "富山射水",
+    "robot": "Fire Wall"
+   },
+   {
+    "team": "木更津",
+    "robot": "Wingspan"
+   },
+   {
+    "team": "大阪公大"
+   },
+   {
+    "team": "近大"
+   },
+   {
+    "team": "神戸"
+   },
+   {
+    "team": "香川詫間"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "大阪公大",
+    "blue": "木更津",
+    "red_score": 0,
+    "blue_score": 3,
+    "winner": "木更津",
+    "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "近大",
+    "blue": "福島",
+    "winner": "近大",
+    "note": "審査員判定",
+    "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "神戸",
+    "blue": "香川詫間",
+    "red_score": 1,
+    "blue_score": 1,
+    "winner": "神戸",
+    "note": "香川詫間は減点1、最も高い箱の差で神戸",
+    "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "近大",
+    "blue": "沼津",
+    "red_score": 0,
+    "blue_score": 2,
+    "winner": "沼津",
+    "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "神戸",
+    "blue": "釧路",
+    "red_score": 0,
+    "blue_score": 2,
+    "winner": "釧路",
+    "note": "神戸が箱を落として減点",
+    "src": "https://koberobo.stars.ne.jp/library/lib02.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib02.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会16チーム・地区大会16チーム（近畿・関東甲信越）・試合12件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

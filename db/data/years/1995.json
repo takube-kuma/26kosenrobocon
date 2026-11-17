@@ -1,0 +1,402 @@
+{
+ "year": 1995,
+ "no": 8,
+ "game": "ドリームタワー",
+ "rules": "ボールを運び、高さ3m・3段階のゴールに計20個のボールをシュートする。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "Vスペック2",
+     "mechanism": "釣り竿型アームの先端で2球を保持しVゴールを狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "BIG-BANG",
+     "mechanism": "水の電気分解で水素を発生させ点火し、爆発でボールを打ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "きりん",
+     "mechanism": "伸縮するアームでボールを掴み、吸引して持ち上げ落としてドリブルする",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "まいまい",
+     "mechanism": "円筒を縦回転させ遠心力でボールを飛ばす",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "M'sバキューン",
+     "mechanism": "左右2つの金属ローラーでボールを挟んで打ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "エスカル号",
+     "mechanism": "目の部分のローラーでボールを左右から挟んで打ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "つかむ君",
+     "mechanism": "2本の釣り竿型アームでボールを1個ずつ保持しVゴールを狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "トリンケン",
+     "mechanism": "パンタグラフ式の伸縮アームでゴールを直接狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "Single Blow",
+     "mechanism": "2関節のクレーンでVゴールに直接ボールを入れる",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "サーブ君",
+     "mechanism": "ゴムの力で振り子式ハンマーを打ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "BRÜNHILDE",
+     "mechanism": "木製の曲線ガイドによるバックスピン打ち出し機構",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "Air冗談",
+     "mechanism": "ペットボトルロケット式シリンダーで打ち出し、子機も単発ロケットで発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "EMIDWHOM"
+    },
+    {
+     "team": "近大A",
+     "robot": "ファントム"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "舞鶴A",
+     "blue": "大阪公大B",
+     "winner": "舞鶴A",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "神戸A",
+     "blue": "舞鶴B",
+     "winner": "神戸A",
+     "note": "両者無得点で再試合",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴A",
+     "blue": "和歌山B",
+     "winner": "舞鶴A",
+     "note": "ダブルVゴール",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "近大B",
+     "blue": "明石B",
+     "winner": "明石B",
+     "note": "ドリブルVゴール",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "舞鶴A",
+     "blue": "神戸B",
+     "winner": "舞鶴A",
+     "note": "ダブルVゴール",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "舞鶴A",
+     "blue": "明石B",
+     "winner": "舞鶴A",
+     "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "舞鶴A",
+     "award": "優勝"
+    },
+    {
+     "team": "明石B",
+     "award": "準優勝"
+    },
+    {
+     "team": "神戸B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "デザイン賞"
+    }
+   ],
+   "champ": [
+    "舞鶴A",
+    "Vスペック2"
+   ],
+   "runner": [
+    "明石B",
+    "きりん"
+   ]
+  },
+  "九州沖縄": {
+   "teams": [
+    {
+     "team": "久留米",
+     "robot": "だぶるくれーん"
+    },
+    {
+     "team": "有明",
+     "robot": "BS 192/2"
+    },
+    {
+     "team": "北九州",
+     "robot": "Go! Go! 剛"
+    },
+    {
+     "team": "佐世保",
+     "robot": "SKY ECHO"
+    },
+    {
+     "team": "熊本熊本",
+     "robot": "トーテムポロリン号"
+    },
+    {
+     "team": "熊本八代",
+     "robot": "ゴンドラブースターゴンちゃん"
+    },
+    {
+     "team": "大分",
+     "robot": "ターゲットポインターMO6世"
+    },
+    {
+     "team": "都城",
+     "robot": "飛高専霧島号"
+    },
+    {
+     "team": "鹿児島",
+     "robot": "もくろいき九州男号"
+    },
+    {
+     "team": "久留米",
+     "robot": "Keiserlich Erwachen"
+    },
+    {
+     "team": "有明",
+     "robot": "ダイナポン"
+    },
+    {
+     "team": "北九州",
+     "robot": "es 30"
+    },
+    {
+     "team": "佐世保",
+     "robot": "フィーバー1号"
+    },
+    {
+     "team": "熊本熊本",
+     "robot": "The Turtle Cannon"
+    },
+    {
+     "team": "熊本八代",
+     "robot": "ガガンボ"
+    },
+    {
+     "team": "大分",
+     "robot": "タカアシガニ"
+    },
+    {
+     "team": "都城",
+     "robot": "ロングロングA号"
+    },
+    {
+     "team": "鹿児島",
+     "robot": "マンモスGO!"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "パピオと亀吾郎",
+     "result": "2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "小連れ狼",
+     "result": "3回戦・ベストデザイン賞、全国ベスト8・技術賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "舞鶴A",
+    "robot": "Vスペック2",
+    "mechanism": "釣り竿型アームでダブルVゴールを狙い、先端のカイトで相手を防ぐ",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+   },
+   {
+    "team": "明石B",
+    "robot": "きりん",
+    "mechanism": "伸縮するアームでボールを掴みドリブルVゴールを狙う",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+   },
+   {
+    "team": "神戸B",
+    "robot": "BRÜNHILDE",
+    "mechanism": "木製の曲線ガイドによるバックスピン打ち出し機構",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+   },
+   {
+    "team": "米子",
+    "robot": "超恐竜II",
+    "mechanism": "トラス構造の頑丈なアームで横ぶれを抑えVゴールを狙う",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+   },
+   {
+    "team": "富山射水",
+    "robot": "鉄砲魚",
+    "mechanism": "打ち出し型で2点ゴールを狙う",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+   },
+   {
+    "team": "都立品川",
+    "robot": "V ATTACKER",
+    "mechanism": "打ち出し型",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+   },
+   {
+    "team": "鈴鹿",
+    "robot": "忍PÔ ムササビン",
+    "mechanism": "ドリブル方式でVゴールを狙う",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html"
+   },
+   {
+    "team": "福島",
+    "robot": "ユウイチロウ"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "ガガンボ"
+   },
+   {
+    "team": "弓削商船",
+    "robot": "Battle"
+   },
+   {
+    "team": "小山",
+    "robot": "子連れ狼"
+   },
+   {
+    "team": "釧路",
+    "robot": "クシロボーグ"
+   },
+   {
+    "team": "新居浜",
+    "robot": "燧のジョ－ダン"
+   },
+   {
+    "team": "都立荒川",
+    "robot": "緊急発進！！Tokyoタワー"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "神戸B",
+    "blue": "富山射水",
+    "winner": "富山射水",
+    "note": "同点後に神戸がドリブル時の接地で減点",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "明石B",
+    "blue": "都立品川",
+    "winner": "明石B",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "舞鶴A",
+    "blue": "鈴鹿",
+    "winner": "舞鶴A",
+    "note": "ダブルVゴール",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "明石B",
+    "blue": "福島",
+    "winner": "明石B",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "舞鶴A",
+    "blue": "明石B",
+    "winner": "舞鶴A",
+    "note": "ダブルVゴール",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準決勝",
+    "red": "舞鶴A",
+    "blue": "米子",
+    "winner": "米子",
+    "note": "20-20の同点後に米子が追加点",
+    "src": "https://koberobo.stars.ne.jp/library/lib95.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib95.html",
+  "https://koberobo.stars.ne.jp/library/other_robots.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会14チーム・地区大会34チーム（近畿・九州沖縄・関東甲信越）・試合12件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

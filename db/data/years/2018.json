@@ -1,0 +1,507 @@
+{
+ "year": 2018,
+ "no": 31,
+ "game": "Bottle-Flip Cafe",
+ "rules": "ロボットが8つのテーブルへペットボトルを投げて立たせた数を競う。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "鶴THE搭",
+     "mechanism": "大きなペットボトルに錘を入れ、起き上がりこぼし式に立てる。手動機は3本同時射出、自動機は5点テーブル狙い",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "鶴律→鶴帝",
+     "mechanism": "ペットボトル製ハンドで固定テーブルへ置く手動機と、定荷重バネ射出2門の自動機",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "明明明明",
+     "mechanism": "LED電飾の手動機(包んでポン射出3門)と、エアシリンダー射出の自動機",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "FLIPILM",
+     "mechanism": "水入りボトルをアンダースローでフリップ。高速三輪の手動機と2関節アームの自動機",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "一念通天",
+     "mechanism": "自動機が5点テーブルへフリップ射出。手動機は長いアームで固定テーブルと下段を狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "Pawn",
+     "mechanism": "手動機は下段カタパルトと5点への長距離フリップ射出、自動機は定荷重バネ射出",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "喫茶 紀伊さん家",
+     "mechanism": "手動機は押し出しとアンダースローを使い分け、自動機は回転しながらフリップ射出",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "江楠マキナさん",
+     "mechanism": "手動機と合体する巨大メイド型。お盆のボトルを下段へ撃ち出し、背中から5点へフリップ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "ごん - GON - ごん",
+     "mechanism": "自動機のみの割り切った設計。リミットスイッチ制御で往復し、カタパルトで大量得点",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "けもみみメイド喫茶",
+     "mechanism": "手動機は3テーブルへフリップ投擲、自動機は手動装填カタパルトで下段に連射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "VICT(OO)N",
+     "mechanism": "三匹の子豚テーマ。手動機はエアシリンダー射出3門、自動機は定荷重バネで高速往復",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "道化師と犬",
+     "mechanism": "手動機は定荷重射出3門と下段カタパルト、自動機は5点テーブルを単発で狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "K.afe",
+     "mechanism": "手動機は2枚ベルトで挟んで豪快に撃ち出す。自動機はカタパルトで2段テーブルへ発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "梅雪",
+     "mechanism": "手動機はコンベア付きアームでボトルを落として固定テーブルへ。自動機はエアー射出",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選A-1",
+     "red": "神戸B",
+     "blue": "明石B",
+     "red_score": 20,
+     "blue_score": 0,
+     "winner": "神戸B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選A-2",
+     "red": "近大B",
+     "blue": "舞鶴A",
+     "red_score": 3,
+     "blue_score": 2,
+     "winner": "近大B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選A-3",
+     "red": "近大B",
+     "blue": "明石B",
+     "red_score": 1,
+     "blue_score": 0,
+     "winner": "近大B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選A-4",
+     "red": "神戸B",
+     "blue": "舞鶴A",
+     "red_score": 25,
+     "blue_score": 3,
+     "winner": "神戸B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選B-1",
+     "red": "舞鶴B",
+     "blue": "和歌山B",
+     "red_score": 13,
+     "blue_score": 13,
+     "winner": "舞鶴B",
+     "note": "5点テーブルの得点数で勝利",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選B-2",
+     "red": "神戸A",
+     "blue": "大阪公大B",
+     "red_score": 24,
+     "blue_score": 1,
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選B-3",
+     "red": "和歌山B",
+     "blue": "大阪公大B",
+     "red_score": 12,
+     "blue_score": 3,
+     "winner": "和歌山B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選B-4",
+     "red": "神戸A",
+     "blue": "舞鶴B",
+     "red_score": 34,
+     "blue_score": 31,
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選C-1",
+     "red": "和歌山A",
+     "blue": "奈良A",
+     "red_score": 8,
+     "blue_score": 8,
+     "winner": "和歌山A",
+     "note": "5点テーブルの得点数で勝利",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選C-2",
+     "red": "大阪公大A",
+     "blue": "奈良A",
+     "red_score": 29,
+     "blue_score": 20,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選C-3",
+     "red": "大阪公大A",
+     "blue": "和歌山A",
+     "red_score": 23,
+     "blue_score": 8,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選D-1",
+     "red": "奈良B",
+     "blue": "近大A",
+     "red_score": 17,
+     "blue_score": 0,
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選D-2",
+     "red": "明石A",
+     "blue": "奈良B",
+     "red_score": 15,
+     "blue_score": 2,
+     "winner": "明石A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選D-3",
+     "red": "明石A",
+     "blue": "近大A",
+     "red_score": 4,
+     "blue_score": 0,
+     "winner": "明石A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝1",
+     "red": "神戸A",
+     "blue": "明石A",
+     "red_score": 23,
+     "blue_score": 3,
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝2",
+     "red": "大阪公大A",
+     "blue": "神戸B",
+     "red_score": 29,
+     "blue_score": 23,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "神戸A",
+     "blue": "大阪公大A",
+     "red_score": 28,
+     "blue_score": 23,
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "神戸A",
+     "award": "優勝"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "準優勝"
+    },
+    {
+     "team": "和歌山B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "技術賞"
+    },
+    {
+     "team": "明石A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "明石B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "奈良A",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "和歌山B",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "特別賞（田中貴金属）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（ローム）"
+    }
+   ],
+   "champ": [
+    "神戸A",
+    "VICT(OO)N"
+   ],
+   "runner": [
+    "大阪公大A",
+    "ごん - GON - ごん"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "ミツ星ガーデンズ",
+     "result": "予選リーグ・特別賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "マイド小山軒",
+     "result": "予選リーグ・デザイン賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "Silvalet",
+     "result": "予選リーグ1勝1敗",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "∫dx",
+     "result": "特別賞（東京エレクトロン）、予選リーグ0勝2敗",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "明石A",
+    "robot": "明明明明",
+    "mechanism": "射出機構を5つに増設。手動機は固定テーブル3つすべてに発射、自動機も射出機構5つ",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+   },
+   {
+    "team": "和歌山B",
+    "robot": "江楠マキナさん",
+    "mechanism": "顔が立体化。背中のボトルを5点テーブルへ2回フリップさせて発射する",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+   },
+   {
+    "team": "神戸A",
+    "robot": "VICT(OO)N",
+    "mechanism": "射出を定荷重バネに統一し、レーザ距離センサ2基で移動テーブルを検知して安定Vゴールを狙う",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+   },
+   {
+    "team": "大阪公大A",
+    "robot": "ごん - GON - ごん",
+    "mechanism": "自動機のみで毎試合20点後半を安定して取得",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "Arch",
+    "mechanism": "自動機は6秒で5点を獲得し、10連発も見せる。手動機は再装填に時間がかかるタイプ",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+   },
+   {
+    "team": "国際",
+    "robot": "森の革命",
+    "mechanism": "2段テーブルの下段の1点を稼ぐタイプ",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "Barista",
+    "mechanism": "左右から10本まとめて発射する自動機。1回戦60点、2回戦55点を記録した全国最高クラス",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+   },
+   {
+    "team": "鈴鹿",
+    "robot": "ノーチラス",
+    "mechanism": "画像認識や人工知能などの技術を搭載。2段テーブル側面から上下段へ発射",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html"
+   },
+   {
+    "team": "一関",
+    "robot": "一角"
+   },
+   {
+    "team": "函館",
+    "robot": "Café Rivage"
+   },
+   {
+    "team": "香川高松",
+    "robot": "かえるカフェ"
+   },
+   {
+    "team": "広島商船",
+    "robot": "紫電☆一閃"
+   },
+   {
+    "team": "佐世保",
+    "robot": "火種"
+   },
+   {
+    "team": "都城",
+    "robot": "曲鯨師！ホエールくん！"
+   },
+   {
+    "team": "福島",
+    "robot": "ベスト・ペット"
+   },
+   {
+    "team": "呉",
+    "robot": "Vic鳥"
+   },
+   {
+    "team": "旭川",
+    "robot": "メイド in 旭川"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦1",
+    "red": "明石A",
+    "blue": "鈴鹿",
+    "red_score": 3,
+    "blue_score": 3,
+    "winner": "鈴鹿",
+    "note": "同点・審査員判定4-1",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦8",
+    "red": "和歌山B",
+    "blue": "国際",
+    "red_score": 14,
+    "blue_score": 13,
+    "winner": "和歌山B",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦10",
+    "red": "神戸A",
+    "blue": "香川詫間",
+    "red_score": 40,
+    "blue_score": 33,
+    "winner": "神戸A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦6",
+    "red": "和歌山B",
+    "blue": "旭川",
+    "red_score": 11,
+    "blue_score": 16,
+    "winner": "旭川",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦7",
+    "red": "神戸A",
+    "blue": "熊本八代",
+    "red_score": 46,
+    "blue_score": 55,
+    "winner": "熊本八代",
+    "src": "https://koberobo.stars.ne.jp/library/lib2018.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2018.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会17チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合22件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

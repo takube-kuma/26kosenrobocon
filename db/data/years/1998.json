@@ -1,0 +1,352 @@
+{
+ "year": 1998,
+ "no": 11,
+ "game": "生命上陸",
+ "rules": "種子や卵を10の島へ投げたり転がしたりして、島にとどまった生命の数で得点を競う。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "旋鶴",
+     "mechanism": "鶴形の風船生命を出す。トラス状の肉抜きフレーム",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "コミカルトレイン",
+     "mechanism": "タイマー制御の自走種子から電車の生命を滑り出し、ガス矢を撃ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "SPIELZEUG",
+     "mechanism": "マイコン制御の種子がフィールド中央を走行し、両サイドから生命を落とす",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "婆娑羅",
+     "mechanism": "妨害用の壁がスライド展開し、小型の生命2つを出す。パンタグラフで高さを確保",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "B-YAN",
+     "mechanism": "船型の種子が帯を広げながら進み、七福神人形の生命を島に上陸させる",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "COSMO Factor",
+     "mechanism": "黒い自走種子から太陽系惑星型の生命が現れる。回転スリットで距離を測る",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "キング オブ ココナッツ",
+     "mechanism": "自走するココナッツが割れ、釣り竿の木と種を展開する",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "LIFE SOURCE",
+     "mechanism": "色センサーで島に止まる自走卵から、ニワトリ風船が膨らむ",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "SOLAR",
+     "mechanism": "吸盤付きの矢型種子と、転がる筒型種子の2方式で得点する",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "combination",
+     "mechanism": "自走種子が展開し、半球の生命で10点の島を覆う。ローラーでロケット型種子を撃つ",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "りべんじろう",
+     "mechanism": "アームで矢を保持して回転投げする。矢羽に鳩の羽を使用",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "双頭龍",
+     "mechanism": "2本のレールから種子が滑り、色センサーで島を検知してファンで膨らませる",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "98式光秀",
+     "mechanism": "5つのスロープから種子を滑らせ、ボールネジで島までの距離を測る",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "サマーバケーション",
+     "mechanism": "台車から花型の生命を落とし、自走するネズミ型の生命を島に上陸させる",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "舞鶴B",
+     "blue": "神戸B",
+     "red_score": 0,
+     "blue_score": -1,
+     "winner": "舞鶴B",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "奈良A",
+     "blue": "明石A",
+     "red_score": 12,
+     "blue_score": 0,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "大阪公大A",
+     "blue": "和歌山A",
+     "red_score": 0,
+     "blue_score": 0,
+     "winner": "大阪公大A",
+     "note": "審査員判定",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴B",
+     "blue": "大阪公大B",
+     "winner": "舞鶴B",
+     "note": "審査員判定",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "奈良A",
+     "blue": "神戸A",
+     "red_score": 3,
+     "blue_score": 0,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "近大A",
+     "blue": "大阪公大A",
+     "red_score": 15,
+     "blue_score": 2,
+     "winner": "近大A",
+     "note": "近畿大会の最高点",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "近大B",
+     "blue": "奈良B",
+     "red_score": 12,
+     "blue_score": 0,
+     "winner": "近大B",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "舞鶴B",
+     "blue": "近大B",
+     "red_score": 0,
+     "blue_score": -1,
+     "winner": "舞鶴B",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "奈良A",
+     "blue": "近大A",
+     "red_score": 7,
+     "blue_score": 0,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "奈良A",
+     "blue": "舞鶴B",
+     "red_score": 3,
+     "blue_score": 0,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "奈良A",
+     "award": "優勝"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "準優勝"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "近大A",
+     "award": "技術賞"
+    },
+    {
+     "team": "近大B",
+     "award": "芸術賞"
+    }
+   ],
+   "champ": [
+    "奈良A",
+    "B-YAN"
+   ],
+   "runner": [
+    "舞鶴B",
+    "コミカルトレイン"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "ジンソくん",
+     "result": "1回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "いろとりドリ",
+     "result": "1回戦・アイデア賞、全国1回戦・芸術賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "奈良A",
+    "robot": "B-YAN",
+    "mechanism": "全国仕様で種子とマシンの速度が向上。船型種子が高速で島に上陸する",
+    "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+   },
+   {
+    "team": "大阪公大A",
+    "robot": "SOLAR",
+    "mechanism": "吸盤付きの矢型種子と、転がる筒型種子の2方式で得点する",
+    "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+   },
+   {
+    "team": "近大B",
+    "robot": "サマーバケーション",
+    "mechanism": "台車に白い幕を追加し、蝶とピンクの印を生命として展開する",
+    "src": "https://koberobo.stars.ne.jp/library/lib98.html"
+   },
+   {
+    "team": "豊田",
+    "robot": "生命侵略"
+   },
+   {
+    "team": "松江",
+    "robot": "小さな栗の木"
+   },
+   {
+    "team": "釧路",
+    "robot": "八面六臂"
+   },
+   {
+    "team": "旭川",
+    "robot": "ＭＡＣＨ－ＣＨＡＮ１号"
+   },
+   {
+    "team": "八戸",
+    "robot": "イカロス"
+   },
+   {
+    "team": "小山",
+    "robot": "いろとりドリ"
+   },
+   {
+    "team": "長岡",
+    "robot": "越号ＮＡＧＡＯＫＡ"
+   },
+   {
+    "team": "広島商船",
+    "robot": "新竹取物語"
+   },
+   {
+    "team": "米子",
+    "robot": "Hello Baby"
+   },
+   {
+    "team": "都城",
+    "robot": "Land Schaffen"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "大阪公大A",
+    "blue": "小山",
+    "red_score": 16,
+    "blue_score": 11,
+    "winner": "大阪公大A",
+    "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "近大B",
+    "blue": "米子",
+    "red_score": 0,
+    "winner": "米子",
+    "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "大阪公大A",
+    "blue": "長岡",
+    "winner": "長岡",
+    "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "奈良A",
+    "blue": "都城",
+    "winner": "都城",
+    "note": "奈良は種子が帯に引っかかり失格",
+    "src": "https://koberobo.stars.ne.jp/library/lib98.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib98.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会13チーム・地区大会16チーム（近畿・関東甲信越）・試合14件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

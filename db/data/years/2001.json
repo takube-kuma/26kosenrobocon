@@ -1,0 +1,302 @@
+{
+ "year": 2001,
+ "no": 14,
+ "game": "Happy Birthday 39",
+ "rules": "フィールド上の27本の円筒（ろうそく）を自陣に多く立て、炎を灯す。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "STRENGTH",
+     "mechanism": "平型と高型の2台構成。2段重ねを狙い、炎は自走式",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "一鶴千金",
+     "mechanism": "親機と子機6台の分離型。子機が円筒を運び、平型の子機が引っ掛けて持ち上げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "beaver",
+     "mechanism": "3段展開マシン。孫機がローラーで立った円筒を持ち上げスポットに置く",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "PALAESTRA",
+     "mechanism": "低重心の平型。ベルトで円筒をかき込み、エアシリンダーでマシンごと立てる",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "2001年宇宙の族",
+     "mechanism": "掴んだ3本を切り離し自立させる子機。親機は45度軸の回転で円筒を立てる",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "THE・TORCH",
+     "mechanism": "炎を付けた円筒ごとスポットをショートケーキゾーンへ押し込む",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "にら隆と風船",
+     "mechanism": "ヘリウム風船で円筒を立てる。子機が風船を付けてショートケーキゾーンへ押す",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "んぎっしりぎっしり",
+     "mechanism": "三角柱型。正面で5本をまとめて立て、背面の昇降ハンドで段重ねや炎設置",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "Pattern",
+     "mechanism": "屏風型の分離機で寝た円筒を起こす。本体は2本取り込み2段重ねを狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "CANDLE LIFE",
+     "mechanism": "独立した2ハンドで立った円筒を昇降させ2段重ね",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "ちぇんじろう",
+     "mechanism": "前後で連結する2台の合体機。リンクアームで円筒を回収し2段重ねを狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "五龍",
+     "mechanism": "マイコンを使わずリレーシーケンスで自動制御。ローラーで寝た円筒を立てる",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "age of 40",
+     "mechanism": "ビッグタイヤで立った円筒を取り込み持ち上げ、3段積みを狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "Fellow",
+     "mechanism": "クリップで円筒を挟みワイヤーで吊り上げ、タワー内で落下させて3段積み",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "明石A",
+     "blue": "和歌山B",
+     "red_score": 0,
+     "blue_score": 5,
+     "winner": "和歌山B",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "舞鶴B",
+     "blue": "神戸B",
+     "red_score": 0,
+     "blue_score": 0,
+     "winner": "舞鶴B",
+     "note": "審査員判定",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "大阪公大A",
+     "blue": "舞鶴A",
+     "red_score": 9,
+     "blue_score": 3,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "大阪公大A",
+     "blue": "和歌山B",
+     "red_score": 3,
+     "blue_score": 1,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "大阪公大A",
+     "blue": "舞鶴B",
+     "red_score": 3,
+     "blue_score": 0,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib01.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "大阪公大A",
+     "award": "優勝"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "準優勝"
+    },
+    {
+     "team": "和歌山A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "神戸B",
+     "award": "技術賞"
+    },
+    {
+     "team": "和歌山B",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "特別賞（関西電力）"
+    }
+   ],
+   "champ": [
+    "大阪公大A",
+    "Pattern"
+   ],
+   "runner": [
+    "舞鶴B",
+    "一鶴千金"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "MAST＆SKY-HAT",
+     "result": "地区準優勝",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "カブ虫",
+     "result": "地区優勝、全国2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "舞鶴B",
+    "robot": "一鶴千金",
+    "mechanism": "親機と子機6台の分離型。子機が円筒を運び、平型の子機が引っ掛けて持ち上げる",
+    "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+   },
+   {
+    "team": "仙台広瀬",
+    "robot": "transfix",
+    "mechanism": "串刺し型マシンで速攻。4段重ねを成功させた",
+    "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+   },
+   {
+    "team": "大阪公大A",
+    "robot": "Pattern",
+    "mechanism": "屏風型の分離機で寝た円筒を起こす。全国仕様では屏風の展開部を小さくした",
+    "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "チャレンジャー"
+   },
+   {
+    "team": "福井",
+    "robot": "タワーフォース"
+   },
+   {
+    "team": "豊田",
+    "robot": "点火無敵"
+   },
+   {
+    "team": "広島商船",
+    "robot": "聞いてね！キリンさん"
+   },
+   {
+    "team": "北九州",
+    "robot": "すごいぞぉ"
+   },
+   {
+    "team": "サレジオ",
+    "robot": "ド壇場turn"
+   },
+   {
+    "team": "佐世保",
+    "robot": "Moon Walker"
+   },
+   {
+    "team": "大島商船",
+    "robot": "オロチ３兄弟"
+   },
+   {
+    "team": "和歌山B",
+    "robot": "んぎっしりぎっしり",
+    "mechanism": "三角柱型。正面で5本をまとめて立て、背面の昇降ハンドで段重ねや炎設置",
+    "src": "https://koberobo.stars.ne.jp/library/lib01.html"
+   },
+   {
+    "team": "東京"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "舞鶴B",
+    "blue": "仙台広瀬",
+    "red_score": 1,
+    "blue_score": 8,
+    "winner": "仙台広瀬",
+    "note": "transfixが4段重ね",
+    "src": "https://koberobo.stars.ne.jp/library/lib01.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "和歌山B",
+    "blue": "東京",
+    "red_score": 0,
+    "blue_score": 2,
+    "winner": "東京",
+    "src": "https://koberobo.stars.ne.jp/library/lib01.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "大阪公大A",
+    "blue": "北九州",
+    "red_score": 0,
+    "blue_score": 36,
+    "winner": "北九州",
+    "src": "https://koberobo.stars.ne.jp/library/lib01.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib01.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会13チーム・地区大会16チーム（近畿・関東甲信越）・試合8件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

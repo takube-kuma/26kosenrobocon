@@ -1,0 +1,333 @@
+{
+ "year": 2012,
+ "no": 25,
+ "game": "ベスト・ペット",
+ "rules": "ペット・ロボットがコントローラーを使わず伴走者と協力し、ボールを9つのゴールに入れる玉入れ競技。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "鶴側努",
+     "mechanism": "2つのWebカメラでマーカーを読み取り追従。ゴールは9つの直線カタパルトで3個ずつ発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "鶴投虫",
+     "mechanism": "3つの距離センサで追従、四つ葉のクローバー内の近接センサで操作、3連ローラーで発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "ぷるぽっと",
+     "mechanism": "多足脚で画像センサの赤板を追従、タコ壺型3×3のゴムパチンコで発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "hematite",
+     "mechanism": "コの字型センサで操作、前後に釣り竿9本を伸ばしてシュート",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "iRod",
+     "mechanism": "近接センサと磁気センサで操作、9本の釣り竿を直線状に伸ばしてシュート",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "MechaPon",
+     "mechanism": "壁沿いの固定ルートを周回、9ポケットフレームをゴール横に伸ばして流し込み",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "八咫等烏",
+     "mechanism": "独立ステアの3つの多足歩行部、固定ルート選択、9個のローラーで発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "みぱんだ",
+     "mechanism": "エアシリンダー歩行、固定周回ルート、9本の釣り竿をエアで伸ばしてシュート",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "はしれ！たこやきくん",
+     "mechanism": "発光部と受光センサを団扇で遮って操作、9つのエアシリンダーカタパルトで発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "すこ→ぴおんず",
+     "mechanism": "2台のサソリ型機、回収機がダクトファンで風を送りボールを集め、9本の釣り竿で発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "Winning Shot",
+     "mechanism": "近接センサに団扇をかざして操作、3列のローラーで発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "清盛with望月",
+     "mechanism": "4足歩行、ターンテーブルで旋回、超音波センサで操作、3門のローラーで発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "走丸&投助9",
+     "mechanism": "分離型、犬型回収機を近接センサで追尾、発射機が9ローラーにボールを投入",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "C・JGS",
+     "mechanism": "櫓型の大型機、ゴール機構を3m以上に上昇、距離センサで追従、レール5本で発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "舞鶴A",
+     "blue": "近大A",
+     "winner": "近大A",
+     "note": "1点差",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "奈良A",
+     "blue": "和歌山A",
+     "winner": "和歌山A",
+     "note": "4秒差",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "明石B",
+     "blue": "大阪公大B",
+     "winner": "大阪公大B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "和歌山B",
+     "blue": "奈良B",
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "大阪公大B",
+     "blue": "奈良B",
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "近大A",
+     "blue": "和歌山A",
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "和歌山A",
+     "blue": "奈良B",
+     "winner": "和歌山A",
+     "note": "和歌山Aが34秒で勝利",
+     "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "和歌山A",
+     "award": "優勝"
+    },
+    {
+     "team": "奈良B",
+     "award": "準優勝"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "明石B",
+     "award": "技術賞"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "奈良A",
+     "award": "ベスト・ペット賞"
+    },
+    {
+     "team": "明石B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "神戸A",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "特別賞（田中貴金属）"
+    }
+   ],
+   "champ": [
+    "和歌山A",
+    "八咫等烏"
+   ],
+   "runner": [
+    "奈良B",
+    "MechaPon"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "フレンドルフィン",
+     "result": "地区優勝、全国ベスト8（ワイルドカード）・ロボコン大賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "にゃんちBOX",
+     "result": "2回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "V-to R",
+     "result": "初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "あひるん",
+     "result": "初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "一関",
+    "robot": "椀子兄弟"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "MOOSTAR"
+   },
+   {
+    "team": "鈴鹿",
+    "robot": "Emperor"
+   },
+   {
+    "team": "旭川",
+    "robot": "旭"
+   },
+   {
+    "team": "大阪公大B",
+    "robot": "すこ→ぴおんず",
+    "mechanism": "2台のサソリ型機、回収機がダクトファンで風を送りボールを集め、9本の釣り竿で発射",
+    "src": "https://koberobo.stars.ne.jp/library/lib2012.html"
+   },
+   {
+    "team": "津山",
+    "robot": "ソウペン１号"
+   },
+   {
+    "team": "都城",
+    "robot": "追跡！完璧リン"
+   },
+   {
+    "team": "小山",
+    "robot": "フレンドルフィン"
+   },
+   {
+    "team": "有明",
+    "robot": "キャロッ兎"
+   },
+   {
+    "team": "仙台名取",
+    "robot": "ササリー"
+   },
+   {
+    "team": "鹿児島"
+   },
+   {
+    "team": "奈良"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "大阪公大B",
+    "blue": "鹿児島",
+    "winner": "大阪公大B",
+    "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "大阪公大B",
+    "blue": "鈴鹿",
+    "winner": "鈴鹿",
+    "note": "数秒差",
+    "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "奈良",
+    "blue": "熊本八代",
+    "winner": "熊本八代",
+    "note": "熊本八代が24秒でパーフェクト",
+    "src": "https://koberobo.stars.ne.jp/library/lib2012.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2012.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会12チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合10件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

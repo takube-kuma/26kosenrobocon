@@ -1,0 +1,382 @@
+{
+ "year": 1997,
+ "no": 10,
+ "game": "花開蝶来",
+ "rules": "プランターに花を咲かせ、蝶を飛ばして相手の花を自チームのものにする陣取り合戦。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "和歌山A",
+     "robot": "Dream-maker",
+     "mechanism": "アルミ製の滑り台で花を発射し、パラシュート型の蝶をファンで飛ばす",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "舞鶴A",
+     "robot": "翔鶴",
+     "mechanism": "大型ターンテーブルの花をリフトで持ち上げて落とし射出、下部から蝶を発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "EGG MEN",
+     "mechanism": "卵型の花をレールから発射、送風で浮いてプランター上空に侵入、紙の蝶も飛ばす",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "浪速5秒前",
+     "mechanism": "ゴムで開く五色の花をローラーで射出し、蝶も飛ばす",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "花嫁",
+     "mechanism": "送風で膨らむハート形の花びらを開花させ、腕で花を投げる",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "Butterflizer",
+     "mechanism": "花射出装置と蝶送風機を搭載、高速走行に特化",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "えれふぁんと のーず",
+     "mechanism": "ゴム式カタパルトで巨大な花を射出、象型の子機から蝶を吹き出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "ひまわり刑事",
+     "mechanism": "巨大なひまわりの花を分離・自走させ、支柱に取り付ける",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "SPRING MAGIC",
+     "mechanism": "3種類の蝶を3段の発射装置で撃ち出す",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "花咲かこぞう",
+     "mechanism": "滑り台から花を落とし、洗濯ばさみのバネで支柱に固定する",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "花とてふてふ",
+     "mechanism": "螺旋レールで花を滑らせて発射、ナトリウムで糸を焼き切って開花させる",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "THIRD STAGE",
+     "mechanism": "蒸籠状の花をローラーで左右交互に装填・発射する",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "フラワーコースター",
+     "mechanism": "二段ラックに吊るした花と上段に載せた羽ばたく蝶",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "なんでやねん",
+     "mechanism": "大プランター用の花2個をローラー射出と落下で使い分け、蝶を叩いて飛ばす",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "神戸A",
+     "blue": "和歌山A",
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "舞鶴A",
+     "blue": "和歌山A",
+     "winner": "和歌山A",
+     "note": "舞鶴Aは進入禁止違反で1点減点",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "和歌山A",
+     "blue": "舞鶴B",
+     "winner": "和歌山A",
+     "src": "https://koberobo.stars.ne.jp/library/lib97.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "和歌山A",
+     "award": "優勝"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "準優勝"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "技術賞"
+    }
+   ],
+   "champ": [
+    "和歌山A",
+    "Dream-maker"
+   ],
+   "runner": [
+    "舞鶴B",
+    "EGG MEN"
+   ]
+  },
+  "中国": {
+   "teams": [
+    {
+     "team": "米子",
+     "robot": "てふてふ君"
+    },
+    {
+     "team": "米子",
+     "robot": "大将浪漫"
+    },
+    {
+     "team": "徳山",
+     "robot": "快速猛虎エアロスミスI世"
+    },
+    {
+     "team": "津山",
+     "robot": "フローパットンツアラーV"
+    },
+    {
+     "team": "松江",
+     "robot": "えどごじん"
+    },
+    {
+     "team": "津山",
+     "robot": "乱舞"
+    },
+    {
+     "team": "広島商船",
+     "robot": "ミツヤマMk-II"
+    },
+    {
+     "team": "呉",
+     "robot": "Fraulein"
+    },
+    {
+     "team": "宇部",
+     "robot": "花っちょターボ2号"
+    },
+    {
+     "team": "大島商船",
+     "robot": "のーむ"
+    },
+    {
+     "team": "松江",
+     "robot": "PAL"
+    },
+    {
+     "team": "広島商船",
+     "robot": "キサオ"
+    },
+    {
+     "team": "呉",
+     "robot": "スカットフラワーβII"
+    },
+    {
+     "team": "徳山",
+     "robot": "コンパス21"
+    },
+    {
+     "team": "宇部",
+     "robot": "在来線(各駅停車)"
+    },
+    {
+     "team": "大島商船",
+     "robot": "てるてるくん"
+    }
+   ],
+   "matches": [],
+   "awards": [
+    {
+     "team": "米子",
+     "award": "優勝"
+    },
+    {
+     "team": "米子",
+     "award": "準優勝"
+    },
+    {
+     "team": "徳山",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "津山",
+     "award": "技術賞"
+    }
+   ],
+   "champ": [
+    "米子",
+    "てふてふ君"
+   ],
+   "runner": [
+    "米子",
+    "大将浪漫"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "花蝶Who get you?",
+     "result": "1回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "TANA五っち",
+     "result": "1回戦・優秀賞、全国1回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "大阪公大B",
+    "robot": "浪速5秒前",
+    "mechanism": "前方のガイド棒で距離を測り、花の命中率を高めた",
+    "src": "https://koberobo.stars.ne.jp/library/lib97.html"
+   },
+   {
+    "team": "北九州",
+    "robot": "芋虫大紀行号"
+   },
+   {
+    "team": "富山射水",
+    "robot": "花さかG3"
+   },
+   {
+    "team": "都立荒川",
+    "robot": "花咲かEgg★"
+   },
+   {
+    "team": "弓削商船",
+    "robot": "投宙花走"
+   },
+   {
+    "team": "一関",
+    "robot": "高飛車"
+   },
+   {
+    "team": "都城",
+    "robot": "Mの国"
+   },
+   {
+    "team": "久留米",
+    "robot": "eden"
+   },
+   {
+    "team": "福井",
+    "robot": "G.G.ウオーカー"
+   },
+   {
+    "team": "釧路",
+    "robot": "キリキリマイ"
+   },
+   {
+    "team": "茨城",
+    "robot": "レーズン・バターロール"
+   },
+   {
+    "team": "舞鶴"
+   },
+   {
+    "team": "和歌山"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "舞鶴",
+    "blue": "茨城",
+    "red_score": 0,
+    "winner": "茨城",
+    "note": "舞鶴は卵の打ち出しに失敗",
+    "src": "https://koberobo.stars.ne.jp/library/lib97.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "大阪公大B",
+    "blue": "釧路",
+    "winner": "大阪公大B",
+    "note": "全プランターを獲得しパーフェクト",
+    "src": "https://koberobo.stars.ne.jp/library/lib97.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "和歌山",
+    "blue": "都立荒川",
+    "winner": "和歌山",
+    "src": "https://koberobo.stars.ne.jp/library/lib97.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "大阪公大B",
+    "blue": "弓削商船",
+    "winner": "大阪公大B",
+    "src": "https://koberobo.stars.ne.jp/library/lib97.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "和歌山",
+    "blue": "福井",
+    "red_score": 5,
+    "blue_score": 5,
+    "winner": "福井",
+    "note": "競技点は同点、芸術点で福井",
+    "src": "https://koberobo.stars.ne.jp/library/lib97.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "大阪公大B",
+    "blue": "都城",
+    "red_score": 14,
+    "blue_score": 13,
+    "winner": "大阪公大B",
+    "src": "https://koberobo.stars.ne.jp/library/lib97.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib97.html",
+  "https://koberobo.stars.ne.jp/library/other_robots.html",
+  "http://tanack.la.coocan.jp/rekisi.htm"
+ ],
+ "coverage": "全国大会13チーム・地区大会32チーム（近畿・中国・関東甲信越）・試合9件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

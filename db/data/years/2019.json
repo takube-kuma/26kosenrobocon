@@ -1,0 +1,524 @@
+{
+ "year": 2019,
+ "no": 32,
+ "game": "らん♪RUN Laundry",
+ "rules": "ロボットが本物の衣類を物干しざおに干す。同点の場合は干し上がりの美しさで勝敗を決める。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "舞鶴A",
+     "robot": "洗練卍鶴",
+     "mechanism": "手動機は塩ビローラーで洗濯物を巻き込んで回収し滑り台構造で籠へ、針金ハンガーをエアシリンダーで竿へ。足回りはメカナム。自動機はバスタオルとシーツをアルミパイプに巻いて竿の上から落とす",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "洗干屋",
+     "mechanism": "手動機は巨大なエアタンクを縦に搭載、アームでかき込み取り込み、十字フレームのTシャツハンガーをエアシリンダーで押し出して竿へ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "明石『超』乾燥",
+     "mechanism": "手動機は上からかき込んで取り込み横押し出しで籠へ、斜め上の2本アームでバスタオルも干す。全国用に4輪オムニから3輪へ。自動機は上下パンタグラフ、ARマーカーをRealsenseで認識して位置調整",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "ɒzz!d",
+     "mechanism": "ピザ職人型の手動機（2本の腕・3輪オムニ）。片手で取り込み、回転盆でピザ回し干し。自動機は縦に伸びてハンガーを竿に水平設置",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "奈良A",
+     "robot": "飛鳥",
+     "mechanism": "自動機2台（朱雀・斑鳩）をBluetoothで連携。朱雀はスライドアームで取り込みTシャツ8枚の一気干しとシーツ、斑鳩はRealsenseと蛍光塗料＋紫外線LEDでバスタオルを認識して取り込み・横干し",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "奈良ビアンナイト",
+     "mechanism": "手動機は幅の広い取り込み機構を上から被せて取り込み。自動機はシーツとバスタオルを前後に持つ昇降アームで干し、スタートゾーンに戻らず続けて干せる",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "パーシモンオレンジ",
+     "mechanism": "ミカン箱デザイン。手動機は回転ローラー4つで取り込み、シーツ下端を摘んで上向きファンの風でしわを伸ばす。自動機は大型保持フレームで畳んだままシーツを掛ける",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "ラン鳥",
+     "mechanism": "手動機は招き猫のように動くアームでかき込み、ラックピニオンでTシャツハンガーを1つずつ竿に落とす。自動機は昇降アーム",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "OSAKA OBASAN",
+     "mechanism": "オバチャン型の手動機（3輪オムニ、2つの手で挟んで回収、頭にハンガーを掛けて回転しながら干す）と2槽ドラム洗濯機型の自動機（左右が別々に昇降、自作の板バネ洗濯ばさみ）",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "waship",
+     "mechanism": "海賊船モチーフ。取り込んだ洗濯物を定荷重バネの打ち出し機構で籠へ飛ばして受け渡す",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "勝ち勝ち山",
+     "mechanism": "カチカチ山モチーフ。手動機（タヌキ）はバスタオル用摘まみアーム2本と幅広アーム、ハンガーは竿の下を通ると引っかかる単純機構。自動機（ウサギ）は昇降アーム2つでシーツとバスタオル3枚",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "神戸zoo",
+     "mechanism": "デュアルマスタースレーブ方式。5軸の多関節アーム4本を操縦者2人がリュック型のマスターで操作",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "Xiro",
+     "mechanism": "手動機はメカナム、コンベアを上から押し付けて回収し内部コンベアで籠へ。自動機は板に載せたバスタオルを竿の上からパタンと掛ける",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "理点達勝",
+     "mechanism": "手動機はスパイラルチューブ付きアームで取り込み（詳細不明）",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "予選D-1",
+     "red": "奈良A",
+     "blue": "舞鶴A",
+     "red_score": 11,
+     "blue_score": 2,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選D-2",
+     "red": "奈良A",
+     "blue": "近大A",
+     "red_score": 16,
+     "blue_score": 0,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選D-3",
+     "red": "舞鶴A",
+     "blue": "近大A",
+     "red_score": 1,
+     "blue_score": 0,
+     "winner": "舞鶴A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選B-1",
+     "red": "神戸A",
+     "blue": "和歌山B",
+     "red_score": 16,
+     "blue_score": 1,
+     "winner": "神戸A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選B-2",
+     "red": "大阪公大B",
+     "blue": "明石A",
+     "red_score": 4,
+     "blue_score": 0,
+     "winner": "大阪公大B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選B-3",
+     "red": "和歌山B",
+     "blue": "大阪公大B",
+     "red_score": 0,
+     "blue_score": 0,
+     "winner": "大阪公大B",
+     "note": "審査員判定0-3",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選B-4",
+     "red": "明石A",
+     "blue": "神戸A",
+     "red_score": 15,
+     "blue_score": 8,
+     "winner": "明石A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選A-1",
+     "red": "明石B",
+     "blue": "舞鶴B",
+     "red_score": 0,
+     "blue_score": 0,
+     "winner": "明石B",
+     "note": "審査員判定",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選A-2",
+     "red": "神戸B",
+     "blue": "近大B",
+     "red_score": 1,
+     "blue_score": 0,
+     "winner": "神戸B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選A-3",
+     "red": "舞鶴B",
+     "blue": "近大B",
+     "red_score": 0,
+     "blue_score": 0,
+     "winner": "近大B",
+     "note": "審査員判定0-3",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選A-4",
+     "red": "神戸B",
+     "blue": "明石B",
+     "red_score": 0,
+     "blue_score": 0,
+     "winner": "神戸B",
+     "note": "審査員判定2-1",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選C-1",
+     "red": "奈良B",
+     "blue": "大阪公大A",
+     "red_score": 12,
+     "blue_score": 18,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選C-2",
+     "red": "和歌山A",
+     "blue": "奈良B",
+     "red_score": 0,
+     "blue_score": 20,
+     "winner": "奈良B",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "予選C-3",
+     "red": "大阪公大A",
+     "blue": "和歌山A",
+     "red_score": 18,
+     "blue_score": 2,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝1",
+     "red": "大阪公大A",
+     "blue": "神戸B",
+     "red_score": 19,
+     "blue_score": 0,
+     "winner": "大阪公大A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝2",
+     "red": "明石A",
+     "blue": "奈良A",
+     "red_score": 12,
+     "blue_score": 21,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "奈良A",
+     "blue": "大阪公大A",
+     "red_score": 21,
+     "blue_score": 4,
+     "winner": "奈良A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "奈良A",
+     "award": "優勝"
+    },
+    {
+     "team": "大阪公大A",
+     "award": "準優勝"
+    },
+    {
+     "team": "明石A",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "奈良B",
+     "award": "技術賞"
+    },
+    {
+     "team": "神戸A",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "神戸B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "和歌山A",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "大阪公大B",
+     "award": "特別賞（田中貴金属）"
+    },
+    {
+     "team": "明石B",
+     "award": "特別賞（ローム）"
+    }
+   ],
+   "champ": [
+    "奈良A",
+    "飛鳥"
+   ],
+   "runner": [
+    "大阪公大A",
+    "OSAKA OBASAN"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "おやまちロケット",
+     "result": "地区準優勝・競技委員会推薦、全国出場",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "∬dx",
+     "result": "予選リーグ1勝1敗",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "ペンギン日和",
+     "result": "予選リーグ1勝1敗",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "熊本八代",
+    "robot": "洗匠",
+    "mechanism": "自動機がシーツとバスタオル2つ、手動機がバスタオルとTシャツを干す。全体の干し方のバランスが良いと評価",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+   },
+   {
+    "team": "鈴鹿",
+    "robot": "物ほっしー☆",
+    "mechanism": "自動機2台を搭載",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+   },
+   {
+    "team": "奈良A",
+    "robot": "飛鳥",
+    "mechanism": "自動機2台（朱雀・斑鳩）をBluetoothで連携。朱雀はスライドアームで取り込みTシャツ8枚の一気干しとシーツ、斑鳩はRealsenseと蛍光塗料＋紫外線LEDでバスタオルを認識して取り込み・横干し",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+   },
+   {
+    "team": "福島",
+    "robot": "干しに願いを"
+   },
+   {
+    "team": "明石A",
+    "robot": "明石『超』乾燥",
+    "mechanism": "手動機は上からかき込んで取り込み横押し出しで籠へ、斜め上の2本アームでバスタオルも干す。全国用に4輪オムニから3輪へ。自動機は上下パンタグラフ、ARマーカーをRealsenseで認識して位置調整",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+   },
+   {
+    "team": "大阪公大A",
+    "robot": "OSAKA OBASAN",
+    "mechanism": "オバチャン型の手動機（3輪オムニ、2つの手で挟んで回収、頭にハンガーを掛けて回転しながら干す）と2槽ドラム洗濯機型の自動機（左右が別々に昇降、自作の板バネ洗濯ばさみ）",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html"
+   },
+   {
+    "team": "豊田",
+    "robot": "地産地笑"
+   },
+   {
+    "team": "香川高松",
+    "robot": "澪"
+   },
+   {
+    "team": "一関",
+    "robot": "らび！らん"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "again"
+   },
+   {
+    "team": "小山B",
+    "robot": "ホシ鳥夫婦"
+   },
+   {
+    "team": "都立品川",
+    "robot": "クマノミランドリー"
+   },
+   {
+    "team": "都城",
+    "robot": "ハッとトリック！ポッポちゃん！"
+   },
+   {
+    "team": "長野",
+    "robot": "森のイテェやつら"
+   },
+   {
+    "team": "呉",
+    "robot": "蝸牛"
+   },
+   {
+    "team": "岐阜",
+    "robot": "Lambdry"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦2",
+    "red": "奈良A",
+    "blue": "福島",
+    "red_score": 20,
+    "blue_score": 5,
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦5",
+    "red": "熊本八代",
+    "blue": "明石A",
+    "red_score": 20,
+    "blue_score": 20,
+    "winner": "熊本八代",
+    "note": "審査員判定5-0",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦11",
+    "red": "大阪公大A",
+    "blue": "豊田",
+    "red_score": 16,
+    "blue_score": 11,
+    "winner": "大阪公大A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦2",
+    "red": "奈良A",
+    "blue": "鈴鹿",
+    "red_score": 20,
+    "blue_score": 5,
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦7",
+    "red": "香川高松",
+    "blue": "大阪公大A",
+    "red_score": 18,
+    "blue_score": 5,
+    "winner": "香川高松",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝1",
+    "red": "奈良A",
+    "blue": "一関",
+    "red_score": 23,
+    "blue_score": 4,
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝4",
+    "red": "香川詫間",
+    "blue": "大阪公大A",
+    "red_score": 25,
+    "blue_score": 25,
+    "winner": "香川詫間",
+    "note": "審査員判定4-1",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準決勝1",
+    "red": "奈良A",
+    "blue": "小山B",
+    "red_score": 25,
+    "blue_score": 16,
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2019.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2019.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会16チーム・地区大会17チーム（近畿・関東甲信越・東海北陸）・試合25件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

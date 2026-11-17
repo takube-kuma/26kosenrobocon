@@ -1,0 +1,465 @@
+{
+ "year": 2015,
+ "no": 28,
+ "game": "輪花繚乱",
+ "rules": "ロボットによる輪投げで対戦し、9本全てのポールに先に輪を入れるか得点の多いチームが勝つ。",
+ "districts": {
+  "近畿": {
+   "teams": [
+    {
+     "team": "奈良A",
+     "robot": "大和",
+     "mechanism": "固定砲台9門と大型ビッグリングで連射し、高速Vゴールを狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "明石A",
+     "robot": "わっさん",
+     "mechanism": "自陣用の発射装置3基とローラー発射、中央2本掛け用の投石カタパルト。防御も可能",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "和歌山A",
+     "robot": "梅王",
+     "mechanism": "角度固定ローラーで連射するシンプルな構成。練習を重ねて高速Vゴールを狙う",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "舞鶴A",
+     "robot": "鶴空",
+     "mechanism": "全自動で得点を目指し、移動しながらゴムパチンコ式で9つのポールを狙う。精度不足で途中手動に",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "舞鶴B",
+     "robot": "光鶴",
+     "mechanism": "星型に装填した輪を回転させて押し出す機構や長いカタパルトなど複数の発射機構",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "明石B",
+     "robot": "輪投げ太郎",
+     "mechanism": "自陣用ローラー射出と相手陣用の投石器型カタパルトの2門方式。自動装填は重量超過で断念",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "奈良B",
+     "robot": "射抜け！わぶさめくん",
+     "mechanism": "人型ロボットが弓で輪を射出。バネを併用した本物の弓の力で撃ち、腕で再装填する",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "和歌山B",
+     "robot": "勝築梅",
+     "mechanism": "1種類の輪を1つのローラー射出口から撃つ。飛距離は位置取りと回転数で調整",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "大阪公大A",
+     "robot": "動！動！動？",
+     "mechanism": "輪を載せる円盤状の皿を9つ備え、パチンコ式で発射する。皿はすべて45度に固定",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "大阪公大B",
+     "robot": "パルフェン",
+     "mechanism": "ボタン1つで3門同時発射し、自陣ポールを即座に決める。防御用の輪パーツも装備",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "神戸A",
+     "robot": "射程犬9",
+     "mechanism": "犬小屋型の装填ボックス、角度可変のローラー1セットで2種類の輪を発射",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "神戸B",
+     "robot": "melancolico",
+     "mechanism": "輪を皿に乗せ直線ゴムカタパルトで撃ち出す。角度と引き距離で飛距離を調整しLEDで表示",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "近大A",
+     "robot": "バブル☆リング",
+     "mechanism": "イルカ型で尾を振るサイドスロー式。パチンコ式の3機構を木材で軽量化",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    },
+    {
+     "team": "近大B",
+     "robot": "Thunder Belt Z",
+     "mechanism": "2つのローラーのベルトで撃ち出し、自陣用には皿から押し出すシュート機構",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+    }
+   ],
+   "matches": [
+    {
+     "round": "1回戦",
+     "red": "神戸A",
+     "blue": "奈良A",
+     "winner": "奈良A",
+     "note": "Vゴール（残り6秒）",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "神戸B",
+     "blue": "明石A",
+     "red_score": 3,
+     "blue_score": 11,
+     "winner": "明石A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "舞鶴A",
+     "blue": "和歌山B",
+     "winner": "和歌山B",
+     "note": "舞鶴Aは自動制御の不調でリトライ",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "1回戦",
+     "red": "大阪公大B",
+     "blue": "和歌山A",
+     "winner": "和歌山A",
+     "note": "Vゴール（0:56）",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "奈良B",
+     "blue": "明石A",
+     "winner": "明石A",
+     "note": "Vゴール（2:35）",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "2回戦",
+     "red": "和歌山A",
+     "blue": "奈良A",
+     "winner": "奈良A",
+     "note": "Vゴール（0:29）",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "奈良A",
+     "blue": "舞鶴B",
+     "winner": "奈良A",
+     "note": "Vゴール（0:21）",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "準決勝",
+     "red": "明石A",
+     "blue": "和歌山B",
+     "winner": "明石A",
+     "note": "Vゴール（1:49）",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+     "sides": "unknown"
+    },
+    {
+     "round": "決勝",
+     "red": "明石A",
+     "blue": "奈良A",
+     "red_score": 10,
+     "blue_score": 8,
+     "winner": "明石A",
+     "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+     "sides": "unknown"
+    }
+   ],
+   "awards": [
+    {
+     "team": "明石A",
+     "award": "優勝"
+    },
+    {
+     "team": "奈良A",
+     "award": "準優勝"
+    },
+    {
+     "team": "奈良B",
+     "award": "アイデア賞"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "技術賞"
+    },
+    {
+     "team": "和歌山B",
+     "award": "デザイン賞"
+    },
+    {
+     "team": "近大B",
+     "award": "特別賞（本田技研工業）"
+    },
+    {
+     "team": "近大A",
+     "award": "特別賞（マブチモーター）"
+    },
+    {
+     "team": "舞鶴B",
+     "award": "特別賞（安川電機）"
+    },
+    {
+     "team": "舞鶴A",
+     "award": "特別賞（東京エレクトロンFE）"
+    },
+    {
+     "team": "神戸A",
+     "award": "特別賞（田中貴金属）"
+    },
+    {
+     "team": "和歌山A",
+     "award": "特別賞（ローム）"
+    }
+   ],
+   "champ": [
+    "明石A",
+    "わっさん"
+   ],
+   "runner": [
+    "奈良A",
+    "大和"
+   ]
+  },
+  "関東甲信越": {
+   "teams": [
+    {
+     "team": "小山",
+     "robot": "タートルリンガー",
+     "result": "1回戦",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    },
+    {
+     "team": "小山",
+     "robot": "輪Navi君",
+     "result": "ベスト8・アイデア賞・特別賞（田中貴金属）、全国2回戦・アイデア賞",
+     "src": "http://tanack.la.coocan.jp/rekisi.htm"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  },
+  "東海北陸": {
+   "teams": [
+    {
+     "team": "沼津A",
+     "robot": "桜乱吹雪",
+     "result": "初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    },
+    {
+     "team": "沼津B",
+     "robot": "やぶさめちゃん",
+     "result": "特別賞（田中貴金属）、初戦敗退",
+     "src": "https://robocon.numazu-ct.ac.jp/wp/robots/"
+    }
+   ],
+   "matches": [],
+   "awards": []
+  }
+ },
+ "national": {
+  "teams": [
+   {
+    "team": "奈良A",
+    "robot": "大和",
+    "mechanism": "固定砲台9門と長さ13mのビッグリングで連射し、中央ポールも狙う",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+   },
+   {
+    "team": "明石A",
+    "robot": "わっさん",
+    "mechanism": "自陣側に張り出す発射装置3基と、中央2本掛け用の大型投石カタパルトを装備",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+   },
+   {
+    "team": "和歌山A",
+    "robot": "梅王",
+    "mechanism": "角度固定のローラーから輪を次々に連射する単発撃ち型。再装填はしない",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+   },
+   {
+    "team": "香川高松",
+    "robot": "Beehive",
+    "mechanism": "単発式ながら精度・スピード・テクニックが高い",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html"
+   },
+   {
+    "team": "香川詫間",
+    "robot": "Force"
+   },
+   {
+    "team": "都城",
+    "robot": "進め！みやこのゾウ"
+   },
+   {
+    "team": "都立荒川",
+    "robot": "荒鯊"
+   },
+   {
+    "team": "小山",
+    "robot": "輪Navi君"
+   },
+   {
+    "team": "熊本八代",
+    "robot": "Challenger"
+   },
+   {
+    "team": "群馬",
+    "robot": "上州カウボーイ"
+   },
+   {
+    "team": "北九州",
+    "robot": "Wanna Be"
+   },
+   {
+    "team": "福島",
+    "robot": "ぐる輪"
+   },
+   {
+    "team": "徳山",
+    "robot": "捲土重来"
+   },
+   {
+    "team": "国際",
+    "robot": "投げろ！ホースちゃん"
+   },
+   {
+    "team": "呉",
+    "robot": "Infinity-1"
+   },
+   {
+    "team": "旭川",
+    "robot": "Orthrows"
+   },
+   {
+    "team": "長野",
+    "robot": "C-RAZair"
+   },
+   {
+    "team": "大分",
+    "robot": "Golgoole"
+   }
+  ],
+  "matches": [
+   {
+    "round": "1回戦",
+    "red": "奈良A",
+    "blue": "群馬",
+    "red_score": 7,
+    "blue_score": 3,
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "明石A",
+    "blue": "呉",
+    "red_score": 9,
+    "blue_score": 1,
+    "winner": "明石A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "1回戦",
+    "red": "香川詫間",
+    "blue": "和歌山A",
+    "winner": "和歌山A",
+    "note": "Vゴール（1:15）",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "奈良A",
+    "blue": "福島",
+    "winner": "奈良A",
+    "note": "Vゴール（0:29）",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "明石A",
+    "blue": "小山",
+    "winner": "明石A",
+    "note": "残り13秒でVゴール",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "2回戦",
+    "red": "和歌山A",
+    "blue": "大分",
+    "winner": "和歌山A",
+    "note": "Vゴール（0:51）",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "奈良A",
+    "blue": "長野",
+    "red_score": 15,
+    "blue_score": 14,
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "明石A",
+    "blue": "旭川",
+    "winner": "明石A",
+    "note": "得点で勝利",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準々決勝",
+    "red": "和歌山A",
+    "blue": "熊本八代",
+    "winner": "熊本八代",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "準決勝",
+    "red": "奈良A",
+    "blue": "明石A",
+    "red_score": 15,
+    "blue_score": 4,
+    "winner": "奈良A",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   },
+   {
+    "round": "決勝",
+    "red": "奈良A",
+    "blue": "香川高松",
+    "winner": "奈良A",
+    "note": "Vゴール（0:29）",
+    "src": "https://koberobo.stars.ne.jp/library/lib2015.html",
+    "sides": "unknown"
+   }
+  ]
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib2015.html",
+  "http://tanack.la.coocan.jp/rekisi.htm",
+  "https://robocon.numazu-ct.ac.jp/wp/robots/"
+ ],
+ "coverage": "全国大会18チーム・地区大会18チーム（近畿・関東甲信越・東海北陸）・試合20件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}

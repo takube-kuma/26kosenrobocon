@@ -1,0 +1,94 @@
+{
+ "year": 1988,
+ "no": 1,
+ "game": "乾電池カー・スピードレース",
+ "rules": "乾電池2個で動くマシンに体重60kg以上の人を乗せ、35mのコースのタイムを競う。",
+ "districts": {},
+ "national": {
+  "teams": [
+   {
+    "team": "八戸",
+    "robot": "ツインスプリング&スパイラルドラムウィンチ「ヤッタベ!!」号",
+    "mechanism": "自転車を利用した車体で、長いスプリングを引っ張ったエネルギーで走る",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "一関",
+    "robot": "ダッシュレーサー35",
+    "mechanism": "5つの巨大なゼンマイを巻いたエネルギーで走る",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "東京",
+    "robot": "シャクトリマシーンラクンダ－",
+    "mechanism": "ゴムを引っ張った力で尺取り虫のように進む",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "長岡",
+    "robot": "ダム号",
+    "mechanism": "永久磁石とコイルの直線運動でフライホイールを回し、その力で進む",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "沼津",
+    "robot": "トミ－88",
+    "mechanism": "シーソー下の重りを移動させて車体ごと持ち上げ、その坂を下って発進する",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "石川",
+    "robot": "GOGO SEVEN号",
+    "mechanism": "操縦者を滑車で引き上げ、その位置エネルギーで走る",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "富山本郷",
+    "robot": "トライ&ミス号",
+    "mechanism": "モーターでゴムを引っ張り、そのエネルギーで走る",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "明石",
+    "robot": "恐怖の人間糸車大車輪1号",
+    "mechanism": "糸車を坂の上まで引き上げ、ワイヤーを切って転がり落として走る",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "和歌山",
+    "robot": "黒潮号",
+    "mechanism": "坂道で持ち上げて発進後、モーターでテコを動かして車輪を回し進む",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "松江",
+    "robot": "GO号",
+    "mechanism": "坂道で持ち上げた位置エネルギーで走り、途中からモーター駆動の2本の足で走る",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "北九州",
+    "robot": "人車一体北九州号",
+    "mechanism": "白いゴムの推進力で走り、弱まるとモーターで車輪を直接回す",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "久留米",
+    "robot": "パッチンコロコロ",
+    "mechanism": "脚立を利用したフレームと車輪を、外部のゴムパチンコで打ち出して走る",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   },
+   {
+    "team": "津山",
+    "robot": "（名前不明）",
+    "mechanism": "形状記憶合金をニクロム線で加熱して縮め動力とする（大会では動作せず）",
+    "src": "https://koberobo.stars.ne.jp/library/lib88.html"
+   }
+  ],
+  "matches": []
+ },
+ "sources": [
+  "https://koberobo.stars.ne.jp/library/lib88.html"
+ ],
+ "coverage": "全国大会13チーム・地区大会0チーム（なし）・試合0件。公式サイトの受賞記録と、神戸高専ロボコン部（神戸ロボ研）の大会記録、各高専ロボコン部の記録から。全試合はそろっていない。"
+}
