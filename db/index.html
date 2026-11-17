@@ -242,7 +242,6 @@ async function teamView(y,name){
   const info=[['狙い',T.target],['装填',T.load],['しくみ',T.mechanism],['足回り',T.drive_note],['移動バケツ',T.bucket_note]].filter(r=>r[1]);
   if(info.length||T.tags){const d=el('dl',{class:'aw'});info.forEach(([k,v])=>ap(d,el('dt',null,k),el('dd',null,v)));
     ap(m,el('h2',null,'ロボット'),el('div',{class:'card'},d,T.tags?el('p',null,...Object.entries(T.tags).map(([k,v])=>el('span',{class:'chip'},({drive:'足回り',shoot:'射出',collect:'回収',bucket:'バケツ',load:'装填'}[k]||k)+': '+v))):null))}
-  ap(m,writeBox(y,name,ent[0][0]));
   if(T.stats){const s=T.stats;const tile=(l,v,sub)=>el('div',{class:'yr'},el('div',{class:'w'},l),el('b',null,v??'—'),sub?el('div',{class:'w'},sub):null);
     ap(m,el('h2',null,'地区大会の数字'),el('div',{class:'grid'},tile('成績',T.wins+'勝'+T.losses+'敗',s.judge_wins?'判定勝ち'+s.judge_wins:''),tile('1試合の最高得点',s.best_score),tile('合計得点',s.total_score,s.unknown_scores?'不明'+s.unknown_scores+'試合':''),tile('旗',s.flag+'枚','うちスーパー'+s.super_flag),tile('机',s.desk+'枚','うちスーパー'+s.super_desk),tile('5点バケツ',s.bucket5+'枚','1点バケツ '+s.bucket1+'枚'),tile('相手の移動バケツ',s.moving+'枚','うちスーパー'+s.super_moving),tile('スーパー雑巾',s.super_rags+'枚')))}
   if(T.scores&&T.scores.length){const tb=el('tbody');
@@ -253,9 +252,10 @@ async function teamView(y,name){
   if(T.clips&&T.clips.length)ap(m,el('h2',null,'動きで見る'),el('p',{class:'note'},'地区大会の配信映像から、得点が入る場面を等倍速で切り出したもの（繰り返し再生）。'),el('div',{class:'clips'},...T.clips.map(c=>el('figure',null,c.file?el('img',{src:'../media/'+c.file,alt:c.title,loading:'lazy'}):null,el('figcaption',null,el('b',null,c.title),' ',c.url?el('a',{href:c.url,target:'_blank',rel:'noopener'},c.label||'▶'):'',el('div',{class:'note'},c.note||''))))));
   for(const[d,D]of ent){const ms=D.matches.filter(x=>x.red===name||x.blue===name);if(ms.length)ap(m,el('h3',null,d+'の試合（'+ms.length+'）'),matchTable(ms,D.video,y))}
   if(!S.news)S.news=await J('data/news.json').catch(()=>[]);if(!S.links)S.links=await J('data/links.json').catch(()=>[]);
-  const nw=S.news.filter(x=>x.year===y&&x.team===name);if(nw.length)ap(m,el('h2',null,'ニュース・テレビ・学校の記事'),el('ul',null,...nw.map(newsItem)));
-  const ln=S.links.filter(x=>x.year===y&&x.team===name);if(ln.length)ap(m,el('h2',null,'Xの投稿（'+ln.length+'）'),el('ul',null,...ln.map(x=>el('li',null,el('span',{class:'sub'},x.date+' '+x.account+' '),el('a',{href:x.url,target:'_blank',rel:'noopener'},'投稿を見る'),el('div',{class:'note'},x.summary)))));
-  ap(m,el('div',{class:'rowflex'},el('a',{class:'btn',href:postUrl({year:y,team:name}),target:'_blank',rel:'noopener'},'このチームについて書き込む'),aiBtn(y+'年の高専ロボコンの「'+name+'」について')));
+  const nw=S.news.filter(x=>x.year===y&&x.team===name);if(nw.length)ap(m,el('details',{class:'card'},el('summary',null,el('b',null,'ニュース・テレビ・学校の記事'),' （'+nw.length+'）'),el('ul',null,...nw.map(newsItem))));
+  const ln=S.links.filter(x=>x.year===y&&x.team===name);if(ln.length)ap(m,el('details',{class:'card'},el('summary',null,el('b',null,'Xの投稿'),' （'+ln.length+'）'),el('ul',null,...ln.map(x=>el('li',null,el('span',{class:'sub'},x.date+' '+x.account+' '),el('a',{href:x.url,target:'_blank',rel:'noopener'},'投稿を見る'),el('div',{class:'note'},x.summary))))));
+  ap(m,writeBox(y,name,ent[0][0]));
+  ap(m,el('div',{class:'rowflex'},aiBtn(y+'年の高専ロボコンの「'+name+'」について')));
 }
 function teamTable(ts,y){
   const rich=ts.some(t=>t.mechanism),ph=ts.some(t=>t.photo);
