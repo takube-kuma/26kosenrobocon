@@ -254,8 +254,8 @@ async function teamView(y,name){
   if(!S.news)S.news=await J('data/news.json').catch(()=>[]);if(!S.links)S.links=await J('data/links.json').catch(()=>[]);
   const nw=S.news.filter(x=>x.year===y&&x.team===name);if(nw.length)ap(m,el('details',{class:'card'},el('summary',null,el('b',null,'ニュース・テレビ・学校の記事'),' （'+nw.length+'）'),el('ul',null,...nw.map(newsItem))));
   const ln=S.links.filter(x=>x.year===y&&x.team===name);if(ln.length)ap(m,el('details',{class:'card'},el('summary',null,el('b',null,'Xの投稿'),' （'+ln.length+'）'),el('ul',null,...ln.map(x=>el('li',null,el('span',{class:'sub'},x.date+' '+x.account+' '),el('a',{href:x.url,target:'_blank',rel:'noopener'},'投稿を見る'),el('div',{class:'note'},x.summary))))));
-  ap(m,writeBox(y,name,ent[0][0]));
   ap(m,el('div',{class:'rowflex'},aiBtn(y+'年の高専ロボコンの「'+name+'」について')));
+  ap(m,writeBox(y,name,ent[0][0]));
 }
 function teamTable(ts,y){
   const rich=ts.some(t=>t.mechanism),ph=ts.some(t=>t.photo);
