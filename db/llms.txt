@@ -3,6 +3,9 @@
 > 高専ロボコン（アイデア対決・全国高等専門学校ロボットコンテスト）の1988〜2026年の全国大会の結果と、2022〜2026年の地区大会・全国大会の全試合のデータ。だれでも自由に読めます。
 
 - [全部まとめたテキスト（まずこれを読む）](https://takube-kuma.github.io/26kosenrobocon/db/data/all.txt): 全国大会の歴代受賞、2022〜2026年の全試合・各賞・ロボットのしくみ
+- [分析記事のテキスト](https://takube-kuma.github.io/26kosenrobocon/db/data/articles.txt): 2022〜2026年の各大会の分析、地区のレベルの推移、2026年全国大会の戦略など
+- [2026年のニュース・報道（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/news.json)
+- [分析用の数値（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/analysis.json): 地区のレベル指標など
 - [全国大会 1988〜2026（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/nationals.json)
 - [年度ごとの全試合（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/years/2026.json): 2022.json〜2026.json。districts[地区].matches と national.matches
 - [学校の一覧（JSON）](https://takube-kuma.github.io/26kosenrobocon/db/data/schools.json)
