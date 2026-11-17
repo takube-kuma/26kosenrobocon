@@ -1,0 +1,29 @@
+name: DBへの書き込みを反映
+on:
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled]
+permissions:
+  contents: write
+  issues: write
+concurrency: {group: db-contrib, cancel-in-progress: false}
+jobs:
+  apply:
+    if: contains(github.event.issue.labels.*.name, 'db-contrib') || github.event.action == 'unlabeled'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node .github/scripts/contrib.js
+      - name: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add db/data/contrib.json
+          git diff --cached --quiet && exit 0
+          git commit -m "DBへの投稿 #${{ github.event.issue.number }} を反映"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
+      - if: github.event.action == 'opened'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number,
+              body: 'ありがとうございます！データベースのページに「投稿」として表示されました。\nhttps://takube-kuma.github.io/26kosenrobocon/db/\n\n内容を直したいときはこのIssueを編集すると反映されます。'});
